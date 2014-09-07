@@ -17,3 +17,5 @@ This code is not redributable, rather just here to help push Pimp forward with l
 
 Code base if very old, so expect it to be fully working, but poorly written.  Feel free to ask questions where needed.
 
+Upon logging in, you will need to give your new user full Admin rights.  Please view the spoiledtechie user to understand which rights are required.
+
