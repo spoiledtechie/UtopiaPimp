@@ -1,0 +1,1106 @@
+; :::: Intel Script for Umunk by Sin and Matias ::::
+;
+; INPUT METHOD:
+; Use !intel [type] [province]
+; Where [type] is: cb, sos, som or survey
+; And [Province] is a province name without location.
+;
+; Set your Umunk username, password and the channel(s) it works in  by right clicking in any channel
+; using the "Umunk Intel Script" menu.
+;
+; ::::SCRIPT START::::
+; :::: Intel Aliases ::::
+
+alias -l htmlfree {
+  var %x, %i = $regsub($1-,/(^[^<]*>|<[^>]*>|<[^>]*$)/g,$null,%x), %x = $remove(%x,&nbsp;)
+  return %x
+}
+alias urlencode return $regsubex($1-,/\G(.)/g,$iif(($prop && \1 !isalnum) || !$prop,$chr(37) $+ $base($asc(\1),10,16),\1))
+alias urldecode return $replace($regsubex($1-,/%(\w\w)/g,$chr($iif($base(\t,16,10) != 32,$v1,1))),$chr(1),$chr(32))
+
+alias inteldel {
+  dline @intel 1- | unset %intelprovince | unset %inteltype | unset %intelchan | unset %intelbusy | unset %intelstart
+}
+
+; :::: Intel On text ::::
+on *:text:!intel *:%intelchans: {
+  if (%intelbusy == $null) {
+    set %intelbusy 1
+    var %types cb sos som survey
+    if ($2 !isin %types ) {
+      notice $nick You must use this input:4 !intel [type] [province]
+      notice $nick Where [type] is: cb, sos, som or survey
+      inteldel
+      halt
+    }
+    else {
+      if ($window(@intel) == $null) window -Sh +n @intel
+      if ($sock(Intel)) .sockclose Intel
+      set %intelprovince $3-
+      set %inteltype $2
+      set %intelchan $chan
+      msg %intelchan Processing Intel Request for %intelprovince $+ , please be patient...
+      sockopen Intel umunk.net 80
+    }
+    return 
+  }
+  msg $chan 4Script is busy, please wait... (if error: use !intelreset)
+}
+
+on *:TEXT:!intelreset:%intelchans: {
+  dline @intel 1- | unset %intelprovince | unset %inteltype | unset %intelchan | unset %intelbusy | unset %intelstart
+}
+
+; :::: Intel Sockets ::::
+on *:SOCKOPEN:Intel: {
+  if (%intelchan == %munkchan1) { var %munkuser = %munkuser1 | var %munkpass = %munkpass1 | goto sockets }
+  if (%intelchan == %munkchan2) { var %munkuser = %munkuser2 | var %munkpass = %munkpass2 | goto sockets }
+  if (%intelchan == %munkchan3) { var %munkuser = %munkuser3 | var %munkpass = %munkpass3 | goto sockets }
+  if (%intelchan == %munkchan4) { var %munkuser = %munkuser4 | var %munkpass = %munkpass4 | goto sockets }
+  if (%intelchan == %munkchan5) { var %munkuser = %munkuser5 | var %munkpass = %munkpass5 | goto sockets }
+  if (%intelchan == %munkchan6) { var %munkuser = %munkuser6 | var %munkpass = %munkpass6 | goto sockets }
+  if (%intelchan == %munkchan7) { var %munkuser = %munkuser7 | var %munkpass = %munkpass7 | goto sockets }
+  if (%intelchan == %munkchan8) { var %munkuser = %munkuser8 | var %munkpass = %munkpass8 | goto sockets }
+  :sockets
+  sockwrite -nt $sockname GET $replacecs(/ircdata.php?username=USER1&password=PASS1&target= $+ $urlencode(%intelprovince) $+ &export=1 HTTP/1.1,USER1,%munkuser,PASS1,%munkpass)
+  sockwrite -nt $sockname Host: umunk.net
+  sockwrite -nt $sockname $crlf
+}
+
+on *:SOCKREAD:Intel: {
+  if ($sockerr) {
+    msg %intelchan There was an Error when retrieving your Intel request please try again.
+    inteldel
+    halt
+  }
+  else {
+    :nextread 
+    sockread %temp 
+    if ($sockbr == 0) { intelcheck | return }
+    if (%temp) aline @intel $htmlfree(%temp)
+    goto nextread
+  }
+}
+
+; :::: INTEL FORMATTER ::::
+alias intelcheck {
+  if (%intelstart == $null) {
+    set %intelstart 1
+    if ($line(@intel,0) < 10) {
+      msg %intelchan 4There is no intel for the selected province.
+      inteldel
+    }
+    else {
+      if (%inteltype == cb) { 
+        clipboard $null | var %line3 = $line(@intel,$calc($fline(@intel,*Crystal-Ball*,1,0)+2)))
+        var %line2 = $line(@intel,$calc($fline(@intel,*Crystal-Ball*,1,0)+1))
+        if (EOF isin %line3) { clipboard %line2 | timer 1 1 intelexportline | goto end }
+        elseif (*age* iswm %line3) { clipboard %line2 | timer 1 1 intelexportline | goto end }
+        else { clipboard %line2 $+ %line3 | timer 1 1 intelexportline | goto end }
+      }
+      if (%inteltype == som) { 
+        clipboard $null | var %line3 = $line(@intel,$calc($fline(@intel,*Military*,1,0)+2)))
+        var %line2 = $line(@intel,$calc($fline(@intel,*Military*,1,0)+1))
+        if (EOF isin %line3) { clipboard %line2 | timer 1 1 intelexportline | goto end }
+        elseif (*age* iswm %line3) { clipboard %line2 | timer 1 1 intelexportline | goto end }
+        else { clipboard %line2 $+ %line3 | timer 1 1 intelexportline | goto end }
+      }
+      if (%inteltype == sos) { 
+        clipboard $null | var %line3 = $line(@intel,$calc($fline(@intel,*Science*,1,0)+2)))
+        var %line2 = $line(@intel,$calc($fline(@intel,*Science*,1,0)+1))
+        if (EOF isin %line3) { clipboard %line2 | timer 1 1 intelexportline | goto end }
+        elseif (*age* iswm %line3) { clipboard %line2 | timer 1 1 intelexportline | goto end }
+        else { clipboard %line2 $+ %line3 | timer 1 1 intelexportline | goto end }
+      }
+      if (%inteltype == survey) { 
+        clipboard $null | var %line3 = $line(@intel,$calc($fline(@intel,*Survey [*,1,0)+2)))
+        var %line2 = $line(@intel,$calc($fline(@intel,*Survey [*,1,0)+1))
+        if (EOF isin %line3) { clipboard %line2 | timer 1 1 intelexportline | goto end }
+        elseif (*age* iswm %line3) { clipboard %line2 | timer 1 1 intelexportline | goto end }
+        else { clipboard %line2 $+ %line3 | timer 1 1 intelexportline | goto end }
+      }
+      :end
+    }
+  }
+}
+
+; ::::USER INPUT::::
+menu menubar,Channel,status {
+  Umunk Intel Script
+  .Set User/pass/chan
+  ..Channel nr 1 :/set %channelnr 1 | /dialog -m munkintel munkintel
+  ..Channel nr 2 :/set %channelnr 2 | /dialog -m munkintel munkintel
+  ..Channel nr 3 :/set %channelnr 3 | /dialog -m munkintel munkintel
+  ..Channel nr 4 :/set %channelnr 4 | /dialog -m munkintel munkintel
+  ..Channel nr 5 :/set %channelnr 5 | /dialog -m munkintel munkintel
+  ..Channel nr 6 :/set %channelnr 6 | /dialog -m munkintel munkintel
+  ..Channel nr 7 :/set %channelnr 7 | /dialog -m munkintel munkintel
+  ..Channel nr 8 :/set %channelnr 8 | /dialog -m munkintel munkintel
+  .Set colors
+  ..Primary Color:/set %exportoverrideC4 $$?="Type ctrl+k and pick your color:"
+  ..Secondary Color:/set %exportoverrideC3 $$?="Type ctrl+k and pick your color:"
+}
+
+dialog munkintel {
+  title "Umunk Login for channel %channelnr "
+  size -1 -1 210 140
+  option pixels
+  box "Input Umunk login", 10, 4 4 190 100
+  text "Username:", 6, 10 27 50 30
+  edit "", 3, 65 25 120 20, left limit 30
+  text "Password:", 4, 10 52 50 30
+  edit "", 7, 65 50 120 20, left limit 30
+  text "Channel(s)", 5, 10 77 50 30
+  edit "", 8, 65 75 120 20, left limit 30
+  button "Ok", 1, 70 110 70 30
+}
+
+on *:DIALOG:munkintel:sclick:*:{
+  if ($did == 1) {
+
+    if (%channelnr == 1) {
+      if ($did(3)) set %munkuser1 $did(3).text
+      if ($did(7)) set %munkpass1 $did(7).text
+      if ($did(8)) set %munkchan1 $did(8).text
+    }
+    if (%channelnr == 2) {
+      if ($did(3)) set %munkuser2 $did(3).text
+      if ($did(7)) set %munkpass2 $did(7).text
+      if ($did(8)) set %munkchan2 $did(8).text
+    }  
+    if (%channelnr == 3) {
+      if ($did(3)) set %munkuser3 $did(3).text
+      if ($did(7)) set %munkpass3 $did(7).text
+      if ($did(8)) set %munkchan3 $did(8).text
+    }
+    if (%channelnr == 4) {
+      if ($did(3)) set %munkuser4 $did(3).text
+      if ($did(7)) set %munkpass4 $did(7).text
+      if ($did(8)) set %munkchan4 $did(8).text
+    }
+    if (%channelnr == 5) {
+      if ($did(3)) set %munkuser5 $did(3).text
+      if ($did(7)) set %munkpass5 $did(7).text
+      if ($did(8)) set %munkchan5 $did(8).text
+    }
+    if (%channelnr == 6) {
+      if ($did(3)) set %munkuser6 $did(3).text
+      if ($did(7)) set %munkpass6 $did(7).text
+      if ($did(8)) set %munkchan6 $did(8).text
+    }
+    if (%channelnr == 7) {
+      if ($did(3)) set %munkuser7 $did(3).text
+      if ($did(7)) set %munkpass7 $did(7).text
+      if ($did(8)) set %munkchan7 $did(8).text
+    }
+    if (%channelnr == 8) {
+      if ($did(3)) set %munkuser8 $did(3).text
+      if ($did(7)) set %munkpass8 $did(7).text
+      if ($did(8)) set %munkchan8 $did(8).text
+    }
+    unset %channelnr
+    set %intelchans %munkchan1 $+ , %munkchan2 $+ , %munkchan3 $+ ,%munkchan4 $+ , %munkchan5 $+ ,%munkchan6 $+ , %munkchan7 $+ , %munkchan8
+    dialog -x munkintel
+  }
+}
+
+; ::::FORMATTER PART:::: 
+
+alias intelexportline {  
+  if (%exportoverrideC3 == $null) set %exportoverrideC3 7
+  if (%exportoverrideC4 == $null) set %exportoverrideC4 12
+  var %i = 1
+  var %j = $cb(0)
+  var %re.pname /(The Province of|Buildings Report of|Science Intelligence on|Science Intel on|Military Intelligence on|Military Intel on) (.*) \(([\d]+):([\d]+)\)/
+  var %re.kdname /(.*) Kingdom Analysis
+  var %re.summary /\*\* Summary \*\*/
+  var %re.eline /\*\* Export Line \[ver ([\d]+)\] -- (.*) \[ver ([\d]+)\]: \*\*/
+  if ($regex($cb(1),%re.pname)) {
+    if ($regml(1) == The Province of) goto cb
+    elseif ($regml(1) == Buildings Report of) goto survey
+    elseif ($regml(1) == Science Intelligence on) goto sos
+    elseif ($regml(1) == Science Intel on) goto sos
+    elseif ($regml(1) == Military Intel on) goto som
+    elseif ($regml(1) == Military Intelligence on) goto som
+    else goto error
+  }
+
+  :cb
+  var %re.angel /\[http:\/\/www\.utopiatemple\.com Angel (.*)\]/
+  var %re.server /Server: (.*) \(Age ([\d]+)\)/
+  var %re.udate /Utopian Date: (.*)/
+  var %re.ruler /Ruler Name: (.*)/
+  var %re.prace /Personality & Race: (.*), (.*)/
+  var %re.land /Land: (.*) Acres/
+  var %re.money /Money: (.*)gc \((.*)gc daily income\)/
+  var %re.food /Food: ([,0-9]*) bushels/
+  var %re.runes /Runes: ([,0-9]*) runes/
+  var %re.peas /Peasants: (.*) \((.*) Building Efficiency\)/
+  var %re.nw /Networth: (.*) \((.*)\)/
+  var %re.me /(ME\+Stance \(no spells\)|Military Eff. with Stance): (.*) off. \/ (.*) def./
+  var %re.sols /Soldiers: (.*) \((.*)\)/
+  var %re.offspecs /(Swordsmen|Rangers|Warriors|Goblins|Magicians|Spearmen|Halflings|Night Rangers): ([,0-9]*)/
+  var %re.defspecs /(Archers|Archers|Axemen|Trolls|Druids|Archers|Druids|Pikemen): ([,0-9]*)/
+  var %re.elites /(Knights|Elf Lords|Berserkers|Ogres|Drow|Golems): ([,0-9]*)/
+  var %re.horses /War-Horses: ([,0-9]*)/
+  var %re.pris /Prisoners: ([,0-9]*)/
+  var %re.off /Total Modified Offense: (.*) \((.*) per Acre\)/
+  var %re.off2 /Total Modified Offense: 0/
+  var %re.def /Total Modified Defense: (.*) \((.*) per Acre\)/
+  var %re.thieves /Thieves: ([,0-9]*) \((.*) per Acre \/ (.*) Stealth\)/
+  var %re.wizards /Wizards: ([,0-9]*) \((.*) per Acre \/ (.*) Mana\)/
+  var %re.thieves2 /Estimated Thieves Number: ([,0-9]*) \((.*) per Acre\)/
+  var %re.wizards2 /Estimated Wizards Number: ([,0-9]*) \((.*) per Acre\)/
+  var %re.dragon /A (.*) Dragon ravages the lands!/
+  var %re.plague /The Plague has spread throughout the people!/
+  var %re.war /Province is at WAR!/
+  var %re.hit /(Province was hit extremely hard in the last month!|Province was moderately hit in the last month!|Province was hit pretty heavily in the last month!|Province was hit a couple of times recently!)/
+  while (%i <= %j) { 
+    if ($regex($cb(%i),%re.angel)) {
+      var %xp.angel $regml(1)
+    }
+
+    if ($regex($cb(%i),%re.pname)) {
+      var %xp.pname $regml(2) ( $+ $regml(3) $+ : $+ $regml(4) $+ )
+    }
+    if ($regex($cb(%i),%re.ruler)) {
+      var %xp.ruler = $regml(1)
+    }
+    if ($regex($cb(%i),%re.server)) {
+      if ($regml(1) == World of Legends) var %xp.server WoL
+      if ($regml(1) == Genesis) var %xp.server Gen
+    }
+    if ($regex($cb(%i),%re.udate)) {
+      var %xp.udate $regml(1)
+    }
+    if ($regex($cb(%i),%re.prace)) {
+      var %xp.race $regml(2)
+      var %xp.pers $regml(1)
+    }
+    if ($regex($cb(%i),%re.land)) {
+      var %xp.land $regml(1)
+    }
+    if ($regex($cb(%i),%re.money)) {
+      var %xp.money $regml(1)
+    }
+    if ($regex($cb(%i),%re.food)) {
+      var %xp.food $regml(1)
+    }
+    if ($regex($cb(%i),%re.runes)) {
+      var %xp.runes $regml(1)
+    }
+    if ($regex($cb(%i),%re.peas)) {
+      var %xp.peas $regml(1)
+      var %xp.be $regml(2)
+    }
+    if ($regex($cb(%i),%re.nw)) {
+      var %xp.nw $regml(1)
+    }
+    if ($regex($cb(%i),%re.me)) {
+      var %xp.offme $regml(2)
+      var %xp.defme $regml(3)
+    }
+    if ($regex($cb(%i),%re.sols)) {
+      var %xp.sols $regml(1)
+    }
+    if ($regex($cb(%i),%re.offspecs)) {
+      var %xp.offspecs $regml(2)
+    }
+    if ($regex($cb(%i),%re.defspecs)) {
+      var %xp.defspecs $regml(2)
+    }
+    if ($regex($cb(%i),%re.elites)) {
+      var %xp.elites $regml(2)
+    }
+    if ($regex($cb(%i),%re.horses)) {
+      var %xp.horses $regml(1)
+    }
+    if ($regex($cb(%i),%re.pris)) {
+      var %xp.pris $regml(1)
+    }
+    if ($regex($cb(%i),%re.off)) {
+      var %xp.off $regml(1)
+      var %xp.offpa $regml(2)
+      var %endcb 1
+    }
+    if ($regex($cb(%i),%re.off2)) {
+      var %xp.off = 0
+      var %xp.offpa = 0
+      var %endcb = 1
+    }
+    if ($regex($cb(%i),%re.thieves)) {
+      var %xp.thieves $regml(1)
+      var %xp.tpa $regml(2)
+      var %xp.stealth $regml(3)
+    }
+    if ($regex($cb(%i),%re.wizards)) {
+      var %xp.wizards $regml(1)
+      var %xp.wpa $regml(2)
+      var %xp.mana $regml(3)
+    }
+    if ($regex($cb(%i),%re.thieves2)) {
+      var %xp.thieves2 $regml(1)
+      var %xp.tpa2 $regml(2)
+    }
+    if ($regex($cb(%i),%re.wizards2)) {
+      var %xp.wizards2 $regml(1)
+      var %xp.wpa2 $regml(2)
+    }
+    if ($regex($cb(%i),%re.def)) {
+      var %xp.def $regml(1)
+      var %xp.defpa $regml(2)
+    }
+    if ($regex($cb(%i),%re.dragon)) {
+      if ($reglm(1) == Ruby) var %xp.dragon 4Ruby Dragon10(-8% ME)
+      if ($reglm(1) == Emerald) var %xp.dragon 4Emerald Dragon10(-10% gains,+10% loses)
+      if ($reglm(1) == Sapphire) var %xp.dragon 4Sapphire Dragon10(-20% ops)
+      if ($reglm(1) == Gold) var %xp.dragon 4Gold Dragon10(-20% BE)
+    }
+    if ($regex($cb(%i),%re.war)) {
+      var %xp.war 10Province in war!
+    }
+    if ($regex($cb(%i),%re.hit)) {
+      var %xp.hit = $regml(1)
+      if (couple isin %xp.hit) var %xp.hit = Hit: 4Couple.
+      if (heavily isin %xp.hit) var %xp.hit = Hit: 4Heavily.
+      if (moderately isin %xp.hit) var %xp.hit = Hit: 4Moderately.
+      if (extremely isin %xp.hit) var %xp.hit = Hit: 4Extremely.
+    }
+    if ($regex($cb(%i),%re.plague)) {
+      var %xp.plague 4PLAGUE1(-15% def)
+    }
+    ;-- Get Exportline and Type
+    if ($regex($cb(%i),%re.eline)) {
+      var %k $calc(%i +1)
+      while ((%k <= %j) && ($cb(%k) != $null)) {
+        var %xp.eline %xp.eline $cb(%k)
+        inc %k
+      }
+    }
+    inc %i
+  }
+  if (%endcb) {
+    if (Prince isincs %xp.ruler) var %rank = Prince 
+    elseif (Princess isincs %xp.ruler) var %rank = Princess
+    elseif (Duke isincs %xp.ruler) var %rank = Duke
+    elseif (Duchess isincs %xp.ruler) var %rank = Duchess
+    elseif (Marquis isincs %xp.ruler) var %rank = Marquis 
+    elseif (Marchioness isincs %xp.ruler) var %rank = Marchioness
+    elseif (Count isincs %xp.ruler) var %rank = Count 
+    elseif (Countess isincs %xp.ruler) var %rank = Countess 
+    elseif (Viscount isincs %xp.ruler) var %rank = Viscount 
+    elseif (Viscountess isincs %xp.ruler) var %rank = Viscountess 
+    elseif (Baron isincs %xp.ruler) var %rank = Baron 
+    elseif (Baroness isincs %xp.ruler) var %rank = Baroness 
+    elseif (Lord isincs %xp.ruler) var %rank = Lord 
+    elseif (Noble Lady isincs %xp.ruler) var %rank = Noble Lady
+    elseif (Sir isincs %xp.ruler) var %rank = Knight
+    elseif (Lady isincs %xp.ruler) var %rank = Lady
+    elseif (King isincs %xp.ruler) var %rank = King
+    elseif (Queen isincs %xp.ruler) var %rank = Queen
+    else var %rank = Peasant
+
+    if (%xp.nw == $null) var %xp.nw ???
+    if ( %xp.thieves2 ) { 
+      if (!%xp.thieves) {
+        var %xp.thieves = %xp.thieves2
+        var %xp.tpa = %xp.tpa2
+        var %xp.wizards = %xp.wizards2
+        var %xp.wpa = %xp.wpa2
+      }
+    }
+    if (%xp.server == $null) var %xp.server = Gen
+    var %title = $replacecs(%xp.pname $+ COLOR1 - %rank - %xp.be BE. COLOR2CBCOLOR1( $+ %xp.server $+ ),COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR1 $+ $line(@intel,$calc($fline(@intel,*Crystal-Ball*,1,0)-1)),COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2| $+ $alinl(%title).76 $+ COLOR2|,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2|COLOR1 $+ $alinl(%xp.race).13 $+ COLOR2|COLOR1Gold:COLOR2 $+ $alinr(%xp.money).10 $+ COLOR2|COLOR1Sols :COLOR2 $+ $alinr(%xp.sols).7 $+ COLOR2|COLOR1Off:COLOR2 $+ $alinr(%xp.off).9 $+ |COLOR1Thi:COLOR2 $+ $alinr(%xp.thieves).7 $+ COLOR2|,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2|COLOR1 $+ $alinl(%xp.pers).13 $+ COLOR2|COLOR1Food:COLOR2 $+ $alinr(%xp.food).10 $+ COLOR2|COLOR1Ospec:COLOR2 $+ $alinr(%xp.offspecs).7 $+ COLOR2|COLOR1 $+ $alinr( ( $+ %xp.offpa opa $+ ) ).13 $+ COLOR2|COLOR1 $+ $alinr( ( $+ %xp.tpa tpa $+ ) ).11 $+ COLOR2|,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2|COLOR1 $+ Land:COLOR2 $+ $alinr(%xp.land).8 $+ |COLOR1Rune:COLOR2 $+ $alinr(%xp.runes).10 $+ COLOR2|COLOR1Dspec:COLOR2 $+ $alinr(%xp.defspecs).7 $+ COLOR2|COLOR1Def:COLOR2 $+ $alinr(%xp.def).9 $+ |COLOR1Wiz:COLOR2 $+ $alinr(%xp.wizards).7 $+ COLOR2|,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2|COLOR1 $+ Nw:COLOR2 $+ $alinr(%xp.nw).10 $+ |COLOR1Peas:COLOR2 $+ $alinr(%xp.peas).10 $+ COLOR2|COLOR1Elite:COLOR2 $+ $alinr(%xp.elites).7 $+ COLOR2|COLOR1 $+ $alinr( ( $+ %xp.defpa dpa $+ ) ).13 $+ COLOR2|COLOR1 $+ $alinr( ( $+ %xp.wpa wpa $+ ) ).11 $+ COLOR2|,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    if ( %xp.hit || %xp.dragon || %xp.plague) { /msg %intelchan $replacecs(COLOR2|COLOR1 $+ $alinl(%xp.dragon %xp.plague %xp.hit COLOR1).77 $+ COLOR2|,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4) }
+    if ( %xp.eline ) { 
+      /msg %intelchan $replacecs(COLOR2|ExportLine COLOR2 $+ »COLOR1 %xp.eline COLOR2«,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    }
+    else { 
+      /msg %intelchan $replacecs(COLOR2|COLOR1 $+ Throne,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)      
+    }
+  }
+  else {
+    msg %intelchan 4Invalid intel
+  }
+  inteldel
+  goto end
+
+  :som
+  var %re.angel /\[http:\/\/www\.utopiatemple\.com Angel (.*)\]/
+  var %re.server /Server: (.*) \(Age ([\d]+)\)/
+  var %re.ruler /Ruler Name: (.*)/
+  var %re.prace /Personality & Race: (.*), (.*)/
+  var %re.mesom /Efficiency \(SoM\): (.*) off., (.*) def., (.*) raw/
+  var %re.mesom2 /Efficiency \(SoM\): (.*) off, (.*) def, (.*) raw/
+  var %re.mecb /Efficiency \(CB\): (.*) off., (.*) def./
+  var %re.netoff /Net Offense at Home \(from Utopia\): (.*)/
+  var %re.netdef /Net Defense at Home \(from Utopia\): (.*)/
+  var %re.calcap /Modified Attack points \(calculated\): (.*)/
+  var %re.calcdp /Modified Defense points \(calculated\): (.*)/
+  var %re.sols /Soldiers: ([,0-9]*)/
+  var %re.elites /(Knights|Elf Lords|Berserkers|Ogres|Beastmasters|Half-Giants|Drow|Golems): ([,0-9]*)/
+  var %re.elites2 /(Knights|Elf Lords|Berserkers|Ogres|Beastmasters|Half-Giants|Drow|Golems): \(untranslatable\)/
+  var %re.defspecs /(Archers|Archers|Axemen|Trolls|Druids|Archers|Pikemen|Druids): ([,0-9]*)/
+  var %re.defspecs2 /(Archers|Archers|Axemen|Trolls|Druids|Archers|Pikemen|Druids): \(untranslatable\)/
+  var %re.tdp2 /Total Defense points: At least ([,0-9]*)/
+  var %re.tdp /Total Defense points: ([,0-9]*)/
+  var %re.somtranslator /\*\* SoM Translator \(Army At Home\) \*\*/
+  var %re.standingarmy /\*\* Standing Army \(At Home\) \*\*/
+  var %re.armies /\*\* Armies (.*) \(Back in (.*) hours\) \*\*/
+  var %re.armies2 /\*\* Army (.*) \(Back in (.*) hours\) \*\*/
+  var %re.training /\*\* Troops in Training \*\*/
+  while (%i <= %j) { 
+    if ($regex($cb(%i),%re.angel)) {
+      var %xp.angel $regml(1)
+    }
+    if ($regex($cb(%i),%re.pname)) {
+      var %xp.pname $regml(2) ( $+ $regml(3) $+ : $+ $regml(4) $+ )
+    }
+    if ($regex($cb(%i),%re.ruler)) {
+      var %xp.ruler = $regml(1)
+    }
+    if ($regex($cb(%i),%re.server)) {
+      if ($regml(1) == World of Legends) var %xp.server WoL
+      if ($regml(1) == Genesis) var %xp.server Gen
+    }
+    if ($regex($cb(%i),%re.prace)) {
+      var %xp.race $regml(2)
+      var %xp.pers $regml(1)
+    }
+    if ($regex($cb(%i),%re.mesom)) {
+      var %xp.mesomdef $regml(3)
+    }   
+    if ($regex($cb(%i),%re.mesom2)) {
+      var %xp.mesomdef $regml(3)
+    } 
+    if ($regex($cb(%i),%re.mecb)) {
+      var %xp.mecbdef $regml(2)
+    }
+    if ($regex($cb(%i),%re.netoff)) {
+      var %xp.netoff $regml(1)
+    }
+    if ($regex($cb(%i),%re.netdef)) {
+      var %xp.netdef $regml(1)
+    }
+    if ($regex($cb(%i),%re.calcap)) {
+      var %xp.calcap $regml(1)
+    }
+    if ($regex($cb(%i),%re.calcdp)) {
+      var %xp.calcdp $regml(1)
+    }
+    if ($regex($cb(%i),%re.somtranslator)) {
+      var %intranslator 1
+    }
+    if ($regex($cb(%i),%re.standingarmy)) {
+      var %intranslator 0
+      var %instanding 1
+      var %somend 1
+    }
+    if ($regex($cb(%i),%re.elites)) {
+      if (%intranslator) {
+        var %xp.transelites $regml(2)
+      }
+      elseif (%instanding) {
+        var %xp.standingelites $regml(2)
+      }
+      elseif (%inaway) { 
+        var %xp.awayelites $regml(2)
+      }
+    }
+    if ($regex($cb(%i),%re.elites2)) {
+      if (%intranslator) {
+        var %xp.transelites ???
+      }
+      elseif (%instanding) {
+        var %xp.standingelites ???
+      }
+      elseif (%inaway) { 
+        var %xp.awayelites ???
+      }
+    }
+
+    if ($regex($cb(%i),%re.defspecs)) {
+      if (%intranslator) {
+        var %xp.transdefspecs $regml(2)
+      }
+      elseif (%instanding) {
+        var %xp.standingdefspecs $regml(2)
+      }
+    }
+    if ($regex($cb(%i),%re.defspecs2)) {
+      if (%intranslator) {
+        var %xp.transdefspecs ???
+      }
+      elseif (%instanding) {
+        var %xp.standingdefspecs ???
+      }
+    }
+    if ($regex($cb(%i),%re.armies)) {
+      var %instanding 0
+      var %inaway 1
+      var %xp.armies $regml(1)
+      var %xp.returntime $regml(2)
+    }
+    if ($regex($cb(%i),%re.armies2)) {
+      var %instanding 0
+      var %inaway 1
+      var %xp.armies $regml(1)
+      var %xp.returntime $regml(2)
+    }
+    if ($regex($cb(%i),%re.tdp)) {
+      if (%intranslator) var %xp.transdp $regml(1)
+      if (%instanding) {
+        var %xp.standingdp $regml(1)
+        var %instanding 0
+      }
+    }
+    if ($regex($cb(%i),%re.tdp2)) {
+      if (%intranslator) var %xp.transdp $regml(1)
+      if (%instanding) {
+        var %xp.standingdp $regml(1)
+        var %instanding 0
+      }
+    }
+    if ($regex($cb(%i),%re.training)) {
+      var %inaway 0
+      var %instanding 0
+    }
+    if ($regex($cb(%i),%re.eline)) {
+      var %k $calc(%i +1)
+      while ((%k <= %j) && ($cb(%k) != $null)) {
+        var %xp.eline %xp.eline $cb(%k)
+        inc %k
+      }
+    }
+    inc %i
+  }
+  if (%somend) {
+    if (Prince isincs %xp.ruler) var %rank = Prince 
+    elseif (Princess isincs %xp.ruler) var %rank = Princess
+    elseif (Duke isincs %xp.ruler) var %rank = Duke
+    elseif (Duchess isincs %xp.ruler) var %rank = Duchess
+    elseif (Marquis isincs %xp.ruler) var %rank = Marquis 
+    elseif (Marchioness isincs %xp.ruler) var %rank = Marchioness
+    elseif (Count isincs %xp.ruler) var %rank = Count 
+    elseif (Countess isincs %xp.ruler) var %rank = Countess 
+    elseif (Viscount isincs %xp.ruler) var %rank = Viscount 
+    elseif (Viscountess isincs %xp.ruler) var %rank = Viscountess 
+    elseif (Baron isincs %xp.ruler) var %rank = Baron 
+    elseif (Baroness isincs %xp.ruler) var %rank = Baroness 
+    elseif (Lord isincs %xp.ruler) var %rank = Lord 
+    elseif (Noble Lady isincs %xp.ruler) var %rank = Noble Lady
+    elseif (Sir isincs %xp.ruler) var %rank = Knight
+    elseif (Lady isincs %xp.ruler) var %rank = Lady
+    elseif (King isincs %xp.ruler) var %rank = King
+    elseif (Queen isincs %xp.ruler) var %rank = Queen
+    else var %rank = Peasant
+
+    if (%xp.server == $null) var %xp.server = Gen
+
+    if (%xp.transdp) { 
+      var %format = 7,8
+      var %text.transdp = $alinr( %format $+ %xp.transdp ).15
+    }
+    else var %text.transdp = $alinr(%xp.transdp).9
+    var %title = $replacecs(%xp.pname $+ COLOR1 - %rank - COLOR2SoM COLOR1 $+ ( $+ %xp.server $+ ),COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR1 $+ $line(@intel,$calc($fline(@intel,*Military*,1,0)-1)),COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2 $+ $alinl(%title).66,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2|COLOR1 $+ $alinl(%xp.race).13 $+ COLOR2|COLOR1 $+ $alinl(SoM ( $+ Home $+ ) ).13 $+ COLOR2|COLOR1+ $+ $alinl(CB ( $+ best $+ ) ).12 $+ COLOR2|COLOR1 1st ArmyAway COLOR2|,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2|COLOR1 $+ $alinl(%xp.pers).13 $+ COLOR2|COLOR1DefME:COLOR2 $+ $alinr(%xp.mesomdef).7 $+ COLOR2|COLOR1DefME:COLOR2 $+ $alinr(%xp.mecbdef).7 $+ COLOR2|COLOR1Remain:COLOR2 $+ $alinr(%xp.returntime).7 $+ COLOR2|,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2|COLOR1 $+ $alinl(Net In Som:).13 $+ COLOR2|COLOR1Dspec:COLOR2 $+ $alinr(%xp.standingdefspecs).7 $+ COLOR2|COLOR1Dspec:COLOR2 $+ $alinr(%xp.transdefspecs).7 $+ COLOR2|COLOR1 $alinr(-).13 $+ COLOR2|,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2|COLOR1 $+ $alinl((inaccurate)).13 $+ COLOR2|COLOR1Elite:COLOR2 $+ $alinr(%xp.standingelites).7 $+ COLOR2|COLOR1Elite:COLOR2 $+ $alinr(%xp.transelites).7 $+ COLOR2|COLOR1Elite:COLOR2 $+ $alinr(%xp.awayelites).8 $+ COLOR2|,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2|COLOR1Def:COLOR2 $+ $alinr(%xp.netdef).9 $+ COLOR2|COLOR1Def:COLOR2 $+ $alinr(%xp.standingdp).9 $+ COLOR2|COLOR1Def:COLOR2 $+ %text.transdp $+ COLOR2|COLOR1 $+ $alinr(%xp.armies).14 $+ COLOR2|,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+
+    if ( %xp.eline ) { 
+      /msg %intelchan $replacecs(COLOR2|ExportLine »COLOR1 %xp.eline COLOR2«,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    } 
+  }
+  else {
+    msg %intelchan 4Invalid intel
+  }
+  inteldel
+  goto end
+
+
+  :sos
+  var %re.angel /\[http:\/\/www\.utopiatemple\.com Angel (.*)\]/
+  var %re.server /Server: (.*) \(Age ([\d]+)\)/
+  var %re.income /(.*)% Income/
+  var %re.income2 /(.*)% Income \((.*) points\)/
+  var %re.be /(.*)% Building Effectiveness/
+  var %re.be2 /(.*)% Building Effectiveness \((.*) points\)/
+  var %re.pop /(.*)% Population Limits/
+  var %re.pop2 /(.*)% Population Limits \((.*) points\)/
+  var %re.food /(.*)% Food Production/
+  var %re.food2 /(.*)% Food Production \((.*) points\)/
+  var %re.gains /(.*)% Gains in Combat/
+  var %re.gains2 /(.*)% Gains in Combat \((.*) points\)/
+  var %re.thief /(.*)% Thievery Effectiveness/
+  var %re.thief2 /(.*)% Thievery Effectiveness \((.*) points\)/
+  var %re.magic /(.*)% Magic Effectiveness & Rune Production/
+  var %re.magic2 /(.*)% Magic Effectiveness & Rune Production \((.*) points\)/
+  while (%i <= %j) { 
+    if ($regex($cb(%i),%re.pname)) {
+      set -u20 %xp.pnamesos $regml(2) ( $+ $regml(3) $+ : $+ $regml(4) $+ )
+    }
+
+    if ($regex($cb(%i),%re.angel)) {
+      set -u20 %xp.angelsos $regml(1)
+    }
+    if ($regex($cb(%i),%re.server)) {
+      if ($regml(1) == World of Legends) set -u10 %xp.serversos WoL
+      if ($regml(1) == Genesis) set -u10 %xp.serversos Gen
+    }
+    if ($regex($cb(%i),%re.income)) {
+      set -u20 %xp.income $regml(1)
+    }
+    if ($regex($cb(%i),%re.income2)) {
+      set -u20 %xp.income $regml(1)
+      set -u20 %xp.income2 $regml(2)
+    }
+    if ($regex($cb(%i),%re.be)) {
+      set -u20 %xp.be $regml(1)
+    }
+    if ($regex($cb(%i),%re.be2)) {
+      set -u20 %xp.be $regml(1)
+      set -u20 %xp.be2 $regml(2)
+    }
+    if ($regex($cb(%i),%re.pop)) {
+      set -u20 %xp.pop $regml(1)
+    }
+    if ($regex($cb(%i),%re.pop2)) {
+      set -u20 %xp.pop $regml(1)
+      set -u20 %xp.pop2 $regml(2)
+    }
+    if ($regex($cb(%i),%re.food)) {
+      set -u20 %xp.food $regml(1)
+    }
+    if ($regex($cb(%i),%re.food2)) {
+      set -u20 %xp.food $regml(1)
+      set -u20 %xp.food2 $regml(2)
+    }
+    if ($regex($cb(%i),%re.gains)) {
+      set -u20 %xp.gains $regml(1)
+    }
+    if ($regex($cb(%i),%re.gains2)) {
+      set -u20 %xp.gains $regml(1)
+      set -u20 %xp.gains2 $regml(2)
+    }
+    if ($regex($cb(%i),%re.thief)) {
+      set -u20 %xp.thief $regml(1)
+    }
+    if ($regex($cb(%i),%re.thief2)) {
+      set -u20 %xp.thief $regml(1)
+      set -u20 %xp.thief2 $regml(2)
+    }
+    if ($regex($cb(%i),%re.magic)) {
+      set -u20 %xp.magic $regml(1)
+      var %sosend = 1
+    }
+    if ($regex($cb(%i),%re.magic2)) {
+      set -u20 %xp.magic $regml(1)
+      set -u20 %xp.magic2 $regml(2)
+      var %sosend = 1
+    }
+
+    if ($regex($cb(%i),%re.eline)) {
+      var %k $calc(%i +1)
+      while ((%k <= %j) && ($cb(%k) != $null)) {
+        set -u20 %xp.elinesos %xp.elinesos $cb(%k)
+        inc %k
+      }
+    }
+    inc %i
+  }
+
+  if (%sosend) {
+    set -u20 %soschan $chan
+    sosintel
+  }
+  else {
+    msg %intelchan 4Invalid intel
+  }
+  inteldel
+  goto end
+
+  :survey
+  var %re.angel /\[http:\/\/www\.utopiatemple\.com Angel (.*)\]/
+  var %re.server /Server: (.*) \(Age ([\d]+)\)/
+  var %re.be /Building Efficiency: (.*)/
+  var %re.pers /Personality: (.*)/
+  var %re.ruler /Ruler Name: (.*)/
+
+  var %re.homes /(.*) Homes: (.*) \((.*)\)/
+  var %re.homes2 /(.*) Homes: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+  var %re.farms /(.*) Farms: (.*) \((.*)\)/
+  var %re.farms2 /(.*) Farms: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+  var %re.mills /(.*) Mills: (.*) \((.*)\)/
+  var %re.mills2 /(.*) Mills: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+  var %re.banks /(.*) Banks: (.*) \((.*)\)/
+  var %re.banks2 /(.*) Banks: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+  var %re.tg /(.*) Training Grounds: (.*) \((.*)\)/
+  var %re.tg2 /(.*) Training Grounds: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+  var %re.arms /(.*) Armouries: (.*) \((.*)\)/
+  var %re.arms2 /(.*) Armouries: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+  var %re.rax /(.*) Barracks: (.*) \((.*)\)/
+  var %re.rax2 /(.*) Barracks: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+  var %re.forts /(.*) Forts: (.*) \((.*)\)/
+  var %re.forts2 /(.*) Forts: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+  var %re.gs /(.*) Guard Stations: (.*) \((.*)\)/
+  var %re.gs2 /(.*) Guard Stations: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+  var %re.hosp /(.*) Hospitals: (.*) \((.*)\)/
+  var %re.hosp2 /(.*) Hospitals: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+  var %re.guilds /(.*) Guilds: (.*) \((.*)\)/
+  var %re.guilds2 /(.*) Guilds: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+  var %re.towers /(.*) Towers: (.*) \((.*)\)/
+  var %re.towers2 /(.*) Towers: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+  var %re.td /(.*) Thieves' Dens: (.*) \((.*)\)/
+  var %re.td2 /(.*) Thieves' Dens: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+  var %re.wt /(.*) Watchtowers: (.*) \((.*)\)/
+  var %re.wt2 /(.*) Watchtowers: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+  var %re.libs /(.*) Libraries: (.*) \((.*)\)/
+  var %re.libs2 /(.*) Libraries: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+  var %re.schools /(.*) Schools: (.*) \((.*)\)/
+  var %re.schools2 /(.*) Schools: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+  var %re.stables /(.*) Stables: (.*) \((.*)\)/
+  var %re.stables2 /(.*) Stables: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+  var %re.dungeons /(.*) Dungeons: (.*) \((.*)\)/
+  var %re.dungeons2 /(.*) Dungeons: (.*) \((.*)\) \+ (.*) in progress \(\+(.*)\)/
+
+  var %re.total /Total Land: (.*) Acres \((.*) built\)/
+  var %re.inprog /In Progress: (.*) Acres \((.*)\)/
+  var %re.newland /New Land: (.*) Acres coming in/
+
+
+  while (%i <= %j) { 
+    if ($regex($cb(%i),%re.pname)) {
+      set -u20 %xp.pnamesurvey $regml(2) ( $+ $regml(3) $+ : $+ $regml(4) $+ )
+    }
+
+    if ($regex($cb(%i),%re.angel)) {
+      set -u20 %xp.angelsurvey $regml(1)
+    }
+    if ($regex($cb(%i),%re.server)) {
+      if ($regml(1) == World of Legends) var %xp.server WoL
+      if ($regml(1) == Genesis) var %xp.server Gen
+    }
+    if ($regex($cb(%i),%re.pers)) {
+      var %xp.pers $regml(1)
+    }
+    if ($regex($cb(%i),%re.be)) {
+      var %xp.be $regml(1)
+    }
+    if ($regex($cb(%i),%re.ruler)) {
+      var %xp.ruler = $regml(1)
+    }
+    if ($regex($cb(%i),%re.homes)) {
+      var %xp.homes2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.homes2)) {
+      var %xp.homes2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.farms)) {
+      var %xp.farms2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.farms2)) {
+      var %xp.farms2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.mills)) {
+      var %xp.mills2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.mills2)) {
+      var %xp.mills2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.banks)) {
+      var %xp.banks2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.banks2)) {
+      var %xp.banks2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.tg)) {
+      var %xp.tg2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.tg2)) {
+      var %xp.tg2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.arms)) {
+      var %xp.arms2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.arms2)) {
+      var %xp.arms2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.rax)) {
+      var %xp.rax2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.rax2)) {
+      var %xp.rax2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.forts)) {
+      var %xp.forts2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.forts2)) {
+      var %xp.forts2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.gs)) {
+      var %xp.gs2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.gs2)) {
+      var %xp.gs2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.hosp)) {
+      var %xp.hosp2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.hosp2)) {
+      var %xp.hosp2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.guilds)) {
+      var %xp.guilds2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.guilds2)) {
+      var %xp.guilds2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.towers)) {
+      var %xp.towers2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.towers2)) {
+      var %xp.towers2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.td)) {
+      var %xp.td2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.td2)) {
+      var %xp.td2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.wt)) {
+      var %xp.wt2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.wt2)) {
+      var %xp.wt2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.libs)) {
+      var %xp.libs2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.libs2)) {
+      var %xp.libs2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.schools)) {
+      var %xp.schools2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.schools2)) {
+      var %xp.schools2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.stables)) {
+      var %xp.stables2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.stables2)) {
+      var %xp.stables2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.dungeons)) {
+      var %xp.dungeons2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.dungeons2)) {
+      var %xp.dungeons2 = $regml(3)
+    }
+    if ($regex($cb(%i),%re.total)) {
+      var %xp.total $regml(1)
+      var %xp.total.pr $regml(2)
+      var %surveyend 1
+    }
+    if ($regex($cb(%i),%re.inprog)) {
+      var %xp.inprog2 $regml(2)
+    }
+    if ($regex($cb(%i),%re.newland)) {
+      var %xp.newland2 $regml(1)
+    }
+    if ($regex($cb(%i),%re.eline)) {
+      var %k $calc(%i +1)
+      while ((%k <= %j) && ($cb(%k) != $null)) {
+        set -u10 %xp.elinesurvey %xp.elinesurvey $cb(%k)
+        inc %k
+      }
+    }
+    inc %i
+  }
+  if (%surveyend) {
+    if (Prince isincs %xp.ruler) var %rank = Prince 
+    elseif (Princess isincs %xp.ruler) var %rank = Princess
+    elseif (Duke isincs %xp.ruler) var %rank = Duke
+    elseif (Duchess isincs %xp.ruler) var %rank = Duchess
+    elseif (Marquis isincs %xp.ruler) var %rank = Marquis 
+    elseif (Marchioness isincs %xp.ruler) var %rank = Marchioness
+    elseif (Count isincs %xp.ruler) var %rank = Count 
+    elseif (Countess isincs %xp.ruler) var %rank = Countess 
+    elseif (Viscount isincs %xp.ruler) var %rank = Viscount 
+    elseif (Viscountess isincs %xp.ruler) var %rank = Viscountess 
+    elseif (Baron isincs %xp.ruler) var %rank = Baron 
+    elseif (Baroness isincs %xp.ruler) var %rank = Baroness 
+    elseif (Lord isincs %xp.ruler) var %rank = Lord 
+    elseif (Noble Lady isincs %xp.ruler) var %rank = Noble Lady
+    elseif (Sir isincs %xp.ruler) var %rank = Knight
+    elseif (Lady isincs %xp.ruler) var %rank = Lady
+    elseif (King isincs %xp.ruler) var %rank = King
+    elseif (Queen isincs %xp.ruler) var %rank = Queen
+    else var %rank = Peasant
+
+    if (%xp.server == $null) var %xp.server = Gen
+    var %title = %xp.pnamesurvey $replacecs(COLOR2Survey COLOR1( $+ %xp.server $+ ),COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR1 $+ $line(@intel,$calc($fline(@intel,*Survey [*,1,0)-1)),COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2 $+ $alinl(%title).51,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2|COLOR1 $+ $alinl(%xp.pers).12 $+ COLOR2| |COLOR1HOM:COLOR2 $+ $alinr(%xp.homes2).5 $+ |COLOR1RAX:COLOR2 $+ $alinr(%xp.rax2).5 $+ |COLOR1HOS:COLOR2 $+ $alinr(%xp.hosp2).5 $+ COLOR2|,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2|COLOR1 $+ $alinl(%rank).12 $+ COLOR2| |COLOR1FRM:COLOR2 $+ $alinr(%xp.farms2).5 $+ |COLOR1TGs:COLOR2 $+ $alinr(%xp.tg2).5 $+ |COLOR1GSs:COLOR2 $+ $alinr(%xp.gs2).5 $+ COLOR2|,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2|COLOR1Land:COLOR2 $+ $alinr(%xp.total).7 $+ COLOR2|-|COLOR1MIL:COLOR2 $+ $alinr(%xp.mills2).5 $+ |COLOR1STB:COLOR2 $+ $alinr(%xp.stables2).5 $+ |COLOR1FOR:COLOR2 $+ $alinr(%xp.forts2).5 $+ COLOR2|,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2|COLOR1Be:COLOR2 $+ $alinr(%xp.be).9 $+ COLOR2|-|COLOR1BNK:COLOR2 $+ $alinr(%xp.banks2).5 $+ |COLOR1DNG:COLOR2 $+ $alinr(%xp.dungeons2).5 $+ |COLOR1ARM:COLOR2 $+ $alinr(%xp.arms2).5 $+  $+ COLOR2|,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2|COLOR1Built:COLOR2 $+ $alinr(%xp.total.pr).6 $+ COLOR2| |COLOR1GUI:COLOR2 $+ $alinr(%xp.guilds2).5 $+ COLOR2|COLOR1TDs:COLOR2 $+ $alinr(%xp.td2).5 $+ |COLOR1LIB:COLOR2 $+ $alinr(%xp.libs2).5 $+ COLOR2|,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    msg %intelchan $replacecs(COLOR2|COLOR1InProg:COLOR2 $+ $alinr(%xp.inprog2).5 $+ COLOR2| |COLOR1TOW:COLOR2 $+ $alinr(%xp.towers2).5 $+ COLOR2|COLOR1WTs:COLOR2 $+ $alinr(%xp.wt2).5 $+ |COLOR1SCH:COLOR2 $+ $alinr(%xp.schools2).5 $+  $+ COLOR2|,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    if ( %xp.elinesurvey ) { 
+      /msg %intelchan $replacecs(COLOR2|ExportLine  »COLOR1 %xp.elinesurvey COLOR2 «,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    } 
+  }
+  else {
+  msg %intelchan 4Invalid intel }
+  inteldel
+  goto end
+  :end
+}
+
+alias alinr {
+  var %len = $len($1-)
+  var %toadd = $calc($prop - %len)
+  /return $str( $chr(160) ,%toadd ) $+ $1-
+}
+alias alinl {
+  var %len = $len($1-)
+  var %toadd = $calc($prop - %len)
+  /return $1- $+ $str( $chr(160) ,%toadd ) 
+}
+
+;-- Makes the Exportline clickable
+on ^*:hotlink:*:*:{
+  if ($regex($strip($hotline),/Export Line » (.*) «/)) {
+    if ($mouse.key & 1) clipboard $regml(1)
+    return
+  }
+  if ($regex($strip($hotline),/ExportLine » (.*) «/)) {
+    if ($mouse.key & 1) clipboard $regml(1)
+    return
+  }
+  if ($regex($strip($hotline),/Export: (.*)/)) {
+    if ($mouse.key & 1) clipboard $regml(1)
+    return
+  }
+  if ( $regex($strip($hotline),/ExportLine -> (.*) <-/) ) {
+    if ($mouse.key & 1) clipboard $regml(1)
+    return
+  }
+  if ( $regex($strip($hotline),/Export Line -> (.*) <-/) ) {
+    if ($mouse.key & 1) clipboard $regml(1)
+    return
+  }
+
+
+  if ( $regex($1,/([\[]?)([\d]+):([\d]+)([\]]?)/ ) ) {
+    var %bracket1 = $regml(1)
+    var %bracket2 = $regml(4)
+    var %kd = $regml(2)
+    var %is = $regml(3)
+    if (%bracket1 != [ && %bracket2 != ]) {
+      if ($mouse.key & 1) run http://u1.swirve.com/scores.cgi?ks= $+ %kd $+ &is= $+ %is
+    }
+    else halt
+    return
+  }
+  else {
+    halt
+  }
+}
+
+alias drawvotbar {
+  var %percent $round( $calc( $1 / 8 ),0)
+  var %i = 1
+  while (%i <= 50) {
+    if (%i <= %percent) {
+      if ( (%i != 12) && (%i != 25) && (%i != 37) ) var %out = $replacecs(%out $+ COLOR2 $+ $chr(127),COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+      if (%i == 12) var %out = $replacecs(%out $+ COLOR2 $+ $chr(166),COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+      if (%i == 25) var %out = $replacecs(%out $+ COLOR2 $chr(166),COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+      if (%i == 37) var %out = $replacecs(%out $+ COLOR2 $chr(166),COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    }  
+    else {
+      if ( (%i != 12) && (%i != 25) && (%i != 37) ) var %out = %out $+ %exportoverrideC4 $+ =
+      if (%i == 12) var %out = $replacecs(%out $+ COLOR1 $+ $chr(166),COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+      if (%i == 25) var %out = $replacecs(%out $+ COLOR1 $+ $chr(166),COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+      if (%i == 37) var %out = $replacecs(%out $+ COLOR1 $+ $chr(166),COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+    }
+    inc %i
+  }
+  return %out
+}
+
+alias sosintel {
+  if ( !%xp.elinesos ) {
+    var %xp.income3 = $iif(%xp.income2 > 0,( $+ %xp.income2 $+ ),( $+ 0 points $+ ) )
+    var %xp.be3 = $iif(%xp.be2 > 0,( $+ %xp.be2 $+ ),( $+ 0 points $+ ) )
+    var %xp.pop3 = $iif(%xp.pop2 > 0,( $+ %xp.pop2 $+ ),( $+ 0 points $+ ) )
+    var %xp.food3 = $iif(%xp.food2 > 0,( $+ %xp.food2 $+ ),( $+ 0 points $+ ) )
+    var %xp.gains3 = $iif(%xp.gains2 > 0,( $+ %xp.gains2 $+ ),( $+ 0 points $+ ) )
+    var %xp.thief3 = $iif(%xp.thief2 > 0,( $+ %xp.thief2 $+ ),( $+ 0 points $+ ) )
+    var %xp.magic3 = $iif(%xp.magic2 > 0,( $+ %xp.magic2 $+ ),( $+ 0 points $+ ) )
+  }
+  var %income.max = 2
+  var %be.max = 1
+  var %pop.max = 1
+  var %food.max = 6
+  var %gains.max = 1.25
+  var %thief.max = 6
+  var %magic.max = 5
+
+  if (1) {
+    var %xp.race = Any
+    var %ppai = $calc(%xp.income ^ 2 / %income.max ^ 2 )
+    var %ppab = $calc(%xp.be ^ 2 / %be.max ^ 2 )
+    var %ppap = $calc(%xp.pop ^ 2 / %pop.max ^ 2 )
+    var %ppaf = $calc(%xp.food ^ 2 / %food.max ^ 2  )
+    var %ppag = $calc(%xp.gains ^ 2 / %gains.max ^ 2 )
+    var %ppat = $calc(%xp.thief ^ 2 / %thief.max ^ 2 ) 
+    var %ppam = $calc(%xp.magic ^ 2 / %magic.max ^ 2 ) 
+    if ( %land && %xp.elinesos ) {
+      var %xp.income4 = ( $+ $round($calc(%ppai * %land),0) $+ )
+      var %xp.be4 = ( $+ $round($calc(%ppab * %land),0) $+ )
+      var %xp.pop4 = ( $+ $round($calc(%ppap * %land),0) $+ )
+      var %xp.food4 = ( $+ $round($calc(%ppaf * %land),0) $+ )
+      var %xp.gains4 = ( $+ $round($calc(%ppag * %land),0) $+ )
+      var %xp.thief4 = ( $+ $round($calc(%ppat * %land),0) $+ )
+      var %xp.magic4 = ( $+ $round($calc(%ppam * %land),0) $+ )
+      var %totalpoints = $calc( %xp.income4 + %xp.be4 + %xp.pop4 + %xp.food4 + %xp.gains4 + %xp.thief4 + %xp.magic4 )
+      var %tpointstext = Points: $round(%totalpoints,0)
+      var %landtext = %land acres
+    }
+  }
+  if (!%xp.serversos) var %xp.serversos = Gen
+  msg %intelchan $replacecs(COLOR1 $+ $line(@intel,$calc($fline(@intel,*Science*,1,0)-1)),COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+  msg %intelchan $replacecs(COLOR2 $+ %xp.pnamesos $+  COLOR1 $+ Race: %xp.race %landtext %libstext - %tpointstext PPA: %ppatotal -COLOR2 SoSCOLOR1( $+ %xp.serversos $+ ),COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+  msg %intelchan $replacecs(COLOR2| COLOR1I $drawvotbar(%ppai) $+ COLOR2 + $+ %xp.income $+ % COLOR1gc %xp.income3 %xp.income4,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+  msg %intelchan $replacecs(COLOR2| COLOR1B $drawvotbar(%ppab) $+ COLOR2 + $+ %xp.be $+ % COLOR1be %xp.be3 %xp.be4,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+  msg %intelchan $replacecs(COLOR2| COLOR1P $drawvotbar(%ppap) $+ COLOR2 + $+ %xp.pop $+ % COLOR1pop %xp.pop3 %xp.pop4,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+  msg %intelchan $replacecs(COLOR2| COLOR1F $drawvotbar(%ppaf) $+ COLOR2 + $+ %xp.food $+ % COLOR1food %xp.food3 %xp.food4,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+  msg %intelchan $replacecs(COLOR2| COLOR1G $drawvotbar(%ppag) $+ COLOR2 + $+ %xp.gains $+ % COLOR1gains %xp.gains3 %xp.gains4,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+  msg %intelchan $replacecs(COLOR2| COLOR1T $drawvotbar(%ppat) $+ COLOR2 + $+ %xp.thief $+ % COLOR1thief %xp.thief3 %xp.thief4,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+  msg %intelchan $replacecs(COLOR2| COLOR1M $drawvotbar(%ppam) $+ COLOR2 + $+ %xp.magic $+ % COLOR1magic %xp.magic3 %xp.magic4,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+
+  if ( %xp.elinesos ) { 
+    msg %intelchan $replacecs(COLOR2|ExportLine »COLOR1 %xp.elinesos COLOR2«,COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+  } 
+  else { 
+    msg %intelchan $replacecs(COLOR1Sciences ( $chr(166) is at 100, 200, 300 ppa. Max is 400 ppa ),COLOR1,%exportoverrideC3,COLOR2,%exportoverrideC4)
+  }
+
+  unset %xp.pnamesos %xp.angelsos %xp.serversos 
+  unset %xp.income %xp.be %xp.pop %xp.food %xp.gains %xp.thief %xp.magic
+  unset %xp.income2 %xp.be2 %xp.pop2 %xp.food2 %xp.gains2 %xp.thief2 %xp.magic2
+  unset %sosend %xp.elinesos
+}

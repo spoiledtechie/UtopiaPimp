@@ -1,0 +1,168 @@
+﻿/*
+Theme: Ghetto Sunset
+Background: #EEDDFF
+Borders: #CCAABB
+Font-Color:#000088
+
+Tabs: #BBAAFF
+
+Column Selections On: -> no idea what you mean with it.. but it should be #EEDDFF, #BBAAFF or #000088
+
+Table alt Items: #EEDDFF
+Table Items: #BBAAFF 
+*/
+
+body {background-color: #FFEEFF; color: #000088; }
+body a:link, body a:visited { color: #000088; }
+
+.divKingSummary{ background-color:#EEDDFF;border: solid 1px #CCAABB;}
+
+/* Random Styles */
+.RFAsterisk { color: Red; }
+/*This is the style for all dropdowns in the entire TAF Webpage */
+/*For all decriptions so that the user can see more of what they are typeing*/
+.lblWarnings { color:Black;background-color:White; }
+
+/* Header Content */
+
+.iframeSideBody{background-color: #BBAAFF;}
+
+.divRegisterforUtopia { background-color: #BBAAFF; border: solid 1px #CCAABB; }
+.divCurrentDate { border: solid 1px #CCAABB; }
+
+/* Anonymous Content */
+.divContainer { border: solid 1px #CCAABB; background-color: #BBAAFF; }
+
+.lianonymouslinks { border: solid 1px #CCAABB; }
+
+.divLogin { border-bottom: solid 1px #CCAABB; border-top: solid 1px #CCAABB; }
+
+/* Anonymous Pages */
+.divContentContainer { border-top: solid 1px #CCAABB; }
+.pnldivHeaders { border-top: solid 2px #CCAABB; border-bottom: solid 2px #CCAABB; background-color:#EEDDFF;  }
+
+.liColumnChooser ul li a:link, .liColumnChooser ul li a:visited { border: solid 1px #C5C5C5; }
+.liActiveColumns { border: solid 1px #C5C5C5; }
+.ColumnOn { background-color:#BBAAFF; }
+
+.btnNotSelected { background-color: #BBAAFF; color: #000088; border: solid 1px #CCAABB; }
+
+/* Logged in Content */
+.divLoggedInLinks { border-top: solid 1px #CCAABB; }
+.liLoggedInlinks { border: solid 1px #CCAABB; }
+
+.CommentsPopupControl { border: solid 1px #CCAABB; background: #EEDDFF; }
+.modalBackground { background-color: Gray; filter: alpha(opacity=70); opacity: 0.7; }
+
+.divTargetProvBox{border: solid 1px #CCAABB;  background-color:#EEDDFF; color:#FFF;}
+
+/* xp theme */
+.ajax__tabCustom_xp .ajax__tab_header { background-color: #BBAAFF; }
+.ajax__tabCustom_xp .ajax__tab_outer { border: solid .1em #CCAABB; }
+.ajax__tabCustom_xp .ajax__tab_tab { background-color: #BBAAFF; }
+.ajax__tabCustom_xp .ajax__tab_hover .ajax__tab_outer { background-color: #EEDDFF; }
+.ajax__tabCustom_xp .ajax__tab_hover .ajax__tab_inner { background-color: #EEDDFF; }
+.ajax__tabCustom_xp .ajax__tab_hover .ajax__tab_tab { background-color: #EEDDFF; }
+.ajax__tabCustom_xp .ajax__tab_active .ajax__tab_outer { background-color: #EEDDFF;}
+.ajax__tabCustom_xp .ajax__tab_active .ajax__tab_inner { background-color: #EEDDFF; }
+.ajax__tabCustom_xp .ajax__tab_active .ajax__tab_tab { background-color: #EEDDFF; }
+.ajax__tabCustom_xp .ajax__tab_body { border: solid .1em #FFFFFF; background-color: #BBAAFF; }
+
+/* xp theme */
+.ajax__tabCustom_xp_main .ajax__tab_header { background-color: #BBAAFF; }
+.ajax__tabCustom_xp_main .ajax__tab_outer { border: solid .1em #CCAABB;  }
+.ajax__tabCustom_xp_main .ajax__tab_inner { }
+.ajax__tabCustom_xp_main .ajax__tab_tab { background-color: #BBAAFF; }
+.ajax__tabCustom_xp_main .ajax__tab_hover .ajax__tab_outer { background-color: #EEDDFF; }
+.ajax__tabCustom_xp_main .ajax__tab_hover .ajax__tab_inner { background-color: #EEDDFF; }
+.ajax__tabCustom_xp_main .ajax__tab_hover .ajax__tab_tab { background-color: #EEDDFF; }
+.ajax__tabCustom_xp_main .ajax__tab_active .ajax__tab_outer { background-color: #EEDDFF;}
+.ajax__tabCustom_xp_main .ajax__tab_active .ajax__tab_inner { background-color: #EEDDFF; }
+.ajax__tabCustom_xp_main .ajax__tab_active .ajax__tab_tab { background-color: #EEDDFF; }
+.ajax__tabCustom_xp_main .ajax__tab_body { border: solid .1em #CCAABB; background-color: #EEDDFF; }
+
+/* for the Calender attributes */
+.ajax__calendar .ajax__calendar_container { border: 1px solid #646464; background-color: #ffffff; color: #000088; }
+.ajax__calendar .ajax__calendar_footer { border-top: 1px solid #f5f5f5; }
+.ajax__calendar .ajax__calendar_dayname { border-bottom: 1px solid #f5f5f5; }
+.ajax__calendar .ajax__calendar_day { border: 1px solid #ffffff; }
+.ajax__calendar .ajax__calendar_month { border: 1px solid #ffffff; }
+.ajax__calendar .ajax__calendar_year { border: 1px solid #ffffff; }
+.ajax__calendar .ajax__calendar_active .ajax__calendar_day { background-color: #edf9ff; border-color: #0066cc; color: #0066cc; }
+.ajax__calendar .ajax__calendar_active .ajax__calendar_month { background-color: #edf9ff; border-color: #0066cc; color: #0066cc; }
+.ajax__calendar .ajax__calendar_active .ajax__calendar_year { background-color: #edf9ff; border-color: #0066cc; color: #0066cc; }
+.ajax__calendar .ajax__calendar_other .ajax__calendar_day { background-color: #ffffff; border-color: #ffffff; color: #646464; }
+.ajax__calendar .ajax__calendar_other .ajax__calendar_year { background-color: #ffffff; border-color: #ffffff; color: #646464; }
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_day { background-color: #edf9ff; border-color: #daf2fc; color: #0066cc; }
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_month { background-color: #edf9ff; border-color: #daf2fc; color: #0066cc; }
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_year { background-color: #edf9ff; border-color: #daf2fc; color: #0066cc; }
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_title { color: #0066cc; }
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_today { color: #0066cc; }
+
+/* For All Gridviews */
+.GridviewFooterStyle A:link, .GridviewFooterStyle A:visited, .GridviewFooterStyle { background: #EEDDFF; border: solid 1px #CCAABB; }
+.GridviewRowStyle { background: #BBAAFF; }
+.GridviewRowStyle A:link, .GridviewRowStyle A:visited { background: #BBAAFF; }
+.GridviewEditRowStyle, .GridviewEditRowStyle A:link, .GridviewEditRowStyle A:visited { background: #729FE4; color: White; }
+.GridViewSelectedRowStyle { background: #729FE4; font-weight: bold; color: White; }
+.GridViewSelectedRowStyle A:link, .GridViewSelectedRowStyle A:visited { background: #729FE4; font-weight: bold; color: White; }
+.GridviewPagerStyle, .GridviewPagerStyle A:link, .GridviewPagerStyle A:visited { background: #008BDA; color: White; }
+.GridviewHeaderStyle A:link, .GridviewHeaderStyle A:visited { background-color: #EEDDFF; color: White; }
+.GridviewHeaderStyle { background-color: #EEDDFF; border: solid 1px #CCAABB; color: #000088; }
+.GridviewHeaderStyleRotateText A:link, .GridviewHeaderStyleRotateText A:visited { background-color: #EEDDFF; color: White; }
+.GridviewHeaderStyleRotateText { background-color: #EEDDFF; color: White; border-color: #CCAABB; }
+.GridViewAlternatingRowStyle { background: #EEDDFF; }
+.GridViewAlternatingRowStyle A:link, .GridViewAlternatingRowStyle A:visited { background: #EEDDFF; }
+.GridviewPagerStyle A:Hover, .GridViewAlternatingRowStyle A:Hover, .GridviewHeaderStyleRotateText A:Hover, .GridViewSelectedRowStyle A:Hover, .GridviewRowStyle A:Hover, GridviewEditRowStyle A:Hover, .GridviewHeaderStyle A:Hover { }
+
+.tblKingdomInfo tr td { color: #000088; }
+.tblKingdomInfo tr th {  background-color: #EEDDFF; border:solid 1px #CCAABB; color: #000088; cursor: pointer; }
+.tblKingdomInfo tr.d0 td { background-color: #EEDDFF; color: #000088; }
+.tblKingdomInfo tr.d1 td { background-color: #BBAAFF; }
+.tblKingdomInfo tfoot td { background-color: #EEDDFF; border:solid 1px #CCAABB; color: #000088; }
+
+.divProvincePane{  border:solid 1px #CCAABB; }
+.divProvinceDetailHeader{ border: solid 1px #CCAABB; background-color: #EEDDFF; }
+
+.ui-tabs .ui-tabs-nav li { border:solid 1px #CCAABB; }
+
+/* Component containers
+----------------------------------*/
+.ui-widget { font-size: 1.1em; background: #BBAAFF;}
+.ui-widget-content { border: 1px solid #CCAABB; background: #EEDDFF; color: #000088; }
+.ui-widget-content a { color: #000088; }
+.ui-widget-header { border: 1px solid #CCAABB; background: #BBAAFF; color: #000088;  }
+.ui-widget-header a { color: #000088; }
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default { border: 1px solid #FFFFFF; background: #BBAAFF ; color: #000088;}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #000088; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus { border: 1px solid #CCAABB; background: #EEDDFF ; color: #000088; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #000088; }
+.ui-state-active, .ui-widget-content .ui-state-active { border: 1px solid #CCAABB; background: #EEDDFF ; color: #000088; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #000088; }
+
+/* Style for Usual tabs */
+.usual { color: #000088; }
+.mainTabs a {color: #000088;  border: solid .1em #CCAABB; }
+.mainTabs a:hover {  background: #EEDDFF; }
+.mainTabs a.selected { color: #000088; background: #EEDDFF; border-bottom: 1px solid #EEDDFF;  }
+.usual div, .usualList div{ color:#000088; background:#EEDDFF; border: solid .1em #CCAABB;}
+
+.usual3 { color: #111; }
+.usual3 div { color: #FFFFFF; background: #EEDDFF;  }
+
+.borders{ border:1px solid #CCAABB; }
+
+/* 
+Background: #EEDDFF
+Borders: #CCAABB
+
+Tabs: #BBAAFF
+
+ColumnSelections On: #BBAAFF
+
+Table:alt #EEDDFF
+Table: Item #BBAAFF
+*/

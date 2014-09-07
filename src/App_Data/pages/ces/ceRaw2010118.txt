@@ -1,0 +1,84 @@
+﻿Version: 3789
+Game LobbyWoL
+
+ 
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail
+Forum
+Kingdom Chat
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+69,512	26,500	96,761	12,164	248,631	2,002	124.191
+KINGDOM NEWS
+Province News
+Kingdom News
+The Daily Paper lists the various happenings throughout your kingdom. Included are important activities such as attacks, deaths, and changes in relations with your kingdom.
+
+Legend
+Intra-Kingdom Conflict	Relations News	
+Actions against our Kingdom	Dragon News	
+Actions by our Kingdom	Obituaries	
+The Kingdom Reporter
+< May YR4 EditionJuly YR4 Edition > June YR4 Edition
+June 1 of YR4	 John Paul Jones has sent an aid shipment to Alice Cooper.
+June 1 of YR4	 Johnny Drama has sent an aid shipment to Rosie ODonnell.
+June 3 of YR4	 Johnny Drama has sent an aid shipment to Rosie ODonnell.
+June 5 of YR4	 Alice Cooper has sent an aid shipment to Pauly Shore.
+June 5 of YR4	 John Paul Jones has sent an aid shipment to Alice Cooper.
+June 6 of YR4	 John Paul Jones has sent an aid shipment to Steve Austin.
+June 6 of YR4	 Steve Austin has sent an aid shipment to John Paul Jones.
+June 6 of YR4	 Pauly Shore has sent an aid shipment to Alice Cooper.
+June 6 of YR4	 Alice Cooper has sent an aid shipment to Steve Austin.
+June 6 of YR4	 John Paul Jones has sent an aid shipment to Alice Cooper.
+June 6 of YR4	 Jean-Claude Van Damme (7:20) captured 103 acres of land from Legion Lost (9:9).
+June 7 of YR4	 Miley Cyrus has sent an aid shipment to Steve Austin.
+June 7 of YR4	 Michael Jackson (7:20) captured 140 acres of land from Vicar (4:11).
+June 7 of YR4	 Steve Austin has sent an aid shipment to Alice Cooper.
+June 7 of YR4	 Burt Reynolds has sent an aid shipment to Miley Cyrus.
+June 7 of YR4	 Johnny Drama has sent an aid shipment to John Paul Jones.
+June 7 of YR4	 John Paul Jones has sent an aid shipment to Steve Austin.
+June 8 of YR4	 An unknown province from F u n S h o w (7:20) captured 84 acres of land from Onslaught (2:29).
+June 9 of YR4	 Vicar (4:11) ambushed armies from Michael Jackson (7:20) and took 35 acres of land.
+June 9 of YR4	 Steve Austin has sent an aid shipment to John Paul Jones.
+June 10 of YR4	 Alice Cooper has sent an aid shipment to Steve Austin.
+June 10 of YR4	 An unknown province from F u n S h o w (7:20) captured 88 acres of land from tnk fingers Bolla (6:6).
+June 11 of YR4	 Dolph Lundgren has sent an aid shipment to Ralph Macchio.
+June 11 of YR4	 Ralph Macchio has sent an aid shipment to Dolph Lundgren.
+June 12 of YR4	 An unknown province from F u n S h o w (7:20) captured 115 acres of land from Pointy Eared Murky (4:11).
+June 14 of YR4	 An unknown province from F u n S h o w (7:20) captured 111 acres of land from BADDAY (3:30).
+June 16 of YR4	 John Paul Jones has sent an aid shipment to Steve Austin.
+June 16 of YR4	 Burt Reynolds has sent an aid shipment to John Paul Jones.
+June 16 of YR4	 Johnny Drama has sent an aid shipment to Alice Cooper.
+June 16 of YR4	 Alice Cooper has sent an aid shipment to Johnny Drama.
+June 16 of YR4	 John Paul Jones has sent an aid shipment to Johnny Drama.
+June 19 of YR4	 We have cancelled our ceasefire with Stealthy Leopards WAR (1:14)!
+June 20 of YR4	 Burt Reynolds has sent an aid shipment to Pauly Shore.
+June 20 of YR4	 John Paul Jones has sent an aid shipment to Johnny Drama.
+June 21 of YR4	 Johnny Drama has sent an aid shipment to Miley Cyrus.
+June 21 of YR4	 Miley Cyrus has sent an aid shipment to Johnny Drama.
+June 21 of YR4	 Pauly Shore has sent an aid shipment to Johnny Drama.
+June 21 of YR4	 Michael Jackson (7:20) captured 124 acres of land from StrangerThings UN (1:26).
+June 21 of YR4	 An unknown province from F u n S h o w (7:20) captured 123 acres of land from OMG DE sux (6:35).
+June 22 of YR4	 An unknown province from To Be Determined (1:26) invaded Michael Jackson (7:20) and captured 161 acres of land.
+June 22 of YR4	 Burt Reynolds has sent an aid shipment to Johnny Drama.
+June 22 of YR4	 Pauly Shore has sent an aid shipment to Johnny Drama.
+June 22 of YR4	 John Paul Jones has sent an aid shipment to Gummy Bear.
+June 22 of YR4	 John Belushi (7:20) captured 66 acres of land from Darkly Dreaming Boobster (7:35).
+June 23 of YR4	 An unknown province from F u n S h o w (7:20) captured 146 acres of land from UN Pilipinas Win na Win (1:26).
+June 23 of YR4	 Gary Busey (7:20) captured 72 acres of land from UN Pilipinas Got Talent (1:26).
+June 23 of YR4	 Darkly Dreaming Boobster (7:35) invaded John Belushi (7:20) and captured 231 acres of land.

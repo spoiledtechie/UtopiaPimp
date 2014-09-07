@@ -1,0 +1,571 @@
+
+As leader of your Province, you know that the peasantry rely on you to make the critical decisions that affect their everyday lives. You also know that you cannot do this alone. Your Council of Elders helps to keep track of all the hustle and bustle within your province. They now stand before you, ready to provide you with the information you need.
+
+Select your area of inquiry:
+Affairs of the State   Military Affairs   Internal Affairs   Arts & Sciences  
+Mystic Affairs   Our History   Kingdom Growth
+
+Internal Affairs
+
+Sir Tech Master, I am in charge of the development of infrastructure within your province.
+I offer to you information on our buildings, their efficiency, and a list of when our current projects will be completed.
+
+Building Effectiveness - The structures we construct throughout our lands may or may not function at full capacity, depending on two major factors. First, people must work in the buildings to realize their full utility. Second, money invested in tools sciences can raise efficiency as well. Note that changes in employment require time to shift your building efficiency. Listed below are the net effects of each of our buildings, not including personality or racial bonuses.
+
+Current Available Workers:	13,149
+Current Available Jobs:	34,625
+Building Efficiency:	84.2%
+Workers Needed for Max Efficiency:	23,199
+
+You will find that as we build more of certain building types, many new structures will be less effective. The Next 1% in parentheses below refers to the benefits of dedicating 1% more of your land to a particular building type.
+
+Building Effects
+Building	Owned	Current Effects (Next 1%)
+Barren Lands 	5	0.4% 	
+Homes 	0	0.0% 	Increase Max Population by 0
+Increase Birth Rates by 0.00% (2.08%)
+Farms 	123	8.8% 	Produce 7251 Bushels of Food
+Mills 	0	0.0% 	0.00% Lower Building Costs (3.33%)
+Reduce Exploration Costs by 0.00% (2.50%)
+Banks 	0	0.0% 	Produce 0gc per Day
+0.00% Higher Income (0.83%)
+Training Grounds 	1	0.1% 	0.09% Higher Offensive Efficiency (1.25%)
+Armouries 	288	20.7% 	20.75% Lower Military Training Costs (0.73%)
+27.67 Lower Military Wages (0.97%)
+Barracks 	1	0.1% 	0.09% Lower Attack Times (1.25%)
+Forts 	0	0.0% 	0.00% Higher Defensive Efficiency (1.25%)
+Guard Stations 	1	0.1% 	0.12% Lower Resource Losses when Attacked (1.66%)
+Hospitals 	0	0.0% 	0.00% Chance to Cure the Plague each Day (1.67%)
+0.00% Lower Military Losses (2.50%)
+Guilds 	137	9.9% 	2.3 Wizards Trained per Day
+Towers 	137	9.9% 	Produce 1154 Runes per Day
+Thieves' Dens 	0	0.0% 	0.00% Lower Losses in Thievery Operations (3.33%)
+0.00% Higher Thievery Effectiveness (2.50%)
+Watchtowers 	0	0.0% 	0.00% Chance of Catching Enemy Thieves (2.08%)
+0.00% Chance of Identifying Enemy Thieves (3.33%)
+Libraries 	0	0.0% 	0.00% Increase in Science Effects (1.98%)
+Schools 	518	37.3% 	Produce 1745 Science Books per Day
+Protect 59.06% of Science from Enemies (0.62%)
+Stables 	179	12.9% 	Produce 151 Horses per Day
+Hold 8950 Horses
+Dungeons 	0	0.0% 	House 0 Prisoners of War
+
+	Exploration / Construction: Number of Days
+Building	Owned	% 	1 	2 	3 	4 	5 	6 	7 	8 	9 	10 	11 	12 	13 	14 	15 	16 	17 	18 	19 	20 	21 	22 	23 	24
+Barren Lands
+Homes
+Farms
+Mills
+Banks
+Training Grounds
+Armouries
+Barracks
+Forts
+Guard Stations
+Hospitals
+Guilds
+Towers
+Thieves' Dens
+Watchtowers
+Libraries
+Schools
+Stables
+Dungeons
+	5
+0
+123
+0
+0
+1
+288
+1
+0
+1
+0
+137
+137
+0
+0
+0
+518
+179
+0
+	0.4%
+0.0%
+8.8%
+0.0%
+0.0%
+0.1%
+20.7%
+0.1%
+0.0%
+0.1%
+0.0%
+9.9%
+9.9%
+0.0%
+0.0%
+0.0%
+37.3%
+12.9%
+0.0%
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
+Behead this Advisor
+
+	

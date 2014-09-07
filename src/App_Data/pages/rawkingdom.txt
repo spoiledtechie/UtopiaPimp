@@ -1,0 +1,73 @@
+
+Version: 3685
+Game LobbyWoL
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail
+Forum
+War Forum
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+69	10,457	107,810	2,394	344,793	2,094	164.658
+KINGDOM DETAILS
+
+Current kingdom is funshow (4:40)
+Kingdom:		Island:		
+< PreviousNext >Random
+Kingdom Statistics
+
+Total Provinces	20
+Total Networth	14,051,040gc (avg: 702,552gc)
+Total Land	102,135 acres (avg: 5,106 acres)
+Land Rank	11 of 532
+Net Worth Rank	14 of 532
+Warfare
+
+Stance	Normal
+Wars Won / Concluded Wars	2 / 3
+Average Opponent Relative Size	74%This kingdom is currently at war with Sanctuary of Absalom (6:2)
+Province	Race	Land	Net Worth	Net Worth/Acre	Nobility
+Colosseum	Human	2,809 acres	255,907gc	91gc	Lord
+Pepsa Kolicus	Human	3,196 acres	319,610gc	100gc	Viscount
+LETA^	Dark Elf	11,960 acres	1,857,617gc	155gc	Noble Lady
+Octavian (M)	Human	52,300 acres	7,546,053gc	144gc	King
+Caligula	Dark Elf	3,355 acres	505,586gc	150gc	Lord
+Aeneid*	Human	2,004 acres	344,937gc	164gc	Lord
+Cicero	Human	1,475 acres	224,825gc	152gc	Knight
+Marcus Aurelius	Human	4,814 acres	631,555gc	131gc	Lord
+Gaius Marius	Human	1,346 acres	109,362gc	81gc	Knight
+the DL	Dark Elf	3,812 acres	318,140gc	83gc	Count
+Romulus	Human	1,356 acres	116,577gc	85gc	Peasant
+Secundus	Human	2,982 acres	260,511gc	87gc	Knight
+Brutus	Human	628 acres	131,412gc	209gc	Peasant
+Augustus	Dark Elf	1,816 acres	374,234gc	206gc	Knight
+Carpe Diem	Gnome	2,014 acres	217,090gc	107gc	Peasant
+Patrician	Human	671 acres	184,067gc	274gc	Knight
+Spartacus	Dark Elf	688 acres	166,077gc	241gc	Peasant
+Britannia	Human	1,247 acres	86,822gc	69gc	Peasant
+Joltus Omacus	Elf	1,235 acres	172,766gc	139gc	Lord
+Gallia	Gnome	2,337 acres	227,892gc	97gc	Baron
+Legend
+Protection^
+Kingdom Monarch (M)
+You
+Online*
+
+ 
+Human	2,982 acres	260,511gc	87gc	Knight
+Brutus	Human	628 acres	131,412gc	209gc	Peasant
+Augustus	Dar

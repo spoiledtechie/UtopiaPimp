@@ -1,0 +1,81 @@
+
+Version: 3685
+Game LobbyWoL
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail
+Forum
+War Forum
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+69	10,457	107,810	2,394	344,793	2,094	164.658
+KINGDOM DETAILS
+
+Current kingdom is Sanctuary of Absalom (6:2)
+Kingdom:		Island:		
+< PreviousNext >Random
+Kingdom Statistics
+
+Total Provinces	25
+Total Networth	28,317,612gc (avg: 1,132,704gc)
+Total Land	202,557 acres (avg: 8,102 acres)
+Warfare
+
+Their Attitude Towards Us	Ceasefire
+Our Attitude Towards Them	Ceasefire
+Stance	Normal
+Wars Won / Concluded Wars	3 / 6
+Average Opponent Relative Size	105%This kingdom is currently at war with funshow (4:40)
+Province	Race	Land	Net Worth	Net Worth/Acre	Nobility
+Amiably Incandescent*	Orc	10,222 acres	1,427,226gc	139gc	Baron
+Blasted (M)	Human	23,405 acres	3,910,042gc	167gc	King
+Crushed	Halfling	5,493 acres	951,318gc	173gc	Viscount
+Debauched*	Orc	9,546 acres	1,445,537gc	151gc	Knight
+Embalmed	Orc	3,627 acres	462,164gc	127gc	Baron
+Fitshaced	Orc	8,839 acres	1,095,031gc	123gc	Noble Lady
+Ginned Up	Orc	10,637 acres	1,388,488gc	130gc	Viscountess
+Haywire	Halfling	5,088 acres	804,659gc	158gc	Viscountess
+I may be drunk	Elf	4,716 acres	713,959gc	151gc	Baroness
+Just plain drunk	Orc	3,694 acres	561,206gc	151gc	Viscountess
+Keg-legged	Orc	10,382 acres	1,344,309gc	129gc	Baron
+Lubed Up	Orc	11,344 acres	1,498,806gc	132gc	Knight
+Molly	Orc	3,591 acres	471,826gc	131gc	Lord
+Nuked	Orc	11,473 acres	1,606,303gc	140gc	Knight
+Out of Sight	Orc	10,239 acres	1,363,115gc	133gc	Lady
+Plastered	Orc	4,269 acres	550,492gc	128gc	Lord
+Quoxed	Orc	9,805 acres	1,196,539gc	122gc	Baron
+roaring	Orc	11,222 acres	1,450,689gc	129gc	Noble Lady
+SipSippin with Screw	Orc	2,799 acres	463,358gc	165gc	Knight
+Hammered	Orc	8,085 acres	947,656gc	117gc	Knight
+Upholstered	Orc	3,328 acres	476,415gc	143gc	Knight
+Very Tanked	Orc	9,369 acres	1,252,482gc	133gc	Lord
+Wrenched*	Orc	3,610 acres	518,748gc	143gc	Baron
+Ydrunken	Orc	11,086 acres	1,416,257gc	127gc	Viscount
+Zombiefied*	Gnome	6,688 acres	1,000,987gc	149gc	Viscount
+Legend
+Protection^
+Kingdom Monarch (M)
+You
+Online*
+
+ 
+6,539gc	122gc	Baron
+roaring	Orc	11,222 acres	1,450,689gc	129gc	Noble Lady
+SipSippin with Screw	Orc	2,799 acres	463,358gc	165gc	Knight
+Hammered	Orc	8,085 acres	947,656gc	117gc	Knight
+Upholstered	Orc	3,328 acres	476,415gc	143gc	Knight
+Very Tanked	Orc	9,369 acres	1,252,482gc	1

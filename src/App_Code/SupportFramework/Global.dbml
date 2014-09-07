@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="pimpTest_Data" Class="GlobalDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS2010;AttachDbFilename=|DataDirectory|\pimpTest_Data.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="pimpTest_DataConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Global_User_Audit" Member="Global_User_Audits">
+    <Type Name="Global_User_Audit">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="User_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IP_Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Browser_String" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Current_URL" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Previous_URL" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Auth_User" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Current_User_Path" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="AnonymousID" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Remote_User" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Logon_User" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HTTP_Host" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Windows_Platform" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JavaScript" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Win16" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Win32" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BrowserScreen_Resolution" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="ActiveXControls" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsMobile" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Global_Sitemap" Member="Global_Sitemaps">
+    <Type Name="Global_Sitemap">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Application_Id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="url" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="lastmod" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="changefreq" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Global_Data_Capture" Member="Global_Data_Captures">
+    <Type Name="Global_Data_Capture">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Raw_Data" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Application_Id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="User_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="date_time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Failed_At" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Reviewed" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Reviewed_By_DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Reviewed_By_UserID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Version" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Global_Errors_Log" Member="Global_Errors_Logs">
+    <Type Name="Global_Errors_Log">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Application_Id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="User_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="User_Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Load_Date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Error_Message" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Error_Previous_URL" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Error_URL" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Error_Target" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Error_Source" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Trace_Error" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Error_Trace" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Last_Exception" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Session_Data" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Version" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Date_Time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Reviewed" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Domain" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Error_Url_Path" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Error_Url_QS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Error_Previous_Url_Path" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Error_Previous_Url_QS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AdditionalInformation" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>

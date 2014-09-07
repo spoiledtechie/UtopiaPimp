@@ -1,0 +1,785 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="pimpTest_Data" Class="UtopiaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS2010;AttachDbFilename=|DataDirectory|\pimpTest_Data.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="pimpTest_DataConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Utopia_User_Info" Member="Utopia_User_Infos">
+    <Type Name="Utopia_User_Info">
+      <Column Name="User_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Email_Allowed" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Avatar_URL" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Avatar_Shown" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Column_Catagory_Name_Pull" Member="Utopia_Column_Catagory_Name_Pulls">
+    <Type Name="Utopia_Column_Catagory_Name_Pull">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Category_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Category_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DateTime_Added" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Enabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="User_ID_Added" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Column_Data_Type" Member="Utopia_Column_Data_Types">
+    <Type Name="Utopia_Column_Data_Type">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Column_Data_Type_Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="User_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DateTime_Added" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Column_Name" Member="Utopia_Column_Names">
+    <Type Name="Utopia_Column_Name">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Column_IDs" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Data_Type_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DateTime_Added" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="User_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Column_Name_Pull" Member="Utopia_Column_Name_Pulls">
+    <Type Name="Utopia_Column_Name_Pull">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Column_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DateTime_Added" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Enabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Category_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Alt" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="User_ID_Added" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Comments" Member="Utopia_Comments">
+    <Type Name="Utopia_Comment">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="User_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Date_Time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Reviewed" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Reviewed_Date_Time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Reviewed_By_User_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Distorted_Data" Member="Utopia_Distorted_Datas">
+    <Type Name="Utopia_Distorted_Data">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Raw_Data" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="aspnet_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="date_time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Failed_At" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="rawData" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Reviewed" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Reviewed_By_DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Reviewed_By_UserID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Version" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Donations" Member="Utopia_Donations">
+    <Type Name="Utopia_Donation">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Donator_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Donated_Amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Date_Donated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Donator_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Inserted_By" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Inserted_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Dragon_Type_Pull" Member="Utopia_Dragon_Type_Pulls">
+    <Type Name="Utopia_Dragon_Type_Pull">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Dragon_Type" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Added_By_DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Added_By_UserID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Errors_Log" Member="Utopia_Errors_Logs">
+    <Type Name="Utopia_Errors_Log">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="User_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="User_Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Load_Date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Error_Message" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Error_Previous_URL" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Error_URL" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Error_Target" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Error_Source" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Trace_Error" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Error_Trace" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Last_Exception" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Session_Data" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Version" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Date_Time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Reviewed" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Kingdom_CE_Type_Pull" Member="Utopia_Kingdom_CE_Type_Pulls">
+    <Type Name="Utopia_Kingdom_CE_Type_Pull">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CE_Type" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Added_By_DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Added_By_UserID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Kingdom_Info" Member="Utopia_Kingdom_Infos">
+    <Type Name="Utopia_Kingdom_Info">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Owner_Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Server_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Kingdom_Island" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Kingdom_Location" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Kingdom_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="War_Wins" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="War_Losses" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Retired" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Stance" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Kingdom_Message" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Added_By_DateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Added_By_User_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Owner_User_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Updated_By_DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Updated_By_Province_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Kingdom_Monarch_Message" Member="Utopia_Kingdom_Monarch_Messages">
+    <Type Name="Utopia_Kingdom_Monarch_Message">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Owner_Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Monarch_Message" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="TimeStamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Added_By_Province_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Kingdom_Monarch_Settings" Member="Utopia_Kingdom_Monarch_Settings">
+    <Type Name="Utopia_Kingdom_Monarch_Setting">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Owner_Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="KdProvTimeLimit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="KdOpsAttacksTimeLimit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Last_User_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Last_Updated_DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Kingdom_Stance_Pull" Member="Utopia_Kingdom_Stance_Pulls">
+    <Type Name="Utopia_Kingdom_Stance_Pull">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="stance" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="alt" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_News" Member="Utopia_News">
+    <Type Name="Utopia_New">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TimeStamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Body" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="User_ID_Added" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Personality_Pull" Member="Utopia_Personality_Pulls">
+    <Type Name="Utopia_Personality_Pull">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Personality_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Personality_Search_Key" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Enabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Added_By_DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Added_By_UserID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Data_Captured_Attack" Member="Utopia_Province_Data_Captured_Attacks">
+    <Type Name="Utopia_Province_Data_Captured_Attack">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Province_ID_Attacked" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Attack_Type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="O_Soldiers_Died" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="O_Regs_Off_Died" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="O_Regs_Def_Died" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="O_Elites_Died" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="O_Horses_Died" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Captured_Type_Number" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Troops_Killed" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Imprsoned_Troops" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Mod_Off_Sent" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Time_To_Return" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTime_Added" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Owner_Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Province_ID_Added" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Data_Captured_Attack_Pull" Member="Utopia_Province_Data_Captured_Attack_Pulls">
+    <Type Name="Utopia_Province_Data_Captured_Attack_Pull">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Attack_Type_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Province_ID_Added" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DateTime_Added" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Data_Captured_Military_Location_Pull" Member="Utopia_Province_Data_Captured_Military_Location_Pulls">
+    <Type Name="Utopia_Province_Data_Captured_Military_Location_Pull">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Military_Location_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Enabled" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Data_Captured_Science" Member="Utopia_Province_Data_Captured_Sciences">
+    <Type Name="Utopia_Province_Data_Captured_Science">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Province_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="SOS_Alchemy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SOS_Alchemy_Percent" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="SOS_Alchemy_Prog" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SOS_Tools" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SOS_Tools_Percent" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="SOS_Tools_Prog" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SOS_Housing" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SOS_Housing_Percent" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="SOS_Housing_Prog" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SOS_Food" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SOS_Food_Percent" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="SOS_Food_Prog" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SOS_Military" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SOS_Miltary_Percent" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="SOS_Military_Prog" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SOS_Thieves" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SOS_Thieves_Percent" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="SOS_Thieves_Prog" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SOS_Magic" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SOS_Magic_Percent" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="SOS_Magic_Prog" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Export_Line" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="DateTime_Added" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Province_ID_Added" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Owner_Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Data_Type_Pull" Member="Utopia_Province_Data_Type_Pulls">
+    <Type Name="Utopia_Province_Data_Type_Pull">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Data_Type_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Enabled" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Formatter_Type" Member="Utopia_Province_Formatter_Types">
+    <Type Name="Utopia_Province_Formatter_Type">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Type_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Identifier" Member="Utopia_Province_Identifiers">
+    <Type Name="Utopia_Province_Identifier">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Owner_Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Province_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Server_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Kingdom_Island" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Kingdom_Location" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Province_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Date_Time_Added" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Added_By_User_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Info" Member="Utopia_Province_Infos">
+    <Type Name="Utopia_Province_Info">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Province_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="User_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Last_Login_Province" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Date_Time_Added" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Added_By_User_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Memos" Member="Utopia_Province_Memos">
+    <Type Name="Utopia_Province_Memo">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Province_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="TimeStamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Province_ID_added" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Messages" Member="Utopia_Province_Messages">
+    <Type Name="Utopia_Province_Message">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="To_Province_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Has_Read" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="From_Province_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="TimeStamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Nobility_Pull" Member="Utopia_Province_Nobility_Pulls">
+    <Type Name="Utopia_Province_Nobility_Pull">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nobility" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="popMulti" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="OME_Mulit" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Income_Multi" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="WPA_Multi" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="TPA_Multi" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Added_By_UserID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Added_By_DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Notes" Member="Utopia_Province_Notes">
+    <Type Name="Utopia_Province_Note">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Owner_Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Province_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Note" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Added_By_Province_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Added_By_DataTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Ops" Member="Utopia_Province_Ops">
+    <Type Name="Utopia_Province_Op">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Op_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OP_Text" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="negated" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Directed_To_Province_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Duration" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="Owner_Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Expiration_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Added_By_Province_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Ops_Pull" Member="Utopia_Province_Ops_Pulls">
+    <Type Name="Utopia_Province_Ops_Pull">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OP_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TimeStamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Added_By_User_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Race_Military_Names" Member="Utopia_Province_Race_Military_Names">
+    <Type Name="Utopia_Province_Race_Military_Name">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Race_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Elite_Name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Soldier_Off_Name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Soldier_Def_Name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Elite_Off_Multiplier" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Elite_Def_Multiplier" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Soldier_Off_Multiplier" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Soldier_Def_Multiplier" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Added_By_User_Id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Added_DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Race_Pull" Member="Utopia_Province_Race_Pulls">
+    <Type Name="Utopia_Province_Race_Pull">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Race_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Enabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Added_By_DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Added_By_UserID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Server_Pull" Member="Utopia_Server_Pulls">
+    <Type Name="Utopia_Server_Pull">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Server_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_User_Audit" Member="Utopia_User_Audits">
+    <Type Name="Utopia_User_Audit">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="User_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IP_Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Browser_String" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Current_URL" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Previous_URL" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Auth_User" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Current_User_Path" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="AnonymousID" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Remote_User" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Logon_User" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HTTP_Host" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Windows_Platform" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JavaScript" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Win16" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Win32" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BrowserScreen_Resolution" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="ActiveXControls" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsMobile" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_User_IM_Info" Member="Utopia_User_IM_Infos">
+    <Type Name="Utopia_User_IM_Info">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="User_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="IM_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IM_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Date_Time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_User_IM_Info_Pull" Member="Utopia_User_IM_Info_Pulls">
+    <Type Name="Utopia_User_IM_Info_Pull">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AIM_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Target_Finder_Settings" Member="Utopia_Target_Finder_Settings">
+    <Type Name="Utopia_Target_Finder_Setting">
+      <Column Name="User_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Total_Provinces_Submitted" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Current_Provinces_Submitted" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Last_Submission" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Global_Chat" Member="Global_Chats">
+    <Type Name="Global_Chat">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Application_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Message_From" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Message_To" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Message" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Sent" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Received" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_IRC_Channels" Member="Utopia_IRC_Channels">
+    <Type Name="Utopia_IRC_Channel">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Owner_Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Channel_Name" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Channel_Password_Bool" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Channel_Password" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="IRC_Server" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="DateTime_Added" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_User_Notifier_Settings" Member="Utopia_User_Notifier_Settings">
+    <Type Name="Utopia_User_Notifier_Setting">
+      <Column Name="User_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AttacksOnSelf" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DragonProjectStarted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DragonRavagingLands" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ArmyReturns" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="WarAction" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="OpsEnding" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TrackedProvinceUpdated" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FrequencyInMinutes" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SendMethod" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Data_Captured_Survey" Member="Utopia_Province_Data_Captured_Surveys">
+    <Type Name="Utopia_Province_Data_Captured_Survey">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Province_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Building_Efficiency" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="Homes_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Homes_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Homes_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Farms_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Farms_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Farms_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Mills_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Mills_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Mills_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Banks_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Banks_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Banks_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TG_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TG_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TG_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Armories_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Armories_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Armories_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Barracks_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Barracks_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Barracks_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Forts_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Forts_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Forts_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GS_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GS_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GS_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Hospitals_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Hostpitals_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Hostpitals_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Guilds_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Guilds_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Guilds_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Towers_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Towers_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Towers_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TD_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TD_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TD_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WT_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WT_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WT_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Library_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Library_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Library_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Schools_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Schools_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Schools_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Stables_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Stables_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Stables_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dungeons_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dungeons_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dungeons_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Dens_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dens_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dens_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BarrenLands" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Acres_In_Progress" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Export_Line" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Owner_Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DateTime_Updated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Province_ID_Updated_By" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Data_Captured_Type_Military" Member="Utopia_Province_Data_Captured_Type_Militaries">
+    <Type Name="Utopia_Province_Data_Captured_Type_Military">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Province_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Military_Location" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Soldiers" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Soldiers_Train" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Soldiers_Train_Queue" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Soldiers_Off_Pts" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Soldiers_Def_Pts" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Regs_Off" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Regs_Off_Train" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Regs_Off_Train_Queue" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Regs_Off_Pts" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Regs_Def" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Regs_Def_Train" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Regs_Def_Train_Queue" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Regs_Def_Pts" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Elites" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Elites_Train" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Elites_Train_Queue" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Elites_Off_Pts" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Elites_Def_Pts" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Horses" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Horses_Pts" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Thieves_Train" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Thieves_Train_Queue" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Generals" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CapturedLand" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Wages" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Efficiency_Raw" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Military_Population" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Efficiency_Off" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Efficiency_Def" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Net_Offense_Pts_Home" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Net_Defense_Pts_Home" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Time_To_Return" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Export_Line" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DateTime_Added" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Owner_Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Province_ID_Added" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Prisoners" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Notifier_Data" Member="Utopia_Province_Notifier_Datas">
+    <Type Name="Utopia_Province_Notifier_Data">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BelongsToProvince_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="EventType" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="EventText" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Association Name="Utopia_Province_Notifier_Utopia_Province_Notifier_Data" Member="Utopia_Province_Notifier" ThisKey="BelongsToProvince_ID" OtherKey="Province_ID" Type="Utopia_Province_Notifier" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Notifier" Member="Utopia_Province_Notifiers">
+    <Type Name="Utopia_Province_Notifier">
+      <Column Name="Province_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="User_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ProvinceName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SendTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Sent" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Utopia_Province_Notifier_Utopia_Province_Notifier_Data" Member="Utopia_Province_Notifier_Datas" ThisKey="Province_ID" OtherKey="BelongsToProvince_ID" Type="Utopia_Province_Notifier_Data" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Kingdom_CE" Member="Utopia_Kingdom_CEs">
+    <Type Name="Utopia_Kingdom_CE">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Owner_Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Utopia_Month" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Utopia_Year" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Utopia_Date_Day" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Source_Province_Name" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Target_Province_Name" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Source_Kingdom_Island" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Source_Kingdom_Location" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Target_Kingdom_Island" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Target_Kingdom_Location" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Raw_Line" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="CE_Type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="value" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Province_ID_Added" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DateTime_Added" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Target_Finder" Member="Utopia_Target_Finders">
+    <Type Name="Utopia_Target_Finder">
+      <Column Name="Province_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Province_Name" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Island" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Location" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Race" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Networth" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Monarch" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Honor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Kingdom_Name" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Acres" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Protection" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Online" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="War" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fortified" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Kingdom_Networth" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Kingdom_Acres" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Kingdom_Province_Count" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Stance" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Last_Updated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="First_Listed_DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Server_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Last_Logged_In" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Data_Captured_CB" Member="Utopia_Province_Data_Captured_CBs">
+    <Type Name="Utopia_Province_Data_Captured_CB">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Province_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Province_Name" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Kingdom_Island" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Kingdom_Location" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Formatted_By" Type="System.String" DbType="Char(30)" CanBeNull="true" />
+      <Column Name="Utopian_Day_Month" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Utopian_Year" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ruler_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Personality_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Race_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nobility_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Land" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Money" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Daily_Income" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Food" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Runes" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Population" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Peasents" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Peasents_Non_Percentage" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Trade_Balance" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Networth" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Building_Effectiveness" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Military_Efficiency_Off" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Military_Efficiency_Def" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Draft" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Soldiers" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Soldiers_Regs_Off" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Soldiers_Regs_Def" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Soldiers_Elites" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="War_Horses" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Prisoners" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Total_Mod_Offense" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Total_Prac_Offense" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Total_Mod_Defense" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Total_Prac_Defense" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Wizards" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Wizards_Value_Type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Wizards_Mana" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Thieves" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Thieves_Value_Type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Thieves_Stealth" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Plague" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Monarch_Display" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Protected" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Hit" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CB_Export_Line" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Updated_By_DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Updated_By_Province_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Owner_Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utopia_Province_Data_Captured_Gen" Member="Utopia_Province_Data_Captured_Gens">
+    <Type Name="Utopia_Province_Data_Captured_Gen">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Province_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Province_Name" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Kingdom_Island" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Kingdom_Location" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Formatted_By" Type="System.String" DbType="Char(30)" CanBeNull="true" />
+      <Column Name="Utopian_Day_Month" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Utopian_Year" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ruler_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Personality_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Race_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nobility_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Land" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Money" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Daily_Income" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Food" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Runes" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Population" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Peasents" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Peasents_Non_Percentage" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Trade_Balance" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Networth" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Building_Effectiveness" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Military_Efficiency_Off" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Military_Efficiency_Def" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Draft" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Soldiers" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Soldiers_Regs_Off" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Soldiers_Regs_Def" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Soldiers_Elites" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="War_Horses" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Prisoners" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Military_Net_Off" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Military_Net_Def" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Military_Current_Off" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Military_Current_Def" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Mil_Training" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Mil_Wage" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Mil_Overall_Efficiency" Type="System.Decimal" DbType="Decimal(25,3)" CanBeNull="true" />
+      <Column Name="Mil_Total_Generals" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Wizards" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Wizards_Value_Type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Thieves" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Thieves_Value_Type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Plague" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Monarch_Display" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Monarch_Vote_Province_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Owner" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sub_Monarch" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Protected" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Hit" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Honor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Province_Notes" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CB_Export_Line" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Army_Out" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Army_Out_Expires" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Updated_By_DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Updated_By_Province_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="SOM_Updated_By_Province_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="SOM_Updated_By_DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CB_Updated_By_Province_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="CB_Updated_By_DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CB_Requested" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CB_Requested_Province_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="SOM_Requested" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SOM_Requested_Province_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="SOS_Requested" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SOS_Requested_Province_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Survey_Requested" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Survey_Requested_Province_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Owner_User_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Last_Login_For_Province" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Date_Time_User_ID_Linked" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Added_By_User_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Owner_Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Kingdom_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

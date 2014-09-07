@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="ExpiredOpsGatherer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="token" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExpiredOpsGathererResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ExpiredOpsGathererSoapIn">
+    <wsdl:part name="parameters" element="tns:ExpiredOpsGatherer" />
+  </wsdl:message>
+  <wsdl:message name="ExpiredOpsGathererSoapOut">
+    <wsdl:part name="parameters" element="tns:ExpiredOpsGathererResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OpsGathererSoap">
+    <wsdl:operation name="ExpiredOpsGatherer">
+      <wsdl:input message="tns:ExpiredOpsGathererSoapIn" />
+      <wsdl:output message="tns:ExpiredOpsGathererSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OpsGathererSoap" type="tns:OpsGathererSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExpiredOpsGatherer">
+      <soap:operation soapAction="http://tempuri.org/ExpiredOpsGatherer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OpsGathererSoap12" type="tns:OpsGathererSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExpiredOpsGatherer">
+      <soap12:operation soapAction="http://tempuri.org/ExpiredOpsGatherer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OpsGatherer">
+    <wsdl:port name="OpsGathererSoap" binding="tns:OpsGathererSoap">
+      <soap:address location="http://localhost:1448/UtopiaPimp/OpsGatherer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="OpsGathererSoap12" binding="tns:OpsGathererSoap12">
+      <soap12:address location="http://localhost:1448/UtopiaPimp/OpsGatherer.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

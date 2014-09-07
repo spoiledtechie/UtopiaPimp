@@ -1,0 +1,8 @@
+uid,Race_ID,Elite_Name,Soldier_Off_Name,Soldier_Def_Name,Elite_Off_Multiplier,Elite_Def_Multiplier,Soldier_Off_Multiplier,Soldier_Def_Multiplier,Added_By_User_Id,Added_DateTime
+1,4,Elf Lords,Rangers,Archers,6,5,5,6,,
+2,2,Golems,Halflings,Pikemen,5,5,5,6,,
+3,5,Knights,Swordsman,Archers,6,4,5,6,,
+4,3,Drow,Night Rangers,Druids,4,6,5,6,,
+5,1,Orges,Goblins,Trolls,8,2,5,6,,
+6,8,,,,,,,,,
+7,13,Elite,Offense,Defense,0,0,0,0,,

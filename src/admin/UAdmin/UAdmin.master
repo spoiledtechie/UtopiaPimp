@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UAdmin.master.cs" Inherits="admin_UAdmin_UAdmin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="http://codingforcharity.org/utopiapimp/css/admin.css" rel="stylesheet"
+        type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+        <Services>
+            <asp:ServiceReference Path="~/admin/admin/controls/admin.asmx" />
+        </Services>
+    </asp:ScriptManager>
+    <div>
+        <ul class="ulNav">
+            <li>
+                <asp:HyperLink ID="hlHome" NavigateUrl="~/Default.aspx" runat="server">Application Home</asp:HyperLink></li>
+            <li>
+                <asp:HyperLink ID="hlAdminHome" NavigateUrl="~/admin/Default.aspx" runat="server">Admin Home</asp:HyperLink></li>
+            <li>
+                <asp:HyperLink ID="HyperLink1" NavigateUrl="~/admin/UAdmin/Kingdoms.aspx" runat="server">Kingdoms</asp:HyperLink></li>
+            <li>
+                <asp:HyperLink ID="HyperLink2" NavigateUrl="~/admin/UAdmin/Provinces.aspx" runat="server">Provinces</asp:HyperLink></li>
+            <li>
+                <asp:HyperLink ID="HyperLink3" NavigateUrl="~/admin/UAdmin/Pulls.aspx" runat="server">Pulls</asp:HyperLink></li>
+        </ul>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <script src="../admin/js/admin.js" type="text/javascript"></script>
+    </form>
+</body>
+</html>

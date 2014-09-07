@@ -1,0 +1,311 @@
+
+Version: 3685
+Game LobbyWoL
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail
+Forum
+War Forum
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+69	10,457	107,810	2,394	344,793	2,094	164.658
+KINGDOM NEWS
+Province News
+Kingdom News
+The Daily Paper lists the various happenings throughout your kingdom. Included are important activities such as attacks, deaths, and changes in relations with your kingdom.
+
+Legend
+Intra-Kingdom Conflict	Relations News	
+Actions against our Kingdom	Dragon News	
+Actions by our Kingdom	Obituaries	
+The Kingdom Reporter
+< February YR12 EditionApril YR12 Edition > March YR12 Edition
+March 1 of YR12	 Our dragon has set flight to ravage --Sanctuary War-- (6:2)!
+March 1 of YR12	 Octavian has sent an aid shipment to Britannia.
+March 2 of YR12	 An unknown province from funshow WAR (4:40) captured 1,064 acres of land from Blasted (6:2).
+March 2 of YR12	 An unknown province from funshow WAR (4:40) captured 304 acres of land from Out of Sight (6:2).
+March 2 of YR12	 Spartacus has sent an aid shipment to Octavian.
+March 2 of YR12	 An unknown province from funshow WAR (4:40) captured 286 acres of land from Out of Sight (6:2).
+March 2 of YR12	 Embalmed (6:2) invaded Cicero (4:40) and captured 326 acres of land.
+March 2 of YR12	 Embalmed (6:2) invaded Romulus (4:40) and captured 170 acres of land.
+March 2 of YR12	 Embalmed (6:2) invaded Romulus (4:40) and captured 143 acres of land.
+March 2 of YR12	 Blasted (6:2) invaded Gallia (4:40) and captured 135 acres of land.
+March 2 of YR12	 Blasted (6:2) invaded Gallia (4:40) and captured 127 acres of land.
+March 2 of YR12	 Embalmed (6:2) attempted to invade Romulus (4:40).
+March 2 of YR12	 Blasted (6:2) invaded Gallia (4:40) and captured 120 acres of land.
+March 2 of YR12	 Blasted (6:2) invaded Gallia (4:40) and captured 113 acres of land.
+March 2 of YR12	 Molly (6:2) invaded Gaius Marius (4:40) and captured 317 acres of land.
+March 2 of YR12	 Molly (6:2) invaded Gaius Marius (4:40) and captured 227 acres of land.
+March 2 of YR12	 Molly (6:2) invaded Gaius Marius (4:40) and captured 169 acres of land.
+March 2 of YR12	 An unknown province from --Sanctuary War-- (6:2) invaded Marcus Aurelius (4:40) and captured 445 acres of land.
+March 2 of YR12	 An unknown province from --Sanctuary War-- (6:2) invaded Marcus Aurelius (4:40) and captured 318 acres of land.
+March 3 of YR12	 Cicero (4:40) attempted an invasion of Embalmed (6:2), but was repelled.
+March 3 of YR12	 Just plain drunk (6:2) invaded Romulus (4:40) and captured 129 acres of land.
+March 3 of YR12	 Just plain drunk (6:2) invaded Romulus (4:40) and captured 109 acres of land.
+March 3 of YR12	 Just plain drunk (6:2) invaded Romulus (4:40) and captured 95 acres of land.
+March 3 of YR12	 Just plain drunk (6:2) invaded Romulus (4:40) and captured 83 acres of land.
+March 4 of YR12	 Wrenched (6:2) invaded Cicero (4:40) and captured 258 acres of land.
+March 4 of YR12	 Wrenched (6:2) invaded Cicero (4:40) and captured 196 acres of land.
+March 4 of YR12	 An unknown province from --Sanctuary War-- (6:2) invaded Carpe Diem (4:40) and captured 1,664 acres of land.
+March 4 of YR12	 An unknown province from --Sanctuary War-- (6:2) invaded Carpe Diem (4:40) and captured 1,289 acres of land.
+March 4 of YR12	 An unknown province from --Sanctuary War-- (6:2) invaded Brutus (4:40) and captured 1,008 acres of land.
+March 4 of YR12	 An unknown province from --Sanctuary War-- (6:2) invaded Brutus (4:40) and captured 752 acres of land.
+March 4 of YR12	 An unknown province from --Sanctuary War-- (6:2) invaded Brutus (4:40) and captured 573 acres of land.
+March 4 of YR12	 An unknown province from --Sanctuary War-- (6:2) invaded Caligula (4:40) and captured 283 acres of land.
+March 4 of YR12	 An unknown province from --Sanctuary War-- (6:2) invaded Caligula (4:40) and captured 225 acres of land.
+March 4 of YR12	 An unknown province from --Sanctuary War-- (6:2) invaded Brutus (4:40) and captured 506 acres of land.
+March 4 of YR12	 An unknown province from --Sanctuary War-- (6:2) invaded Caligula (4:40) and captured 184 acres of land.
+March 5 of YR12	 An unknown province from --Sanctuary War-- (6:2) invaded Brutus (4:40) and captured 429 acres of land.
+March 5 of YR12	 LETA has sent an aid shipment to Spartacus.
+March 5 of YR12	 Octavian has sent an aid shipment to Britannia.
+March 5 of YR12	 An unknown province from --Sanctuary War-- (6:2) invaded Caligula (4:40) and captured 239 acres of land.
+March 5 of YR12	 An unknown province from --Sanctuary War-- (6:2) invaded Caligula (4:40) and captured 191 acres of land.
+March 5 of YR12	 Brutus has sent an aid shipment to Octavian.
+March 5 of YR12	 Octavian has sent an aid shipment to Brutus.
+March 5 of YR12	 Octavian has sent an aid shipment to Britannia.
+March 5 of YR12	 LETA has sent an aid shipment to Britannia.
+March 5 of YR12	 LETA has sent an aid shipment to Patrician.
+March 5 of YR12	 Spartacus has sent an aid shipment to LETA.
+March 5 of YR12	 Brutus has sent an aid shipment to Octavian.
+March 5 of YR12	 Carpe Diem has sent an aid shipment to Octavian.
+March 5 of YR12	 An unknown province from --Sanctuary War-- (6:2) invaded Colosseum (4:40) and captured 595 acres of land.
+March 5 of YR12	 Brutus has sent an aid shipment to Octavian.
+March 5 of YR12	 Carpe Diem has sent an aid shipment to Octavian.
+March 5 of YR12	 An unknown province from funshow WAR (4:40) captured 400 acres of land from Amiably Incandescent (6:2).
+March 5 of YR12	 Upholstered (6:2) invaded Colosseum (4:40) and captured 444 acres of land.
+March 5 of YR12	 An unknown province from funshow WAR (4:40) captured 518 acres of land from SipSippin with Screw (6:2).
+March 5 of YR12	 An unknown province from funshow WAR (4:40) captured 480 acres of land from SipSippin with Screw (6:2).
+March 5 of YR12	 Carpe Diem has sent an aid shipment to Pepsa Kolicus.
+March 5 of YR12	 An unknown province from funshow WAR (4:40) attempted an invasion of SipSippin with Screw (6:2), but was repelled.
+March 5 of YR12	 Carpe Diem has sent an aid shipment to Pepsa Kolicus.
+March 5 of YR12	 An unknown province from funshow WAR (4:40) captured 124 acres of land from Just plain drunk (6:2).
+March 5 of YR12	 Octavian has sent an aid shipment to Romulus.
+March 6 of YR12	 Ydrunken (6:2) invaded Brutus (4:40) and captured 156 acres of land.
+March 6 of YR12	 Ydrunken (6:2) invaded Brutus (4:40) and captured 141 acres of land.
+March 6 of YR12	 An unknown province from funshow WAR (4:40) captured 244 acres of land from Upholstered (6:2).
+March 6 of YR12	 An unknown province from funshow WAR (4:40) captured 225 acres of land from Upholstered (6:2).
+March 6 of YR12	 An unknown province from funshow WAR (4:40) captured 145 acres of land from Plastered (6:2).
+March 6 of YR12	 An unknown province from funshow WAR (4:40) captured 118 acres of land from Plastered (6:2).
+March 7 of YR12	 An unknown province from funshow WAR (4:40) captured 237 acres of land from Just plain drunk (6:2).
+March 7 of YR12	 Patrician has sent an aid shipment to Romulus.
+March 7 of YR12	 An unknown province from funshow WAR (4:40) captured 202 acres of land from Just plain drunk (6:2).
+March 7 of YR12	 An unknown province from funshow WAR (4:40) captured 171 acres of land from Just plain drunk (6:2).
+March 7 of YR12	 Patrician has sent an aid shipment to Romulus.
+March 7 of YR12	 Patrician has sent an aid shipment to Romulus.
+March 7 of YR12	 An unknown province from funshow WAR (4:40) captured 151 acres of land from Just plain drunk (6:2).
+March 7 of YR12	 Patrician has sent an aid shipment to LETA.
+March 7 of YR12	 Patrician (4:40) captured 104 acres of land from Just plain drunk (6:2).
+March 7 of YR12	 Patrician (4:40) captured 305 acres of land from Upholstered (6:2).
+March 7 of YR12	 Patrician (4:40) captured 277 acres of land from Upholstered (6:2).
+March 7 of YR12	 Patrician (4:40) captured 96 acres of land from Just plain drunk (6:2).
+March 7 of YR12	 Octavian has sent an aid shipment to Brutus.
+March 7 of YR12	 An unknown province from funshow WAR (4:40) captured 451 acres of land from SipSippin with Screw (6:2).
+March 7 of YR12	 An unknown province from funshow WAR (4:40) captured 404 acres of land from SipSippin with Screw (6:2).
+March 7 of YR12	 Brutus (4:40) captured 44 acres of land from Just plain drunk (6:2).
+March 7 of YR12	 Brutus (4:40) captured 41 acres of land from Just plain drunk (6:2).
+March 7 of YR12	 Upholstered (6:2) ambushed armies from Patrician (4:40) and took 138 acres of land.
+March 7 of YR12	 Upholstered (6:2) ambushed armies from Patrician (4:40) and took 152 acres of land.
+March 7 of YR12	 Octavian has sent an aid shipment to Gaius Marius.
+March 7 of YR12	 Quoxed (6:2) invaded Brutus (4:40) and captured 156 acres of land.
+March 7 of YR12	 Quoxed (6:2) invaded Brutus (4:40) and captured 141 acres of land.
+March 8 of YR12	 LETA has sent an aid shipment to Cicero.
+March 8 of YR12	 Octavian has sent an aid shipment to Augustus.
+March 8 of YR12	 Gallia (4:40) captured 239 acres of land from Embalmed (6:2).
+March 8 of YR12	 Gallia (4:40) captured 193 acres of land from Embalmed (6:2).
+March 8 of YR12	 Gallia (4:40) captured 154 acres of land from Embalmed (6:2).
+March 8 of YR12	 Gallia (4:40) captured 134 acres of land from Embalmed (6:2).
+March 8 of YR12	 Debauched (6:2) attempted to invade Brutus (4:40).
+March 8 of YR12	 Debauched (6:2) invaded Brutus (4:40) and captured 130 acres of land.
+March 8 of YR12	 Debauched (6:2) invaded Brutus (4:40) and captured 118 acres of land.
+March 8 of YR12	 Debauched (6:2) invaded Brutus (4:40) and captured 107 acres of land.
+March 8 of YR12	 An unknown province from funshow WAR (4:40) captured 282 acres of land from Wrenched (6:2).
+March 8 of YR12	 An unknown province from funshow WAR (4:40) captured 220 acres of land from Wrenched (6:2).
+March 8 of YR12	 An unknown province from funshow WAR (4:40) captured 182 acres of land from Wrenched (6:2).
+March 8 of YR12	 An unknown province from funshow WAR (4:40) captured 84 acres of land from Wrenched (6:2).
+March 8 of YR12	 Keg-legged (6:2) invaded Brutus (4:40) and captured 94 acres of land.
+March 8 of YR12	 Keg-legged (6:2) invaded Brutus (4:40) and captured 87 acres of land.
+March 9 of YR12	 An unknown province from --Sanctuary War-- (6:2) invaded Pepsa Kolicus (4:40) and captured 355 acres of land.
+March 9 of YR12	 An unknown province from funshow WAR (4:40) captured 279 acres of land from Upholstered (6:2).
+March 9 of YR12	 An unknown province from funshow WAR (4:40) captured 226 acres of land from Upholstered (6:2).
+March 9 of YR12	 Secundus (4:40) captured 78 acres of land from Wrenched (6:2).
+March 9 of YR12	 Secundus (4:40) captured 70 acres of land from Wrenched (6:2).
+March 9 of YR12	 An unknown province from funshow WAR (4:40) captured 99 acres of land from Wrenched (6:2).
+March 9 of YR12	 Gaius Marius (4:40) captured 91 acres of land from Wrenched (6:2).
+March 9 of YR12	 Gaius Marius (4:40) captured 84 acres of land from Wrenched (6:2).
+March 9 of YR12	 An unknown province from funshow WAR (4:40) captured 154 acres of land from Plastered (6:2).
+March 10 of YR12	 An unknown province from funshow WAR (4:40) captured 184 acres of land from Upholstered (6:2).
+March 10 of YR12	 An unknown province from funshow WAR (4:40) captured 317 acres of land from Molly (6:2).
+March 10 of YR12	 An unknown province from funshow WAR (4:40) captured 238 acres of land from Molly (6:2).
+March 10 of YR12	 An unknown province from funshow WAR (4:40) captured 185 acres of land from Molly (6:2).
+March 10 of YR12	 An unknown province from funshow WAR (4:40) captured 150 acres of land from Molly (6:2).
+March 11 of YR12	 Patrician has sent an aid shipment to Spartacus.
+March 12 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Gaius Marius (4:40) and captured 288 acres of land.
+March 12 of YR12	 Plastered (6:2) invaded Gaius Marius (4:40) and captured 242 acres of land.
+March 12 of YR12	 Plastered (6:2) invaded Gaius Marius (4:40) and captured 190 acres of land.
+March 14 of YR12	 An unknown province from funshow WAR (4:40) captured 330 acres of land from SipSippin with Screw (6:2).
+March 14 of YR12	 An unknown province from funshow WAR (4:40) captured 298 acres of land from SipSippin with Screw (6:2).
+March 15 of YR12	 An unknown province from funshow WAR (4:40) captured 311 acres of land from SipSippin with Screw (6:2).
+March 15 of YR12	 An unknown province from funshow WAR (4:40) captured 195 acres of land from Upholstered (6:2).
+March 15 of YR12	 Marcus Aurelius (4:40) captured 163 acres of land from Upholstered (6:2).
+March 15 of YR12	 Marcus Aurelius (4:40) captured 148 acres of land from Upholstered (6:2).
+March 15 of YR12	 Colosseum (4:40) captured 130 acres of land from Upholstered (6:2).
+March 15 of YR12	 Colosseum (4:40) captured 115 acres of land from Upholstered (6:2).
+March 15 of YR12	 Colosseum (4:40) captured 104 acres of land from Upholstered (6:2).
+March 15 of YR12	 Colosseum (4:40) captured 280 acres of land from Molly (6:2).
+March 16 of YR12	 Patrician has sent an aid shipment to LETA.
+March 16 of YR12	 Octavian has sent an aid shipment to LETA.
+March 16 of YR12	 An unknown province from funshow WAR (4:40) captured 1,042 acres of land from Blasted (6:2).
+March 16 of YR12	 Molly (6:2) invaded Brutus (4:40) and captured 259 acres of land.
+March 16 of YR12	 Molly (6:2) invaded Brutus (4:40) and captured 201 acres of land.
+March 16 of YR12	 Octavian has sent an aid shipment to Carpe Diem.
+March 16 of YR12	 Spartacus has sent an aid shipment to Octavian.
+March 17 of YR12	 An unknown province from funshow WAR (4:40) captured 1,215 acres of land from Amiably Incandescent (6:2).
+March 17 of YR12	 An unknown province from funshow WAR (4:40) captured 1,177 acres of land from Amiably Incandescent (6:2).
+March 17 of YR12	 An unknown province from funshow WAR (4:40) captured 932 acres of land from Amiably Incandescent (6:2).
+March 17 of YR12	 Octavian has sent an aid shipment to Augustus.
+March 17 of YR12	 Blasted (6:2) invaded Carpe Diem (4:40) and captured 326 acres of land.
+March 17 of YR12	 Blasted (6:2) invaded Carpe Diem (4:40) and captured 306 acres of land.
+March 17 of YR12	 An unknown province from funshow WAR (4:40) captured 291 acres of land from Quoxed (6:2).
+March 17 of YR12	 Blasted (6:2) invaded Carpe Diem (4:40) and captured 287 acres of land.
+March 17 of YR12	 An unknown province from funshow WAR (4:40) captured 275 acres of land from Quoxed (6:2).
+March 17 of YR12	 Blasted (6:2) invaded Carpe Diem (4:40) and captured 270 acres of land.
+March 17 of YR12	 Carpe Diem (4:40) recaptured 143 acres of land from Blasted (6:2).
+March 17 of YR12	 Amiably Incandescent (6:2) invaded Carpe Diem (4:40) and captured 1,077 acres of land.
+March 17 of YR12	 Amiably Incandescent (6:2) invaded Carpe Diem (4:40) and captured 821 acres of land.
+March 17 of YR12	 Amiably Incandescent (6:2) invaded Carpe Diem (4:40) and captured 707 acres of land.
+March 17 of YR12	 Wrenched (6:2) invaded Carpe Diem (4:40) and captured 255 acres of land.
+March 17 of YR12	 Embalmed (6:2) invaded Carpe Diem (4:40) and captured 236 acres of land.
+March 17 of YR12	 Embalmed (6:2) invaded Carpe Diem (4:40) and captured 217 acres of land.
+March 17 of YR12	 Embalmed (6:2) invaded Carpe Diem (4:40) and captured 206 acres of land.
+March 17 of YR12	 Wrenched (6:2) invaded Carpe Diem (4:40) and captured 213 acres of land.
+March 17 of YR12	 Wrenched (6:2) invaded Carpe Diem (4:40) and captured 202 acres of land.
+March 17 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Carpe Diem (4:40) and captured 358 acres of land.
+March 17 of YR12	 Embalmed (6:2) invaded Caligula (4:40) and captured 383 acres of land.
+March 17 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded the DL (4:40) and captured 228 acres of land.
+March 17 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded the DL (4:40) and captured 208 acres of land.
+March 17 of YR12	 Just plain drunk (6:2) invaded Carpe Diem (4:40) and captured 167 acres of land.
+March 17 of YR12	 Just plain drunk (6:2) invaded Carpe Diem (4:40) and captured 158 acres of land.
+March 17 of YR12	 Just plain drunk (6:2) invaded Carpe Diem (4:40) and captured 150 acres of land.
+March 17 of YR12	 Just plain drunk (6:2) invaded Marcus Aurelius (4:40) and captured 275 acres of land.
+March 17 of YR12	 Wrenched (6:2) attempted to invade the DL (4:40).
+March 18 of YR12	 Crushed (6:2) invaded Carpe Diem (4:40) and captured 207 acres of land.
+March 18 of YR12	 Crushed (6:2) invaded Carpe Diem (4:40) and captured 178 acres of land.
+March 18 of YR12	 Crushed (6:2) invaded Carpe Diem (4:40) and captured 160 acres of land.
+March 18 of YR12	 Crushed (6:2) invaded Carpe Diem (4:40) and captured 145 acres of land.
+March 18 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Spartacus (4:40) and captured 1,099 acres of land.
+March 18 of YR12	 I may be drunk (6:2) invaded Carpe Diem (4:40) and captured 172 acres of land.
+March 18 of YR12	 I may be drunk (6:2) invaded Carpe Diem (4:40) and captured 157 acres of land.
+March 18 of YR12	 I may be drunk (6:2) invaded Carpe Diem (4:40) and captured 144 acres of land.
+March 18 of YR12	 I may be drunk (6:2) attempted to invade Carpe Diem (4:40).
+March 18 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Spartacus (4:40) and captured 859 acres of land.
+March 18 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Spartacus (4:40) and captured 900 acres of land.
+March 18 of YR12	 Ydrunken (6:2) invaded Spartacus (4:40) and captured 846 acres of land.
+March 18 of YR12	 Ydrunken (6:2) invaded Carpe Diem (4:40) and captured 90 acres of land.
+March 18 of YR12	 Quoxed (6:2) invaded Pepsa Kolicus (4:40) and captured 214 acres of land.
+March 18 of YR12	 Ydrunken (6:2) invaded Carpe Diem (4:40) and captured 83 acres of land.
+March 18 of YR12	 Quoxed (6:2) invaded Carpe Diem (4:40) and captured 104 acres of land.
+March 18 of YR12	 Quoxed (6:2) invaded Carpe Diem (4:40) and captured 94 acres of land.
+March 18 of YR12	 Quoxed (6:2) invaded Pepsa Kolicus (4:40) and captured 178 acres of land.
+March 18 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Pepsa Kolicus (4:40) and captured 275 acres of land.
+March 18 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Carpe Diem (4:40) and captured 138 acres of land.
+March 18 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Carpe Diem (4:40) and captured 119 acres of land.
+March 18 of YR12	 Hammered (6:2) invaded Carpe Diem (4:40) and captured 104 acres of land.
+March 18 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Spartacus (4:40) and captured 518 acres of land.
+March 18 of YR12	 Haywire (6:2) invaded Carpe Diem (4:40) and captured 84 acres of land.
+March 18 of YR12	 Haywire (6:2) invaded Carpe Diem (4:40) and captured 74 acres of land.
+March 18 of YR12	 Haywire (6:2) invaded Carpe Diem (4:40) and captured 66 acres of land.
+March 18 of YR12	 Haywire (6:2) invaded Carpe Diem (4:40) and captured 59 acres of land.
+March 18 of YR12	 Amiably Incandescent (6:2) invaded Carpe Diem (4:40) and captured 41 acres of land.
+March 19 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Aeneid (4:40) and captured 437 acres of land.
+March 19 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Aeneid (4:40) and captured 343 acres of land.
+March 19 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Gaius Marius (4:40) and captured 74 acres of land.
+March 19 of YR12	 Upholstered (6:2) invaded Carpe Diem (4:40) and captured 51 acres of land.
+March 19 of YR12	 Gallia (4:40) captured 201 acres of land from Embalmed (6:2).
+March 19 of YR12	 Gallia (4:40) captured 162 acres of land from Embalmed (6:2).
+March 19 of YR12	 Gallia (4:40) captured 134 acres of land from Embalmed (6:2).
+March 19 of YR12	 Gallia (4:40) captured 112 acres of land from Embalmed (6:2).
+March 19 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Spartacus (4:40) and captured 670 acres of land.
+March 19 of YR12	 Debauched (6:2) invaded Carpe Diem (4:40) and captured 22 acres of land.
+March 19 of YR12	 Pepsa Kolicus (4:40) captured 449 acres of land from Hammered (6:2).
+March 19 of YR12	 Pepsa Kolicus (4:40) captured 434 acres of land from Hammered (6:2).
+March 19 of YR12	 Debauched (6:2) attempted to invade Carpe Diem (4:40).
+March 20 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Caligula (4:40) and captured 174 acres of land.
+March 20 of YR12	 Brutus (4:40) captured 302 acres of land from Molly (6:2).
+March 20 of YR12	 Brutus (4:40) captured 230 acres of land from Molly (6:2).
+March 20 of YR12	 Brutus (4:40) captured 289 acres of land from Upholstered (6:2).
+March 20 of YR12	 Brutus (4:40) captured 227 acres of land from Upholstered (6:2).
+March 20 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Spartacus (4:40) and captured 583 acres of land.
+March 20 of YR12	 Ginned Up (6:2) invaded Carpe Diem (4:40) and captured 23 acres of land.
+March 20 of YR12	 Ginned Up (6:2) invaded Carpe Diem (4:40) and captured 21 acres of land.
+March 20 of YR12	 Ginned Up (6:2) invaded Carpe Diem (4:40) and captured 20 acres of land.
+March 20 of YR12	 Zombiefied (6:2) invaded Carpe Diem (4:40) and captured 16 acres of land.
+March 20 of YR12	 Zombiefied (6:2) invaded Carpe Diem (4:40) and captured 15 acres of land.
+March 20 of YR12	 Zombiefied (6:2) invaded Carpe Diem (4:40) and captured 14 acres of land.
+March 20 of YR12	 Zombiefied (6:2) invaded Carpe Diem (4:40) and captured 14 acres of land.
+March 20 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Pepsa Kolicus (4:40) and captured 587 acres of land.
+March 20 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Pepsa Kolicus (4:40) and captured 447 acres of land.
+March 20 of YR12	 LETA has sent an aid shipment to Britannia.
+March 20 of YR12	 SipSippin with Screw (6:2) invaded Carpe Diem (4:40) and captured 45 acres of land.
+March 20 of YR12	 SipSippin with Screw (6:2) invaded Carpe Diem (4:40) and captured 38 acres of land.
+March 20 of YR12	 LETA has sent an aid shipment to Romulus.
+March 20 of YR12	 LETA has sent an aid shipment to Secundus.
+March 22 of YR12	 LETA has sent an aid shipment to Carpe Diem.
+March 22 of YR12	 LETA has sent an aid shipment to Carpe Diem.
+March 22 of YR12	 An unknown province from funshow WAR (4:40) captured 426 acres of land from SipSippin with Screw (6:2).
+March 22 of YR12	 An unknown province from funshow WAR (4:40) captured 342 acres of land from SipSippin with Screw (6:2).
+March 22 of YR12	 An unknown province from funshow WAR (4:40) captured 149 acres of land from Plastered (6:2).
+March 22 of YR12	 Gaius Marius (4:40) captured 135 acres of land from Plastered (6:2).
+March 22 of YR12	 An unknown province from funshow WAR (4:40) captured 172 acres of land from SipSippin with Screw (6:2).
+March 22 of YR12	 Britannia (4:40) captured 74 acres of land from Plastered (6:2).
+March 22 of YR12	 Britannia (4:40) captured 66 acres of land from Plastered (6:2).
+March 22 of YR12	 Octavian has sent an aid shipment to Carpe Diem.
+March 22 of YR12	 An unknown province from funshow WAR (4:40) captured 110 acres of land from Plastered (6:2).
+March 22 of YR12	 Cicero has sent an aid shipment to Carpe Diem.
+March 22 of YR12	 Aeneid (4:40) captured 95 acres of land from Plastered (6:2).
+March 22 of YR12	 Aeneid (4:40) captured 86 acres of land from Plastered (6:2).
+March 22 of YR12	 An unknown province from funshow WAR (4:40) captured 114 acres of land from Plastered (6:2).
+March 22 of YR12	 An unknown province from funshow WAR (4:40) captured 307 acres of land from Out of Sight (6:2).
+March 22 of YR12	 Cicero (4:40) captured 100 acres of land from Plastered (6:2).
+March 22 of YR12	 Cicero (4:40) captured 88 acres of land from Plastered (6:2).
+March 22 of YR12	 Cicero (4:40) captured 78 acres of land from Plastered (6:2).
+March 22 of YR12	 An unknown province from funshow WAR (4:40) captured 82 acres of land from Plastered (6:2).
+March 22 of YR12	 Romulus (4:40) attempted an invasion of Out of Sight (6:2), but was repelled.
+March 22 of YR12	 Romulus (4:40) captured 74 acres of land from Plastered (6:2).
+March 22 of YR12	 Aeneid has sent an aid shipment to Caligula.
+March 22 of YR12	 Aeneid has sent an aid shipment to Spartacus.
+March 22 of YR12	 Keg-legged (6:2) invaded Spartacus (4:40) and captured 567 acres of land.
+March 22 of YR12	 An unknown province from funshow WAR (4:40) captured 253 acres of land from SipSippin with Screw (6:2).
+March 22 of YR12	 Patrician (4:40) captured 132 acres of land from Just plain drunk (6:2).
+March 22 of YR12	 Patrician (4:40) captured 107 acres of land from Just plain drunk (6:2).
+March 22 of YR12	 Patrician (4:40) captured 89 acres of land from Just plain drunk (6:2).
+March 22 of YR12	 Patrician has sent an aid shipment to Carpe Diem.
+March 22 of YR12	 Brutus has sent an aid shipment to LETA.
+March 22 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Carpe Diem (4:40) and captured 41 acres of land.
+March 22 of YR12	 Keg-legged (6:2) invaded Gallia (4:40) and captured 251 acres of land.
+March 22 of YR12	 Keg-legged (6:2) invaded Carpe Diem (4:40) and captured 37 acres of land.
+March 24 of YR12	 the DL (4:40) captured 273 acres of land from SipSippin with Screw (6:2).
+March 24 of YR12	 the DL (4:40) captured 136 acres of land from Upholstered (6:2).
+March 24 of YR12	 the DL (4:40) captured 110 acres of land from Upholstered (6:2).
+March 24 of YR12	 the DL (4:40) captured 92 acres of land from Embalmed (6:2).
+March 24 of YR12	 LETA has sent an aid shipment to Carpe Diem.
+March 24 of YR12	 Octavian has sent an aid shipment to Carpe Diem.
+
+ 
+) and captured 37 acres of land.
+March 24 of YR12	 the DL (4:40) captured 273 acres of land from SipSippin with Screw (6:2).
+March 24 of YR12	 the DL (4:40) captured 136 acres of land from Upholstered (6:2).
+March 24 of YR12	 the DL (4:40) ca

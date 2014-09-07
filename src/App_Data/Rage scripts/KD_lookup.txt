@@ -1,0 +1,199 @@
+; :::: TOTAL KD LOOKUP SCRIPT ::::
+
+on *:TEXT:!KD *:#doxp: {
+  if (%KDrequest == 1) {
+    timerresetKDlookup off | timerresetKDlookup 0 20 set %KDrequest 0
+  msg $chan 4Please wait until a previous request is met. 14If the script has stopped working, this will be resolved in 20 seconds. | return }
+  if ($window(@honor) == $null) window -Sh +n @honor | if ($window(@NW) == $null) window -Sh +n @NW | if ($window(@acres) == $null) window -Sh +n @acres
+  set %KDlookupcheckvar 0 | set %KDNWfinished_1 0 | set %KDacresfinished_1 0 | set %KDhonorfinished_1 0 | set %KDrequest 1 | set %KDchannel $chan | set %KD $2
+  set %KDisland $right( %KD,$calc($len(%KD)- $pos(%KD,:,1)) ) | set %KDloc $left(%KD,$calc($pos(%KD,:,1) - 1) ) | timerKDlookupcheck off
+NWcharts | landcharts | honorcharts | timerKDlookupcheck 20 1 KDlookupcheck | msg %KDchannel 7Please wait while connecting to Swirve... }
+
+alias NWcharts { 
+dline @NW 1- | sockclose NWcharts | sockopen NWcharts u1.swirve.com 80 } 
+
+on *:sockopen:NWcharts: {
+  if ($sockerr) { sockclose NWcharts | msg %KDchannel 4Connection attempt failed, please try again | set %KDrequest 0 | return }
+NW_get }
+
+alias NW_get {
+  sockwrite -n $sockname GET $replacecs(/kingdoms/nw-XXX.htm?rc=686767,XXX,%KDisland) HTTP/1.0
+sockwrite -n $sockname Content-Type: text | sockwrite -n $sockname Connection: Close | sockwrite -n $sockname | timerNW 1 2 NW.KDlines }
+
+on *:SOCKREAD:NWcharts: { 
+  if ($sockerr > 0) return
+  :nextread 
+  sockread %temp 
+  if ($sockbr == 0) return
+  if (%temp) aline 2 @NW %temp
+goto nextread }
+
+alias NW.KDlines {
+  dline @NW 1-20
+  :remake
+  var %KDlines2 = $line(@NW,$fline(@NW,%KD,1,2),0) | var %islandKD = $right($left(%KDlines2,$calc($pos(%KDlines2,:,1) - 1)),2)
+  If ( %islandKD != %KDloc ) {
+    if ( %islandKD !isnum ) goto clear
+  dline @NW $fline(@NW,%KD,1,2) | goto remake }
+  :clear
+  var %KDlines3 = $replacecs(%KDlines2,<TR><TH>*</TH><TD>,$null,</TD><TD ALIGN=RIGHT>,123456789,</TD></TR>,$null)
+  var %leftside = $calc($pos(%KDlines3,123456789,1) - 1)
+  var %KDname1 $right($left(%KDlines3,%leftside),$calc($len($left(%KDlines3,%leftside)) - ($pos($left(%KDlines3,%leftside),TH><TD,1) + 6) ) )
+  set %KDchannel1.KDname $left($replacecs(%KDname1,%KD,$null),$calc($len($replacecs(%KDname1,%KD,$null)) - 2) )
+  set %KDchannel1.NW $replacecs($right(%KDlines3,$calc($len(%KDlines3) - ($pos(%KDlines3,123456789,1) + 8) )),gc,$null)
+set %KDNWfinished_1 1 | dline @NW 1- }
+
+alias landcharts {
+dline @acres 1- | sockclose landcharts | sockopen landcharts u1.swirve.com 80 } 
+
+on *:sockopen:landcharts: {
+  if ($sockerr) { sockclose landcharts | msg %KDchannel 4Connection attempt failed, please try again | set %KDrequest 0 | return }
+land_get }
+
+alias land_get {
+  sockwrite -n $sockname GET $replacecs(/kingdoms/land-XXX.htm?rc=135928,XXX,%KDisland) HTTP/1.0
+sockwrite -n $sockname Content-Type: text | sockwrite -n $sockname Connection: Close | sockwrite -n $sockname | timerland 1 2 land.KDlines }
+
+on *:SOCKREAD:landcharts: { 
+  if ($sockerr > 0) return
+  :nextread 
+  sockread %temp 
+  if ($sockbr == 0) return
+  if (%temp) aline 2 @acres %temp
+goto nextread }
+
+alias land.KDlines {
+  dline @acres 1-20
+  :remake
+  var %KDlines2 = $line(@acres,$fline(@acres,%KD,1,2),0) | var %islandKD = $right($left(%KDlines2,$calc($pos(%KDlines2,:,1) - 1)),2)
+  If ( %islandKD != %KDloc ) {
+    if ( %islandKD !isnum ) goto clear
+  dline @acres $fline(@acres,%KD,1,2) | goto remake }
+  :clear
+  var %KDlines3 = $replacecs(%KDlines2,<TR><TH>*</TH><TD>,$null,</TD><TD ALIGN=RIGHT>,123456789,</TD></TR>,$null)
+set %KDchannel1.land $replacecs($right(%KDlines3,$calc($len(%KDlines3) - ($pos(%KDlines3,123456789,1) + 8) )),Acres,$null) | set %KDacresfinished_1 1 | dline @acres 1- }
+
+alias honorcharts {
+dline @honor 1- | sockclose honorcharts | sockopen honorcharts u1.swirve.com 80 } 
+
+on *:sockopen:honorcharts: {
+  if ($sockerr) { sockclose honorcharts | msg %KDchannel 4Connection attempt failed, please try again | set %KDrequest 0 | return }
+honor1_get }
+
+alias honor1_get {
+  sockwrite -n $sockname GET $replacecs(/kingdoms/Honor-XXX.htm?rc=515799,XXX,%KDisland) HTTP/1.0
+sockwrite -n $sockname Content-Type: text | sockwrite -n $sockname Connection: Close | sockwrite -n $sockname | timerhonor 1 2 KDlines }
+
+on *:SOCKREAD:honorcharts: { 
+  if ($sockerr > 0) return
+  :nextread 
+  sockread %temp 
+  if ($sockbr == 0) return
+  if (%temp) aline 2 @honor %temp
+goto nextread }
+
+alias KDlines {
+  dline @honor 1-20
+  :remake
+  var %KDlines2 = $line(@honor,$fline(@honor,%KD,1,2),0) | var %islandKD = $right($left(%KDlines2,$calc($pos(%KDlines2,:,1) - 1)),2)
+  If ( %islandKD != %KDloc ) {
+    if ( %islandKD !isnum ) goto clear
+  dline @honor $fline(@honor,%KD,1,2) | goto remake }
+  :clear
+  var %KDlines3 = $replacecs(%KDlines2,<TR><TH>*</TH><TD>,$null,</TD><TD ALIGN=RIGHT>,123456789,</TD></TR>,$null)
+set %KDchannel1.honor $right(%KDlines3,$calc($len(%KDlines3) - ($pos(%KDlines3,123456789,1) + 8) )) | set %KDhonorfinished_1 1 | dline @honor 1- }
+
+alias KDlookupcheck {
+  set %KDlookupcheckvar $calc(%KDlookupcheckvar + 1)
+  if (%KDlookupcheckvar < 19) {
+    if (%KDNWfinished_1 == 1) {
+      if (%KDhonorfinished_1 == 1) {
+        var %KDchannel1.landnr = $replacecs(XXXYYYZZZ,XXX,$gettok(%KDchannel1.land,1,44),YYY,$gettok(%KDchannel1.land,2,44),ZZZ,$gettok(%KDchannel1.land,3,44) )
+        var %KDchannel1.NWnr = $replacecs(XXXYYYZZZ,XXX,$gettok(%KDchannel1.NW,1,44),YYY,$gettok(%KDchannel1.NW,2,44),ZZZ,$gettok(%KDchannel1.NW,3,44) ) 
+        msg %KDchannel 2The Kingdom4 %KD 2is currently known as:4 %KDchannel1.KDname | msg %KDchannel 2Acres:4 %KDchannel1.land
+        msg %KDchannel 2NW:4 %KDchannel1.NW | msg %KDchannel 2Average NW/acre:4 $round($calc( %KDchannel1.NWnr / %KDchannel1.landnr ),1)
+        msg %KDchannel 2Total Honor:4 %KDchannel1.honor 7(use !honor %KD for province honor) 
+        timerresetKDlookup off | set %KDrequest 0 | timerKDlookupcheck off
+        set %KDlookupcheckvar 0 | set %KDNWfinished_1 0 | set %KDacresfinished_1 0 | set %KDhonorfinished_1 0
+      return }
+    return }
+  return }
+timerKDlookupcheck off | set %KDrequest 0 | msg %KDchannel 4Connection attempt failed, please try again }
+
+; :::PROV HONOR:::
+on *:TEXT:!honor *:#doxp: {
+  if (%KDrequest = 1) { timerresetKDlookup off | timerresetKDlookup 0 20 set %KDrequest 0
+  msg $chan 4Please wait until a previous request is met. 14If the script has stopped working, this will be resolved in 20 seconds. | return }
+  if ($window(@honor) == $null) window -Sh +n @honor
+  set %KDrequest 1 | set %KDchannel $chan | set %KD $2 | set %KDisland $right(%KD,$calc($len(%KD)- $pos(%KD,:,1)) ) | set %KDloc $left(%KD,$calc($pos(%KD,:,1) - 1) )
+honorcharts2 | msg %KDchannel 7Please wait while connecting to Swirve... }
+
+alias honorcharts2 {
+dline @honor 1- | sockclose honorcharts2 | sockopen honorcharts2 u1.swirve.com 80 } 
+
+on *:sockopen:honorcharts2: {
+  if ($sockerr) { sockclose honorcharts2 | msg %KDchannel 4Connection attempt failed, please try again | set %KDrequest 0 | return }
+honor2_get }
+
+alias honor2_get {
+  sockwrite -n $sockname GET $replacecs(/kingdoms/Honor-XXX.htm?rc=515799,XXX,%KDisland) HTTP/1.0
+sockwrite -n $sockname Content-Type: text | sockwrite -n $sockname Connection: Close | sockwrite -n $sockname }
+
+on *:SOCKREAD:honorcharts2: { 
+  if ($sockerr > 0) return
+  timerhonor 1 2 KDlines2
+  :nextread 
+  sockread %temp 
+  if ($sockbr == 0) return
+  if (%temp) aline 2 @honor %temp 
+goto nextread }
+
+alias KDlines2 {
+  dline @honor 1-20
+  :remake
+  var %KDlines2 = $line(@honor,$fline(@honor,%KD,1,2),0) | var %islandKD = $right($left(%KDlines2,$calc($pos(%KDlines2,:,1) - 1)),2)
+  If ( %islandKD != %KDloc ) {
+    if ( %islandKD !isnum ) goto clear
+  dline @honor $fline(@honor,%KD,1,2) | goto remake }
+  :clear
+  var %KDlines3 = $replacecs(%KDlines2,<TR><TH>*</TH><TD>,$null,</TD><TD ALIGN=RIGHT>,123456789,</TD></TR>,$null) | var %leftside = $calc($pos(%KDlines3,123456789,1) - 1)
+  set %KDchannel1.KDname $right($left(%KDlines3,%leftside),$calc($len($left(%KDlines3,%leftside)) - ($pos($left(%KDlines3,%leftside),TH><TD,1) + 6) ))
+msg %KDchannel 2Total honor for4 %KDchannel1.KDname 2is:4 $right(%KDlines3,$calc($len(%KDlines3) - ($pos(%KDlines3,123456789,1) + 8) ) ) | provhonor }
+
+alias provhonor { 
+dline @honor 1- | sockclose provhonorcharts | sockopen provhonorcharts u1.swirve.com 80 } 
+
+on *:sockopen:provhonorcharts: {
+  if ($sockerr) { sockclose provhonorcharts | msg %KDchannel 4Connection attempt failed, please try again | set %KDrequest 0 | return }
+honor3_get }
+
+alias honor3_get {
+  sockwrite -n $sockname GET $replacecs(/players/honor-XXX.htm?rc=743008,XXX,%KDisland) HTTP/1.0
+sockwrite -n $sockname Content-Type: text | sockwrite -n $sockname Connection: Close | sockwrite -n $sockname }
+
+on *:SOCKREAD:provhonorcharts: { 
+  if ($sockerr > 0) return
+  timerhonor 1 2 provhonorlines
+  :nextread 
+  sockread %temp 
+  if ($sockbr == 0) return
+  if (%temp) aline 2 @honor %temp
+goto nextread }
+
+alias provhonorlines {
+  var %x = 1 | var %y = 0 | dline @honor 1-10
+  :remake
+  var %x = $calc(%x + 1) | var %provlines = $line(@honor,$fline(@honor,%KD,1,2),0) | var %isolateprov = $right($left(%provlines,$calc($pos(%provlines,:,1) - 1) ),2)
+  if (%x == 100) return
+  If ( %isolateprov != %KDloc ) {
+    if ( %isolateprov !isnum ) goto clear
+  dline @honor $fline(@honor,%KD,1,2) | goto remake }
+  :clear
+  var %y = $calc(%y + 1)
+  var %provlines3 = $replacecs(%provlines,</TD><TD ALIGN=RIGHT>,$null,</TD></TR>,$null,</TD><TD>,PROVSEPARATOR)
+  var %provlines4 = $left(%provlines3,$calc($pos(%provlines3,PROVSEPARATOR,1) - 1))
+  var %provname = $right(%provlines4,$calc($len(%provlines4) - ($pos(%provlines4,</TH><TD>,1) + 8) ))
+  var %provhonor = $replace($right(%provlines3,$calc($len(%provlines3) - ($pos(%provlines3,PROVSEPARATOR,2) + 12) )),%KDchannel1.KDname,$null)
+  if ($fline(@honor,%KD,1,2) != $null) { msg %KDchannel 2Province4 %provname 2has honor:4 %provhonor | dline @honor $fline(@honor,%KD,1,2) | goto remake }
+  if (%y == 1) { msg %KDchannel 4Kingdom has no provinces on honor charts | timerresetKDlookup off | set %KDrequest 0 }
+timerresetKDlookup off | set %KDrequest 0 | return }

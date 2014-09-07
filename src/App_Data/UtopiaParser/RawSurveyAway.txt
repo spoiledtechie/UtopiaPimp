@@ -1,0 +1,66 @@
+Money: 42,001gc	Peasants: 13,149	Food: 126,489 Bushels	Runes: 98,254	NW: 231,967gc
+Utopia Guide: Thievery
+
+You send your thieves, and the operation commences...
+
+Early indications show that our operation was a stunning success.
+Our thieves scour the lands of ITS MY FIRST DAY (25:8) and learn...
+Internal Affairs
+
+Lord Mepp the Warrior, I am in charge of the development of infrastructure within your province.
+I offer to you information on our buildings, their efficiency, and a list of when our current projects will be completed.
+
+Building Effectiveness - The structures we construct throughout our lands may or may not function at full capacity, depending on two major factors. First, people must work in the buildings to realize their full utility. Second, money invested in tools sciences can raise efficiency as well. Note that changes in employment require time to shift your building efficiency. Listed below are the net effects of each of our buildings, not including personality or racial bonuses.
+
+Current Available Workers:	10,539
+Current Available Jobs:	20,800
+Building Efficiency:	95.2%
+Workers Needed for Max Efficiency:	13,936
+
+You will find that as we build more of certain building types, many new structures will be less effective. The Next 1% in parentheses below refers to the benefits of dedicating 1% more of your land to a particular building type.
+
+Building Effects
+Building	Owned	Current Effects (Next 1%)
+Barren Lands 	0	0.0% 	
+Homes 	108	7.9% 	Increase Max Population by 598
+Increase Birth Rates by 16.62%
+Farms 	99	9.1% 	Produce 5454 Bushels of Food
+Mills 	0	0.0% 	0.00% Lower Building Costs
+Reduce Exploration Costs by 0.00%
+Banks 	0	0.0% 	Produce 0gc per Day
+0.00% Higher Income
+Training Grounds 	201	13.0% 	13.46% Higher Offensive Efficiency
+Armouries 	0	0.0% 	0.00% Lower Military Training Costs
+0.00 Lower Military Wages
+Barracks 	101	9.6% 	8.83% Lower Attack Times
+Forts 	111	7.3% 	11.37% Higher Defensive Efficiency
+Guard Stations 	0	0.0% 	0.00% Lower Resource Losses when Attacked
+Hospitals 	85	7.7% 	13.98% Chance to Cure the Plague each Day
+18.00% Lower Military Losses
+Guilds 	106	12.5% 	2.6 Wizards Trained per Day
+Towers 	34	2.9% 	Produce 297 Runes per Day
+Thieves' Dens 	83	9.7% 	25.39% Lower Losses in Thievery Operations
+16.48% Higher Thievery Effectiveness
+Watchtowers 	0	0.0% 	0.00% Chance of Catching Enemy Thieves
+0.00% Chance of Identifying Enemy Thieves
+Libraries 	0	0.0% 	0.00% Increase in Science Effects
+Schools 	51	4.1% 	Produce 137 Science Books per Day
+Protect 8.01% of Science from Enemies
+Stables 	0	0.0% 	Produce 0 Horses per Day
+Hold 0 Horses
+Dungeons 	0	0.0% 	House 0 Prisoners of War
+
+Money: 42,001gc	Peasants: 13,149	Food: 126,489 Bushels	Runes: 98,254	NW: 231,967gc
+
+	You descend into an underground area of your castle and enter the Guild of Thieves. An organization created under your leadership, the Guild trains the lowest classes of people to learn the tools of the trade. Trained by your military, your thieves stand ready at your service to do what is needed. You can learn more about their capabilities in the Guide link above.
+
+Thieves:	1488 (1.07 per acre)
+Stealth:	45%
+
+Kingdom: Island:
+Select Operation: 	
+Thieves to Send:	
+	
+
+
+	

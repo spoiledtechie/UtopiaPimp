@@ -1,0 +1,145 @@
+Money: 42,001gc	Peasants: 13,149	Food: 126,489 Bushels	Runes: 98,254	NW: 231,340gc
+
+Kingdom: Island:
+The Esteemed Kingdom of Mighty Mountains (17:38)
+Total Provinces: 25
+Total Networth: 6,422,900gc (avg: 256,916gc)
+Total Land: 38,606 acres (avg: 1544 acres)
+Networth Rank: 167 of 1000
+Land Rank: 180 of 1000
+Key:    Green = Protection     Red = Kingdom Monarch     Bold = You     * = Online    
+
+Kingdom Stance: Fortified
+War History - Wars: 4 - Wins: 2 - Average Opponent Size: 102%
+
+Province	Race	Land Acres 	Net Worth	Rank
+
+MightyStone Mountain (17:38)
+Wolf Mountain (17:38)
+Mountain of Nymphos (17:38)
+Pillage Me NOT (17:38)
+Mystic Mountain (17:38)
+A Mountain (17:38)
+Shrek mOuntain (17:38)
+Thunder Mountain (17:38)
+Orc R US (17:38)
+Tiger Mountain (17:38)
+Dwarfs Mountain (17:38)
+Root of the Mountain (17:38)
+Metal Mace Mountain (17:38)
+Apologetics Mountain (17:38)
+Mountain Lion (17:38)
+Marley Mountain (17:38)
+Vicegerent Mountain (17:38)
+Brasilia (17:38)
+Mountain of Techies (17:38)
+Rapid Wolf Mountain (17:38)
+Torn Conscious (17:38)
+Mini Mountain (17:38)
+Joes Mountain (17:38)
+II Mark II (17:38)
+Sourz of Doom (17:38)	
+Orc
+Orc
+Orc
+Gnome
+Dark Elf
+Orc
+*Orc
+Orc
+Gnome
+Orc
+Orc
+Orc
+Orc
+Orc
+*Dark Elf
+Orc
+Orc
+Elf
+*Orc
+Orc
+Human
+Orc
+Orc
+Gnome
+Dark Elf 	
+1623
+1556
+2242
+1516
+1976
+1937
+1495
+1548
+DEAD
+1272
+1783
+1784
+1802
+1651
+2073
+1460
+1739
+2011
+1390
+1732
+1614
+1396
+1143
+1340
+523 	
+273,532gc
+260,281gc
+381,422gc
+220,396gc
+359,913gc
+353,763gc
+258,454gc
+272,358gc
+DEAD
+221,913gc
+304,057gc
+310,610gc
+317,896gc
+273,097gc
+358,283gc
+214,443gc
+289,694gc
+316,811gc
+231,340gc
+282,975gc
+256,734gc
+214,838gc
+146,503gc
+238,935gc
+64,652gc 	
+Knight
+Lord
+Knight
+Lord
+Baroness
+Lord
+Peasant
+Lord
+DEAD
+Queen
+Knight
+Knight
+Lord
+Lord
+Lord
+Lady
+Lord
+Lord
+Knight
+Lord
+Knight
+Noble Lady
+Knight
+Baron
+Lord
+
+
+
+	

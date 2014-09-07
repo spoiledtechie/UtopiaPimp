@@ -1,0 +1,1346 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Test.master.cs" Inherits="UI_Test" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Utopia Pimp 3.0</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="files/style.css" />
+    <link rel="stylesheet" type="text/css" href="files/ui.core.css" />
+    <link rel="stylesheet" type="text/css" href="files/ui.datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="files/ui.theme.css" />
+    <link rel="stylesheet" type="text/css" href="files/ui.tabs.css" />
+    <link rel="stylesheet" type="text/css" href="files/ui.dialog.css" />
+    <link rel="stylesheet" type="text/css" href="files/colorbox.css" />
+    <link rel="stylesheet" type="text/css" href="files/style1.css" />
+    <link rel="stylesheet" type="text/css" href="files/style2.css" />
+    <!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="colorbox/colorbox-ie.css" />
+<![endif]-->
+    <script type="text/javascript" src="files/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="files/jquery-ui-1.7.1.custom.min.js"></script>
+    <script type="text/javascript" src="files/main.js"></script>
+    <script type="text/javascript" src="files/akeditable.js"></script>
+    <script type="text/javascript" src="files/jQuery Cycle.js"></script>
+    <script type="text/javascript" src="files/jquery.colorbox-min.js"></script>
+    <style type="text/css">
+        #colorbox, #cboxOverlay, #cboxWrapper
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            overflow: hidden;
+        }
+        #cboxOverlay
+        {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+        #cboxMiddleLeft, #cboxBottomLeft
+        {
+            clear: left;
+        }
+        #cboxContent
+        {
+            position: relative;
+            overflow: visible;
+        }
+        #cboxLoadedContent
+        {
+            overflow: auto;
+            width: 0;
+            height: 0;
+        }
+        #cboxLoadedContent iframe
+        {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        #cboxTitle
+        {
+            margin: 0;
+        }
+        #cboxLoadingOverlay, #cboxLoadingGraphic
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        #cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow
+        {
+            cursor: pointer;
+        }
+    </style>
+    <style type="text/css">
+        .slide-out-div
+        {
+            padding: 20px;
+            width: 500px;
+            background: #ccc;
+            border: 1px solid #29216d;
+            z-index: 9999;
+        }
+    </style>
+    <script type="text/javascript" src="files/jquery.example.min.js"></script>
+    <script type="text/javascript" src="files/sorttable.js"></script>
+    <script type="text/javascript" src="files/multiple_checkbox.js"></script>
+    <script type="text/javascript" src="files/supersleight.js"></script>
+    <script type="text/javascript" src="files/jquery.smarkup.js"></script>
+    <script type="text/javascript" src="files/smarkup.js"></script>
+    <script type="text/javascript" src="files/conf.js"></script>
+    <script src="http://tab-slide-out.googlecode.com/files/jquery.tabSlideOut.v1.3.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.slide-out-div').tabSlideOut({
+                tabHandle: '.handle',                     //class of the element that will become your tab
+                pathToTabImage: 'files/parse.gif', //path to the image for the tab //Optionally can be set using css
+                imageHeight: '122px',                     //height of tab image           //Optionally can be set using css
+                imageWidth: '40px',                       //width of tab image            //Optionally can be set using css
+                tabLocation: 'left',                      //side of screen where tab lives, top, right, bottom, or left
+                speed: 300,                               //speed of animation
+                action: 'click',                          //options: 'click' or 'hover', action to trigger animation
+                topPos: '200px',                          //position from the top/ use if tabLocation is left or right
+                leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
+                fixedPosition: true                      //options: true makes it stick(fixed position) on scroll
+            });
+
+        });
+
+    </script>
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="slide-out-div">
+        <a class="handle" href="http://link-for-non-js-users.html">Parse data</a>
+        <h3>
+            Paste game information</h3>
+        <p>
+            <textarea rows="20" cols="50" id=""></textarea>
+        </p>
+        <p>
+            <input type="button" value="Send" /></p>
+    </div>
+    <div id="cboxOverlay" style="display: none;">
+    </div>
+    <div id="colorbox" style="padding-bottom: 42px; padding-right: 42px; display: none;">
+        <div id="cboxWrapper">
+            <div>
+                <div id="cboxTopLeft" style="float: left;">
+                </div>
+                <div id="cboxTopCenter" style="float: left;">
+                </div>
+                <div id="cboxTopRight" style="float: left;">
+                </div>
+            </div>
+            <div id="cboxMiddleLeft" style="float: left;">
+            </div>
+            <div id="cboxContent" style="float: left;">
+                <div id="cboxLoadedContent" class="" style="display: none;">
+                </div>
+                <div id="cboxLoadingOverlay" class="" style="display: none;">
+                </div>
+                <div id="cboxLoadingGraphic" class="" style="display: none;">
+                </div>
+                <div id="cboxTitle" class="" style="display: none;">
+                </div>
+                <div id="cboxCurrent" class="" style="display: none;">
+                </div>
+                <div id="cboxSlideshow" class="" style="display: none;">
+                </div>
+                <div id="cboxNext" class="" style="display: none;">
+                </div>
+                <div id="cboxPrevious" class="" style="display: none;">
+                </div>
+                <div id="cboxClose" class="" style="display: none;">
+                </div>
+            </div>
+            <div id="cboxMiddleRight" style="float: left;">
+            </div>
+            <div>
+                <div id="cboxBottomLeft" style="float: left;">
+                </div>
+                <div id="cboxBottomCenter" style="float: left;">
+                </div>
+                <div id="cboxBottomRight" style="float: left;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <!-- Dialog window -->
+        <!--| HEADER/TOP |-->
+        <div id="header">
+            <div id="logo">
+                <img src="files/logo.png" alt="" title="">
+                <h2>
+                    Your Utopian community</h2>
+            </div>
+            <div id="userid">
+                <div class="userid-user">
+                    <img src="files/user.png" alt=""><p>
+                        Welcome <b>
+                            <%= (HttpContext.Current.User.Identity.Name == null ? "unknown" : HttpContext.Current.User.Identity.Name) %></b></p>
+                </div>
+                <div class="userid-login">
+                    <img src="files/calendar.png" alt=""><p>
+                        Last login on 2010 dec 19</p>
+                </div>
+                <div class="userid-link">
+                    <img src="files/app.png" alt=""><p>
+                        <a href="http://www.utopia-game.com" target="_blank">Visit Utopa</a> | <a href="#">Logout</a></p>
+                </div>
+            </div>
+            <div id="nav">
+                <ul class="current">
+                    <li><a href="#">KD Dashboard</a></li>
+                </ul>
+                <ul class="sub_active">
+                    <li class="current_sub"><a href="#">Home</a></li>
+                    <li><a href="#">3:15</a></li>
+                    <li><a href="#">2:18</a></li>
+                    <li><a href="#">7:3</a></li>
+                </ul>
+                <ul class="select">
+                    <li><a href="#">Kingdom tools
+                        <!--[if IE 7]><!-->
+                    </a>
+                        <!--<![endif]-->
+                        <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul class="sub">
+                            <li><a href="#">Target finder</a></li>
+                            <li><a href="#">Mirc</a></li>
+                        </ul>
+                        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                </ul>
+                <ul class="select">
+                    <li><a href="#">Kingdom forum
+                        <!--[if IE 7]><!-->
+                    </a>
+                        <!--<![endif]-->
+                        <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul class="sub">
+                            <li><a href="#">Overview</a></li>
+                        </ul>
+                        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                </ul>
+                <ul class="select">
+                    <li><a href="#">User settings
+                        <!--[if IE 7]><!-->
+                    </a>
+                        <!--<![endif]-->
+                        <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul class="sub">
+                            <li><a href="#">Login settings</a></li>
+                            <li><a href="#">Contact settings</a></li>
+                            <li><a href="#">Email preferences</a></li>
+                            <li><a href="#">SMS settings</a></li>
+                        </ul>
+                        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                </ul>
+                <ul class="select">
+                    <li><a href="#">Monarch settings
+                        <!--[if IE 7]><!-->
+                    </a>
+                        <!--<![endif]-->
+                        <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul class="sub">
+                            <li><a href="#">Create kingdom</a></li>
+                            <li><a href="#">Create kingdom code</a></li>
+                            <li><a href="#">Send messages</a></li>
+                        </ul>
+                        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                </ul>
+                <ul class="select">
+                    <li><a href="#">Pimp forums
+                        <!--[if IE 7]><!-->
+                    </a>
+                        <!--<![endif]-->
+                        <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul class="sub">
+                            <li><a href="#">Overview</a></li>
+                        </ul>
+                        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                </ul>
+                <ul class="select">
+                    <li><a href="#">Pimp blog
+                        <!--[if IE 7]><!-->
+                    </a>
+                        <!--<![endif]-->
+                        <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul class="sub">
+                            <li><a href="#">Overview</a></li>
+                        </ul>
+                        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                </ul>
+                <ul class="select">
+                    <li><a href="#">Admin
+                        <!--[if IE 7]><!-->
+                    </a>
+                        <!--<![endif]-->
+                        <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul class="sub">
+                            <li><a href="#">TO DO-list</a></li>
+                            <li><a href="#">Manage users</a></li>
+                            <li><a href="#">Manage application cache</a></li>
+                        </ul>
+                        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                </ul>
+            </div>
+            <!--| end nav |-->
+            <form action="" method="post">
+            <div id="search">
+                <input type="text" name="s" id="s" value="" class="example">
+                <button id="send" value="" type="button" name="ss">
+                </button>
+            </div>
+            </form>
+        </div>
+        <!--| end header |-->
+        <!--| CONTENT/MID |-->
+        <div id="content">
+            <div id="col-left-780">
+                <div class="box-780-head">
+                    <h2>
+                        Monarch message</h2>
+                    <%--<div class="bnav">
+                        <a href="javascript:void(null);">
+                            <img src="files/edit.jpg" alt="">
+                        </a>
+                        <img src="files/delete.jpg" class="delete" alt="">
+                    </div>--%>
+                </div>
+                <div class="box-780-body" id="Div1" style="margin-bottom: 20px;">
+                    Message from the monarch.</div>
+                <div id="tabs" class="box-780-body ui-tabs ui-widget ui-widget-content ui-corner-all">
+                    <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+                        <li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#tabs-1">
+                            Kingdom summary</a></li>
+                        <li class="ui-state-default ui-corner-top"><a href="#tabs-2">Province codes</a></li>
+                        <li class="ui-state-default ui-corner-top"><a href="#tabs-3">Users w/o contact info</a></li>
+                        <li class="ui-state-default ui-corner-top"><a href="#tabs-4">Statistics</a></li>
+                    </ul>
+                    <div id="tabs-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom">                        
+                            <p>
+                            Relation Summary:<br />
+                            Total Attacks Made: 466 (45,063)<br />
+                            Total Attacks Suffered: 357 (38,442)<br />
+                            Net Change: +6,621<br />
+                            3:19 total acre changes<br />
+                            +2,218 - ass is back (22/3)<br />
+                            +1,216 - NoQuarter (19/3)<br />                            
+                            +890 - Keystone Ice (30/21)<br />
+                            +845 - Nabraka Town (9/0)<br />                                                
+                            +679 - Iceman DZ (44/23)<br />
+                            +231 - Iceberg (16/11)<br />
+                            -11 - SpaceLanD (17/13)<br />                            
+                            -99 - Icy Ais Kacang (10/18)<br />
+                            -103 - Slumma (0/1)<br />
+                            -335 - Norsland (0/3)<br />
+                            -434 - Heart of Ice (17/27)<br />
+                            -469 - IceyShockers (33/36)<br />
+                            -568 - D-Ice (0/4)<br />                            
+                            -834 - Azarath (17/24)<br />
+                            QueryTime:0 BuildTime:0.009754
+                            </p>
+                    </div>
+                    <div id="tabs-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+                        <h3 style="margin-bottom: 10px;">
+                            2 Provinces still NOT signed up.</h3>
+                            <p>
+                            NoQuarter	-	 fb68a0b469a84dd0bceb74336ffc18c0<br />
+                            Marianburg	-	 aaf1c3e1c90446998f07267cc4c21fc7
+                            </p>
+                    </div>
+                    <div id="tabs-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+                    <h3 style="margin-bottom: 10px;">
+                            3 Users have still not added their Contact Info.</h3>
+                            <p>
+                                D-Ice<br />
+                                Ice Shoxr<br />
+                                SpaceLanD<br />
+                            </p>                        
+                    </div>
+                    <div id="tabs-4" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+                        <p>
+                            For instance.<br />
+                            Province xxx has posted 3 CEs.</p>
+                    </div>
+                </div>
+                <div class="dialog-box-succes">
+                    <div class="dialog-left">
+                        <img src="files/succes.png" class="dialog-ico" alt="">
+                        Message send successfully!
+                    </div>
+                    <div class="dialog-right">
+                        <img src="files/succes-delete.jpg" class="del-x" alt="">
+                    </div>
+                </div>
+                <div class="dialog-box-error">
+                    <div class="dialog-left">
+                        <img src="files/error.png" class="dialog-ico" alt="">
+                        There is some sort of error!
+                    </div>
+                    <div class="dialog-right">
+                        <img src="files/error-delete.jpg" class="del-x" alt="">
+                    </div>
+                </div>
+                <div class="dialog-box-warning">
+                    <div class="dialog-left">
+                        <img src="files/warning.png" class="dialog-ico" alt="">
+                        You have got some sort of warning!
+                    </div>
+                    <div class="dialog-right">
+                        <img src="files/warning-delete.jpg" class="del-x" alt="">
+                    </div>
+                </div>
+                <div class="dialog-box-information">
+                    <div class="dialog-left">
+                        <img src="files/information.png" class="dialog-ico" alt="">
+                        This is a information message!
+                    </div>
+                    <div class="dialog-right">
+                        <img src="files/information-delete.jpg" class="del-x" alt="">
+                    </div>
+                </div>
+                <ul id="sortable" class="ui-sortable">
+                    <li>
+                        <div class="box-780-head">
+                            <h2>
+                                Edit Me 1</h2>
+                            <div class="bnav">
+                                <a href="javascript:void(null);" onclick="akedit('ajax.php?mode=eg1','toggle1',{
+		        type : 'textarea',
+				name : 'toggle1',
+				width: '700px',
+	            submit:'save'
+				});">
+                                    <img src="files/edit.jpg" alt="">
+                                </a><a href="javascript:void(null);" class="toggle" id="gle1">
+                                    <img src="files/toggle-plus.jpg" class="close" alt="">
+                                    <img src="files/toggle-min.jpg" class="open" style="display: none;" alt="">
+                                </a>
+                                <img src="files/delete.jpg" class="delete" alt="">
+                            </div>
+                        </div>
+                        <div class="box-780-body" id="toggle1">
+                            You can edit me, just click on the edit button at the top right.....</div>
+                    </li>
+                    <li>
+                        <div class="box-780-head">
+                            <h2>
+                                Edit Me 2</h2>
+                            <div class="bnav">
+                                <a href="javascript:void(null);" onclick="akedit('ajax.php?mode=eg2','toggle2',{
+		        type : 'textarea',
+				name : 'toggle2',
+				width: '232px',
+	            submit:'save'
+				});">
+                                    <img src="files/edit.jpg" alt="">
+                                </a><a href="javascript:void(null);" class="toggle" id="gle2">
+                                    <img src="files/toggle-plus.jpg" class="close" alt="">
+                                    <img src="files/toggle-min.jpg" class="open" style="display: none;" alt="">
+                                </a>
+                                <img src="files/delete.jpg" class="delete" alt="">
+                            </div>
+                        </div>
+                        <div class="box-780-body" id="toggle2">
+                            Just some text</div>
+                    </li>
+                    <li>
+                        <div class="box-780-head">
+                            <h2>
+                                Province contact information</h2>
+                            <div class="bnav2">
+                                <a href="javascript:void(null);" class="toggle" id="gle3">
+                                    <img src="files/toggle-plus.jpg" class="close" alt="">
+                                    <img src="files/toggle-min.jpg" class="open" style="display: none;" alt="">
+                                </a>
+                                <img src="files/delete.jpg" class="delete" alt="">
+                            </div>
+                        </div>
+                        <div class="box-780-body" id="toggle3">
+                            <table class="sortable" id="tb-1">
+                                <thead>
+                                    <tr class="row">
+                                        <th class="th-1">
+                                            Province name
+                                        </th>
+                                        <th class="th-2">
+                                            Ruler
+                                        </th>
+                                        <th class="th-3">
+                                            Email
+                                        </th>
+                                        <th class="th-4">
+                                            MSN
+                                        </th>
+                                        <th class="th-5">
+                                            xxx
+                                        </th>
+                                        <th class="th-6">
+                                            xxx
+                                        </th>
+                                        <th class="th-7">
+                                            xxx
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="">
+                                        <td class="td-1">
+                                            Nebraska town
+                                        </td>
+                                        <td class="td-2">
+                                            N.t
+                                        </td>
+                                        <td class="td-3">
+                                            yyy@hhh.aa
+                                        </td>
+                                        <td class="td-4">
+                                            johnsmith@hotmail.com
+                                        </td>
+                                        <td class="td-5">
+                                            xxx
+                                        </td>
+                                        <td class="td-6">
+                                            xxx
+                                        </td>
+                                        <td class="td-7">
+                                            <a href="#">
+                                                <img src="files/edit-user.png" class="tb-1-action-edit" alt=""></a> <a href="#">
+                                                    <img src="files/lock.png" class="tb-1-action-lock" alt=""></a> <a href="#">
+                                                        <img src="files/delete.png" class="tb-1-action-delete" alt=""></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="row">
+                                        <td class="td-1">
+                                            Slumma
+                                        </td>
+                                        <td class="td-2">
+                                            Slummo
+                                        </td>
+                                        <td class="td-3">
+                                            test@test.as
+                                        </td>
+                                        <td class="td-4">
+                                            johnsmith@hotmail.com
+                                        </td>
+                                        <td class="td-5">
+                                            xxx
+                                        </td>
+                                        <td class="td-6">
+                                            xxx
+                                        </td>
+                                        <td class="td-7">
+                                            <a href="#">
+                                                <img src="files/edit-user.png" class="tb-1-action-edit" alt=""></a> <a href="#">
+                                                    <img src="files/unlock.png" class="tb-1-action-lock" alt=""></a> <a href="#">
+                                                        <img src="files/delete.png" class="tb-1-action-delete" alt=""></a>
+                                        </td>
+                                    </tr>                                    
+                                </tbody>
+                                <tfoot>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </li>
+                    <%--<li>
+                        <div class="box-780-head">
+                            <h2>
+                                Product Table</h2>
+                            <div class="bnav2">
+                                <a href="javascript:void(null);" class="toggle" id="gle4">
+                                    <img src="files/toggle-plus.jpg" class="close" alt="">
+                                    <img src="files/toggle-min.jpg" class="open" style="display: none;" alt="">
+                                </a>
+                                <img src="files/delete.jpg" class="delete" alt="">
+                            </div>
+                        </div>
+                        <div class="box-780-body" id="toggle4">
+                            <form id="form_1" action="" method="post">
+                            <table class="sortable" id="tb-2">
+                                <thead>
+                                    <tr class="row">
+                                        <th class="th-8">
+                                        </th>
+                                        <th class="th-9">
+                                            Photo
+                                        </th>
+                                        <th class="th-10">
+                                            Name
+                                        </th>
+                                        <th class="th-11">
+                                            Code
+                                        </th>
+                                        <th class="th-12">
+                                            Price
+                                        </th>
+                                        <th class="th-13">
+                                            Move
+                                        </th>
+                                        <th class="th-14">
+                                            Actions
+                                        </th>
+                                        <th class="th-15">
+                                            Info
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="td-8">
+                                            <input type="checkbox" name="form1" value="1">
+                                        </td>
+                                        <td class="td-9">
+                                            <a href="files/img1-big.jpg" class="lightbox2" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                                                <img src="files/img1.jpg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="td-10">
+                                            AP Administration Panel
+                                        </td>
+                                        <td class="td-11">
+                                            DXC-475134-A
+                                        </td>
+                                        <td class="td-12">
+                                            $1207,89
+                                        </td>
+                                        <td class="td-13">
+                                            <a href="#">
+                                                <img src="files/up.png" alt=""></a> <a href="#">
+                                                    <img src="files/down.png" alt=""></a>
+                                        </td>
+                                        <td class="td-14">
+                                            <a href="#">
+                                                <img src="files/star-empty.png" alt=""></a> <a href="#">
+                                                    <img src="files/table-excel.png" alt=""></a> <a href="#">
+                                                        <img src="files/sticky.png" alt=""></a> <a href="#">
+                                                            <img src="files/delete.png" alt=""></a>
+                                        </td>
+                                        <td class="td-15">
+                                            <img src="files/information.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="row">
+                                        <td class="td-8">
+                                            <input type="checkbox" name="form1" value="2">
+                                        </td>
+                                        <td class="td-9">
+                                            <a href="files/img2-big.jpg" class="lightbox2" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                                                <img src="files/img2.jpg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="td-10">
+                                            AP Administration Panel
+                                        </td>
+                                        <td class="td-11">
+                                            DXA-275134-H
+                                        </td>
+                                        <td class="td-12">
+                                            $1100,00
+                                        </td>
+                                        <td class="td-13">
+                                            <a href="#">
+                                                <img src="files/up.png" alt=""></a> <a href="#">
+                                                    <img src="files/down.png" alt=""></a>
+                                        </td>
+                                        <td class="td-14">
+                                            <a href="#">
+                                                <img src="files/star.png" alt=""></a> <a href="#">
+                                                    <img src="files/table-excel.png" alt=""></a> <a href="#">
+                                                        <img src="files/sticky.png" alt=""></a> <a href="#">
+                                                            <img src="files/delete.png" alt=""></a>
+                                        </td>
+                                        <td class="td-15">
+                                            <img src="files/information.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-8">
+                                            <input type="checkbox" name="form1" value="3">
+                                        </td>
+                                        <td class="td-9">
+                                            <a href="files/img3-big.jpg" class="lightbox2" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                                                <img src="files/img3.jpg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="td-10">
+                                            AP Administration Panel
+                                        </td>
+                                        <td class="td-11">
+                                            DXC-475777-A
+                                        </td>
+                                        <td class="td-12">
+                                            $12,09
+                                        </td>
+                                        <td class="td-13">
+                                            <a href="#">
+                                                <img src="files/up.png" alt=""></a> <a href="#">
+                                                    <img src="files/down.png" alt=""></a>
+                                        </td>
+                                        <td class="td-14">
+                                            <a href="#">
+                                                <img src="files/star-empty.png" alt=""></a> <a href="#">
+                                                    <img src="files/table-excel.png" alt=""></a> <a href="#">
+                                                        <img src="files/sticky.png" alt=""></a> <a href="#">
+                                                            <img src="files/delete.png" alt=""></a>
+                                        </td>
+                                        <td class="td-15">
+                                            <img src="files/information.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="row">
+                                        <td class="td-8">
+                                            <input type="checkbox" name="form1" value="4">
+                                        </td>
+                                        <td class="td-9">
+                                            <a href="files/img4-big.jpg" class="lightbox2" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                                                <img src="files/img4.jpg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="td-10">
+                                            AP Administration Panel
+                                        </td>
+                                        <td class="td-11">
+                                            DXC-470000-A
+                                        </td>
+                                        <td class="td-12">
+                                            $808,19
+                                        </td>
+                                        <td class="td-13">
+                                            <a href="#">
+                                                <img src="files/up.png" alt=""></a> <a href="#">
+                                                    <img src="files/down.png" alt=""></a>
+                                        </td>
+                                        <td class="td-14">
+                                            <a href="#">
+                                                <img src="files/star.png" alt=""></a> <a href="#">
+                                                    <img src="files/table-excel.png" alt=""></a> <a href="#">
+                                                        <img src="files/sticky.png" alt=""></a> <a href="#">
+                                                            <img src="files/delete.png" alt=""></a>
+                                        </td>
+                                        <td class="td-15">
+                                            <img src="files/information.png" alt="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                </tfoot>
+                            </table>
+                            <div class="myform-btn">
+                                <div class="myform-check">
+                                    <a href="javascript:void(null);" id="checkall" onclick="boxes_checkall(document.getElementById('form_1'),1);">
+                                        &nbsp;</a> <a href="javascript:void(null);" id="uncheckall" onclick="boxes_checkall(document.getElementById('form_1'),0);">
+                                            &nbsp;</a> <a href="javascript:void(null);" id="delete-btn">&nbsp;</a>
+                                </div>
+                                <div class="page-nav">
+                                    <ul>
+                                        <li><a href="#" id="prev">&nbsp;</a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#" class="currentpage">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">6</a></li>
+                                        <li><a href="#">9</a> [...] </li>
+                                        <li><a href="#">27</a></li>
+                                        <li><a href="#">28</a></li>
+                                        <li><a href="#" id="next">&nbsp;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </li>--%>
+                    <li>
+                        <div class="box-780-head">
+                            <h2>
+                                Update contact information</h2>
+                            <div class="bnav2">
+                                <a href="javascript:void(null);" class="toggle" id="gle5">
+                                    <img src="files/toggle-plus.jpg" class="close" alt="">
+                                    <img src="files/toggle-min.jpg" class="open" style="display: none;" alt="">
+                                </a>
+                                <img src="files/delete.jpg" class="delete" alt="">
+                            </div>
+                        </div>
+                        <div class="box-780-body" id="toggle5">
+                            <div class="inputfield">
+                                <label for="field1">
+                                    Nick name:</label>
+                                <input type="text" name="field1" id="field1">
+                            </div>
+                            <div class="inputfield">
+                                <label for="field2">
+                                    GMT:</label>
+                                <select name="field3" id="field2">
+                                    <option value="">-1</option>
+                                    <option value="">0</option>
+                                    <option value="">+1</option>
+                                    <option value="">+2</option>
+                                </select>
+                            </div>
+                            <div class="inputfield">
+                                <label for="field3">
+                                    Textmessages?</label>
+                                <div>
+                                    <input type="checkbox" name="field3" id="field3">Yes
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="field3" id="field4">No
+                                </div>
+                            </div>
+                            <div class="inputfield">
+                                <label for="field5">
+                                    Gender?</label>
+                                <div>
+                                    <input type="radio" name="field4" id="field5">Man
+                                </div>
+                                <div>
+                                    <input type="radio" name="field4" id="field6">Women
+                                </div>
+                            </div>
+                            <div class="inputfield">
+                                <label for="field7">
+                                    Email:</label>
+                                <input class="longfield" type="text" name="field7" id="field7">
+                            </div>
+                            <div class="textfield">
+                                <label for="field8">
+                                    Description:</label>
+                                <textarea cols="" rows="" id="field8"></textarea>
+                            </div>
+                            <div class="send-btn">
+                                <button id="send-form" value="" type="button" name="">
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form method="post" action="">
+                        <div class="box-780-head">
+                            <h2>
+                                Perhaps allow messages to be posted by the monarch?</h2>
+                            <div class="bnav2">
+                                <a href="javascript:void(null);" class="toggle" id="gle6">
+                                    <img src="files/toggle-plus.jpg" class="close" alt="">
+                                    <img src="files/toggle-min.jpg" class="open" style="display: none;" alt="">
+                                </a>
+                                <img src="files/delete.jpg" class="delete" alt="">
+                            </div>
+                        </div>
+                        <div class="box-780-body" id="toggle6">
+                            <div class="editor">
+                                <div class="smarkup html" id="id-smarkup-html">
+                                    <div class="smarkup-toolbar">
+                                        <ul class="smarkup-toolbar">
+                                            <li><a href="#" rel="find" class="find" title="Search &amp; Replace [Ctrl + H]"></a>
+                                            </li>
+                                            <li><a href="#" rel="preview" class="preview" title="Preview Document"></a></li>
+                                            <li class="separator">------------------------</li><li><a href="#" rel="h1" class="h1"
+                                                title="Heading 1"></a></li>
+                                            <li><a href="#" rel="h2" class="h2" title="Heading 2"></a></li>
+                                            <li><a href="#" rel="h3" class="h3" title="Heading 3"></a></li>
+                                            <li><a href="#" rel="h4" class="h4" title="Heading 4"></a></li>
+                                            <li><a href="#" rel="h5" class="h5" title="Heading 5"></a></li>
+                                            <li><a href="#" rel="h6" class="h6" title="Heading 6"></a></li>
+                                            <li><a href="#" rel="p" class="p" title="Paragraph"></a></li>
+                                            <li><a href="#" rel="blockquote" class="blockquote" title="Blockquote"></a></li>
+                                            <li class="separator">------------------------</li><li><a href="#" rel="strong" class="strong"
+                                                title="Bold [Ctrl + B]"></a></li>
+                                            <li><a href="#" rel="em" class="em" title="Italic [Ctrl + I]"></a></li>
+                                            <li><a href="#" rel="del" class="del" title="Strike Through"></a></li>
+                                            <li class="separator">------------------------</li><li><a href="#" rel="ul" class="ul"
+                                                title="Unordered List"></a></li>
+                                            <li><a href="#" rel="ol" class="ol" title="Ordered List"></a></li>
+                                            <li><a href="#" rel="li" class="li" title="List Item"></a></li>
+                                            <li class="separator">------------------------</li><li><a href="#" rel="img" class="img"
+                                                title="Image"></a></li>
+                                            <li><a href="#" rel="a" class="a" title="Link"></a></li>
+                                            <li class="separator">------------------------</li><li><a href="#" rel="help" class="help"
+                                                title="Quick Help"></a></li>
+                                        </ul>
+                                        <br clear="all">
+                                    </div>
+                                    <div class="smarkup-search">
+                                        <input type="text" name="smu_qsearch" class="qsearch" autocomplete="off"><a href="#"
+                                            title="Move to next match"></a><small></small></div>
+                                    <div class="smarkup-textarea-wrapper">
+                                        <div class="smarkup-textarea">
+                                            <textarea name="html" id="html" cols="" rows="" style="height: 300px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel odio a purus ornare aliquet in et erat. Mauris at elit pretium massa eleifend rhoncus quis eu est. Aenean eu lorem tortor. Nulla eu feugiat mi. Fusce at metus sed urna luctus consectetur. Nullam justo ligula, tempor et ultrices nec, pharetra non lacus.Vivamus, vitae lacinia magna. Proin enim leo, bibendum viverra fringilla eget, sollicitudin sit amet massa. Vestibulum molestie neque at dui convallis mollis. In non erat vel ante posuere eleifend.
+                      </textarea></div>
+                                    </div>
+                                    <div class="smarkup-preview">
+                                        <div class="smarkup-preview-header">
+                                            Document Preview [ x ]</div>
+                                    </div>
+                                    <div class="smarkup-overlap">
+                                    </div>
+                                    <div class="smarkup-dialog">
+                                        <div class="smarkup-dialog-header">
+                                            <div class="smarkup-dialog-tl">
+                                            </div>
+                                            <div class="smarkup-dialog-tr">
+                                            </div>
+                                        </div>
+                                        <div class="smarkup-dialog-body">
+                                            <div class="smarkup-dialog-form">
+                                            </div>
+                                        </div>
+                                        <div class="smarkup-dialog-footer">
+                                            <div class="smarkup-dialog-bl">
+                                            </div>
+                                            <div class="smarkup-dialog-br">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                [ <a href="javascript:void(null);" id="remove" rel="on">Switch to simple mode</a>
+                                ]
+                            </div>
+                            <div class="send-btn-2">
+                                <button id="send-editor" value="" type="button" name="">
+                                </button>
+                            </div>
+                        </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <!--| end col-left-780 |-->
+            <!-- next collom -->
+            <div id="col-right-200">
+                <div id="datepicker" class="hasDatepicker">
+                    <div class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+                        <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all">
+                            <a class="ui-datepicker-prev ui-corner-all" onclick="DP_jQuery.datepicker._adjustDate('#datepicker', -1, 'M');"
+                                title=""><span class="ui-icon ui-icon-circle-triangle-w"></span></a><a class="ui-datepicker-next ui-corner-all"
+                                    onclick="DP_jQuery.datepicker._adjustDate('#datepicker', +1, 'M');" title=""><span
+                                        class="ui-icon ui-icon-circle-triangle-e"></span></a>
+                            <div class="ui-datepicker-title">
+                                <span class="ui-datepicker-month">December</span> <span class="ui-datepicker-year">2010</span></div>
+                        </div>
+                        <table class="ui-datepicker-calendar">
+                            <thead>
+                                <tr>
+                                    <th class="ui-datepicker-week-end">
+                                        <span title="Sunday">Su</span>
+                                    </th>
+                                    <th>
+                                        <span title="Monday">Mo</span>
+                                    </th>
+                                    <th>
+                                        <span title="Tuesday">Tu</span>
+                                    </th>
+                                    <th>
+                                        <span title="Wednesday">We</span>
+                                    </th>
+                                    <th>
+                                        <span title="Thursday">Th</span>
+                                    </th>
+                                    <th>
+                                        <span title="Friday">Fr</span>
+                                    </th>
+                                    <th class="ui-datepicker-week-end">
+                                        <span title="Saturday">Sa</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">
+                                        &nbsp;
+                                    </td>
+                                    <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">
+                                        &nbsp;
+                                    </td>
+                                    <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">
+                                        &nbsp;
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">1</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">2</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">3</a>
+                                    </td>
+                                    <td class=" ui-datepicker-week-end " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">4</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class=" ui-datepicker-week-end " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">5</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">6</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">7</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">8</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">9</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">10</a>
+                                    </td>
+                                    <td class=" ui-datepicker-week-end " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">11</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class=" ui-datepicker-week-end " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">12</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">13</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">14</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">15</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">16</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">17</a>
+                                    </td>
+                                    <td class=" ui-datepicker-week-end " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">18</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class=" ui-datepicker-week-end ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today"
+                                        onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default ui-state-highlight ui-state-active ui-state-hover" href="#">
+                                            19</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">20</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">21</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">22</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">23</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">24</a>
+                                    </td>
+                                    <td class=" ui-datepicker-week-end " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">25</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class=" ui-datepicker-week-end " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">26</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">27</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">28</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">29</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">30</a>
+                                    </td>
+                                    <td class=" " onclick="DP_jQuery.datepicker._selectDay('#datepicker',11,2010, this);return false;">
+                                        <a class="ui-state-default" href="#">31</a>
+                                    </td>
+                                    <td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="box-right-200">
+                    <div class="box-right-200-head">
+                        <h3>
+                            Kingdom banner</h3>
+                    </div>
+                    <div class="box-right-200-body">
+                        <a href="files/img1-big.jpg" class="lightbox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                            <img src="files/img1.jpg" alt="" style="margin: 0 6px 6px 0;">
+                        </a><a href="files/img2-big.jpg" class="lightbox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                            <img src="files/img2.jpg" alt="" style="margin: 0 0px 6px 0;">
+                        </a><a href="files/img3-big.jpg" class="lightbox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                            <img src="files/img3.jpg" alt="" style="margin: 0 6px 6px 0;">
+                        </a><%--<a href="files/img4-big.jpg" class="lightbox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                            <img src="files/img4.jpg" alt="" style="margin: 0 0px 6px 0;">
+                        </a><a href="files/img1-big.jpg" class="lightbox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                            <img src="files/img1.jpg" alt="" style="margin: 0 6px 6px 0;">
+                        </a><a href="files/img2-big.jpg" class="lightbox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                            <img src="files/img2.jpg" alt="" style="margin: 0 0px 6px 0;">
+                        </a><a href="files/img3-big.jpg" class="lightbox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                            <img src="files/img3.jpg" alt="" style="margin: 0 6px 6px 0;">
+                        </a><a href="files/img4-big.jpg" class="lightbox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                            <img src="files/img4.jpg" alt="" style="margin: 0 0px 6px 0;">
+                        </a>--%>
+                        <div class="add-photo-btn">
+                            <a href="#" class="add-photo-btn-a" title="">&nbsp;</a>
+                        </div>
+                        <div class="view-photo-btn">
+                            <a href="#" class="view-photo-btn-a" title="">&nbsp;</a>
+                        </div>
+                    </div>
+                </div>
+                <!--| end box-right-200 |-->
+                <%--<div class="box-right-200">
+                    <div class="box-right-200-head">
+                        <h3>
+                            Sidebar menu</h3>
+                    </div>
+                    <div class="box-right-200-body">
+                        <ul id="sec-nav">
+                            <li>
+                                <div>
+                                    <img src="files/bullet.png" alt="">
+                                    <a href="#" title="">User Accounts</a></div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="files/bullet.png" alt="">
+                                    <a href="#" title="">Page Management</a></div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="files/bullet.png" alt="">
+                                    <a href="#" title="">Statistics</a></div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="files/bullet.png" alt="">
+                                    <a href="#" title="">Products Management</a></div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="files/bullet.png" alt="">
+                                    <a href="#" title="">Server Settings</a></div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="files/bullet.png" alt="">
+                                    <a href="#" title="">Settings</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>--%>
+                <!--| end box-right-200 |-->
+                <div class="box-right-200">
+                    <div class="box-right-200-head">
+                        <h3>
+                            News</h3>
+                    </div>
+                    <div class="box-right-200-body">
+                        <div class="cycle-1" style="position: relative; width: 178px; height: 180px;">
+                            <div style="position: absolute; z-index: 4; top: 0px; left: 0px; display: block;
+                                width: 178px; height: 180px; opacity: 1;">
+                                <h3>
+                                    Pimp 3.0</h3>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum ultrices
+                                ipsum at viverra. Praesent luctus mattis neque, vitae congue magna molestie nec.
+                                Vivamus tempus tempor velit eu pretium.
+                                <br>
+                                <a href="#" title="">more...</a>
+                            </div>
+                            <div style="position: absolute; top: 0px; left: 0px; width: 178px; height: 180px;
+                                z-index: 3; opacity: 0; display: none;">
+                                <h3>
+                                    Packed with stuff</h3>
+                                Vivamus nibh neque, porttitor vel volutpat eu, consectetur eget eros. Donec vehicula
+                                egestas nisi sit amet venenatis. Cras lacinia dolor a nibh feugiat hendrerit. Fusce
+                                ac metus vel justo scelerisque feugiat.
+                                <br>
+                                <a href="#" title="">more...</a>
+                            </div>
+                            <div style="position: absolute; top: 0px; left: 0px; width: 178px; height: 160px;
+                                z-index: 3; opacity: 0; display: none;">
+                                <h3>
+                                    Nice UserInterface</h3>
+                                Aenean quis iaculis eros. Nunc vel libero eros, vel ultricies nisi. Cras accumsan,
+                                nunc id dapibus placerat, eros felis blandit urna, eu gravida urna tortor sit amet
+                                enim..
+                                <br>
+                                <a href="#" title="">more...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--| end box-right-200 |-->
+                <%--<div class="box-right-200">
+                    <div class="box-right-200-head">
+                        <h3>
+                            Buttons</h3>
+                    </div>
+                    <div class="box-right-200-body">
+                        <div class="btn-row">
+                            <img src="files/delete.jpg" alt="">
+                            <img src="files/delete-hover.jpg" alt="">
+                        </div>
+                        <div class="btn-row">
+                            <img src="files/next.jpg" alt="">
+                            <img src="files/next-hover.jpg" alt="">
+                        </div>
+                        <div class="btn-row">
+                            <img src="files/prev.jpg" alt="">
+                            <img src="files/prev-hover.jpg" alt="">
+                        </div>
+                        <div class="btn-row">
+                            <img src="files/send.jpg" alt="">
+                            <img src="files/send-hover.jpg" alt="">
+                        </div>
+                        <div class="btn-row">
+                            <img src="files/login.jpg" alt="">
+                            <img src="files/login-hover.jpg" alt="">
+                        </div>
+                        <div class="btn-row">
+                            <img src="files/view-photo-btn.jpg" alt="">
+                            <img src="files/view-photo-btn-hover.jpg" alt="">
+                        </div>
+                        <div class="btn-row">
+                            <img src="files/add-photo-btn.jpg" alt="">
+                            <img src="files/add-photo-btn-hover.jpg" alt="">
+                        </div>
+                        <div class="btn-row">
+                            <img src="files/check-all.jpg" alt="">
+                            <img src="files/check-all-hover.jpg" alt="">
+                        </div>
+                        <div class="btn-row">
+                            <img src="files/uncheck-all.jpg" alt="">
+                            <img src="files/uncheck-all-hover.jpg" alt="">
+                        </div>
+                    </div>
+                </div>--%>
+                <!--| end box-right-200 |-->
+            </div>
+            <!--| end col-right-200 |-->
+            <div id="col-1000">
+                <ul id="sortable2" class="ui-sortable">
+                    <li>
+                        <div class="box-1000-head">
+                            <h2>
+                                big box down here</h2>
+                            <div class="bnav2">
+                                <a href="javascript:void(null);" class="toggle" id="gle7">
+                                    <img src="files/toggle-plus.jpg" class="close" alt="">
+                                    <img src="files/toggle-min.jpg" class="open" style="display: none;" alt="">
+                                </a>
+                                <img src="files/delete.jpg" class="delete" alt="">
+                            </div>
+                        </div>
+                        <div class="box-1000-body" id="toggle7">
+                            
+<div id="pnlKDData" class="divKingdomInfo"><table class="tblKingdomInfo center" id="tblKingdomInfo"><thead><tr><th class="header">Province Name - Race/Personality</th><th class="{sorter: 'text'} header">CB</th><th class="{sorter: 'text'} header">Survey</th><th class="{sorter: 'text'} header">SoS</th><th class="{sorter: 'text'} header">SoM</th><th class="{sorter: 'fancyNumber'} header">Acres</th><th class="header">NW/Acre</th><th class="{sorter: 'fancyNumber'} header">Effects</th><th class="header">Ops</th><th class="{sorter: 'fancyNumber'} header">Gold</th><th class="{sorter: 'fancyNumber'} header">Food</th></tr></thead><tbody><tr class="d0" id="cb55766a-8afc-4a14-a574-b20b7843b5cb"><td class=""><a href="ProvinceDetail.aspx?ID=cb55766a8afc4a14a574b20b7843b5cb">Ice Cold</a>  (Orc/Warrior)</td><td class=""><div onclick="RequestIntel(this, 'cb', 'cb55766a8afc4a14a574b20b7843b5cb');" class="sr" alt=" Updated: 12d 11h by Ice Cold" title="Updated: 12d 11h by Ice Cold"><span class="CbSosSomSurv">129361918402000000</span>	</div></td><td class=""><div onclick="RequestIntel(this, 'survey', 'cb55766a8afc4a14a574b20b7843b5cb');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div onclick="RequestIntel(this, 'sos', 'cb55766a8afc4a14a574b20b7843b5cb');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', 'cb55766a8afc4a14a574b20b7843b5cb');" style="background-color:rgb(255,255,255);">	</div></td><td class="">1,349</td><td class="">128.4</td><td class=""></td><td class=""></td><td class="">24,064</td><td class="">26,536</td></tr><tr class="d1" id="c1d838fa-49c3-4f2f-a1d4-aa5a5729f30b"><td class="hover"><a href="ProvinceDetail.aspx?ID=c1d838fa49c34f2fa1d4aa5a5729f30b">Iceman DZ</a>  (Gnome/Shepherd)</td><td class="hover"><div onclick="RequestIntel(this, 'cb', 'c1d838fa49c34f2fa1d4aa5a5729f30b');" class="sr" alt=" Updated: 9d 19h by Iceman DZ" title="Updated: 9d 19h by Iceman DZ"><span class="CbSosSomSurv">129364222283930000</span>	</div></td><td class="hover"><div onclick="RequestIntel(this, 'survey', 'c1d838fa49c34f2fa1d4aa5a5729f30b');" class="sr" alt=" Updated: 1d 20h by Iceman DZ" title="Updated: 1d 20h by Iceman DZ"><span class="CbSosSomSurv">12/17/2010 9:22:19 PM</span>	</div></td><td class="hover"><div onclick="RequestIntel(this, 'sos', 'c1d838fa49c34f2fa1d4aa5a5729f30b');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class="hover"><div class="sr" onclick="RequestIntel(this, 'som', 'c1d838fa49c34f2fa1d4aa5a5729f30b');" style="background-color:rgb(255,255,255);">	</div></td><td class="hover">610</td><td class="hover">709.6</td><td class="hover"></td><td class="hover"></td><td class="hover">1,904,294</td><td class="hover">96,053</td></tr><tr class="d0" id="f55172a9-81ce-4d31-9858-2383f0141238"><td class=""><a href="ProvinceDetail.aspx?ID=f55172a981ce4d3198582383f0141238">Ice Berg</a>  (Human/Shepherd)</td><td class=""><div onclick="RequestIntel(this, 'cb', 'f55172a981ce4d3198582383f0141238');" class="sr" alt=" Updated: 21d 5h by Ice Berg" title="Updated: 21d 5h by Ice Berg"><span class="CbSosSomSurv">129354343830770000</span>	</div></td><td class=""><div onclick="RequestIntel(this, 'survey', 'f55172a981ce4d3198582383f0141238');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div onclick="RequestIntel(this, 'sos', 'f55172a981ce4d3198582383f0141238');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', 'f55172a981ce4d3198582383f0141238');" style="background-color:rgb(255,255,255);">	</div></td><td class="">2,462</td><td class="">160.9</td><td class=""></td><td class=""></td><td class="">322,607</td><td class="">488,969</td></tr><tr class="d1" id="9553c265-3291-45a8-becc-009aeec47d94"><td class=""><a href="ProvinceDetail.aspx?ID=9553c265329145a8becc009aeec47d94">Keystone Ice</a>  (Gnome/Sage)</td><td class=""><div onclick="RequestIntel(this, 'cb', '9553c265329145a8becc009aeec47d94');" class="sr" alt=" Updated: 14d 23h by Keystone Ice" title="Updated: 14d 23h by Keystone Ice"><span class="CbSosSomSurv">129359756271730000</span>?</div></td><td class=""><div onclick="RequestIntel(this, 'survey', '9553c265329145a8becc009aeec47d94');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div onclick="RequestIntel(this, 'sos', '9553c265329145a8becc009aeec47d94');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', '9553c265329145a8becc009aeec47d94');" style="background-color:rgb(255,255,255);">	</div></td><td class="">3,257</td><td class="">128.0</td><td class=""></td><td class=""></td><td class="">661,692</td><td class="">166,642</td></tr><tr class="d0" id="38dc9772-5814-42cb-b016-a2c13b7455e2"><td class=""><a href="ProvinceDetail.aspx?ID=38dc9772581442cbb016a2c13b7455e2">Nabraka Town</a>  (Dark Elf/Warrior)</td><td class=""><div onclick="RequestIntel(this, 'cb', '38dc9772581442cbb016a2c13b7455e2');" class="sr" alt=" Updated: 20d 4h by Nabraka Town" title="Updated: 20d 4h by Nabraka Town"><span class="CbSosSomSurv">129355257307170000</span>	</div></td><td class=""><div onclick="RequestIntel(this, 'survey', '38dc9772581442cbb016a2c13b7455e2');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div onclick="RequestIntel(this, 'sos', '38dc9772581442cbb016a2c13b7455e2');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', '38dc9772581442cbb016a2c13b7455e2');" style="background-color:rgb(255,255,255);">	</div></td><td class="">2,313</td><td class="">122.9</td><td class=""></td><td class=""></td><td class="">30,586</td><td class="">132,908</td></tr><tr class="d1" id="c0f421bb-dbf1-4e85-b71a-ca01623d204c"><td class=""><a href="ProvinceDetail.aspx?ID=c0f421bbdbf14e85b71aca01623d204c">IceyShockers</a>  (Orc/Warrior)</td><td class=""><div onclick="RequestIntel(this, 'cb', 'c0f421bbdbf14e85b71aca01623d204c');" class="sr" alt=" Updated: 14d 14h by IceyShockers" title="Updated: 14d 14h by IceyShockers"><span class="CbSosSomSurv">129360074656170000</span>	</div></td><td class=""><div onclick="RequestIntel(this, 'survey', 'c0f421bbdbf14e85b71aca01623d204c');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div onclick="RequestIntel(this, 'sos', 'c0f421bbdbf14e85b71aca01623d204c');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', 'c0f421bbdbf14e85b71aca01623d204c');" style="background-color:rgb(255,255,255);">	</div></td><td class="">1,208</td><td class="">76.4</td><td class=""></td><td class=""></td><td class="">270</td><td class="">86,772</td></tr><tr class="d0" id="bb9de9ed-af2b-4af2-8cd5-5e74b1b260d6"><td class=""><a href="ProvinceDetail.aspx?ID=bb9de9edaf2b4af28cd55e74b1b260d6">D-Ice</a>  (Elf/Mystic)</td><td class=""><div onclick="RequestIntel(this, 'cb', 'bb9de9edaf2b4af28cd55e74b1b260d6');" class="sr" alt=" Updated: 20d 7h by D-Ice" title="Updated: 20d 7h by D-Ice"><span class="CbSosSomSurv">129355149917830000</span>	</div></td><td class=""><div onclick="RequestIntel(this, 'survey', 'bb9de9edaf2b4af28cd55e74b1b260d6');" class="sr" alt=" Updated: 1d 9h by D-Ice" title="Updated: 1d 9h by D-Ice"><span class="CbSosSomSurv">12/18/2010 7:53:11 AM</span>	</div></td><td class=""><div onclick="RequestIntel(this, 'sos', 'bb9de9edaf2b4af28cd55e74b1b260d6');" class="sr" alt=" Updated: 1d 9h by D-Ice" title="Updated: 1d 9h by D-Ice"><span class="CbSosSomSurv">129371468441630000</span>	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', 'bb9de9edaf2b4af28cd55e74b1b260d6');" title="Updated: 1d 9h by D-Ice"><span class="CbSosSomSurv">129371468267570000</span>	</div></td><td class="">410</td><td class="">360.7</td><td class=""></td><td class=""></td><td class="">34,097</td><td class="">520,772</td></tr><tr class="d1" id="fa7e942e-e06e-47fa-9a6e-253697202e20"><td class=""><a href="ProvinceDetail.aspx?ID=fa7e942ee06e47fa9a6e253697202e20">Icy Ais Kacang</a>  (Orc/Warrior)</td><td class=""><div onclick="RequestIntel(this, 'cb', 'fa7e942ee06e47fa9a6e253697202e20');" class="sr" alt=" Updated: 1m 54d by Icy Ais Kacang" title="Updated: 1m 54d by Icy Ais Kacang"><span class="CbSosSomSurv">129325357333600000</span>	</div></td><td class=""><div onclick="RequestIntel(this, 'survey', 'fa7e942ee06e47fa9a6e253697202e20');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div onclick="RequestIntel(this, 'sos', 'fa7e942ee06e47fa9a6e253697202e20');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', 'fa7e942ee06e47fa9a6e253697202e20');" style="background-color:rgb(255,255,255);">	</div></td><td class="">569</td><td class="">133.5</td><td class=""></td><td class=""></td><td class="">64,147</td><td class="">41,469</td></tr><tr class="d0" id="675e413b-df3e-4eff-ab97-79cf24e02068"><td class=""><a href="ProvinceDetail.aspx?ID=675e413bdf3e4effab9779cf24e02068">Ice Shoxr</a>  (Halfling/Mystic)</td><td class=""><div onclick="RequestIntel(this, 'cb', '675e413bdf3e4effab9779cf24e02068');" class="sr" alt=" Updated: 19d 0h by Ice Shoxr" title="Updated: 19d 0h by Ice Shoxr"><span class="CbSosSomSurv">129356268997900000</span>	</div></td><td class=""><div onclick="RequestIntel(this, 'survey', '675e413bdf3e4effab9779cf24e02068');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div onclick="RequestIntel(this, 'sos', '675e413bdf3e4effab9779cf24e02068');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', '675e413bdf3e4effab9779cf24e02068');" style="background-color:rgb(255,255,255);">	</div></td><td class="">1,671</td><td class="">174.0</td><td class=""></td><td class=""></td><td class="">496,778</td><td class="">54,660</td></tr><tr class="d1" id="e6694dc0-aecb-44c3-88e1-8c1cee633103"><td class=""><a href="ProvinceDetail.aspx?ID=e6694dc0aecb44c388e18c1cee633103">Ice Name</a>  (Avian/Warrior)</td><td class=""><div onclick="RequestIntel(this, 'cb', 'e6694dc0aecb44c388e18c1cee633103');" class="sr" alt=" Updated: 26d 15h by Ice Name" title="Updated: 26d 15h by Ice Name"><span class="CbSosSomSurv">129349661869370000</span>	</div></td><td class=""><div onclick="RequestIntel(this, 'survey', 'e6694dc0aecb44c388e18c1cee633103');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div onclick="RequestIntel(this, 'sos', 'e6694dc0aecb44c388e18c1cee633103');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', 'e6694dc0aecb44c388e18c1cee633103');" style="background-color:rgb(255,255,255);">	</div></td><td class="">1,630</td><td class="">145.3</td><td class=""></td><td class=""></td><td class="">381,508</td><td class="">54,799</td></tr><tr class="d0" id="4e8c88f5-a065-4a17-a7a2-0dae62dd16be"><td class=""><a href="ProvinceDetail.aspx?ID=4e8c88f5a0654a17a7a20dae62dd16be">Heart of Ice</a>  (Orc/Warrior)</td><td class=""><div onclick="RequestIntel(this, 'cb', '4e8c88f5a0654a17a7a20dae62dd16be');" class="sr" alt=" Updated: 25d 10h by Heart of Ice" title="Updated: 25d 10h by Heart of Ice"><span class="CbSosSomSurv">129350714135370000</span>	</div></td><td class=""><div onclick="RequestIntel(this, 'survey', '4e8c88f5a0654a17a7a20dae62dd16be');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div onclick="RequestIntel(this, 'sos', '4e8c88f5a0654a17a7a20dae62dd16be');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', '4e8c88f5a0654a17a7a20dae62dd16be');" style="background-color:rgb(255,255,255);">	</div></td><td class="">1,298</td><td class="">145.5</td><td class=""></td><td class=""></td><td class="">561</td><td class="">0</td></tr><tr class="d1" id="fd46d999-5673-4e05-a8f6-d2f83966facc"><td class=""><a href="ProvinceDetail.aspx?ID=fd46d99956734e05a8f6d2f83966facc">ass is back</a>  (Gnome/Shepherd)</td><td class=""><div onclick="RequestIntel(this, 'cb', 'fd46d99956734e05a8f6d2f83966facc');" class="sr" alt=" Updated: 9d 16h by ass is back" title="Updated: 9d 16h by ass is back"><span class="CbSosSomSurv">129364333608030000</span>	</div></td><td class=""><div onclick="RequestIntel(this, 'survey', 'fd46d99956734e05a8f6d2f83966facc');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div onclick="RequestIntel(this, 'sos', 'fd46d99956734e05a8f6d2f83966facc');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', 'fd46d99956734e05a8f6d2f83966facc');" style="background-color:rgb(255,255,255);">	</div></td><td class="">3,910</td><td class="">139.8</td><td class=""></td><td class=""></td><td class="">287</td><td class="">231,530</td></tr><tr class="d0" id="4fcf7c9c-f58a-47d3-9cab-df356f2c980e"><td class=""><a href="ProvinceDetail.aspx?ID=4fcf7c9cf58a47d39cabdf356f2c980e">Iceberg</a>  (Human/Sage)</td><td class=""><div onclick="RequestIntel(this, 'cb', '4fcf7c9cf58a47d39cabdf356f2c980e');" class="sr" alt=" Updated: 16d 7h by Iceberg" title="Updated: 16d 7h by Iceberg"><span class="CbSosSomSurv">129358593284970000</span>	</div></td><td class=""><div onclick="RequestIntel(this, 'survey', '4fcf7c9cf58a47d39cabdf356f2c980e');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div onclick="RequestIntel(this, 'sos', '4fcf7c9cf58a47d39cabdf356f2c980e');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', '4fcf7c9cf58a47d39cabdf356f2c980e');" style="background-color:rgb(255,255,255);">	</div></td><td class="">967</td><td class="">182.9</td><td class=""></td><td class=""></td><td class="">187,071</td><td class="">160,778</td></tr><tr class="d1" id="8fd2823d-0ffd-4bad-8dae-cd0480fdbc26"><td class=""><a href="ProvinceDetail.aspx?ID=8fd2823d0ffd4bad8daecd0480fdbc26">Azarath</a>  (Dark Elf/Mystic)</td><td class=""><div onclick="RequestIntel(this, 'cb', '8fd2823d0ffd4bad8daecd0480fdbc26');" class="sr" alt=" Updated: 8d 23h by Azarath" title="Updated: 8d 23h by Azarath"><span class="CbSosSomSurv">129364918220870000</span>	</div></td><td class=""><div onclick="RequestIntel(this, 'survey', '8fd2823d0ffd4bad8daecd0480fdbc26');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div onclick="RequestIntel(this, 'sos', '8fd2823d0ffd4bad8daecd0480fdbc26');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', '8fd2823d0ffd4bad8daecd0480fdbc26');" style="background-color:rgb(255,255,255);">	</div></td><td class="">400</td><td class="">415.0</td><td class=""></td><td class=""></td><td class="">19,601</td><td class="">279,426</td></tr><tr class="d0" id="60b0e541-505d-408c-90cd-5806f062e77a"><td class=""><a href="ProvinceDetail.aspx?ID=60b0e541505d408c90cd5806f062e77a">Slumma</a>  (Dark Elf/Mystic)</td><td class=""><div onclick="RequestIntel(this, 'cb', '60b0e541505d408c90cd5806f062e77a');" class="sr" alt=" Updated: 19d 8h by Slumma" title="Updated: 19d 8h by Slumma"><span class="CbSosSomSurv">129355982845070000</span>	</div></td><td class=""><div onclick="RequestIntel(this, 'survey', '60b0e541505d408c90cd5806f062e77a');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div onclick="RequestIntel(this, 'sos', '60b0e541505d408c90cd5806f062e77a');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', '60b0e541505d408c90cd5806f062e77a');" style="background-color:rgb(255,255,255);">	</div></td><td class="">2,291</td><td class="">147.6</td><td class=""></td><td class=""></td><td class="">275,033</td><td class="">152,496</td></tr><tr class="d1" id="5fec354a-445c-41c9-b1de-c85c973ddc25"><td class=""><a href="ProvinceDetail.aspx?ID=5fec354a445c41c9b1dec85c973ddc25">Norsland</a>  (Halfling/Rogue)</td><td class=""><div onclick="RequestIntel(this, 'cb', '5fec354a445c41c9b1dec85c973ddc25');" class="sr" alt=" Updated: 1m 31d by Keystone Ice" title="Updated: 1m 31d by Keystone Ice"><span class="CbSosSomSurv">129345346785930000</span>	</div></td><td class=""><div onclick="RequestIntel(this, 'survey', '5fec354a445c41c9b1dec85c973ddc25');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div onclick="RequestIntel(this, 'sos', '5fec354a445c41c9b1dec85c973ddc25');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', '5fec354a445c41c9b1dec85c973ddc25');" style="background-color:rgb(255,255,255);">	</div></td><td class="">734</td><td class="">195.5</td><td class=""></td><td class=""></td><td class="">1,518,185</td><td class="">134,669</td></tr><tr class="d0" id="fb68a0b4-69a8-4dd0-bceb-74336ffc18c0"><td class=""><a href="ProvinceDetail.aspx?ID=fb68a0b469a84dd0bceb74336ffc18c0">NoQuarter</a>  (Halfling/Mystic)</td><td class=""><div onclick="RequestIntel(this, 'cb', 'fb68a0b469a84dd0bceb74336ffc18c0');" class="sr" alt=" Updated: 14d 14h by NoQuarter" title="Updated: 14d 14h by NoQuarter"><span class="CbSosSomSurv">129360075836200000</span>	</div></td><td class=""><div onclick="RequestIntel(this, 'survey', 'fb68a0b469a84dd0bceb74336ffc18c0');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div onclick="RequestIntel(this, 'sos', 'fb68a0b469a84dd0bceb74336ffc18c0');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', 'fb68a0b469a84dd0bceb74336ffc18c0');" style="background-color:rgb(255,255,255);">	</div></td><td class="">3,257</td><td class="">93.2</td><td class=""></td><td class=""></td><td class="">17,935</td><td class="">145,750</td></tr><tr class="d1" id="aaf1c3e1-c904-4699-8f07-267cc4c21fc7"><td class=""><a href="ProvinceDetail.aspx?ID=aaf1c3e1c90446998f07267cc4c21fc7">Marianburg</a>  (Avian/Warrior)</td><td class=""><div onclick="RequestIntel(this, 'cb', 'aaf1c3e1c90446998f07267cc4c21fc7');" class="sr" alt=" Updated: 9d 2h by Marianburg" title="Updated: 9d 2h by Marianburg"><span class="CbSosSomSurv">129364826527100000</span>	</div></td><td class=""><div onclick="RequestIntel(this, 'survey', 'aaf1c3e1c90446998f07267cc4c21fc7');" class="sr" style="background-color:rgb(255,255,255);">?</div></td><td class=""><div onclick="RequestIntel(this, 'sos', 'aaf1c3e1c90446998f07267cc4c21fc7');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', 'aaf1c3e1c90446998f07267cc4c21fc7');" style="background-color:rgb(255,255,255);">	</div></td><td class="">400</td><td class="">437.6</td><td class=""></td><td class=""></td><td class="">58</td><td class="">56,706</td></tr><tr class="d0" id="de19ca82-8dd1-4b73-9075-b3bd14af42e8"><td class=""><a href="ProvinceDetail.aspx?ID=de19ca828dd14b739075b3bd14af42e8">SpaceLanD</a>  (Dwarf/)</td><td class=""><div onclick="RequestIntel(this, 'cb', 'de19ca828dd14b739075b3bd14af42e8');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div onclick="RequestIntel(this, 'survey', 'de19ca828dd14b739075b3bd14af42e8');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div onclick="RequestIntel(this, 'sos', 'de19ca828dd14b739075b3bd14af42e8');" class="sr" style="background-color:rgb(255,255,255);">	</div></td><td class=""><div class="sr" onclick="RequestIntel(this, 'som', 'de19ca828dd14b739075b3bd14af42e8');" style="background-color:rgb(255,255,255);">	</div></td><td class="">1,295</td><td class="">126.5</td><td class=""></td><td class=""></td><td class=""></td><td class="">-</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td><td></td><td>30,031</td><td></td><td></td><td></td><td>5,938,774<br></td><td>2,830,935</td></tr></tfoot></table></div>
+
+                        </div>
+                    </li>
+                    <%--<li>
+                        <div class="box-1000-head">
+                            <h2>
+                                One colomn box 2</h2>
+                            <div class="bnav2">
+                                <a href="javascript:void(null);" class="toggle" id="gle8">
+                                    <img src="files/toggle-plus.jpg" class="close" alt="">
+                                    <img src="files/toggle-min.jpg" class="open" style="display: none;" alt="">
+                                </a>
+                                <img src="files/delete.jpg" class="delete" alt="">
+                            </div>
+                        </div>
+                        <div class="box-1000-body" id="toggle8">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac nulla quam. Nulla
+                            quis quam lectus, id mollis lacus. Nullam et risus id mauris pulvinar posuere quis
+                            vitae sapien. Sed nec odio nisl, sed tristique est. Vestibulum convallis semper
+                            sapien at tempor.
+                        </div>
+                    </li>--%>
+                </ul>
+            </div>
+            <!--| end col-1000 |-->
+        </div>
+        <!--| end content |-->
+    </div>
+    <!--| end container |-->
+    <!--| FOOTER/BOTTOM |-->
+    <div id="footer">
+        <div id="footer-top">
+            <div class="footer-wrap-t">
+                <p>
+                    <a href="#">About</a> | <a href="#">Contact</a> | <a href="#">Forums</a>                    
+                <img src="files/logo-small.jpg" alt="">
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <div class="footer-wrap-b">
+                © 2010 Utopia pimp
+                <a href="http://www.pinvoke.com/">pinvoke</a></div>
+        </div>
+    </div>
+    <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-helper-hidden-accessible">
+    </div>
+    <div style="overflow-x: hidden; overflow-y: hidden; outline-width: 0px; outline-style: initial;
+        outline-color: initial; height: auto; width: 500px; position: absolute; top: 411.5px;
+        left: 698.5px; z-index: 1002; display: none;" class="ui-dialog ui-widget ui-widget-content ui-corner-all  ui-draggable ui-resizable"
+        tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-dialog">
+        <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"
+            unselectable="on">
+            <span class="ui-dialog-title" id="ui-dialog-title-dialog" unselectable="on">Welcome
+            </span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button" unselectable="on">
+                <span class="ui-icon ui-icon-closethick" unselectable="on">close</span></a></div>
+        <div id="dialog" style="width: auto; min-height: 46px; height: 36px;" class="ui-dialog-content ui-widget-content">
+            <p>
+                Future UI of pimp!? What do you think?!</p>
+        </div>
+        <div class="ui-resizable-handle ui-resizable-n" unselectable="on">
+        </div>
+        <div class="ui-resizable-handle ui-resizable-e" unselectable="on">
+        </div>
+        <div class="ui-resizable-handle ui-resizable-s" unselectable="on">
+        </div>
+        <div class="ui-resizable-handle ui-resizable-w" unselectable="on">
+        </div>
+        <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se"
+            style="z-index: 1001;" unselectable="on">
+        </div>
+        <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1002;" unselectable="on">
+        </div>
+        <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1003;" unselectable="on">
+        </div>
+        <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1004;" unselectable="on">
+        </div>
+        <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+            <button type="button" class="ui-state-default ui-corner-all">
+                Ok</button></div>
+    </div>
+</body>
+</html>

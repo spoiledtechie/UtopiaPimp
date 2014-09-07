@@ -1,0 +1,42 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+
+public partial class anonymous_whatispimp : MyBasePageCS
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            tc1.ActiveTabIndex = Convert.ToInt32(Session["ActiveTabWhatIs"]);
+
+                string containerId = "TabContent" + tc1.ActiveTabIndex;
+                Panel panel1 = (Panel)tc1.ActiveTab.FindControl(containerId);
+                if (panel1 != null)
+                    panel1.Visible = true;
+                Session["ActiveTabWhatIs"] = "0";
+        }
+    }
+
+    protected void TabButton_Click(object sender, System.EventArgs e)
+    {
+        // find the child with the name that starts with TabContainer
+        Session["ActiveTabWhatIs"] = "0";
+        string containerId = "TabContent" + tc1.ActiveTabIndex;
+        Panel panel = (Panel)tc1.ActiveTab.FindControl(containerId);
+        if (panel != null)
+        {
+            panel.Visible = true;
+            Session["ActiveTabWhatIs"] = tc1.ActiveTabIndex;
+        }
+    }
+}

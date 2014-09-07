@@ -1,0 +1,107 @@
+
+Version: 3685
+Game LobbyWoL
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail
+Forum
+War Forum
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+69	10,457	107,810	2,394	344,793	2,094	164.658
+KINGDOM NEWS
+Province News
+Kingdom News
+The Daily Paper lists the various happenings throughout your kingdom. Included are important activities such as attacks, deaths, and changes in relations with your kingdom.
+
+Legend
+Intra-Kingdom Conflict	Relations News	
+Actions against our Kingdom	Dragon News	
+Actions by our Kingdom	Obituaries	
+The Kingdom Reporter
+< May YR12 EditionJuly YR12 Edition > June YR12 Edition
+June 1 of YR12	 Upholstered (6:2) invaded Augustus (4:40) and captured 121 acres of land.
+June 1 of YR12	 Upholstered (6:2) invaded Augustus (4:40) and captured 107 acres of land.
+June 1 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded the DL (4:40) and captured 491 acres of land.
+June 1 of YR12	 Upholstered (6:2) ambushed armies from the DL (4:40) and took 117 acres of land.
+June 2 of YR12	 Keg-legged (6:2) invaded Gallia (4:40) and captured 122 acres of land.
+June 2 of YR12	 Keg-legged (6:2) invaded Gallia (4:40) and captured 114 acres of land.
+June 2 of YR12	 Keg-legged (6:2) invaded Pepsa Kolicus (4:40) and captured 165 acres of land.
+June 2 of YR12	 Keg-legged (6:2) invaded Gallia (4:40) and captured 108 acres of land.
+June 2 of YR12	 Fitshaced (6:2) ambushed armies from Augustus (4:40) and took 364 acres of land.
+June 2 of YR12	 Fitshaced (6:2) ambushed armies from Augustus (4:40) and took 508 acres of land.
+June 2 of YR12	 Fitshaced (6:2) invaded Pepsa Kolicus (4:40) and captured 165 acres of land.
+June 3 of YR12	 Fitshaced (6:2) invaded Gallia (4:40) and captured 103 acres of land.
+June 3 of YR12	 Octavian has sent an aid shipment to Patrician.
+June 3 of YR12	 Octavian has sent an aid shipment to Britannia.
+June 3 of YR12	 Octavian has sent an aid shipment to Brutus.
+June 3 of YR12	 Octavian has sent an aid shipment to Marcus Aurelius.
+June 3 of YR12	 Wrenched (6:2) invaded Gallia (4:40) and captured 364 acres of land.
+June 3 of YR12	 An unknown province from funshow WAR (4:40) captured 321 acres of land from SipSippin with Screw (6:2).
+June 3 of YR12	 An unknown province from funshow WAR (4:40) captured 280 acres of land from SipSippin with Screw (6:2).
+June 3 of YR12	 An unknown province from funshow WAR (4:40) captured 335 acres of land from Embalmed (6:2).
+June 3 of YR12	 An unknown province from funshow WAR (4:40) captured 240 acres of land from Embalmed (6:2).
+June 3 of YR12	 Hammered (6:2) invaded Secundus (4:40) and captured 213 acres of land.
+June 3 of YR12	 Hammered (6:2) invaded Secundus (4:40) and captured 191 acres of land.
+June 3 of YR12	 Wrenched (6:2) invaded Romulus (4:40) and captured 100 acres of land.
+June 3 of YR12	 Wrenched (6:2) invaded Romulus (4:40) and captured 89 acres of land.
+June 3 of YR12	 Hammered (6:2) invaded Augustus (4:40) and captured 75 acres of land.
+June 3 of YR12	 Hammered (6:2) invaded Augustus (4:40) and captured 64 acres of land.
+June 3 of YR12	 Wrenched (6:2) invaded Colosseum (4:40) and captured 171 acres of land.
+June 4 of YR12	 Secundus has sent an aid shipment to Octavian.
+June 4 of YR12	 Ydrunken (6:2) invaded Gallia (4:40) and captured 101 acres of land.
+June 4 of YR12	 Ydrunken (6:2) invaded Gallia (4:40) and captured 96 acres of land.
+June 4 of YR12	 Lubed Up (6:2) invaded Marcus Aurelius (4:40) and captured 260 acres of land.
+June 4 of YR12	 Ydrunken (6:2) invaded Gallia (4:40) and captured 92 acres of land.
+June 4 of YR12	 Lubed Up (6:2) invaded Marcus Aurelius (4:40) and captured 234 acres of land.
+June 4 of YR12	 Lubed Up (6:2) invaded Marcus Aurelius (4:40) and captured 212 acres of land.
+June 4 of YR12	 Ydrunken (6:2) invaded the DL (4:40) and captured 168 acres of land.
+June 4 of YR12	 Lubed Up (6:2) invaded Gallia (4:40) and captured 87 acres of land.
+June 4 of YR12	 KnockKnock (15:14) invaded Britannia (4:40) and captured 2 acres of land.
+June 4 of YR12	 Plastered (6:2) invaded Gallia (4:40) and captured 232 acres of land.
+June 5 of YR12	 Plastered (6:2) invaded Gallia (4:40) and captured 167 acres of land.
+June 5 of YR12	 Haywire (6:2) invaded Augustus (4:40) and captured 55 acres of land.
+June 5 of YR12	 Haywire (6:2) invaded Augustus (4:40) and captured 49 acres of land.
+June 5 of YR12	 Haywire (6:2) invaded Augustus (4:40) and captured 45 acres of land.
+June 5 of YR12	 Plastered (6:2) invaded Gallia (4:40) and captured 132 acres of land.
+June 5 of YR12	 Haywire (6:2) invaded Augustus (4:40) and captured 42 acres of land.
+June 5 of YR12	 Plastered (6:2) invaded Augustus (4:40) and captured 66 acres of land.
+June 5 of YR12	 Pepsa Kolicus has slain the dragon ravaging our lands!
+June 5 of YR12	 Pepsa Kolicus has sent an aid shipment to Octavian.
+June 5 of YR12	 Pepsa Kolicus has sent an aid shipment to Carpe Diem.
+June 5 of YR12	 Quoxed (6:2) attempted to invade Carpe Diem (4:40).
+June 6 of YR12	 the DL has sent an aid shipment to Octavian.
+June 6 of YR12	 the DL has sent an aid shipment to Octavian.
+June 7 of YR12	 Just plain drunk (6:2) invaded the DL (4:40) and captured 320 acres of land.
+June 7 of YR12	 Just plain drunk (6:2) invaded the DL (4:40) and captured 224 acres of land.
+June 7 of YR12	 Just plain drunk (6:2) invaded Carpe Diem (4:40) and captured 119 acres of land.
+June 7 of YR12	 Just plain drunk (6:2) invaded Carpe Diem (4:40) and captured 101 acres of land.
+June 7 of YR12	 Unable to achieve victory, our Kingdom has withdrawn from war with --Sanctuary FUn War-- (6:2). Our failed war has finally ended!
+June 10 of YR12	 the DL has sent an aid shipment to Octavian.
+June 10 of YR12	 the DL has sent an aid shipment to Octavian.
+June 15 of YR12	 Gallia has sent an aid shipment to Octavian.
+June 21 of YR12	 the DL has sent an aid shipment to Octavian.
+June 21 of YR12	 Secundus has sent an aid shipment to Octavian.
+
+ 
+em (4:40) and captured 101 acres of land.
+June 7 of YR12	 Unable to achieve victory, our Kingdom has withdrawn from war with --Sanctuary FUn War-- (6:2). Our failed war has finally ended!
+June 10 of YR12	 the DL has sent an aid shipment to Octavian.
+June 10 of YR12	 the DL has sent an aid shipment to Octavian.
+June 15 of YR12	 Gallia has sent an aid shipment to Octavian.
+June 21 of YR12	 the DL has sent an aid shipment to Octavian.
+June 21 of YR12	 Secundus has sent an aid shipment to Oct

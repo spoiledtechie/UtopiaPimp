@@ -1,0 +1,207 @@
+Money: 1,514,998gc	Peasants: 17,572	Food: 84,133 Bushels	Runes: 157,223	NW: 322,488gc
+
+As leader of your Province, you know that the peasantry rely on you to make the critical decisions that affect their everyday lives. You also know that you cannot do this alone. Your Council of Elders helps to keep track of all the hustle and bustle within your province. They now stand before you, ready to provide you with the information you need.
+
+Select your area of inquiry:
+Affairs of the State   Military Affairs   Internal Affairs   Arts & Sciences  
+Mystic Affairs   Our History   Kingdom Growth
+
+Arts & Sciences
+
+Lord Techie, you know that sending our scholars to study requires time. Unfortunately, that is not something that can be changed. However, we do try to keep track of our scholars, and I have compiled some estimates of when our current studies will be complete.
+
+	Learning the Arts: Number of Days
+Technology	Known	Per Acre 	1 	2 	3 	4 	5 	6 	7 	8 	9 	10 	11 	12 	13 	14 	15 	16 	17 	18 	19 	20 	21 	22 	23 	24
+Alchemy
+Tools
+Housing
+Food
+Military
+Crime
+Channeling
+	192,911
+176,844
+182,993
+5650
+167,662
+66,673
+70,011
+	103.5
+94.9
+98.2
+3.0
+90.0
+35.8
+37.6
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+	-
+-
+-
+-
+-
+-
+-
+
+Behead this Advisor
+
+	

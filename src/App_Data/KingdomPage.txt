@@ -1,0 +1,423 @@
+Death By Darkness (7:30) Kingdom Analysis
+[http://www.utopiatemple.com Angel v2.02 Alpha 1]
+
+** Statistics **
+Provinces in Kingdom: 23
+Total Land: 14,631 Acres (avg: 636 Acres, Rank #146)
+Networth: 1,855,957gc (avg: 80,694gc, Rank #120)
+Average Networth per Acre: 126.85gc
+
+** Dragon **
+Dragon Cost: 3,247,925gc
+Dragon Send Range: 1,484,766gc - 2,319,946gc
+
+** Relations **
+Attitude towards/from (1:21): None
+Stance: Normal (no bonuses)
+War History: 0 Wars
+
+** Races **
+Avian: 12 (52%)
+Dark Elf: 7 (30%)
+Halfling: 3 (13%)
+Gnome: 1 (4%)
+
+** Land **
+1. Death By Nightmares [DE] - 1,119 Acres (7.6%)
+2. Death By Shadows [DE] - 800 Acres (5.5%)
+3. Death By Savagery [AV] - 739 Acres (5.1%)
+4. Death by Dysmenorhhea [DE] - 707 Acres (4.8%)
+5. Death By Assassins [DE] - 703 Acres (4.8%)
+6. Death By Fecal Consumption [HA] - 694 Acres (4.7%)
+6. doomsland [DE] - 694 Acres (4.7%)
+8. Death By Overdose [HA] - 669 Acres (4.6%)
+9. Death By World Cup Fever [HA] - 665 Acres (4.5%)
+10. Death By Flatulence [AV] - 649 Acres (4.4%)
+11. Death By FistPump [AV] - 643 Acres (4.4%)
+12. Death by Choice [DE] - 632 Acres (4.3%)
+13. Death by Your Mom [DE] - 620 Acres (4.2%)
+14. Death By Tuna [AV] - 610 Acres (4.2%)
+15. Death by Knockout [AV] - 605 Acres (4.1%)
+16. Death By The Grim Reaper [AV] - 595 Acres (4.1%)
+17. Death By Too Mutch Gaming [AV] - 580 Acres (4%)
+17. Death By Impact [AV] - 580 Acres (4%)
+19. Death By Popular Demand [AV] - 575 Acres (3.9%)
+20. Death By Despairs [AV] - 490 Acres (3.3%)
+21. Death by UtopiaPimp [AV] - 432 Acres (3%)
+22. Death By Squirrel Grip [AV] - 430 Acres (2.9%)
+23. Death By Appointment [GN] - 400 Acres (2.7%)
+
+** Networth **
+1. Death By Nightmares [DE] - 148,200gc (8%)
+2. Death By Shadows [DE] - 103,259gc (5.6%)
+3. Death by Dysmenorhhea [DE] - 98,832gc (5.3%)
+4. Death by Choice [DE] - 95,143gc (5.1%)
+5. Death By FistPump [AV] - 92,870gc (5%)
+6. Death By Assassins [DE] - 90,278gc (4.9%)
+7. Death By Savagery [AV] - 90,133gc (4.9%)
+8. doomsland [DE] - 89,756gc (4.8%)
+9. Death By Fecal Consumption [HA] - 87,328gc (4.7%)
+10. Death By World Cup Fever [HA] - 84,529gc (4.6%)
+11. Death By Overdose [HA] - 82,746gc (4.5%)
+12. Death By Flatulence [AV] - 81,878gc (4.4%)
+13. Death by Your Mom [DE] - 79,711gc (4.3%)
+14. Death By Popular Demand [AV] - 77,189gc (4.2%)
+15. Death By Impact [AV] - 74,333gc (4%)
+16. Death By The Grim Reaper [AV] - 72,680gc (3.9%)
+17. Death By Too Mutch Gaming [AV] - 72,107gc (3.9%)
+18. Death by Knockout [AV] - 71,715gc (3.9%)
+19. Death By Tuna [AV] - 71,648gc (3.9%)
+20. Death By Squirrel Grip [AV] - 60,207gc (3.2%)
+21. Death By Despairs [AV] - 57,254gc (3.1%)
+22. Death by UtopiaPimp [AV] - 55,901gc (3%)
+23. Death By Appointment [GN] - 18,260gc (1%)
+
+** Networth per Acre **
+1. Death by Choice [DE] - 150.54gc
+2. Death By FistPump [AV] - 144.43gc
+3. Death By Squirrel Grip [AV] - 140.02gc
+4. Death by Dysmenorhhea [DE] - 139.79gc
+5. Death By Popular Demand [AV] - 134.24gc
+6. Death By Nightmares [DE] - 132.44gc
+7. Death by UtopiaPimp [AV] - 129.4gc
+8. doomsland [DE] - 129.33gc
+9. Death By Shadows [DE] - 129.07gc
+10. Death by Your Mom [DE] - 128.57gc
+11. Death By Assassins [DE] - 128.42gc
+12. Death By Impact [AV] - 128.16gc
+13. Death By World Cup Fever [HA] - 127.11gc
+14. Death By Flatulence [AV] - 126.16gc
+15. Death By Fecal Consumption [HA] - 125.83gc
+16. Death By Too Mutch Gaming [AV] - 124.32gc
+17. Death By Overdose [HA] - 123.69gc
+18. Death By The Grim Reaper [AV] - 122.15gc
+19. Death By Savagery [AV] - 121.97gc
+20. Death by Knockout [AV] - 118.54gc
+21. Death By Tuna [AV] - 117.46gc
+22. Death By Despairs [AV] - 116.84gc
+23. Death By Appointment [GN] - 45.65gc
+
+** Ranks **
+1. Death By Nightmares [DE] - King 
+2. Death By Fecal Consumption [HA] - Knight 
+2. Death By Shadows [DE] - Knight 
+2. Death By Flatulence [AV] - Knight 
+2. Death By Popular Demand [AV] - Knight 
+2. Death By Too Mutch Gaming [AV] - Knight 
+2. Death By Savagery [AV] - Knight 
+2. Death By Squirrel Grip [AV] - Knight 
+2. Death By Impact [AV] - Knight 
+2. Death By World Cup Fever [HA] - Knight 
+2. Death By Tuna [AV] - Knight 
+2. Death By Despairs [AV] - Knight 
+2. Death By The Grim Reaper [AV] - Knight 
+2. Death By Assassins [DE] - Knight 
+2. Death By Overdose [HA] - Knight 
+2. Death by UtopiaPimp [AV] - Knight 
+2. Death By FistPump [AV] - Knight 
+2. Death by Your Mom [DE] - Knight 
+2. Death by Knockout [AV] - Knight 
+2. Death by Dysmenorhhea [DE] - Lady 
+2. Death by Choice [DE] - Knight 
+2. doomsland [DE] - Knight 
+23. Death By Appointment [GN] - Peasant 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Version: 3293
+Game LobbyWoL
+
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail
+Forum
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+149	4,286	147,568	26,905	55,901	432	129.4
+KINGDOM DETAILS
+
+Current kingdom is Death By Darkness (7:30)
+Kingdom:		Island:		
+< PreviousNext >Random
+Kingdom Statistics
+
+Total Provinces	23
+Total Networth	1,855,957gc (avg: 80,693gc)
+Total Land	14,631 acres (avg: 636 acres)
+Land Rank	146 of 303
+Net Worth Rank	120 of 303
+Warfare
+
+Stance	Normal
+Wars Won / Concluded Wars	0 / 0
+Average Opponent Relative Size	100%
+Province	Race	Land	Net Worth	Net Worth/Acre	Nobility
+Death By Fecal Consumption	Halfling	694 acres	87,328gc	125gc	Knight
+Death By Shadows	Dark Elf	800 acres	103,259gc	129gc	Knight
+Death By Nightmares (M)*	Dark Elf	1,119 acres	148,200gc	132gc	King
+Death By Flatulence	Avian	649 acres	81,878gc	126gc	Knight
+Death By Popular Demand	Avian	575 acres	77,189gc	134gc	Knight
+Death By Too Mutch Gaming	Avian	580 acres	72,107gc	124gc	Knight
+Death By Savagery	Avian	739 acres	90,133gc	121gc	Knight
+Death By Squirrel Grip	Avian	430 acres	60,207gc	140gc	Knight
+Death By Impact	Avian	580 acres	74,333gc	128gc	Knight
+Death By World Cup Fever	Halfling	665 acres	84,529gc	127gc	Knight
+Death By Tuna	Avian	610 acres	71,648gc	117gc	Knight
+Death By Despairs	Avian	490 acres	57,254gc	116gc	Knight
+Death By The Grim Reaper	Avian	595 acres	72,680gc	122gc	Knight
+Death By Assassins	Dark Elf	703 acres	90,278gc	128gc	Knight
+Death By Overdose	Halfling	669 acres	82,746gc	123gc	Knight
+Death by UtopiaPimp	Avian	432 acres	55,901gc	129gc	Knight
+Death By FistPump	Avian	643 acres	92,870gc	144gc	Knight
+Death by Your Mom	Dark Elf	620 acres	79,711gc	128gc	Knight
+Death by Knockout	Avian	605 acres	71,715gc	118gc	Knight
+Death by Dysmenorhhea	Dark Elf	707 acres	98,832gc	139gc	Lady
+Death By Appointment	Gnome	400 acres	18,260gc	45gc	Peasant
+Death by Choice	Dark Elf	632 acres	95,143gc	150gc	Knight
+doomsland	Dark Elf	694 acres	89,756gc	129gc	Knight
+Legend
+Protection^
+Kingdom Monarch (M)
+You
+Online*
+
+
+ 
+
+
+
+
+
+
+Version: 3293
+Game LobbyWoL
+
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail
+Forum
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+149	4,286	147,568	26,905	55,901	432	129.4
+KINGDOM DETAILS
+
+Current kingdom is ANZAC Nubhats (2:27)
+Kingdom:		Island:		
+< PreviousNext >Random
+Kingdom Statistics
+
+Total Provinces	23
+Total Networth	1,657,696gc (avg: 72,073gc)
+Total Land	13,738 acres (avg: 597 acres)
+Warfare
+
+Their Attitude Towards Us	Normal
+Our Attitude Towards Them	Normal
+Stance	Normal
+Wars Won / Concluded Wars	0 / 0
+Average Opponent Relative Size	100%
+Province	Race	Land	Net Worth	Net Worth/Acre	Nobility
+Dunce Cap (M)	Avian	672 acres	83,800gc	124gc	King
+Stack Hat	Dark Elf	828 acres	106,470gc	128gc	Knight
+Hood	Dark Elf	913 acres	121,595gc	133gc	Knight
+Beer Hat	Avian	575 acres	76,522gc	133gc	Knight
+Slouch Hat	Dark Elf	904 acres	123,180gc	136gc	Knight
+Corona	Avian	641 acres	81,415gc	127gc	Knight
+Motorcycle Helmet	Avian	562 acres	75,205gc	133gc	Knight
+Akubra	Avian	517 acres	70,784gc	136gc	Knight
+Beanie	Avian	655 acres	80,728gc	123gc	Knight
+Towlheads	Avian	668 acres	89,560gc	134gc	Knight
+Zucchetto	Avian	688 acres	87,714gc	127gc	Knight
+sombrero	Avian	432 acres	38,948gc	90gc	Knight
+Cat in the Hat	Avian	357 acres	55,658gc	155gc	Knight
+Suzuki Straw Hat	Avian	590 acres	74,064gc	125gc	Knight
+Cap GeNius*	Avian	652 acres	88,150gc	135gc	Lady
+Green Beret	Avian	430 acres	58,160gc	135gc	Knight
+S P I D E R III	Avian	501 acres	64,257gc	128gc	Lady
+Hat of conviction	Avian	567 acres	64,453gc	113gc	Knight
+LeonCeroUno	Gnome	378 acres	36,054gc	95gc	Knight
+Ghetto^	Dark Elf	656 acres	63,354gc	96gc	Knight
+WaRLorDz^	Gnome	505 acres	38,274gc	75gc	Knight
+Krell^	Dark Elf	642 acres	59,205gc	92gc	Knight
+Mystic Lands^	Dark Elf	405 acres	20,146gc	49gc	Knight
+Legend
+Protection^
+Kingdom Monarch (M)
+You
+Online*
+
+
+ 
+
+
+
+
+
+
+ANZAC Nubhats (2:27) Kingdom Analysis
+[http://thedragonportal.net Ultima v1.02]
+
+Server: World of Legends (Age of Distinction)
+
+** Statistics **
+Provinces in Kingdom: 23
+Total Networth: 1,657,696gc (Average: 72,073gc)
+Total Land 13,738 Acres (Average: 597 Acres)
+Average Networth per Acre: 120.67gc
+Dragon Cost: 2,900,968gc
+Dragon Send Range: 1,326,157gc - 2,072,120gc
+
+** Relations **
+Stance: Normal (no bonuses)
+War History: 0 Wars, 0 Wins
+
+** Races **
+1. Gnome: 2 (9%)
+2. Dark Elf: 6 (26%)
+3. Avian: 15 (65%)
+
+** Land **
+1. Hood [Dark Elf] - 913 Acres (6.6%)
+2. Slouch Hat [Dark Elf] - 904 Acres (6.6%)
+3. Stack Hat [Dark Elf] - 828 Acres (6%)
+4. Zucchetto [Avian] - 688 Acres (5%)
+5. Dunce Cap [Avian] - 672 Acres (4.9%)
+6. Towlheads [Avian] - 668 Acres (4.9%)
+7. Ghetto [Dark Elf] - 656 Acres (4.8%)
+8. Beanie [Avian] - 655 Acres (4.8%)
+9. Cap GeNius [Avian] - 652 Acres (4.7%)
+10. Krell [Dark Elf] - 642 Acres (4.7%)
+11. Corona [Avian] - 641 Acres (4.7%)
+12. Suzuki Straw Hat [Avian] - 590 Acres (4.3%)
+13. Beer Hat [Avian] - 575 Acres (4.2%)
+14. Hat of conviction [Avian] - 567 Acres (4.1%)
+15. Motorcycle Helmet [Avian] - 562 Acres (4.1%)
+16. Akubra [Avian] - 517 Acres (3.8%)
+17. WaRLorDz [Gnome] - 505 Acres (3.7%)
+18. S P I D E R III [Avian] - 501 Acres (3.6%)
+19. sombrero [Avian] - 432 Acres (3.1%)
+20. Green Beret [Avian] - 430 Acres (3.1%)
+21. Mystic Lands [Dark Elf] - 405 Acres (2.9%)
+22. LeonCeroUno [Gnome] - 378 Acres (2.8%)
+23. Cat in the Hat [Avian] - 357 Acres (2.6%)
+
+** Networth **
+1. Slouch Hat [Dark Elf] - 123,180gc (7.4%)
+2. Hood [Dark Elf] - 121,595gc (7.3%)
+3. Stack Hat [Dark Elf] - 106,470gc (6.4%)
+4. Towlheads [Avian] - 89,560gc (5.4%)
+5. Cap GeNius [Avian] - 88,150gc (5.3%)
+6. Zucchetto [Avian] - 87,714gc (5.3%)
+7. Dunce Cap [Avian] - 83,800gc (5.1%)
+8. Corona [Avian] - 81,415gc (4.9%)
+9. Beanie [Avian] - 80,728gc (4.9%)
+10. Beer Hat [Avian] - 76,522gc (4.6%)
+11. Motorcycle Helmet [Avian] - 75,205gc (4.5%)
+12. Suzuki Straw Hat [Avian] - 74,064gc (4.5%)
+13. Akubra [Avian] - 70,784gc (4.3%)
+14. Hat of conviction [Avian] - 64,453gc (3.9%)
+15. S P I D E R III [Avian] - 64,257gc (3.9%)
+16. Ghetto [Dark Elf] - 63,354gc (3.8%)
+17. Krell [Dark Elf] - 59,205gc (3.6%)
+18. Green Beret [Avian] - 58,160gc (3.5%)
+19. Cat in the Hat [Avian] - 55,658gc (3.4%)
+20. sombrero [Avian] - 38,948gc (2.3%)
+21. WaRLorDz [Gnome] - 38,274gc (2.3%)
+22. LeonCeroUno [Gnome] - 36,054gc (2.2%)
+23. Mystic Lands [Dark Elf] - 20,146gc (1.2%)
+
+** Networth per Acre **
+1. Cat in the Hat [Avian] - 155.9gc
+2. Akubra [Avian] - 136.91gc
+3. Slouch Hat [Dark Elf] - 136.26gc
+4. Green Beret [Avian] - 135.26gc
+5. Cap GeNius [Avian] - 135.2gc
+6. Towlheads [Avian] - 134.07gc
+7. Motorcycle Helmet [Avian] - 133.82gc
+8. Hood [Dark Elf] - 133.18gc
+9. Beer Hat [Avian] - 133.08gc
+10. Stack Hat [Dark Elf] - 128.59gc
+11. S P I D E R III [Avian] - 128.26gc
+12. Zucchetto [Avian] - 127.49gc
+13. Corona [Avian] - 127.01gc
+14. Suzuki Straw Hat [Avian] - 125.53gc
+15. Dunce Cap [Avian] - 124.7gc
+16. Beanie [Avian] - 123.25gc
+17. Hat of conviction [Avian] - 113.67gc
+18. Ghetto [Dark Elf] - 96.58gc
+19. LeonCeroUno [Gnome] - 95.38gc
+20. Krell [Dark Elf] - 92.22gc
+21. sombrero [Avian] - 90.16gc
+22. WaRLorDz [Gnome] - 75.79gc
+23. Mystic Lands [Dark Elf] - 49.74gc
+
+** Ranks **
+1. Dunce Cap [Avian] - King
+2. Stack Hat [Dark Elf] - Knight
+3. Hood [Dark Elf] - Knight
+4. Beer Hat [Avian] - Knight
+5. Slouch Hat [Dark Elf] - Knight
+6. Corona [Avian] - Knight
+7. Motorcycle Helmet [Avian] - Knight
+8. Akubra [Avian] - Knight
+9. Beanie [Avian] - Knight
+10. Towlheads [Avian] - Knight
+11. Zucchetto [Avian] - Knight
+12. sombrero [Avian] - Knight
+13. Cat in the Hat [Avian] - Knight
+14. Suzuki Straw Hat [Avian] - Knight
+15. Cap GeNius [Avian] - Lady
+16. Green Beret [Avian] - Knight
+17. S P I D E R III [Avian] - Lady
+18. Hat of conviction [Avian] - Knight
+19. LeonCeroUno [Gnome] - Knight
+20. Ghetto [Dark Elf] - Knight
+21. WaRLorDz [Gnome] - Knight
+22. Krell [Dark Elf] - Knight
+23. Mystic Lands [Dark Elf] - Knight
+
+** Miscellaneous **
+ONLINE: Cap GeNius [Avian]
+PROTECTION: Ghetto [Dark Elf]
+PROTECTION: WaRLorDz [Gnome]
+PROTECTION: Krell [Dark Elf]
+PROTECTION: Mystic Lands [Dark Elf]

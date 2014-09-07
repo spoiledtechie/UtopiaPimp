@@ -1,0 +1,189 @@
+Military Intelligence on Donger (10:23)
+[http://www.utopiatemple.com Angel v1.95 Beta]
+
+Server: Genesis #20
+Ruler Name: Lord Donger the Warrior
+Personality & Race: The Warrior, Undead
+
+** Summary **
+Non-Peasants: 69.3%
+Efficiency (SoM): 149% off., 124.6% def., 136.2% raw
+Net Offense at Home (from Utopia): 961
+Net Defense at Home (from Utopia): 16,331
+Modified Attack points (calculated): 50,307
+Modified Defense points (calculated): 20,196
+Total Captured Land: 172
+
+** Standing Army (At Home) **
+Soldiers: 78 (116 offense / 97 defense)
+Skeletons: 71 (529 offense)
+Zombies: 2,262 (14,092 defense)
+War Horses: 278 (up to 222 additional offense)
+Total Attack points: 867
+Total Defense points: 14,189
+
+** Armies #2/#3 (Back in 8:46 hours) **
+Skeletons: 3,657 (27,245 offense)
+Ghouls: 93 (1,247 offense / 348 defense)
+Total Attack points: 28,492
+Captured Land: 72 Acres
+
+** Armies #4/#5 (Back in 8:54 hours) **
+Soldiers: 1,200 (1,788 offense / 1,495 defense)
+Skeletons: 142 (1,058 offense)
+Ghouls: 1,114 (14,939 offense / 4,164 defense)
+War Horses: 2,123 (3,163 offense)
+Total Attack points: 20,948
+Total Defense points: 5,659
+Captured Land: 100 Acres
+
+** Troops in Training **
+Skeletons: 400 (2,980 offense)
+Next 12 hours: 16 15 21 24 15 21 22 24 23 15 17 18...
+Zombies: 522 (3,252 defense)
+Next 12 hours: 25 23 29 21 27 20 29 20 20 28 28 22...
+
+
+** Export Line [ver 14] -- Military [ver 13]: **
+"dh$6Z|,J2pG}nIkaKZAZ1squ]DL01T|lg1b,'1"y3'6C8e1
+]|hu\51'-oxq4oScnaJ}DSk1Z6sd}xhKiLg!
+
+
+Military Intelligence on Donger (10:23)
+[http://www.utopiatemple.com Angel v1.95 Beta]
+
+Server: Genesis #20
+Ruler Name: Lord Donger the Warrior
+Personality & Race: The Warrior, Undead
+
+** Summary **
+Non-Peasants: 62%
+Efficiency (SoM): 158.7% off, 113.8% def, 113.9% raw
+Net Offense at Home (from Utopia): 761
+Net Defense at Home (from Utopia): 11,863
+Modified Attack points (calculated): 54,759
+Modified Defense points (calculated): 20,465
+Total Captured Land: 139
+
+** Standing Army (At Home) **
+Soldiers: 64 (102 offense / 73 defense)
+Skeletons: 62 (492 offense)
+Zombies: 2,737 (15,574 defense)
+War Horses: 281 (up to 200 additional offense)
+Total Attack points: 793
+Total Defense points: 15,646
+
+** Armies #2/#3 (Back in 8:46 hours) **
+Skeletons: 4,198 (33,311 offense)
+Ghouls: 102 (1,457 offense / 348 defense)
+Total Attack points: 34,768
+Captured Land: 68 Acres
+
+** Armies #4/#5 (Back in 8:53 hours) **
+Soldiers: 1,111 (1,763 offense / 1,264 defense)
+Skeletons: 109 (865 offense)
+Ghouls: 939 (13,412 offense / 3,206 defense)
+War Horses: 1,990 (3,158 offense)
+Total Attack points: 19,198
+Total Defense points: 4,470
+Captured Land: 71 Acres
+
+** Troops in Training **
+Skeletons: 402 (3,190 offense)
+Next 12 hours: 21 17 22 18 17 23 21 24 21 18 18 20...
+Zombies: 523 (2,976 defense)
+Next 12 hours: 28 20 29 26 24 20 21 20 29 28 24 24...
+
+
+** Export Line [ver 14] -- Military [ver 13]: **
+hbr/gC"g4z?GRk5bkbS$Jd2L!4Gs4RcdqoCKisn6}*!3x$l
+Gtd6}pjqj\,ZA}t7cC5Dpz*iuGK1uKu\pR76g
+
+
+Military Intelligence on Donger (10:23)
+[http://www.utopiatemple.com Angel v1.95 Beta]
+
+Server: Genesis #20
+Ruler Name: Lord Donger the Warrior
+Personality & Race: The Warrior, Undead
+
+** Summary **
+Non-Peasants: 75.9%
+Efficiency (SoM): 133.8% off, 121.9% def, 97.2% raw
+Net Offense at Home (from Utopia): 742
+Net Defense at Home (from Utopia): 17,718
+Modified Attack points (calculated): 48,830
+Modified Defense points (calculated): 18,620
+Total Captured Land: 159
+
+** Standing Army (At Home) **
+Soldiers: 79 (106 offense / 96 defense)
+Skeletons: 47 (314 offense)
+Zombies: 2,013 (12,269 defense)
+War Horses: 362 (up to 169 additional offense)
+Total Attack points: 589
+Total Defense points: 12,366
+
+** Armies #2/#3 (Back in 8:45 hours) **
+Skeletons: 3,907 (26,138 offense)
+Ghouls: 96 (1,156 offense / 351 defense)
+Total Attack points: 27,294
+Captured Land: 66 Acres
+
+** Armies #4/#5 (Back in 8:53 hours) **
+Soldiers: 913 (1,222 offense / 1,113 defense)
+Skeletons: 113 (756 offense)
+Ghouls: 1,310 (15,775 offense / 4,791 defense)
+War Horses: 2,388 (3,195 offense)
+Total Attack points: 20,948
+Total Defense points: 5,904
+Captured Land: 93 Acres
+
+** Troops in Training **
+Skeletons: 413 (2,763 offense)
+Next 12 hours: 19 19 23 16 21 15 18 24 17 16 23 22...
+Zombies: 549 (3,346 defense)
+Next 12 hours: 23 23 27 29 29 26 24 30 26 26 30 30...
+
+
+** Export Line [ver 14] -- Military [ver 13]: **
+|rhb}lLKc-pl9h.19jZTJ2c-0e.Il!},l,4}.S$4hy8ycazq?ou
+|4bu6Au2/Gkz29xJ/,prufk00TTf,8]/x
+
+
+
+(from uu in Utopia_Province_Data_Captured_Type_Militaries
+								join UPI in Utopia_Province_Identifiers on uu.Province_ID equals UPI.Province_ID
+								join UPI1 in Utopia_Province_Identifiers on uu.Province_ID_Added equals UPI1.Province_ID
+								join UPDCG in Utopia_Province_Data_Captured_Gens on uu.Province_ID equals UPDCG.Province_ID
+								join UPRMN in Utopia_Province_Race_Military_Names on UPDCG.Race_ID equals UPRMN.Race_ID
+								 where uu.Province_ID == new System.Guid("03c0dc15-7ad4-46b2-9ee9-ad580198cfbd")
+where uu.DateTime_Added >= DateTime.UtcNow.AddHours(-72)
+																select new
+								{
+									OffName = UPRMN.Soldier_Off_Name,
+									DefName = UPRMN.Soldier_Def_Name,
+									EliteName = UPRMN.Elite_Name,
+									eliteOffMulit = UPRMN.Elite_Off_Multiplier,
+									eliteDefMulit = UPRMN.Elite_Def_Multiplier,
+									uu.Military_Location,
+									uu.Soldiers,
+									soldiersOffPts = uu.Soldiers  / 100,
+									soldiersDefPts = uu.Soldiers  / 100,
+									uu.Regs_Off,
+									offensePoints = uu.Regs_Off * 5  / 100,
+									uu.Regs_Def,
+									defensePoints = uu.Regs_Def * 5 / 100,
+									uu.Elites,
+									elitesOffPts = uu.Elites * UPRMN.Elite_Off_Multiplier  / 100,
+									elitesDefPts = uu.Elites * UPRMN.Elite_Def_Multiplier  / 100,
+									uu.Horses,
+									horsePts = uu.Horses  / 100,
+									uu.Generals,
+									uu.CapturedLand,
+									uu.Time_To_Return,
+									uu.Export_Line,
+									uu.DateTime_Added,
+									uu.Owner_Kingdom_ID,
+									UpdateProvinceName = UPI1.Province_Name,
+								})

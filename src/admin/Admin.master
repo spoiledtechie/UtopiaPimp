@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="admin_Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="http://codingforcharity.org/utopiapimp/css/admin.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div>
+        <ul class="ulNav">
+            <li>
+                <asp:HyperLink ID="hlHome" NavigateUrl="~/Default.aspx" runat="server">Application Home</asp:HyperLink></li>
+            <li>
+                <asp:HyperLink ID="hlAdminHome" NavigateUrl="~/admin/admin/Default.aspx" runat="server">Admin Home</asp:HyperLink></li>
+            <li>
+                <asp:HyperLink ID="hlUsers" NavigateUrl="~/admin/admin/Users2.aspx" runat="server">Users</asp:HyperLink></li>
+            <li>
+                <asp:HyperLink ID="hlRoles" NavigateUrl="~/admin/admin/Roles.aspx" runat="server">Roles</asp:HyperLink></li>
+            <li>
+                <asp:HyperLink ID="hlErrors" NavigateUrl="~/admin/admin/Errors.aspx" runat="server">Errors</asp:HyperLink></li>
+            <li>
+                <asp:HyperLink ID="HyperLink1" NavigateUrl="~/admin/admin/Views.aspx" runat="server">Views</asp:HyperLink></li>
+                    <li>
+                <asp:HyperLink ID="HyperLink3" NavigateUrl="~/admin/admin/Database.aspx" runat="server">Database</asp:HyperLink></li>
+            <li>
+                <asp:HyperLink ID="HyperLink2" NavigateUrl="~/admin/admin/Email.aspx" runat="server">Email</asp:HyperLink></li>
+                <li>
+                <asp:HyperLink ID="HyperLink4" NavigateUrl="~/admin/admin/CachingObject.aspx" Target="_blank" runat="server">Cache</asp:HyperLink></li>
+        </ul>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,307 @@
+
+Version: 3685
+Game LobbyWoL
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail
+Forum
+War Forum
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+69	10,457	107,810	2,394	344,793	2,094	164.658
+KINGDOM NEWS
+Province News
+Kingdom News
+The Daily Paper lists the various happenings throughout your kingdom. Included are important activities such as attacks, deaths, and changes in relations with your kingdom.
+
+Legend
+Intra-Kingdom Conflict	Relations News	
+Actions against our Kingdom	Dragon News	
+Actions by our Kingdom	Obituaries	
+The Kingdom Reporter
+< April YR12 EditionJune YR12 Edition > May YR12 Edition
+May 1 of YR12	 An unknown province from funshow WAR (4:40) captured 435 acres of land from Amiably Incandescent (6:2).
+May 1 of YR12	 An unknown province from funshow WAR (4:40) captured 369 acres of land from Amiably Incandescent (6:2).
+May 1 of YR12	 An unknown province from funshow WAR (4:40) captured 302 acres of land from roaring (6:2).
+May 1 of YR12	 An unknown province from funshow WAR (4:40) captured 380 acres of land from Lubed Up (6:2).
+May 1 of YR12	 Zombiefied (6:2) invaded the DL (4:40) and captured 131 acres of land.
+May 2 of YR12	 A Ruby Dragon from --Sanctuary FUn War-- (6:2) has begun ravaging our lands!
+May 2 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Augustus (4:40) and captured 826 acres of land.
+May 2 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Augustus (4:40) and captured 780 acres of land.
+May 3 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Augustus (4:40) and captured 808 acres of land.
+May 3 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Augustus (4:40) and captured 438 acres of land.
+May 3 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Augustus (4:40) and captured 844 acres of land.
+May 3 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Aeneid (4:40) and captured 523 acres of land.
+May 3 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Aeneid (4:40) and captured 390 acres of land.
+May 3 of YR12	 Plastered (6:2) ambushed armies from Aeneid (4:40) and took 101 acres of land.
+May 3 of YR12	 Plastered (6:2) ambushed armies from Aeneid (4:40) and took 79 acres of land.
+May 4 of YR12	 Quoxed (6:2) invaded Colosseum (4:40) and captured 185 acres of land.
+May 4 of YR12	 Quoxed (6:2) invaded Colosseum (4:40) and captured 167 acres of land.
+May 4 of YR12	 Quoxed (6:2) invaded Spartacus (4:40) and captured 49 acres of land.
+May 4 of YR12	 Quoxed (6:2) invaded Patrician (4:40) and captured 123 acres of land.
+May 4 of YR12	 Joltus Omacus has sent an aid shipment to Spartacus.
+May 4 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Augustus (4:40) and captured 613 acres of land.
+May 4 of YR12	 Brutus (4:40) killed 2,770 people within Embalmed (6:2).
+May 4 of YR12	 Brutus (4:40) killed 2,426 people within Embalmed (6:2).
+May 4 of YR12	 Brutus (4:40) killed 2,121 people within Embalmed (6:2).
+May 4 of YR12	 Brutus (4:40) killed 1,853 people within Embalmed (6:2).
+May 4 of YR12	 Brutus has sent an aid shipment to Gaius Marius.
+May 4 of YR12	 Octavian has sent an aid shipment to Gaius Marius.
+May 4 of YR12	 Octavian has sent an aid shipment to Cicero.
+May 4 of YR12	 Octavian has sent an aid shipment to Romulus.
+May 4 of YR12	 Fitshaced (6:2) invaded Caligula (4:40) and captured 211 acres of land.
+May 4 of YR12	 Octavian has sent an aid shipment to Britannia.
+May 4 of YR12	 Fitshaced (6:2) invaded Secundus (4:40) and captured 214 acres of land.
+May 4 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Augustus (4:40) and captured 870 acres of land.
+May 4 of YR12	 Fitshaced (6:2) invaded Spartacus (4:40) and captured 51 acres of land.
+May 4 of YR12	 Fitshaced (6:2) invaded Spartacus (4:40) and captured 46 acres of land.
+May 5 of YR12	 Gaius Marius (4:40) killed 1,137 people within Embalmed (6:2).
+May 5 of YR12	 Romulus (4:40) killed 1,002 people within Embalmed (6:2).
+May 5 of YR12	 Gaius Marius (4:40) killed 931 people within Embalmed (6:2).
+May 5 of YR12	 Romulus (4:40) killed 831 people within Embalmed (6:2).
+May 5 of YR12	 Cicero (4:40) killed 1,025 people within Embalmed (6:2).
+May 5 of YR12	 Romulus (4:40) killed 674 people within Embalmed (6:2).
+May 5 of YR12	 Cicero (4:40) killed 832 people within Embalmed (6:2).
+May 5 of YR12	 Romulus (4:40) killed 546 people within Embalmed (6:2).
+May 5 of YR12	 Gaius Marius (4:40) killed 491 people within Embalmed (6:2).
+May 5 of YR12	 Gaius Marius (4:40) killed 451 people within Embalmed (6:2).
+May 5 of YR12	 Cicero (4:40) killed 576 people within Embalmed (6:2).
+May 5 of YR12	 Cicero (4:40) killed 509 people within Embalmed (6:2).
+May 5 of YR12	 Octavian has sent an aid shipment to Augustus.
+May 5 of YR12	 Secundus has sent an aid shipment to Augustus.
+May 5 of YR12	 Pepsa Kolicus has sent an aid shipment to Augustus.
+May 5 of YR12	 Augustus has sent an aid shipment to Octavian.
+May 5 of YR12	 Molly (6:2) invaded Patrician (4:40) and captured 288 acres of land.
+May 5 of YR12	 Molly (6:2) invaded Patrician (4:40) and captured 222 acres of land.
+May 5 of YR12	 Molly (6:2) invaded Spartacus (4:40) and captured 130 acres of land.
+May 5 of YR12	 Molly (6:2) invaded Spartacus (4:40) and captured 109 acres of land.
+May 5 of YR12	 Augustus (4:40) captured 579 acres of land from Amiably Incandescent (6:2).
+May 5 of YR12	 Gallia (4:40) captured 223 acres of land from Plastered (6:2).
+May 5 of YR12	 Gallia (4:40) captured 177 acres of land from Plastered (6:2).
+May 5 of YR12	 Gallia (4:40) captured 142 acres of land from Plastered (6:2).
+May 5 of YR12	 Gallia (4:40) captured 122 acres of land from Plastered (6:2).
+May 5 of YR12	 Octavian has sent an aid shipment to Britannia.
+May 5 of YR12	 Octavian has sent an aid shipment to Joltus Omacus.
+May 5 of YR12	 Octavian has sent an aid shipment to Joltus Omacus.
+May 5 of YR12	 Augustus (4:40) captured 597 acres of land from Debauched (6:2).
+May 5 of YR12	 Augustus (4:40) captured 779 acres of land from Ydrunken (6:2).
+May 5 of YR12	 Augustus (4:40) captured 623 acres of land from Ydrunken (6:2).
+May 6 of YR12	 Patrician has sent an aid shipment to Joltus Omacus.
+May 6 of YR12	 Octavian has sent an aid shipment to Carpe Diem.
+May 6 of YR12	 Octavian has sent an aid shipment to Carpe Diem.
+May 6 of YR12	 Pepsa Kolicus has sent an aid shipment to Patrician.
+May 6 of YR12	 Britannia has sent an aid shipment to Patrician.
+May 6 of YR12	 Cicero has sent an aid shipment to Patrician.
+May 6 of YR12	 Brutus has sent an aid shipment to Patrician.
+May 6 of YR12	 Secundus has sent an aid shipment to Patrician.
+May 6 of YR12	 Patrician has sent an aid shipment to Brutus.
+May 6 of YR12	 Augustus has sent an aid shipment to Brutus.
+May 6 of YR12	 Gallia has sent an aid shipment to Brutus.
+May 6 of YR12	 Octavian has sent an aid shipment to Brutus.
+May 7 of YR12	 Octavian has sent an aid shipment to Brutus.
+May 7 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Augustus (4:40) and captured 962 acres of land.
+May 8 of YR12	 Colosseum (4:40) captured 315 acres of land from Just plain drunk (6:2).
+May 8 of YR12	 Colosseum (4:40) captured 244 acres of land from Just plain drunk (6:2).
+May 8 of YR12	 Augustus has sent an aid shipment to Brutus.
+May 8 of YR12	 Colosseum (4:40) captured 187 acres of land from Just plain drunk (6:2).
+May 8 of YR12	 Colosseum (4:40) captured 146 acres of land from Just plain drunk (6:2).
+May 8 of YR12	 Embalmed (6:2) invaded Brutus (4:40) and captured 215 acres of land.
+May 8 of YR12	 Embalmed (6:2) invaded Brutus (4:40) and captured 160 acres of land.
+May 8 of YR12	 Embalmed (6:2) invaded Brutus (4:40) and captured 120 acres of land.
+May 8 of YR12	 Embalmed (6:2) invaded Brutus (4:40) and captured 98 acres of land.
+May 8 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Augustus (4:40) and captured 1,077 acres of land.
+May 8 of YR12	 Just plain drunk (6:2) invaded Patrician (4:40) and captured 211 acres of land.
+May 8 of YR12	 Just plain drunk (6:2) invaded Patrician (4:40) and captured 167 acres of land.
+May 8 of YR12	 Gaius Marius has sent an aid shipment to Augustus.
+May 8 of YR12	 Just plain drunk (6:2) invaded Brutus (4:40) and captured 87 acres of land.
+May 8 of YR12	 Just plain drunk (6:2) invaded Spartacus (4:40) and captured 117 acres of land.
+May 8 of YR12	 Cicero has sent an aid shipment to Augustus.
+May 8 of YR12	 Out of Sight (6:2) invaded Brutus (4:40) and captured 32 acres of land.
+May 8 of YR12	 Out of Sight (6:2) invaded Spartacus (4:40) and captured 39 acres of land.
+May 8 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Augustus (4:40) and captured 683 acres of land.
+May 9 of YR12	 Ginned Up (6:2) invaded Spartacus (4:40) and killed 3,108 people.
+May 9 of YR12	 Ginned Up (6:2) invaded Spartacus (4:40) and killed 2,897 people.
+May 9 of YR12	 Ginned Up (6:2) invaded Spartacus (4:40) and killed 2,702 people.
+May 9 of YR12	 SipSippin with Screw (6:2) invaded Aeneid (4:40) and captured 315 acres of land.
+May 9 of YR12	 SipSippin with Screw (6:2) invaded Aeneid (4:40) and captured 223 acres of land.
+May 9 of YR12	 SipSippin with Screw (6:2) attempted to invade Britannia (4:40).
+May 9 of YR12	 Romulus has sent an aid shipment to Spartacus.
+May 9 of YR12	 Romulus has sent an aid shipment to Octavian.
+May 9 of YR12	 Romulus has sent an aid shipment to Colosseum.
+May 9 of YR12	 Augustus has sent an aid shipment to Octavian.
+May 9 of YR12	 Augustus has sent an aid shipment to Octavian.
+May 9 of YR12	 Carpe Diem has sent an aid shipment to Patrician.
+May 9 of YR12	 Brutus has sent an aid shipment to Patrician.
+May 10 of YR12	 Crushed (6:2) invaded Spartacus (4:40) and killed 2,207 people.
+May 10 of YR12	 Crushed (6:2) invaded Spartacus (4:40) and killed 2,084 people.
+May 10 of YR12	 Crushed (6:2) invaded Spartacus (4:40) and killed 1,969 people.
+May 10 of YR12	 Crushed (6:2) invaded Spartacus (4:40) and killed 1,859 people.
+May 10 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Aeneid (4:40) and captured 254 acres of land.
+May 10 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Aeneid (4:40) and captured 214 acres of land.
+May 11 of YR12	 Pepsa Kolicus (4:40) killed 1,543 people within Plastered (6:2).
+May 11 of YR12	 Pepsa Kolicus (4:40) captured 121 acres of land from Plastered (6:2).
+May 11 of YR12	 Pepsa Kolicus (4:40) killed 1,253 people within Plastered (6:2).
+May 11 of YR12	 Pepsa Kolicus (4:40) killed 1,115 people within Plastered (6:2).
+May 11 of YR12	 Pepsa Kolicus has sent an aid shipment to Octavian.
+May 11 of YR12	 Patrician (4:40) killed 1,580 people within Plastered (6:2).
+May 11 of YR12	 Patrician (4:40) killed 1,331 people within Plastered (6:2).
+May 11 of YR12	 Patrician (4:40) killed 1,145 people within Plastered (6:2).
+May 11 of YR12	 Patrician (4:40) killed 987 people within Plastered (6:2).
+May 11 of YR12	 Octavian has sent an aid shipment to Britannia.
+May 11 of YR12	 Joltus Omacus (4:40) killed 632 people within Plastered (6:2).
+May 11 of YR12	 Joltus Omacus (4:40) killed 565 people within Plastered (6:2).
+May 11 of YR12	 Joltus Omacus (4:40) killed 507 people within Plastered (6:2).
+May 11 of YR12	 Joltus Omacus (4:40) killed 454 people within Plastered (6:2).
+May 12 of YR12	 the DL (4:40) captured 233 acres of land from Molly (6:2).
+May 12 of YR12	 the DL (4:40) captured 189 acres of land from Molly (6:2).
+May 12 of YR12	 the DL (4:40) captured 190 acres of land from Wrenched (6:2).
+May 12 of YR12	 the DL (4:40) captured 158 acres of land from Molly (6:2).
+May 12 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded the DL (4:40) and captured 323 acres of land.
+May 12 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded the DL (4:40) and captured 257 acres of land.
+May 13 of YR12	 Zombiefied (6:2) invaded Marcus Aurelius (4:40) and captured 207 acres of land.
+May 13 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Augustus (4:40) and captured 832 acres of land.
+May 13 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded the DL (4:40) and captured 178 acres of land.
+May 14 of YR12	 Wrenched (6:2) invaded Joltus Omacus (4:40) and captured 491 acres of land.
+May 14 of YR12	 Wrenched (6:2) invaded Joltus Omacus (4:40) and captured 366 acres of land.
+May 14 of YR12	 Wrenched (6:2) invaded Romulus (4:40) and captured 121 acres of land.
+May 14 of YR12	 Wrenched (6:2) ambushed armies from the DL (4:40) and took 95 acres of land.
+May 15 of YR12	 An unknown province from funshow WAR (4:40) captured 474 acres of land from SipSippin with Screw (6:2).
+May 15 of YR12	 An unknown province from funshow WAR (4:40) captured 345 acres of land from SipSippin with Screw (6:2).
+May 15 of YR12	 An unknown province from funshow WAR (4:40) captured 249 acres of land from SipSippin with Screw (6:2).
+May 15 of YR12	 An unknown province from funshow WAR (4:40) captured 224 acres of land from Wrenched (6:2).
+May 15 of YR12	 Fitshaced (6:2) invaded Augustus (4:40) and captured 702 acres of land.
+May 16 of YR12	 Fitshaced (6:2) invaded Joltus Omacus (4:40) and captured 106 acres of land.
+May 16 of YR12	 Fitshaced (6:2) invaded Spartacus (4:40) and killed 2,194 people.
+May 16 of YR12	 Fitshaced (6:2) invaded Spartacus (4:40) and killed 2,039 people.
+May 16 of YR12	 Octavian has sent an aid shipment to Augustus.
+May 16 of YR12	 Plastered (6:2) invaded Patrician (4:40) and captured 181 acres of land.
+May 16 of YR12	 Ydrunken (6:2) ambushed armies from Augustus (4:40) and took 311 acres of land.
+May 16 of YR12	 Plastered (6:2) invaded Patrician (4:40) and captured 136 acres of land.
+May 16 of YR12	 Ydrunken (6:2) ambushed armies from Augustus (4:40) and took 389 acres of land.
+May 16 of YR12	 An unknown province from funshow WAR (4:40) attempted an invasion of Fitshaced (6:2), but was repelled.
+May 16 of YR12	 Plastered (6:2) invaded Patrician (4:40) and captured 107 acres of land.
+May 17 of YR12	 Patrician has sent an aid shipment to Octavian.
+May 17 of YR12	 Plastered (6:2) invaded Romulus (4:40) and captured 130 acres of land.
+May 17 of YR12	 Haywire (6:2) invaded Spartacus (4:40) and killed 1,737 people.
+May 17 of YR12	 Haywire (6:2) invaded Spartacus (4:40) and killed 1,626 people.
+May 17 of YR12	 Haywire (6:2) invaded Spartacus (4:40) and killed 1,522 people.
+May 17 of YR12	 Haywire (6:2) invaded Spartacus (4:40) and killed 1,426 people.
+May 17 of YR12	 An unknown province from funshow WAR (4:40) captured 375 acres of land from Out of Sight (6:2).
+May 17 of YR12	 Spartacus has sent an aid shipment to Octavian.
+May 17 of YR12	 An unknown province from funshow WAR (4:40) captured 410 acres of land from Fitshaced (6:2).
+May 17 of YR12	 Augustus (4:40) captured 857 acres of land from Out of Sight (6:2).
+May 17 of YR12	 Secundus has sent an aid shipment to Octavian.
+May 17 of YR12	 Spartacus has sent an aid shipment to Octavian.
+May 17 of YR12	 Patrician has sent an aid shipment to Octavian.
+May 17 of YR12	 Colosseum has sent an aid shipment to Octavian.
+May 17 of YR12	 Carpe Diem has sent an aid shipment to Octavian.
+May 17 of YR12	 Romulus has sent an aid shipment to Octavian.
+May 17 of YR12	 Joltus Omacus has sent an aid shipment to Octavian.
+May 17 of YR12	 the DL has sent an aid shipment to Octavian.
+May 17 of YR12	 Augustus has sent an aid shipment to Spartacus.
+May 17 of YR12	 Octavian has sent an aid shipment to Spartacus.
+May 17 of YR12	 An unknown province from funshow WAR (4:40) captured 372 acres of land from Fitshaced (6:2).
+May 17 of YR12	 Augustus (4:40) captured 1,016 acres of land from Fitshaced (6:2).
+May 17 of YR12	 Augustus (4:40) captured 728 acres of land from Fitshaced (6:2).
+May 17 of YR12	 Nuked (6:2) invaded Augustus (4:40) and captured 934 acres of land.
+May 17 of YR12	 Nuked (6:2) invaded Augustus (4:40) and captured 712 acres of land.
+May 17 of YR12	 roaring (6:2) invaded Augustus (4:40) and captured 604 acres of land.
+May 17 of YR12	 Nuked (6:2) invaded Augustus (4:40) and captured 476 acres of land.
+May 17 of YR12	 roaring (6:2) invaded Augustus (4:40) and captured 429 acres of land.
+May 17 of YR12	 roaring (6:2) invaded Augustus (4:40) and captured 360 acres of land.
+May 18 of YR12	 Lubed Up (6:2) invaded Augustus (4:40) and captured 239 acres of land.
+May 18 of YR12	 Ydrunken (6:2) invaded Augustus (4:40) and captured 265 acres of land.
+May 18 of YR12	 Lubed Up (6:2) invaded Augustus (4:40) and captured 174 acres of land.
+May 18 of YR12	 Ydrunken (6:2) invaded Augustus (4:40) and captured 206 acres of land.
+May 18 of YR12	 Lubed Up (6:2) invaded Augustus (4:40) and captured 135 acres of land.
+May 18 of YR12	 Lubed Up (6:2) invaded Augustus (4:40) and captured 127 acres of land.
+May 18 of YR12	 Augustus has sent an aid shipment to Octavian.
+May 18 of YR12	 Quoxed (6:2) invaded Augustus (4:40) and captured 87 acres of land.
+May 18 of YR12	 Quoxed (6:2) invaded the DL (4:40) and captured 195 acres of land.
+May 18 of YR12	 Quoxed (6:2) invaded Augustus (4:40) and captured 86 acres of land.
+May 18 of YR12	 Quoxed (6:2) invaded Augustus (4:40) and captured 79 acres of land.
+May 19 of YR12	 Ginned Up (6:2) invaded Gallia (4:40) and captured 256 acres of land.
+May 19 of YR12	 Ginned Up (6:2) invaded Gallia (4:40) and captured 236 acres of land.
+May 19 of YR12	 Ginned Up (6:2) invaded Gallia (4:40) and captured 217 acres of land.
+May 19 of YR12	 An unknown province from --Sanctuary FUn War-- (6:2) invaded Octavian (4:40) and captured 1,384 acres of land.
+May 19 of YR12	 Embalmed (6:2) invaded Joltus Omacus (4:40) and captured 278 acres of land.
+May 19 of YR12	 Embalmed (6:2) invaded Joltus Omacus (4:40) and captured 225 acres of land.
+May 19 of YR12	 Embalmed (6:2) invaded Augustus (4:40) and captured 85 acres of land.
+May 20 of YR12	 Embalmed (6:2) invaded Spartacus (4:40) and captured 42 acres of land.
+May 20 of YR12	 Gallia (4:40) captured 232 acres of land from Wrenched (6:2).
+May 20 of YR12	 Gallia (4:40) captured 185 acres of land from Wrenched (6:2).
+May 20 of YR12	 Gallia (4:40) captured 154 acres of land from Wrenched (6:2).
+May 20 of YR12	 Gallia (4:40) captured 126 acres of land from Wrenched (6:2).
+May 20 of YR12	 Ginned Up (6:2) invaded Augustus (4:40) and captured 72 acres of land.
+May 20 of YR12	 Blasted (6:2) invaded Gallia (4:40) and captured 148 acres of land.
+May 20 of YR12	 Blasted (6:2) invaded Gallia (4:40) and captured 140 acres of land.
+May 20 of YR12	 Blasted (6:2) invaded Gallia (4:40) and captured 133 acres of land.
+May 20 of YR12	 Blasted (6:2) invaded Gallia (4:40) and captured 126 acres of land.
+May 20 of YR12	 Just plain drunk (6:2) invaded Joltus Omacus (4:40) and captured 192 acres of land.
+May 20 of YR12	 Just plain drunk (6:2) invaded Joltus Omacus (4:40) and captured 151 acres of land.
+May 20 of YR12	 Just plain drunk (6:2) invaded Augustus (4:40) and captured 90 acres of land.
+May 20 of YR12	 Just plain drunk (6:2) invaded Spartacus (4:40) and captured 39 acres of land.
+May 21 of YR12	 Out of Sight (6:2) ambushed armies from Augustus (4:40) and took 428 acres of land.
+May 21 of YR12	 Out of Sight (6:2) invaded Marcus Aurelius (4:40) and captured 229 acres of land.
+May 21 of YR12	 Out of Sight (6:2) invaded Marcus Aurelius (4:40) and captured 205 acres of land.
+May 21 of YR12	 Out of Sight (6:2) invaded Marcus Aurelius (4:40) and captured 185 acres of land.
+May 21 of YR12	 Patrician has sent an aid shipment to Octavian.
+May 21 of YR12	 Gaius Marius has sent an aid shipment to Octavian.
+May 21 of YR12	 Britannia has sent an aid shipment to Octavian.
+May 21 of YR12	 Brutus has sent an aid shipment to Octavian.
+May 21 of YR12	 Carpe Diem has sent an aid shipment to Octavian.
+May 21 of YR12	 SipSippin with Screw (6:2) invaded Colosseum (4:40) and captured 542 acres of land.
+May 21 of YR12	 SipSippin with Screw (6:2) invaded Patrician (4:40) and captured 42 acres of land.
+May 21 of YR12	 SipSippin with Screw (6:2) invaded Patrician (4:40) and captured 38 acres of land.
+May 21 of YR12	 Very Tanked (6:2) invaded Colosseum (4:40) and captured 207 acres of land.
+May 21 of YR12	 I may be drunk (6:2) invaded Carpe Diem (4:40) and captured 94 acres of land.
+May 21 of YR12	 I may be drunk (6:2) invaded Carpe Diem (4:40) and captured 80 acres of land.
+May 21 of YR12	 Very Tanked (6:2) invaded Gallia (4:40) and captured 176 acres of land.
+May 21 of YR12	 Very Tanked (6:2) invaded Gallia (4:40) and captured 162 acres of land.
+May 21 of YR12	 Very Tanked (6:2) invaded Carpe Diem (4:40) and captured 133 acres of land.
+May 22 of YR12	 Crushed (6:2) invaded Carpe Diem (4:40) and captured 73 acres of land.
+May 22 of YR12	 Crushed (6:2) invaded Carpe Diem (4:40) and captured 70 acres of land.
+May 22 of YR12	 Crushed (6:2) invaded Carpe Diem (4:40) and captured 67 acres of land.
+May 22 of YR12	 Crushed (6:2) invaded Carpe Diem (4:40) and captured 64 acres of land.
+May 22 of YR12	 I may be drunk (6:2) invaded Carpe Diem (4:40) and captured 68 acres of land.
+May 22 of YR12	 I may be drunk (6:2) invaded Carpe Diem (4:40) and captured 65 acres of land.
+May 22 of YR12	 Debauched (6:2) invaded the DL (4:40) and captured 185 acres of land.
+May 22 of YR12	 Debauched (6:2) invaded the DL (4:40) and captured 170 acres of land.
+May 22 of YR12	 Debauched (6:2) invaded Gallia (4:40) and captured 152 acres of land.
+May 22 of YR12	 Debauched (6:2) invaded Gallia (4:40) and captured 141 acres of land.
+May 22 of YR12	 Molly (6:2) invaded Carpe Diem (4:40) and captured 127 acres of land.
+May 22 of YR12	 Molly (6:2) invaded Carpe Diem (4:40) and captured 108 acres of land.
+May 22 of YR12	 Molly (6:2) invaded Carpe Diem (4:40) and captured 93 acres of land.
+May 22 of YR12	 Molly (6:2) invaded Colosseum (4:40) and captured 482 acres of land.
+May 23 of YR12	 the DL (4:40) captured 360 acres of land from Just plain drunk (6:2).
+May 23 of YR12	 the DL (4:40) captured 273 acres of land from Just plain drunk (6:2).
+May 23 of YR12	 the DL (4:40) captured 235 acres of land from Upholstered (6:2).
+May 23 of YR12	 the DL (4:40) captured 197 acres of land from Just plain drunk (6:2).
+May 24 of YR12	 Colosseum has sent an aid shipment to Octavian.
+May 24 of YR12	 Colosseum has sent an aid shipment to Octavian.
+May 24 of YR12	 Zombiefied (6:2) invaded the DL (4:40) and captured 131 acres of land.
+May 24 of YR12	 Zombiefied (6:2) invaded Augustus (4:40) and captured 64 acres of land.
+May 24 of YR12	 Zombiefied (6:2) invaded Augustus (4:40) and captured 58 acres of land.
+May 24 of YR12	 Zombiefied (6:2) invaded Augustus (4:40) and captured 52 acres of land.
+
+ 
+t plain drunk (6:2).
+May 24 of YR12	 Colosseum has sent an aid shipment to Octavian.
+May 24 of YR12	 Colosseum has sent an aid shipment to Octavian.
+May 24 of YR12	 Zombiefied (6:2) invaded the DL (4:40) and captured 131 acres of land.
+May 24 of YR12	 Zombiefied (6:2) invaded Augustus (4:40) and captured 64 acres of land.
+May 24 of YR12	 Zomb

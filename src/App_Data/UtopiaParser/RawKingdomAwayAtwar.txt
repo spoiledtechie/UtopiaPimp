@@ -1,0 +1,146 @@
+Money: 42,001gc	Peasants: 13,149	Food: 126,489 Bushels	Runes: 98,254	NW: 231,340gc
+
+Kingdom: Island:
+The Kingdom of Huntington Raider (7:36)
+Total Provinces: 25
+Total Networth: 4,287,996gc (avg: 171,519gc)
+Total Land: 26,767 acres (avg: 1070 acres)
+Key:    Green = Protection     Red = Kingdom Monarch     * = Online    
+
+Their Attitude Towards Us: None
+Our Attitude Towards Them: None
+Kingdom Stance: Normal
+War History - Wars: 1 - Wins: 0 - Average Opponent Size: 99%
+This kingdom is currently at war with (15:37)
+
+Province	Race	Land Acres 	Net Worth	Rank
+
+HR Kamibird (7:36)
+HR Hopeless (7:36)
+HR Lady Ceneddra (7:36)
+HR Nicklausen (7:36)
+HR Scars of War (7:36)
+HR UnderGroundWorld (7:36)
+HR Crazz (7:36)
+HR Almighty Z (7:36)
+HR Gongshow101 (7:36)
+HR Monsterkill (7:36)
+HR Desolate Phoenix (7:36)
+HR Huntington (7:36)
+HR Anony (7:36)
+HR Pufnstuf (7:36)
+HR Haventh (7:36)
+HR Odin (7:36)
+HR Trix Pathe (7:36)
+HR Jacko (7:36)
+HR Payney (7:36)
+HR Youngstown (7:36)
+HR Threepwood (7:36)
+HR Eastern Storm (7:36)
+HR Death Gate (7:36)
+Lets Eat Lovecake (7:36)
+Bloody Sink (7:36)	
+Orc
+Orc
+*Dark Elf
+Orc
+Gnome
+Gnome
+Dark Elf
+Dark Elf
+Dark Elf
+Dark Elf
+Dark Elf
+Elf
+*Gnome
+Orc
+Orc
+Gnome
+Gnome
+Orc
+Elf
+Elf
+Orc
+Dark Elf
+Elf
+Dark Elf
+Elf 	
+1279
+1305
+1220
+1026
+1311
+1046
+1030
+815
+629
+1172
+830
+1159
+853
+1099
+1196
+1005
+1399
+1253
+975
+1060
+1091
+1060
+1086
+1044
+824 	
+196,155gc
+185,806gc
+179,604gc
+189,565gc
+218,456gc
+159,090gc
+210,163gc
+139,910gc
+99,981gc
+212,283gc
+115,404gc
+169,630gc
+149,337gc
+212,467gc
+186,194gc
+171,140gc
+183,750gc
+142,607gc
+165,658gc
+183,322gc
+168,116gc
+171,972gc
+191,924gc
+162,205gc
+123,257gc 	
+Knight
+Lord
+Lady
+Lord
+Knight
+Knight
+Lord
+Lord
+Lord
+Baron
+Lord
+King
+Lord
+Knight
+Knight
+Knight
+Lord
+Knight
+Lord
+Lord
+Lord
+Baron
+Baron
+Noble Lady
+Lord
+
+
+
+	

@@ -1,0 +1,27 @@
+Military Intelligence on Visitor Q (17:24)
+[http://www.utopiatemple.com Angel v1.88 Beta]
+
+Server: World of Legends (Age 38)
+Ruler Name: Noble Lady Robin the Warrior
+Personality & Race: The Warrior, Orc
+
+** Summary **
+Non-Peasants: 78%
+Efficiency (SoM): 139.1% off., 131.4% def., 85% raw
+Net Offense at Home (from Utopia): 98,698
+Net Defense at Home (from Utopia): 80,460
+Modified Attack points (calculated): 120,447
+Modified Defense points (calculated): 97,312
+
+** Standing Army (At Home) **
+Soldiers: 46 (64 offense / 60 defense)
+Trolls: 8,949 (70,554 defense)
+Ogres: 10,159 (113,049 offense / 26,698 defense)
+War Horses: 5,272 (up to 7,333 additional offense)
+Total Attack points: 120,447
+Total Defense points: 97,312
+
+
+** Export Line [ver 14] -- Military [ver 12]: **
+|JS4|dLCv$1joKRI!cp$eSD6nP$Z2tso\i0sGee-fZI|"T]4
+uE2|ke*n8-p*EgiBRR

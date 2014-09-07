@@ -1,0 +1,33 @@
+The Province of Faraland (10:3)
+[http://www.utopiatemple.com Angel v1.97 Alpha 1]
+
+Server: World of Legends (Age 44)
+Utopian Date: April 17th, YR1
+RL Date: August 16th, 2009 (16:00 GMT)
+
+Ruler Name: Lord Narcoz the Blessed
+Personality & Race: The Cleric, Gnome
+Land: 532 Acres
+Money: 8,428gc (11,695gc daily income)
+Food: 9,283 bushels
+Runes: 13,803 runes
+Population: 15,652 citizens (29.42 per Acre)
+Peasants: 5,096 (86% Building Efficiency)
+Trade Balance: 0gc
+
+ME+Stance (no spells): 112.7% off. / 100.71% def.
+Soldiers: 402 (66% estimated draft rate)
+Halflings: 0
+Pikemen: 2,663 (13,410 defense)
+Golems: 5,592 (31,510 offense / 22,528 defense)
+War-Horses: 1,471 (up to 1,658 additional offense)
+Prisoners: 0
+Total Modified Offense: 33,621 (63.20 per Acre)
+Practical (100% elites): 33,621 (63.20 per Acre)
+Total Modified Defense: 37,626 (70.73 per Acre)
+Practical (0% elites): 13,815 (25.97 per Acre)
+
+Thieves: 1,678 (3.15 per Acre / 100% Stealth)
+Wizards: 221 (0.42 per Acre / 99% Mana)
+Buildings: 886gc to build, 483gc to raze
+Away bonus: 25,480gc (12h) / 76,440gc (20h)

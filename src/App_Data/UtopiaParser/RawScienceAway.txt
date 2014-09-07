@@ -1,0 +1,40 @@
+Money: 914,140gc	Peasants: 17,569	Food: 84,169 Bushels	Runes: 157,588	NW: 321,914gc
+Utopia Guide: Thievery
+
+You send your thieves, and the operation commences...
+
+Early indications show that our operation was a stunning success.
+Our thieves visit the research centers of City of the King (13:31). They found this recent report:
+
+	Current Effects of our Research
+in the Science & Arts
+Technology 	Effect
+Alchemy
+Tools
+Housing
+Food
+Military
+Crime
+Channeling
+	+11.5% Income
++5.3% Building Effectiveness
++5.8% Population Limits
++17.8% Food Production
++0.0% Gains in Combat
++26.9% Thievery Effectiveness
++16.8% Magic Effectiveness & Rune Production
+
+Money: 914,140gc	Peasants: 17,569	Food: 84,169 Bushels	Runes: 157,588	NW: 321,914gc
+
+	You descend into an underground area of your castle and enter the Guild of Thieves. An organization created under your leadership, the Guild trains the lowest classes of people to learn the tools of the trade. Trained by your military, your thieves stand ready at your service to do what is needed. You can learn more about their capabilities in the Guide link above.
+
+Thieves:	1939 (1.04 per acre)
+Stealth:	95%
+
+Kingdom: Island:
+Select Operation: 	
+Thieves to Send:	
+	
+
+
+	

@@ -1,0 +1,101 @@
+
+Version: 3685
+Game LobbyWoL
+ 
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail ?
+Forum
+War Forum
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+69	10,457	107,810	23,744	345,181	2,094	164.843
+AENEID OF FUNSHOW (4:40)
+Throne
+State
+Military
+Buildings
+Science
+Mystics
+History
+Affairs of the State
+
+Lord Virgilio, I track some important information about the health of our province. I hope you will find this information useful.
+
+Our Population
+Peasants	10457
+Army	33619
+Thieves	4668
+Wizards	5990
+Total	54734
+Max Population	54915
+Our Economy
+Peasants	10457
+Jobs	31825
+Unemployed Peasants	0
+Unfilled Jobs	21368
+Employment	100%
+Daily Income	41343
+Daily Wages	7389
+Current Highlights
+Current Networth	345,181 gold coins
+Current Land	2,094 acres
+Current Honor	2,226
+Land Rank	1742 of 7108
+Networth Rank	1688 of 7108
+Ranks are updated once per Utopian month
+Net Change Yesterday	Net Change This Month	Net Change Last Month
+Our Income	41,575gc	167,732gc	41,578gc
+Military Wages	29,557gc	118,228gc	29,557gc
+Draft Costs	4,635gc	18,705gc	4,607gc
+Science Costs	3,768gc	15,072gc	3,762gc
+Net Change	
+3,615gc
+15,727gc
+3,652gc
+Peasants	
+0 peasants
+266 peasants
+726 peasants
+Food Grown	13,622 bushels	54,499 bushels	13,602 bushels
+Food Needed	13,683 bushels	54,733 bushels	13,617 bushels
+Food Decayed	1,089 bushels	4,426 bushels	1,136 bushels
+Net Change	
+-1,150 bushels
+-4,660 bushels
+-1,151 bushels
+Runes Produced	960 runes	3,844 runes	963 runes
+Runes Decayed	276 runes	1,055 runes	242 runes
+Net Change	
+684 runes
+2,789 runes
+721 runes
+
+
+ 
+ience Costs	3,768gc	15,072gc	3,762gc
+Net Change	
+3,615gc
+15,727gc
+3,652gc
+Peasants	
+0 peasants
+266 peasants
+726 peasants
+Food Grown	13,622 bushels	54,499 bushels	13,602 bushels
+Food Needed	13,683 bushels	54,733 bushels	13,617 bushels
+Food Decayed	1,089 bushels	4,426 bushels	1,136 bus

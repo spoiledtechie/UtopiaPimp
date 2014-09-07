@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <lists nextListID="3" nextItemID="30">
+    <list id="1" name="To-Do list">
+      <item id="4" subject="Email functionality" postedBy="funkybox" posted="2010-12-15 12:20:34" completed="false">The possibility to receive an email when you have been attacked, a dragon has been set or the kingdom is at war.</item>
+      <item id="5" subject="Hello World" postedBy="spoiledtechie" posted="2010-12-15 12:26:15" completed="true">2nd Message of the Day!  Lets get on Todoing stuff! </item>
+      <item id="6" subject="Masterpages renewal" postedBy="funkybox" posted="2010-12-15 12:57:57" completed="false">The masterpage main.master needs to be remade. Need support to allow the pages to add scripts and stylesheet.</item>
+      <item id="7" subject="Put up a Facebook Share" postedBy="spoiledtechie" posted="2010-12-15 14:34:51" completed="false">http://sharethis.com/&lt;br /&gt;&lt;br /&gt;Add this to the top right of the master pages</item>
+      <item id="8" subject="UI design ideas, suggestions and more" postedBy="funkybox" posted="2010-12-15 17:30:34" completed="false">http://layout.jquery-dev.net/demos/layouts_inside_tabs.html&lt;br /&gt;http://layout.jquery-dev.net/demos/complex.html&lt;br /&gt;http://layout.jquery-dev.net/demos/accordion.html&lt;br /&gt;http://layout.jquery-dev.net/demos/toggle_alternate_layouts.html</item>
+      <item id="9" subject="Ideas from others" postedBy="funkybox" posted="2010-12-16 05:46:24" completed="false">I asked my kd (they have no idea that i program here aswell) what they thought about pimp and what they thought of the functionallity etc. Ill update this with the reflections that they provide:&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;- I set angel to auto export intel what i copy making it easy to use. Still need to manually copy ops into pimp though. Also pimp isnt as good as it use to be. There are a lot of errors and such.&lt;br /&gt;&lt;br /&gt;- I had difficulty last age with getting my ops in. It never showed that i put greed on someone. Also the minus in front of the away army can be overlooked thus failing an attack because his armies are home. For the rest i like how it works and got a lot of second attacks in because of accurate intel. Which when i would have gotten it myself would not have been possible due to oversending because of inaccuracy.</item>
+      <item id="10" subject="Lost psw not working" postedBy="funkybox" posted="2010-12-16 05:59:22" completed="false">http://utopiapimp.com/anonymous/password.aspx</item>      
+    </list>
+    <list id="2" name="Goals">
+      <item id="3" subject="- Brainstorming -" postedBy="funkybox" posted="2010-12-15 12:13:48" completed="false">Brainstorming regarding pimp and the future.</item>
+    </list>
+  </lists>
+  <messages nextMessageID="1"></messages>
+</data>

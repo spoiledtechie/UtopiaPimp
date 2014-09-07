@@ -1,0 +1,166 @@
+﻿/* 
+Theme: Emerald
+Background: #292829
+Borders: #18FF29
+Table alt Items: #292829
+Table Items: #184D18 
+
+Tabs:#184D18
+ColumnsOn:	#184D18
+Background:#292829
+*/
+
+body {background-color: #292829; color: #FFFFFF; }
+body a:link, body a:visited { color: #FFFFFF; }
+
+/* Random Styles */
+.RFAsterisk { color: Red; }
+/*This is the style for all dropdowns in the entire TAF Webpage */
+/*For all decriptions so that the user can see more of what they are typeing*/
+.lblWarnings { color:Black;background-color:White; }
+
+.divKingSummary{ background-color:#184D18;border: solid 1px #18FF29;}
+
+/* Header Content */
+
+.iframeSideBody{background-color: #292829;}
+
+.divRegisterforUtopia { background-color: #184D18; border: solid 1px #18FF29; }
+.divCurrentDate { border: solid 1px #18FF29; }
+
+/* Anonymous Content */
+.divContainer { border: solid 1px #18FF29; background-color: #292829; }
+
+.lianonymouslinks { border: solid 1px #18FF29; }
+
+.divLogin { border-bottom: solid 1px #18FF29; border-top: solid 1px #18FF29; }
+
+/* Anonymous Pages */
+.divContentContainer { border-top: solid 1px #18FF29; }
+.pnldivHeaders { border-top: solid 2px #18FF29; border-bottom: solid 2px #18FF29; background-color:#292829;  }
+
+.liColumnChooser ul li a:link, .liColumnChooser ul li a:visited { border: solid 1px #C5C5C5; }
+.liActiveColumns { border: solid 1px #C5C5C5; }
+.ColumnOn { background-color:#184D18; }
+
+.btnNotSelected { background-color: #292829; color: #FFFFFF; border: solid 1px #18FF29; }
+
+/* Logged in Content */
+.divLoggedInLinks { border-top: solid 1px #18FF29; }
+.liLoggedInlinks { border: solid 1px #18FF29; }
+
+.CommentsPopupControl { border: solid 1px #18FF29; background-color: #292829; }
+.modalBackground { background-color: Gray; filter: alpha(opacity=70); opacity: 0.7; }
+
+.divTargetProvBox{border: solid 1px #18FF29;  background-color:#292829; color:#FFF;}
+
+/* xp theme */
+.ajax__tabCustom_xp .ajax__tab_header { background-color: #292829; }
+.ajax__tabCustom_xp .ajax__tab_outer { border: solid .1em #18FF29; }
+.ajax__tabCustom_xp .ajax__tab_tab { background-color: #292829; }
+.ajax__tabCustom_xp .ajax__tab_hover .ajax__tab_outer { background-color: #184D18; }
+.ajax__tabCustom_xp .ajax__tab_hover .ajax__tab_inner { background-color: #184D18; }
+.ajax__tabCustom_xp .ajax__tab_hover .ajax__tab_tab { background-color: #184D18; }
+.ajax__tabCustom_xp .ajax__tab_active .ajax__tab_outer { background-color: #184D18;}
+.ajax__tabCustom_xp .ajax__tab_active .ajax__tab_inner { background-color: #184D18; }
+.ajax__tabCustom_xp .ajax__tab_active .ajax__tab_tab { background-color: #184D18; }
+.ajax__tabCustom_xp .ajax__tab_body { border: solid .1em #18FF29; background-color: #184D18; }
+
+/* xp theme */
+.ajax__tabCustom_xp_main .ajax__tab_header { background-color: #292829; }
+.ajax__tabCustom_xp_main .ajax__tab_outer { border: solid .1em #18FF29;  }
+.ajax__tabCustom_xp_main .ajax__tab_inner { }
+.ajax__tabCustom_xp_main .ajax__tab_tab { background-color: #292829; }
+.ajax__tabCustom_xp_main .ajax__tab_hover .ajax__tab_outer { background-color: #184D18; }
+.ajax__tabCustom_xp_main .ajax__tab_hover .ajax__tab_inner { background-color: #184D18; }
+.ajax__tabCustom_xp_main .ajax__tab_hover .ajax__tab_tab { background-color: #184D18; }
+.ajax__tabCustom_xp_main .ajax__tab_active .ajax__tab_outer { background-color: #184D18;}
+.ajax__tabCustom_xp_main .ajax__tab_active .ajax__tab_inner { background-color: #184D18; }
+.ajax__tabCustom_xp_main .ajax__tab_active .ajax__tab_tab { background-color: #184D18; }
+.ajax__tabCustom_xp_main .ajax__tab_body { border: solid .1em #18FF29; background-color: #184D18; }
+
+/* for the Calender attributes */
+.ajax__calendar .ajax__calendar_container { border: 1px solid #646464; background-color: #ffffff; color: #FFFFFF; }
+.ajax__calendar .ajax__calendar_footer { border-top: 1px solid #f5f5f5; }
+.ajax__calendar .ajax__calendar_dayname { border-bottom: 1px solid #f5f5f5; }
+.ajax__calendar .ajax__calendar_day { border: 1px solid #ffffff; }
+.ajax__calendar .ajax__calendar_month { border: 1px solid #ffffff; }
+.ajax__calendar .ajax__calendar_year { border: 1px solid #ffffff; }
+.ajax__calendar .ajax__calendar_active .ajax__calendar_day { background-color: #edf9ff; border-color: #0066cc; color: #0066cc; }
+.ajax__calendar .ajax__calendar_active .ajax__calendar_month { background-color: #edf9ff; border-color: #0066cc; color: #0066cc; }
+.ajax__calendar .ajax__calendar_active .ajax__calendar_year { background-color: #edf9ff; border-color: #0066cc; color: #0066cc; }
+.ajax__calendar .ajax__calendar_other .ajax__calendar_day { background-color: #ffffff; border-color: #ffffff; color: #646464; }
+.ajax__calendar .ajax__calendar_other .ajax__calendar_year { background-color: #ffffff; border-color: #ffffff; color: #646464; }
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_day { background-color: #edf9ff; border-color: #daf2fc; color: #0066cc; }
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_month { background-color: #edf9ff; border-color: #daf2fc; color: #0066cc; }
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_year { background-color: #edf9ff; border-color: #daf2fc; color: #0066cc; }
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_title { color: #0066cc; }
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_today { color: #0066cc; }
+
+/* For All Gridviews */
+.GridviewFooterStyle A:link, .GridviewFooterStyle A:visited, .GridviewFooterStyle { background-color: #184D18; border: solid 1px #18FF29; }
+.GridviewRowStyle { background: #292829; }
+.GridviewRowStyle A:link, .GridviewRowStyle A:visited { background: #292829; }
+.GridviewEditRowStyle, .GridviewEditRowStyle A:link, .GridviewEditRowStyle A:visited { background: #729FE4; color: White; }
+.GridViewSelectedRowStyle { background: #729FE4; font-weight: bold; color: White; }
+.GridViewSelectedRowStyle A:link, .GridViewSelectedRowStyle A:visited { background: #729FE4; font-weight: bold; color: White; }
+.GridviewPagerStyle, .GridviewPagerStyle A:link, .GridviewPagerStyle A:visited { background: #008BDA; color: White; }
+.GridviewHeaderStyle A:link, .GridviewHeaderStyle A:visited { background-color: #292829; color: White; }
+.GridviewHeaderStyle { background-color: #184D18; border: solid 1px #18FF29; color: #FFFFFF; }
+.GridviewHeaderStyleRotateText A:link, .GridviewHeaderStyleRotateText A:visited { background-color: #184D18; color: White; }
+.GridviewHeaderStyleRotateText { background-color: #184D18; color: White; border-color: #18FF29; }
+.GridViewAlternatingRowStyle { background: #184D18; }
+.GridViewAlternatingRowStyle A:link, .GridViewAlternatingRowStyle A:visited { background: #184D18; }
+.GridviewPagerStyle A:Hover, .GridViewAlternatingRowStyle A:Hover, .GridviewHeaderStyleRotateText A:Hover, .GridViewSelectedRowStyle A:Hover, .GridviewRowStyle A:Hover, GridviewEditRowStyle A:Hover, .GridviewHeaderStyle A:Hover { }
+
+.tblKingdomInfo tr td { color: #FFFFFF; }
+.tblKingdomInfo tr th {  background-color: #292829; border:solid 1px #18FF29; color: #FFFFFF; cursor: pointer; }
+.tblKingdomInfo tr.d0 td { background-color: #292829; color: #FFFFFF; }
+.tblKingdomInfo tr.d1 td { background-color: #184D18; }
+.tblKingdomInfo tfoot td { background-color: #292829; border:solid 1px #18FF29; color: #FFFFFF; }
+
+.divProvincePane{  border:solid 1px #18FF29; }
+.divProvinceDetailHeader{ border: solid 1px #18FF29; background-color: #184D18; }
+
+.ui-tabs .ui-tabs-nav li { border:solid 1px #18FF29; }
+
+/* Component containers
+----------------------------------*/
+.ui-widget { font-size: 1.1em; background: #292829;}
+.ui-widget-content { border: 1px solid #18FF29; background: #184D18; color: #FFFFFF; }
+.ui-widget-content a { color: #FFFFFF; }
+.ui-widget-header { border: 1px solid #18FF29; background: #292829; color: #ffffff;  }
+.ui-widget-header a { color: #ffffff; }
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default { border: 1px solid #18FF29; background: #292829 ; color: #FFFFFF;}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #FFFFFF; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus { border: 1px solid #18FF29; background: #184D18 ; color: #FFFFFF; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #FFFFFF; }
+.ui-state-active, .ui-widget-content .ui-state-active { border: 1px solid #18FF29; background: #184D18 ; color: #FFFFFF; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #FFFFFF; }
+
+/* Style for Usual tabs */
+.usual { color: #111; }
+.mainTabs a {color: #FFF;  border: solid .1em #18FF29; }
+.mainTabs a:hover {  background: #184D18; }
+.mainTabs a.selected { color: #FFF; background: #184D18; border-bottom: 1px solid #184D18;  }
+.usual div, .usualList div{ color:#FFFFFF; background:#184D18; border: solid .1em #18FF29;}
+
+.usual3 { color: #111; }
+.usual3 div { color: #FFFFFF; background: #184D18;  }
+
+.borders{ border:1px solid #18FF29; }
+
+/* 
+Theme: Emerald
+Background: #292829
+Borders: #18FF29
+Table alt Items: #292829
+Table Items: #184D18 
+
+Tabs:#184D18
+ColumnsOn:	#184D18
+Background:#292829
+*/

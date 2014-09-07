@@ -1,0 +1,63 @@
+The Province of Aeneid (4:40)
+[http://www.utopiatemple.com Angel v2.03 Beta]
+
+Server: World of Legends (Age 48)
+Utopian Date: July 3rd, YR12 (25% in the day)
+RL Date: December 9th, 2010 (20:15 GMT)
+
+Ruler Name: The Humble Lord Virgilio
+Personality & Race: The Shepherd, Human
+Land: 2,094 Acres
+Money: 69gc (27,599gc daily income)
+Food: 107,810 bushels
+Runes: 23,744 runes
+Population: 54,734 citizens (26.14 per Acre)
+Peasants: 10,457 (83% Building Efficiency)
+Trade Balance: -3,788,824gc (28% tax rate)
+
+ME+Stance (no spells): 115.96% off. / 131.19% def.
+Soldiers: 4,062 (70% estimated draft rate)
+Swordsmen: 0
+Archers: 16,760 (131,926 defense)
+Knights: 12,797 (118,711 offense / 50,365 defense)
+War-Horses: 2 (up to 2 additional offense)
+Prisoners: 0
+
+Total Modified Offense: 123,424 (58.94 per Acre)
+Practical (100% elites): 123,424 (58.94 per Acre)
+Total Modified Defense: 182,291 (87.05 per Acre)
+Practical (0% elites): 137,254 (65.55 per Acre)
+
+Thieves: 4,668 (2.23 per Acre / 100% Stealth)
+Wizards: 5,990 (2.86 per Acre / 100% Mana)
+
+Spy on Throne on your province will show:
+Max. Possible Thieves/Wizards: 9,524 (4.55 / Acre)
+Estimated Thieves Number: 3,810 (1.82 per Acre)
+Estimated Wizards Number: 1,429 (0.68 per Acre)
+
+Province is at WAR! (-75% gains and effectiveness)
+
+** Networth Table: **
+Total Networth: 345,181gc (164.84 per Acre)
+Land (90% built): 106,794gc (31%) - [15+40gc]
+Archers: 100,560gc (29%) - [6gc]
+Knights: 83,180gc (24%) - [6.5gc]
+Wizards: 23,960gc (7%) - [4gc]
+Thieves: 18,672gc (5%) - [4gc]
+Peasants: 10,457gc (3%) - [1gc]
+Soldiers: 6,093gc (2%) - [1.5gc]
+War Horses: 1gc (0%) - [0.6gc]
+
+Buildings: 1,289gc to build, 874gc to raze
+82 per Acre)
+Estimated Wizards Number: 1,429 (0.68 per Acre)
+
+Province is at WAR! (-75% gains and effectiveness)
+
+** Networth Table: **
+Total Networth: 345,181gc (164.84 per Acre)
+Land (90% built): 106,794gc (31%) - [15+40gc]
+Archers: 100,560gc (29%) - [6gc]
+Knights: 83,180gc (24%) - [6.5gc]
+Wizards: 23,960gc (7%) - [4gc]

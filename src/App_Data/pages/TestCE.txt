@@ -1,0 +1,61 @@
+﻿ Quantcast
+
+Money: 275gc	Peasants: 9742	Food: 8374 Bushels	Runes: 11,434	NW: 134,690gc	Acres: 1013	NW/Acre: 133
+The Daily Paper lists the various happenings
+throughout your kingdom. Included are important
+activities such as attacks, deaths, and
+changes in relations with your kingdom.
+
+Legend
+	Intra-Kingdom Conflict		Relations News	
+	Actions against our Kingdom		Dragon News	
+	Actions by our Kingdom		Obituaries	
+
+The Kingdom Reporter
+March, YR2 Edition
+
+	March 9th, YR2 	The Enemy (6:16) attacked and pillaged the lands of UW Eleian Donan (10:40).
+	March 9th, YR2 	Haruka Kanata (6:16) captured 62 acres of land from UW Manetheren (10:40).
+	March 10th, YR2 	Narayan (6:16) captured 69 acres of land from UW Shandara (10:40).
+	March 10th, YR2 	Mad World (6:16) captured 59 acres of land from UW Flaming Death (10:40).
+	March 10th, YR2 	Sweet Home Alabama (6:16) captured 71 acres of land from UW Detatched (10:40).
+	March 10th, YR2 	Jizz In My Pants (6:16) captured 90 acres of land from UW Undertaker (10:40).
+	March 10th, YR2 	Pjanoo (6:16) captured 135 acres of land from UW Antagarich (10:40).
+	March 10th, YR2 	Narcotic (6:16) captured 83 acres of land from UW Stoner Pot Palace (10:40).
+	March 11th, YR2 	Indestructible (6:16) attacked and pillaged the lands of UW Shandara (10:40).
+	March 11th, YR2 	Indestructible (6:16) has sent an aid shipment to Oxycotton (6:16).
+	March 13th, YR2 	Gangsters Paradise (6:16) captured 65 acres of land from UW Scyth of Death (10:40).
+	March 14th, YR2 	Fall For You (6:16) captured 53 acres of land from UW Detatched (10:40).
+	March 14th, YR2 	Tarzan Boy (6:16) captured 62 acres of land from UW Shandara (10:40).
+	March 14th, YR2 	Poker Face (6:16) captured 55 acres of land from UW Stoner Pot Palace (10:40).
+	March 15th, YR2 	Beauty Car (3:16) has proposed a formal ceasefire with our kingdom.
+	March 15th, YR2 	Dream Lover (6:16) captured 44 acres of land from UW Shandara (10:40).
+	March 15th, YR2 	I Knew I Loved You (6:16) captured 129 acres of land from UW UnforgivenWarrior (10:40).
+	March 15th, YR2 	Dream Lover (6:16) captured 23 acres of land from UW Power (10:40).
+	March 16th, YR2 	Rocket Brothers (6:16) attacked and stole from UW Stoner Pot Palace (10:40).
+	March 16th, YR2 	Dream Lover (6:16) has sent an aid shipment to Bounce (6:16).
+	March 16th, YR2 	Im Yours (6:16) captured 44 acres of land from UW Scyth of Death (10:40).
+	March 16th, YR2 	You Dont Have A Clue (6:16) captured 68 acres of land from UW Undertaker (10:40).
+	March 16th, YR2 	Rocket Brothers (6:16) has sent an aid shipment to Dream Lover (6:16).
+	March 17th, YR2 	Oxycotton (6:16) captured 52 acres of land from UW Intoxicated (10:40).
+	March 18th, YR2 	Elvenpath (6:16) has sent an aid shipment to Oxycotton (6:16).
+	March 19th, YR2 	Kryptonite (6:16) captured 83 acres of land from UW AmBrosiaL (10:40).
+	March 19th, YR2 	The Enemy (6:16) has sent an aid shipment to Bounce (6:16).
+	March 20th, YR2 	The Enemy (6:16) captured 56 acres of land from UW Stoner Pot Palace (10:40).
+	March 20th, YR2 	Viva la Vida (6:16) captured 122 acres of land from UW Underground (10:40).
+	March 20th, YR2 	Mad World (6:16) captured 30 acres of land from UW Shandara (10:40).
+	March 20th, YR2 	Mad World (6:16), captured 9 acres of land from UW Shandara (10:40).
+	March 21st, YR2 	Indestructible (6:16) captured 57 acres of land from UW Detatched (10:40).
+	March 22nd, YR2 	Narcotic (6:16) captured 82 acres of land from UW UnforgivenWarrior (10:40).
+	March 23rd, YR2 	Haruka Kanata (6:16) captured 45 acres of land from UW Stoner Pot Palace (10:40).
+	March 24th, YR2 	Pjanoo (6:16) captured 123 acres of land from UW Antagarich (10:40).
+	March 24th, YR2 	Narayan (6:16) captured 59 acres of land from UW AmBrosiaL (10:40).
+	March 24th, YR2 	Gangsters Paradise (6:16) captured 34 acres of land from UW Stoner Pot Palace (10:40).
+	March 24th, YR2 	RAGING BOB RAZES (6:1) has proposed a formal ceasefire with our kingdom.
+	March 24th, YR2 	We have entered into a formal ceasefire with RAGING BOB RAZES (6:1).
+
+
+	
+Quantcast
+
+

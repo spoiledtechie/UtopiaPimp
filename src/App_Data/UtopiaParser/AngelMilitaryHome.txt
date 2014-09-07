@@ -1,0 +1,42 @@
+
+		Military Intelligence on Cannibal Orc Fork (19:18)
+[http://www.utopiatemple.com Angel v1.65 Beta]
+
+[Posted by: Cannibal Orc Fork]
+Server: WoL/BF (Age 28)
+Ruler & Race: King TongueIsGone, Orc.
+Effectiveness: 111.3% raw, 150.5% off., 116.9% def.
+
+** Summary **
+Net Offense at Home (from Utopia): 4,551
+Net Defense at Home (from Utopia): 18,994
+Modified Attack points (calculated): 37,625
+Modified Defense points (calculated): 28,626
+
+** Standing Army (At Home) **
+Soldiers: 197 (296 offense / 230 defense)
+Trolls: 2,976 (17,395 defense)
+Ogres: 390 (4,109 offense / 1,368 defense)
+War Horses: 97 (up to 146 additional offense)
+Total Attack points: 4,551
+Total Defense points: 18,993
+
+** Armies #2/#3/#4/#5 (Back in 12:53 hours) **
+Ogres: 2,448 (25,790 offense / 8,585 defense)
+War Horses: 2,448 (3,684 offense)
+Total Attack points: 29,474
+Captured Land: 73 Acres
+
+** Army #6 (Back in 11:56 hours) **
+Ogres: 299 (3,150 offense / 1,049 defense)
+War Horses: 299 (450 offense)
+Total Attack points: 3,600
+
+** Troops in Training **
+Trolls: 110 (643 defense)
+Next 21 hours: 9 6 6 4 7 5 4 6 3 3 6 6 4 7 5 5 7 4 6 3 1...
+Ogres: 464 (4,888 offense / 1,627 defense)
+Next 12 hours: 50 51 51 49 52 26 23 14 12 14 12 13...
+Thieves: 146
+Next 20 hours: 7 7 5 7 8 8 11 7 7 6 5 7 7 8 8 7 8 7 6 6...
+*/

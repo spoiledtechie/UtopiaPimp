@@ -1,0 +1,20 @@
+C:\Documents and Settings\pioha\My Documents\personal\WebPages\Utopiapimp\PimpLibrary\bin\Debug\PimpLibrary.dll
+C:\Documents and Settings\pioha\My Documents\personal\WebPages\Utopiapimp\PimpLibrary\bin\Debug\PimpLibrary.pdb
+C:\Documents and Settings\pioha\My Documents\personal\WebPages\Utopiapimp\PimpLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\pioha\My Documents\personal\WebPages\Utopiapimp\PimpLibrary\obj\Debug\PimpLibrary.dll
+C:\Documents and Settings\pioha\My Documents\personal\WebPages\Utopiapimp\PimpLibrary\obj\Debug\PimpLibrary.pdb
+C:\Documents and Settings\pioha\My Documents\Personal\PimpLibrary\bin\Debug\PimpLibrary.dll
+C:\Documents and Settings\pioha\My Documents\Personal\PimpLibrary\bin\Debug\PimpLibrary.pdb
+C:\Documents and Settings\pioha\My Documents\Personal\PimpLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\pioha\My Documents\Personal\PimpLibrary\obj\Debug\PimpLibrary.dll
+C:\Documents and Settings\pioha\My Documents\Personal\PimpLibrary\obj\Debug\PimpLibrary.pdb
+C:\Personal\PimpLibrary\bin\Debug\PimpLibrary.dll
+C:\Personal\PimpLibrary\bin\Debug\PimpLibrary.pdb
+C:\Personal\PimpLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Personal\PimpLibrary\obj\Debug\PimpLibrary.dll
+C:\Personal\PimpLibrary\obj\Debug\PimpLibrary.pdb
+C:\Personal\UtopiapimpSvnOld\PimpLibrary\bin\Debug\PimpLibrary.dll
+C:\Personal\UtopiapimpSvnOld\PimpLibrary\bin\Debug\PimpLibrary.pdb
+C:\Personal\UtopiapimpSvnOld\PimpLibrary\obj\Debug\PimpLibrary.csprojResolveAssemblyReference.cache
+C:\Personal\UtopiapimpSvnOld\PimpLibrary\obj\Debug\PimpLibrary.dll
+C:\Personal\UtopiapimpSvnOld\PimpLibrary\obj\Debug\PimpLibrary.pdb

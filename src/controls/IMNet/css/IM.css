@@ -1,0 +1,52 @@
+﻿body { background-color: #1F2022; font-family: Arial Unicode MS; font-size: 12px; margin:0px; padding:0px; }
+.divChatBox { width: 100%; height: 100%; padding: 0px; margin: 0px; position: relative; }
+.divChatBoxHistory { width: 96%; font-family: Arial; background-color: #FFFFFF; height: 15em; padding: 2px 5px 3px 10px; overflow: auto; overflow-x: hidden; }
+.divoneMinuteWarning { color: #FFFFFF; }
+
+.spanSender { color: #990000; }
+.spanReceiver { color: #0000A0; }
+.spanServerTime{ text-align:center;}
+
+.groupChatBox{ width:400px; float:left; }
+.groupChatList{ margin-left:4px; float:left; width:180px; background-color:#FFFFFF;}
+.ulChatUsers{ list-style:none; padding:3px; margin:0px;}
+.ulChatUsers li { padding:3px;}
+
+.divChatAd{ position:relative; clear:both; padding-top:10px;}
+
+
+.wmd-panel { float:left; background-color: #FFFFFF; margin-top:10px; }
+#wmd-editor { background-color: #FFFFFF; }
+#wmd-button-bar { width: 130px; background-color: #FFFFFF; }
+#wmd-input { height: 65px; width: 395px; background-color: #FFFFFF; border: 1px solid DarkGray; }
+#wmd-preview { background-color:#FFFFFF; width:400px; padding:0px; min-height:10px; border:1px dotted Gray; }
+#wmd-output { background-color: Pink; }
+/*#wmd-button-row { position: relative; margin-left: 5px; margin-right: 5px; margin-bottom: 5px; margin-top: 10px; padding: 0px; height: 20px; }
+.wmd-spacer { width: 1px; height: 20px; margin-left: 14px; position: absolute; background-color: Silver; display: inline-block; list-style: none; }
+.wmd-button { width: 20px; height: 20px; margin-left: 5px; margin-right: 5px; position: absolute; background-image: url(../images/wmd-buttons.png); background-repeat: no-repeat; background-position: 0px 0px; display: inline-block; list-style: none; }
+.wmd-button > a { width: 20px; height: 20px; margin-left: 5px; margin-right: 5px; position: absolute; display: inline-block; }
+*/
+/* sprite button slicing style information */
+#wmd-button-bar #wmd-bold-button { left: 0px; background-position: 0px 0; }
+#wmd-button-bar #wmd-italic-button { left: 25px; background-position: -20px 0; }
+#wmd-button-bar #wmd-spacer1 { left: 50px; }
+#wmd-button-bar #wmd-link-button { left: 75px; background-position: -40px 0; }
+#wmd-button-bar #wmd-quote-button { left: 100px; background-position: -60px 0; }
+#wmd-button-bar #wmd-code-button { left: 125px; background-position: -80px 0; }
+#wmd-button-bar #wmd-image-button { left: 150px; background-position: -100px 0; }
+#wmd-button-bar #wmd-spacer2 { left: 175px; }
+#wmd-button-bar #wmd-olist-button { left: 200px; background-position: -120px 0; }
+#wmd-button-bar #wmd-ulist-button { left: 225px; background-position: -140px 0; }
+#wmd-button-bar #wmd-heading-button { left: 250px; background-position: -160px 0; }
+#wmd-button-bar #wmd-hr-button { left: 275px; background-position: -180px 0; }
+#wmd-button-bar #wmd-spacer3 { left: 300px; }
+#wmd-button-bar #wmd-undo-button { left: 325px; background-position: -200px 0; }
+#wmd-button-bar #wmd-redo-button { left: 350px; background-position: -220px 0; }
+#wmd-button-bar #wmd-help-button { right: 0px; background-position: -240px 0; }
+
+
+.wmd-prompt-background { background-color: Black; }
+.wmd-prompt-dialog { border: 1px solid #999999; background-color: #F5F5F5; }
+.wmd-prompt-dialog > div { font-size: 0.8em; font-family: arial, helvetica, sans-serif; }
+.wmd-prompt-dialog > form > input[type="text"] { border: 1px solid #999999; color: black; }
+.wmd-prompt-dialog > form > input[type="button"] { border: 1px solid #888888; font-family: trebuchet MS, helvetica, sans-serif; font-size: 0.8em; font-weight: bold; }

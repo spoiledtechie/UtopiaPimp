@@ -1,0 +1,147 @@
+The Province of The Last Frdfom (15:5)
+[http://www.utopiatemple.com Angel v1.96 Alpha 2]
+
+Server: Genesis #20
+Utopian Date: January 2nd, YR2
+RL Date: April 21st, 2009 (1:00 GMT)
+Origin: Unformatted (1st hand)
+
+Ruler Name: Baron Kira the Warrior
+Personality & Race: The Warrior, Undead
+Land: 621 Acres
+Money: 3,416,66gc (15,671gc daily income)
+Food: 5,355 bushels (no food needed)
+Runes: 24,678 runes
+Population: 15,548 citizens (25.04 per Acre)
+Peasants: 6,697 (97% Building Efficiency)
+Trade Balance: -225,145gc
+
+Military Eff. with Stance: 135.5% off. / 107.55% def.
+Soldiers: 1,294 (56.9% estimated draft rate)
+Skeletons: 3,674 (24,891 offense)
+Zombies: 3,280 (17,639 defense)
+Ghouls: 603 (7,353 offense / 1,946 defense)
+War-Horses: 3,952 (up to 5,355 additional offense)
+Prisoners: 0
+
+Total Modified Offense: 39,352 (63.37 per Acre)
+Practical (100% elites): 39,352 (63.37 per Acre)
+Total Modified Defense: 20,976 (33.78 per Acre)
+Practical (0% elites): 19,030 (30.64 per Acre)
+
+HINT: To include thieves/mages estimation in report,
+copy target's kingdom page before copying the CB.
+
+
+** Export Line [ver 14] -- Crystal-Ball [ver 36]: **
+5I$-66iD/"je4Cb.-v}udhA81P'3P'0Cg!]E6]vl.S"*R|!y}
+Z.5pJ'S8RIlS29d|F4ylt'ql--giL
+
+
+
+Money: 129,581gc	Peasants: 2564	Food: 381,532 Bushels	Runes: 49,875	NW: 81,733gc	Acres: 524	NW/Acre: 156
+Game Time: April 4th, YR6 - Clock Time: 3:36 AM
+
+Game Update
+Please note that with the server switch, Utopia is now operating in GMT!
+
+Message from Our Monarch
+Send runes and soldiers to elf | Update pimp
+
+The Province of Undead Sucks (12:31) as of April 4th, YR6.
+Race	Orc	--- 	Soldiers	0
+Ruler	Sir Seriously They Suck the Warrior	--- 	Goblins	0
+Land	524 Acres	--- 	Trolls	4250
+Peasants	2564	--- 	Ogres	2836
+Building Eff.	72%	--- 	Thieves	1369 (100%)
+Money	129,581gc	--- 	Wizards	1038 (9%)
+Food	381,532 bushels	--- 	War Horses	0
+Runes	49,875 runes	--- 	Prisoners	0
+Trade Balance	-306,210gc	--- 	Off. Points	21,260
+Service Level	Basic	--- 	Def. Points	21,443
+The Plague has spread throughout our people!
+
+No new happenings
+
+See Recent News
+
+
+
+METATRON FORMATTED
+
+Money: 129,581gc	Peasants: 2564	Food: 381,532	Runes: 49,875	NW: 81,733gc	Acres: 524	NW/Acre: 156
+Game Time: April 4th, YR6 - Clock Time: 3 : 36 AM
+
+Game Update
+Please note that with the server switch, Utopia is now operating in GMT!
+
+Message from Our Monarch
+Send runes and soldiers to elf | Update pimp
+
+The Province of Undead Sucks (12:31) as of April 4th, YR6.
+Race	Orc	--- 	Soldiers	0	
+Ruler	Sir Seriously They Suck the Warrior	--- 	Goblins	0	: 0.00 oPA
+Land	524 Acres	--- 	Trolls	4250	: 8.11 dPA
+Peasants	2564	--- 	Ogres	2836	: 5.41 EPA
+Building Eff.	72%	--- 	Thieves	1369 (100%)	: 2.61 TPA
+Money	129,581gc	--- 	Wizards	1038 (9%)	: 1.98 WPA
+Food	381,532 bushels	--- 	War Horses	0	
+Runes	49,875 runes	--- 	Prisoners	0	
+Trade Balance	-306,210gc	--- 	Off. Points	21,260	: 40.57 OPA
+Service Level	Basic	--- 	Def. Points	21,443	: 40.92 DPA
+The Plague has spread throughout our people!
+
+No new happenings
+
+See Recent News
+
+
+
+The Province of Undead Sucks (12:31)
+[http://www.utopiatemple.com Angel v1.96 Alpha 4]
+
+Server: World of Legends (Age 43)
+Utopian Date: April 4th, YR6 (43% in the day)
+RL Date: June 18th, 2009 (3:26 GMT)
+
+Ruler Name: Sir Seriously They Suck the Warrior
+Personality & Race: The Warrior, Orc
+Land: 524 Acres
+Money: 129,581gc (4,904gc daily income)
+Food: 381,532 bushels
+Runes: 49,875 runes
+Population: 12,057 citizens (23.01 per Acre)
+Peasants: 2,564 (72% Building Efficiency)
+Trade Balance: -306,210gc (0% tax rate)
+Total Networth: 81,733gc (155.98 per Acre)
+
+ME+Stance (no spells): 93.71% off. / 79.65% def.
+Soldiers: 0 (70.1% estimated draft rate)
+Goblins: 0
+Trolls: 4,250 (16,925 defense)
+Ogres: 2,836 (21,260 offense / 4,518 defense)
+War-Horses: 0
+Prisoners: 0
+
+Total Modified Offense: 21,260 (40.57 per Acre)
+Practical (100% elites): 21,260 (40.57 per Acre)
+Total Modified Defense: 21,443 (40.92 per Acre)
+Practical (0% elites): 16,925 (32.30 per Acre)
+
+Thieves: 1,369 (2.61 per Acre / 100% Stealth)
+Wizards: 1,038 (1.98 per Acre / 9% Mana)
+
+Crystal-Ball on your province will show:
+Max. Possible Thieves/Wizards: 2,980 (5.69 / Acre)
+Estimated Thieves Number: 1,192 (2.27 per Acre)
+Estimated Wizards Number: 447 (0.85 per Acre)
+
+The Plague has spread throughout the people!
+(No growth, -15% def & tax, quicker prisoners death)
+
+Buildings: 884gc to build, 481gc to raze
+Away bonus: 12,820gc (12h) / 38,460gc (20h)
+
+
+** Export Line [ver 14] -- Crystal-Ball [ver 36]: **
+kcr5to}6iE'PtiLBGg|-r1|5htyt1/utanLz.1v345!otsxgr8 q"ixFlbzD]R8"JE!DvA*h30B9tL7'6J9u*bhhTK0soLE,0g

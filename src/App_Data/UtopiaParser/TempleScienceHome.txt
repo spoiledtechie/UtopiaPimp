@@ -1,0 +1,17 @@
+Science Intelligence on [SELF]
+[http://www.UtopiaTemple.com All-in-One v4.23b]
+
+Server: World of Legends (Age 36)
+
+** Effects Summary (Known Science Only) **
++16.9% Income (136,976 points)
++7.4% Building Effectiveness (104,396 points)
++6.9% Population Limits (91,601 points)
++42.3% Food Production (95,477 points)
++9.1% Combat Gains (102,895 points)
++46.3% Thievery Effectiveness (114,759 points)
++39.3% Magic Effectiveness (118,923 points)
+
+** Science Points in Progress **
+Housing: 30,494 points in progress
+Channeling: 4,877 points in progress

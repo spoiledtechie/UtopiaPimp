@@ -1,0 +1,15 @@
+﻿body { top: -5px; left: 0; }
+
+/* Style for Usual tabs */
+.usual {  width: 70%; margin: 0px 0px 0px 0px; padding: 0px; position:relative; }
+.mainTabs li { list-style: none; float: left; display: block; margin-bottom:15px; }
+.mainTabs a { display: block; padding: 6px 10px; text-decoration: none !important; margin: 1px; margin-left: 0;   border-bottom: none; }
+.mainTabs a:hover {  }
+.mainTabs a.selected { margin-bottom: 0;   cursor: default; }
+.usual div { padding: 5px 5px 8px 5px; clear: left; font: 10ptGeorgia; }
+.usual div a { }
+.usual div { }
+.usual div ul { padding: 0px; margin: 5px 0px 5px 5px; }
+.usual div ul li { display: inline; padding: 0px 0px 0px 5px; margin: 0px; }
+
+										   .topLinksFloatRight { right: 0px; top:83px; float: right; position:absolute; }

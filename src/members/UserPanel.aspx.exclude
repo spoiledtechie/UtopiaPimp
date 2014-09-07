@@ -1,0 +1,88 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="UserPanel.aspx.cs"
+    Inherits="members_UserPanel" %>
+
+<%@ Register Assembly="ScottsFramework" Namespace="ScottsFramework" TagPrefix="cc3" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
+            <% if (Roles.IsUserInRole("admin"))
+               { %>
+            <div>
+                Add Column
+                <asp:TextBox ID="txtbxAddColumn" runat="server" CssClass="txtbx"></asp:TextBox>
+                Tool Tip
+                <asp:TextBox ID="txtbxToolTip" runat="server" MaxLength="50" CssClass="txtbx"></asp:TextBox>
+                <asp:DropDownList ID="ddlSelectCatagory" runat="server" CssClass="AllDropDowns" DataSourceID="ldsAddColumn"
+                    DataTextField="Category_Name" AppendDataBoundItems="true" DataValueField="Category_ID">
+                    <asp:ListItem Text="" Value=""></asp:ListItem>
+                </asp:DropDownList>
+                <asp:LinqDataSource ID="ldsAddColumn" runat="server" ContextTypeName="CS_Code.UtopiaDataContext"
+                    OrderBy="Category_Name" Select="new (Category_ID, Category_Name)" TableName="Utopia_Column_Catagory_Name_Pulls">
+                </asp:LinqDataSource>
+                <asp:Button ID="btnAddColumn" runat="server" Text="Submit Catagory" CssClass="btnAllButtons"
+                    OnClick="btnAddColumn_Click" />
+                <asp:DropDownList ID="ddlDelete" runat="server" CssClass="AllDropDowns" DataSourceID="ldsDeleteColumn"
+                    DataTextField="Column_Name" DataValueField="uid" AppendDataBoundItems="true">
+                    <asp:ListItem Text="" Value=""></asp:ListItem>
+                </asp:DropDownList>
+                <asp:LinqDataSource ID="ldsDeleteColumn" runat="server" ContextTypeName="CS_Code.UtopiaDataContext"
+                    OrderBy="Column_Name" Select="new (Column_Name, uid)" TableName="Utopia_Column_Name_Pulls">
+                </asp:LinqDataSource>
+                <asp:Button ID="btnDelete" runat="server" Text="Delete Column" CssClass="btnAllButtons"
+                    OnClick="btnDelete_Click" />
+            </div>
+            <% } %>
+            <div>
+                To View Descriptions of the Columns, "hover" your mouse of the name.</div>
+            <asp:Button ID="btnUnselectAll" OnClick="btnUnselectAll_OnClick" runat="server" Text="Unselect All" />
+            <div class="dlColumnCatagoriesChoose">
+                <asp:DataList ID="dlCatagories" runat="server" DataSourceID="ldsCatagorypull" RepeatDirection="Horizontal">
+                    <ItemTemplate>
+                        
+                            <asp:Label ID="Category_IDLabel" Visible="false" runat="server" Text='<%# Eval("Category_ID") %>' />
+                            <asp:Label ID="Category_NameLabel" runat="server" Text='<%# Eval("Category_Name") %>' /><div>
+                                <asp:CheckBox ID="chkbxCatagoryIDAll" Text="All" ToolTip='<%# Eval("Category_ID") %>'
+                                    OnCheckedChanged="chkbxCatagoryIDAll_CheckedChanged" AutoPostBack="true" runat="server" />
+                            </div>
+                            <asp:DataList ID="dlColumns" runat="server" CssClass="dlColumnsChoose" DataSourceID="ldsColumnPull"
+                                OnItemDataBound="dlColumns_OnItemDataBound">
+                                <ItemTemplate>
+                                    <asp:CheckBox ID="chkbxColumnID" Text='<%# Eval("Column_Name") %>' OnCheckedChanged="chkbxColumnID_CheckedChanged"
+                                        ToolTip='<%# Eval("Alt") %>' AutoPostBack="true" runat="server" />
+                                    <asp:Label ID="Category_IDLabel" Visible="false" runat="server" Text='<%# Eval("Category_ID") %>' />
+                                    <asp:Label ID="Column_NameLabel" Visible="false" runat="server" Text='<%# Eval("Column_Name") %>' />
+                                    <asp:Label ID="uidLabel" Visible="false" runat="server" Text='<%# Eval("uid") %>' />
+                                    <asp:Image ID="imgCheckmark" ImageUrl="http://codingforcharity.org/utopiapimp/img/Checkmark.gif" Height="10px" Width="10px"
+                                        runat="server" Visible="false" />
+                                    <asp:Image ID="imgCheckmarkOff" ImageUrl="http://codingforcharity.org/utopiapimp/img/CheckmarkOff.gif" Height="10px"
+                                        Width="10px" runat="server" Visible="false" />
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:LinqDataSource ID="ldsColumnPull" runat="server" ContextTypeName="CS_Code.UtopiaDataContext"
+                                Select="new (Category_ID, Column_Name, Alt, uid)" OrderBy="Column_Name" TableName="Utopia_Column_Name_Pulls"
+                                Where="Category_ID == @Category_ID">
+                                <WhereParameters>
+                                    <asp:ControlParameter ControlID="Category_IDLabel" Name="Category_ID" PropertyName="Text"
+                                        Type="Int32" />
+                                </WhereParameters>
+                            </asp:LinqDataSource>
+                        
+                    </ItemTemplate>
+                </asp:DataList></div>
+            <asp:LinqDataSource ID="ldsCatagorypull" runat="server" ContextTypeName="CS_Code.UtopiaDataContext"
+                OrderBy="Category_ID" Select="new (Category_ID, Category_Name)" TableName="Utopia_Column_Catagory_Name_Pulls">
+            </asp:LinqDataSource>
+            <asp:GridView ID="gvCurrentColumns" runat="server" AutoGenerateColumns="False" DataSourceID="sds">
+                <Columns>
+                    <asp:BoundField DataField="Column_Name" HeaderText="Current Columns" SortExpression="Column_Name" />
+                </Columns>
+            </asp:GridView>
+            <asp:SqlDataSource ID="sds" runat="server" ConnectionString="<%$ ConnectionStrings:UPConnectionString %>"
+                SelectCommand="SELECT Utopia_Column_Name_Pull.Column_Name FROM Utopia_Column_Name INNER JOIN Utopia_Column_Name_Pull ON Utopia_Column_Name.Column_ID = Utopia_Column_Name_Pull.uid WHERE (Utopia_Column_Name.User_ID = @User_ID)">
+                <SelectParameters>
+                    <cc3:MembershipUserIDParameters Name="User_ID" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+</asp:Content>

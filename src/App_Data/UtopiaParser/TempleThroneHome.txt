@@ -1,0 +1,43 @@
+The Province of Mountain of Techies (17:38)
+[http://www.UtopiaTemple.com All-in-One v4.23b]
+
+Server: World of Legends (Age 36)
+Utopian Date: July 12th, YR7 (27% in the day)
+RL Date: August 21st, 2007 (17:16 GMT)
+Formatted: March 21st, 2008 (16:15 GMT)
+
+Ruler Name: Sir Tech Master the Warrior
+Personality & Race: The Warrior, Orc
+Land: 1,390 Acres
+Money: 22,256gc (25,946gc raw daily income)
+Food: 126,543 bushels
+Runes: 101,559 runes
+Population: 36,145 citizens (26 per Acre)
+Peasants: 12,973 (84% Building Efficiency)
+Trade Balance: 276gc
+Networth: 236,939 (170.46 per Acre)
+Thieves+Wizards+Science Networth: 29,106gc
+
+Military Eff. with Stance: 91.5% off. / 134% def.
+Soldiers: 1,042 (59% estimated draft rate)
+Goblins: 0
+Trolls: 8,512 (42,560 defense points)
+Ogres: 10,233 (81,864 off. / 20,466 def.)
+War-Horses: 8,653 (up to 8,653 additional offense)
+Prisoners: 0
+
+Total Modified Offense: 83,786 (60.28 per Acre)
+Practical (100% elites): 83,786 (60.28 per Acre)
+Total Modified Defense: 85,876 (61.78 per Acre)
+Practical (0% elites): 58,427 (42.03 per Acre)
+
+Thieves: 1,527 (1.1 per Acre / 100% Stealth)
+Wizards: 1,858 (1.34 per Acre / 100% Mana)
+
+Crystal-Ball on your province will show:
+Max. Possible Thieves/Wizards: 7,277 (5.24 / Acre)
+Estimated Thieves Number: 2,911 (2.09 per Acre)
+Estimated Wizards Number: 1,092 (0.79 per Acre)
+
+Buildings: 1,253gc to build, 698gc to raze
+Away bonus: 64,865gc (12h) / 194,595gc (20h)

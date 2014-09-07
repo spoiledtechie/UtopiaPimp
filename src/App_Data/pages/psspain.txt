@@ -1,0 +1,913 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<script type="text/javascript" src="http://www.haloscan.com/load/remitente"> </script>
+  <title>PostSecret Spain</title>
+
+  <script type="text/javascript">(function() { var a=window;function c(b){this.t={};this.tick=function(d,i,e){e=e?e:(new Date).getTime();this.t[d]=[e,i]};this.tick("start",null,b)}var f=new c;a.jstiming={Timer:c,load:f};try{var g=null;if(a.chrome&&a.chrome.csi)g=Math.floor(a.chrome.csi().pageT);if(g==null)if(a.gtbExternal)g=a.gtbExternal.pageT();if(g==null)if(a.external)g=a.external.pageT;if(g)a.jstiming.pt=g}catch(h){};a.tickAboveFold=function(b){b=b;var d=0;if(b.offsetParent){do d+=b.offsetTop;while(b=b.offsetParent)}b=d;b<=750&&a.jstiming.load.tick("aft")};var j=false;function k(){if(!j){j=true;a.jstiming.load.tick("firstScrollTime")}}a.addEventListener?a.addEventListener("scroll",k,false):a.attachEvent("onscroll",k);
+ })();</script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="MSSmartTagsPreventParsing" content="true" /> 
+<meta name="generator" content="Blogger" /> 
+<link rel="icon" type="image/vnd.microsoft.icon" href="http://www.blogger.com/favicon.ico"/> 
+<link rel="alternate" type="application/atom+xml" title="PostSecret Spain - Atom" href="http://postsecretspain.blogspot.com/feeds/posts/default" /> 
+<link rel="alternate" type="application/rss+xml" title="PostSecret Spain - RSS" href="http://postsecretspain.blogspot.com/feeds/posts/default?alt=rss" /> 
+<link rel="service.post" type="application/atom+xml" title="PostSecret Spain - Atom" href="http://www.blogger.com/feeds/12970042/posts/default" /> 
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=12970042" /> 
+ <link rel="stylesheet" type="text/css" href="http://www.blogger.com/static/v1/v-css/50269083-blog_controls.css"/> <link rel="stylesheet" type="text/css" href="http://www.blogger.com/dyn-css/authorization.css?targetBlogID=12970042&zx=d8376eb4-44d8-4794-9521-5680e5a0337d"/>
+
+  <style type="text/css">
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders
+Designer: Douglas Bowman
+URL:      www.stopdesign.com
+Date:     27 Feb 2004
+----------------------------------------------- */
+
+
+body {
+  background:#aba;
+  margin:0;
+  padding:20px 10px;
+  text-align:center;
+  font:x-small/1.5em "Trebuchet MS",Verdana,Arial,Sans-serif;
+  color:#333;
+  font-size/* */:/**/small;
+  font-size: /**/small;
+  }
+
+
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the 
+   following widths and measurements. If you want to change 
+   these measurements, the images will also need to change.
+   */
+#content {
+  width:740px;
+  margin:0 auto;
+  text-align:left;
+  }
+#main {
+  width:485px;
+  float:left;
+  background:#fff url("http://www.blogblog.com/rounders/corners_main_bot.gif") no-repeat left bottom;
+  margin:15px 0 0;
+  padding:0 0 10px;
+  color:#000;
+  font-size:97%;
+  line-height:1.5em;
+  }
+#main2 {
+  float:left;
+  width:100%;
+  background:url("http://www.blogblog.com/rounders/corners_main_top.gif") no-repeat left top;
+  padding:10px 0 0;
+  }
+#main3 {
+  background:url("http://www.blogblog.com/rounders/rails_main.gif") repeat-y;
+  padding:0;
+  }
+#sidebar {
+  width:240px;
+  float:right;
+  margin:15px 0 0;
+  font-size:97%;
+  line-height:1.5em;
+  }
+
+
+/* Links
+----------------------------------------------- */
+a:link {
+  color:#258;
+  }
+a:visited {
+  color:#666;
+  }
+a:hover {
+  color:#c63;
+  }
+a img {
+  border-width:0;
+  }
+
+
+/* Blog Header
+----------------------------------------------- */
+#header {
+  background:#456 url("http://www.blogblog.com/rounders/corners_cap_top.gif") no-repeat left top;
+  margin:0 0 0;
+  padding:8px 0 0;
+  color:#fff;
+  }
+#header div {
+  background:url("http://www.blogblog.com/rounders/corners_cap_bot.gif") no-repeat left bottom;
+  padding:0 15px 8px;
+  }
+#blog-title {
+  margin:0;
+  padding:10px 30px 5px;
+  font-size:200%;
+  line-height:1.2em;
+  }
+#blog-title a {
+  text-decoration:none;
+  color:#fff;
+  }
+#description {
+  margin:0;
+  padding:5px 30px 10px;
+  font-size:94%;
+  line-height:1.5em;
+  }
+
+
+/* Posts
+----------------------------------------------- */
+.date-header {
+  margin:0 28px 0 43px;
+  font-size:85%;
+  line-height:2em;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#357;
+  }
+.post {
+  margin:.3em 0 25px;
+  padding:0 13px;
+  border:1px dotted #bbb;
+  border-width:1px 0;
+  }
+.post-title {
+  margin:0;
+  font-size:135%;
+  line-height:1.5em;
+  background:url("http://www.blogblog.com/rounders/icon_arrow.gif") no-repeat 10px .5em;
+  display:block;
+  border:1px dotted #bbb;
+  border-width:0 1px 1px;
+  padding:2px 14px 2px 29px;
+  color:#333;
+  }
+a.title-link, .post-title strong {
+  text-decoration:none;
+  display:block;
+  }
+a.title-link:hover {
+  background-color:#ded;
+  color:#000;
+  }
+.post-body {
+  border:1px dotted #bbb;
+  border-width:0 1px 1px;
+  border-bottom-color:#fff;
+  padding:10px 14px 1px 29px;
+  }
+html>body .post-body {
+  border-bottom-width:0;
+  }
+.post p {
+  margin:0 0 .75em;
+  }
+p.post-footer {
+  background:#ded;
+  margin:0;
+  padding:2px 14px 2px 29px;
+  border:1px dotted #bbb;
+  border-width:1px;
+  border-bottom:1px solid #eee;
+  font-size:100%;
+  line-height:1.5em;
+  color:#666;
+  text-align:right;
+  }
+html>body p.post-footer {
+  border-bottom-color:transparent;
+  }
+p.post-footer em {
+  display:block;
+  float:left;
+  text-align:left;
+  font-style:normal;
+  }
+a.comment-link {
+  /* IE5.0/Win doesn't apply padding to inline elements,
+     so we hide these two declarations from it */
+  background/* */:/**/url("http://www.blogblog.com/rounders/icon_comment.gif") no-repeat 0 45%;
+  padding-left:14px;
+  }
+html>body a.comment-link {
+  /* Respecified, for IE5/Mac's benefit */
+  background:url("http://www.blogblog.com/rounders/icon_comment.gif") no-repeat 0 45%;
+  padding-left:14px;
+  }
+.post img {
+  margin:0 0 5px 0;
+  padding:4px;
+  border:1px solid #ccc;
+  }
+blockquote {
+  margin:.75em 0;
+  border:1px dotted #ccc;
+  border-width:1px 0;
+  padding:5px 15px;
+  color:#666;
+  }
+.post blockquote p {
+  margin:.5em 0;
+  }
+
+
+/* Comments
+----------------------------------------------- */
+#comments {
+  margin:-25px 13px 0;
+  border:1px dotted #ccc;
+  border-width:0 1px 1px;
+  padding:20px 0 15px 0;
+  }
+#comments h4 {
+  margin:0 0 10px;
+  padding:0 14px 2px 29px;
+  border-bottom:1px dotted #ccc;
+  font-size:120%;
+  line-height:1.4em;
+  color:#333;
+  }
+#comments-block {
+  margin:0 15px 0 9px;
+  }
+.comment-data {
+  background:url("http://www.blogblog.com/rounders/icon_comment.gif") no-repeat 2px .3em;
+  margin:.5em 0;
+  padding:0 0 0 20px;
+  color:#666;
+  }
+.comment-poster {
+  font-weight:bold;
+  }
+.comment-body {
+  margin:0 0 1.25em;
+  padding:0 0 0 20px;
+  }
+.comment-body p {
+  margin:0 0 .5em;
+  }
+.comment-timestamp {
+  margin:0 0 .5em;
+  padding:0 0 .75em 20px;
+  color:#666;
+  }
+.comment-timestamp a:link {
+  color:#666;
+  }
+.deleted-comment {
+  font-style:italic;
+  color:gray;
+  }
+
+
+/* Profile
+----------------------------------------------- */
+#profile-container {
+  background:#cdc url("http://www.blogblog.com/rounders/corners_prof_bot.gif") no-repeat left bottom;
+  margin:0 0 15px;
+  padding:0 0 10px;
+  color:#345;
+  }
+#profile-container h2 {
+  background:url("http://www.blogblog.com/rounders/corners_prof_top.gif") no-repeat left top;
+  padding:10px 15px .2em;
+  margin:0;
+  border-width:0;
+  font-size:115%;
+  line-height:1.5em;
+  color:#234;
+  }
+.profile-datablock {
+  margin:0 15px .5em;
+  border-top:1px dotted #aba;
+  padding-top:8px;
+  }
+.profile-img {display:inline;}
+.profile-img img {
+  float:left;
+  margin:0 10px 5px 0;
+  border:4px solid #fff;
+  }
+.profile-data strong {
+  display:block;
+  }
+#profile-container p {
+  margin:0 15px .5em;
+  }
+#profile-container .profile-textblock {
+  clear:left;
+  }
+#profile-container a {
+  color:#258;
+  }
+.profile-link a {
+  background:url("http://www.blogblog.com/rounders/icon_profile.gif") no-repeat 0 .1em;
+  padding-left:15px;
+  font-weight:bold;
+  }
+ul.profile-datablock {
+  list-style-type:none;
+  }
+
+
+/* Sidebar Boxes
+----------------------------------------------- */
+.box {
+  background:#fff url("http://www.blogblog.com/rounders/corners_side_top.gif") no-repeat left top;
+  margin:0 0 15px;
+  padding:10px 0 0;
+  color:#666;
+  }
+.box2 {
+  background:url("http://www.blogblog.com/rounders/corners_side_bot.gif") no-repeat left bottom;
+  padding:0 13px 8px;
+  }
+.sidebar-title {
+  margin:0;
+  padding:0 0 .2em;
+  border-bottom:1px dotted #9b9;
+  font-size:115%;
+  line-height:1.5em;
+  color:#333;
+  }
+.box ul {
+  margin:.5em 0 1.25em;
+  padding:0 0px;
+  list-style:none;
+  }
+.box ul li {
+  background:url("http://www.blogblog.com/rounders/icon_arrow_sm.gif") no-repeat 2px .25em;
+  margin:0;
+  padding:0 0 3px 16px;
+  margin-bottom:3px;
+  border-bottom:1px dotted #eee;
+  line-height:1.4em;
+  }
+.box p {
+  margin:0 0 .6em;
+  }
+
+
+/* Footer
+----------------------------------------------- */
+#footer {
+  clear:both;
+  margin:0;
+  padding:15px 0 0;
+  }
+#footer div {
+  background:#456 url("http://www.blogblog.com/rounders/corners_cap_top.gif") no-repeat left top;
+  padding:8px 0 0;
+  color:#fff;
+  }
+#footer div div {
+  background:url("http://www.blogblog.com/rounders/corners_cap_bot.gif") no-repeat left bottom;
+  padding:0 15px 8px;
+  }
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#fff;}
+  </style>
+
+
+<link rel="me" href="http://www.blogger.com/profile/13316734732001655115" /> 
+<link rel="openid.server" href="http://www.blogger.com/openid-server.g" /> 
+<!-- --><style type="text/css">@import url(http://www.blogger.com/static/v1/v-css/navbar/697174003-classic.css);
+div.b-mobile {display:none;}
+</style> 
+ 
+</head>
+
+
+
+<body><script type="text/javascript"> 
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener("load",
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script> 
+<iframe src="http://www.blogger.com/navbar.g?targetBlogID=12970042&amp;blogName=PostSecret+Spain&amp;publishMode=PUBLISH_MODE_BLOGSPOT&amp;navbarType=BLUE&amp;layoutType=CLASSIC&amp;searchRoot=http%3A%2F%2Fpostsecretspain.blogspot.com%2Fsearch&amp;blogLocale=es_ES&amp;homepageUrl=http%3A%2F%2Fpostsecretspain.blogspot.com%2F" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="30px" width="100%" id="navbar-iframe" allowtransparency="true" title="Blogger Navigation and Search"></iframe> 
+<div></div>
+
+
+
+<!-- Begin #content - Centers all content and provides edges for floated columns -->
+
+<div id="content">
+
+
+
+
+<!-- Blog Header -->
+
+<div id="header"><div>
+
+<a href="http://www.imageshack.us"><img src="http://img104.echo.cx/img104/8040/bannerpostal1iu.jpg" border="0" width="700" alt="Image Hosted by ImageShack.us" /></a>
+  <h1 id="blog-title">
+    
+	PostSecret Spain
+	
+  </h1>
+  <p id="description">Todos tenemos secretos, por qué no contarlos a la red con un poco de creatividad? Si tienes cualquier consulta no dudes en enviarme un correo a difierete@gmail.com</p>
+
+</div></div>
+
+
+
+
+
+<!-- Begin #main - Contains main-column blog content -->
+
+<div id="main"><div id="main2"><div id="main3">
+
+
+
+    
+  <h2 class="date-header">17.9.05</h2>
+  
+
+         <!-- Begin .post -->
+
+  <div class="post"><a name="112696061807237238"></a>
+
+     
+	 
+    <h3 class="post-title">
+	 News
+    </h3>
+	 
+    
+
+         <div class="post-body">
+
+          <p>
+      Recordad que si pinchais en la imagen la podeis ver a tamaño real <br /><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://photos1.blogger.com/blogger/3614/1122/1600/MOI2.jpg"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="http://photos1.blogger.com/blogger/3614/1122/320/MOI2.jpg" border="0" alt="" /></a><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://photos1.blogger.com/blogger/3614/1122/1600/misecreto.jpg"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="http://photos1.blogger.com/blogger/3614/1122/320/misecreto.jpg" border="0" alt="" /></a>
+    </p>
+
+        </div>
+
+        <p class="post-footer">
+
+      <em>posted by char @ <a href="http://postsecretspain.blogspot.com/2005/09/news.html" title="permanent link">2:35 PM</a></em> &nbsp;
+       <span class="item-control blog-admin pid-478187859"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=12970042&postID=112696061807237238" title="Editar entrada"><img class="icon-action" alt="" src="http://img2.blogblog.com/img/icon18_edit_allbkg.gif" height="18" width="18"></a></span>
+    </p>
+
+    </div>
+
+  <!-- End .post -->
+
+        <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+<a href="javascript:HaloScan('112696061807237238');" target="_self"><script type="text/javascript">postCount('112696061807237238'); </script></a> | <a href="javascript:HaloScanTB('112696061807237238');" target="_self"><script type="text/javascript">postCountTB('112696061807237238'); </script></a>
+
+
+
+    
+  <h2 class="date-header">8.9.05</h2>
+  
+
+         <!-- Begin .post -->
+
+  <div class="post"><a name="112613216098086924"></a>
+
+     
+	 
+    <h3 class="post-title">
+	 Secrets
+    </h3>
+	 
+    
+
+         <div class="post-body">
+
+          <p>
+      <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://photos1.blogger.com/blogger/4901/546/1600/Sin%20t%3F%3Ftulo-2.jpg"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="http://photos1.blogger.com/blogger/4901/546/400/Sin%20t%3F%3Ftulo-2.jpg" border="0" alt="" /></a>
+    </p>
+
+        </div>
+
+        <p class="post-footer">
+
+      <em>posted by char @ <a href="http://postsecretspain.blogspot.com/2005/09/secrets.html" title="permanent link">12:28 AM</a></em> &nbsp;
+       <span class="item-control blog-admin pid-478187859"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=12970042&postID=112613216098086924" title="Editar entrada"><img class="icon-action" alt="" src="http://img2.blogblog.com/img/icon18_edit_allbkg.gif" height="18" width="18"></a></span>
+    </p>
+
+    </div>
+
+  <!-- End .post -->
+
+        <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+<a href="javascript:HaloScan('112613216098086924');" target="_self"><script type="text/javascript">postCount('112613216098086924'); </script></a> | <a href="javascript:HaloScanTB('112613216098086924');" target="_self"><script type="text/javascript">postCountTB('112613216098086924'); </script></a>
+
+
+
+    
+  <h2 class="date-header">7.9.05</h2>
+  
+
+         <!-- Begin .post -->
+
+  <div class="post"><a name="112604561091920186"></a>
+
+     
+	 
+    <h3 class="post-title">
+	 Soledad
+    </h3>
+	 
+    
+
+         <div class="post-body">
+
+          <p>
+      <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://photos1.blogger.com/blogger/3614/1122/1600/regreso.jpg"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="http://photos1.blogger.com/blogger/3614/1122/400/regreso.jpg" border="0" alt="" /></a>
+    </p>
+
+        </div>
+
+        <p class="post-footer">
+
+      <em>posted by char @ <a href="http://postsecretspain.blogspot.com/2005/09/soledad.html" title="permanent link">12:26 AM</a></em> &nbsp;
+       <span class="item-control blog-admin pid-478187859"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=12970042&postID=112604561091920186" title="Editar entrada"><img class="icon-action" alt="" src="http://img2.blogblog.com/img/icon18_edit_allbkg.gif" height="18" width="18"></a></span>
+    </p>
+
+    </div>
+
+  <!-- End .post -->
+
+        <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+<a href="javascript:HaloScan('112604561091920186');" target="_self"><script type="text/javascript">postCount('112604561091920186'); </script></a> | <a href="javascript:HaloScanTB('112604561091920186');" target="_self"><script type="text/javascript">postCountTB('112604561091920186'); </script></a>
+
+
+
+    
+  <h2 class="date-header">6.9.05</h2>
+  
+
+         <!-- Begin .post -->
+
+  <div class="post"><a name="112604155671636666"></a>
+
+     
+	 
+    <h3 class="post-title">
+	 Empezamos?
+    </h3>
+	 
+    
+
+         <div class="post-body">
+
+          <p>
+      <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://photos1.blogger.com/blogger/3614/1122/1600/glubs.jpg"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="http://photos1.blogger.com/blogger/3614/1122/400/glubs.jpg" border="0" alt="" /></a><br /><br /><br />Bueno como prometi, intentare que este blog levante cabeza. Gracias a la web de OINK que nos ha vuelto a promocionar ;)
+    </p>
+
+        </div>
+
+        <p class="post-footer">
+
+      <em>posted by char @ <a href="http://postsecretspain.blogspot.com/2005/09/empezamos.html" title="permanent link">11:18 PM</a></em> &nbsp;
+       <span class="item-control blog-admin pid-478187859"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=12970042&postID=112604155671636666" title="Editar entrada"><img class="icon-action" alt="" src="http://img2.blogblog.com/img/icon18_edit_allbkg.gif" height="18" width="18"></a></span>
+    </p>
+
+    </div>
+
+  <!-- End .post -->
+
+        <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+<a href="javascript:HaloScan('112604155671636666');" target="_self"><script type="text/javascript">postCount('112604155671636666'); </script></a> | <a href="javascript:HaloScanTB('112604155671636666');" target="_self"><script type="text/javascript">postCountTB('112604155671636666'); </script></a>
+
+
+
+    
+  <h2 class="date-header">17.8.05</h2>
+  
+
+         <!-- Begin .post -->
+
+  <div class="post"><a name="112424218568002994"></a>
+
+     
+	 
+    <h3 class="post-title">
+	 de nuevo por aqui..!
+    </h3>
+	 
+    
+
+         <div class="post-body">
+
+          <p>
+      <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://photos1.blogger.com/blogger/3614/1122/1600/nuncamais.jpg"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="http://photos1.blogger.com/blogger/3614/1122/320/nuncamais.jpg" border="0" alt="" /></a><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://photos1.blogger.com/blogger/3614/1122/1600/Untitled-1.jpg"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="http://photos1.blogger.com/blogger/3614/1122/320/Untitled-1.jpg" border="0" alt="" /></a><br /><br /><br /><br />Este blog esta teniendo muy poca participacion , pese a las visitas que recibe diariamente. Espero que ahora que muchos tenemos vacaciones, recarguemos las pilas para en septiembre darle un soplo de aire fresco a Post Secret Spain. <br /><br />Estais conmigo?
+    </p>
+
+        </div>
+
+        <p class="post-footer">
+
+      <em>posted by char @ <a href="http://postsecretspain.blogspot.com/2005/08/de-nuevo-por-aqui.html" title="permanent link">3:25 AM</a></em> &nbsp;
+       <span class="item-control blog-admin pid-478187859"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=12970042&postID=112424218568002994" title="Editar entrada"><img class="icon-action" alt="" src="http://img2.blogblog.com/img/icon18_edit_allbkg.gif" height="18" width="18"></a></span>
+    </p>
+
+    </div>
+
+  <!-- End .post -->
+
+        <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+<a href="javascript:HaloScan('112424218568002994');" target="_self"><script type="text/javascript">postCount('112424218568002994'); </script></a> | <a href="javascript:HaloScanTB('112424218568002994');" target="_self"><script type="text/javascript">postCountTB('112424218568002994'); </script></a>
+
+
+
+    
+  <h2 class="date-header">3.7.05</h2>
+  
+
+         <!-- Begin .post -->
+
+  <div class="post"><a name="112042205736384103"></a>
+
+     
+
+         <div class="post-body">
+
+          <p>
+      <a href="http://www.imageshack.us"><img src="http://img108.imageshack.us/img108/9804/besomaldito2no.jpg" border="0" width="389" alt="Image Hosted by ImageShack.us" /></a><br /><br /><a href="http://www.imageshack.us"><img src="http://img108.imageshack.us/img108/4636/clown8bt.jpg" border="0" width="389" alt="Image Hosted by ImageShack.us" /></a><br /><br /><a href="http://www.imageshack.us"><img src="http://img108.imageshack.us/img108/9664/duda8tj.jpg" border="0" width="350" alt="Image Hosted by ImageShack.us" /></a><br /><br /><a href="http://www.imageshack.us"><img src="http://img108.imageshack.us/img108/3524/zorro3xz.jpg" border="0" width="389" alt="Image Hosted by ImageShack.us" /></a>
+    </p>
+
+        </div>
+
+        <p class="post-footer">
+
+      <em>posted by char @ <a href="http://postsecretspain.blogspot.com/2005/07/blog-post.html" title="permanent link">10:19 PM</a></em> &nbsp;
+       <span class="item-control blog-admin pid-478187859"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=12970042&postID=112042205736384103" title="Editar entrada"><img class="icon-action" alt="" src="http://img2.blogblog.com/img/icon18_edit_allbkg.gif" height="18" width="18"></a></span>
+    </p>
+
+    </div>
+
+  <!-- End .post -->
+
+        <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+<a href="javascript:HaloScan('112042205736384103');" target="_self"><script type="text/javascript">postCount('112042205736384103'); </script></a> | <a href="javascript:HaloScanTB('112042205736384103');" target="_self"><script type="text/javascript">postCountTB('112042205736384103'); </script></a>
+
+
+
+    
+  <h2 class="date-header">26.6.05</h2>
+  
+
+         <!-- Begin .post -->
+
+  <div class="post"><a name="111975653110774252"></a>
+
+     
+	 
+    <h3 class="post-title">
+	 Share your secrets!
+    </h3>
+	 
+    
+
+         <div class="post-body">
+
+          <p>
+      <a href="http://www.imageshack.us"><img src="http://img117.echo.cx/img117/4421/enamorarse4pg.jpg" border="0" width="380" alt="Image Hosted by ImageShack.us" /></a><br /><br /><a href="http://www.imageshack.us"><img src="http://img138.echo.cx/img138/1843/movil5zy.jpg" border="0" width="343" alt="Image Hosted by ImageShack.us" /></a>
+    </p>
+
+        </div>
+
+        <p class="post-footer">
+
+      <em>posted by char @ <a href="http://postsecretspain.blogspot.com/2005/06/share-your-secrets_26.html" title="permanent link">5:21 AM</a></em> &nbsp;
+       <span class="item-control blog-admin pid-478187859"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=12970042&postID=111975653110774252" title="Editar entrada"><img class="icon-action" alt="" src="http://img2.blogblog.com/img/icon18_edit_allbkg.gif" height="18" width="18"></a></span>
+    </p>
+
+    </div>
+
+  <!-- End .post -->
+
+        <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+<a href="javascript:HaloScan('111975653110774252');" target="_self"><script type="text/javascript">postCount('111975653110774252'); </script></a> | <a href="javascript:HaloScanTB('111975653110774252');" target="_self"><script type="text/javascript">postCountTB('111975653110774252'); </script></a>
+
+
+
+
+
+</div></div></div>
+
+<!-- End #main -->
+
+
+
+
+
+
+
+
+
+<!-- Begin #sidebar -->
+
+<div id="sidebar">
+
+
+    <!-- Begin .box -->
+
+  <div class="box"><div class="box2"><div class="box3">
+    
+        
+  <h2 class="sidebar-title">Links</h2>
+    <ul>
+
+        <li><a href="http://postsecret.blogspot.com/">POSTSECRET</a></li>
+    	<li><a href="http://carromierda.blogspot.com/">La vida en Diferido</a></li>
+    	
+  </ul>
+  
+  
+  <h2 class="sidebar-title">Quiero colaborar, ya!</h2>
+  
+Envia tus postales a 
+>>>>>Carla Plumed Oliva / 
+Av/ Manuel Girona 34, Sobreatico 1º / 
+08860 Castelldefels / 
+Barcelona
+
+>>>>>o al email difierete@gmail.com
+
+<!-- Vótame en los Premios 20Blogs -->
+<div style="font-family: Verdana,Arial,sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 11px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: black;">
+<p style="margin: 2px; padding: 0pt;">Vótame</p>
+<a href="http://www.20minutos.es/premios_20_blogs/votar/2107/1/" onclick="window.open(this.href,'premios20blogs', 'top=10,left=10,height=370,width=510,scrollbars=yes'); return false;"><img src="http://www.20minutos.es/i/vot02.gif" style="border: 0px;" /></a>
+<p style="margin: 2px; padding: 0pt;">convocado por:<br /><a href="http://www.20minutos.es/" style="color: black; text-decoration: none;">20minutos.es</a></p>
+</div>
+<!-- Vótame en los Premios 20Blogs -->
+
+ 
+  <ul>
+    	
+    	
+  </ul>
+
+      <h2 class="sidebar-title">Previous Posts</h2>
+    <ul id="recently">
+    
+        <li><a href="http://postsecretspain.blogspot.com/2005/09/news.html">News</a></li>
+     
+        <li><a href="http://postsecretspain.blogspot.com/2005/09/secrets.html">Secrets</a></li>
+     
+        <li><a href="http://postsecretspain.blogspot.com/2005/09/soledad.html">Soledad</a></li>
+     
+        <li><a href="http://postsecretspain.blogspot.com/2005/09/empezamos.html">Empezamos?</a></li>
+     
+        <li><a href="http://postsecretspain.blogspot.com/2005/08/de-nuevo-por-aqui.html">de nuevo por aqui..!</a></li>
+     
+        <li><a href="http://postsecretspain.blogspot.com/2005/07/blog-post.html"> 
+ 
+ 
+ 
+ 
+ 
+</a></li>
+     
+        <li><a href="http://postsecretspain.blogspot.com/2005/06/share-your-secrets_26.html">Share your secrets!</a></li>
+     
+        <li><a href="http://postsecretspain.blogspot.com/2005/06/4-postales-y-comentarios.html">4 postales y comentarios</a></li>
+     
+        <li><a href="http://postsecretspain.blogspot.com/2005/06/y-van-dos.html">y van dos!</a></li>
+     
+        <li><a href="http://postsecretspain.blogspot.com/2005/06/esperamos.html">Esperamos...</a></li>
+     
+  </ul>
+
+    
+  <h2 class="sidebar-title">Archives</h2>
+    <ul class="archive-list">
+   	  
+    	<li><a href="http://postsecretspain.blogspot.com/2005_05_01_archive.html">mayo 2005</a></li>
+	  
+    	<li><a href="http://postsecretspain.blogspot.com/2005_06_01_archive.html">junio 2005</a></li>
+	  
+    	<li><a href="http://postsecretspain.blogspot.com/2005_07_01_archive.html">julio 2005</a></li>
+	  
+    	<li><a href="http://postsecretspain.blogspot.com/2005_08_01_archive.html">agosto 2005</a></li>
+	  
+    	<li><a href="http://postsecretspain.blogspot.com/2005_09_01_archive.html">septiembre 2005</a></li>
+	  
+      
+
+    <!-- INICIO codigo contadores.miarroba.com -->
+<SCRIPT LANGUAGE="JavaScript" src="http://contadores.miarroba.com/ver.php?id=363361"></SCRIPT>
+<!-- FIN codigo contadores.miarroba.com -->
+
+  </ul>
+  
+      <p id="powered-by"><a href="http://www.blogger.com"><img src="http://buttons.blogger.com/bloggerbutton1.gif" alt="Powered by Blogger" /></a></p>
+
+        <!--
+
+    <p>This is a paragraph of text that could go in the sidebar.</p>
+
+    -->
+
+    </div></div></div>
+
+  <!-- End .box -->
+
+
+
+
+</div>
+
+<!-- End #sidebar -->
+
+
+
+
+
+
+
+
+
+<!-- Begin #footer -->
+
+<div id="footer"><div><div><hr />
+
+
+
+  <p><!-- This is an optional footer. If you want text here, place it inside these tags, and remove this comment. -->&nbsp;</p>
+
+
+
+</div></div></div>
+
+<!-- End #footer -->
+
+
+
+
+
+
+
+
+</div>
+
+<!-- End #content -->
+
+
+
+<script type="text/javascript" src="http://www.blogger.com/static/v1/common/js/755007736-csitail.js"></script> 
+<script type="text/javascript">BLOG_initCsi('classic_blogspot');</script></body>
+
+</html>
+
+
+<div id="footer"><div><div><hr />
+
+
+
+  <p><!-- This is an

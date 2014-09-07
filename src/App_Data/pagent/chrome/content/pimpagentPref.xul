@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://pimpagent/content/style.css" type="text/css"?>
+
+<window
+    id="upt-preferences"
+    title="Utopiapimp Toolbar preferences"
+    orient="horizontal"
+    onload="pimpPrefsLoad();"
+    onclose="oPimpOptions.onSave();"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type='application/x-javascript' src='chrome://pimpagent/content/util.js'></script>
+  <script type="application/x-javascript" src="chrome://pimpagent/content/prefs.js"></script>
+
+
+  <tabbox>
+    <tabs id='preftabs'>
+      <tab label="Users"/>
+      <tab label="Preferences"/>
+      <tab label="Data Queue"/>
+      <tab label="Failed Data Log"/>
+      <tab label="Pimp Agent Log"/>
+      <tab label="Debug Info"/>
+    </tabs>
+    <tabpanels>
+      <tabpanel>
+        <vbox>
+          <hbox>
+            <groupbox>
+              <caption label="Users" style="font-weight:bold;"/>
+              <vbox>
+                <listbox style="width: 100px; height: 120px;" id='upt.userlist'>
+                </listbox>
+                <button label="Delete User" oncommand="oPimpOptions.deleteCurrentUser()"/>
+              </vbox>
+            </groupbox>
+
+            <groupbox id='info-user' >
+              <caption id='user-prefs-caption-label' label="Current User"  style="font-weight: bold"/>
+              <grid flex="1">
+                <columns>
+                  <column flex="1"/>
+                  <column flex="2"/>
+                  <column flex="1"/>
+                </columns>
+
+                <rows>
+                  <row>
+                    <label id='user-prefs-username-label' value="Username:"/>
+                    <label id="upt.options.pimp_username" />
+                  </row>
+                  <row>
+                    <label id='user-prefs-password-label' value="Password:"/>
+                    <textbox type="password" id="upt.options.pimp_password" size="20" maxlength="20"/>
+                  </row>
+                  <row>
+                    <label id='user-prefs-provincename-label' value="Provincename:"/>
+                    <label id="upt.options.pimp_provincename" />
+                  </row>
+                  <row>
+                    <label id='user-prefs-server-label' value="Server" style="font-weight:bold;"/>
+                    <label id='user-prefs-enabled-label' value="Enabled?" style="font-weight:bold;"/>
+                  </row>
+                  <row>
+                    <label id='user-prefs-wol-label' value="World of Legends "/>
+                    <checkbox id="upt.options.use_server_wol" />
+                  </row>
+                  <row>
+                    <label id='user-prefs-bf-label' value="Tournament "/>
+                    <checkbox id="upt.options.use_server_bf" />
+                  </row>
+                  <row>
+                    <label id='user-prefs-gen-label' value="Genesis "/>
+                    <checkbox id="upt.options.use_server_gen" />
+                  </row>
+                </rows>
+              </grid>
+              <row>
+                <label id='user-prefs-wol-label' value="UP 2.1 Note: Server Specifics Don't work yet."/>
+              </row>
+              <button label="Save user info" id='upt.options.saveinfo' oncommand="updateUserInfo()"/>
+              <label id='user-prefs-update-label' value='' style='color:red'/>
+            </groupbox>
+          </hbox>
+          <groupbox>
+            <caption label="Add User" style="font-weight:bold;"/>
+            <vbox >
+              <hbox>
+                <label value="Pimp username:"/>
+                <textbox id="upt.newusername" size="20" maxlength="35"/>
+              </hbox>
+              <hbox>
+                <label value="Pimp password:"/>
+                <textbox type="password" id="upt.newpassword" size="20" maxlength="35"/>
+              </hbox>
+              <hbox>
+                <label value="Pimp Province Name:"/>
+                <textbox id="upt.newprovince" size="20" maxlength="35"/>
+              </hbox>
+              <button label="Add user" id="upt-add-user" oncommand="checkUserInfo()"/>
+
+            </vbox>
+            <vbox>
+              <label value="" style="color:red" id='add-user-message' />
+            </vbox>
+          </groupbox>
+        </vbox>
+
+      </tabpanel>
+      <tabpanel >
+        <vbox flex="1">
+
+
+          <groupbox>
+            <hbox>
+              <checkbox id="upt.options.auto_send_ops" checked="true"/>
+              <label value="Automatically send thief/mage ops"/>
+            </hbox>
+            <hbox>
+              <checkbox id="upt.options.auto_send_selfintel" checked="true" onclick="oPimpOptions.toggleSpan(!this.checked,true);"/>
+              <label value="Automatically send self-intel"/>
+            </hbox>
+            <hbox>
+              <textbox size="2" maxlength="2" id="upt.options.auto_send_selfintel_span"/>
+              <label id="upt.options.auto_send_selfintel_span.label" value="How often self-intel should be sent (in hours, minimum 4 hours)"/>
+            </hbox>
+            <hbox>
+              <checkbox id='upt.options.use_angel'  checked="true"/>
+              <label value="Query Utopia Angel (if running) for Export Lines"/>
+            </hbox>
+            <hbox>
+              <checkbox id='upt.options.timeout_error' disabled='true'/>
+              <label value="Use alternative url (Only for users that experience timeout error on website)"/>
+            </hbox>
+          </groupbox>
+          <button label="Save preferences" id="upt-prefs-saveprefs" oncommand="oPimpOptions.onSave();" disabled='true'/>
+          <label id='upt-prefs-nolabel' value="These preferences cannot be saved until you have a user account in the Users tab." style="color: orange"/>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="queuetab">
+        <vbox flex="1">
+          <listbox id="upt.queue.queuelist" flex="1" aclass="inset" seltype="single" rows="10" width="600">
+            <listhead>
+              <listheader label="Province/Kingdom"/>
+              <listheader label="Type"/>
+              <listheader label="# ops"/>
+              <listheader label="Time collected"/>
+            </listhead>
+            <listcols>
+              <listcol flex="2"/>
+              <listcol flex="1"/>
+              <listcol flex="1"/>
+              <listcol flex="1"/>
+            </listcols>
+          </listbox>
+          <groupbox>
+            <hbox>
+              <button label="Send Queue to Pimp" id="upt-prefs-sendqueue" oncommand="sendQueue();"/>
+              <button label="Clear Queue" id="upt-prefs-sendqueue" oncommand="clearQueue();"/>
+            </hbox>
+          </groupbox>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="failedtab">
+        <vbox flex="1">
+          <listbox id="upt.queue.failedlist" flex="1" aclass="inset" seltype="single" rows="10" width="600">
+            <listhead>
+              <listheader label="Province/Kingdom"/>
+              <listheader label="Type"/>
+              <listheader label="# ops"/>
+              <listheader label="Time collected"/>
+              <listheader label="Error message"/>
+            </listhead>
+            <listcols>
+              <listcol flex="2"/>
+              <listcol flex="1"/>
+              <listcol flex="1"/>
+              <listcol flex="1"/>
+              <listcol flex="4"/>
+            </listcols>
+          </listbox>
+          <description>
+            Failed data is an op/intel that was rejected from Utopiapimp. Here are the main reasons for failure:
+            <html:ul>
+              <html:li>Province data - tried to post an op on a province that is not stored in the Utopiapimp account.</html:li>
+              <html:li>Kingdom data - tried to post a CE on a kingdom that is not stored in the Utopiapimp account.</html:li>
+            </html:ul>
+            Clicking 'Re-add to Queue' will return this data to the Pimp Agent queue and attempt to resend it.
+          </description>
+          <groupbox>
+            <hbox>
+              <button label="Re-add to Queue" id="upt-prefs-sendfailed" oncommand="reloadFailed();"/>
+              <button label="Clear List" id="upt-prefs-clearfailed" oncommand="clearFailedQueue();"/>
+            </hbox>
+          </groupbox>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="logtab">
+        <vbox flex="1">
+          <listbox id="upt.logs.loglist" flex="1" aclass="inset" seltype="single" rows="10" width="600">
+            <listhead>
+              <listheader label="Time"/>
+              <listheader label="Status"/>
+              <listheader label="Description"/>
+            </listhead>
+            <listcols>
+              <listcol flex="1"/>
+              <listcol flex="1"/>
+              <listcol flex="3"/>
+            </listcols>
+          </listbox>
+          <label value="Logs older than 3 days are automatically deleted"/>
+          <hbox>
+            <button label="Clear Logs" id="upt-prefs-clearlogs" oncommand="clearLogs();"/>
+          </hbox>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="debugtab">
+        <vbox flex="1">
+          <listbox id="upt.debug.list" flex="1" aclass="inset" seltype="single" rows="10" width="600">
+            <listhead>
+              <listheader label="Time collected"/>
+              <listheader label="Data"/>
+            </listhead>
+            <listcols>
+              <listcol flex="1"/>
+              <listcol flex="9"/>
+            </listcols>
+          </listbox>
+          <description>If you have a bug with Pimp Agent, describe it below, then hit "Send Debug" to report it to molesquirrel!</description>
+          <description style='color:red' id='upt-prefs-oldverwarn'></description>
+          <textbox size="100" rows="3" multiline="true" id="upt.debug.msg"/>
+          <button label="Send Debug" id="upt-prefs-senddebug" oncommand="sendDebug();"/>
+          <label value="" style="color:red" id='send-debug-msg' />
+        </vbox>
+      </tabpanel>
+    </tabpanels>
+  </tabbox>
+
+</window>

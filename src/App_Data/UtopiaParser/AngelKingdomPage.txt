@@ -1,0 +1,128 @@
+Mighty Mountains (17:38) Kingdom Analysis
+[http://www.utopiatemple.com Angel v1.88 Beta]
+
+** Statistics **
+Provinces in Kingdom: 25 (1 dead)
+Total Land: 38,606 Acres (Average: 1,609 Acres)
+Total Networth: 6,422,900gc (Average: 267,621gc)
+Average Networth per Acre: 166.37gc
+Dragon Cost: 11,240,075gc
+Dragon Send Range: 5,138,320gc - 8,028,625gc
+
+** Relations **
+Stance: Fortified (+10% defense, -15% offense)
+War History: 4 Wars, 2 Wins (50%)
+
+** Races **
+Orc: 17 (68%)
+Gnome: 3 (12%)
+Dark Elf: 3 (12%)
+Human: 1 (4%)
+Elf: 1 (4%)
+
+** Land **
+1. Mountain of Nymphos [OR] - 2,242 Acres (5.8%)
+2. Mountain Lion [DE] - 2,073 Acres (5.4%)
+3. Brasilia [EL] - 2,011 Acres (5.2%)
+4. Mystic Mountain [DE] - 1,976 Acres (5.1%)
+5. A Mountain [OR] - 1,937 Acres (5%)
+6. Metal Mace Mountain [OR] - 1,802 Acres (4.7%)
+7. Root of the Mountain [OR] - 1,784 Acres (4.6%)
+8. Dwarfs Mountain [OR] - 1,783 Acres (4.6%)
+9. Vicegerent Mountain [OR] - 1,739 Acres (4.5%)
+10. Rapid Wolf Mountain [OR] - 1,732 Acres (4.5%)
+11. Apologetics Mountain [OR] - 1,651 Acres (4.3%)
+12. MightyStone Mountain [OR] - 1,623 Acres (4.2%)
+13. Torn Conscious [HU] - 1,614 Acres (4.2%)
+14. Wolf Mountain [OR] - 1,556 Acres (4%)
+15. Thunder Mountain [OR] - 1,548 Acres (4%)
+16. Pillage Me NOT [GN] - 1,516 Acres (3.9%)
+17. Shrek mOuntain [OR] - 1,495 Acres (3.9%)
+18. Marley Mountain [OR] - 1,460 Acres (3.8%)
+19. Mini Mountain [OR] - 1,396 Acres (3.6%)
+20. Mountain of Techies [OR] - 1,390 Acres (3.6%)
+21. II Mark II [GN] - 1,340 Acres (3.5%)
+22. Tiger Mountain [OR] - 1,272 Acres (3.3%)
+23. Joes Mountain [OR] - 1,143 Acres (3%)
+24. Sourz of Doom [DE] - 523 Acres (1.4%)
+
+** Networth **
+1. Mountain of Nymphos [OR] - 381,422gc (5.9%)
+2. Mystic Mountain [DE] - 359,913gc (5.6%)
+3. Mountain Lion [DE] - 358,283gc (5.6%)
+4. A Mountain [OR] - 353,763gc (5.5%)
+5. Metal Mace Mountain [OR] - 317,896gc (4.9%)
+6. Brasilia [EL] - 316,811gc (4.9%)
+7. Root of the Mountain [OR] - 310,610gc (4.8%)
+8. Dwarfs Mountain [OR] - 304,057gc (4.7%)
+9. Vicegerent Mountain [OR] - 289,694gc (4.5%)
+10. Rapid Wolf Mountain [OR] - 282,975gc (4.4%)
+11. MightyStone Mountain [OR] - 273,532gc (4.3%)
+12. Apologetics Mountain [OR] - 273,097gc (4.3%)
+13. Thunder Mountain [OR] - 272,358gc (4.2%)
+14. Wolf Mountain [OR] - 260,281gc (4.1%)
+15. Shrek mOuntain [OR] - 258,454gc (4%)
+16. Torn Conscious [HU] - 256,734gc (4%)
+17. II Mark II [GN] - 238,935gc (3.7%)
+18. Mountain of Techies [OR] - 231,340gc (3.6%)
+19. Tiger Mountain [OR] - 221,913gc (3.5%)
+20. Pillage Me NOT [GN] - 220,396gc (3.4%)
+21. Mini Mountain [OR] - 214,838gc (3.3%)
+22. Marley Mountain [OR] - 214,443gc (3.3%)
+23. Joes Mountain [OR] - 146,503gc (2.3%)
+24. Sourz of Doom [DE] - 64,652gc (1%)
+
+** Networth per Acre **
+1. A Mountain [OR] - 182.63gc
+2. Mystic Mountain [DE] - 182.14gc
+3. II Mark II [GN] - 178.31gc
+4. Metal Mace Mountain [OR] - 176.41gc
+5. Thunder Mountain [OR] - 175.94gc
+6. Tiger Mountain [OR] - 174.46gc
+7. Root of the Mountain [OR] - 174.11gc
+8. Shrek mOuntain [OR] - 172.88gc
+9. Mountain Lion [DE] - 172.83gc
+10. Dwarfs Mountain [OR] - 170.53gc
+11. Mountain of Nymphos [OR] - 170.13gc
+12. MightyStone Mountain [OR] - 168.53gc
+13. Wolf Mountain [OR] - 167.28gc
+14. Vicegerent Mountain [OR] - 166.59gc
+15. Mountain of Techies [OR] - 166.43gc
+16. Apologetics Mountain [OR] - 165.41gc
+17. Rapid Wolf Mountain [OR] - 163.38gc
+18. Torn Conscious [HU] - 159.07gc
+19. Brasilia [EL] - 157.54gc
+20. Mini Mountain [OR] - 153.9gc
+21. Marley Mountain [OR] - 146.88gc
+22. Pillage Me NOT [GN] - 145.38gc
+23. Joes Mountain [OR] - 128.17gc
+24. Sourz of Doom [DE] - 123.62gc
+
+** Ranks **
+1. Tiger Mountain [OR] - Queen 
+2. Mystic Mountain [DE] - Baroness 
+2. II Mark II [GN] - Baron 
+4. Wolf Mountain [OR] - Lord 
+4. Pillage Me NOT [GN] - Lord 
+4. A Mountain [OR] - Lord 
+4. Thunder Mountain [OR] - Lord 
+4. Metal Mace Mountain [OR] - Lord 
+4. Apologetics Mountain [OR] - Lord 
+4. Mountain Lion [DE] - Lord 
+4. Vicegerent Mountain [OR] - Lord 
+4. Brasilia [EL] - Lord 
+4. Rapid Wolf Mountain [OR] - Lord 
+4. Mini Mountain [OR] - Noble Lady 
+4. Sourz of Doom [DE] - Lord 
+16. MightyStone Mountain [OR] - Knight 
+16. Mountain of Nymphos [OR] - Knight 
+16. Dwarfs Mountain [OR] - Knight 
+16. Root of the Mountain [OR] - Knight 
+16. Marley Mountain [OR] - Lady 
+16. Mountain of Techies [OR] - Knight 
+16. Torn Conscious [HU] - Knight 
+16. Joes Mountain [OR] - Knight 
+24. Shrek mOuntain [OR] - Peasant 
+
+** Miscellaneous **
+DEAD: Orc R US [GN]

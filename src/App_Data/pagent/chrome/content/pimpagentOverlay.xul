@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://pimpagent/content/overlay.css" type="text/css"?>
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <statusbar id="status-bar">
+    <popupset>
+      <popup id="upt-popup">
+        <menuitem label="Open help page" id="upt-get-help" oncommand="openPimpHelp()" />
+        <menu id='upt-users-menu' label="Switch user">
+          <menupopup id='upt-users-menu-popup'>
+            <menuitem label="Add user" id='upt-users-popup-adduser' oncommand="showPrefs('user');"/>
+          </menupopup>
+        </menu>
+        <menuitem label="Preferences" id="gm-context-menu-check-now" oncommand="showPrefs('prefs');"/>
+        <menuitem label="Show queue" id="gm-context-menu-check-now" oncommand="showPrefs('queue');"/>
+        <menuitem label="Send queue to Pimp" id="upt-popup-sendqueue" oncommand="sendQueue();" />
+        <menuitem label="Enable Pimp Agent" id="upt-popup-enable" oncommand="togglePimp()" />
+      </popup>
+    </popupset>
+    <statusbarpanel  class="statusbarpanel-iconic" context="upt-popup" hidden="true" popup="upt-popup" src="chrome://pimpagent/content/color-icon.png" id="upt-statuspanel-icon"></statusbarpanel>
+    <statusbarpanel  context="upt-popup" popup="upt-popup" label="" hidden="true" id="upt-statuspanel"></statusbarpanel>
+  </statusbar>
+  <keyset>
+    <key id="copy-key" modifiers="shift control" key="Y"  oncommand="queueAgentEvent(false);"/>
+  </keyset>
+  <script type='application/x-javascript' src='chrome://pimpagent/content/util.js'></script>
+  <script type='application/x-javascript' src='chrome://pimpagent/content/pimpagent.js'></script>
+  <script type='application/x-javascript' src='chrome://pimpagent/content/overlay_thief.js'></script>
+  <script type='application/x-javascript' src='chrome://pimpagent/content/overlay_magic.js'></script>
+  <script type='application/x-javascript' src='chrome://pimpagent/content/overlay_attack.js'></script>
+  <script type="application/x-javascript" src="chrome://pimpagent/content/prefs.js"></script>
+  </overlay>

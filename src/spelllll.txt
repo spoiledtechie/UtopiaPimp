@@ -1,0 +1,123 @@
+ 
+Palm Bay Mom Lost 42 lbs Following 1 Rule!I Cut Down 42 lbs of Belly Fat in a Month by Obeying this 1…RachelRayDieting.com900% Penny Stocks GainerStocks that blow up overnight. Free reports. Join today.www.Stockpickss.com
+Get listed here
+Quantcast
+
+Money: 20,842gc	Peasants: 13,925	Food: 17,255 Bushels	Runes: 33,197	NW: 254,288gc	Acres: 1728	NW/Acre: 147
+Utopia Guide: Mystics - Mystic Advisor
+
+Your wizards gather their runes and begin casting. The spell consumes 2041 Runes and ... is successful! Our army has been inspired to work harder training on their own. We expect maintenance costs to be reduced for 13 days!
+
+Money: 20,842gc	Peasants: 13,925	Food: 17,255 Bushels	Runes: 31,156	NW: 254,288gc	Acres: 1728	NW/Acre: 147
+	You enter the Mystic Circle, the secret locale from which your wizards cast their spells. From here, you may issue orders to your magical minions to do anything within their power. Wizards have an amazing array of spells at their disposal, but can only cast so many at any time. Runes will be needed for your wizards to effectively do their magic. You can learn more about this from the Guide above.
+
+Wizards:	2130 (1.23 per acre)
+Runes:	31,156
+Mana:	93%
+Wizard Training:
+	Active
+
+Casting Spells
+Kingdom: Island:
+Select Spell:
+Releasing Wizards
+We can release our wizards back
+into the peasantry at any time.
+Release Wizards:
+
+
+
+	
+Quantcast
+
+
+
+
+(from xx in Utopia_Province_Ops
+							from zz in Utopia_Province_Ops_Pulls
+							where xx.Op_ID == zz.Uid
+//							where xx.Owner_Kingdom_ID == ownerKingdomID
+//							where xx.TimeStamp >= DateTime.UtcNow.AddHours(-24)
+//							where xx.negated == null | xx.negated == 0
+							select new
+							{
+								xx.Op_ID,
+								xx.Directed_To_Province_ID,
+								count = (from yy in Utopia_Province_Ops
+										 where yy.Op_ID == xx.Op_ID
+										 where yy.Directed_To_Province_ID == xx.Directed_To_Province_ID
+										 select yy.Uid).Count(),
+								//xx.OP_Text,
+								//xx.Added_By_Province_ID,
+								//										  xx.Expiration_Date,
+								zz.OP_Name
+							
+							}).Distinct()
+							
+								(from yy in Utopia_Province_Ops
+										 where yy.Op_ID == xx.Op_ID
+										 where yy.Directed_To_Province_ID == xx.Directed_To_Province_ID
+										 select new { yy.OP_Text, yy.Added_By_Province_ID, yy.Expiration_Date })
+										 
+										 
+										 
+//										 var item = (from xx in Utopia_Province_Ops
+//									   from zz in Utopia_Province_Ops_Pulls
+//									   where xx.Op_ID == zz.Uid
+////									   where xx.Owner_Kingdom_ID == ownerKingdomID
+////									   where xx.TimeStamp >= DateTime.UtcNow.AddHours(-24)
+////									   where xx.negated == null | xx.negated == 0
+//									   select new
+//									   {
+//										   xx.Op_ID,
+//										   xx.Directed_To_Province_ID,
+//										   count = (from yy in Utopia_Province_Ops
+//													where yy.Op_ID == xx.Op_ID
+//													where yy.Directed_To_Province_ID == xx.Directed_To_Province_ID
+//													select yy.Uid).Count(),
+//										   //xx.OP_Text,
+//										   //xx.Added_By_Province_ID,
+//										   //										  xx.Expiration_Date,
+//										   zz.OP_Name
+////										   check = (from yy in Utopia_Province_Ops
+////													where yy.Op_ID == xx.Op_ID
+////													where yy.Directed_To_Province_ID == xx.Directed_To_Province_ID
+////													select new { yy.OP_Text, yy.Added_By_Province_ID, yy.Expiration_Date })
+//									   }).Distinct();
+//									   
+//item.Dump();
+//
+//										   var check = (from yy in Utopia_Province_Ops
+//										   from zz in Utopia_Province_Ops_Pulls
+//									   where yy.Op_ID == zz.Uid
+//													select new { yy.OP_Text, yy.Added_By_Province_ID, yy.Expiration_Date,yy.Op_ID,
+//										   yy.Directed_To_Province_ID });
+//													check.Dump();
+
+
+var output =(from zz in (from xx in Utopia_Province_Ops
+									   from zz in Utopia_Province_Ops_Pulls
+									   where xx.Op_ID == zz.Uid
+//									   where xx.Owner_Kingdom_ID == ownerKingdomID
+									   where xx.TimeStamp >= DateTime.UtcNow.AddHours(-204)
+									   where xx.Negated == null | xx.Negated == 0
+									   select new
+									   {
+										   xx.Op_ID,
+										   xx.Directed_To_Province_ID,
+										   count = (from yy in Utopia_Province_Ops
+													where yy.Op_ID == xx.Op_ID
+													where yy.Directed_To_Province_ID == xx.Directed_To_Province_ID
+													select yy.Uid).Count(),
+										   zz.OP_Name
+									   }).Distinct()
+			select new{zz.Op_ID, zz.Directed_To_Province_ID, zz.count, zz.OP_Name,
+			checking = (from xx in (from yy in Utopia_Province_Ops
+			 orderby yy.TimeStamp descending
+										 																			select new { yy.OP_Text, yy.Added_By_Province_ID, yy.Expiration_Date,yy.Op_ID,
+										   yy.Directed_To_Province_ID,yy.TimeStamp }).ToList()
+			where zz.Op_ID == xx.Op_ID
+			where zz.Directed_To_Province_ID == xx.Directed_To_Province_ID
+			select xx)
+			});										
+													output.Dump();

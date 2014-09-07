@@ -1,0 +1,160 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+
+public partial class members_UserPanel : MyBasePageCS
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    /// <summary>
+    /// Adds the columns of the game.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    protected void btnAddColumn_Click(object sender, EventArgs e)
+    {
+        CS_Code.UtopiaDataContext db = new CS_Code.UtopiaDataContext(SQLStatementsCS.ConnectionStringID());
+        CS_Code.Utopia_Column_Name_Pull UCNP = new CS_Code.Utopia_Column_Name_Pull();
+        UCNP.Alt = txtbxToolTip.Text;
+        UCNP.User_ID_Added = userID;
+        UCNP.Enabled = true;
+        UCNP.DateTime_Added = DateTime.UtcNow;
+        UCNP.Column_Name = txtbxAddColumn.Text;
+        UCNP.Category_ID = Convert.ToInt32(ddlSelectCatagory.SelectedItem.Value);
+        db.Utopia_Column_Name_Pulls.InsertOnSubmit(UCNP);
+        db.SubmitChanges();
+        txtbxAddColumn.Text = "";
+        ddlSelectCatagory.SelectedIndex = 0;
+        dlCatagories.DataBind();
+    }
+    /// <summary>
+    /// Checks all items that the users has a defaults for the main display of the Gridview.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    protected void dlColumns_OnItemDataBound(object sender, System.Web.UI.WebControls.DataListItemEventArgs e)
+    {
+        CS_Code.UtopiaDataContext db = new CS_Code.UtopiaDataContext(SQLStatementsCS.ConnectionStringID());
+        var SelectColumns = from p in db.Utopia_Column_Names
+                            where p.User_ID == SupportFramework.Users.Memberships.getUserID(HttpContext.Current.User.Identity.Name)
+                            select p.Column_ID;
+
+        if (SelectColumns.Contains(Convert.ToInt32(((Label)(e.Item.FindControl("uidLabel"))).Text)))
+            ((CheckBox)(e.Item.FindControl("chkbxColumnID"))).Checked = true;
+    }
+
+    /// <summary>
+    /// Deletes Columns for the game.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    protected void btnDelete_Click(object sender, EventArgs e)
+    {
+        CS_Code.UtopiaDataContext db = new CS_Code.UtopiaDataContext(SQLStatementsCS.ConnectionStringID());
+        var DeleteColumn = from CN in db.Utopia_Column_Name_Pulls
+                           where CN.uid == Convert.ToInt32(ddlDelete.SelectedItem.Value)
+                           select CN;
+        var DeleteColumnsFromTable = from UCN in db.Utopia_Column_Names
+                                     where UCN.Column_ID == Convert.ToInt32(ddlDelete.SelectedItem.Value)
+                                     select UCN;
+        db.Utopia_Column_Names.DeleteAllOnSubmit(DeleteColumnsFromTable);
+        db.Utopia_Column_Name_Pulls.DeleteAllOnSubmit(DeleteColumn);
+        db.SubmitChanges();
+        dlCatagories.DataBind();
+        ddlDelete.SelectedIndex = 0;
+    }
+    /// <summary>
+    /// Updates the Item checked by the user. This allows for the information checked to be caught and used to updated the database.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    protected void chkbxColumnID_CheckedChanged(object sender, EventArgs e)
+    {
+        CheckBox chkbxColumnID = (CheckBox)sender;
+        Label uidLabel = (Label)chkbxColumnID.NamingContainer.FindControl("uidLabel");
+        Image imgCheckmark = (Image)chkbxColumnID.NamingContainer.FindControl("imgCheckmark");
+        Image imgCheckmarkOff = (Image)chkbxColumnID.NamingContainer.FindControl("imgCheckmarkOff");
+
+        CS_Code.UtopiaDataContext db = new CS_Code.UtopiaDataContext(SQLStatementsCS.ConnectionStringID());
+
+        if (chkbxColumnID.Checked == true)
+        {
+            imgCheckmark.Visible = true;
+            imgCheckmarkOff.Visible = false;
+            DataAccess.InsertColumnChoice(Convert.ToInt32(uidLabel.Text));
+        }
+        else if (chkbxColumnID.Checked == false)
+        {
+            imgCheckmark.Visible = false;
+            imgCheckmarkOff.Visible = true;
+            var DeleteItem = from p in db.Utopia_Column_Names
+                             where p.User_ID == SupportFramework.Users.Memberships.getUserID(HttpContext.Current.User.Identity.Name) && p.Column_ID == Convert.ToInt32(uidLabel.Text)
+                             select p;
+            db.Utopia_Column_Names.DeleteAllOnSubmit(DeleteItem);
+            db.SubmitChanges();
+        }
+        gvCurrentColumns.DataBind();
+    }
+    protected void chkbxCatagoryIDAll_CheckedChanged(object sender, EventArgs e)
+    {
+        CheckBox chkbxCatagoryID = (CheckBox)sender;
+        DataList dlColumns = (DataList)chkbxCatagoryID.NamingContainer.FindControl("dlColumns");
+
+        int CatagoryID = Convert.ToInt32(chkbxCatagoryID.ToolTip);
+
+        CS_Code.UtopiaDataContext db = new CS_Code.UtopiaDataContext(SQLStatementsCS.ConnectionStringID());
+        bool check = false;
+        if (chkbxCatagoryID.Checked == true)
+        {
+            check = true;
+            foreach (var item in (from UCNP in db.Utopia_Column_Name_Pulls where UCNP.Category_ID == CatagoryID select UCNP.uid))
+            {
+                DataAccess.InsertColumnChoice(item);
+            }
+        }
+        else if (chkbxCatagoryID.Checked == false)
+        {
+            foreach (var item in (from UCNP in db.Utopia_Column_Name_Pulls where UCNP.Category_ID == CatagoryID select UCNP.uid))
+            {
+                var DeleteItem = from p in db.Utopia_Column_Names
+                                 where p.User_ID == userID && p.Column_ID == item
+                                 select p;
+                db.Utopia_Column_Names.DeleteAllOnSubmit(DeleteItem);
+                db.SubmitChanges();
+            }
+        }
+        gvCurrentColumns.DataBind();
+        dlColumns.DataBind();
+        dlCatagories.DataBind();
+        chkbxCatagoryID.Checked = true;
+    }
+
+    /// <summary>
+    /// Unselects all Fields for the User.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    protected void btnUnselectAll_OnClick(object sender, EventArgs e)
+    {
+        CS_Code.UtopiaDataContext db = new CS_Code.UtopiaDataContext(SQLStatementsCS.ConnectionStringID());
+        var DeleteItem = from p in db.Utopia_Column_Names
+                         where p.User_ID == SupportFramework.Users.Memberships.getUserID(HttpContext.Current.User.Identity.Name)
+                         select p;
+        db.Utopia_Column_Names.DeleteAllOnSubmit(DeleteItem);
+        db.SubmitChanges();
+        gvCurrentColumns.DataBind();
+        dlCatagories.DataBind();
+
+    }
+}

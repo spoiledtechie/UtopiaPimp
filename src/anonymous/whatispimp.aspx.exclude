@@ -1,0 +1,145 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/LoggedOut.master" AutoEventWireup="true" CodeFile="whatispimp.aspx.cs"
+    Inherits="anonymous_whatispimp" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+
+    <script type="text/ecmascript" src="../js/OnDemandTabs.js"></script>
+
+    <br />
+    <br />
+    <br />
+    <cc1:TabContainer ID="tc1" runat="server" ActiveTabIndex="0" OnClientActiveTabChanged="loadTabPanel"
+        CssClass="ajax__tabCustom_xp">
+        <cc1:TabPanel ID="TabPanel1" runat="server" HeaderText="About the Site">
+            <ContentTemplate>
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            </ContentTemplate>
+        </cc1:TabPanel>
+        <cc1:TabPanel ID="TabPanel2" runat="server" HeaderText="FAQ">
+            <ContentTemplate>
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                    <ContentTemplate>
+                        <asp:Button ID="TabButton1" runat="server" OnClick="TabButton_Click" Style="display: none;" />
+                        <asp:Panel ID="TabContent1" runat="server" Visible="False">
+                        </asp:Panel>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </ContentTemplate>
+        </cc1:TabPanel>
+        <cc1:TabPanel ID="TabPanel3" runat="server" HeaderText="How-to Guide">
+            <ContentTemplate>
+                <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                    <ContentTemplate>
+                        <asp:Button ID="TabButton2" runat="server" Style="display: none;" OnClick="TabButton_Click" />
+                        <asp:Panel ID="TabContent2" runat="server" Visible="False">
+                        </asp:Panel>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+                <asp:UpdateProgress ID="uprog" runat="server" AssociatedUpdatePanelID="UpdatePanel2">
+                    <ProgressTemplate>
+                        Loading...</ProgressTemplate>
+                </asp:UpdateProgress>
+            </ContentTemplate>
+        </cc1:TabPanel>
+        <cc1:TabPanel ID="TabPanel4" runat="server" HeaderText="Manual">
+            <ContentTemplate>
+                <asp:UpdatePanel ID="UpdatePanel3" runat="server">
+                    <ContentTemplate>
+                        <asp:Button ID="TabButton3" runat="server" OnClick="TabButton_Click" Style="display: none;" />
+                        <asp:Panel ID="TabContent3" runat="server" Visible="False">
+                        </asp:Panel>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </ContentTemplate>
+        </cc1:TabPanel>
+        <cc1:TabPanel ID="TabPanel5" runat="server" HeaderText="What is?">
+            <ContentTemplate>
+                <asp:UpdatePanel ID="UpdatePanel4" runat="server">
+                    <ContentTemplate>
+                        <asp:Button ID="TabButton4" runat="server" OnClick="TabButton_Click" Style="display: none;" />
+                        <asp:Panel ID="TabContent4" runat="server" Visible="False">
+                        </asp:Panel>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </ContentTemplate>
+        </cc1:TabPanel>
+        <cc1:TabPanel ID="TabPanel6" runat="server" HeaderText="Make Utopia Angel Work!">
+            <ContentTemplate>
+                <asp:UpdatePanel ID="UpdatePanel5" runat="server">
+                    <ContentTemplate>
+                        <asp:Button ID="TabButton5" runat="server" OnClick="TabButton_Click" Style="display: none;" />
+                        <asp:Panel ID="TabContent5" runat="server" Visible="False"><br />
+                            Forum Agent is a delightful little extension of UtopiaTemple's Utopia Angel. It
+                            allows you to connect to, among other things, Utopiapimp and send intelligence to
+                            your kingdom's account automatically! Specifically, it can send any CB, SoS, SoM,
+                            and Surveys that you format using the Angel. Depending on how you configure the
+                            Agent, you can have Angel automatically send the data every fixed set of time, or
+                            you can manually send them. This allows you to get this data to the Utopiapimp without
+                            having to log in! Follow these steps to configure Forum Agent for usage with Utopiapimp.
+                            Pictures courtesy of CKD!
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li>Make sure you have Utopia Angel Open.</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Right click the Utopia Angel icon in your Windows system tray and select Forum Agent.
+                                        </li>
+                                        <li>
+                                            <asp:Image ID="img1Step1" ImageUrl="http://codingforcharity.org/utopiapimp/img/Angel1.png" runat="server" /></li>
+                                    </ul>
+                                    <ul>
+                                        <li>Click the settings button to enter the configuration screen.</li><li>
+                                            <asp:Image ID="Image4" ImageUrl="http://codingforcharity.org/utopiapimp/img/Angel2.png" runat="server" />
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>Click New to create a new account, which will join your Forum Agent to the pimp.</li>
+                                        <li>Please Note:  You can have MORE THAN 1 account in this list which can submit data to multiple sources. So there is no need to delete any other accounts in the list.</li>
+                                        <li>
+                                            <asp:Image ID="Image1" ImageUrl="http://codingforcharity.org/utopiapimp/img/Angel3.png" runat="server" /></li>
+                                    </ul>
+                                    <ul>
+                                        <li>Copy the information as shown in this picture. Replace MyUsername with your Utopiapimp
+                                            username, ******** with your Utopiapimp password, and press the OK button.
+                                            <ul>
+                                                <li>Required Information:</li>
+                                                <li>URL: <b>http://codingforcharity.com/angelapi.aspx</b>  *http://abetter.utopiapimp.com CANNOT be used due to technical problems.  It will not be used until the site comes out of Beta.</li>
+                                                <li>Forum Name: <b>This is the "exact name" of your province inside your kingdom.  It is "not" your user name, but the province name you selected when you signed up to this UtopiaPimp.</b></li>
+                                                <li>Username: username to this Site.</li>
+                                                <li>Userpassword: Password to this site.</li>
+                                                <li>Forum Password: NOT Needed.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <asp:Image ID="Image2" ImageUrl="http://codingforcharity.org/utopiapimp/img/Angel4.png" runat="server" /></li>
+                                    </ul>
+                                    <ul>
+                                        <li>You can see That UtopiaPimp is now listed as an active forum (#5!). To the right
+                                            of it is it's status, and will tell you the last action Forum Agent performed. Press
+                                            Apply, then OK to close this menu.</li>
+                                        <li>
+                                            <asp:Image ID="Image3" ImageUrl="http://codingforcharity.org/utopiapimp/img/Angel5.png" runat="server" /></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </asp:Panel>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </ContentTemplate>
+        </cc1:TabPanel>
+               <cc1:TabPanel ID="TabPanel7" runat="server" HeaderText="Pimp Agent How To Guide">
+            <ContentTemplate>
+                <asp:UpdatePanel ID="UpdatePanel6" runat="server">
+                    <ContentTemplate>
+                        <asp:Button ID="TabButton6" runat="server" OnClick="TabButton_Click" Style="display: none;" />
+                        <asp:Panel ID="TabContent6" runat="server" Visible="False">
+                            <%--<a href="../pagent21.xpi">Download Pimp Agent 2.1 pagent2.1.xpi</a>--%>
+                        </asp:Panel>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </ContentTemplate>
+        </cc1:TabPanel>
+    </cc1:TabContainer>
+</asp:Content>

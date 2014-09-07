@@ -1,0 +1,126 @@
+Money: 21,251gc	Peasants: 12,166	Food: 116,263 Bushels	Runes: 104,606	NW: 232,468gc
+Utopia Guide: Thievery
+
+You send your thieves, and the operation commences...
+
+Early indications show that our operation was a stunning success.
+Our thieves listen in on a report of Visitor Q (17:24)'s Military Elder... Military Affairs
+
+Noble Lady Robin the Warrior, we have 6 generals available to lead our armies. One must always stay here to lead our forces in defense, but you may send the others out to combat at any time. Here is a list of our Generals' current activities and our military strength:
+
+Military Effectiveness - Our military effectiveness is determined the wage rates of our armed forces. Higher wages can drive up productivity. Any changes to pay will take time to change our efficiency.
+
+At this time, approximately 78.0% of our maximum population is allocated to non-peasant roles. Our wage rate is 160% of normal levels, and our military is functioning at 85.0% efficiency.
+
+In addition, our military strength is affected by a number of other factors including buildings, honor, spells, and more. Our net military effectiveness is as follows:
+
+Offensive Military Effectiveness: 139.1%
+Defensive Military Effectiveness: 131.4%
+Net Offensive Points at Home: 98,698
+Net Defensive Points at Home: 80,460
+
+Army Number:	Standing 	Army #2 	Army #3 	Army #4 	Army #5
+Status 	Available 	Unavailable
+(18.49 days) 	Unavailable
+(18.49 days) 	Unavailable
+(18.49 days) 	Unavailable
+(18.49 days)
+Soldiers 	0 	961 	0 	0 	0
+Goblins 	0 	0 	0 	0 	0
+Trolls 	8512 	0 	0 	0 	0
+Ogres 	81 	9439 	0 	0 	0
+War Horses 	151 	7981 	0 	0 	0
+Captured Land 	--- 	128 	0 	0 	0
+
+	Training - Number of Days
+Army Unit 	1 	2 	3 	4 	5 	6 	7 	8 	9 	10 	11 	12 	13 	14 	15 	16 	17 	18 	19 	20 	21 	22 	23 	24
+Goblins
+Trolls
+Ogres
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+	-
+-
+-
+
+Money: 21,251gc	Peasants: 12,166	Food: 116,263 Bushels	Runes: 104,606	NW: 232,468gc
+
+	You descend into an underground area of your castle and enter the Guild of Thieves. An organization created under your leadership, the Guild trains the lowest classes of people to learn the tools of the trade. Trained by your military, your thieves stand ready at your service to do what is needed. You can learn more about their capabilities in the Guide link above.
+
+Thieves:	1381 (1.00 per acre)
+Stealth:	83%
+
+Kingdom: Island:
+Select Operation: 	
+Thieves to Send:	
+	
+
+
+	

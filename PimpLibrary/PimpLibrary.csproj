@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D27EF85B-0CB5-4195-8CBC-556C02499ADC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PimpLibrary</RootNamespace>
+    <AssemblyName>PimpLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communications\Notification.cs" />
+    <Compile Include="Communications\NotificationDetail.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Static\Enums\CeTypeEnum.cs" />
+    <Compile Include="Static\Enums\ErrorTypeEnum.cs" />
+    <Compile Include="Static\Enums\FromWhatPageEnum.cs" />
+    <Compile Include="Static\Enums\MonarchType.cs" />
+    <Compile Include="UI\ColumnName.cs" />
+    <Compile Include="UI\ColumnSet.cs" />
+    <Compile Include="Utopia\ApplicationSettings.cs" />
+    <Compile Include="Utopia\Ce\BuildAcreChanges.cs" />
+    <Compile Include="Utopia\Ce\BuildCe.cs" />
+    <Compile Include="Utopia\Ce\BuildProvinceUniques.cs" />
+    <Compile Include="Utopia\Ce\CeCacheClass.cs" />
+    <Compile Include="Utopia\Ce\CeRawCache.cs" />
+    <Compile Include="Utopia\Ce\CeType.cs" />
+    <Compile Include="Utopia\Kingdom\KingdomLocation.cs" />
+    <Compile Include="Utopia\Kingdom\KingdomsOwned.cs" />
+    <Compile Include="Utopia\Kingdom\KingdomStance.cs" />
+    <Compile Include="Utopia\Ops\Attack.cs" />
+    <Compile Include="Utopia\Ops\AttackerOp.cs" />
+    <Compile Include="Utopia\Ops\AttackType.cs" />
+    <Compile Include="Utopia\Ops\Dragon.cs" />
+    <Compile Include="Utopia\Ops\Op.cs" />
+    <Compile Include="Utopia\Ops\OpsCompleted.cs" />
+    <Compile Include="Utopia\Ops\OpType.cs" />
+    <Compile Include="Utopia\Players\MonarchSettingsClass.cs" />
+    <Compile Include="Utopia\Players\Personality.cs" />
+    <Compile Include="Utopia\Players\Race.cs" />
+    <Compile Include="Utopia\Players\Rank.cs" />
+    <Compile Include="Utopia\Province\Note.cs" />
+    <Compile Include="Utopia\Province\RaceEnum.cs" />
+    <Compile Include="Utopia\UtopiaDate.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

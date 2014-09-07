@@ -1,0 +1,31 @@
+Money: 85,223gc	Peasants: 6205	Food: 91,512 Bushels	Runes: 12,407	NW: 93,523gc
+The Daily Paper lists the various happenings
+throughout your kingdom. Included are important
+activities such as attacks, deaths, and
+changes in relations with your kingdom.
+
+Legend
+	Intra-Kingdom Conflict		Relations News	
+	Actions against our Kingdom		Dragon News	
+	Actions by our Kingdom		Obituaries	
+
+The Kingdom Reporter
+April, YR1 Edition
+
+	April 2nd, YR1 	mkeMOUNTAINofanthill (7:21) captured 84 acres of land from Rooftrellen (12:22).
+	April 3rd, YR1 	We have entered into a formal ceasefire with HouseOf Legends (1:29).
+	April 3rd, YR1 	We have proposed a ceasefire offer to CereaL KiLLerS SuXx (4:26).
+	April 6th, YR1 	CereaL KiLLerS SuXx (4:26) has accepted our ceasefire proposal!
+	April 9th, YR1 	Alas, the once proud province of Marblefields (7:21) has collapsed and lies in ruins.
+	April 11th, YR1 	An Unknown Province from 14:27 invaded and pillaged Mountain of Techies (7:21).
+	April 12th, YR1 	Root of the Mountain (7:21) captured 108 acres of land from Peacekeeper TUD (2:1).
+	April 12th, YR1 	mighty rivers (16:11) invaded Dwarfs Mountain (7:21) and captured 185 acres of land.
+	April 12th, YR1 	An Unknown Province from 7:21 attacked and pillaged the lands of TUD Townsville (2:1).
+	April 14th, YR1 	An Unknown Province from 12:22 invaded Rabid Wolf Mountain (7:21) and captured 86 acres of land.
+	April 18th, YR1 	Vicegerent Mountain (7:21) has sent an aid shipment to Dwarfs Mountain (7:21).
+	April 18th, YR1 	Thunder Mountain (7:21) captured 120 acres of land from eTUDoeTUDoeTUDo (2:1).
+	April 19th, YR1 	We have proposed a ceasefire offer to Penguin club 18 plus (16:11).
+	April 19th, YR1 	mkeMOUNTAINofanthill (7:21) captured 66 acres of land from Peacekeeper TUD (2:1).
+
+
+	

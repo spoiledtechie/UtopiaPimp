@@ -1,0 +1,11 @@
+#selfintel_box.enabled label{
+	color: black;
+}
+
+#selfintel_box.disabled label{
+	color: gray;
+}
+
+#selfintel_box.disabled > label{
+	color: blue;
+}

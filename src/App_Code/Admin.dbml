@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BoomersMembership_Data" Class="AdminDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.user_IM_Type_Pull" Member="user_IM_Type_Pulls">
+    <Type Name="user_IM_Type_Pull">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IM_Type" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.user_Phone_Numbers" Member="user_Phone_Numbers">
+    <Type Name="user_Phone_Number">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Application_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Phone_Type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Phone_Number" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="SMS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.user_Information" Member="user_Informations">
+    <Type Name="user_Information">
+      <Column Name="user_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Application_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nick_Name" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DOB" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="GMT_Offset" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.user_Phone_Number_Pull" Member="user_Phone_Number_Pulls">
+    <Type Name="user_Phone_Number_Pull">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Phone_Type" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_aspnet_Users" Member="vw_aspnet_Users">
+    <Type Name="vw_aspnet_User">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredUserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="MobileAlias" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="IsAnonymous" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LastActivityDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_aspnet_MembershipUsers" Member="vw_aspnet_MembershipUsers">
+    <Type Name="vw_aspnet_MembershipUser">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordFormat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MobilePIN" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="LoweredEmail" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="PasswordQuestion" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="PasswordAnswer" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="IsApproved" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsLockedOut" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastLoginDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastPasswordChangedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastLockoutDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAttemptCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAttemptWindowStart" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAnswerAttemptCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAnswerAttemptWindowStart" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="MobileAlias" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="IsAnonymous" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LastActivityDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_aspnet_Applications" Member="vw_aspnet_Applications">
+    <Type Name="vw_aspnet_Application">
+      <Column Name="ApplicationName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredApplicationName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_aspnet_UsersInRoles" Member="vw_aspnet_UsersInRoles">
+    <Type Name="vw_aspnet_UsersInRole">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_aspnet_Roles" Member="vw_aspnet_Roles">
+    <Type Name="vw_aspnet_Role">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="RoleName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredRoleName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_aspnet_Profiles" Member="vw_aspnet_Profiles">
+    <Type Name="vw_aspnet_Profile">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="LastUpdatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DataSize" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Users" Member="aspnet_Users">
+    <Type Name="aspnet_User">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredUserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="MobileAlias" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="IsAnonymous" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LastActivityDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Membership" Member="aspnet_Memberships">
+    <Type Name="aspnet_Membership">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordFormat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordSalt" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="MobilePIN" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="LoweredEmail" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="PasswordQuestion" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="PasswordAnswer" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="IsApproved" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsLockedOut" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastLoginDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastPasswordChangedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastLockoutDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAttemptCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAttemptWindowStart" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAnswerAttemptCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAnswerAttemptWindowStart" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.user_IMs" Member="user_IMs">
+    <Type Name="user_IM">
+      <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IM_Type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="User_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Application_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IM_Name" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="IM_Password" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="IM_Password_Bool" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

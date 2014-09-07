@@ -1,0 +1,75 @@
+﻿Hey, here is the survey you asked for, see its titled science report and the 5.0% hosps that I have do not show up.
+Below is the same report by angel.
+
+# Science Intelligence on Hoppy (2:21)
+# [http://www.utopiapimp.com]
+#
+
+# [Posted By:Hoppy]
+# On RL Date:8/13/2009 4:55:53 AM
+#
+
+# ** Buildings summary **
+# Farms: 84 (7.5%)
+# Banks: 151 (13.5%)
+# Training Grounds: 66 (5.9%)
+# Armouries: 209 (18.7%)
+# Barracks: 105 (9.4%)
+# Guilds: 157 (14.1%)
+# Towers: 52 (4.7%)
+# Stables: 105 (9.4%)
+# Dungeons: 13 (1.2%)
+#
+
+# Total Acres Built: 942
+# In Progress: 0 (0.0%)
+# Total Acres: 1,115
+# Un-Built Acres: 173
+
+
+Buildings Report of McDuck (8:10)
+[http://www.utopiatemple.com Angel v1.97 Alpha 2]
+
+Server: World of Legends (Age 44)
+Ruler Name: Lord Fhroepe Runeeater
+Personality: The Mystic
+Race: Dwarf
+Building Efficiency: 127.2%
+Kingdom Stance: Normal
+
+1. Farms: 84 (7.5%) + 5 in progress (+0.4%)
+2. Banks: 151 (13.5%) + 16 in progress (+1.4%)
+3. Training Grounds: 66 (5.9%) + 22 in progress (+2%)
+4. Armouries: 209 (18.7%) + 13 in progress (+1.2%)
+5. Barracks: 105 (9.4%) + 3 in progress (+0.3%)
+6. Hospitals: 66 (5.9%) + 23 in progress (+2.1%)
+7. Guilds: 157 (14.1%) + 10 in progress (+0.9%)
+8. Towers: 52 (4.7%) + 4 in progress (+0.4%)
+9. Stables: 105 (9.4%) + 6 in progress (+0.5%)
+10. Dungeons: 13 (1.2%)
+
+Total Land: 1,115 Acres (90.4% built)
+In Progress: 102 Acres (9.1%)
+
+** Effects Summary (Available Buildings Only) **
+1. Produce 7,489 bushels (9,362 with FL)
+2. 4,802gc, +18.62% income
+3. +10.63% offense bonus
+4. -29.06% training costs, -38.75% draft costs, -38.75% wages
+5. -16.28% attack time
+6. 14.17% cure plague, -21.25% military losses
+7. Training about 7.99 wizards per hour
+8. Produce 1,587 runes per hour
+9. Produce 134 horses/hour, hold 6,300 horses
+10. 260 prisoners (780 offense, 130gc, 130 jobs)
+
+** Effects Summary (Including Future Buildings) **
+1. Produce 7,935 bushels (9,918 with FL)
+2. 5,311gc, +20.25% income
+3. +13.87% offense bonus
+4. -30.43% training costs, -40.57% draft costs, -40.57% wages
+5. -16.69% attack time
+6. 18.69% cure plague, -28.03% military losses
+7. Training about 8.5 wizards per hour
+8. Produce 1,710 runes per hour
+9. Produce 141 horses/hour, hold 6,660 horses

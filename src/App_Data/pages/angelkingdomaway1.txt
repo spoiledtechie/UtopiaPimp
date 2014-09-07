@@ -1,0 +1,73 @@
+RISING (9:5) Kingdom Analysis
+[http://www.utopiatemple.com Angel v2.03 Beta]
+
+** Statistics **
+Provinces in Kingdom: 9
+Total Land: 6,618 Acres (Average: 735 Acres)
+Total Networth: 965,472gc (Average: 107,275gc)
+Average Networth per Acre: 145.89gc
+
+** Dragon **
+Dragon Cost: 1,689,576gc
+Dragon Send Range: 772,378gc - 1,206,840gc
+
+** Relations **
+Attitude towards/from (4:40): None
+Stance: Normal (no bonuses)
+War History: 0 Wars
+
+** Races **
+Human: 4 (44%)
+Dark Elf: 2 (22%)
+Orc: 1 (11%)
+Avian: 1 (11%)
+Halfling: 1 (11%)
+
+** Land **
+1. Because i love him [HA] - 1,156 Acres (17.5%)
+2. Bz ManiaC [OR] - 987 Acres (14.9%)
+3. Dark spirit [DE] - 804 Acres (12.1%)
+4. Ark Of the Covenant [DE] - 730 Acres (11%)
+5. Candy Corn [HU] - 655 Acres (9.9%)
+6. Lowa [HU] - 645 Acres (9.7%)
+7. Seiken Densetsu [AV] - 633 Acres (9.6%)
+8. Genua [HU] - 532 Acres (8%)
+9. Shadow kingdom [HU] - 476 Acres (7.2%)
+
+** Networth **
+1. Because i love him [HA] - 224,636gc (23.3%)
+2. Bz ManiaC [OR] - 150,452gc (15.6%)
+3. Dark spirit [DE] - 114,448gc (11.9%)
+4. Ark Of the Covenant [DE] - 105,878gc (11%)
+5. Lowa [HU] - 102,067gc (10.6%)
+6. Candy Corn [HU] - 98,064gc (10.2%)
+7. Genua [HU] - 61,949gc (6.4%)
+8. Seiken Densetsu [AV] - 59,781gc (6.2%)
+9. Shadow kingdom [HU] - 48,197gc (5%)
+
+** Networth per Acre **
+1. Because i love him [HA] - 194.32gc
+2. Lowa [HU] - 158.24gc
+3. Bz ManiaC [OR] - 152.43gc
+4. Candy Corn [HU] - 149.72gc
+5. Ark Of the Covenant [DE] - 145.04gc
+6. Dark spirit [DE] - 142.35gc
+7. Genua [HU] - 116.45gc
+8. Shadow kingdom [HU] - 101.25gc
+9. Seiken Densetsu [AV] - 94.44gc
+
+** Ranks **
+1. Bz ManiaC [OR] - King 
+2. Because i love him [HA] - Baron 
+3. Dark spirit [DE] - Lord 
+3. Lowa [HU] - Lord 
+3. Seiken Densetsu [AV] - Lord 
+3. Genua [HU] - Lord 
+3. Shadow kingdom [HU] - Lord 
+8. Candy Corn [HU] - Knight 
+8. Ark Of the Covenant [DE] - Knight 
+z ManiaC [OR] - 152.43gc
+4. Candy Corn [HU] - 149.72gc
+5. Ark Of the Covenant [DE] - 145.04gc
+6. Dark spirit [DE] - 142.35gc
+7. 

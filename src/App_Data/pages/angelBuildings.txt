@@ -1,0 +1,35 @@
+Survey / Buildings Report Information
+[http://www.utopiatemple.com Angel v2.03 Beta]
+
+Server: World of Legends (Age 48)
+Building Efficiency: 82.5%
+Kingdom Stance: Normal
+
+1. Farms: 17 (0.8%)
+2. Banks: 125 (6%) + 75 in progress (+3.6%)
+3. Training Grounds: 197 (9.4%) + 15 in progress (+0.7%)
+4. Military Barracks: 235 (11.2%) + 45 in progress (+2.1%)
+5. Forts: 414 (19.8%)
+6. Hospitals: 154 (7.4%)
+7. Guilds: 72 (3.4%)
+8. Towers: 59 (2.8%)
+
+Total Land: 2,094 Acres (60.8% built)
+In Progress: 135 Acres (6.4%)
+
+** Effects Summary (Available Buildings Only) **
+1. Produce 2,354 bushels (2,942 with FL)
+2. 2,578gc, +5.79% income
+3. +10.55% offense bonus
+4. -12.33% attack time
+5. +19.63% defense bonus
+6. 11.24% cure plague, -16.86% military losses
+7. Training about 1.19 wizards per hour
+8. Produce 584 runes per hour
+
+** Effects Summary (Including Future Buildings) **
+2. 4,125gc, +8.91% income
+3. +11.26% offense bonus
+4. -14.33% attack time
+Land: 2,094 Acres (60.8% built)
+In Progress: 135

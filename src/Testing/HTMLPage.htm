@@ -1,0 +1,25 @@
+﻿<!doctype html public "-//w3c//dtd html 3.2//en">
+<html>
+<head>
+    <title>(Type a title for your page here)</title>
+
+    <script type="text/javascript">
+        function display_c(start) {
+            window.start = parseFloat(start);
+            setTimeout('GetTimeLeftInTick()', 1000)
+        }
+
+        function GetTimeLeftInTick() {
+            var minutes = Math.floor(window.start / 60);
+            var secs = Math.floor(window.start - (minutes * 60));
+            document.getElementById('ct').innerHTML = minutes + "m " + secs + "s";
+            window.start -= 1;
+            display_c(window.start);
+        }
+    </script>
+
+</head>
+<body onload="display_c(3600);">
+    <span id='ct'></span>
+</body>
+</html>

@@ -1,0 +1,121 @@
+funshow (4:40) Kingdom Analysis
+[http://www.utopiatemple.com Angel v2.03 Beta]
+
+** Statistics **
+Provinces in Kingdom: 20
+Land: 102,135 Acres (avg: 5,107 Acres, Rank #11)
+Networth: 14,051,040gc (avg: 702,552gc, Rank #14)
+Average Networth per Acre: 137.57gc
+
+** Dragon **
+Dragon Cost: 24,589,320gc
+Dragon Send Range: 11,240,832gc - 17,563,800gc
+
+** Relations **
+Stance: Normal (no bonuses)
+War History: 3 Wars, 2 Wins (67%)
+
+** Races **
+Human: 12 (60%)
+Dark Elf: 5 (25%)
+Gnome: 2 (10%)
+Elf: 1 (5%)
+
+** Land **
+1. Octavian [HU] - 52,300 Acres (51.2%)
+2. LETA [DE] - 11,960 Acres (11.7%)
+3. Marcus Aurelius [HU] - 4,814 Acres (4.7%)
+4. the DL [DE] - 3,812 Acres (3.7%)
+5. Caligula [DE] - 3,355 Acres (3.3%)
+6. Pepsa Kolicus [HU] - 3,196 Acres (3.1%)
+7. Secundus [HU] - 2,982 Acres (2.9%)
+8. Colosseum [HU] - 2,809 Acres (2.8%)
+9. Gallia [GN] - 2,337 Acres (2.3%)
+10. Aeneid [HU] - 2,094 Acres (2.1%)
+11. Carpe Diem [GN] - 2,014 Acres (2%)
+12. Augustus [DE] - 1,816 Acres (1.8%)
+13. Cicero [HU] - 1,475 Acres (1.4%)
+14. Romulus [HU] - 1,356 Acres (1.3%)
+15. Gaius Marius [HU] - 1,346 Acres (1.3%)
+16. Britannia [HU] - 1,247 Acres (1.2%)
+17. Joltus Omacus [EL] - 1,235 Acres (1.2%)
+18. Spartacus [DE] - 688 Acres (0.7%)
+19. Patrician [HU] - 671 Acres (0.7%)
+20. Brutus [HU] - 628 Acres (0.6%)
+
+** Networth **
+1. Octavian [HU] - 7,546,053gc (53.7%)
+2. LETA [DE] - 1,857,617gc (13.2%)
+3. Marcus Aurelius [HU] - 631,555gc (4.5%)
+4. Caligula [DE] - 505,586gc (3.6%)
+5. Augustus [DE] - 374,234gc (2.7%)
+6. Aeneid [HU] - 344,937gc (2.5%)
+7. Pepsa Kolicus [HU] - 319,610gc (2.3%)
+8. the DL [DE] - 318,140gc (2.3%)
+9. Secundus [HU] - 260,511gc (1.9%)
+10. Colosseum [HU] - 255,907gc (1.8%)
+11. Gallia [GN] - 227,892gc (1.6%)
+12. Cicero [HU] - 224,825gc (1.6%)
+13. Carpe Diem [GN] - 217,090gc (1.5%)
+14. Patrician [HU] - 184,067gc (1.3%)
+15. Joltus Omacus [EL] - 172,766gc (1.2%)
+16. Spartacus [DE] - 166,077gc (1.2%)
+17. Brutus [HU] - 131,412gc (0.9%)
+18. Romulus [HU] - 116,577gc (0.8%)
+19. Gaius Marius [HU] - 109,362gc (0.8%)
+20. Britannia [HU] - 86,822gc (0.6%)
+
+** Networth per Acre **
+1. Patrician [HU] - 274.32gc
+2. Spartacus [DE] - 241.39gc
+3. Brutus [HU] - 209.25gc
+4. Augustus [DE] - 206.08gc
+5. Aeneid [HU] - 164.73gc
+6. LETA [DE] - 155.32gc
+7. Cicero [HU] - 152.42gc
+8. Caligula [DE] - 150.7gc
+9. Octavian [HU] - 144.28gc
+10. Joltus Omacus [EL] - 139.89gc
+11. Marcus Aurelius [HU] - 131.19gc
+12. Carpe Diem [GN] - 107.79gc
+13. Pepsa Kolicus [HU] - 100gc
+14. Gallia [GN] - 97.51gc
+15. Colosseum [HU] - 91.1gc
+16. Secundus [HU] - 87.36gc
+17. Romulus [HU] - 85.97gc
+18. the DL [DE] - 83.46gc
+19. Gaius Marius [HU] - 81.25gc
+20. Britannia [HU] - 69.62gc
+
+** Ranks **
+1. Octavian [HU] - King 
+2. the DL [DE] - Count 
+3. Pepsa Kolicus [HU] - Viscount 
+4. Gallia [GN] - Baron 
+5. Colosseum [HU] - Lord 
+5. LETA [DE] - Noble Lady 
+5. Caligula [DE] - Lord 
+5. Aeneid [HU] - Lord 
+5. Marcus Aurelius [HU] - Lord 
+5. Joltus Omacus [EL] - Lord 
+11. Cicero [HU] - Knight 
+11. Gaius Marius [HU] - Knight 
+11. Secundus [HU] - Knight 
+11. Augustus [DE] - Knight 
+11. Patrician [HU] - Knight 
+16. Romulus [HU] - Peasant 
+16. Brutus [HU] - Peasant 
+16. Carpe Diem [GN] - Peasant 
+16. Spartacus [DE] - Peasant 
+16. Britannia [HU] - Peasant 
+
+** Miscellaneous **
+PROTECTED: LETA [DE]
+. Colosseum [HU] - Lord 
+5. LETA [DE] - Noble Lady 
+5. Caligula [DE] - Lord 
+5. Aeneid [HU] - Lord 
+5. Marcus Aurelius [HU] - Lord 
+5. Joltus Omacus [EL] - Lord 
+11. Cicero [HU] - Knight 
+11. Gaius Mari

@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 20, 40.375" name="Yaf">
+  <DataContextMoniker Name="/YafDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4d14e5f6-52d2-49bb-93dd-41f80825d142" absoluteBounds="17.75, 28.125, 2, 1.5891951497395809">
+      <DataClassMoniker Name="/YafDataContext/yaf_WatchTopic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="48b7af59-c6c7-43b2-b5d7-c436a3a25ebe" absoluteBounds="17.765, 28.585, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fa18e936-5871-4e13-ab4f-70d4185a2af6" absoluteBounds="3.5, 15, 2, 1.4248478190104184">
+      <DataClassMoniker Name="/YafDataContext/yaf_AccessMask" />
+      <nestedChildShapes>
+        <elementListCompartment Id="106c988b-cd6f-4647-adec-2f04108cfcf9" absoluteBounds="3.5150000005960464, 15.46000000089407, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5aebb427-0424-4f12-94e0-a19a2dec2c72" absoluteBounds="9, 23.25, 2, 2.5752791341145809">
+      <DataClassMoniker Name="/YafDataContext/yaf_Active" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15ca381d-b9f5-415e-be72-e5b1f409b96f" absoluteBounds="9.015, 23.71, 1.9700000000000002, 2.015279134114583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b6848aff-380a-46d4-8a29-fd4d9008a240" absoluteBounds="17.5, 24.875, 2, 2.0822371419270809">
+      <DataClassMoniker Name="/YafDataContext/yaf_Attachment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="40f44224-06cf-469c-9026-33f0af42f316" absoluteBounds="17.515, 25.335, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="81e86e5d-fee2-4f2f-99f7-0a85cbb0b61b" absoluteBounds="3.5, 17.25, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/YafDataContext/yaf_BannedIP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="718dd987-8a46-480c-80f2-d090c48470a2" absoluteBounds="3.5150000005960464, 17.71000000089407, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2db0661e-6bdc-4360-a72a-f83d46ea57f9" absoluteBounds="3.5, 37, 2, 3.0683211263020809">
+      <DataClassMoniker Name="/YafDataContext/yaf_BBCode" />
+      <nestedChildShapes>
+        <elementListCompartment Id="efd2c5e7-fe2d-419a-81e7-6c898ae16d8d" absoluteBounds="3.5150000005960464, 37.46000000089407, 1.9700000000000002, 2.508321126302083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bca1fb5d-35fd-44c1-8114-0b1bb793f925" absoluteBounds="0.75, 24.125, 2, 1.5891951497395809">
+      <DataClassMoniker Name="/YafDataContext/yaf_Board" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9e9d45b2-7115-42a3-a35b-a304eea2bc55" absoluteBounds="0.76500000059604645, 24.58500000089407, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="90521713-4ea0-4a58-bd50-5d2a0ab36673" absoluteBounds="3.5, 23.75, 2, 1.5891951497395809">
+      <DataClassMoniker Name="/YafDataContext/yaf_Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f0a4eb7-1c82-4ac4-b03b-d421f472f341" absoluteBounds="3.5150000005960464, 24.21000000089407, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3fd2f972-243a-46d0-923f-4ae55de59b02" absoluteBounds="9, 27.375, 2, 1.5891951497395809">
+      <DataClassMoniker Name="/YafDataContext/yaf_CheckEmail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="00fbfce2-20ee-49df-a4f9-314651e2ec2f" absoluteBounds="9.015, 27.835, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="57392116-7d0f-42be-a8db-03746c06e86a" absoluteBounds="12, 16.875, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/YafDataContext/yaf_Choice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="63aa064b-5eac-49f1-8228-9966157b1a3e" absoluteBounds="12.015, 17.335, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5a4c106f-56d8-4d7a-a02a-a612d9f94438" absoluteBounds="9, 29.625, 2, 1.7535424804687523">
+      <DataClassMoniker Name="/YafDataContext/yaf_EventLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d65414bb-2f1d-4e76-9624-048aad03964d" absoluteBounds="9.015, 30.085, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7ec5e97c-02ad-49e0-9b5f-af9224ef576b" absoluteBounds="3.5, 13, 2, 1.2605004882812487">
+      <DataClassMoniker Name="/YafDataContext/yaf_Extension" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8aee3c9c-5808-433c-aa32-a69ca8708645" absoluteBounds="3.5150000005960464, 13.46000000089407, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="01a833be-b074-47cc-8f88-f8b7bf763a1c" absoluteBounds="6.25, 22.875, 2, 3.3970157877604166">
+      <DataClassMoniker Name="/YafDataContext/yaf_Forum" />
+      <nestedChildShapes>
+        <elementListCompartment Id="716c73be-92e2-46c9-8aa0-0a9f1838b30c" absoluteBounds="6.2650000005960464, 23.33500000089407, 1.9700000000000002, 2.8370157877604165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="205b8284-bad7-4e46-9e68-ae2caf73aa7f" absoluteBounds="6.25, 17.25, 2, 1.2605004882812523">
+      <DataClassMoniker Name="/YafDataContext/yaf_ForumAccess" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7e6c3cea-550d-452a-892e-49b70a55870b" absoluteBounds="6.2650000005960464, 17.71000000089407, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="373f9007-4afd-4886-8ec6-255d1bf63f23" absoluteBounds="3.5, 19.375, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/YafDataContext/yaf_Group" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ad6e8a66-a722-44a9-855f-f93cb4028bfa" absoluteBounds="3.5150000005960464, 19.83500000089407, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="559fe992-d701-4da9-ab20-8775e35564cf" absoluteBounds="0.75, 0.75, 2, 1.75354248046875">
+      <DataClassMoniker Name="/YafDataContext/yaf_GroupMedal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dd1bb9df-7328-45e7-96f7-866fe4eb50c3" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="52f4a580-fe6d-4dc8-98f7-1267b81d124c" absoluteBounds="3.75, 0.75, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/YafDataContext/yaf_IgnoreUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cef880f7-e780-45ef-a1fd-c98db953399b" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2767578d-5a32-4849-8c2c-f269216a815f" absoluteBounds="0.75, 3.75, 2, 2.7396264648437505">
+      <DataClassMoniker Name="/YafDataContext/yaf_Mail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b388622e-3c11-4d25-a470-b9f84b994182" absoluteBounds="0.765, 4.21, 1.9700000000000002, 2.17962646484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a26548b-9827-4cad-bd3d-bf3d6bfa09a6" absoluteBounds="3.75, 2.75, 2, 3.3970157877604166">
+      <DataClassMoniker Name="/YafDataContext/yaf_Medal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="229c7ddc-0276-4834-bdc8-57d7b83f152c" absoluteBounds="3.765, 3.21, 1.9700000000000002, 2.8370157877604165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1af5a0ac-45b8-47a1-8d2e-89acf2b0dec1" absoluteBounds="14.75, 25, 2, 3.7257104492187523">
+      <DataClassMoniker Name="/YafDataContext/yaf_Message" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0c202006-dc90-499b-9c04-a161eef9c7e7" absoluteBounds="14.765, 25.46, 1.9700000000000002, 3.16571044921875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a4fe8dce-24fc-4504-bfa3-be50c7ac652f" absoluteBounds="6.75, 0.75, 2, 1.5891951497395829">
+      <DataClassMoniker Name="/YafDataContext/yaf_MessageReported" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cbca7cc6-41fc-41c0-bf85-1c811d48b3d3" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b6f42da8-e54d-4081-8542-07786e329605" absoluteBounds="6.75, 3.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/YafDataContext/yaf_MessageReportedAudit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="400b361c-4337-4198-8f7d-d6f01c0f45f5" absoluteBounds="6.765, 4.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dfadd921-9ae7-4f40-acb6-664d009136b5" absoluteBounds="12, 30.625, 2, 1.9178898111979201">
+      <DataClassMoniker Name="/YafDataContext/yaf_NntpForum" />
+      <nestedChildShapes>
+        <elementListCompartment Id="272dae2f-907e-43b4-961c-3b387ccf2e09" absoluteBounds="12.015, 31.085, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e61c7b01-676f-4e1a-8699-5d8757be5aee" absoluteBounds="3.5, 34.375, 2, 1.9178898111979095">
+      <DataClassMoniker Name="/YafDataContext/yaf_NntpServer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a03c4936-2052-43a8-ba44-b602097d07e3" absoluteBounds="3.515, 34.835, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18f28975-1be4-46ff-92d6-1331d09f5c3b" absoluteBounds="17.75, 30.375, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/YafDataContext/yaf_NntpTopic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="92626c50-8158-4ff2-bfcb-18ecb4e9c255" absoluteBounds="17.765, 30.835, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6a3f3ed8-c506-42c7-927a-66aad4b4f6b2" absoluteBounds="9, 32.125, 2, 1.7535424804687523">
+      <DataClassMoniker Name="/YafDataContext/yaf_PMessage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22f0e059-a3dc-4658-ab3a-9c4f0f348d23" absoluteBounds="9.015, 32.585, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ebf701f3-ce71-4a66-be26-2cb6869c7d94" absoluteBounds="9.25, 20.75, 2, 1.2605004882812523">
+      <DataClassMoniker Name="/YafDataContext/yaf_Poll" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5dd00542-85bf-4e2a-987f-89df5ee5d135" absoluteBounds="9.265, 21.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b84de546-8b95-4b3b-991e-a06c31ab8472" absoluteBounds="12, 19.625, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/YafDataContext/yaf_PollVote" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fefc8359-5206-402e-945a-596c72cd3378" absoluteBounds="12.015, 20.085, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="56810db6-4f0b-4ea5-845c-a2fd56146a04" absoluteBounds="6.75, 6.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/YafDataContext/yaf_prov_Application" />
+      <nestedChildShapes>
+        <elementListCompartment Id="724b706f-590a-482f-917c-30bd4f0cf026" absoluteBounds="6.765, 7.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="152b505e-4d5e-4354-9165-1c5715e1ea92" absoluteBounds="9.75, 0.75, 2, 4.5474471028645826">
+      <DataClassMoniker Name="/YafDataContext/yaf_prov_Membership" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d591214d-042a-4d92-a249-966c45e24989" absoluteBounds="9.765, 1.21, 1.9700000000000002, 3.987447102864583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e57fa278-9b4e-4ccf-8860-6cae5f08064c" absoluteBounds="0.75, 7.75, 2, 1.0961531575520844">
+      <DataClassMoniker Name="/YafDataContext/yaf_prov_Profile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e47cc281-1e8b-40e2-aa5d-ad567d229d67" absoluteBounds="0.765, 8.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5ae5065e-c118-483d-9180-568cf0f85d95" absoluteBounds="0.75, 9.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/YafDataContext/yaf_prov_Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7dbe9334-7678-4324-8dde-cc21f26fe72e" absoluteBounds="0.765, 10.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="566e5c9e-37ba-4496-9883-a7d85dace32d" absoluteBounds="3.75, 9.75, 2, 1.0961531575520844">
+      <DataClassMoniker Name="/YafDataContext/yaf_prov_RoleMembership" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a498c4b8-4f76-4594-b09f-dc7fc2c4b861" absoluteBounds="3.765, 10.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cebede80-d622-4997-87a5-aa0a81b36894" absoluteBounds="3.5, 29.375, 2, 1.7535424804687523">
+      <DataClassMoniker Name="/YafDataContext/yaf_Rank" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4c5b842c-a258-4aed-a879-a28faee0f24b" absoluteBounds="3.515, 29.835, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="08722ff0-dbc6-465b-8076-a6386cffd63f" absoluteBounds="3.5, 21.5, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/YafDataContext/yaf_Registry" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b60eb81a-4f8f-42e4-b215-581ca09d96e5" absoluteBounds="3.5150000005960464, 21.96000000089407, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="04c709d1-b173-4165-bebd-b8a9da956b77" absoluteBounds="9.75, 6.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/YafDataContext/yaf_Replace_Word" />
+      <nestedChildShapes>
+        <elementListCompartment Id="335936e0-1e81-4e09-984b-fe89b060fe75" absoluteBounds="9.765, 7.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="79fe83a2-3bdc-4acf-8a61-14245e6c73e8" absoluteBounds="3.5, 31.875, 2, 1.7535424804687523">
+      <DataClassMoniker Name="/YafDataContext/yaf_Smiley" />
+      <nestedChildShapes>
+        <elementListCompartment Id="69d62c00-bd69-49ac-a4a0-b17671a8a984" absoluteBounds="3.515, 32.335, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="563849e3-998a-4ff0-ae75-9210ca53d55b" absoluteBounds="12, 25.625, 2, 3.5613631184895809">
+      <DataClassMoniker Name="/YafDataContext/yaf_Topic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd7b3443-78fb-4d57-920a-307e28326cca" absoluteBounds="12.015, 26.085, 1.9700000000000002, 3.001363118489583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="24c7c7da-9646-41b8-b51e-aa0075314853" absoluteBounds="6.25, 27.125, 2, 4.8761417643229166">
+      <DataClassMoniker Name="/YafDataContext/yaf_User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d43c778c-b13c-4ab7-9f5c-b0211f52abcb" absoluteBounds="6.2650000000000006, 27.585, 1.9700000000000002, 4.3161417643229161" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0d2e6d2c-983f-41a5-8d79-592b7cebdb44" absoluteBounds="6.25, 14.875, 2, 1.5891951497395809">
+      <DataClassMoniker Name="/YafDataContext/yaf_UserForum" />
+      <nestedChildShapes>
+        <elementListCompartment Id="216cedad-165c-4d41-8e09-203af811e095" absoluteBounds="6.2650000005960464, 15.33500000089407, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fe23aef8-d51d-4142-afd2-ea527ef4bb23" absoluteBounds="6.25, 19.5, 2, 1.0961531575520809">
+      <DataClassMoniker Name="/YafDataContext/yaf_UserGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c41540b6-9892-44c1-abda-7ed0fbe5be25" absoluteBounds="6.2650000005960464, 19.96000000089407, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5cf5747e-c9bf-4f96-805b-e797df9e1477" absoluteBounds="6.75, 9.75, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/YafDataContext/yaf_UserMedal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f0bd2850-e524-4ee8-8ec8-aa92f32ee189" absoluteBounds="6.765, 10.21, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="21c56512-f021-40a2-b42e-cf61393fa839" absoluteBounds="14.75, 29.625, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/YafDataContext/yaf_UserPMessage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9efb8654-6cec-46e6-8da1-5a09a94e1697" absoluteBounds="14.765, 30.085, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bd02803d-2e85-46dc-9c70-379e872fafed" absoluteBounds="12, 22.625, 2, 1.5891951497395809">
+      <DataClassMoniker Name="/YafDataContext/yaf_WatchForum" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6b16dafd-e1dc-4ddb-9140-7a905ca145ea" absoluteBounds="12.015, 23.085, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.75 : 24.125); (1.75 : 15.7124239095052); (3.5 : 15.7124239095052)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Board/yaf_Board_yaf_AccessMask" />
+      <nodes>
+        <classShapeMoniker Id="bca1fb5d-35fd-44c1-8114-0b1bb793f925" />
+        <classShapeMoniker Id="fa18e936-5871-4e13-ab4f-70d4185a2af6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 24.9195975748698); (3.25 : 24.9195975748698); (3.25 : 26.5220157877107); (5.91666666666667 : 26.5220157877107 : JumpStart); (6.14583333333333 : 26.5220157877107 : JumpEnd); (6.45878205128205 : 26.5220157877107 : JumpStart); (6.62544871794872 : 26.5220157877107 : JumpEnd); (6.87589743589744 : 26.5220157877107 : JumpStart); (7.0425641025641 : 26.5220157877107 : JumpEnd); (7.47128205128205 : 26.5220157877107 : JumpStart); (7.63794871794872 : 26.5220157877107 : JumpEnd); (8.41820612820513 : 26.5220157877107 : JumpStart); (8.5848727948718 : 26.5220157877107 : JumpEnd); (10 : 26.5220157877107); (10 : 25.8252791341146)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Board/yaf_Board_yaf_Active" />
+      <nodes>
+        <classShapeMoniker Id="bca1fb5d-35fd-44c1-8114-0b1bb793f925" />
+        <classShapeMoniker Id="5aebb427-0424-4f12-94e0-a19a2dec2c72" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2812525 : 24.125); (2.2812525 : 17.9624239095052); (3.5 : 17.9624239095052)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Board/yaf_Board_yaf_BannedIP" />
+      <nodes>
+        <classShapeMoniker Id="bca1fb5d-35fd-44c1-8114-0b1bb793f925" />
+        <classShapeMoniker Id="81e86e5d-fee2-4f2f-99f7-0a85cbb0b61b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 25.7141951497396); (1.75 : 38.534160563151); (3.5 : 38.534160563151)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Board/yaf_Board_yaf_BBCode" />
+      <nodes>
+        <classShapeMoniker Id="bca1fb5d-35fd-44c1-8114-0b1bb793f925" />
+        <classShapeMoniker Id="2db0661e-6bdc-4360-a72a-f83d46ea57f9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 24.459798787615); (3.5 : 24.459798787615)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Board/yaf_Board_yaf_Category" />
+      <nodes>
+        <classShapeMoniker Id="bca1fb5d-35fd-44c1-8114-0b1bb793f925" />
+        <classShapeMoniker Id="90521713-4ea0-4a58-bd50-5d2a0ab36673" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.2187475 : 24.125); (1.2187475 : 13.6302502441406); (3.5 : 13.6302502441406)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Board/yaf_Board_yaf_Extension" />
+      <nodes>
+        <classShapeMoniker Id="bca1fb5d-35fd-44c1-8114-0b1bb793f925" />
+        <classShapeMoniker Id="7ec5e97c-02ad-49e0-9b5f-af9224ef576b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 24.5376395670573); (8.72916666666667 : 24.5376395670573 : JumpStart); (8.89583333333333 : 24.5376395670573 : JumpEnd); (9 : 24.5376395670573)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Forum/yaf_Forum_yaf_Active" />
+      <nodes>
+        <classShapeMoniker Id="01a833be-b074-47cc-8f88-f8b7bf763a1c" />
+        <classShapeMoniker Id="5aebb427-0424-4f12-94e0-a19a2dec2c72" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 24.5445975748698); (5.91666666666667 : 24.5445975748698 : JumpStart); (6.14583333333333 : 24.5445975748698 : JumpEnd); (6.25 : 24.5445975748698)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Category/yaf_Category_yaf_Forum" />
+      <nodes>
+        <classShapeMoniker Id="90521713-4ea0-4a58-bd50-5d2a0ab36673" />
+        <classShapeMoniker Id="01a833be-b074-47cc-8f88-f8b7bf763a1c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.95923076923077 : 26.2720157877604); (6.95923076923077 : 26.7720157877107); (7.55461538461539 : 26.7720157877107); (7.55461538461539 : 26.2720157877604)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YafDataContext/yaf_Forum/yaf_Forum_yaf_Forum" />
+      <nodes>
+        <classShapeMoniker Id="01a833be-b074-47cc-8f88-f8b7bf763a1c" />
+        <classShapeMoniker Id="01a833be-b074-47cc-8f88-f8b7bf763a1c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 16.4248478189607); (5.875 : 16.7998478189607); (5.875 : 17.8802502441406); (5.91666666666667 : 17.8802502441406 : JumpStart); (6.14583333333333 : 17.8802502441406 : JumpEnd); (6.25 : 17.8802502441406)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_AccessMask/yaf_AccessMask_yaf_ForumAccess" />
+      <nodes>
+        <classShapeMoniker Id="fa18e936-5871-4e13-ab4f-70d4185a2af6" />
+        <classShapeMoniker Id="205b8284-bad7-4e46-9e68-ae2caf73aa7f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.25 : 22.8750000000497); (6.12142556509888 : 22.7464255651485 : JumpStart); (5.94107443490112 : 22.5660744349508 : JumpEnd); (5.875 : 22.5000000000497); (5.875 : 18.885500488542); (5.94107443492161 : 18.8194260535745 : JumpStart); (6.12142556507839 : 18.6390749232923 : JumpEnd); (6.25 : 18.5105004882813)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YafDataContext/yaf_Forum/yaf_Forum_yaf_ForumAccess" />
+      <nodes>
+        <classShapeMoniker Id="01a833be-b074-47cc-8f88-f8b7bf763a1c" />
+        <classShapeMoniker Id="205b8284-bad7-4e46-9e68-ae2caf73aa7f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 19.4385691335088); (5.81607443490112 : 19.1224946986077 : JumpStart); (5.93392556509888 : 19.0046435684099 : JumpEnd); (5.94107443490112 : 18.9974946986077 : JumpStart); (6.05892556509888 : 18.8796435684099 : JumpEnd); (6.0625 : 18.8760691335088); (6.0625 : 17.5338731219399); (6.25 : 17.5338731219399)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Group/yaf_Group_yaf_ForumAccess" />
+      <nodes>
+        <classShapeMoniker Id="373f9007-4afd-4886-8ec6-255d1bf63f23" />
+        <classShapeMoniker Id="205b8284-bad7-4e46-9e68-ae2caf73aa7f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.54687875 : 24.125); (2.54687875 : 20.0874239095052); (3.5 : 20.0874239095052)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Board/yaf_Board_yaf_Group" />
+      <nodes>
+        <classShapeMoniker Id="bca1fb5d-35fd-44c1-8114-0b1bb793f925" />
+        <classShapeMoniker Id="373f9007-4afd-4886-8ec6-255d1bf63f23" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 25.9786185709635); (17.5 : 25.9786185709635)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Message/yaf_Message_yaf_Attachment" />
+      <nodes>
+        <classShapeMoniker Id="1af5a0ac-45b8-47a1-8d2e-89acf2b0dec1" />
+        <classShapeMoniker Id="b6848aff-380a-46d4-8a29-fd4d9008a240" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15.75 : 25); (15.75 : 24.5735078938802); (11.9583333333333 : 24.5735078938802 : JumpStart); (11.7916666666667 : 24.5735078938802 : JumpEnd); (11.25 : 24.5735078938802); (11.25 : 26.0752791341146); (11.2395833333333 : 26.0752791341146 : JumpStart); (11.0729166666667 : 26.0752791341146 : JumpEnd); (10.0833333333333 : 26.0752791341146 : JumpStart); (9.91666666666667 : 26.0752791341146 : JumpEnd); (8.89583333333333 : 26.0752791341146 : JumpStart); (8.72916666666667 : 26.0752791341146 : JumpEnd); (8.625 : 26.0752791341146); (8.625 : 25.436079677384); (8.25 : 25.436079677384)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Message/yaf_Message_yaf_Forum" />
+      <nodes>
+        <classShapeMoniker Id="1af5a0ac-45b8-47a1-8d2e-89acf2b0dec1" />
+        <classShapeMoniker Id="01a833be-b074-47cc-8f88-f8b7bf763a1c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15.4592307692308 : 28.7257104492188); (15.4592307692308 : 28.9757104492188); (16.0546153846154 : 28.9757104492188); (16.0546153846154 : 28.7257104492188)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YafDataContext/yaf_Message/yaf_Message_yaf_Message" />
+      <nodes>
+        <classShapeMoniker Id="1af5a0ac-45b8-47a1-8d2e-89acf2b0dec1" />
+        <classShapeMoniker Id="1af5a0ac-45b8-47a1-8d2e-89acf2b0dec1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 26.2704763261723); (8.62653946153846 : 26.6470157877107); (11.0729166666667 : 26.6470157877107 : JumpStart); (11.2395833333333 : 26.6470157877107 : JumpEnd); (11.625 : 26.6470157877107); (11.625 : 30.25); (12 : 30.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YafDataContext/yaf_Forum/yaf_Forum_yaf_NntpForum" />
+      <nodes>
+        <classShapeMoniker Id="01a833be-b074-47cc-8f88-f8b7bf763a1c" />
+        <classShapeMoniker Id="dfadd921-9ae7-4f40-acb6-664d009136b5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 35.333944905599); (13 : 35.333944905599); (13 : 32.5428898111979)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_NntpServer/yaf_NntpServer_yaf_NntpForum" />
+      <nodes>
+        <classShapeMoniker Id="e61c7b01-676f-4e1a-8699-5d8757be5aee" />
+        <classShapeMoniker Id="dfadd921-9ae7-4f40-acb6-664d009136b5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2812525 : 25.7141951497396); (2.2812525 : 35.333944905599); (3.5 : 35.333944905599)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Board/yaf_Board_yaf_NntpServer" />
+      <nodes>
+        <classShapeMoniker Id="bca1fb5d-35fd-44c1-8114-0b1bb793f925" />
+        <classShapeMoniker Id="e61c7b01-676f-4e1a-8699-5d8757be5aee" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 31.7026188151042); (15.6666666666667 : 31.7026188151042 : JumpStart); (15.8333333333333 : 31.7026188151042 : JumpEnd); (17.75 : 31.7026188151042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_NntpForum/yaf_NntpForum_yaf_NntpTopic" />
+      <nodes>
+        <classShapeMoniker Id="dfadd921-9ae7-4f40-acb6-664d009136b5" />
+        <classShapeMoniker Id="18f28975-1be4-46ff-92d6-1331d09f5c3b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.25 : 20.75); (10.25 : 17.5874239095052); (12 : 17.5874239095052)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Poll/yaf_Poll_yaf_Choice" />
+      <nodes>
+        <classShapeMoniker Id="ebf701f3-ce71-4a66-be26-2cb6869c7d94" />
+        <classShapeMoniker Id="57392116-7d0f-42be-a8db-03746c06e86a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 20.8999239095052); (12 : 20.8999239095052)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Poll/yaf_Poll_yaf_PollVote" />
+      <nodes>
+        <classShapeMoniker Id="ebf701f3-ce71-4a66-be26-2cb6869c7d94" />
+        <classShapeMoniker Id="b84de546-8b95-4b3b-991e-a06c31ab8472" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.2187475 : 25.7141951497396); (1.2187475 : 30.2517712402344); (1.66666666666667 : 30.2517712402344 : JumpStart); (1.83333333333333 : 30.2517712402344 : JumpEnd); (2.19791916666667 : 30.2517712402344 : JumpStart); (2.36458583333333 : 30.2517712402344 : JumpEnd); (2.46354541666667 : 30.2517712402344 : JumpStart); (2.63021208333333 : 30.2517712402344 : JumpEnd); (3.5 : 30.2517712402344)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Board/yaf_Board_yaf_Rank" />
+      <nodes>
+        <classShapeMoniker Id="bca1fb5d-35fd-44c1-8114-0b1bb793f925" />
+        <classShapeMoniker Id="cebede80-d622-4997-87a5-aa0a81b36894" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.01562625 : 24.125); (2.01562625 : 22.2124239095052); (2.19791916666667 : 22.2124239095052 : JumpStart); (2.36458583333333 : 22.2124239095052 : JumpEnd); (2.46354541666667 : 22.2124239095052 : JumpStart); (2.63021208333333 : 22.2124239095052 : JumpEnd); (3.5 : 22.2124239095052)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Board/yaf_Board_yaf_Registry" />
+      <nodes>
+        <classShapeMoniker Id="bca1fb5d-35fd-44c1-8114-0b1bb793f925" />
+        <classShapeMoniker Id="08722ff0-dbc6-465b-8076-a6386cffd63f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.54687875 : 25.7141951497396); (2.54687875 : 32.7517712402344); (3.5 : 32.7517712402344)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Board/yaf_Board_yaf_Smiley" />
+      <nodes>
+        <classShapeMoniker Id="bca1fb5d-35fd-44c1-8114-0b1bb793f925" />
+        <classShapeMoniker Id="79fe83a2-3bdc-4acf-8a61-14245e6c73e8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 29.1435367838542); (17.4166666666667 : 29.1435367838542 : JumpStart); (17.5833333333333 : 29.1435367838542 : JumpEnd); (17.75 : 29.1435367838542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Topic/yaf_Topic_yaf_WatchTopic" />
+      <nodes>
+        <classShapeMoniker Id="563849e3-998a-4ff0-ae75-9210ca53d55b" />
+        <classShapeMoniker Id="4d14e5f6-52d2-49bb-93dd-41f80825d142" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12 : 25.625); (11.9339255650989 : 25.5589255650989 : JumpStart); (11.8160744349011 : 25.4410744349011 : JumpEnd); (11.625 : 25.25); (11.625 : 26.4487396725761); (11.2151755650989 : 26.038915237675 : JumpStart); (11.0973244349011 : 25.9210641074772 : JumpEnd); (11 : 25.8237396725761)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YafDataContext/yaf_Topic/yaf_Topic_yaf_Active" />
+      <nodes>
+        <classShapeMoniker Id="563849e3-998a-4ff0-ae75-9210ca53d55b" />
+        <classShapeMoniker Id="5aebb427-0424-4f12-94e0-a19a2dec2c72" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12 : 26.2399935569415); (11.9583333333333 : 26.2399935569415 : JumpStart); (11.5416666666667 : 26.2399935569415 : JumpEnd); (11.4995872176987 : 26.2399935569415 : JumpStart); (11.3329205510321 : 26.2399935569415 : JumpEnd); (11.2395833333333 : 26.2399935569415 : JumpStart); (11.0729166666667 : 26.2399935569415 : JumpEnd); (10.0833333333333 : 26.2399935569415 : JumpStart); (9.91666666666667 : 26.2399935569415 : JumpEnd); (8.89583333333333 : 26.2399935569415 : JumpStart); (8.72916666666667 : 26.2399935569415 : JumpEnd); (8.25 : 26.2399935569415)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Topic/yaf_Topic_yaf_Forum" />
+      <nodes>
+        <classShapeMoniker Id="563849e3-998a-4ff0-ae75-9210ca53d55b" />
+        <classShapeMoniker Id="01a833be-b074-47cc-8f88-f8b7bf763a1c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 27.1753552246094); (14.75 : 27.1753552246094)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Topic/yaf_Topic_yaf_Message" />
+      <nodes>
+        <classShapeMoniker Id="563849e3-998a-4ff0-ae75-9210ca53d55b" />
+        <classShapeMoniker Id="1af5a0ac-45b8-47a1-8d2e-89acf2b0dec1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 28.1594460042318); (14.5 : 28.1594460042318); (14.5 : 28.8507104492188); (15.3758974358974 : 28.8507104492188 : JumpStart); (15.5425641025641 : 28.8507104492188 : JumpEnd); (15.9712820512821 : 28.8507104492188 : JumpStart); (16.1379487179487 : 28.8507104492188 : JumpEnd); (17.5 : 28.8507104492188); (17.5 : 29.9641951497396); (18.75 : 29.9641951497396); (18.75 : 30.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Topic/yaf_Topic_yaf_NntpTopic" />
+      <nodes>
+        <classShapeMoniker Id="563849e3-998a-4ff0-ae75-9210ca53d55b" />
+        <classShapeMoniker Id="18f28975-1be4-46ff-92d6-1331d09f5c3b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 25.9190291341146); (8.54166666666667 : 25.9190291341146 : JumpStart); (8.70833333333333 : 25.9190291341146 : JumpEnd); (8.72916666666667 : 25.9190291341146 : JumpStart); (8.89583333333333 : 25.9190291341146 : JumpEnd); (9.91666666666667 : 25.9190291341146 : JumpStart); (10.0833333333333 : 25.9190291341146 : JumpEnd); (11.0119561282051 : 25.9190291341146 : JumpStart); (11.3333333333333 : 25.9190291341146 : JumpEnd); (11.5416666666667 : 25.9190291341146 : JumpStart); (11.9583333333333 : 25.9190291341146 : JumpEnd); (12 : 25.9190291341146)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Forum/yaf_Forum_yaf_Topic" />
+      <nodes>
+        <classShapeMoniker Id="01a833be-b074-47cc-8f88-f8b7bf763a1c" />
+        <classShapeMoniker Id="563849e3-998a-4ff0-ae75-9210ca53d55b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.75 : 26.3376776123047); (14 : 26.3376776123047)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Message/yaf_Message_yaf_Topic" />
+      <nodes>
+        <classShapeMoniker Id="1af5a0ac-45b8-47a1-8d2e-89acf2b0dec1" />
+        <classShapeMoniker Id="563849e3-998a-4ff0-ae75-9210ca53d55b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.15625 : 22.0105004882813); (11.15625 : 26.9797578938554); (11.5416666666667 : 26.9797578938554 : JumpStart); (11.7083333333333 : 26.9797578938554 : JumpEnd); (12 : 26.9797578938554)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Poll/yaf_Poll_yaf_Topic" />
+      <nodes>
+        <classShapeMoniker Id="ebf701f3-ce71-4a66-be26-2cb6869c7d94" />
+        <classShapeMoniker Id="563849e3-998a-4ff0-ae75-9210ca53d55b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.7092307692308 : 29.1863631184896); (12.7092307692308 : 29.4363631184896); (13.3046153846154 : 29.4363631184896); (13.3046153846154 : 29.1863631184896)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YafDataContext/yaf_Topic/yaf_Topic_yaf_Topic" />
+      <nodes>
+        <classShapeMoniker Id="563849e3-998a-4ff0-ae75-9210ca53d55b" />
+        <classShapeMoniker Id="563849e3-998a-4ff0-ae75-9210ca53d55b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 29.2899499511719); (11.5416666666667 : 29.2899499511719 : JumpStart); (11.7083333333333 : 29.2899499511719 : JumpEnd); (12.6258974358974 : 29.2899499511719 : JumpStart); (12.7925641025641 : 29.2899499511719 : JumpEnd); (13.2212820512821 : 29.2899499511719 : JumpStart); (13.3879487179487 : 29.2899499511719 : JumpEnd); (17.4166666666667 : 29.2899499511719 : JumpStart); (17.5833333333333 : 29.2899499511719 : JumpEnd); (17.75 : 29.2899499511719)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_User/yaf_User_yaf_WatchTopic" />
+      <nodes>
+        <classShapeMoniker Id="24c7c7da-9646-41b8-b51e-aa0075314853" />
+        <classShapeMoniker Id="4d14e5f6-52d2-49bb-93dd-41f80825d142" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.21769230769231 : 27.125); (8.8125 : 26.5301923076923); (8.8125 : 23.8625677835286); (9 : 23.8625677835286)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_User/yaf_User_yaf_Active" />
+      <nodes>
+        <classShapeMoniker Id="24c7c7da-9646-41b8-b51e-aa0075314853" />
+        <classShapeMoniker Id="5aebb427-0424-4f12-94e0-a19a2dec2c72" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 28.1695975748698); (9 : 28.1695975748698)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_User/yaf_User_yaf_CheckEmail" />
+      <nodes>
+        <classShapeMoniker Id="24c7c7da-9646-41b8-b51e-aa0075314853" />
+        <classShapeMoniker Id="3fd2f972-243a-46d0-923f-4ae55de59b02" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 30.5017712402344); (8.66666666666667 : 30.5017712402344 : JumpStart); (8.83333333333333 : 30.5017712402344 : JumpEnd); (9 : 30.5017712402344)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_User/yaf_User_yaf_EventLog" />
+      <nodes>
+        <classShapeMoniker Id="24c7c7da-9646-41b8-b51e-aa0075314853" />
+        <classShapeMoniker Id="5a4c106f-56d8-4d7a-a02a-a612d9f94438" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.54211538461538 : 27.125); (6.54211538461538 : 26.2720157877604)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_User/yaf_User_yaf_Forum" />
+      <nodes>
+        <classShapeMoniker Id="24c7c7da-9646-41b8-b51e-aa0075314853" />
+        <classShapeMoniker Id="01a833be-b074-47cc-8f88-f8b7bf763a1c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.42730969230769 : 27.125); (7.42730969230769 : 26.8628552246094); (8.3965037497496 : 26.8628552246094 : JumpStart); (8.62932326257011 : 26.8628552246094 : JumpEnd); (11.0729166666667 : 26.8628552246094 : JumpStart); (11.2395833333333 : 26.8628552246094 : JumpEnd); (11.5416666666667 : 26.8628552246094 : JumpStart); (11.7083333333333 : 26.8628552246094 : JumpEnd); (11.75 : 26.8628552246094); (11.75 : 25.375); (11.7916666666667 : 25.375 : JumpStart); (11.9583333333333 : 25.375 : JumpEnd); (14.375 : 25.375); (14.375 : 25.6375868061523); (14.75 : 25.6375868061523)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_User/yaf_User_yaf_Message" />
+      <nodes>
+        <classShapeMoniker Id="24c7c7da-9646-41b8-b51e-aa0075314853" />
+        <classShapeMoniker Id="1af5a0ac-45b8-47a1-8d2e-89acf2b0dec1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 32.0011417643229); (7.25 : 33.0017712402344); (9 : 33.0017712402344)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_User/yaf_User_yaf_PMessage" />
+      <nodes>
+        <classShapeMoniker Id="24c7c7da-9646-41b8-b51e-aa0075314853" />
+        <classShapeMoniker Id="6a3f3ed8-c506-42c7-927a-66aad4b4f6b2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 29.1065291341146); (11.5416666666667 : 29.1065291341146 : JumpStart); (11.7083333333333 : 29.1065291341146 : JumpEnd); (12 : 29.1065291341146)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_User/yaf_User_yaf_Topic" />
+      <nodes>
+        <classShapeMoniker Id="24c7c7da-9646-41b8-b51e-aa0075314853" />
+        <classShapeMoniker Id="563849e3-998a-4ff0-ae75-9210ca53d55b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 27.1870212307692); (11.5416666666667 : 27.1870212307692 : JumpStart); (11.7083333333333 : 27.1870212307692 : JumpEnd); (12 : 27.1870212307692)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_User/yaf_User_yaf_Topic1" />
+      <nodes>
+        <classShapeMoniker Id="24c7c7da-9646-41b8-b51e-aa0075314853" />
+        <classShapeMoniker Id="563849e3-998a-4ff0-ae75-9210ca53d55b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.01562625 : 25.7141951497396); (2.01562625 : 28.21875); (2.19791916666667 : 28.21875 : JumpStart); (2.36458583333333 : 28.21875 : JumpEnd); (2.46354541666667 : 28.21875 : JumpStart); (2.63021208333333 : 28.21875 : JumpEnd); (6.25 : 28.21875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Board/yaf_Board_yaf_User" />
+      <nodes>
+        <classShapeMoniker Id="bca1fb5d-35fd-44c1-8114-0b1bb793f925" />
+        <classShapeMoniker Id="24c7c7da-9646-41b8-b51e-aa0075314853" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 30.2517712402344); (6.25 : 30.2517712402344)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Rank/yaf_Rank_yaf_User" />
+      <nodes>
+        <classShapeMoniker Id="cebede80-d622-4997-87a5-aa0a81b36894" />
+        <classShapeMoniker Id="24c7c7da-9646-41b8-b51e-aa0075314853" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 15.6811714095052); (6.25 : 15.6811714095052)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_AccessMask/yaf_AccessMask_yaf_UserForum" />
+      <nodes>
+        <classShapeMoniker Id="fa18e936-5871-4e13-ab4f-70d4185a2af6" />
+        <classShapeMoniker Id="0d2e6d2c-983f-41a5-8d79-592b7cebdb44" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 22.8750000000497); (8.625 : 22.5000000000497); (8.625 : 16.8379716915725); (8.25 : 16.4629716915725)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YafDataContext/yaf_Forum/yaf_Forum_yaf_UserForum" />
+      <nodes>
+        <classShapeMoniker Id="01a833be-b074-47cc-8f88-f8b7bf763a1c" />
+        <classShapeMoniker Id="0d2e6d2c-983f-41a5-8d79-592b7cebdb44" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.34538361538462 : 27.125); (6 : 26.7796163846154); (6 : 16.7141951493795); (6.25 : 16.4641951493795)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YafDataContext/yaf_User/yaf_User_yaf_UserForum" />
+      <nodes>
+        <classShapeMoniker Id="24c7c7da-9646-41b8-b51e-aa0075314853" />
+        <classShapeMoniker Id="0d2e6d2c-983f-41a5-8d79-592b7cebdb44" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 20.048076578776); (5.79166666666667 : 20.048076578776 : JumpStart); (6.08333333333333 : 20.048076578776 : JumpEnd); (6.25 : 20.048076578776)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Group/yaf_Group_yaf_UserGroup" />
+      <nodes>
+        <classShapeMoniker Id="373f9007-4afd-4886-8ec6-255d1bf63f23" />
+        <classShapeMoniker Id="fe23aef8-d51d-4142-afd2-ea527ef4bb23" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.27922976923077 : 27.125); (6.0625 : 26.9082702307692); (6.0625 : 20.783653157192); (6.25 : 20.596153157192)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YafDataContext/yaf_User/yaf_User_yaf_UserGroup" />
+      <nodes>
+        <classShapeMoniker Id="24c7c7da-9646-41b8-b51e-aa0075314853" />
+        <classShapeMoniker Id="fe23aef8-d51d-4142-afd2-ea527ef4bb23" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 33.2419661458333); (12.9166666666667 : 33.2419661458333 : JumpStart); (13.0833333333333 : 33.2419661458333 : JumpEnd); (15.75 : 33.2419661458333); (15.75 : 31.5428898111979)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_PMessage/yaf_PMessage_yaf_UserPMessage" />
+      <nodes>
+        <classShapeMoniker Id="6a3f3ed8-c506-42c7-927a-66aad4b4f6b2" />
+        <classShapeMoniker Id="21c56512-f021-40a2-b42e-cf61393fa839" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 31.2827085022786); (8.75 : 31.2827085022786); (8.75 : 29.375); (11.5416666666667 : 29.375 : JumpStart); (11.7083333333333 : 29.375 : JumpEnd); (15.75 : 29.375); (15.75 : 29.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_User/yaf_User_yaf_UserPMessage" />
+      <nodes>
+        <classShapeMoniker Id="24c7c7da-9646-41b8-b51e-aa0075314853" />
+        <classShapeMoniker Id="21c56512-f021-40a2-b42e-cf61393fa839" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 23.0625025000248); (11.0729166666667 : 23.0625025000248 : JumpStart); (11.2395833333333 : 23.0625025000248 : JumpEnd); (12 : 23.0625025000248)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YafDataContext/yaf_Forum/yaf_Forum_yaf_WatchForum" />
+      <nodes>
+        <classShapeMoniker Id="01a833be-b074-47cc-8f88-f8b7bf763a1c" />
+        <classShapeMoniker Id="bd02803d-2e85-46dc-9c70-379e872fafed" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 27.1588451538462); (8.65884515384615 : 26.75); (11.0729166666667 : 26.75 : JumpStart); (11.2395833333333 : 26.75 : JumpEnd); (11.5416666666667 : 26.75 : JumpStart); (11.8333333333333 : 26.75 : JumpEnd); (11.875 : 26.75); (11.875 : 24.3391951497396); (12 : 24.2141951497396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YafDataContext/yaf_User/yaf_User_yaf_WatchForum" />
+      <nodes>
+        <classShapeMoniker Id="24c7c7da-9646-41b8-b51e-aa0075314853" />
+        <classShapeMoniker Id="bd02803d-2e85-46dc-9c70-379e872fafed" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

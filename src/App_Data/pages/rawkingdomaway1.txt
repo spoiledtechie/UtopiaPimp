@@ -1,0 +1,64 @@
+
+Version: 3685
+Game LobbyWoL
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail
+Forum
+War Forum
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+69	10,457	107,810	2,394	344,793	2,094	164.658
+KINGDOM DETAILS
+
+Current kingdom is RISING (9:5)
+Kingdom:		Island:		
+< PreviousNext >Random
+Kingdom Statistics
+
+Total Provinces	9
+Total Networth	965,472gc (avg: 107,274gc)
+Total Land	6,618 acres (avg: 735 acres)
+Warfare
+
+Their Attitude Towards Us	Normal
+Our Attitude Towards Them	Normal
+Stance	Normal
+Wars Won / Concluded Wars	0 / 0
+Average Opponent Relative Size	100%
+Province	Race	Land	Net Worth	Net Worth/Acre	Nobility
+Because i love him	Halfling	1,156 acres	224,636gc	194gc	Baron
+Bz ManiaC (M)	Orc	987 acres	150,452gc	152gc	King
+Dark spirit	Dark Elf	804 acres	114,448gc	142gc	Lord
+Candy Corn	Human	655 acres	98,064gc	149gc	Knight
+Ark Of the Covenant	Dark Elf	730 acres	105,878gc	145gc	Knight
+Lowa	Human	645 acres	102,067gc	158gc	Lord
+Seiken Densetsu	Avian	633 acres	59,781gc	94gc	Lord
+Genua	Human	532 acres	61,949gc	116gc	Lord
+Shadow kingdom	Human	476 acres	48,197gc	101gc	Lord
+Legend
+Protection^
+Kingdom Monarch (M)
+You
+Online*
+
+ 
+	Halfling	1,156 acres	224,636gc	194gc	Baron
+Bz ManiaC (M)	Orc	987 acres	150,452gc	152gc	King
+Dark spirit	Dark Elf	804 acres	114,448gc	142gc	Lord
+Candy Corn	Human	655 acres	98,064gc	149gc	Knight
+Ark Of the Cov

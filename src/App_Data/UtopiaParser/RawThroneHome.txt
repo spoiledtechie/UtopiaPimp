@@ -1,0 +1,41 @@
+The Province of Gangsters Paradise (6:16) as of July 12th, YR7.
+Race	Orc	--- 	Soldiers	1042
+Ruler	Sir Tech Master the Warrior	--- 	Goblins	0
+Land	1390 Acres	--- 	Trolls	8512
+Peasants	12,973	--- 	Ogres	10,233
+Building Eff.	84%	--- 	Thieves	1491 (49%)
+Money	22,256gc	--- 	Wizards	1858 (86%)
+Food	126,543 bushels	--- 	War Horses	8653
+Runes	97,820 runes	--- 	Prisoners	0
+Trade Balance	276gc	--- 	Off. Points	83,786
+Service Level	Basic	--- 	Def. Points	85,876
+
+No new happenings
+
+See Recent News
+
+
+
+	
+Money: 21,251gc	Peasants: 12,166	Food: 116,263 Bushels	Runes: 104,444	NW: 232,468gc
+Game Time: January 15th, YR8 - Clock Time: 2:28 PM
+
+The Province of Mountain of Techies (17:38) as of January 15th, YR8.
+Race	Orc	--- 	Soldiers	39
+Ruler	Sir Tech Master the Warrior	--- 	Goblins	0
+Land	1375 Acres	--- 	Trolls	8136
+Peasants	12,166	--- 	Ogres	10,396
+Building Eff.	83%	--- 	Thieves	1381 (83%)
+Money	21,251gc	--- 	Wizards	1912 (97%)
+Food	116,263 bushels	--- 	War Horses	8002
+Runes	104,444 runes	--- 	Prisoners	0
+Trade Balance	249gc	--- 	Off. Points	83,908
+Service Level	Basic	--- 	Def. Points	82,916
+
+No new happenings
+
+See Recent News
+
+
+
+	

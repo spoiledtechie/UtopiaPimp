@@ -1,0 +1,59 @@
+
+Version: 3685
+Game LobbyWoL
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail ?
+Forum
+War Forum
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+69	10,457	107,810	2,394	344,793	2,094	164.658
+AENEID OF FUNSHOW (4:40)
+Throne
+State
+Military
+Buildings
+Science
+Mystics
+History
+Mystic Affairs
+
+As you requested, Lord Virgilio, the magical auras affecting our province are detailed below.
+
+Spell Name	Duration	Effects
+Anonymity
+-	Our next attack will be cloaked under the shades of anonymity.
+Shadow Light
+-	Our lands are blessed with Shadowlight. The next time thieves enter our lands their identities will be revealed.
+Inspire Army
+8 days	Our army has been inspired to train harder. We expect maintenance costs to be reduced for 8 days!
+Fertile Lands
+10 days	We have made our lands extraordinarily fertile for 10 days!
+Greater Protection
+13 days	Our realm is now under a sphere of protection for 13 days!
+Magic Shield
+7 days	The magical auras within our province will protect us from the black magic of our enemies for 7 days!
+
+ 
+ith Shadowlight. The next time thieves enter our lands their identities will be revealed.
+Inspire Army
+8 days	Our army has been inspired to train harder. We expect maintenance costs to be reduced for 8 days!
+Fertile Lands
+10 days	We have made our lands extraordinarily fertile for 10 days!
+Greater Protection
+13 d

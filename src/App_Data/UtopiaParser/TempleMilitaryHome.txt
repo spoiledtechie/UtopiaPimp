@@ -1,0 +1,38 @@
+Military Intelligence of [SELF]
+[http://www.UtopiaTemple.com All-in-One v4.23b]
+
+Server: World of Legends (Age 36)
+Ruler Name: Sir Tech Master
+Race: Orc
+Effectiveness: 107.6% raw, 107.7% off, 107.6% def
+
+** Summary **
+Net Offense at Home (from Utopia): 731
+Net Defense at Home (from Utopia): 60,619
+Modified Attack points (calculated): 861
+Modified Defense points (calculated): 45,969
+
+Total Offense Points: 85,253
+Total Defense Points: 62,561
+
+** Standing Army (At Home) **
+Trolls: 8,512 (42,560 defense points)
+Ogres: 81 (648 off. / 162 def.)
+War Horses: 151 (up to 151 additional offense)
+Total Mod Offense: 860 
+Total Mod Defense: 45,968 
+
+** Armies #2/#3/#4/#5 (Back in 18:29 hours) **
+Soldiers: 961 (961 offense and defense)
+Ogres: 9,439 (75,512 off. / 18,878 def.)
+War Horses: 7,981 (up to 7,981 additional offense)
+Total Mod Offense: 90,956 
+Total Mod Defense: 21,346 
+
+** Troops in Training **
+Trolls: 133 (665 defense points)
+Next 19 hours: 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+...................... 7 
+Ogres: 850 (6,800 off. / 1,700 def.)
+Next 22 hours: 80 80 82 31 31 32 31 35 32 31 33 32 
+...................... 32 31 32 32 32 31 34 31 32 33 

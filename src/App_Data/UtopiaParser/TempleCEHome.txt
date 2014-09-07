@@ -1,0 +1,47 @@
+Kingdom News for (17:38)
+[http://www.UtopiaTemple.com All-in-One v4.23b]
+Month of July, YR7
+
+** Legend **
+¤¤ Intra-Kingdom Conflict
+!!! Actions against our Kingdom
+&& Actions by our Kingdom
+>> Relations News
+*!* Dragon News
+@@ Obituaries / Defections
+$$ Aid
+
+** July YR7 **
+&& 2nd: [anonymous province] (17:38) learned from 
+............. Theos (20:3). 
+!!! 3rd: abc (20:3) learned from 
+............. Marley Mountain (17:38). 
+&& 5th: [anonymous province] (17:38) failed to 
+............. attack Gnome0 (12:1). 
+&& 12th: MightyStone Mountain (17:38) attacked 
+............. abc (20:3): 212 acres. 
+&& 12th: Mountain of Techies (17:38) attacked 
+............. CITY OF SHADOWS (22:40): 128 acres. 
+
+** Summary **
+&& Total Attacks Made: 4 (340 acres) 
+&& -- Traditional March: 2 (340 acres)
+&& -- Learn Attacks: 1
+&& -- Failed Attacks: 1 (25% failure)
+!!! Total Attacks Suffered: 1 
+!!! -- Learn Attacks: 1
+
+** This Kingdom (17:38) Gains/Losses **
+Overall Gains: 340 acres.
+  1. +212 acres: MightyStone Mountain (1/)
+  2. +128 acres: Mountain of Techies (1/)
+  3. no change: Marley Mountain (/1)
+  3. no change: [anonymous province] (2/)
+
+** Enemy Kingdom (Other) Gains/Losses **
+Overall Losses: -340 acres.
+Attacks: 1 made / 4 suffered
+  1. no change: Gnome0 (12:1) (/1)
+  1. no change: Theos (20:3) (/1)
+  3. -128 acres: CITY OF SHADOWS (22:40) (/1)
+  4. -212 acres: abc (20:3) (1/1)

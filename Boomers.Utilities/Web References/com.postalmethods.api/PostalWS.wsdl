@@ -1,0 +1,1668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="PostalMethods" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s1="PostalMethods/AbstractTypes" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="PostalMethods" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="PostalMethods">
+      <s:element name="SendLetter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyDescription" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileExtension" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileBinaryData" type="s:base64Binary" />
+            <s:element minOccurs="1" maxOccurs="1" name="WorkMode" type="tns:WorkMode" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="WorkMode">
+        <s:restriction base="s:string">
+          <s:enumeration value="Default" />
+          <s:enumeration value="Production" />
+          <s:enumeration value="Development" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SendLetterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendLetterResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendLetterAndAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyDescription" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileExtension" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileBinaryData" type="s:base64Binary" />
+            <s:element minOccurs="1" maxOccurs="1" name="WorkMode" type="tns:WorkMode" />
+            <s:element minOccurs="0" maxOccurs="1" name="AttentionLine1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AttentionLine2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendLetterAndAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendLetterAndAddressResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendPostcardAndAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyDescription" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ImageSideFileType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ImageSideBinaryData" type="s:base64Binary" />
+            <s:element minOccurs="1" maxOccurs="1" name="ImageSideScaling" type="tns:ImageSideScaling" />
+            <s:element minOccurs="0" maxOccurs="1" name="AddressSideFileType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AddressSideBinaryData" type="s:base64Binary" />
+            <s:element minOccurs="1" maxOccurs="1" name="WorkMode" type="tns:WorkMode" />
+            <s:element minOccurs="1" maxOccurs="1" name="PrintColor" type="tns:PrintColor" />
+            <s:element minOccurs="1" maxOccurs="1" name="PostcardSize" type="tns:PostcardSize" />
+            <s:element minOccurs="1" maxOccurs="1" name="MailingPriority" type="tns:MailingPriority" />
+            <s:element minOccurs="0" maxOccurs="1" name="AttentionLine1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AttentionLine2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="ImageSideScaling">
+        <s:restriction base="s:string">
+          <s:enumeration value="Default" />
+          <s:enumeration value="FitToPage" />
+          <s:enumeration value="None" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="PrintColor">
+        <s:restriction base="s:string">
+          <s:enumeration value="Default" />
+          <s:enumeration value="Black" />
+          <s:enumeration value="FullColor" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="PostcardSize">
+        <s:restriction base="s:string">
+          <s:enumeration value="Default" />
+          <s:enumeration value="Postcard_4_25X6" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="MailingPriority">
+        <s:restriction base="s:string">
+          <s:enumeration value="Default" />
+          <s:enumeration value="FirstClass" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SendPostcardAndAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendPostcardAndAddressResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendWordMailMerge_Compressed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyDescription" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileExtension" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileBinaryData" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="MergeData" type="s:base64Binary" />
+            <s:element minOccurs="1" maxOccurs="1" name="WorkMode" type="tns:WorkMode" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendWordMailMerge_CompressedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendWordMailMerge_CompressedResult" type="tns:SendWordMailMergeResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SendWordMailMergeResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ResultCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResultDescription" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetPDF">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPDFResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPDFResult" type="tns:GetPDFResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetPDFResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ResultCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FileData" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CancelDelivery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelDeliveryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CancelDeliveryResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyFileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileBinaryData" type="s:base64Binary" />
+            <s:element minOccurs="1" maxOccurs="1" name="Permissions" type="tns:Permissions" />
+            <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Overwrite" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="Permissions">
+        <s:restriction base="s:string">
+          <s:enumeration value="Account" />
+          <s:enumeration value="User" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="UploadFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UploadFileResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteUploadedFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyFileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteUploadedFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteUploadedFileResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUploadedFileDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUploadedFileDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetUploadedFileDetailsResult" type="tns:GetUploadedFileDetailsResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetUploadedFileDetailsResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ResultCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="UploadedFiles" type="tns:ArrayOfFileDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfFileDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FileDetails" type="tns:FileDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FileDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SubmitTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastUsage" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Permissions" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDetailsResult" type="tns:GetDetailsResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetDetailsResult">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:GetGeneralDetailsResult">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="ResultCode" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Details" type="tns:ArrayOfDetails" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="GetGeneralDetailsResult" />
+      <s:complexType name="ArrayOfDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Details" nillable="true" type="tns:Details" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Details">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:GeneralDetails">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="NumOfSheets" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="SubmitTime" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="CompletionTime" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="StatusDescription" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsBatch" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="MyDescription" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="MailerType" type="tns:MailerType" />
+              <s:element minOccurs="1" maxOccurs="1" name="WorkMode" type="tns:DetailsWorkMode" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="GeneralDetails" abstract="true" />
+      <s:simpleType name="MailerType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Letter" />
+          <s:enumeration value="Postcard" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="DetailsWorkMode">
+        <s:restriction base="s:string">
+          <s:enumeration value="Production" />
+          <s:enumeration value="Development" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetDetailsExtended">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDetailsExtendedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDetailsExtendedResult" type="tns:GetDetailsExtendedResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetDetailsExtendedResult">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:GetGeneralDetailsResult">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="ResultCode" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Details" type="tns:ArrayOfExtendedDetails" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfExtendedDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ExtendedDetails" nillable="true" type="tns:ExtendedDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ExtendedDetails">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:GeneralDetails">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="NumOfSheets" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="SubmitTime" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="CompletionTime" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="StatusDescription" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsBatch" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="MyDescription" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="MailerType" type="tns:MailerType" />
+              <s:element minOccurs="1" maxOccurs="1" name="WorkMode" type="tns:DetailsWorkMode" />
+              <s:element minOccurs="0" maxOccurs="1" name="Orientation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Envelope" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Paper" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PrintColor" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PrintSides" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Postcard" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="NationalMailing" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="InternationalMailing" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetStatusResult" type="tns:GetStatusResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetStatusResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ResultCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Statuses" type="tns:ArrayOfLetterStatusAndDesc" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLetterStatusAndDesc">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LetterStatusAndDesc" type="tns:LetterStatusAndDesc" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LetterStatusAndDesc">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastUpdateTime" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetBatchStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ItemID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBatchStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetBatchStatusResult" type="tns:GetBatchStatusResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetBatchStatusResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ResultCode" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Statuses" type="tns:ArrayOfLetterBatchStatusAndDesc" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLetterBatchStatusAndDesc">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LetterBatchStatusAndDesc" type="tns:LetterBatchStatusAndDesc" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LetterBatchStatusAndDesc">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ItemID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastUpdateTime" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetBatchDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ItemID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBatchDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetBatchDetailsResult" type="tns:GetBatchDetailsResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetBatchDetailsResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ResultCode" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="SubmitTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CompletionTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="MyDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MailerType" type="tns:MailerType" />
+          <s:element minOccurs="1" maxOccurs="1" name="WorkMode" type="tns:DetailsWorkMode" />
+          <s:element minOccurs="0" maxOccurs="1" name="Orientation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Envelope" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paper" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrintColor" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrintSides" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Postcard" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NationalMailing" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InternationalMailing" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Items" type="tns:ArrayOfItemsStatusAndDescExtended" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfItemsStatusAndDescExtended">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ItemsStatusAndDescExtended" type="tns:ItemsStatusAndDescExtended" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ItemsStatusAndDescExtended">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ItemID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumOfSheets" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastUpdateTime" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="int" type="s:int" />
+      <s:element name="SendWordMailMergeResult" type="tns:SendWordMailMergeResult" />
+      <s:element name="GetPDFResult" type="tns:GetPDFResult" />
+      <s:element name="GetUploadedFileDetailsResult" type="tns:GetUploadedFileDetailsResult" />
+      <s:element name="GetDetailsResult" nillable="true" type="tns:GetDetailsResult" />
+      <s:element name="GetDetailsExtendedResult" nillable="true" type="tns:GetDetailsExtendedResult" />
+      <s:element name="GetStatusResult" type="tns:GetStatusResult" />
+      <s:element name="GetBatchStatusResult" type="tns:GetBatchStatusResult" />
+      <s:element name="GetBatchDetailsResult" type="tns:GetBatchDetailsResult" />
+    </s:schema>
+    <s:schema targetNamespace="PostalMethods/AbstractTypes">
+      <s:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <s:complexType name="StringArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="String" type="s:string" />
+            </s:sequence>
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendLetterSoapIn">
+    <wsdl:part name="parameters" element="tns:SendLetter" />
+  </wsdl:message>
+  <wsdl:message name="SendLetterSoapOut">
+    <wsdl:part name="parameters" element="tns:SendLetterResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendLetterAndAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:SendLetterAndAddress" />
+  </wsdl:message>
+  <wsdl:message name="SendLetterAndAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:SendLetterAndAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendPostcardAndAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:SendPostcardAndAddress" />
+  </wsdl:message>
+  <wsdl:message name="SendPostcardAndAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:SendPostcardAndAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendWordMailMerge_CompressedSoapIn">
+    <wsdl:part name="parameters" element="tns:SendWordMailMerge_Compressed" />
+  </wsdl:message>
+  <wsdl:message name="SendWordMailMerge_CompressedSoapOut">
+    <wsdl:part name="parameters" element="tns:SendWordMailMerge_CompressedResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPDFSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPDF" />
+  </wsdl:message>
+  <wsdl:message name="GetPDFSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPDFResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelDeliverySoapIn">
+    <wsdl:part name="parameters" element="tns:CancelDelivery" />
+  </wsdl:message>
+  <wsdl:message name="CancelDeliverySoapOut">
+    <wsdl:part name="parameters" element="tns:CancelDeliveryResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadFile" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUploadedFileSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteUploadedFile" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUploadedFileSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteUploadedFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUploadedFileDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUploadedFileDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetUploadedFileDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUploadedFileDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailsExtendedSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDetailsExtended" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailsExtendedSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDetailsExtendedResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBatchStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBatchStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBatchDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBatchDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendLetterHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="MyDescription" type="s:string" />
+    <wsdl:part name="FileExtension" type="s:string" />
+    <wsdl:part name="FileBinaryData" type="s1:StringArray" />
+    <wsdl:part name="WorkMode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendLetterHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="SendLetterAndAddressHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="MyDescription" type="s:string" />
+    <wsdl:part name="FileExtension" type="s:string" />
+    <wsdl:part name="FileBinaryData" type="s1:StringArray" />
+    <wsdl:part name="WorkMode" type="s:string" />
+    <wsdl:part name="AttentionLine1" type="s:string" />
+    <wsdl:part name="AttentionLine2" type="s:string" />
+    <wsdl:part name="Company" type="s:string" />
+    <wsdl:part name="Address1" type="s:string" />
+    <wsdl:part name="Address2" type="s:string" />
+    <wsdl:part name="City" type="s:string" />
+    <wsdl:part name="State" type="s:string" />
+    <wsdl:part name="PostalCode" type="s:string" />
+    <wsdl:part name="Country" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendLetterAndAddressHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="SendPostcardAndAddressHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="MyDescription" type="s:string" />
+    <wsdl:part name="ImageSideFileType" type="s:string" />
+    <wsdl:part name="ImageSideBinaryData" type="s1:StringArray" />
+    <wsdl:part name="ImageSideScaling" type="s:string" />
+    <wsdl:part name="AddressSideFileType" type="s:string" />
+    <wsdl:part name="AddressSideBinaryData" type="s1:StringArray" />
+    <wsdl:part name="WorkMode" type="s:string" />
+    <wsdl:part name="PrintColor" type="s:string" />
+    <wsdl:part name="PostcardSize" type="s:string" />
+    <wsdl:part name="MailingPriority" type="s:string" />
+    <wsdl:part name="AttentionLine1" type="s:string" />
+    <wsdl:part name="AttentionLine2" type="s:string" />
+    <wsdl:part name="Company" type="s:string" />
+    <wsdl:part name="Address1" type="s:string" />
+    <wsdl:part name="Address2" type="s:string" />
+    <wsdl:part name="City" type="s:string" />
+    <wsdl:part name="State" type="s:string" />
+    <wsdl:part name="PostalCode" type="s:string" />
+    <wsdl:part name="Country" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendPostcardAndAddressHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="SendWordMailMerge_CompressedHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="MyDescription" type="s:string" />
+    <wsdl:part name="FileExtension" type="s:string" />
+    <wsdl:part name="FileBinaryData" type="s1:StringArray" />
+    <wsdl:part name="MergeData" type="s1:StringArray" />
+    <wsdl:part name="WorkMode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendWordMailMerge_CompressedHttpGetOut">
+    <wsdl:part name="Body" element="tns:SendWordMailMergeResult" />
+  </wsdl:message>
+  <wsdl:message name="GetPDFHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPDFHttpGetOut">
+    <wsdl:part name="Body" element="tns:GetPDFResult" />
+  </wsdl:message>
+  <wsdl:message name="CancelDeliveryHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CancelDeliveryHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="MyFileName" type="s:string" />
+    <wsdl:part name="FileBinaryData" type="s1:StringArray" />
+    <wsdl:part name="Permissions" type="s:string" />
+    <wsdl:part name="Description" type="s:string" />
+    <wsdl:part name="Overwrite" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUploadedFileHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="MyFileName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUploadedFileHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetUploadedFileDetailsHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUploadedFileDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:GetUploadedFileDetailsResult" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailsHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:GetDetailsResult" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailsExtendedHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailsExtendedHttpGetOut">
+    <wsdl:part name="Body" element="tns:GetDetailsExtendedResult" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusHttpGetOut">
+    <wsdl:part name="Body" element="tns:GetStatusResult" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchStatusHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="ItemID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchStatusHttpGetOut">
+    <wsdl:part name="Body" element="tns:GetBatchStatusResult" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchDetailsHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="ItemID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:GetBatchDetailsResult" />
+  </wsdl:message>
+  <wsdl:message name="SendLetterHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="MyDescription" type="s:string" />
+    <wsdl:part name="FileExtension" type="s:string" />
+    <wsdl:part name="FileBinaryData" type="s1:StringArray" />
+    <wsdl:part name="WorkMode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendLetterHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="SendLetterAndAddressHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="MyDescription" type="s:string" />
+    <wsdl:part name="FileExtension" type="s:string" />
+    <wsdl:part name="FileBinaryData" type="s1:StringArray" />
+    <wsdl:part name="WorkMode" type="s:string" />
+    <wsdl:part name="AttentionLine1" type="s:string" />
+    <wsdl:part name="AttentionLine2" type="s:string" />
+    <wsdl:part name="Company" type="s:string" />
+    <wsdl:part name="Address1" type="s:string" />
+    <wsdl:part name="Address2" type="s:string" />
+    <wsdl:part name="City" type="s:string" />
+    <wsdl:part name="State" type="s:string" />
+    <wsdl:part name="PostalCode" type="s:string" />
+    <wsdl:part name="Country" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendLetterAndAddressHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="SendPostcardAndAddressHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="MyDescription" type="s:string" />
+    <wsdl:part name="ImageSideFileType" type="s:string" />
+    <wsdl:part name="ImageSideBinaryData" type="s1:StringArray" />
+    <wsdl:part name="ImageSideScaling" type="s:string" />
+    <wsdl:part name="AddressSideFileType" type="s:string" />
+    <wsdl:part name="AddressSideBinaryData" type="s1:StringArray" />
+    <wsdl:part name="WorkMode" type="s:string" />
+    <wsdl:part name="PrintColor" type="s:string" />
+    <wsdl:part name="PostcardSize" type="s:string" />
+    <wsdl:part name="MailingPriority" type="s:string" />
+    <wsdl:part name="AttentionLine1" type="s:string" />
+    <wsdl:part name="AttentionLine2" type="s:string" />
+    <wsdl:part name="Company" type="s:string" />
+    <wsdl:part name="Address1" type="s:string" />
+    <wsdl:part name="Address2" type="s:string" />
+    <wsdl:part name="City" type="s:string" />
+    <wsdl:part name="State" type="s:string" />
+    <wsdl:part name="PostalCode" type="s:string" />
+    <wsdl:part name="Country" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendPostcardAndAddressHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="SendWordMailMerge_CompressedHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="MyDescription" type="s:string" />
+    <wsdl:part name="FileExtension" type="s:string" />
+    <wsdl:part name="FileBinaryData" type="s1:StringArray" />
+    <wsdl:part name="MergeData" type="s1:StringArray" />
+    <wsdl:part name="WorkMode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendWordMailMerge_CompressedHttpPostOut">
+    <wsdl:part name="Body" element="tns:SendWordMailMergeResult" />
+  </wsdl:message>
+  <wsdl:message name="GetPDFHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPDFHttpPostOut">
+    <wsdl:part name="Body" element="tns:GetPDFResult" />
+  </wsdl:message>
+  <wsdl:message name="CancelDeliveryHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CancelDeliveryHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="MyFileName" type="s:string" />
+    <wsdl:part name="FileBinaryData" type="s1:StringArray" />
+    <wsdl:part name="Permissions" type="s:string" />
+    <wsdl:part name="Description" type="s:string" />
+    <wsdl:part name="Overwrite" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUploadedFileHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="MyFileName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUploadedFileHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetUploadedFileDetailsHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUploadedFileDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:GetUploadedFileDetailsResult" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailsHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:GetDetailsResult" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailsExtendedHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailsExtendedHttpPostOut">
+    <wsdl:part name="Body" element="tns:GetDetailsExtendedResult" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusHttpPostOut">
+    <wsdl:part name="Body" element="tns:GetStatusResult" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchStatusHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="ItemID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchStatusHttpPostOut">
+    <wsdl:part name="Body" element="tns:GetBatchStatusResult" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchDetailsHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="ItemID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:GetBatchDetailsResult" />
+  </wsdl:message>
+  <wsdl:portType name="PostalWSSoap">
+    <wsdl:operation name="SendLetter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The SendLetter() method is the simplest way to send a letter through the PostalMethods service.</wsdl:documentation>
+      <wsdl:input message="tns:SendLetterSoapIn" />
+      <wsdl:output message="tns:SendLetterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendLetterAndAddress">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The SendLetterAndAddress() method is a simple way to send a letter through the PostalMethods service.</wsdl:documentation>
+      <wsdl:input message="tns:SendLetterAndAddressSoapIn" />
+      <wsdl:output message="tns:SendLetterAndAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendPostcardAndAddress">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The SendPostcardAndAddress() method is the simplest way to send postcards.</wsdl:documentation>
+      <wsdl:input message="tns:SendPostcardAndAddressSoapIn" />
+      <wsdl:output message="tns:SendPostcardAndAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendWordMailMerge_Compressed">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The SendWordMailMerge_Compressed() method receives compressed mail merge data.</wsdl:documentation>
+      <wsdl:input message="tns:SendWordMailMerge_CompressedSoapIn" />
+      <wsdl:output message="tns:SendWordMailMerge_CompressedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPDF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetPDF() method is a way to get the PDF file used for printing the mailer as a binary file.</wsdl:documentation>
+      <wsdl:input message="tns:GetPDFSoapIn" />
+      <wsdl:output message="tns:GetPDFSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelDelivery">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The CancelDelivery() method is a way to cancel fulfillment of a mailer still not delivered to the postal service. Cancellation may take up to a few minutes to succeed. If funds were deducted from the account, they will be refunded immediately.</wsdl:documentation>
+      <wsdl:input message="tns:CancelDeliverySoapIn" />
+      <wsdl:output message="tns:CancelDeliverySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The UploadFile() method is used to upload files for later usage.</wsdl:documentation>
+      <wsdl:input message="tns:UploadFileSoapIn" />
+      <wsdl:output message="tns:UploadFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUploadedFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The DeleteUploadedFile() method is used to delete files from your storage.</wsdl:documentation>
+      <wsdl:input message="tns:DeleteUploadedFileSoapIn" />
+      <wsdl:output message="tns:DeleteUploadedFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFileDetails">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetUploadedFileDetails() method is used to show account files in storage.</wsdl:documentation>
+      <wsdl:input message="tns:GetUploadedFileDetailsSoapIn" />
+      <wsdl:output message="tns:GetUploadedFileDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetails">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetDetails() method is a way to get detailed mailer reports.</wsdl:documentation>
+      <wsdl:input message="tns:GetDetailsSoapIn" />
+      <wsdl:output message="tns:GetDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailsExtended">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetDetailsExtended() method is a way to get the full mailer details.</wsdl:documentation>
+      <wsdl:input message="tns:GetDetailsExtendedSoapIn" />
+      <wsdl:output message="tns:GetDetailsExtendedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetStatus() method is the way to get status mailer reports.</wsdl:documentation>
+      <wsdl:input message="tns:GetStatusSoapIn" />
+      <wsdl:output message="tns:GetStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetBatchStatus() method is the way to get batch status mailer reports.</wsdl:documentation>
+      <wsdl:input message="tns:GetBatchStatusSoapIn" />
+      <wsdl:output message="tns:GetBatchStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchDetails">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetBatchDetails() method is the way to get batch details mailer reports.</wsdl:documentation>
+      <wsdl:input message="tns:GetBatchDetailsSoapIn" />
+      <wsdl:output message="tns:GetBatchDetailsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="PostalWSHttpGet">
+    <wsdl:operation name="SendLetter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The SendLetter() method is the simplest way to send a letter through the PostalMethods service.</wsdl:documentation>
+      <wsdl:input message="tns:SendLetterHttpGetIn" />
+      <wsdl:output message="tns:SendLetterHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendLetterAndAddress">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The SendLetterAndAddress() method is a simple way to send a letter through the PostalMethods service.</wsdl:documentation>
+      <wsdl:input message="tns:SendLetterAndAddressHttpGetIn" />
+      <wsdl:output message="tns:SendLetterAndAddressHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendPostcardAndAddress">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The SendPostcardAndAddress() method is the simplest way to send postcards.</wsdl:documentation>
+      <wsdl:input message="tns:SendPostcardAndAddressHttpGetIn" />
+      <wsdl:output message="tns:SendPostcardAndAddressHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendWordMailMerge_Compressed">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The SendWordMailMerge_Compressed() method receives compressed mail merge data.</wsdl:documentation>
+      <wsdl:input message="tns:SendWordMailMerge_CompressedHttpGetIn" />
+      <wsdl:output message="tns:SendWordMailMerge_CompressedHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPDF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetPDF() method is a way to get the PDF file used for printing the mailer as a binary file.</wsdl:documentation>
+      <wsdl:input message="tns:GetPDFHttpGetIn" />
+      <wsdl:output message="tns:GetPDFHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelDelivery">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The CancelDelivery() method is a way to cancel fulfillment of a mailer still not delivered to the postal service. Cancellation may take up to a few minutes to succeed. If funds were deducted from the account, they will be refunded immediately.</wsdl:documentation>
+      <wsdl:input message="tns:CancelDeliveryHttpGetIn" />
+      <wsdl:output message="tns:CancelDeliveryHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The UploadFile() method is used to upload files for later usage.</wsdl:documentation>
+      <wsdl:input message="tns:UploadFileHttpGetIn" />
+      <wsdl:output message="tns:UploadFileHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUploadedFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The DeleteUploadedFile() method is used to delete files from your storage.</wsdl:documentation>
+      <wsdl:input message="tns:DeleteUploadedFileHttpGetIn" />
+      <wsdl:output message="tns:DeleteUploadedFileHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFileDetails">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetUploadedFileDetails() method is used to show account files in storage.</wsdl:documentation>
+      <wsdl:input message="tns:GetUploadedFileDetailsHttpGetIn" />
+      <wsdl:output message="tns:GetUploadedFileDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetails">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetDetails() method is a way to get detailed mailer reports.</wsdl:documentation>
+      <wsdl:input message="tns:GetDetailsHttpGetIn" />
+      <wsdl:output message="tns:GetDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailsExtended">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetDetailsExtended() method is a way to get the full mailer details.</wsdl:documentation>
+      <wsdl:input message="tns:GetDetailsExtendedHttpGetIn" />
+      <wsdl:output message="tns:GetDetailsExtendedHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetStatus() method is the way to get status mailer reports.</wsdl:documentation>
+      <wsdl:input message="tns:GetStatusHttpGetIn" />
+      <wsdl:output message="tns:GetStatusHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetBatchStatus() method is the way to get batch status mailer reports.</wsdl:documentation>
+      <wsdl:input message="tns:GetBatchStatusHttpGetIn" />
+      <wsdl:output message="tns:GetBatchStatusHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchDetails">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetBatchDetails() method is the way to get batch details mailer reports.</wsdl:documentation>
+      <wsdl:input message="tns:GetBatchDetailsHttpGetIn" />
+      <wsdl:output message="tns:GetBatchDetailsHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="PostalWSHttpPost">
+    <wsdl:operation name="SendLetter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The SendLetter() method is the simplest way to send a letter through the PostalMethods service.</wsdl:documentation>
+      <wsdl:input message="tns:SendLetterHttpPostIn" />
+      <wsdl:output message="tns:SendLetterHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendLetterAndAddress">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The SendLetterAndAddress() method is a simple way to send a letter through the PostalMethods service.</wsdl:documentation>
+      <wsdl:input message="tns:SendLetterAndAddressHttpPostIn" />
+      <wsdl:output message="tns:SendLetterAndAddressHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendPostcardAndAddress">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The SendPostcardAndAddress() method is the simplest way to send postcards.</wsdl:documentation>
+      <wsdl:input message="tns:SendPostcardAndAddressHttpPostIn" />
+      <wsdl:output message="tns:SendPostcardAndAddressHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendWordMailMerge_Compressed">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The SendWordMailMerge_Compressed() method receives compressed mail merge data.</wsdl:documentation>
+      <wsdl:input message="tns:SendWordMailMerge_CompressedHttpPostIn" />
+      <wsdl:output message="tns:SendWordMailMerge_CompressedHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPDF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetPDF() method is a way to get the PDF file used for printing the mailer as a binary file.</wsdl:documentation>
+      <wsdl:input message="tns:GetPDFHttpPostIn" />
+      <wsdl:output message="tns:GetPDFHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelDelivery">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The CancelDelivery() method is a way to cancel fulfillment of a mailer still not delivered to the postal service. Cancellation may take up to a few minutes to succeed. If funds were deducted from the account, they will be refunded immediately.</wsdl:documentation>
+      <wsdl:input message="tns:CancelDeliveryHttpPostIn" />
+      <wsdl:output message="tns:CancelDeliveryHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The UploadFile() method is used to upload files for later usage.</wsdl:documentation>
+      <wsdl:input message="tns:UploadFileHttpPostIn" />
+      <wsdl:output message="tns:UploadFileHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUploadedFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The DeleteUploadedFile() method is used to delete files from your storage.</wsdl:documentation>
+      <wsdl:input message="tns:DeleteUploadedFileHttpPostIn" />
+      <wsdl:output message="tns:DeleteUploadedFileHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFileDetails">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetUploadedFileDetails() method is used to show account files in storage.</wsdl:documentation>
+      <wsdl:input message="tns:GetUploadedFileDetailsHttpPostIn" />
+      <wsdl:output message="tns:GetUploadedFileDetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetails">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetDetails() method is a way to get detailed mailer reports.</wsdl:documentation>
+      <wsdl:input message="tns:GetDetailsHttpPostIn" />
+      <wsdl:output message="tns:GetDetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailsExtended">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetDetailsExtended() method is a way to get the full mailer details.</wsdl:documentation>
+      <wsdl:input message="tns:GetDetailsExtendedHttpPostIn" />
+      <wsdl:output message="tns:GetDetailsExtendedHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetStatus() method is the way to get status mailer reports.</wsdl:documentation>
+      <wsdl:input message="tns:GetStatusHttpPostIn" />
+      <wsdl:output message="tns:GetStatusHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetBatchStatus() method is the way to get batch status mailer reports.</wsdl:documentation>
+      <wsdl:input message="tns:GetBatchStatusHttpPostIn" />
+      <wsdl:output message="tns:GetBatchStatusHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchDetails">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">The GetBatchDetails() method is the way to get batch details mailer reports.</wsdl:documentation>
+      <wsdl:input message="tns:GetBatchDetailsHttpPostIn" />
+      <wsdl:output message="tns:GetBatchDetailsHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PostalWSSoap" type="tns:PostalWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendLetter">
+      <soap:operation soapAction="PostalMethods/SendLetter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLetterAndAddress">
+      <soap:operation soapAction="PostalMethods/SendLetterAndAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendPostcardAndAddress">
+      <soap:operation soapAction="PostalMethods/SendPostcardAndAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendWordMailMerge_Compressed">
+      <soap:operation soapAction="PostalMethods/SendWordMailMerge_Compressed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPDF">
+      <soap:operation soapAction="PostalMethods/GetPDF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelDelivery">
+      <soap:operation soapAction="PostalMethods/CancelDelivery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <soap:operation soapAction="PostalMethods/UploadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUploadedFile">
+      <soap:operation soapAction="PostalMethods/DeleteUploadedFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFileDetails">
+      <soap:operation soapAction="PostalMethods/GetUploadedFileDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetails">
+      <soap:operation soapAction="PostalMethods/GetDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailsExtended">
+      <soap:operation soapAction="PostalMethods/GetDetailsExtended" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <soap:operation soapAction="PostalMethods/GetStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchStatus">
+      <soap:operation soapAction="PostalMethods/GetBatchStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchDetails">
+      <soap:operation soapAction="PostalMethods/GetBatchDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PostalWSSoap12" type="tns:PostalWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendLetter">
+      <soap12:operation soapAction="PostalMethods/SendLetter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLetterAndAddress">
+      <soap12:operation soapAction="PostalMethods/SendLetterAndAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendPostcardAndAddress">
+      <soap12:operation soapAction="PostalMethods/SendPostcardAndAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendWordMailMerge_Compressed">
+      <soap12:operation soapAction="PostalMethods/SendWordMailMerge_Compressed" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPDF">
+      <soap12:operation soapAction="PostalMethods/GetPDF" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelDelivery">
+      <soap12:operation soapAction="PostalMethods/CancelDelivery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <soap12:operation soapAction="PostalMethods/UploadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUploadedFile">
+      <soap12:operation soapAction="PostalMethods/DeleteUploadedFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFileDetails">
+      <soap12:operation soapAction="PostalMethods/GetUploadedFileDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetails">
+      <soap12:operation soapAction="PostalMethods/GetDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailsExtended">
+      <soap12:operation soapAction="PostalMethods/GetDetailsExtended" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <soap12:operation soapAction="PostalMethods/GetStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchStatus">
+      <soap12:operation soapAction="PostalMethods/GetBatchStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchDetails">
+      <soap12:operation soapAction="PostalMethods/GetBatchDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PostalWSHttpGet" type="tns:PostalWSHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="SendLetter">
+      <http:operation location="/SendLetter" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLetterAndAddress">
+      <http:operation location="/SendLetterAndAddress" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendPostcardAndAddress">
+      <http:operation location="/SendPostcardAndAddress" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendWordMailMerge_Compressed">
+      <http:operation location="/SendWordMailMerge_Compressed" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPDF">
+      <http:operation location="/GetPDF" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelDelivery">
+      <http:operation location="/CancelDelivery" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <http:operation location="/UploadFile" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUploadedFile">
+      <http:operation location="/DeleteUploadedFile" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFileDetails">
+      <http:operation location="/GetUploadedFileDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetails">
+      <http:operation location="/GetDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailsExtended">
+      <http:operation location="/GetDetailsExtended" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <http:operation location="/GetStatus" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchStatus">
+      <http:operation location="/GetBatchStatus" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchDetails">
+      <http:operation location="/GetBatchDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PostalWSHttpPost" type="tns:PostalWSHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="SendLetter">
+      <http:operation location="/SendLetter" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLetterAndAddress">
+      <http:operation location="/SendLetterAndAddress" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendPostcardAndAddress">
+      <http:operation location="/SendPostcardAndAddress" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendWordMailMerge_Compressed">
+      <http:operation location="/SendWordMailMerge_Compressed" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPDF">
+      <http:operation location="/GetPDF" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelDelivery">
+      <http:operation location="/CancelDelivery" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <http:operation location="/UploadFile" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUploadedFile">
+      <http:operation location="/DeleteUploadedFile" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFileDetails">
+      <http:operation location="/GetUploadedFileDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetails">
+      <http:operation location="/GetDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailsExtended">
+      <http:operation location="/GetDetailsExtended" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <http:operation location="/GetStatus" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchStatus">
+      <http:operation location="/GetBatchStatus" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchDetails">
+      <http:operation location="/GetBatchDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PostalWS">
+    <wsdl:port name="PostalWSSoap" binding="tns:PostalWSSoap">
+      <soap:address location="https://api.postalmethods.com/2009-02-26/PostalWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PostalWSSoap12" binding="tns:PostalWSSoap12">
+      <soap12:address location="https://api.postalmethods.com/2009-02-26/PostalWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PostalWSHttpGet" binding="tns:PostalWSHttpGet">
+      <http:address location="https://api.postalmethods.com/2009-02-26/PostalWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PostalWSHttpPost" binding="tns:PostalWSHttpPost">
+      <http:address location="https://api.postalmethods.com/2009-02-26/PostalWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

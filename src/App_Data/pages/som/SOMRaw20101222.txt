@@ -1,0 +1,79 @@
+
+Version: 3767
+Game LobbyWoL
+
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail
+Forum
+War Forum
+Kingdom Chat
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+4	5,243	2,915	15,812	75,728	778	97.337
+JOHN BELUSHI OF THE CLUB WAR (7:20)
+Throne
+State
+Military
+Buildings
+Science
+Mystics
+History
+MILITARY AFFAIRS OF JOHN BELUSHI
+Im a Nerd the Warrior, we have 5 generals available to lead our armies. One must always stay here to lead our forces in defense, but you may send the others out to combat at any time.
+Our Generals' current activities and our military strength is detailed below.
+
+Wage Rate
+
+Our military effectiveness is determined by the wage rates of our armed forces. Higher wages can drive up productivity. Any changes to pay will take time to change our efficiency.
+
+At this time, approximately 47.9% of our maximum population is allocated to non-peasant roles. Our wage rate is 200.0% of normal levels, and our military is functioning at 108.4% efficiency.
+
+Military Strength
+
+In addition, our military strength is affected by a number of other factors including buildings, honor, spells, and more. Our net military effectiveness is as follows:
+
+Offensive Military Effectiveness	122.4%
+Defensive Military Effectiveness	92.1%
+Net Offensive Points at Home	1,150
+Net Defensive Points at Home	10,823
+Army Availability
+
+Standing Army	 Army #1
+(7.33 days left)	 Army #2
+(11.73 days left)	 Army #3
+(11.74 days left)	 Army #4
+(11.76 days left)
+Generals	1	1	1	1	1
+Soldiers	40	0	0	0	3,036
+Warriors	0	110	0	0	0
+Axemen	2,162	-	-	-	-
+Berserkers	0	950	1	1,232	0
+War Horses	0	358	0	0	0
+Captured Land	-	52	0	68	7
+Military Training Estimates
+
+Im a Nerd the Warrior, the table below shows our training estimates for the next 24 days.
+
+1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24
+Warriors																								
+Axemen	35	37	34	34	37	20	3	4	4	4	4	3	4	4										
+Berserkers	19	17	19	19	18	20	9	7	8	7	8	8	7	8										
+Thieves	10																							
+
+
+ 

@@ -1,0 +1,6 @@
+document.write('<object type=\"application/x-shockwave-flash\" data=\"http://content.yieldmanager.edgesuite.net/atoms/7e/ee/5d/13/7eee5d13018a147e7d91c0df2c063f43.swf?clickTAG=http%3A%2F%2Foptimizedby%2Ermxads%2Ecom%2Fclick%2C6gIAAIduBQBCjyIAkl4JAAAAUAAAAAIABwABGAIAAQPiYQcAyBQCAFFtDQAAAAAAAAAAAAAAAAAAAAAAAAAAAIq%2ENUoAAAAA%2C%2Chttp%253A%252F%252Fwol%2Eswirve%2Ecom%252Fattack%2Ecgi%253Frc%253D702091%2523target%2Dnildor%252520%25252818%25253a27%252529%2Dindex%2D18%2C\" height=\"600\" width=\"120\" loop=\"false\" wmode=\"opaque\"><param name=\"wmode\" value=\"opaque\"><param name=\"movie\" value=\"http://content.yieldmanager.edgesuite.net/atoms/7e/ee/5d/13/7eee5d13018a147e7d91c0df2c063f43.swf?clickTAG=http%3A%2F%2Foptimizedby%2Ermxads%2Ecom%2Fclick%2C6gIAAIduBQBCjyIAkl4JAAAAUAAAAAIABwABGAIAAQPiYQcAyBQCAFFtDQAAAAAAAAAAAAAAAAAAAAAAAAAAAIq%2ENUoAAAAA%2C%2Chttp%253A%252F%252Fwol%2Eswirve%2Ecom%252Fattack%2Ecgi%253Frc%253D702091%2523target%2Dnildor%252520%25252818%25253a27%252529%2Dindex%2D18%2C\" /></object>');
+var rm_data = new Object();
+rm_data.creative_id = 2264898;
+rm_data.offer_type = 2;
+rm_data.entity_id = 31983;
+if (window.rm_crex_data) {rm_crex_data.push(2264898);}

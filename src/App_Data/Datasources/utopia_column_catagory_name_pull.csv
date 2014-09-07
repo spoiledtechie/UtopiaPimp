@@ -1,0 +1,7 @@
+uid,Category_ID,Category_Name,DateTime_Added,Enabled,User_ID_Added
+1,0,General,1/1/2008,1,
+3,1,Planner,1/1/2008,1,
+4,2,Resources,1/1/2008,1,
+5,3,Military,1/1/2008,1,
+6,4,Buildings,1/1/2008,1,
+7,5,Science,1/1/2008,1,

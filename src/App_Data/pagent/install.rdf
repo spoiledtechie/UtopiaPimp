@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+	   em:id="{DCEF1634-DE13-47ce-8CEA-714B0933EAA7}"
+	   em:type="2"
+	   em:name="UtopiaPimp 2.1 Agent FF3"
+	   em:version="2010.05.14"
+	   em:description="UtopiaPimp 2.1 Agent tool for integration with Firefox - Age of Distinction"
+	   em:creator="SpoiledTechie/Scott Pio"
+	   em:homepageURL="http://www.codingforcharity.com/"
+	   em:optionsURL="chrome://pimpagent/content/pimpagentPref.xul"
+                   em:iconURL="chrome://pimpagent/content/color-large.png">
+    <em:contributor>Greasemonkey Compiler by Anthony Lieuallen;</em:contributor>
+    <em:contributor>http://www.arantius.com/</em:contributor>
+    <em:contributor>Super betatesters: morhavoc, DigitaL, Stegosh, Dejovas, TarKa100, iloveoov</em:contributor>
+    <em:targetApplication RDF:resource="rdf:#$RF.S51"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$RF.S51"
+				   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="1.5"
+                   em:maxVersion="3.7a5pre" />
+</RDF:RDF>

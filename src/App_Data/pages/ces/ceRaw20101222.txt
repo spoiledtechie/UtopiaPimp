@@ -1,0 +1,65 @@
+﻿
+Version: 3767
+Game LobbyWoL
+
+funkybox!|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail
+Forum
+Kingdom Chat
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+271,172	10,209	164,149	15,345	125,647	920	136.573
+KINGDOM NEWS
+Province News
+Kingdom News
+The Daily Paper lists the various happenings throughout your kingdom. Included are important activities such as attacks, deaths, and changes in relations with your kingdom.
+
+Legend
+Intra-Kingdom Conflict	Relations News	
+Actions against our Kingdom	Dragon News	
+Actions by our Kingdom	Obituaries	
+The Kingdom Reporter
+< June YR0 Edition July YR0 Edition
+July 1 of YR0	 Shades of Tron (4:40) invaded Vanilla ICE ICE baby (3:40) and captured 92 acres of land.
+July 3 of YR0	 No ICE (3:40) captured 111 acres of land from Nazguls Of Mordor (4:40).
+July 4 of YR0	 An unknown province from I C E (3:40) captured 77 acres of land from Sylph (4:40).
+July 5 of YR0	 n-Ice-Ass (3:40) captured 51 acres of land from Shades of Tron (4:40).
+July 6 of YR0	 KZK (4:40) invaded No ICE (3:40) and killed 1,131 people.
+July 6 of YR0	 Rising Phoenix (4:40) razed 36 acres of n-Ice-Ass (3:40).
+July 6 of YR0	 Lhiannan Shee (4:40) invaded ICEyHotBackPatch (3:40) and killed 1,143 people.
+July 6 of YR0	 Lhiannan Shee (4:40) invaded n-Ice-Ass (3:40) and killed 716 people.
+July 8 of YR0	 The leader of Laceyian has chosen to join Big Things Can Happen--HOSTILE (2:32). All in Laceyian gather their possessions and depart this kingdom forever.
+July 8 of YR0	 An unknown province from I C E Hostile (3:40) captured 118 acres of land from KZK (4:40).
+July 9 of YR0	 ICameALot (3:40) invaded and pillaged Spargatoruldebuci (4:40).
+July 9 of YR0	 Iceman DZ (3:40) captured 69 acres of land from Shadowen (4:40).
+July 9 of YR0	 An unknown province from I C E Hostile (3:40) attempted an invasion of Satyr (4:40), but was repelled.
+July 10 of YR0	 Nazguls Of Mordor (4:40) ambushed armies from No ICE (3:40) and took 55 acres of land.
+July 10 of YR0	 ICameALot has sent an aid shipment to No ICE.
+July 11 of YR0	 ICE Twice as nice (3:40) captured 62 acres of land from Lhiannan Shee (4:40).
+July 11 of YR0	 An unknown province from I C E Hostile (3:40) captured 33 acres of land from Lhiannan Shee (4:40).
+July 11 of YR0	 ICE LancE has sent an aid shipment to ICE Twice as nice.
+July 13 of YR0	 Direwolf (4:40) invaded n-Ice-Ass (3:40) and killed 654 people.
+July 13 of YR0	 Tits For Kats (5:11) invaded n-Ice-Ass (3:40) and captured 69 acres of land.
+July 16 of YR0	 Pirate Of Mordor (4:40) attacked and stole from ICameALot (3:40).
+July 18 of YR0	 n-Ice-Ass (3:40) captured 36 acres of land from Lhiannan Shee (4:40).
+July 18 of YR0	 Lhiannan Shee (4:40) invaded D-Ice (3:40) and captured 90 acres of land.
+July 19 of YR0	 Lhiannan Shee (4:40) invaded D-Ice (3:40) and killed 652 people.
+July 19 of YR0	 An unknown province from Clownin Around (1:40) invaded n-Ice-Ass (3:40) and captured 61 acres of land.
+ 
+
+ 

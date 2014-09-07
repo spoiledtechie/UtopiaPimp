@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 26.625, 31" name="Utopia">
+  <DataContextMoniker Name="/UtopiaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="10fdcec4-fea7-4efb-aeaf-c783a34861cd" absoluteBounds="3.75, 3.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_User_Info" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ced957a2-7bef-4ee1-88bf-257a310a2efe" absoluteBounds="3.765, 4.21, 1.9700000000000002, 0.86484781901041663" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c02826d3-0427-4275-abd8-ac20a93aec66" absoluteBounds="6.75, 0.75, 2, 1.75354248046875">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Column_Catagory_Name_Pull" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b9c69d82-dbb0-48b8-b8a1-a38f411c51d7" absoluteBounds="6.7650000000000006, 1.21, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f0067039-fb0b-4ffa-b3cc-791ddeb7ac9e" absoluteBounds="0.75, 6.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Column_Data_Type" />
+      <nestedChildShapes>
+        <elementListCompartment Id="feb56eb3-8193-4dda-bf2a-2b9061068fa1" absoluteBounds="0.765, 7.21, 1.9700000000000002, 0.86484781901041663" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e7f91e3f-07e1-4fdc-82f0-8413e31a101a" absoluteBounds="6.75, 3.75, 2, 1.5891951497395827">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Column_Name" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4c32dd3-d521-4daa-851b-f72f49da151d" absoluteBounds="6.7650000000000006, 4.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="59255b15-c222-4971-b40a-c1ba2797ef1f" absoluteBounds="3.75, 6.75, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Column_Name_Pull" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79d6e23e-6e1c-4987-80c6-64b12f1d662e" absoluteBounds="3.7649999999999997, 7.21, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0a3aae49-7120-4024-b46f-c6206dee53d2" absoluteBounds="6.75, 6.75, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Comment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2b92cd27-e9f3-4ea5-9128-0a9b19b00d58" absoluteBounds="6.765, 7.21, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c22af872-8b92-4ceb-97ac-2e02123e374b" absoluteBounds="9.75, 0.75, 2, 2.4109318033854166">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Distorted_Data" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2cf3a4f7-b8e6-42be-bbdb-556f7b1f7cd2" absoluteBounds="9.765, 1.21, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eb45a906-96fc-48a0-8ab4-e1226cf13962" absoluteBounds="0.75, 9.75, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Donation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9532533b-093f-427e-ba6d-7f7dede8b08d" absoluteBounds="0.76500000000000012, 10.21, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="538d151d-78ba-4bae-a26c-61b0709690e6" absoluteBounds="3.75, 9.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Dragon_Type_Pull" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9834dbf1-c238-427a-857f-5d9e9f8c47ee" absoluteBounds="3.7649999999999997, 10.21, 1.9700000000000002, 0.86484781901041663" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="df367d7a-e013-4948-87df-28b762cacd96" absoluteBounds="9.75, 4.75, 2, 3.3970157877604166">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Errors_Log" />
+      <nestedChildShapes>
+        <elementListCompartment Id="813d4fe4-aa59-4a33-83c7-089b33f37e94" absoluteBounds="9.765, 5.21, 1.9700000000000002, 2.8370157877604165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="47c392e0-a06e-4be4-923b-2e17eb997b67" absoluteBounds="9.75, 9.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Kingdom_CE_Type_Pull" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a78f9acf-89ce-4210-b7f9-7086a8e8e941" absoluteBounds="9.765, 10.21, 1.9700000000000002, 0.86484781901041663" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4286aba0-010c-4064-85a5-f3dc2dfafff8" absoluteBounds="12.75, 0.75, 2, 3.5613631184895826">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Kingdom_Info" />
+      <nestedChildShapes>
+        <elementListCompartment Id="68b20513-4ae2-471a-a2ef-c55933f259ba" absoluteBounds="12.765, 1.2100000000000009, 1.9700000000000002, 3.001363118489583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="54417b07-9395-4037-bc40-98c8f58c691c" absoluteBounds="0.75, 12.75, 2, 1.5891951497395844">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Kingdom_Monarch_Message" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f1c1b6f2-4900-4513-853f-59cdd7b174b5" absoluteBounds="0.76499999999999968, 13.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0b218308-c2e5-465f-8540-3de64e834c48" absoluteBounds="12.75, 5.75, 2, 1.7535424804687496">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Kingdom_Monarch_Setting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d5f329af-e61f-4292-83df-8267bf5f877e" absoluteBounds="12.765, 6.2100000000000009, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5312bdfe-1e9d-42be-89ed-538bda5136b3" absoluteBounds="12.75, 8.75, 2, 1.2605004882812505">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Kingdom_Stance_Pull" />
+      <nestedChildShapes>
+        <elementListCompartment Id="258e0292-dd48-4128-86c4-ec95cd907a03" absoluteBounds="12.765, 9.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18e0005f-5113-45db-b717-b17200a0cc1b" absoluteBounds="9.75, 12.75, 2, 1.5891951497395844">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_New" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3176a8a0-028d-4bc7-82b6-59233fc52137" absoluteBounds="9.765, 13.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b0ce378d-bd0c-4f3a-810d-e5ee458c7124" absoluteBounds="12.75, 11.75, 2, 1.7535424804687505">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Personality_Pull" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0684ab94-ab54-47ae-a76d-b1dba7726d47" absoluteBounds="12.765, 12.21, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66f455d2-cc9a-4b0f-81b9-8cc8eb7b8cea" absoluteBounds="3.75, 14.75, 2.5, 3.39701578776042">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Data_Captured_Attack" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2c020a27-8a1d-4874-808e-924bb8e3da79" absoluteBounds="3.765, 15.21, 2.4699999999999998, 2.8370157877604165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="024b8a44-c554-4cfe-b15d-9b1fb641c3d2" absoluteBounds="12.75, 14.75, 2, 1.4248478190104201">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Data_Captured_Attack_Pull" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2cd27d9a-9289-4e59-a8dd-ae938eb3b837" absoluteBounds="12.765, 15.21, 1.9700000000000002, 0.86484781901041663" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0ddc7932-1052-4ac6-9a28-4ac1eab92482" absoluteBounds="15.75, 0.75, 2, 1.26050048828125">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Data_Captured_Military_Location_Pull" />
+      <nestedChildShapes>
+        <elementListCompartment Id="916c55fa-10b4-4513-bb9c-8fbc22bb0dd4" absoluteBounds="15.765, 1.2100000000000009, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="038054ba-a329-49e0-ab05-606cf233798b" absoluteBounds="15.75, 3.75, 2.375, 5.2048364257812505">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Data_Captured_Science" />
+      <nestedChildShapes>
+        <elementListCompartment Id="696e0c97-e894-466d-b427-e4304579866d" absoluteBounds="15.765, 4.21, 2.3449999999999998, 4.64483642578125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b951e587-72a0-4036-9329-f6348d070708" absoluteBounds="15.75, 10.75, 2, 1.2605004882812505">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Data_Type_Pull" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15e828bf-df42-4ffa-916a-21f9e5505fad" absoluteBounds="15.765, 11.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1ec3432f-f497-4628-a382-08f05d8622cc" absoluteBounds="15.75, 13.75, 2, 1.0961531575520844">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Formatter_Type" />
+      <nestedChildShapes>
+        <elementListCompartment Id="baff3ca1-8163-4530-a983-1dddd8c849a3" absoluteBounds="15.765, 14.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="80b89cea-d7a0-42e1-8986-53454a47e83e" absoluteBounds="15.75, 15.75, 2, 2.41093180338542">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Identifier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eada0d2f-65a4-41f0-9c79-1a5145951b76" absoluteBounds="15.765, 16.21, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c0dfac25-6ecd-4a18-b78f-443ed2ba4cf4" absoluteBounds="9.75, 17.75, 2, 1.7535424804687523">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Info" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e83a36cb-6688-4ece-9b59-8a6b65b4e446" absoluteBounds="9.765, 18.21, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c3fc675d-be18-4fca-b89d-99e0b544fded" absoluteBounds="18.75, 0.75, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Memo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d1448b3f-6b0b-48d1-9d08-1519c17b80f9" absoluteBounds="18.765, 1.2100000000000009, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e864f90-b85c-40ac-84ce-454c73a16273" absoluteBounds="18.75, 3.75, 2, 1.7535424804687496">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Message" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ef58e38-5ff4-429f-b039-dac3b7778d67" absoluteBounds="18.765, 4.2100000000000009, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="80722a19-791d-4542-ae18-ecfdd319daae" absoluteBounds="18.75, 6.75, 2, 2.2465844726562505">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Nobility_Pull" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29c1ff6c-3c74-45da-a1ba-187c8ef78574" absoluteBounds="18.765, 7.2100000000000009, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="25956a14-074b-41ad-a013-9c070a22a849" absoluteBounds="18.75, 10.75, 2, 1.7535424804687505">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Note" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0567b3f8-4fec-49b6-866d-ea6599aa28b3" absoluteBounds="18.765, 11.21, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2a4a4a88-7d8b-4e61-ad85-8fd4f6dc7524" absoluteBounds="18.75, 13.75, 2, 2.41093180338542">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Op" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d3ecf0c5-81f8-4edc-81b8-f6c20162402f" absoluteBounds="18.765, 14.21, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="394c6bd3-c133-4684-b4b4-b327234ffdae" absoluteBounds="18.75, 17.75, 2, 1.4248478190104201">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Ops_Pull" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0c349b06-afb7-4f26-959f-8a469b976ea3" absoluteBounds="18.765, 18.21, 1.9700000000000002, 0.86484781901041663" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c2567bac-23fc-4d65-a5af-a1cfcce7ec96" absoluteBounds="0.75, 19.75, 2, 2.5752791341145844">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Race_Military_Name" />
+      <nestedChildShapes>
+        <elementListCompartment Id="89377e7d-0482-4c07-9bcb-86110dea569f" absoluteBounds="0.76500000000000057, 20.21, 1.9700000000000002, 2.015279134114583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="95fd52c8-50cf-47d0-af89-a2977d0a9496" absoluteBounds="12.75, 19.75, 2, 1.5891951497395844">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Race_Pull" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bccee951-6a48-4f9f-83a3-5963ed64fd06" absoluteBounds="12.765, 20.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bba89ca3-41d8-45a1-be44-b2fcb29a351b" absoluteBounds="15.75, 20.75, 2, 1.0961531575520844">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Server_Pull" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cafcd95a-799f-4f57-bc04-3876d19c5bef" absoluteBounds="15.765, 21.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a59231e-47e2-4757-bfbb-bfdc0466280d" absoluteBounds="18.75, 20.75, 2, 4.0544051106770844">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_User_Audit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8166b115-d99b-438c-b2c5-086497a3d29b" absoluteBounds="18.765, 21.21, 1.9700000000000002, 3.494405110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6007b194-fe3e-4c7f-b111-99cb0ce0182e" absoluteBounds="21.75, 0.75, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_User_IM_Info" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5d1440e7-6c8c-4a35-9b7c-6594e65d5582" absoluteBounds="21.765, 1.2100000000000009, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e92dd9e4-94d8-4c91-bfd2-8690dc346fa3" absoluteBounds="21.75, 3.75, 2, 1.0961531575520827">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_User_IM_Info_Pull" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d771cdde-cb99-4988-9443-6f0ebb84f4d8" absoluteBounds="21.765, 4.2100000000000009, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4cbafdc8-b990-4c37-a644-d83d9db08926" absoluteBounds="21.75, 5.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Target_Finder_Setting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e0af8d9-5f4d-41e6-9caa-a9ed408e44dc" absoluteBounds="21.765, 6.2100000000000009, 1.9700000000000002, 0.86484781901041663" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e725a580-f98b-4827-a886-9024d79faf7d" absoluteBounds="21.75, 14.75, 2, 1.9178898111979201">
+      <DataClassMoniker Name="/UtopiaDataContext/Global_Chat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2258009b-fbe5-448d-b61e-e5c9c687c93f" absoluteBounds="21.765, 15.21, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="62550771-54ff-4cb8-8ef5-0fd07ed7b013" absoluteBounds="21.75, 17.75, 2, 1.9178898111979201">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_IRC_Channel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="affcb1ee-eea6-412b-8de7-259fa18fe89d" absoluteBounds="21.765, 18.21, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="006d1e52-7181-4ff7-9366-deeed13557dd" absoluteBounds="9.75, 22.75, 2, 2.41093180338542">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_User_Notifier_Setting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4727b9a-6db9-4947-9dc7-e5566b246a37" absoluteBounds="9.765, 23.21, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a470f62a-3147-409a-8374-4e7c15599381" absoluteBounds="7.5, 17.375, 2, 11.614382324218752">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Data_Captured_Survey" />
+      <nestedChildShapes>
+        <elementListCompartment Id="608b59b5-0367-4fcf-abda-077cb088886f" absoluteBounds="7.515, 17.835, 1.9700000000000002, 11.05438232421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d2615a20-8eb9-4d36-a182-74deaaebd570" absoluteBounds="13.875, 23.375, 2, 7.3413517252604166">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Data_Captured_Type_Military" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8d59a369-ddd0-438e-9f7f-3e430dbc00da" absoluteBounds="13.89, 23.835, 1.9700000000000002, 6.7813517252604161" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d98e0656-9cac-41c3-9b6f-e1ab02e073fd" absoluteBounds="3.5, 24.25, 2, 1.4248478190104201">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Notifier_Data" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3330ca3d-f1da-4964-ad44-035711b5c68c" absoluteBounds="3.515, 24.71, 1.9700000000000002, 0.86484781901041663" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cf63f8d4-9a25-4826-91b4-d51464f743de" absoluteBounds="0.75, 23.875, 2, 1.9178898111979201">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Notifier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e347b475-5436-4c7d-af7c-9d3aad04dc16" absoluteBounds="0.765, 24.335, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 25.0392976888021); (3.5 : 25.0392976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/UtopiaDataContext/Utopia_Province_Notifier/Utopia_Province_Notifier_Utopia_Province_Notifier_Data" />
+      <nodes>
+        <classShapeMoniker Id="cf63f8d4-9a25-4826-91b4-d51464f743de" />
+        <classShapeMoniker Id="d98e0656-9cac-41c3-9b6f-e1ab02e073fd" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="046e0476-dcfb-4242-a107-8ebe8b1a14be" absoluteBounds="7.125, 10, 2, 3.5613631184895826">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Kingdom_CE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e0c2372-5fd2-413a-ba1b-cfe4d488fb76" absoluteBounds="7.14, 10.46, 1.9700000000000002, 3.001363118489583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="757638eb-b66e-41d8-a830-a728ea58c984" absoluteBounds="21.875, 10.625, 2, 4.5474471028645826">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Target_Finder" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7b57a3c9-45ce-4af4-b03b-aa1505da77e5" absoluteBounds="21.89, 11.085, 1.9700000000000002, 3.987447102864583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2a64034f-cb69-431f-8c74-2f653e88008c" absoluteBounds="21.375, 20.75, 2, 9.1491723632812523">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Data_Captured_CB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e7372e8d-7c03-4fb8-9750-8693bcdf2ba8" absoluteBounds="21.39, 21.21, 1.9700000000000002, 8.58917236328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="684c0bee-cda3-4ead-b02d-72633c397bc7" absoluteBounds="24.375, 0.75, 2, 13.257855631510417">
+      <DataClassMoniker Name="/UtopiaDataContext/Utopia_Province_Data_Captured_Gen" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6338e089-c5b2-4280-b10a-9a10b25acd7d" absoluteBounds="24.39, 1.21, 1.9700000000000002, 12.697855631510416" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

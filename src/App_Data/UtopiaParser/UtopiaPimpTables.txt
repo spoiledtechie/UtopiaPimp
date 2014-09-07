@@ -1,0 +1,27 @@
+﻿-- 
+-- Table structure for table `utopia_cedata_wol`
+-- 
+
+CREATE TABLE IF NOT EXISTS `utopia_cedata_wol` (
+  `id` mediumint(8) unsigned NOT NULL,
+  `oid` smallint(5) unsigned NOT NULL default '0',
+  `kid` mediumint(8) unsigned NOT NULL default '0',
+  `umonth` smallint(6) NOT NULL default '0',
+  `kd_kd` tinyint(3) unsigned NOT NULL default '0',
+  `kd_island` tinyint(3) unsigned NOT NULL default '0',
+  `udate_step` tinyint(3) unsigned NOT NULL default '0',
+  `udate` smallint(4) unsigned NOT NULL default '0',
+  `source` varchar(25) NOT NULL default '',
+  `target` varchar(25) NOT NULL default '',
+  `skd_island` tinyint(3) unsigned NOT NULL default '0',
+  `skd_kd` tinyint(3) unsigned NOT NULL default '0',
+  `tkd_island` tinyint(3) unsigned NOT NULL default '0',
+  `tkd_kd` tinyint(3) unsigned NOT NULL default '0',
+  `type` enum('cancel-war','warbeginwarn','senddragon','conquest','massacre','raze','tradmarch','ambush','plunder','learn','aid','bounce','defectin','defectout','canceldragonout','begindragonout','withdraw-mpin','end-peace','begin-peace','end-war-mp','offer-mp','end-hostile','begin-hostile','end-war-withdraw','end-war-surrender','begin-war','begin-otherwar','end-all','provdie','slaydragon','propose-cf','reject-cf','begin-war-date','withdraw-cf','accept-cf','enter-cf','withdraw-war','end-war-victory','end-war-defeat','end-war-stalemate','lonedragon','warendwarn','break-cf','cancel-cf','dragonleft','begin-dragon-color','senddragon-color') NOT NULL default 'cancel-war',
+  `amt` smallint(5) unsigned default NULL,
+  `relation` enum('pp','pk','p','kk','kdk') NOT NULL default 'pp',
+  PRIMARY KEY  (`id`),
+  KEY `oid` (`oid`,`kid`,`umonth`)
+) TYPE=MyISAM AUTO_INCREMENT=10 ;
+
+-- 

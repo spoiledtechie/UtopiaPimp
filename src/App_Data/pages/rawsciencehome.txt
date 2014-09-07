@@ -1,0 +1,56 @@
+
+Version: 3685
+Game LobbyWoL
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail
+Forum
+War Forum
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+69	10,457	107,810	2,394	344,793	2,094	164.658
+SCIENCE RESEARCH
+Science Advisor
+The Arts & Sciences are the heart and soul of our people and our lands. Mastering these fields is vital to making our people stronger, smarter, and more efficient. This allows us to grow in strength without growing in size. More details outlining the effects of research into the different sciences can be found in the guide and the Arts & Sciences Council page.
+
+Science is obtained in two steps. Over time, you can spend money investing in books of knowledge. Once you have acquired these, you can research them into specific categories of knowledge. Additionally, we may learn science from others by raiding our enemies through the Learn Attack. Below, you may set your research rate for new books and allocate your books into science categories.
+
+Total Money	69gc
+Daily Income	41,343gc
+Estimated Research Cost	3,768gc (9%)
+Books to Allocate	0 books
+Daily Science Research Rate
+Research Rate	
+The available rates are currently limited to "active" due to war.
+Minimum Income Threshold	
+If your daily income drops below the Income Threshold, all science research will be temporarily halted.
+The Arts & Sciences: Allocating Books
+Knowledge	You Know	Effect	In Progress	Learn
+Alchemy	323,838	+17.4% Income	0	
+Tools	183,878	+9.4% Building Effectiveness	35,218	
+Housing	285,658	+7.6% Population Limits	0	
+Food	67,933	+45.6% Food Production	0	
+Military	292,021	+16.5% Gains in Combat	0	
+Crime	253,220	+66.0% Thievery Effectiveness	0	
+Channeling	240,567	+64.3% Magic Effectiveness & Rune Production	0	
+
+
+
+ 
+ncome drops below the Income Threshold, all science research will be temporarily halted.
+The Arts & Sciences: Allocating Books
+Kno

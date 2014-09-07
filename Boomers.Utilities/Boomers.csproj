@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1E607928-BEB7-425F-BBEF-C1D93B9BDD86}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Boomers</RootNamespace>
+    <AssemblyName>Boomers</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Twitterizer2, Version=2.3.0.39704, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\Twitterizer2.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\MsSql\DatabaseInfo.cs" />
+    <Compile Include="Admin\MsSql\DataTables.cs" />
+    <Compile Include="Admin\MsSql\TableInfo.cs" />
+    <Compile Include="Admin\UI\SiteDb.cs" />
+    <Compile Include="Admin\User.cs" />
+    <Compile Include="Config\BoomersSites.cs" />
+    <Compile Include="Mvc\ViewModels\DatabaseInfoViewModel.cs" />
+    <Compile Include="Mvc\ViewModels\SqlTableInfoViewModel.cs" />
+    <Compile Include="Mvc\ViewModels\SysObjectViewModel.cs" />
+    <Compile Include="Paypal\HandleIPN.cs" />
+    <Compile Include="Paypal\HandleSend.cs" />
+    <Compile Include="Paypal\PaypalSettings.cs" />
+    <Compile Include="Political\SunlightFoundation\Congress\Committees.cs" />
+    <Compile Include="Political\SunlightFoundation\Money\ContributionsViewModel.cs" />
+    <Compile Include="Political\SunlightFoundation\Utilities\Api.cs" />
+    <Compile Include="Political\SunlightFoundation\Utilities\Names.cs" />
+    <Compile Include="Political\SunlightFoundation\Utilities\RegularExrpressions.cs" />
+    <Compile Include="Political\SunlightFoundation\Congress\StaffDirectory.cs" />
+    <Compile Include="Political\SunlightFoundation\ViewModels\CommitteeViewModel.cs" />
+    <Compile Include="Political\SunlightFoundation\ViewModels\OfficeViewModel.cs" />
+    <Compile Include="Political\SunlightFoundation\ViewModels\PersonViewModel.cs" />
+    <Compile Include="Political\SunlightFoundation\ViewModels\PositionViewModel.cs" />
+    <Compile Include="Political\SunlightFoundation\ViewModels\TitleViewModel.cs" />
+    <Compile Include="UserUtil\Contact.cs" />
+    <Compile Include="UserUtil\ImType.cs" />
+    <Compile Include="UserUtil\PhoneType.cs" />
+    <Compile Include="Utilities\Collections\CollectionComparer.cs" />
+    <Compile Include="Utilities\Collections\Extensions\CollectionsExt.cs" />
+    <Compile Include="Utilities\Collections\Extensions\CompareExt.cs" />
+    <Compile Include="Utilities\Collections\ProjectionComparer.cs" />
+    <Compile Include="Utilities\Collections\Range.cs" />
+    <Compile Include="Utilities\Collections\RangeIterator.cs" />
+    <Compile Include="Utilities\Collections\ReverseComparer.cs" />
+    <Compile Include="Utilities\Communications\Brief.cs" />
+    <Compile Include="Utilities\Communications\IrcChannel.cs" />
+    <Compile Include="Utilities\Compare\GenericComparer.cs" />
+    <Compile Include="Utilities\Conversion\DoubleConverter.cs" />
+    <Compile Include="Utilities\Conversion\Extensions\ByteExt.cs" />
+    <Compile Include="Utilities\DatesTimes\Extensions\TimeExt.cs" />
+    <Compile Include="Utilities\Documents\Compression.cs" />
+    <Compile Include="Utilities\Documents\CSVParser.cs" />
+    <Compile Include="Utilities\Documents\Encryption.cs" />
+    <Compile Include="Utilities\Documents\Extensions\FileExt.cs" />
+    <Compile Include="Utilities\Documents\TextLogger.cs" />
+    <Compile Include="Utilities\Geospatial\GeoCourdinate.cs" />
+    <Compile Include="Utilities\Geospatial\GeoPoint.cs" />
+    <Compile Include="Utilities\Geospatial\Rhumb.cs" />
+    <Compile Include="Utilities\Imaging\ImageResize.cs" />
+    <Compile Include="Utilities\IO\Icons.cs" />
+    <Compile Include="Utilities\Linq\ExpressionUtil.cs" />
+    <Compile Include="Utilities\Linq\Extensions\Aggregate.cs" />
+    <Compile Include="Utilities\Linq\Extensions\DictionaryMethods.cs" />
+    <Compile Include="Utilities\Linq\Extensions\ContainsAtLeast.cs" />
+    <Compile Include="Utilities\Linq\Extensions\ByHierarchy.cs" />
+    <Compile Include="Utilities\Linq\Extensions\Buffered.cs" />
+    <Compile Include="Utilities\Linq\Extensions\BinaryTreeHierarchy.cs" />
+    <Compile Include="Utilities\Linq\Extensions\AsNullable.cs" />
+    <Compile Include="Utilities\Linq\Extensions\AggregationOrDefault.cs" />
+    <Compile Include="Utilities\Linq\Extensions\Union.cs" />
+    <Compile Include="Utilities\Linq\Extensions\SequenceSuperset.cs" />
+    <Compile Include="Utilities\Linq\Extensions\SequenceEqual.cs" />
+    <Compile Include="Utilities\Linq\Extensions\SelectMany.cs" />
+    <Compile Include="Utilities\Linq\Extensions\NumberWrapper.cs" />
+    <Compile Include="Utilities\Linq\Extensions\Normalize.cs" />
+    <Compile Include="Utilities\Linq\Extensions\Intersect.cs" />
+    <Compile Include="Utilities\Linq\Extensions\IndicesMethods.cs" />
+    <Compile Include="Utilities\Linq\Extensions\In.cs" />
+    <Compile Include="Utilities\Linq\Extensions\GroupEvery.cs" />
+    <Compile Include="Utilities\Linq\Extensions\Graphs.cs" />
+    <Compile Include="Utilities\Linq\Extensions\FirstOrFallback.cs" />
+    <Compile Include="Utilities\Linq\Extensions\Distinct.cs" />
+    <Compile Include="Utilities\Linq\Extensions\Sum.cs" />
+    <Compile Include="Utilities\Linq\Extensions\TakeEvery.cs" />
+    <Compile Include="Utilities\Linq\Extensions\ToDictionary.cs" />
+    <Compile Include="Utilities\Linq\IDataProducer.cs" />
+    <Compile Include="Utilities\Linq\LinqCache.cs" />
+    <Compile Include="Utilities\MVCHelpers\ImageHelper.cs" />
+    <Compile Include="Utilities\MVCHelpers\Paging\IPagedList.cs" />
+    <Compile Include="Utilities\MVCHelpers\Paging\PagedList.cs" />
+    <Compile Include="Utilities\MVCHelpers\Paging\Pager.cs" />
+    <Compile Include="Utilities\MVCHelpers\Paging\PagingExtensions.cs" />
+    <Compile Include="Utilities\NullOp.cs" />
+    <Compile Include="Utilities\Numbers\Generate.cs" />
+    <Compile Include="Utilities\Numbers\Geometry.cs" />
+    <Compile Include="Utilities\Numbers\Point.cs" />
+    <Compile Include="Utilities\Numbers\Vector.cs" />
+    <Compile Include="Utilities\Objects\ObjectDumper.cs" />
+    <Compile Include="Utilities\Objects\ObjectSerializer.cs" />
+    <Compile Include="Utilities\Operator.cs" />
+    <Compile Include="Utilities\AlphanumericCompare.cs" />
+    <Compile Include="Utilities\Collections\LinkedComparer.cs" />
+    <Compile Include="Utilities\Communications\Email.cs" />
+    <Compile Include="Utilities\Communications\MailMessage.cs" />
+    <Compile Include="Utilities\Compare\Extensions\CompareExt.cs" />
+    <Compile Include="Utilities\Culture.cs" />
+    <Compile Include="Utilities\Data\Access.cs" />
+    <Compile Include="Utilities\Data\Attachments.cs" />
+    <Compile Include="Utilities\Data\Excel.cs" />
+    <Compile Include="Utilities\Data\Export.cs" />
+    <Compile Include="Utilities\Data\Extensions\TableExt.cs" />
+    <Compile Include="Utilities\Data\Import.cs" />
+    <Compile Include="Utilities\DatesTimes\Extensions\DateExt.cs" />
+    <Compile Include="Utilities\DatesTimes\Extensions\TimeSpanExt.cs" />
+    <Compile Include="Utilities\DatesTimes\Formatting.cs" />
+    <Compile Include="Utilities\Documents\Files.cs" />
+    <Compile Include="Utilities\Extensions\AsHierarchy.cs" />
+    <Compile Include="Utilities\Extensions\CopyTo.cs" />
+    <Compile Include="Utilities\Extensions\ReferenceExt.cs" />
+    <Compile Include="Utilities\Geospatial\Geo.cs" />
+    <Compile Include="Utilities\Guids\Encoder.cs" />
+    <Compile Include="Utilities\Guids\Extensions\GuidExt.cs" />
+    <Compile Include="Utilities\Imaging\ImageFunctions.cs" />
+    <Compile Include="Utilities\Documents\MWord.cs" />
+    <Compile Include="Utilities\IO\LineReader.cs" />
+    <Compile Include="Utilities\Linq\DataProducer.cs" />
+    <Compile Include="Utilities\Linq\Extensions\EnumarableExt.cs" />
+    <Compile Include="Utilities\Linq\IFuture.cs" />
+    <Compile Include="Utilities\Linq\KeyValueTuple.cs" />
+    <Compile Include="Utilities\Linq\Update.cs" />
+    <Compile Include="Utilities\Misc\Extensions\ExtensionsExt.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Numbers\Extensions\NumbersExt.cs" />
+    <Compile Include="Utilities\rar\AuditUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\Services\Tumblr.cs" />
+    <Compile Include="Utilities\Services\Twitter.cs" />
+    <Compile Include="Utilities\Text\Extensions\AnagramsExt.cs" />
+    <Compile Include="Utilities\Text\Extensions\RomanNumeralsExt.cs" />
+    <Compile Include="Utilities\Text\Extensions\StringExt.cs" />
+    <Compile Include="Utilities\Text\UnicodeRange.cs" />
+    <Compile Include="Utilities\Web\ActionValidator.cs" />
+    <Compile Include="Utilities\MVCHelpers\GravatarHelper.cs" />
+    <Compile Include="Utilities\Web\CacheUtil.cs" />
+    <Compile Include="Utilities\Web\Extensions\WebExt.cs" />
+    <Compile Include="Utilities\Web\Html.cs" />
+    <Compile Include="Utilities\Web\MyBasePageCS.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utilities\Text\Modify.cs" />
+    <Compile Include="Utilities\Web\Helper.cs" />
+    <Compile Include="Utilities\Web\HttpPost.cs" />
+    <Compile Include="Utilities\Web\IO.cs" />
+    <Compile Include="Utilities\Web\MembershipUserIDParameters.cs" />
+    <Compile Include="Utilities\Web\Mobile.cs" />
+    <Compile Include="Utilities\Web\Network.cs" />
+    <Compile Include="Utilities\Web\StaticFileVersion.cs" />
+    <Compile Include="Utilities\Web\Timers.cs" />
+    <Compile Include="Utilities\Web\UrlEncoderDecoder.cs" />
+    <Compile Include="Utilities\Web\Utilities.cs" />
+    <Compile Include="Utilities\Web\WebResourceEncoder.cs" />
+    <Compile Include="Web References\com.postalmethods.api\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\EmailFeederWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\OpsGathererWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.postalmethods.api\GetBatchDetailsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.postalmethods.api\GetBatchStatusResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.postalmethods.api\GetDetailsExtendedResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.postalmethods.api\GetDetailsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.postalmethods.api\GetPDFResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.postalmethods.api\GetStatusResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.postalmethods.api\GetUploadedFileDetailsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.postalmethods.api\PostalWS.wsdl" />
+    <None Include="Web References\com.postalmethods.api\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.postalmethods.api\SendWordMailMergeResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EmailFeederWS\EmailFeeder.wsdl" />
+    <None Include="Web References\EmailFeederWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\OpsGathererWS\OpsGatherer.wsdl" />
+    <None Include="Web References\OpsGathererWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dlls\Braintree-2.9.0.dll" />
+    <Content Include="dlls\HtmlAgilityPack.dll" />
+    <Content Include="dlls\HtmlAgilityPack.pdb" />
+    <Content Include="dlls\HtmlAgilityPack.XML" />
+    <Content Include="dlls\Json.NET.license.txt" />
+    <Content Include="dlls\Newtonsoft.Json.dll" />
+    <Content Include="dlls\Newtonsoft.Json.Net35.dll" />
+    <Content Include="dlls\Newtonsoft.Json.Net35.pdb" />
+    <Content Include="dlls\Newtonsoft.Json.Net35.xml" />
+    <Content Include="dlls\Newtonsoft.Json.pdb" />
+    <Content Include="dlls\Newtonsoft.Json.xml" />
+    <Content Include="dlls\Twitterizer.Data.dll" />
+    <Content Include="dlls\Twitterizer.Data.pdb" />
+    <Content Include="dlls\Twitterizer2.Asynchronous.dll" />
+    <Content Include="dlls\Twitterizer2.Asynchronous.pdb" />
+    <Content Include="dlls\Twitterizer2.dll" />
+    <Content Include="dlls\Twitterizer2.license.txt" />
+    <Content Include="dlls\Twitterizer2.pdb" />
+    <Content Include="dlls\Twitterizer2.XML" />
+    <None Include="Web References\com.postalmethods.api\PostalWS.disco" />
+    <None Include="Web References\OpsGathererWS\OpsGatherer.disco" />
+    <None Include="Web References\EmailFeederWS\EmailFeeder.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:1253/Utopiapimp/EmailFeeder.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\EmailFeederWS\</RelPath>
+      <UpdateFromURL>http://localhost:1253/Utopiapimp/EmailFeeder.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Boomers_EmailFeederWS_EmailFeeder</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:1448/UtopiaPimp/OpsGatherer.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\OpsGathererWS\</RelPath>
+      <UpdateFromURL>http://localhost:1448/UtopiaPimp/OpsGatherer.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Boomers_OpsGathererWS_OpsGatherer</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://api.postalmethods.com/2009-02-26/PostalWS.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.postalmethods.api\</RelPath>
+      <UpdateFromURL>https://api.postalmethods.com/2009-02-26/PostalWS.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Boomers_com_postalmethods_api_PostalWS</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Postal\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

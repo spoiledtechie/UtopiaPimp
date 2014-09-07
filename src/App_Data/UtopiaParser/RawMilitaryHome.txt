@@ -1,0 +1,142 @@
+Money: 42,001gc	Peasants: 13,149	Food: 126,489 Bushels	Runes: 98,254	NW: 231,688gc
+
+As leader of your Province, you know that the peasantry rely on you to make the critical decisions that affect their everyday lives. You also know that you cannot do this alone. Your Council of Elders helps to keep track of all the hustle and bustle within your province. They now stand before you, ready to provide you with the information you need.
+
+Select your area of inquiry:
+Affairs of the State   Military Affairs   Internal Affairs   Arts & Sciences  
+Mystic Affairs   Our History   Kingdom Growth
+
+Military Affairs
+
+Sir Tech Master, we have 5 generals available to lead our armies. One must always stay here to lead our forces in defense, but you may send the others out to combat at any time. Here is a list of our Generals' current activities and our military strength:
+
+Military Effectiveness - Our military effectiveness is determined the wage rates of our armed forces. Higher wages can drive up productivity. Any changes to pay will take time to change our efficiency.
+
+At this time, approximately 63.0% of our maximum population is allocated to non-peasant roles. Our wage rate is 200% of normal levels, and our military is functioning at 107.6% efficiency.
+
+In addition, our military strength is affected by a number of other factors including buildings, honor, spells, and more. Our net military effectiveness is as follows:
+
+Offensive Military Effectiveness: 107.7%
+Defensive Military Effectiveness: 107.6%
+Net Offensive Points at Home: 731
+Net Defensive Points at Home: 60,619
+
+Army Number:	Standing 	Army #2 	Army #3 	Army #4 	Army #5
+Status 	Available 	Unavailable
+(18.49 days) 	Unavailable
+(18.49 days) 	Unavailable
+(18.49 days) 	Unavailable
+(18.49 days)
+Soldiers 	0 	961 	0 	0 	0
+Goblins 	0 	0 	0 	0 	0
+Trolls 	8512 	0 	0 	0 	0
+Ogres 	81 	9439 	0 	0 	0
+War Horses 	151 	7981 	0 	0 	0
+Captured Land 	--- 	128 	0 	0 	0
+
+	Training - Number of Days
+Army Unit 	1 	2 	3 	4 	5 	6 	7 	8 	9 	10 	11 	12 	13 	14 	15 	16 	17 	18 	19 	20 	21 	22 	23 	24
+Goblins
+Trolls
+Ogres
+Thieves
+	-
+7
+80
+-
+	-
+7
+80
+-
+	-
+7
+82
+-
+	-
+7
+31
+-
+	-
+7
+31
+-
+	-
+7
+32
+-
+	-
+7
+31
+-
+	-
+7
+35
+-
+	-
+7
+32
+-
+	-
+7
+31
+-
+	-
+7
+33
+-
+	-
+7
+32
+-
+	-
+7
+32
+-
+	-
+7
+31
+-
+	-
+7
+32
+-
+	-
+7
+32
+-
+	-
+7
+32
+-
+	-
+7
+31
+-
+	-
+7
+34
+-
+	-
+-
+31
+-
+	-
+-
+32
+-
+	-
+-
+33
+-
+	-
+-
+-
+-
+	-
+-
+-
+-
+
+Behead this Advisor
+
+	

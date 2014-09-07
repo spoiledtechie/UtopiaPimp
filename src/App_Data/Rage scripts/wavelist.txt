@@ -1,0 +1,149 @@
+;::: WAVE LIST :::;
+;
+; PURPOSE:
+; Use this script to save information about your players online time to best pick a wave time.
+; It's perferable to keep this script in a bot, due to the fact that the host can't add information through IRC commands.
+;
+; COMMANDS:
+; Commands used in this script: !wave, !wavetimeadd, !wavetimedel
+; Use the commands in IRC to see help for the command in question.
+;
+; FILES & DIRECTORIES:
+; The script will create a text file named wavetime.txt in your default mirc save folder.
+; The script will initiate two hidden custom windows in mIRC for temporary information storage. 
+;
+; START OF SCRIPT:
+
+on 1:CONNECT: {
+  set %wavelistchan #doxp
+}
+
+on *:TEXT:!wave:%wavelistchan: {
+  notice $nick Request a wave date to be checked with 4!wave month date
+  notice $nick Where month is: jan, feb, mar, apr, may, jun, jul and date is: 1-24
+  notice $nick Example: 4!wave feb 22 
+notice $nick You can also use the optimizer by only writing: 4!wave feb }
+
+on *:TEXT:!wave *:%wavelistchan: {
+  if ($window(@wavetime) == $null) { window -Sh +n @wavetime } | if ($window(@players) == $null) { window -Sh +n @players }
+  dline @players 1-
+  dline @wavetime 1-
+  if ($3) {
+    var %wavetimelist = 1
+    if ($2 == jan) goto jan
+    if ($2 == feb) goto feb
+    if ($2 == mar) goto mar
+    if ($2 == apr) goto apr
+    if ($2 == may) goto may
+    if ($2 == jun) goto jun
+    if ($2 == jul) goto jul
+    return
+    :jan
+    if ($read(wavetime.txt,w,*// jan //*,%wavetimelist)) { var %waveline = $readn | aline @wavetime $read(wavetime.txt, %waveline) | var %wavetimelist = $calc(%waveline +1 ) | goto jan }
+    goto eval 
+    :feb
+    if ($read(wavetime.txt,w,*// feb //*,%wavetimelist)) { var %waveline = $readn | aline @wavetime $read(wavetime.txt, %waveline) | var %wavetimelist = $calc(%waveline +1 ) | goto feb }
+    goto eval 
+    :mar
+    if ($read(wavetime.txt,w,*// mar //*,%wavetimelist)) { var %waveline = $readn | aline @wavetime $read(wavetime.txt, %waveline) | var %wavetimelist = $calc(%waveline +1 ) | goto mar }
+    goto eval 
+    :apr
+    if ($read(wavetime.txt,w,*// apr //*,%wavetimelist)) { var %waveline = $readn | aline @wavetime $read(wavetime.txt, %waveline) | var %wavetimelist = $calc(%waveline +1 ) | goto apr }
+    goto eval 
+    :may
+    if ($read(wavetime.txt,w,*// may //*,%wavetimelist)) { var %waveline = $readn | aline @wavetime $read(wavetime.txt, %waveline) | var %wavetimelist = $calc(%waveline +1 ) | goto may }
+    goto eval 
+    :jun
+    if ($read(wavetime.txt,w,*// jun //*,%wavetimelist)) { var %waveline = $readn | aline @wavetime $read(wavetime.txt, %waveline) | var %wavetimelist = $calc(%waveline +1 ) | goto jun }
+    goto eval 
+    :jul
+    if ($read(wavetime.txt,w,*// jul //*,%wavetimelist)) { var %waveline = $readn | aline @wavetime $read(wavetime.txt, %waveline) | var %wavetimelist = $calc(%waveline +1 ) | goto jul }
+    goto eval  
+    :eval
+    if ($line(@wavetime,1) != $null) {
+      var %wavetimetext = $line(@wavetime,1) | var %nick = $left(%wavetimetext,$calc($pos(%wavetimetext,//,1) - 1))
+      var %date1 = $right(%wavetimetext,$calc($len(%wavetimetext) - $pos(%wavetimetext,//,2) - 1 ) )
+      var %start = $replacecs($+ XXYY,XX,0,YY,$chr(44)) | var %stop = $replacecs(XXYY,XX,$chr(44),YY,0)
+      var %date = $remove($replacecs(XXYYZZ,XX,%start,YY,%date1,ZZ,%stop),$chr(32))
+      if ($findtok(%date,$3,1,44) != $null) { aline @players %nick | dline @wavetime 1 | goto eval } 
+    dline @wavetime 1 | goto eval }
+    var %i = 1 | while (%i <= 26) { var %players = %players $line(@players,%i) | inc %i }
+    notice $nick 3~Wave time checker activated~
+    notice $nick 3Amount of avaliable players at1 $2 $3 $+ 3:1 $line(@players,0)
+    if ($line(@players,0)) notice $nick 3These players are:1 %players
+    dline @players 1-
+    dline @wavetime 1-
+  }
+  if ($3 == $null) { 
+    var %wavetimelist = 1
+    if ($2 == jan) goto jan2
+    if ($2 == feb) goto feb2
+    if ($2 == mar) goto mar2
+    if ($2 == apr) goto apr2
+    if ($2 == may) goto may2
+    if ($2 == jun) goto jun2
+    if ($2 == jul) goto jul2
+    return
+    :jan2
+    if ($read(wavetime.txt,w,*// jan //*,%wavetimelist)) { var %waveline = $readn | aline @wavetime $read(wavetime.txt, %waveline) | var %wavetimelist = $calc(%waveline +1 ) | goto jan2 }
+    goto eval2 
+    :feb2
+    if ($read(wavetime.txt,w,*// feb //*,%wavetimelist)) { var %waveline = $readn | aline @wavetime $read(wavetime.txt, %waveline) | var %wavetimelist = $calc(%waveline +1 ) | goto feb2 }
+    goto eval2 
+    :mar2
+    if ($read(wavetime.txt,w,*// mar //*,%wavetimelist)) { var %waveline = $readn | aline @wavetime $read(wavetime.txt, %waveline) | var %wavetimelist = $calc(%waveline +1 ) | goto mar2 }
+    goto eval2 
+    :apr2
+    if ($read(wavetime.txt,w,*// apr //*,%wavetimelist)) { var %waveline = $readn | aline @wavetime $read(wavetime.txt, %waveline) | var %wavetimelist = $calc(%waveline +1 ) | goto apr2 }
+    goto eval2 
+    :may2
+    if ($read(wavetime.txt,w,*// may //*,%wavetimelist)) { var %waveline = $readn | aline @wavetime $read(wavetime.txt, %waveline) | var %wavetimelist = $calc(%waveline +1 ) | goto may2 }
+    goto eval2 
+    :jun2
+    if ($read(wavetime.txt,w,*// jun //*,%wavetimelist)) { var %waveline = $readn | aline @wavetime $read(wavetime.txt, %waveline) | var %wavetimelist = $calc(%waveline +1 ) | goto jun2 }
+    goto eval2 
+    :jul2
+    if ($read(wavetime.txt,w,*// jul //*,%wavetimelist)) { var %waveline = $readn | aline @wavetime $read(wavetime.txt, %waveline) | var %wavetimelist = $calc(%waveline +1 ) | goto jul2 }
+    goto eval2 
+    :eval2
+    if ($line(@wavetime,1) != $null) {
+      var %wavetimetext = $line(@wavetime,1) | var %nick = $left(%wavetimetext,$calc($pos(%wavetimetext,//,1) - 1))
+      var %date1 = $right(%wavetimetext,$calc($len(%wavetimetext) - $pos(%wavetimetext,//,2) - 1 ) )
+      var %start = $replacecs($+ XXYY,XX,0,YY,$chr(44)) | var %stop = $replacecs(XXYY,XX,$chr(44),YY,0)
+      var %date = $remove($replacecs(XXYYZZ,XX,%start,YY,%date1,ZZ,%stop),$chr(32))
+    aline @players %date | dline @wavetime 1 | goto eval2 }
+    var %i = 1 | while (%i <= 26) { var %dates = %dates $line(@players,%i) | inc %i }
+    var %dates = $remove(%dates,$chr(32))
+    var %bestamount = 0 | var %i = 1 | while (%i <= 26) { if ($findtok(%dates,%i,0,44) > %bestamount) { var %bestamount = $findtok(%dates,%i,0,44) | var %bestdate = %i } | inc %i }
+    var %i = 1 | while (%i <= 26) { var %dates = $deltok(%dates,$findtok(%dates,%bestdate,1,44),44) | inc %i }
+    var %bestamount2 = 0 | var %i = 1 | while (%i <= 26) { if ($findtok(%dates,%i,0,44) > %bestamount2) { var %bestamount2 = $findtok(%dates,%i,0,44) | var %bestdate2 = %i } | inc %i }
+    var %i = 1 | while (%i <= 26) { var %dates = $deltok(%dates,$findtok(%dates,%bestdate2,1,44),44) | inc %i }
+    var %bestamount3 = 0 | var %i = 1 | while (%i <= 26) { if ($findtok(%dates,%i,0,44) > %bestamount3) { var %bestamount3 = $findtok(%dates,%i,0,44) | var %bestdate3 = %i } | inc %i }
+    msg $chan 3~Wave time optimizer activated~
+    msg $chan 3The best date for wave in1 $2 3is:1 $2 %bestdate $+ 3 $+ , Where1 %bestamount 3players can participate.
+    if (%bestdate2) msg $chan 3The second best date in1 $2 3is:1 $2 %bestdate2 $+ 3 $+ , Where1 %bestamount2 3players can participate.
+    if (%bestdate3)  msg $chan 3The third best date in1 $2 3is:1 $2 %bestdate3 $+ 3 $+ , Where1 %bestamount3 3players can participate.
+    dline @players 1-
+    dline @wavetime 1-
+  }
+}
+
+on *:TEXT:!wavetimeadd:%wavelistchan: {
+  notice $nick Add your online times here. Input in this format:4 !wavetimeadd jan 1,2,3,6,7,8,12,22,23,24
+  notice $nick the month is to be in 3 letter codes: jan, feb, mar, apr, may, jun, jul - and use , between the dates.
+  notice $nick Any new addition you make will overwrite your earlier info on the month in question. 
+notice $nick 4USE YOUR DEFAULT NICK WHEN YOU ADD YOUR ONLINE TIMES! }
+
+on *:TEXT:!wavetimeadd *:%wavelistchan: {
+  if ($3) {
+    write -dw" $nick // $2 //*" wavetime.txt | set -n %write write wavetime.txt $nick // $2 // $3 | write -dw" $nick // $2 //*" wavetime.txt
+    if ($2 == jan) %write | if ($2 == feb) %write | if ($2 == mar) %write | if ($2 == apr) %write 
+if ($2 == may) %write | if ($2 == jun) %write | if ($2 == jul) %write | unset %write | notice $nick You have added online time for $2 } }
+
+on *:TEXT:!wavetimedel *:%wavelistchan: {
+  if ($3 == $null) { if ($2 == all) { var %i = 1 | while (%i <= 8) { write -dw" $nick // * //*" wavetime.txt | inc %i } } }
+if ($3) { if ($2 == all) { var %i = 1 | while (%i <= 8) { write -dw" $3 // * //*" wavetime.txt | inc %i } } } }
+
+on *:TEXT:!wavetimedel:%wavelistchan: {
+  notice $nick Delete your entries by writing4 !wavetimedel all1 (this will remove all your entries from the wave time list)
+notice $nick If you want to delete another user's entries, use this command:4 !wavetimedel all nick }

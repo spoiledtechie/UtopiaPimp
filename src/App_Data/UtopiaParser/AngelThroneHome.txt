@@ -1,0 +1,47 @@
+The Province of Gangsters Paradise (6:16)
+[http://www.utopiatemple.com Angel v1.88 Beta]
+
+Server: World of Legends (Age 38)
+Utopian Date: July 12th, YR7
+RL Date: March 21st, 2008 (17:00 GMT)
+
+Ruler Name: Sir Tech Master the Warrior
+Personality & Race: The Warrior, Orc
+Land: 1,390 Acres
+Money: 22,256gc (27,243gc daily income)
+Food: 126,543 bushels
+Runes: 97,820 runes
+Population: 36,109 citizens (25.98 per Acre)
+Peasants: 12,973 (84% Building Efficiency)
+Trade Balance: 276gc (0% tax rate)
+Networth: 1,233,329 (167.86 per Acre)
+Thieves+Wizards+Science Networth: 16,984gc
+
+ME+Stance (no spells): 91.51% off. / 118.32% def.
+Soldiers: 1,042 (58.9% estimated draft rate)
+Goblins: 0
+Trolls: 8,512 (60,428 defense)
+Ogres: 10,233 (74,914 offense / 24,215 defense)
+War-Horses: 8,653 (up to 7,918 additional offense)
+Prisoners: 0
+
+Total Modified Offense: 83,786 (60.28 per Acre)
+Practical (100% elites): 83,786 (60.28 per Acre)
+Total Modified Defense: 85,876 (61.78 per Acre)
+Practical (0% elites): 61,661 (44.36 per Acre)
+
+Thieves: 1,491 (1.07 per Acre / 49% Stealth)
+Wizards: 1,858 (1.34 per Acre / 86% Mana)
+
+Crystal-Ball on your province will show:
+Max. Possible Thieves/Wizards: 4,246 (3.05 / Acre)
+Estimated Thieves Number: 1,698 (1.22 per Acre)
+Estimated Wizards Number: 637 (0.46 per Acre)
+
+Buildings: 1,253gc to build, 698gc to raze
+Away bonus: 64,865gc (12h) / 194,595gc (20h)
+
+** Export Line [ver 14] -- Crystal-Ball [ver 35]: **
+I-Rh,T]3Kj!K]y]STi3otx9PR4}D'sADq2s|xx'DeP1n?o1IK
+sqfB2?-6,$ASJ|}!Brc|8yyoc"0DT3i71?0
+

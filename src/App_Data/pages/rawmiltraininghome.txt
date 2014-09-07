@@ -1,0 +1,50 @@
+
+Version: 3685
+Game LobbyWoL
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail
+Forum
+War Forum
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+69	10,457	107,810	2,394	344,793	2,094	164.658
+MILITARY TRAINING
+Military Advisor
+Lord Virgilio, you require a military presence to both defend your lands and conquer your enemies. A strong and sustainable military is the key to survival, so train your troops wisely.
+If you feel our military is too large, you can also release troops back into the peasantry at any time, where they can work the land and raise families.
+You can learn more about the options available in the guide and can check the status of military recruitment and training on the Military Advisor page.
+
+Total money	69 gold coins
+Total population	54,637
+Peasant population	10,457 (19.1% of total)
+Military & Thief population	38,287 (70.1% of total)
+Wizard population	5,893 (10.8% of total)
+Number of soldiers	4,062
+Free specialist credits left	0
+Train
+Release
+Draft rate:	
+Draft target (%):	
+Wage (%):	
+Unit (Off/Def)	You Own	Training	Cost	Max	Train
+Swordsmen (4/0)	0	0	350gc	0	
+Archers (0/6)	16,760	0	350gc	0	
+Knights (8/3)	12,797	0	800gc	0	
+Thieves (0/0)	4,668	0	600gc	0	
+Accelerated Training (double cost) 
+

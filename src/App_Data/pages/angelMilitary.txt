@@ -1,0 +1,28 @@
+Military Intelligence on Aeneid (4:40)
+[http://www.utopiatemple.com Angel v2.03 Beta]
+
+Server: World of Legends (Age 48)
+Ruler Name: The Humble Lord Virgilio
+Personality & Race: The Shepherd, Human
+
+** Summary **
+Non-Peasants: 80.6%
+Efficiency (SoM): 120.4% off, 127.5% def, 107.8% raw
+Net Offense at Home (from Utopia): 128,134
+Net Defense at Home (from Utopia): 182,291
+Modified Attack points (calculated): 128,154
+Modified Defense points (calculated): 182,342
+
+** Standing Army (At Home) **
+Soldiers: 4,062 (4,891 offense / 5,179 defense)
+Archers: 16,760 (128,214 defense)
+Knights: 12,797 (123,261 offense / 48,949 defense)
+War Horses: 2 (up to 2 additional offense)
+Total Attack points: 128,154
+Total Defense points: 182,342
+%
+Efficiency (SoM): 120.4% off, 127.5% def, 107.8% raw
+Net Offense at Home (from Utopia): 128,134
+Net Defense at Home (from Utopia): 182,291
+Modified Attack points (calculated): 128,154
+Modified Defense points (calculated): 182,342

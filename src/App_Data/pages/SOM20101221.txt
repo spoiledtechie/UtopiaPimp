@@ -1,0 +1,190 @@
+Version: 3767
+Game LobbyWoL
+
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail ?
+Forum
+War Forum
+Kingdom Chat
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+151	9,650	13,368	11,873	80,171	800	100.214
+MILITARY TRAINING
+Military Advisor
+Im a Nerd, you require a military presence to both defend your lands and conquer your enemies. A strong and sustainable military is the key to survival, so train your troops wisely.
+If you feel our military is too large, you can also release troops back into the peasantry at any time, where they can work the land and raise families.
+You can learn more about the options available in the guide and can check the status of military recruitment and training on the Military Advisor page.
+
+Total money	151 gold coins
+Total population	18,959
+Peasant population	9,650 (50.9% of total)
+Military & Thief population	9,035 (47.7% of total)
+Wizard population	274 (1.4% of total)
+Number of soldiers	3,417
+Free specialist credits left	0
+Train
+Release
+Draft rate:	
+Draft target (%):	
+Wage (%):	
+Unit (Off/Def)	You Own	Training	Cost	Max	Train
+Warriors (5/0)	0	0	246gc	0	
+Axemen (0/5)	1,744	424	246gc	0	
+Berserkers (7/4)	43	175	563gc	0	
+Thieves (0/0)	305	130	600gc	0	
+Accelerated Training (double cost) 
+
+
+
+
+
+
+
+
+
+Military Intelligence on John Belushi (7:20)
+[http://www.utopiatemple.com Angel v2.04 Alpha 1]
+
+Server: World of Legends (Age 49)
+Ruler Name: Im a Nerd the Warrior
+Personality & Race: The Warrior, Dwarf
+
+** Summary **
+Non-Peasants: 45.3%
+Efficiency (SoM): 123.7% off, 91.2% def, 107.3% raw
+Net Offense at Home (from Utopia): 4,601
+Net Defense at Home (from Utopia): 11,228
+Modified Attack points (calculated): 25,048
+Modified Defense points (calculated): 19,473
+Total Captured Land: 74
+
+** Standing Army (At Home) **
+Soldiers: 3,417 (4,227 offense / 3,116 defense)
+Axemen: 1,744 (7,953 defense)
+Berserkers: 43 (372 offense / 157 defense)
+Total Attack points: 4,599
+Total Defense points: 11,226
+
+** Army #2 (Back in 11:10 hours) **
+Warriors: 114 (705 offense)
+Berserkers: 1,755 (15,197 offense / 6,402 defense)
+War Horses: 558 (690 offense)
+Total Attack points: 16,592
+Captured Land: 59 Acres
+
+** Army #3 (Back in 11:14 hours) **
+Berserkers: 365 (3,161 offense / 1,332 defense)
+Captured Land: 5 Acres
+
+** Army #4 (Back in 9:35 hours) **
+Soldiers: 282 (349 offense / 257 defense)
+Captured Land: 5 Acres
+
+** Army #5 (Back in 9:35 hours) **
+Soldiers: 281 (348 offense / 256 defense)
+Captured Land: 5 Acres
+
+** Troops in Training **
+Axemen: 424 (1,933 defense)
+Next 12 hours: 40 39 39 41 39 40 39 13 14 13 13 14...
+Berserkers: 175 (1,515 offense / 638 defense)
+Next 14 hours: 10 10 9 9 10 10 10 10 9 10 10 10 10 9...
+Thieves: 130
+Next 13 hours: 10 10 10 10 10 10 10 10 10 10 10 10 10
+
+
+
+
+
+
+
+
+Version: 3767
+Game LobbyWoL
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail ?
+Forum
+War Forum
+Kingdom Chat
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+151	9,650	13,368	11,873	80,171	800	100.214
+JOHN BELUSHI OF THE CLUB WAR (7:20)
+Throne
+State
+Military
+Buildings
+Science
+Mystics
+History
+MILITARY AFFAIRS OF JOHN BELUSHI
+Im a Nerd the Warrior, we have 5 generals available to lead our armies. One must always stay here to lead our forces in defense, but you may send the others out to combat at any time.
+Our Generals' current activities and our military strength is detailed below.
+
+Wage Rate
+
+Our military effectiveness is determined by the wage rates of our armed forces. Higher wages can drive up productivity. Any changes to pay will take time to change our efficiency.
+
+At this time, approximately 45.3% of our maximum population is allocated to non-peasant roles. Our wage rate is 200.0% of normal levels, and our military is functioning at 107.3% efficiency.
+
+Military Strength
+
+In addition, our military strength is affected by a number of other factors including buildings, honor, spells, and more. Our net military effectiveness is as follows:
+
+Offensive Military Effectiveness	123.7%
+Defensive Military Effectiveness	91.2%
+Net Offensive Points at Home	4,601
+Net Defensive Points at Home	11,228
+Army Availability
+
+Standing Army	 Army #1
+(11.16 days left)	 Army #2
+(11.23 days left)	 Army #3
+(9.58 days left)	 Army #4
+(9.58 days left)
+Generals	1	1	1	1	1
+Soldiers	3,417	0	0	282	281
+Warriors	0	114	0	0	0
+Axemen	1,744	-	-	-	-
+Berserkers	43	1,755	365	0	0
+War Horses	0	558	0	0	0
+Captured Land	-	59	5	5	5
+Military Training Estimates
+
+Im a Nerd the Warrior, the table below shows our training estimates for the next 24 days.
+
+1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24
+Warriors																								
+Axemen	40	39	39	41	39	40	39	13	14	13	13	14	13	14	13	13	14	13						
+Berserkers	10	10	9	9	10	10	10	10	9	10	10	10	10	9	9	10	10	10						
+Thieves	10	10	10	10	10	10	10	10	10	10	10	10	10

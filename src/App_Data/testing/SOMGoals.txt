@@ -1,0 +1,16 @@
+arc>	Logic is simple: (1) look at 2 most recent SoMs. If they resolve, use that as def until army returns home.
+	<arc>	(2) if it doesn't resolve, look at SoMs #2 and #3
+	<arc>	etc
+	<Catwalk>	1) Translate based on the last two
+	<Catwalk>	2) If you get everything translated, stop and display results
+	<Catwalk>	3) If you get no results, stop and display mismatch
+	<Catwalk>	4) If you get multiple results on either army or defense, try adding the next SoM
+	<Catwalk>	5) repeat
+
+
+
+
+Catwalk>	1) Only use SoMs submitted together (let the user look up previous SoMs to reuse)
+	<SpoiledTechie>	this is what im going with
+	<Catwalk>	2) Translate automatically based on stored SoMs
+	<Catwalk>	3) Let the user tick off which SoMs to use for translation

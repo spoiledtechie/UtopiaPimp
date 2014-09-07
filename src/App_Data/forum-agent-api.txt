@@ -1,0 +1,273 @@
+
+
+<== To read this document properly, make sure this fits in one line ==>
+
+
+***********************************************************************
+***[ UTOPIA ANGEL: FORUM AGENT . . . . ]*******************************
+***[ CUSTOM API PROTOCOL SPECIFICATION ]*******************************
+***[ VERSION 1 (4 June 2004) . . . . . ]*******************************
+***********************************************************************
+
+Introduction:
+-------------
+The Forum Agent is a module of Utopia Angel, for automatically posting
+intel (CB, SoM, Survey and SoS) into external message boards. The
+Forum Agent supports many message boards which are available on the
+Internet, such as Avid Gamers, ezboard, vBulletin, phpBB, Invision
+Board, and so on.
+
+This document describes how to create your own API to interface with
+the Forum Agent module, in order to collect its intel and store it in
+your own database. We assume that you have adequate programming
+knowledge and a suitable environment installed (web-server, scripting
+language, database, etc).
+
+To simplify things, sample scripts in various languages are included
+to this package. However, it is still strongly recommended to fully
+read the protocol specification beforehand.
+
+
+Protocol Overview:
+------------------
+The Forum Agent Custom API Protocol ("the protocol") consists of 3
+stages:
+
+    1. HANDSHAKE
+    2. LOGIN
+    3. INTEL POSTING
+
+These 3 stages are executed in minimum 2 HTTP requests, where the
+HANDSHAKE is independent, and the LOGIN and the INTEL POSTING stages
+are executed together.
+
+The 3 stages will be referred to as "session" in this document.
+
+All variables sent by the Forum Agent module to the server are sent
+using the HTTP POST request, and are URL encoded as required by the
+HTTP protocol.
+
+
+1. HANDSHAKE
+------------
+The session begins with the client connecting to the server, trying to
+figure out if the application running on the server is recognized as a
+supported forum software or a valid custom API. A custom API should
+identify itself by planting the following string anywhere on the result
+page:
+
+    [FORUM AGENT API]
+
+NOTE: Case is important, and must appear exactly as written above.
+
+TIP: You can "hide" the header string inside an HTML page by placing it
+inside HTML comment tags; this way if a human user accesses the API
+page on your server, you can provide him with instructions on how to
+set up his Forum Agent module, while the Forum Agent itself will detect
+the API header string and act accordingly.
+
+Additionally, you can include Forum Agent Instructions at this stage.
+As always, they are flexible and can appear anywhere on the page as
+well.
+
+The following Forum Agent instruction must be included:
+
+    FORUMAGENT:api_engine_version="(integer)"
+
+The following Forum Agent instructions are recommended to be included:
+
+    FORUMAGENT:minimum_forum_agent_version="(integer)"
+    FORUMAGENT:bulk_mode="(boolean)"
+
+Consult the Forum Agent manual for more information about the Forum
+Agent Instructions, or APPENDIX A for specific details on these 3
+instructions.
+
+
+2. LOGIN
+--------
+After a successful HANDSHAKE, the client returns to the server with
+login information and the intel to post. The login stage includes the
+following variables, as filled-in by the user in the Forum Agent Boards
+Management section.
+
+    username
+    password
+    forum_name
+    forum_password
+
+NOTE: The "forum_name" variable has no significance. The API may ignore
+it, or use it in conjunction with the "alternative_forum_by_location"
+instruction to identify the intel based on the kingdom location.
+
+The server API should verify these variables and return the following
+string if the login is successful:
+
+    +LOGIN
+
+Otherwise, if the login fails for any reason, the following string
+should be returned:
+
+    -LOGIN
+
+In this case, you may include the failure reason, for example:
+
+    -LOGIN Invalid username/password combination!
+
+If the login fails, the script should exit immediately and stop
+performing any additional operations. However, if the login is
+successful, the script should process the intel, as described in the
+next section.
+
+If the login is successful, the server may send one or multiple cookies
+to the client, which will be returned to it in each client request
+during the session. If cookies are involved, the client will cease
+sending the authentication variables ("username", "password",
+"forum_name", "forum_password") in each request, and send the cookie(s)
+instead.
+
+
+3. POST INTEL
+-------------
+The Forum Agent module supports 2 methods of sending the intel to the
+Custom API, determined by the "bulk_mode" instruction. If this
+instruction is omitted, it is disabled by default.
+
+
+*** BULK_MODE OFF ***
+
+If "bulk_mode" is disabled, the client will begin sending each item
+one-by-one, using the following variables:
+
+    province  --> The province name (without location)
+    kingdom   --> The kingdom number
+    island    --> The island number
+    title     --> The subject of the post
+    data      --> The body of the post
+
+If the storage is successful, the server should respond with any string
+starting with "+", for example:
+
+    +0
+
+Otherwise, it should respond with any string starting with "-", for
+example:
+
+    -0
+
+In this case, you may include the failure reason, in this format: "-",
+followed by an optional number, followed by the failure reason. For
+example:
+
+    -0 The database is currently down, try again later!
+
+NOTE: We used "0" as the optional number in this example, but in fact
+you can omit the number altogether, or use any other number, as long as
+"bulk_mode" is disabled.
+
+
+*** BULK_MODE ON ***
+
+If "bulk_mode" is enabled, the client will send all the intel in one
+pass, using the following variable:
+
+    bulk_data
+
+This variable includes all the intel of all the provinces being sent to
+the server. The data is separated by 2 delimiters:
+
+    RECORD DELIMITER = ASCII character #30
+    GROUP DELIMITER = ASCII character #29
+
+The record elements are sent in the following order (<RD> represents
+the RECORD delimiter):
+
+    index <RD> province <RD> kingdom <RD> island <RD> forum_name <RD>
+    title <RD> body
+
+NOTE: The "forum_name" variable has no significance. The API may ignore
+it, or use it in conjunction with the "alternative_forum_by_location"
+instruction to identify the intel based on the kingdom location.
+
+Multiple records are sent as follows (RECORD represents the record line
+as described above; <GD> represents the GROUP delimiter):
+
+    RECORD1 <GD> RECORD2 <GD> RECORD3 <GD>...
+
+In this case, the response should be the combined results for all the
+items, in the following format:
+
+    +0
+    +1
+    +2
+    -3
+    -4
+    +5
+
+And so on. Failed results may include a reason:
+
+    -3 Error connecting to database
+    -4 Error processing this item
+
+The results should be separated by a new line. New line is represented
+by at least one carriage return character (ASCII #13, "\r") and/or at
+least one linefeed character (ASCII #10, "\n").
+
+Notice: Returning a negative response will keep the item in the
+client's queue, resulting in this item being resent over and over again
+in subsequent sessions, until a positive response is returned.
+Therefore, if you are rejecting a specific intel and don't want it to
+be resent, you should return a positive response.
+
+
+APPENDIX A
+----------
+Forum Agent Instructions Manual:
+
+(*) All Instructions
+http://forums.utopiatemple.com/forumdisplay.php?forumid=76
+
+(*) "api_engine_version"
+http://forums.utopiatemple.com/showthread.php?threadid=50765
+
+(*) "minimum_forum_agent_version"
+http://forums.utopiatemple.com/showthread.php?threadid=39913
+
+(*) "bulk_mode"
+http://forums.utopiatemple.com/showthread.php?threadid=50766
+
+
+APPENDIX B
+----------
+Sample session ("bulk_mode" enabled):
+                    
+** Legend **
+<RD> represents the RECORD delimiter
+<GD> represents the GROUP delimiter
+>> Data sent from the client to the server
+<< Data received from the server to the client
+
+>> http://yoursite.com/forum-agent-api.php
+
+<< [FORUM AGENT API]
+<< FORUMAGENT:api_engine_version="1"
+<< FORUMAGENT:minimum_forum_agent_version="19"
+<< FORUMAGENT:bulk_mode="yes"
+
+>> username=Brother%20Green
+>> password=my_password
+>> forum_name=Forum%20Agent
+>> forum_password=
+>> bulk_data=0<RD>Some%20Province<RD>12<RD>34<RD>Forum%20Agent<RD>
+             Some%20Province%20(12:34)%20[HU]%20-%20570%20Acres<RD>
+             <province data><GD>1<RD>Another%20Province<RD>5<RD>6<RD>
+             Forum%20Agent<RD>
+             Another%20Province%20(5:6)%20[EL]%20-%202,310%20Acres<RD>
+             <province data><GD>
+
+<< +LOGIN
+<< +0
+<< -1 Error storing this item
+
+
+[End of document]

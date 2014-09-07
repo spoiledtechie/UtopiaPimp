@@ -1,0 +1,65 @@
+﻿
+Version: 3789
+Game LobbyWoL
+
+ 
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Dragons
+Mail
+Forum
+Kingdom Chat
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+725	22,834	478,159	367,111	467,138	2,985	156.495
+KINGDOM NEWS
+Province News
+Kingdom News
+The Daily Paper lists the various happenings throughout your kingdom. Included are important activities such as attacks, deaths, and changes in relations with your kingdom.
+
+Legend
+Intra-Kingdom Conflict	Relations News	
+Actions against our Kingdom	Dragon News	
+Actions by our Kingdom	Obituaries	
+The Kingdom Reporter
+< July YR7 Edition January YR8 Edition
+January 1 of YR8	 Gummy Bear has sent an aid shipment to Pauly Shore.
+January 1 of YR8	 Gummy Bear has sent an aid shipment to Miley Cyrus.
+January 1 of YR8	 Gummy Bear has sent an aid shipment to Rosie ODonnell.
+January 1 of YR8	 Gummy Bear has sent an aid shipment to Michael Jackson.
+January 4 of YR8	 Jean-Claude Van Damme has sent an aid shipment to John Paul Jones.
+January 1 of YR8	 Ralph Macchio (7:20) recaptured 80 acres of land from Lynx (6:11).
+January 1 of YR8	 An unknown province from F u n S h o w (7:20) captured 355 acres of land from Cepheus (6:11).
+January 2 of YR8	 An unknown province from -- Evilution Hostile -- (6:11) invaded Pamela Anderson (7:20) and captured 395 acres of land.
+January 3 of YR8	 An unknown province from F u n S h o w (7:20) captured 458 acres of land from Ursa Major (6:11).
+January 3 of YR8	 An unknown province from F u n S h o w (7:20) captured 480 acres of land from Draco (6:11).
+January 3 of YR8	 Jean-Claude Van Damme (7:20) captured 242 acres of land from Chamaeleon (6:11).
+January 3 of YR8	 An unknown province from F u n S h o w (7:20) captured 147 acres of land from Ara (6:11).
+January 3 of YR8	 An unknown province from F u n S h o w (7:20) captured 176 acres of land from Atlas (6:11).
+January 4 of YR8	 An unknown province from F u n S h o w (7:20) captured 124 acres of land from Atlas (6:11).
+January 4 of YR8	 An unknown province from F u n S h o w (7:20) captured 398 acres of land from WTF Constellations (6:11).
+January 4 of YR8	 An unknown province from F u n S h o w (7:20) captured 207 acres of land from WTF Constellations (6:11).
+January 5 of YR8	 An unknown province from -- Evilution Hostile -- (6:11) invaded Milli Vanilli (7:20) and captured 303 acres of land.
+January 5 of YR8	 An unknown province from F u n S h o w (7:20) captured 354 acres of land from Delphinus (6:11).
+January 6 of YR8	 Amy Winehouse (7:20) captured 136 acres of land from Serpens (6:11).
+January 6 of YR8	 Gary Busey (7:20) captured 146 acres of land from Andromeda (6:11).
+January 6 of YR8	 David Hasselhoff (7:20) captured 302 acres of land from Delphinus (6:11).
+January 7 of YR8	 An unknown province from -- Evilution Hostile -- (6:11) invaded Alice Cooper (7:20) and captured 267 acres of land.
+
+ 
+
+ 

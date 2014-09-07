@@ -1,0 +1,29 @@
+from xx in Utopia_Kingdom_CEs
+from yy in Utopia_Kingdom_CE_Type_Pulls
+where yy.Uid == xx.CE_Type
+select new {xx.Owner_Kingdom_ID, xx.Source_Province_Name,
+xx.Target_Province_Name,
+xx.Raw_Line,
+yy.CE_Type}
+
+
+from xx in Utopia_Province_Notes
+select new {xx.Province_ID, xx.Note, xx.Added_By_Province_ID, xx.Added_By_DataTime}
+
+
+from xx in Utopia_Province_Ops
+from yy in Utopia_Province_Ops_Pulls
+where xx.Op_ID == yy.Uid
+select new {xx.OP_Text, 
+yy.OP_Name, 
+xx.TimeStamp, 
+xx.Directed_To_Province_ID, 
+xx.Duration,
+xx.Owner_Kingdom_ID,
+xx.Added_By_Province_ID}
+
+
+Utopia_Province_Data_Captured_Sciences.Take (50)
+Utopia_Province_Data_Captured_Surveys.Take (50)
+Utopia_Province_Data_Captured_Type_Militaries.Take (50)
+Utopia_Province_Data_Captured_Attacks.Take (50)

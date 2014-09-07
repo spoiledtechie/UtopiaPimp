@@ -1,0 +1,11 @@
+BODY { background-image: url('http://utopia.swirve.com/gr/bk.jpg'); background-repeat: no-repeat; background-position: center; background-attachment: fixed; }
+BODY, TABLE {font-family: verdana,arial; font-size: 13px}
+INPUT, SELECT {font-family: verdana,arial; font-size: 11px}
+.small {font-size: 12px}
+.xsmall {font-size: 11px}
+.gray {color: #b0b0b0}
+.black {color: #000000}
+.y {color: #ffeecc; font: bold}
+.title {background: #400000; font: bold}
+.bluetitle {background: #000040; font: bold}
+

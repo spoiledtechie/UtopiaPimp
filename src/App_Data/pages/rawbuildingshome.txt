@@ -1,0 +1,60 @@
+
+Version: 3685
+Game LobbyWoL
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail
+Forum
+War Forum
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+69	10,457	107,810	2,394	344,793	2,094	164.658
+BUILDINGS
+Internal Affairs Advisor
+Building infrastructure is absolutely vital to the long term growth of our province. Here you may order the construction different types of buildings, or choose to destoy some buildings so that you can use the land for other purposes. More can be learned about benefits of each building from the guide and the Internal Affairs council page.
+
+Total Land	2,094 acres
+Total Undeveloped land	686 acres
+Construction Time	22 days
+Free Building Credits	0
+Construction Cost	1,288gc per acre
+Maximum Buildable Now	0 acres
+Raze Cost	873gc per acre
+Maximum Razeable Now	0 acres
+Build
+Raze
+Building	You Own	In Progress		Building	You Own	In Progress	
+Homes	0	0		Farms	17	0	
+Mills	0	0		Banks	125	75	
+Training Grounds	197	15		Armouries	0	0	
+Military Barracks	235	45		Forts	414	0	
+Guard Stations	0	0		Hospitals	154	0	
+Guilds	72	0		Towers	59	0	
+Thieves' Dens	0	0		Watch Towers	0	0	
+Libraries	0	0		Schools	0	0	
+Stables	0	0		Dungeons	0	0	
+Accelerated Construction (Double Cost and/or use of Free Building Credits).
+
+
+
+ 
+res
+Raze Cost	873gc per acre
+Maximum Razeable Now	0 acres
+Build
+Raze
+Building	You Own	In Progress		Building	You 

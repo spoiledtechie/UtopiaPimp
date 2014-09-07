@@ -1,0 +1,41 @@
+The Province of CITY OF SHADOWS (22:40) as of July 12th, YR7.
+Race	Gnome	--- 	Soldiers	927
+Ruler	The Humble Sir HUNG LOW	--- 	Halflings	4839
+Land	1414 Acres	--- 	Pikemen	9464
+Peasants	21,444	--- 	Golems	3949
+Building Eff.	107%	--- 	Thieves	Unknown
+Money	352,715gc	--- 	Wizards	Unknown
+Food	328,740 bushels	--- 	War Horses	1429
+Runes	8946 runes	--- 	Prisoners	0
+Trade Balance	-1,247,945gc	--- 	Off. Points	59,837
+Service Level	Unknown	--- 	Def. Points	88,108
+
+From what we see, this province has been attacked moderately in the last month.
+
+Remember, there are few rewards for attacking a badly hit province, as the easy to capture resources have already been taken.
+
+
+
+
+Your wizards gather their runes and begin casting. The spell consumes 162 Runes and ... is successful! Our crystal ball shows ...
+The Province of Visitor Q (17:24) as of January 15th, YR8.
+Race	Orc	--- 	Soldiers	51
+Ruler	Noble Lady Robin the Warrior	--- 	Goblins	0
+Land	1083 Acres	--- 	Trolls	9420
+Peasants	6996	--- 	Ogres	8990
+Building Eff.	76%	--- 	Thieves	Unknown
+Money	631,525gc	--- 	Wizards	Unknown
+Food	193,840 bushels	--- 	War Horses	4750
+Runes	45,443 runes	--- 	Prisoners	251
+Trade Balance	201,491gc	--- 	Off. Points	88,917
+Service Level	Unknown	--- 	Def. Points	87,457
+
+From what we see, this province has not been noticably attacked recently.
+
+Remember, there are few rewards for attacking a badly hit province, as the easy to capture resources have already been taken.
+
+
+
+	
+
+	

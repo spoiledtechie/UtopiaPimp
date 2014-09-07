@@ -1,0 +1,289 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="main.master.cs" Inherits="main" %>
+
+<%@ Register Assembly="Boomers" Namespace="Boomers.Utilities.Web" TagPrefix="cc3" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>UtopiaPimp <%: AssemblyID.Version %> - on IRC at #Utopiapimp</title>
+    
+    <asp:Literal runat="server" ID="ltCSS"></asp:Literal>
+    <%--<link href="CSS/Default.css" rel="stylesheet" type="text/css" />--%>
+    <link rel="shortcut icon" href="http://codingforcharity.org/utopiapimp/img/favicon.ico"
+        type="image/x-icon">
+        <%# MvcMiniProfiler.MiniProfiler.RenderIncludes() %>
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+    <script src="http://codingforcharity.org/libs/jquery/jquery-1.3.2.min.js" type="text/javascript"></script>
+    <script src="http://codingforcharity.org/libs/jquery/jquery-timer.js" type="text/javascript"></script>
+    <script src="http://codingforcharity.org/controls/IMNet/js/utilities.js?v=<%= SupportFramework.StaticContent.JavaScript.JsVersion %>"
+        type="text/javascript"></script>
+    <%--<script src="http://codingforcharity.org/utopiapimp/js/Master.js?v=<%= SupportFramework.StaticContent.JavaScript.JsVersion %>"
+        type="text/javascript"></script>--%>
+    <script src="../js/Master.js" type="text/javascript" ></script>
+    <script src="http://codingforcharity.org/libs/jquery/jquery.idtabs.js?v=<%= SupportFramework.StaticContent.JavaScript.JsVersion %>"
+        type="text/javascript"></script>
+    <script src="http://www.projectwonderful.com/ad_display.js" type="text/javascript"></script>
+     
+            <script src="http://codingforcharity.org/libs/jquery/jquery.metadata.js"  type="text/javascript"></script>
+            <script src="http://codingforcharity.org/libs/jquery/jquery.tablesorter.min.js"  type="text/javascript"></script>
+            <script src="http://codingforcharity.org/utopiapimp/js/jquery-ui-1.7.2.custom.min.js"  type="text/javascript"></script>
+            <script src="http://codingforcharity.org/libs/getElementByClass/getElementsByClassName-1.0.1.js"  type="text/javascript" ></script>
+        
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
+        <Services>
+            <asp:ServiceReference Path="~/controls/MainMaster.asmx" />
+        </Services>
+    </asp:ScriptManager>
+        
+    <div id="divAddTop" class="divAdTopRight">
+      <% if (Boomers.Utilities.Compare.CompareExt.getRandomTrueFalse())
+         { %>
+        <script type="text/javascript">
+            getTopAd("true");
+        </script>
+        <%}
+         else
+         { %>
+         <script type="text/javascript"><!--
+             google_ad_client = "ca-pub-6494646249414123";
+             /* PostSecretLeaderBoard */
+             google_ad_slot = "1867020116";
+             google_ad_width = 728;
+             google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+        <%} %>
+    </div>
+    <%--<div>
+        <a style="background-color: Green;" href="http://getsatisfaction.com/utopiapimp/topics/tpa_wpa_after_affairs_copy_pasting">
+            If you know anything about the WPA and TPA forumlas, PLEASE READ.</a></div>--%>
+        <a href="https://github.com/spoiledtechie/UtopiaPimp"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"></a>
+        
+    <div class="topLinks">
+        <div class="divCurrentDate" id="liUtopianDateTime">
+            <asp:Label runat="server" ID="lblCurrentDate"></asp:Label>
+        </div>
+        <span id="spMonarch" runat="server"></span>
+        <div class="topLinksFloatRight">
+            <asp:LoginName ID="LoginName1" runat="server" />
+            :
+            <asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggingOut="LoginStatus1_LoggingOut" />
+            :
+            <asp:DropDownList ID="ddlSelectProvince" runat="server" EnableViewState="true" DataTextField="Province_Name"
+                DataValueField="Province_ID" AutoPostBack="True" AppendDataBoundItems="true"
+                OnSelectedIndexChanged="ddlSelectProvince_SelectedIndexChanged">
+                <asp:ListItem Text="" Value=""></asp:ListItem>
+            </asp:DropDownList>
+            <asp:LinkButton ID="lbRemoveProvince" runat="server" EnableViewState="true" OnClientClick="return confirm('Are you sure you want to Delete this Province?');"
+                Text="Delete Prov." OnClick="lbRemoveProvince_Click"></asp:LinkButton>
+        </div>
+        <asp:Label ID="lblOwnerID" runat="server"></asp:Label>
+    </div>
+    <div class="divContainer">
+        <div id="usual1" class="usual">
+            <ul class="mainTabs">
+                <li><a href="#tab1">Tools</a></li>
+                <asp:Literal ID="ltTabs" runat="server"></asp:Literal>
+                <li>
+                    <map name="admap38154" id="admap38154">
+                        <area href="http://www.projectwonderful.com/out_nojs.php?r=0&amp;c=0&amp;id=38154&amp;type=2"
+                            shape="rect" coords="0,0,100,25" title="" alt="" target="_blank" />
+                    </map>
+                    <img style="padding-top: 4px;" src="http://www.projectwonderful.com/nojs.php?id=38154&amp;type=2"
+                        width="100" height="25" usemap="#admap38154" border="0" alt="" />
+                </li>
+            </ul>
+            <div id="tab1">
+                <ul>
+                    <li>Tools:</li>
+                    <li>
+                        <asp:Literal ID="ltIRCJava" runat="server"></asp:Literal>
+                    </li>
+                    <li>
+                        <asp:Literal ID="ltIRCWeb" runat="server"></asp:Literal>
+                    </li>
+                    <li><a href="http://py.<%=  SupportFramework.StaticContent.URLClass.GetDomain.Replace("www.","") %>/surf.aspx?dec=1&url=uh4QwdELmTpQvTbFs5RDsqRBmC0Lv3==B6X!"
+                        target="_blank">Proxy</a></li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink16" runat="server" NavigateUrl="~/Other/TargetFinder.aspx"
+                            Target="_blank">Target Finder</asp:HyperLink>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Personal:</li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink15" runat="server" NavigateUrl="~/members/Profile.aspx">Your Account</asp:HyperLink></li>
+                        
+                    <li>
+                        <asp:HyperLink ID="hlUpdateColumns" runat="server" NavigateUrl="~/members/Columns2.aspx">Choose Columns</asp:HyperLink></li>
+                        <li>
+                        <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/members/NotifierPreferences.aspx">Notifications</asp:HyperLink></li>
+                </ul>
+                <ul>
+                    <li>Kingdom:</li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/members/Contacts.aspx">Contacts</asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="~/members/Voting.aspx">Monarch Voting</asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="hlAddKingdom" runat="server" NavigateUrl="~/members/kingdom.aspx?id=ak">Add My Kingdom</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/members/kingdom.aspx?id=jn">Join a Kingdom</asp:HyperLink></li>
+                </ul>
+                <%                     
+                    if (new Pimp.UData.PimpUserWrapper ().PimpUser.MonarchType != PimpLibrary.Static.Enums.MonarchType.none && new Pimp.UData.PimpUserWrapper ().PimpUser.MonarchType != PimpLibrary.Static.Enums.MonarchType.kdMonarch)
+                               {
+                %>
+                <ul>
+                    <li>Monarch:</li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/members/monarchs.aspx?id=pc">Codes</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/members/monarchs.aspx?id=kl">Retire KD's</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/members/monarchs.aspx?id=rp">Remove Prov.</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/members/monarchs.aspx?id=am">Sub-Mons.</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/members/monarchs.aspx?id=irc">IRC Settings</asp:HyperLink></li>
+                </ul>
+                <% 
+                    } %>
+            </div>
+            <asp:Literal ID="ltDiv" runat="server"></asp:Literal>
+        </div>
+        <script type="text/javascript">
+            $("#usual1 ul").idTabs();
+        </script>
+        <div class="divAddDataBox" id="divAddData" runat="server">
+            <textarea id="tbAddInfo" rows="2" cols="20" class="AllDescriptionFields"></textarea><br />
+            <input id="btnAddInfo" type="button" onclick="javascript:AddDatajs();" value="Add Data" /><input
+                id="btnClearInfo" type="button" value="Clear" onclick="javascript:ClearBox();" />
+            <a href="javascript:showLegendAddData()">Legend</a>
+            
+        </div>
+        <div class="divContentContainer">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="divLoggedInLinks">
+            <ul class="ulLoggedInLinks">
+                <li class="Bold">Quick Links:</li>
+                <li>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/members/Default.aspx">Home</asp:HyperLink></li>
+                <%--<li>
+                    <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/forum/DefaultIn.aspx">Forum</asp:HyperLink></li>--%>
+                <li>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/anonymous/Help.aspx">Help!</asp:HyperLink></li>
+                <li>
+                    <asp:HyperLink ID="hlPrivacyLoggedIn" runat="server" NavigateUrl="~/anonymous/privacy.aspx">Privacy Policy</asp:HyperLink></li>
+                <%--     <li class="liLoggedInlinks">
+                    <asp:LinkButton ID="lbComment" runat="server">Send a Comment</asp:LinkButton></li>--%>
+                <% if (new Pimp.UData.PimpUserWrapper ().PimpUser.IsUserAdmin)
+                   { %><li>
+                       <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/admin/Default.aspx">Admin</asp:HyperLink></li>
+                <% } %>
+            </ul>
+            <ul class="ulLoggedInLinks">
+                <li class="Bold">Utopian Sites:</li>
+                <li><a target="_blank" href="http://utopia-game.com/wol/game/throne">Utopia WoL</a></li>
+                <li><a target="_blank" href="http://utimes.info/">uTimes</a></li>
+                <li><a target="_blank" href="http://www.facebook.com/group.php?gid=105583282833909">
+                    <img height="20px" src="http://codingforcharity.org/general/img/facebook.jpg" /></a></li>
+                <li><a target="_blank" href="http://thedragonportal.eu/">Dragon Portal</a></li>
+                <li><a target="_blank" href="http://www.utopiatemple.com/">Utopia Temple</a></li>
+                <li><a target="_blank" href="http://addons.mozilla.org/en-US/firefox/addon/12179">Pimp
+                    Agent</a></li>
+                <li><a target="_blank" href="http://www.utopiatemple.com/angel.php">Angel</a></li>
+                <li><a target="_blank" href="http://ultima.thedragonportal.eu/">Ultima</a></li>
+                <li><a target="_blank" href="http://utimes.info/Excel-Simulator-version-history">Excel
+                    Simulator</a></li>
+                <li><a target="_blank" href="http://www.k3ltic.com/utools/">uTools</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="divFooter">
+        SpoiledTechie can be found on IRC at #Utopiapimp. -
+        <asp:Label runat="server" ID="lblLastBuild"></asp:Label>
+        <br />
+        <span id="spEmailMe" runat="server"></span>
+        <ul class="ulLoggedInLinks">
+            <li class="Bold">SpoiledTechie's Sites:</li>
+                               <li><a href="http://DrinkingFor.com" target="_blank">DrinkingFor.com</a></li>
+            <li><a href="http://DeMotivatedPosters.com" target="_blank">DeMotivatedPosters.com</a></li>
+            <li><a href="http://PostSecretCollection.com" target="_blank">PostSecretCollection.com</a></li>
+            <li><a href="http://DolphinWords.com" target="_blank">DolphinWords.com</a></li>
+            <li><a href="http://ItFeelsLike.com" target="_blank">ItFeelsLike.com</a></li>
+            <li><a href="http://UtopiaPimp.com" target="_blank">UtopiaPimp.com</a></li>
+            <li><a href="http://UtopiaShrimp.com" target="_blank">UtopiaShrimp.com</a></li>
+            <li><a href="http://SpoiledTechie.com" target="_blank">SpoiledTechie.com</a></li>
+            <li><a href="https://market.android.com/details?id=com.rdnation.pbtimerpaid" target="_blank">Roller Derby Penalty Timer</a></li>
+        </ul>
+        <div>
+        <a href="https://support.ultimahosts.net/aff.php?aff=112" target="_blank"><img class="hosted" src="http://codingforcharity.org/general/img/temp-logo.png" /></a></div>
+   
+    </div>
+    <asp:HiddenField ID="hfUserID" runat="server" />
+    <asp:HiddenField ID="hfTabID" runat="server" />
+    <style type='text/css'>
+        @import url('http://s3.amazonaws.com/getsatisfaction.com/feedback/feedback.css');
+    </style>
+    <script src='http://s3.amazonaws.com/getsatisfaction.com/feedback/feedback.js' type='text/javascript'></script>
+    <script type="text/javascript" charset="utf-8">
+        var is_ssl = ("https:" == document.location.protocol);
+        var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+        document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript" charset="utf-8">
+        var feedback_widget_options = {};
+
+        feedback_widget_options.display = "overlay";
+        feedback_widget_options.company = "utopiapimp";
+        feedback_widget_options.placement = "bottom";
+        feedback_widget_options.color = "#222";
+        feedback_widget_options.style = "idea";
+
+        var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-6812912-2']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <div id="divAddDataLegend" class="popUp divLegend">
+        <div>
+            <b>What can be placed in the Box?</b></div>
+        <ul class="ulList padMar">
+            <li><b>Select the ENTIRE page when pasting to this box.</b></li>
+            <li>*Target more than one Province by pressing Ctrl + Selecting Provinces</li>
+            <li>*Targeting can be used for spells and thief ops</li>
+            <li>*Raw/Angel CB's, SOM's, Survey's, SOS's</li>
+            <li>*Document Attacks Mod Off. Exp: !MO 125.5k or 125.5k should be placed after each
+                attack</li>
+            <li>*Pages will only refresh when submitting intel on the Kingdom and Province Detail
+                Pages.</li>
+        </ul>
+    </div>
+    <div id="divShowError" class="popUp divLegend divWarning">
+        
+    </div>
+    </form>
+</body>
+</html>

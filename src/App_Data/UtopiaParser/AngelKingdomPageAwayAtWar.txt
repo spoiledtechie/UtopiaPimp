@@ -1,0 +1,130 @@
+Huntington Raider (7:36) Kingdom Analysis
+[http://www.utopiatemple.com Angel v1.88 Beta]
+
+** Statistics **
+Provinces in Kingdom: 25
+Total Land: 26,767 Acres (Average: 1,071 Acres)
+Total Networth: 4,287,996gc (Average: 171,520gc)
+Average Networth per Acre: 160.2gc
+Dragon Cost: 7,503,993gc
+Dragon Send Range: 3,430,397gc - 5,359,995gc
+
+** Relations **
+Currently at WAR with: (15:37) (99% KD size)
+Attitude towards/from (17:38): None
+Stance: Normal (no bonuses)
+War History: 1 War, 0 Wins
+
+** Races **
+Dark Elf: 8 (32%)
+Orc: 7 (28%)
+Elf: 5 (20%)
+Gnome: 5 (20%)
+
+** Land **
+1. HR Trix Pathe [GN] - 1,399 Acres (5.2%)
+2. HR Scars of War [GN] - 1,311 Acres (4.9%)
+3. HR Hopeless [OR] - 1,305 Acres (4.9%)
+4. HR Kamibird [OR] - 1,279 Acres (4.8%)
+5. HR Jacko [OR] - 1,253 Acres (4.7%)
+6. HR Lady Ceneddra [DE] - 1,220 Acres (4.6%)
+7. HR Haventh [OR] - 1,196 Acres (4.5%)
+8. HR Monsterkill [DE] - 1,172 Acres (4.4%)
+9. HR Huntington [EL] - 1,159 Acres (4.3%)
+10. HR Pufnstuf [OR] - 1,099 Acres (4.1%)
+11. HR Threepwood [OR] - 1,091 Acres (4.1%)
+12. HR Death Gate [EL] - 1,086 Acres (4.1%)
+13. HR Youngstown [EL] - 1,060 Acres (4%)
+13. HR Eastern Storm [DE] - 1,060 Acres (4%)
+15. HR UnderGroundWorld [GN] - 1,046 Acres (3.9%)
+16. Lets Eat Lovecake [DE] - 1,044 Acres (3.9%)
+17. HR Crazz [DE] - 1,030 Acres (3.8%)
+18. HR Nicklausen [OR] - 1,026 Acres (3.8%)
+19. HR Odin [GN] - 1,005 Acres (3.8%)
+20. HR Payney [EL] - 975 Acres (3.6%)
+21. HR Anony [GN] - 853 Acres (3.2%)
+22. HR Desolate Phoenix [DE] - 830 Acres (3.1%)
+23. Bloody Sink [EL] - 824 Acres (3.1%)
+24. HR Almighty Z [DE] - 815 Acres (3%)
+25. HR Gongshow101 [DE] - 629 Acres (2.3%)
+
+** Networth **
+1. HR Scars of War [GN] - 218,456gc (5.1%)
+2. HR Pufnstuf [OR] - 212,467gc (5%)
+3. HR Monsterkill [DE] - 212,283gc (5%)
+4. HR Crazz [DE] - 210,163gc (4.9%)
+5. HR Kamibird [OR] - 196,155gc (4.6%)
+6. HR Death Gate [EL] - 191,924gc (4.5%)
+7. HR Nicklausen [OR] - 189,565gc (4.4%)
+8. HR Haventh [OR] - 186,194gc (4.3%)
+9. HR Hopeless [OR] - 185,806gc (4.3%)
+10. HR Trix Pathe [GN] - 183,750gc (4.3%)
+11. HR Youngstown [EL] - 183,322gc (4.3%)
+12. HR Lady Ceneddra [DE] - 179,604gc (4.2%)
+13. HR Eastern Storm [DE] - 171,972gc (4%)
+14. HR Odin [GN] - 171,140gc (4%)
+15. HR Huntington [EL] - 169,630gc (4%)
+16. HR Threepwood [OR] - 168,116gc (3.9%)
+17. HR Payney [EL] - 165,658gc (3.9%)
+18. Lets Eat Lovecake [DE] - 162,205gc (3.8%)
+19. HR UnderGroundWorld [GN] - 159,090gc (3.7%)
+20. HR Anony [GN] - 149,337gc (3.5%)
+21. HR Jacko [OR] - 142,607gc (3.3%)
+22. HR Almighty Z [DE] - 139,910gc (3.3%)
+23. Bloody Sink [EL] - 123,257gc (2.9%)
+24. HR Desolate Phoenix [DE] - 115,404gc (2.7%)
+25. HR Gongshow101 [DE] - 99,981gc (2.3%)
+
+** Networth per Acre **
+1. HR Crazz [DE] - 204.04gc
+2. HR Pufnstuf [OR] - 193.33gc
+3. HR Nicklausen [OR] - 184.76gc
+4. HR Monsterkill [DE] - 181.13gc
+5. HR Death Gate [EL] - 176.73gc
+6. HR Anony [GN] - 175.07gc
+7. HR Youngstown [EL] - 172.95gc
+8. HR Almighty Z [DE] - 171.67gc
+9. HR Odin [GN] - 170.29gc
+10. HR Payney [EL] - 169.91gc
+11. HR Scars of War [GN] - 166.63gc
+12. HR Eastern Storm [DE] - 162.24gc
+13. HR Gongshow101 [DE] - 158.95gc
+14. HR Haventh [OR] - 155.68gc
+15. Lets Eat Lovecake [DE] - 155.37gc
+16. HR Threepwood [OR] - 154.09gc
+17. HR Kamibird [OR] - 153.37gc
+18. HR UnderGroundWorld [GN] - 152.09gc
+19. Bloody Sink [EL] - 149.58gc
+20. HR Lady Ceneddra [DE] - 147.22gc
+21. HR Huntington [EL] - 146.36gc
+22. HR Hopeless [OR] - 142.38gc
+23. HR Desolate Phoenix [DE] - 139.04gc
+24. HR Trix Pathe [GN] - 131.34gc
+25. HR Jacko [OR] - 113.81gc
+
+** Ranks **
+1. HR Huntington [EL] - King 
+2. HR Monsterkill [DE] - Baron 
+2. HR Eastern Storm [DE] - Baron 
+2. HR Death Gate [EL] - Baron 
+5. HR Hopeless [OR] - Lord 
+5. HR Nicklausen [OR] - Lord 
+5. HR Crazz [DE] - Lord 
+5. HR Almighty Z [DE] - Lord 
+5. HR Gongshow101 [DE] - Lord 
+5. HR Desolate Phoenix [DE] - Lord 
+5. HR Anony [GN] - Lord 
+5. HR Trix Pathe [GN] - Lord 
+5. HR Payney [EL] - Lord 
+5. HR Youngstown [EL] - Lord 
+5. HR Threepwood [OR] - Lord 
+5. Lets Eat Lovecake [DE] - Noble Lady 
+5. Bloody Sink [EL] - Lord 
+18. HR Kamibird [OR] - Knight 
+18. HR Lady Ceneddra [DE] - Lady 
+18. HR Scars of War [GN] - Knight 
+18. HR UnderGroundWorld [GN] - Knight 
+18. HR Pufnstuf [OR] - Knight 
+18. HR Haventh [OR] - Knight 
+18. HR Odin [GN] - Knight 
+18. HR Jacko [OR] - Knight

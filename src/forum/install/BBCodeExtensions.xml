@@ -1,0 +1,54 @@
+<YafBBCodeList>
+  <YafBBCode>
+    <Name>YOUTUBE</Name>
+    <Description>[YOUTUBE][localization=YOUTUBEMOD_DESCRIPTION]Put YouTube URL Here[/localization][/YOUTUBE]</Description>
+    <OnClickJS />
+    <DisplayJS />
+    <EditJS />
+    <DisplayCSS />
+    <SearchRegex>\[youtube\](?&lt;inner&gt;http://(?&lt;prefix&gt;[A-Za-z][A-Za-z][A-Za-z]?\.)?youtube.com/watch\?v=(?&lt;id&gt;[0-9A-Za-z-_]{11}))[^[]*\[/youtube\]</SearchRegex>
+    <ReplaceRegex>&lt;!-- BEGIN youtube --&gt;&lt;object width="425" height="350"&gt;&lt;param name="movie" value="http://${prefix}youtube.com/v/${id}"&gt;&lt;/param&gt;&lt;embed src="http://${prefix}youtube.com/v/${id}" type="application/x-shockwave-flash" width="425" height="350"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;!-- END youtube --&gt;</ReplaceRegex>
+    <Variables>id;prefix</Variables>
+    <ExecOrder>1</ExecOrder>
+    <UseModule>false</UseModule>
+    <ModuleClass />
+  </YafBBCode>
+  <YafBBCode>
+    <Name>SPOILER</Name>
+    <Description>[SPOILER][localization=SPOILERMOD_DESCRIPTION]Put Spoiler Text Here[/localization][/SPOILER]</Description>
+    <OnClickJS />
+    <DisplayJS>      function toggleSpoiler(btn, elid)
+      {
+      var el = document.getElementById(elid);
+      if (el == null)
+      return;
+      if (el.style.display == '')
+      {
+      el.style.display = 'none';
+      btn.value='[localization=SPOILERMOD_SHOW]Show Spoiler[/localization]';
+      }
+      else
+      {
+      el.style.display = '';
+      btn.value='[localization=SPOILERMOD_HIDE]Hide Spoiler[/localization]';
+      }
+      }
+    </DisplayJS>
+    <EditJS />
+    <DisplayCSS>      .spoilerbox
+      {
+      margin: 5px;
+      padding: 4px;
+      background-color: #eeeeee;
+      border: solid 1px #808080;
+      color: #000000;
+      }
+    </DisplayCSS>
+    <SearchRegex>\[spoiler\](?&lt;inner&gt;.+)\[\/spoiler\]</SearchRegex>
+    <ReplaceRegex />
+    <Variables />
+    <ExecOrder>50</ExecOrder>
+    <UseModule>true</UseModule>
+    <ModuleClass>YAF.Modules.SpoilerBBCodeModule</ModuleClass>
+  </YafBBCode>
+</YafBBCodeList>

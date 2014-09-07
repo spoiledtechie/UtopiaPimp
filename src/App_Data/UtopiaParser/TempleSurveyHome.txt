@@ -1,0 +1,21 @@
+Buildings Report of Mountain of Techies (17:38)
+[http://www.UtopiaTemple.com All-in-One v4.23b]
+
+Server: 
+Ruler Name: Sir Tech Master the Warrior
+Personality: The Warrior
+Building Efficiency: 84.2%
+
+1. Farms: 123 (8.9%)
+2. Training Grounds: 1 (0.1%)
+3. Armouries: 288 (20.8%)
+4. Barracks: 1 (0.1%)
+5. Guard Stations: 1 (0.1%)
+6. Guilds: 137 (9.9%)
+7. Towers: 137 (9.9%)
+8. Schools: 518 (37.4%)
+9. Stables: 179 (12.9%)
+
+Total Land: 1,385 Acres (100% built)
+
+** Modified Effects (Available Buildings Only) **

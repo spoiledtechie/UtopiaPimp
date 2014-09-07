@@ -1,0 +1,90 @@
+﻿Version: 3789
+Game LobbyWoL
+
+ 
+dinhsan|0 credits|Forum|Report Bug|Log Out
+Throne
+Kingdom
+News
+Explore
+Growth
+Sciences
+Military
+Wizards
+Mystics
+Thievery
+War Room
+Aid
+Mail
+Forum
+Kingdom Chat
+Politics
+Rankings
+Preferences
+Gift Credits
+Money	Peasants	Food	Runes	Net Worth	Land	Net Worth/Acre
+69,512	26,500	96,761	12,164	248,631	2,002	124.191
+KINGDOM NEWS
+Province News
+Kingdom News
+The Daily Paper lists the various happenings throughout your kingdom. Included are important activities such as attacks, deaths, and changes in relations with your kingdom.
+
+Legend
+Intra-Kingdom Conflict	Relations News	
+Actions against our Kingdom	Dragon News	
+Actions by our Kingdom	Obituaries	
+The Kingdom Reporter
+< April YR4 EditionJune YR4 Edition > May YR4 Edition
+May 1 of YR4	 Steven Seagal has sent an aid shipment to Johnny Drama.
+May 1 of YR4	 John Paul Jones has sent an aid shipment to Pauly Shore.
+May 1 of YR4	 An unknown province from F u n S h o w (7:20) captured 94 acres of land from ZonK pokes Bolla (6:6).
+May 2 of YR4	 -- Dragons Of Absalom -- (8:28) has cancelled their dragon project targetted at us.
+May 2 of YR4	 La Rialto (8:35) has proposed a formal ceasefire with our kingdom.
+May 3 of YR4	 We have entered into a formal ceasefire with La Rialto (8:35).
+May 4 of YR4	 Alice Cooper has sent an aid shipment to Pauly Shore.
+May 4 of YR4	 Alice Cooper has sent an aid shipment to Gummy Bear.
+May 5 of YR4	 Alice Cooper has sent an aid shipment to Pauly Shore.
+May 6 of YR4	 John Paul Jones has sent an aid shipment to Steve Austin.
+May 6 of YR4	 Steve Austin has sent an aid shipment to John Paul Jones.
+May 6 of YR4	 Alice Cooper has sent an aid shipment to Pauly Shore.
+May 6 of YR4	 Pauly Shore has sent an aid shipment to John Paul Jones.
+May 6 of YR4	 John Paul Jones has sent an aid shipment to Pauly Shore.
+May 6 of YR4	 Alice Cooper has sent an aid shipment to Rosie ODonnell.
+May 7 of YR4	 Pauly Shore has sent an aid shipment to John Paul Jones.
+May 8 of YR4	 Johnny Drama has sent an aid shipment to Pauly Shore.
+May 8 of YR4	 Johnny Drama has sent an aid shipment to John Paul Jones.
+May 8 of YR4	 An unknown province from F u n S h o w (7:20) captured 78 acres of land from Darkly Dreaming Boobster (7:35).
+May 9 of YR4	 An unknown province from F u n S h o w (7:20) captured 102 acres of land from A Drunken Donkey (6:26).
+May 9 of YR4	 Burt Reynolds has sent an aid shipment to Pauly Shore.
+May 9 of YR4	 Steve Austin has sent an aid shipment to John Paul Jones.
+May 9 of YR4	 John Paul Jones has sent an aid shipment to Steve Austin.
+May 9 of YR4	 John Paul Jones has sent an aid shipment to Dolph Lundgren.
+May 10 of YR4	 John Paul Jones has sent an aid shipment to Pauly Shore.
+May 10 of YR4	 Pauly Shore has sent an aid shipment to Alice Cooper.
+May 10 of YR4	 Johnny Drama has sent an aid shipment to Steve Austin.
+May 10 of YR4	 Steve Austin has sent an aid shipment to Alice Cooper.
+May 11 of YR4	 John Paul Jones has sent an aid shipment to Alice Cooper.
+May 15 of YR4	 Johnny Drama has sent an aid shipment to Pamela Anderson.
+May 16 of YR4	 Insolence x2 Retals (5:2) has proposed a formal ceasefire with our kingdom.
+May 16 of YR4	 Pauly Shore has sent an aid shipment to Alice Cooper.
+May 16 of YR4	 Alice Cooper has sent an aid shipment to Pauly Shore.
+May 16 of YR4	 An unknown province from F u n S h o w (7:20) captured 126 acres of land from Cyclops (4:40).
+May 16 of YR4	 John Paul Jones has sent an aid shipment to Steve Austin.
+May 17 of YR4	 An unknown province from F u n S h o w (7:20) captured 157 acres of land from Veta (12:12).
+May 18 of YR4	 We have entered into a formal ceasefire with Insolence x2 Retals (5:2).
+May 19 of YR4	 Milli Vanilli has sent an aid shipment to Freddie Prinze Jr.
+May 20 of YR4	 Johnny Drama has sent an aid shipment to Pamela Anderson.
+May 20 of YR4	 Johnny Drama has sent an aid shipment to Alice Cooper.
+May 20 of YR4	 Alice Cooper has sent an aid shipment to Steve Austin.
+May 20 of YR4	 Pauly Shore has sent an aid shipment to Alice Cooper.
+May 20 of YR4	 Steve Austin has sent an aid shipment to Miley Cyrus.
+May 21 of YR4	 An unknown province from F u n S h o w (7:20) captured 87 acres of land from Forbidden Kingdom (1:18).
+May 21 of YR4	 Nick Nolte has sent an aid shipment to Vanilla Ice.
+May 21 of YR4	 Johnny Drama has sent an aid shipment to Alice Cooper.
+May 22 of YR4	 John Paul Jones has sent an aid shipment to Miley Cyrus.
+May 22 of YR4	 John Belushi (7:20) captured 8 acres of land from powerprovriey (3:11).
+May 22 of YR4	 An unknown province from F u n S h o w (7:20) captured 62 acres of land from Ian blames it all on Bolla (6:6).
+May 22 of YR4	 Johnny Drama has sent an aid shipment to Miley Cyrus.
+May 23 of YR4	 Gary Busey (7:20) captured 111 acres of land from Jesse James (7:12).
+May 24 of YR4	 Johnny Drama has sent an aid shipment to Alice Cooper.
+May 24 of YR4	 An unknown province from F u n S h o w (7:20) captured 154 acres of land from Wyatt Earp (7:12).

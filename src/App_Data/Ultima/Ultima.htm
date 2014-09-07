@@ -1,0 +1,2640 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml"> 
+ 
+<head> 
+<title>Ultima</title> 
+<link rel="shortcut icon" href="favicon.ico" /> 
+<link rel="stylesheet" type="text/css" href="ultima.css" /> 
+<meta name="description" content="Ultima" /> 
+<meta name="keywords" content="Ultima" /> 
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" /> 
+<meta http-equiv="Content-Language" content="English" /> 
+<meta http-equiv="Content-Style-Type" content="text/css" /> 
+<meta http-equiv="Content-Script-Type" content="type" /> 
+</head> 
+ 
+<body> 
+<center> 
+ 
+<table border="0" cellpadding="0" cellspacing="0" width="700" style="padding:10px 10px 10px 10px;"><tr> 
+ 
+ 
+<td align="center" valign="top" rowspan="2"><br /> 
+ 
+<b>Please feel free to report any bugs or problems you encounter by mailing us at</b><br /> 
+<a href="mailto:support@thedragonportal.net?Subject=support" style="color:#CCCCCC;"><b>support@thedragonportal.net</b></a><b> or visit us at </b><a href="javascript:void(0);" style="color:#CCCCCC;"><b>#dragonportal</b></a><b> IRC channel on utonet server.</b><br /> 
+<br /> 
+ 
+<a href="javascript:void(0);" onclick="openwin1();"><b>Clipboard Manager</b></a> •
+<a href="javascript:void(0);" onclick="openwin2();"><b>Military Calculator</b></a> •
+<a href="javascript:void(0);" onclick="openwin3();"><b>Science Calculator</b></a> •
+<a href="javascript:void(0);" onclick="openwin4();"><b>Buildings Calculator</b></a> •
+<a href="javascript:void(0);" onclick="openwin5();"><b>Thievery Calculator</b></a> •
+<a href="javascript:void(0);" onclick="openwin6();"><b>Ambush Calculator</b></a> 
+ 
+<table cellpadding="0" cellspacing="0" align="center" id="Formater" style="color: #FFFFFF; background-color: #000000; height:50px;"> 
+<tr><td align="center"> 
+ 
+<div style="width:700px; height:50px;"> 
+<form name="Calculator2" action=""><textarea name="CBtext1" style="background: #000000; padding:0px 0px 0px 0px; overflow: auto; border:0px solid #aa9988; width:100%; height:49px;" rows="2" cols="2"></textarea></form> 
+</div> 
+ 
+</td></tr></table> 
+ 
+</td></tr></table> 
+<b>Its your responsibility to refresh the browser's cache and wait for the page to fully load before use</b><br /> 
+<b><i>Make sure you will copy the whole page with the Resource Bar!!!</i></b><br /> 
+ 
+ 
+<font size="3" color="#ff4444"><b><i>Ultima is now fully compatible with Age 47 - The Age of Justice</i></b></font><br /><br /> 
+ 
+ 
+ 
+<table align="center" cellpadding="5" cellspacing="1"><tbody> 
+ 
+<tr><th colspan="3" class="THeader">Features List</th></tr> 
+ 
+<tr> 
+<td class="THeader" align="center">Formatters</td> 
+<td class="THeader" align="center">Calculators</td> 
+<td class="THeader" align="center">Other Goodies</td> 
+</tr> 
+ 
+<tr> 
+ 
+<td class="TEntry" valign="top"> 
+ 
+Throne page Formatter<br /> 
+Military Advisor Formatter<br /> 
+Internal Affairs Formatter<br /> 
+Science Advisor Formatter<br /> 
+Crystal-Ball Formatter<br /> 
+Spy on Military Formatter<br /> 
+Survey Formatter<br /> 
+Spy on Sciences Formatter<br /> 
+Kingdom page Formatter<br /> 
+Kingdom Uniques Formatter<br /> 
+</td> 
+ 
+<td class="TEntry" valign="top"> 
+Military Calculator<br /> 
+Science Calculator<br /> 
+Buildings Calculator<br /> 
+Thievery Calculator<br /> 
+Ambush Calculator<br /> 
+<br /> 
+<div align="center">---</div> 
+<br /> 
+<i>Exploration Calculator</i><br /> 
+<i>Power Tools</i><br /> 
+ 
+</td> 
+ 
+<td class="TEntry" valign="top"> 
+Clipboard Manager<br /> 
+Extended Options<br /> 
+Export Lines<br /> 
+Real Gain Formula<br /> 
+Online Tools<br /> 
+All-in-One Tech<br /> 
+Compatibility All OS<br /> 
+Support All Browsers<br /> 
+Freeware/Open Code<br /> 
+Safe Intel (No DB)<br /> 
+</td> 
+ 
+</tr> 
+ 
+ 
+<tr><th colspan="3" class="THeader">You wanna know more? Join us at #dragonportal IRC channel on utonet server.</th></tr> 
+ 
+ 
+</tbody></table> 
+ 
+ 
+ 
+ 
+ 
+<br /> 
+ 
+<br /> 
+ 
+ 
+ 
+ 
+<script type="text/javascript">
+
+    function Extended_Options() {
+
+        if (document.getElementById('Extended_Options_Button').innerHTML == "Show Extended Options") {
+            document.getElementById('Extended_Options').style.display = "block";
+            document.getElementById('Extended_Options_Button').innerHTML = "Hide Extended Options";
+        } else {
+            document.getElementById('Extended_Options').style.display = "none";
+            document.getElementById('Extended_Options_Button').innerHTML = "Show Extended Options";
+        }
+
+    }
+
+
+    function Show_Throne_Options() {
+
+        if (document.getElementById('Throne_Options_Button').value == "Show Throne Page / CB Values") {
+            document.getElementById('Throne_Options').style.display = "block";
+            document.getElementById('Throne_Options_Button').value = "Hide Throne Page / CB Values";
+        } else {
+            document.getElementById('Throne_Options').style.display = "none";
+            document.getElementById('Throne_Options_Button').value = "Show Throne Page / CB Values";
+        }
+
+    }
+
+
+    function Show_Military_Options() {
+
+        if (document.getElementById('Military_Options_Button').value == "Show Military Affairs / SOM Values") {
+            document.getElementById('Military_Options').style.display = "block";
+            document.getElementById('Military_Options_Button').value = "Hide Military Affairs / SOM Values";
+        } else {
+            document.getElementById('Military_Options').style.display = "none";
+            document.getElementById('Military_Options_Button').value = "Show Military Affairs / SOM Values";
+        }
+
+    }
+
+
+    function Show_Kingdom_Options() {
+
+        if (document.getElementById('Kingdom_Options_Button').value == "Show Kingdom Page Values") {
+            document.getElementById('Kingdom_Options').style.display = "block";
+            document.getElementById('Kingdom_Options_Button').value = "Hide Kingdom Page Values";
+        } else {
+            document.getElementById('Kingdom_Options').style.display = "none";
+            document.getElementById('Kingdom_Options_Button').value = "Show Kingdom Page Values";
+        }
+
+    }
+ 
+</script> 
+ 
+<a href="javascript:void(0);" onclick="Extended_Options();"><b id="Extended_Options_Button">Show Extended Options</b></a><br /> 
+ 
+<br /> 
+ 
+<div id="Extended_Options" style="display:none;"> 
+ 
+<fieldset style="width:650px; border: 1px solid #CCCCCC; padding:0px 5px 0px 5px;"><legend style="color:#CCCCCC; font-size: 14px;"><b>Extended options for external sites</b></legend> 
+ 
+<br /> 
+ 
+<input style="background:transparent; border:0px solid #000;" id="Ultima_Popups" type="checkbox" value="ON" />&nbsp;<font color="#CC8888"><b>Disable ultima's Pop-ups when copy the specific pages</b></font><br /> 
+<input type="submit" name="parse" value="Parse" disabled="disabled" style="background-color: #ECE9D8; font-size: 8pt; font-weight: bold; width:80%;" /><br /> 
+ 
+<br /> 
+ 
+<input style="background-color: #ECE9D8; font-size: 8pt; font-weight: bold; width:80%;" type="button" id="Throne_Options_Button"   value="Show Throne Page / CB Values"            onclick="Show_Throne_Options()"   /><br /> 
+<input style="background-color: #ECE9D8; font-size: 8pt; font-weight: bold; width:80%;" type="button" id="Military_Options_Button" value="Show Military Affairs / SOM Values"      onclick="Show_Military_Options()" /><br /> 
+<input style="background-color: #ECE9D8; font-size: 8pt; font-weight: bold; width:80%;" type="button" id="Science_Options_Button"  value="Show Science Research / SOS Values"      onclick="" disabled="disabled"    /><br /> 
+<input style="background-color: #ECE9D8; font-size: 8pt; font-weight: bold; width:80%;" type="button" id="Survey_Options_Button"   value="Show Internal Affairs / Survey Values"   onclick="" disabled="disabled"    /><br /> 
+<input style="background-color: #ECE9D8; font-size: 8pt; font-weight: bold; width:80%;" type="button" id="Kingdom_Options_Button"  value="Show Kingdom Page Values" onclick="Show_Kingdom_Options()"  /><br /> 
+ 
+<br /> 
+ 
+<div id="goingtoweb"> 
+ 
+<form method="post" action="http://www.utopiapimp.com/index.php?area=kdpost" id="SendData"> 
+ 
+<div id="Throne_Options" style="display:none;"> 
+ 
+ 
+<table><tr><td> 
+<table> 
+ 
+<tr><td> Province Name    </td><td><input style="width:50px;" value="" name="Throne_Province_Name"    /></td></tr> 
+<tr><td> kingdom          </td><td><input style="width:50px;" value="" name="Throne_kingdom"          /></td></tr> 
+<tr><td> island           </td><td><input style="width:50px;" value="" name="Throne_island"           /></td></tr> 
+<tr><td> Utopia Year      </td><td><input style="width:50px;" value="" name="Throne_Utopia_Year"      /></td></tr> 
+<tr><td> Utopia Month     </td><td><input style="width:50px;" value="" name="Throne_Utopia_Month"     /></td></tr> 
+<tr><td> Utopia Day       </td><td><input style="width:50px;" value="" name="Throne_Utopia_Day"       /></td></tr> 
+<tr><td> Utopia Minute    </td><td><input style="width:50px;" value="" name="Throne_Utopia_Minute"    /></td></tr> 
+<tr><td> Race             </td><td><input style="width:50px;" value="" name="Throne_Race"             /></td></tr> 
+<tr><td> Gender           </td><td><input style="width:50px;" value="" name="Throne_Gender"           /></td></tr> 
+<tr><td> Rank             </td><td><input style="width:50px;" value="" name="Throne_Rank"             /></td></tr> 
+<tr><td> Personality      </td><td><input style="width:50px;" value="" name="Throne_Personality"      /></td></tr> 
+<tr><td> Land             </td><td><input style="width:50px;" value="" name="Throne_Land"             /></td></tr> 
+ 
+</table></td><td><table> 
+ 
+<tr><td> Peasants         </td><td><input style="width:50px;" value="" name="Throne_Peasants"         /></td></tr> 
+<tr><td> BE               </td><td><input style="width:50px;" value="" name="Throne_BE"               /></td></tr> 
+<tr><td> Offensive Points </td><td><input style="width:50px;" value="" name="Throne_Offensive_Points" /></td></tr> 
+<tr><td> Defensive Points </td><td><input style="width:50px;" value="" name="Throne_Defensive_Points" /></td></tr> 
+<tr><td> Money            </td><td><input style="width:50px;" value="" name="Throne_Money"            /></td></tr> 
+<tr><td> Food             </td><td><input style="width:50px;" value="" name="Throne_Food"             /></td></tr> 
+<tr><td> Runes            </td><td><input style="width:50px;" value="" name="Throne_Runes"            /></td></tr> 
+<tr><td> Soldiers         </td><td><input style="width:50px;" value="" name="Throne_Soldiers"         /></td></tr> 
+<tr><td> Offensive Units  </td><td><input style="width:50px;" value="" name="Throne_Offensive_Units"  /></td></tr> 
+<tr><td> Defensive Units  </td><td><input style="width:50px;" value="" name="Throne_Defensive_Units"  /></td></tr> 
+<tr><td> Elite Units      </td><td><input style="width:50px;" value="" name="Throne_Elite_Units"      /></td></tr> 
+<tr><td> Thieves          </td><td><input style="width:50px;" value="" name="Throne_Thieves"          /></td></tr> 
+ 
+</table></td><td><table> 
+ 
+<tr><td> Stealth          </td><td><input style="width:50px;" value="" name="Throne_Stealth"          /></td></tr> 
+<tr><td> Wizards          </td><td><input style="width:50px;" value="" name="Throne_Wizards"          /></td></tr> 
+<tr><td> Mana             </td><td><input style="width:50px;" value="" name="Throne_Mana"             /></td></tr> 
+<tr><td> Trade Balance    </td><td><input style="width:50px;" value="" name="Throne_Trade_Balance"    /></td></tr> 
+<tr><td> War Horses       </td><td><input style="width:50px;" value="" name="Throne_War_Horses"       /></td></tr> 
+<tr><td> Prisoners        </td><td><input style="width:50px;" value="" name="Throne_Prisoners"        /></td></tr> 
+<tr><td> Networth         </td><td><input style="width:50px;" value="" name="Throne_Networth"         /></td></tr> 
+<tr><td> Dragon           </td><td><input style="width:50px;" value="" name="Throne_Dragon"           /></td></tr> 
+<tr><td> Hit              </td><td><input style="width:50px;" value="" name="Throne_Hit"              /></td></tr> 
+<tr><td> Crystal Ball     </td><td><input style="width:50px;" value="" name="Throne_Crystal_Ball"     /></td></tr> 
+ 
+<tr><td>                  </td><td><input style="width:50px; background:#000000; border:2px solid #000000; " value="" name=""     /></td></tr> 
+<tr><td>                  </td><td><input style="width:50px; background:#000000; border:2px solid #000000; " value="" name=""     /></td></tr> 
+ 
+</table></td></tr></table> 
+ 
+</div> 
+ 
+ 
+ 
+<div id="Military_Options" style="display:none;"> 
+ 
+<table><tr><td></td> 
+ 
+<td align="center">General</td> 
+<td align="center">Soldiers</td> 
+<td align="center">Off Units</td> 
+<td align="center">Def Units</td> 
+<td align="center">Elite</td> 
+<td align="center">Horses</td> 
+<td align="center">Land</td> 
+<td align="center">Time</td> 
+ 
+</tr><tr><td>Army #0</td> 
+ 
+<td><input style="width:50px;" value="" name="Military_General_0"         /></td> 
+<td><input style="width:50px;" value="" name="Military_Soldiers_0"        /></td> 
+<td><input style="width:50px;" value="" name="Military_Offensive_Units_0" /></td> 
+<td><input style="width:50px;" value="" name="Military_Defensive_Units_0" /></td> 
+<td><input style="width:50px;" value="" name="Military_Elite_Units_0"     /></td> 
+<td><input style="width:50px;" value="" name="Military_War_Horses_0"      /></td> 
+<td><input style="width:50px;" value="" name="Military_Captured_Land_0"   /></td> 
+<td><input style="width:50px;" value="" name="Military_Time_0"            /></td> 
+ 
+</tr><tr><td>Army #1</td> 
+ 
+<td><input style="width:50px;" value="" name="Military_General_1"         /></td> 
+<td><input style="width:50px;" value="" name="Military_Soldiers_1"        /></td> 
+<td><input style="width:50px;" value="" name="Military_Offensive_Units_1" /></td> 
+<td><input style="width:50px;" value="" name="Military_Defensive_Units_1" /></td> 
+<td><input style="width:50px;" value="" name="Military_Elite_Units_1"     /></td> 
+<td><input style="width:50px;" value="" name="Military_War_Horses_1"      /></td> 
+<td><input style="width:50px;" value="" name="Military_Captured_Land_1"   /></td> 
+<td><input style="width:50px;" value="" name="Military_Time_1"            /></td> 
+ 
+</tr><tr><td>Army #2</td> 
+ 
+<td><input style="width:50px;" value="" name="Military_General_2"         /></td> 
+<td><input style="width:50px;" value="" name="Military_Soldiers_2"        /></td> 
+<td><input style="width:50px;" value="" name="Military_Offensive_Units_2" /></td> 
+<td><input style="width:50px;" value="" name="Military_Defensive_Units_2" /></td> 
+<td><input style="width:50px;" value="" name="Military_Elite_Units_2"     /></td> 
+<td><input style="width:50px;" value="" name="Military_War_Horses_2"      /></td> 
+<td><input style="width:50px;" value="" name="Military_Captured_Land_2"   /></td> 
+<td><input style="width:50px;" value="" name="Military_Time_2"            /></td> 
+ 
+</tr><tr><td>Army #3</td> 
+ 
+<td><input style="width:50px;" value="" name="Military_General_3"         /></td> 
+<td><input style="width:50px;" value="" name="Military_Soldiers_3"        /></td> 
+<td><input style="width:50px;" value="" name="Military_Offensive_Units_3" /></td> 
+<td><input style="width:50px;" value="" name="Military_Defensive_Units_3" /></td> 
+<td><input style="width:50px;" value="" name="Military_Elite_Units_3"     /></td> 
+<td><input style="width:50px;" value="" name="Military_War_Horses_3"      /></td> 
+<td><input style="width:50px;" value="" name="Military_Captured_Land_3"   /></td> 
+<td><input style="width:50px;" value="" name="Military_Time_3"            /></td> 
+ 
+</tr><tr><td>Army #4</td> 
+ 
+<td><input style="width:50px;" value="" name="Military_General_4"         /></td> 
+<td><input style="width:50px;" value="" name="Military_Soldiers_4"        /></td> 
+<td><input style="width:50px;" value="" name="Military_Offensive_Units_4" /></td> 
+<td><input style="width:50px;" value="" name="Military_Defensive_Units_4" /></td> 
+<td><input style="width:50px;" value="" name="Military_Elite_Units_4"     /></td> 
+<td><input style="width:50px;" value="" name="Military_War_Horses_4"      /></td> 
+<td><input style="width:50px;" value="" name="Military_Captured_Land_4"   /></td> 
+<td><input style="width:50px;" value="" name="Military_Time_4"            /></td> 
+ 
+</tr><tr><td>Extra #1</td> 
+ 
+<td><input style="width:50px;" value="" name="Military_Province_Name"     /></td> 
+<td><input style="width:50px;" value="" name="Military_Kingdom"           /></td> 
+<td><input style="width:50px;" value="" name="Military_Island"            /></td> 
+<td><input style="width:50px;" value="" name="Military_Race"              /></td> 
+<td><input style="width:50px;" value="" name="Military_Offensive_Points"  /></td> 
+<td><input style="width:50px;" value="" name="Military_Defensive_Points"  /></td> 
+<td><input style="width:50px;" value="" name="Military_Raw"               /></td> 
+<td><input style="width:50px;" value="" name="Military_Non_Peasants"      /></td> 
+ 
+</tr><tr><td>Extra #2</td> 
+ 
+<td><input style="width:50px;" value="" name="Military_MEO"                /></td> 
+<td><input style="width:50px;" value="" name="Military_MED"                /></td> 
+<td><input style="width:50px;" value="" name="Military_Training_Off_Units" /></td> 
+<td><input style="width:50px;" value="" name="Military_Training_Def_Units" /></td> 
+<td><input style="width:50px;" value="" name="Military_Training_Elite"     /></td> 
+<td><input style="width:50px;" value="" name="Military_Training_Thieves"   /></td> 
+<td><input style="width:50px;" value="" name="Military_SOM"                /></td> 
+ 
+</tr></table> 
+ 
+</div> 
+ 
+ 
+ 
+<div id="Kingdom_Options" style="display:none;"> 
+ 
+<table><tr><td></td> 
+ 
+<td align="center">Name</td> 
+<td align="center">Race</td> 
+<td align="center">NW</td> 
+<td align="center">NWPA</td> 
+<td align="center">Land</td> 
+<td align="center">Rank</td> 
+<td align="center">Online</td> 
+<td align="center">Inactive</td> 
+<td align="center">Protected</td> 
+ 
+</tr><tr><td>Province #01</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_0_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_0_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_0_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_0_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_0_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_0_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_0_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_0_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_0_protected" /></td> 
+ 
+</tr><tr><td>Province #02</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_1_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_1_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_1_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_1_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_1_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_1_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_1_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_1_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_1_protected" /></td> 
+ 
+</tr><tr><td>Province #03</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_2_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_2_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_2_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_2_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_2_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_2_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_2_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_2_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_2_protected" /></td> 
+ 
+</tr><tr><td>Province #04</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_3_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_3_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_3_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_3_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_3_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_3_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_3_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_3_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_3_protected" /></td> 
+ 
+</tr><tr><td>Province #05</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_4_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_4_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_4_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_4_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_4_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_4_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_4_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_4_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_4_protected" /></td> 
+ 
+</tr><tr><td>Province #06</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_5_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_5_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_5_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_5_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_5_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_5_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_5_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_5_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_5_protected" /></td> 
+ 
+</tr><tr><td>Province #07</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_6_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_6_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_6_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_6_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_6_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_6_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_6_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_6_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_6_protected" /></td> 
+ 
+</tr><tr><td>Province #08</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_7_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_7_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_7_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_7_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_7_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_7_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_7_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_7_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_7_protected" /></td> 
+ 
+</tr><tr><td>Province #09</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_8_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_8_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_8_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_8_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_8_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_8_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_8_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_8_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_8_protected" /></td> 
+ 
+</tr><tr><td>Province #10</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_9_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_9_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_9_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_9_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_9_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_9_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_9_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_9_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_9_protected" /></td> 
+ 
+</tr><tr><td>Province #11</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_10_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_10_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_10_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_10_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_10_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_10_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_10_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_10_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_10_protected" /></td> 
+ 
+</tr><tr><td>Province #12</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_11_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_11_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_11_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_11_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_11_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_11_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_11_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_11_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_11_protected" /></td> 
+ 
+</tr><tr><td>Province #13</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_12_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_12_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_12_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_12_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_12_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_12_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_12_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_12_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_12_protected" /></td> 
+ 
+</tr><tr><td>Province #14</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_13_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_13_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_13_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_13_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_13_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_13_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_13_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_13_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_13_protected" /></td> 
+ 
+</tr><tr><td>Province #15</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_14_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_14_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_14_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_14_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_14_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_14_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_14_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_14_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_14_protected" /></td> 
+ 
+</tr><tr><td>Province #16</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_15_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_15_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_15_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_15_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_15_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_15_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_15_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_15_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_15_protected" /></td> 
+ 
+</tr><tr><td>Province #17</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_16_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_16_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_16_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_16_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_16_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_16_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_16_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_16_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_16_protected" /></td> 
+ 
+</tr><tr><td>Province #18</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_17_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_17_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_17_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_17_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_17_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_17_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_17_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_17_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_17_protected" /></td> 
+ 
+</tr><tr><td>Province #19</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_18_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_18_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_18_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_18_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_18_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_18_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_18_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_18_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_18_protected" /></td> 
+ 
+</tr><tr><td>Province #20</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_19_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_19_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_19_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_19_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_19_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_19_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_19_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_19_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_19_protected" /></td> 
+ 
+</tr><tr><td>Province #21</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_20_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_20_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_20_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_20_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_20_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_20_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_20_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_20_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_20_protected" /></td> 
+ 
+</tr><tr><td>Province #22</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_21_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_21_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_21_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_21_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_21_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_21_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_21_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_21_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_21_protected" /></td> 
+ 
+</tr><tr><td>Province #23</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_22_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_22_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_22_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_22_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_22_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_22_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_22_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_22_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_22_protected" /></td> 
+ 
+</tr><tr><td>Province #24</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_23_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_23_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_23_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_23_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_23_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_23_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_23_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_23_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_23_protected" /></td> 
+ 
+</tr><tr><td>Province #25</td> 
+ 
+<td><input style="width:50px;" value="" name="prov_24_name"      /></td> 
+<td><input style="width:50px;" value="" name="prov_24_race"      /></td> 
+<td><input style="width:50px;" value="" name="prov_24_nw"        /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="prov_24_nwpa"      /></td> 
+<td><input style="width:50px;" value="" name="prov_24_land"      /></td> 
+<td><input style="width:50px;" value="" name="prov_24_rank"      /></td> 
+<td><input style="width:50px;" value="" name="prov_24_online"    /></td> 
+<td><input style="width:50px;" value="" name="prov_24_inactive"  /></td> 
+<td><input style="width:50px;" value="" name="prov_24_protected" /></td> 
+ 
+ 
+</tr><tr><td>Extra info #1</td> 
+ 
+<td><input style="width:50px;" value="" name="kd_Name"             /></td> 
+<td><input style="width:50px;" value="" name="kd_Total_Provinces"  /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="kd_Total_Networth"   /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="kd_Avg_NW_Acre"      /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="kd_Total_Land"       /></td> 
+<td><input style="width:50px;" value="" name="kd_Stance"           /></td> 
+<td><input style="width:50px;" value="" name="kd_Currently_at_WAR" /></td> 
+<td><input style="width:50px;" value="" name="kd_Wins"             /></td> 
+<td><input style="width:50px;" value="" name="kd_Wars"             /></td> 
+ 
+</tr><tr><td>Extra info #2</td> 
+ 
+<td><input style="width:50px;" value="" name="kd_Dragon_Cost"      /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="kd_Min_Dragon_Range" /></td> 
+<td><input style="width:50px; background:#88cccc; border:2px solid #ffffff; " value="" name="kd_Max_Dragon_Range" /></td> 
+<td><input style="width:50px;" value="" name="kd_Networth_Rank"    /></td> 
+<td><input style="width:50px;" value="" name="kd_Land_Rank"        /></td> 
+<td><input style="width:50px;" value="" name="kd_Total_Kingdoms"   /></td> 
+<td><input style="width:50px;" value="" name="kd_Attitude_Us"      /></td> 
+<td><input style="width:50px;" value="" name="kd_Attitude_Them"    /></td> 
+ 
+</tr></table> 
+ 
+ 
+ 
+</div> 
+ 
+</form> 
+ 
+</div> 
+ 
+</fieldset> 
+ 
+</div> 
+ 
+<br /> 
+ 
+<a target="_blank" href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a> 
+<a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer"><img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a> 
+ 
+ 
+ 
+ 
+ 
+<br /> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<script type="text/javascript">
+    var floating_window_skin = 1;
+</script> 
+	
+<script type="text/javascript" src="Ultima_Windows.js"></script> 
+<div id="debug"></div> 
+ 
+ 
+ 
+<div id="window1" style="display:none;"> 
+<div class="floatingWindowContent" align="center" style="width:750px"> 
+<table align="left" width="100%" style="font:bold 13px Tahoma; padding:4px 4px 0px 4px; border:0px solid #000; height:200px;" cellpadding="0" cellspacing="0"><tr> 
+<td align="left" valign="top"><div id="CBtext2" align="left"></div> 
+<div id="flashcopier"></div> 
+</td></tr></table> 
+</div></div> 
+ 
+ 
+ 
+ 
+<div id="window2" style="display:none;"> 
+<div class="floatingWindowContent" align="center" style="width:820px"> 
+ 
+<form name="Calculator" action=""><table class="mymainbox" cellpadding="0" cellspacing="10"
+
+style="cursor:default; color:#000000; font-size:11px; font-family:arial, verdana, sans-serif;  background:#ECE9D8;" width="820"><tbody><tr> 
+ 
+<td class="box" width="210" align="left" valign="top"><center> 
+<font color="darkblue"><u><b id="YourProvinceName">Attacker's Information</b></u></font></center> 
+ 
+<table align="center"><tbody> 
+ 
+<tr> 
+<td width="110"></td> 
+<td width="76"></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Race</b></td> 
+<td><select name="YourRace" style="width: 100%;"> 
+<option value="0" selected="selected">Human</option> 
+<option value="1">Elf</option> 
+<option value="2">Dwarf</option> 
+<option value="3">Orc</option> 
+<option value="4">Gnome</option> 
+<option value="5">Dark Elf</option> 
+<option value="6" disabled="disabled">Undead</option> 
+<option value="7">Avian</option> 
+<option value="8" disabled="disabled">Faery</option> 
+<option value="9">Halfling</option> 
+</select></td> 
+</tr> 
+ 
+<tr> 
+<td><b id="YourPersonalityName">Personality</b></td> 
+<td><select name="YourPersonality" style="width: 100%;"> 
+<option value="0" selected="selected">Merchant</option> 
+<option value="1">Mystic</option> 
+<option value="2" disabled="disabled">War Hero</option> 
+<option value="3">Warrior</option> 
+<option value="4">Rogue</option> 
+<option value="5">Shepherd</option> 
+<option value="6">Sage</option> 
+<option value="7" disabled="disabled">Cleric</option> 
+<option value="8">Artisan</option> 
+<option value="9" disabled="disabled">Freak</option> 
+<option value="10" disabled="disabled">General</option> 
+<option value="11">Tactician</option> 
+</select></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Relations</b></td> 
+<td><select name="YourRelations" style="width: 100%;"> 
+<option value="0" selected="selected">None</option> 
+<option value="1">Unfriendly</option> 
+<option value="2">Hostile</option> 
+<option value="3">War</option> 
+<option value="4">Outside War</option> 
+<option value="5">Intra-Kingdom</option> 
+</select></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Stance</b></td> 
+<td><select name="YourStance" style="width: 100%;"> 
+<option value="0" selected="selected">Normal</option> 
+<option value="1">Peaceful</option> 
+<option value="2">Fortified</option> 
+<option value="3">Aggressive</option> 
+</select></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Dragon</b></td> 
+<td><select name="YourDragon" style="width: 100%;"> 
+<option value="0" style="color:#000000;" selected="selected">None</option> 
+<option value="1" style="color:#880000;">Ruby</option> 
+<option value="2" style="color:#008800;">Emerald</option> 
+<option value="3" style="color:#000088;">Sapphire</option> 
+<option value="4" style="color:#888800;">Gold</option> 
+</select></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Soldiers</b></td> 
+<td><input style="width: 76px;" name="YourSoldiers" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b id="YourOffSpecsName">Swordsmen</b></td> 
+<td><input style="width: 76px;" name="YourOffSpecs" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td><font color="blue"><b>Your Def</b></font></td> 
+<td><input style="width: 76px;" name="YourDefSpecs" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b id="YourElitesName">Knights</b></td> 
+<td><input style="width: 76px;" name="YourElites" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Land</b></td> 
+<td><input style="width: 76px;" name="YourLand" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Networth</b></td> 
+<td><input style="width: 76px;" name="YourNW" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>KD Networth</b></td> 
+<td><input style="width: 76px;" name="YourKDNW" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Off. Military Eff</b></td> 
+<td><input style="width: 76px;" name="YourOME" value="100" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td><font color="blue"><b>Def ME</b></font></td> 
+<td><input style="width: 76px;" name="YourDME" value="100" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>% Buildings Eff</b></td> 
+<td><input style="width: 76px;" name="YourBE" value="100" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td><font color="blue"><b>% Guard Station</b></font></td> 
+<td><input style="width: 76px;" name="YourGuardStation" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>% Military Sci.</b></td> 
+<td><input style="width: 76px;" name="YourMilitarySci" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+ 
+<tr> 
+<td colspan="2" style="background-image: url(Ultima_Hsep.gif); height:8px;" align="center" valign="top"></td> 
+</tr> 
+ 
+ 
+<tr> 
+<td><b>Generals to Send</b></td> 
+<td><select name="YourGenerals" style="width: 100%;"> 
+<option value="0" selected="selected">1</option> 
+<option value="3">2</option> 
+<option value="6">3</option> 
+<option value="9">4</option> 
+</select></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Extend Attack Time</b></td> 
+<td><select name="YourAttackTime" style="width: 100%;"> 
+<option value="0" selected="selected">0</option> 
+<option value="3">+1</option> 
+<option value="6">+2</option> 
+<option value="9">+3</option> 
+<option value="12">+4</option> 
+</select></td> 
+</tr> 
+ 
+<tr> 
+<td> 
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr> 
+<td width="50%"><b>Horses</b></td> 
+<td width="50%" align="right"><input name="YourOptimizeHorses" onclick="Optimize_Horses()" value="Optimize" style="background-color: transparent; font-size: 8pt; font-weight: bold; width: 60px;" disabled="disabled" type="button" /></td> 
+</tr></table> 
+</td> 
+<td><input style="width: 76px;" name="YourHorses" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td> 
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr> 
+<td width="50%"><b>Mercenaries</b></td> 
+<td width="50%" align="right"><input name="YourMaxMerc" onclick="Max_Merc()" value="Max" style="background-color: transparent; font-size: 8pt; font-weight: bold; width: 35px;" disabled="disabled" type="button" /></td> 
+</tr></table> 
+</td> 
+<td><input style="width: 76px;" name="YourMerc" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td> 
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr> 
+<td width="50%"><b>Prisoners</b></td> 
+<td width="50%" align="right"><input name="YourMaxPris" onclick="Max_Pris()" value="Max" style="background-color: transparent; font-size: 8pt; font-weight: bold; width: 35px;" disabled="disabled" type="button" /></td> 
+</tr></table> 
+</td> 
+<td><input style="width: 76px;" name="YourPris" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td><font color="blue"><b>Recently Hit</b></font></td> 
+<td><select name="YourRecentlyHit" style="width: 100%;"> 
+<option value="0" selected="selected">None</option> 
+<option value="1">Couple</option> 
+<option value="2">Moderately</option> 
+<option value="3">Heavily</option> 
+<option value="4">Extremely</option> 
+</select></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td><input style="background:transparent; border:0px solid #000;" name="YourPeasantsBox" disabled="disabled" type="checkbox" value="ON" /><font color="blue"><b>Peasants</b></font></td> 
+<td><input style="width: 76px;" name="YourPeasants" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td colspan="2"><input style="background:transparent; border:0px solid #000;" name="YourMonarchBox" disabled="disabled" type="checkbox" value="ON" /><font color="blue"><b>Monarch</b></font></td> 
+</tr> 
+ 
+ 
+ 
+ 
+ 
+</tbody></table></td> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<td class="box" align="center" valign="top" style="padding:2px 2px 2px 2px;"> 
+ 
+<font color="darkblue"><b><u>Attack Analysis</u></b></font> 
+ 
+<table width="100%"><tbody> 
+ 
+<tr><td align="left" height="50" valign="top"> 
+<fieldset style="border: 1px solid #ACA899; padding:0px 5px 0px 5px;"><legend style="font-size: 9px;">Attacker's Offensive Strength</legend> 
+<table align="center" width="100%"><tbody> 
+<tr><td><b>Raw Offense</b></td><td align="right"><b id="YourRawOffense">0</b></td></tr> 
+<tr><td><b>Total Bonuses</b></td><td align="right"><b id="YourBonuses">0%</b></td></tr> 
+<tr><td><b>Modified Offense</b></td><td align="right"><b id="YourModifiedOffense">0</b></td></tr> 
+<tr><td><b>Modified OPA</b></td><td align="right"><b id="YourModifiedOPA">?</b></td></tr> 
+</tbody></table></fieldset></td> 
+ 
+<td align="left" height="50" valign="top"> 
+<fieldset style="border: 1px solid #ACA899; padding:0px 5px 0px 5px;"><legend style="font-size: 9px;">Defender's Defensive Strength</legend> 
+<table align="center" width="100%"><tbody> 
+<tr><td><b>Raw Defense</b></td><td align="right"><b id="EnemyRawDefense">0</b></td></tr> 
+<tr><td><b>Total Bonuses</b></td><td align="right"><b id="EnemyBonuses">5%</b></td></tr> 
+<tr><td><b>Modified Defense</b></td><td align="right"><b id="EnemyModifiedDefense">0</b></td></tr> 
+<tr><td><b>Modified DPA</b></td><td align="right"><b id="EnemyModifiedDPA">?</b></td></tr> 
+</tbody></table></fieldset></td></tr> 
+ 
+<tr><td colspan="2" align="left" height="50" valign="top"> 
+<fieldset style="border: 1px solid #ACA899; padding:0px 5px 0px 5px;"><legend>Attack Result Estimation</legend> 
+<table align="center" width="100%"><tbody><tr><td colspan="2"> 
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr> 
+<td><b>Chance for success</b></td> 
+<td align="right"><b id="Chance"><font color="#000000">?</font></b></td> 
+</tr></table></td></tr> 
+<tr><td><b id="MaximumGain">Gain Without Exploration Pool (Normal Hit)</b></td><td align="right"><b id="MainGainFormula">0</b></td></tr> 
+<tr><td><b id="MinimumGain">Gain With Exploration Pool (War Only)</b></td><td align="right"><b id="MainGainFormula2">0</b></td></tr> 
+ 
+<tr><td colspan="2"><b id="ChanceInfo">You have the same strength as your enemy</b></td></tr> 
+ 
+ 
+</tbody></table></fieldset></td></tr> 
+ 
+<tr> 
+<td colspan="2" align="left" height="20" valign="middle" style="padding:5px 1px 1px 1px;"> 
+<table style="height:16px; border: 1px solid #ACA899;" cellpadding="0" cellspacing="1" width="100%"><tbody><tr><td> 
+<div style="background:#000; height: 12px; width: 0px;" id="ChanceBar"></div></td></tr></tbody></table></td> 
+</tr> 
+ 
+ 
+ 
+ 
+<tr><td colspan="2" align="center" height="20" valign="middle" style="padding:5px 1px 1px 1px;"> 
+<input onclick="YourReset()"  value="« Reset" style="background-color: transparent; font-size: 8pt; font-weight: bold; width: 60px;" type="button" /> 
+<input onclick="YourMove()"   value="« Move"  style="background-color: transparent; font-size: 8pt; font-weight: bold; width: 60px;" type="button" /> 
+<input onclick="Swap()"       value="Swap"    style="background-color: transparent; font-size: 8pt; font-weight: bold; width: 50px;" type="button" /> 
+<input onclick="EnemyMove()"  value="Move »"  style="background-color: transparent; font-size: 8pt; font-weight: bold; width: 60px;" type="button" /> 
+<input onclick="EnemyReset()" value="Reset »" style="background-color: transparent; font-size: 8pt; font-weight: bold; width: 60px;" type="button" /> 
+</td></tr> 
+ 
+<tr><td colspan="2" align="center"> 
+<input onclick="YourBonuses()"  value="Attacker's Bonuses" style="background-color: transparent; font-size: 8pt; font-weight: bold; width: 130px;" type="button" /> 
+<input onclick="SpecialBox()" name="Special" value="Special" style="background-color: transparent; font-size: 8pt; font-weight: bold; width: 70px;"  type="button" /> 
+<input onclick="EnemyBonuses()" value="Defender's Bonuses" style="background-color: transparent; font-size: 8pt; font-weight: bold; width: 130px;" type="button" /> 
+</td></tr> 
+ 
+ 
+ 
+ 
+ 
+ 
+<tr><td valign="top"> 
+ 
+<div id="YourBonusesBox" style="display: none;" align="left"> 
+<fieldset style="border: 1px solid #ACA899; padding:0px 5px 0px 5px;"> 
+<legend>Attacker's Bonuses</legend> 
+<table align="center"><tbody> 
+ 
+<tr> 
+<td width="50%"></td> 
+<td width="70"></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Raw ME</b></td> 
+<td><input style="width: 70px;" name="YourRawME" value="100" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>% TG</b></td> 
+<td><input style="width: 70px;" name="YourTG" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td><font color="blue"><b>% Forts</b></font></td> 
+<td><input style="width: 70px;" name="YourForts" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Rank</b></td> 
+<td><select name="YourRank" style="width: 100%;"> 
+<option value="0" selected="selected">Peasant</option> 
+<option value="1">Knight / Lady</option> 
+<option value="2">Lord / Noble Lady</option> 
+<option value="3">Baron / Baroness</option> 
+<option value="4">Viscount / Viscountess</option> 
+<option value="5">Count / Countess</option> 
+<option value="6">Marquis / Marchioness</option> 
+<option value="7">Duke / Duchess</option> 
+<option value="8">Prince / Princess</option> 
+</select></td> 
+</tr> 
+ 
+<tr> 
+<td colspan="2"><input style="background:transparent; border:0px solid #000;" name="YourAggressionBox" type="checkbox" value="ON" />&nbsp;<b id="YourAggressionName">Aggression</b></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td colspan="2"><input style="background:transparent; border:0px solid #000;" name="YourProtectionBox" checked="checked" type="checkbox" value="ON" /> <font color="blue"><b>Protection</b></font></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td colspan="2"><input style="background:transparent; border:0px solid #000;" name="YourPlagueBox" type="checkbox" value="ON" /> <font color="blue"><b>Plague</b></font></td> 
+</tr> 
+ 
+<tr> 
+<td colspan="2"><input style="background:transparent; border:0px solid #000;" name="YourFanaticismBox" disabled="disabled" type="checkbox" value="ON" />&nbsp;<b id="YourFanaticism"><input style="border: 0px solid ; font-weight: bold; font-size: 12px; background-color: transparent;" size="9" value="Fanaticism" disabled="disabled" type="text" /></b></td> 
+</tr> 
+ 
+ 
+</tbody></table></fieldset></div> 
+ 
+</td><td valign="top"> 
+ 
+<div id="EnemyBonusesBox" style="display: none;" align="left"> 
+<fieldset style="border: 1px solid #ACA899; padding:0px 5px 0px 5px;"> 
+<legend>Defender's Bonuses</legend> 
+<table align="center"><tbody> 
+ 
+<tr> 
+<td width="50%"></td> 
+<td width="70"></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Raw ME</b></td> 
+<td><input style="width: 70px;" name="EnemyRawME" value="100" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td><font color="blue"><b>% TG</b></font></td> 
+<td><input style="width: 70px;" name="EnemyTG" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>% Forts</b></td> 
+<td><input style="width: 70px;" name="EnemyForts" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td><font color="blue"><b>Rank</b></font></td> 
+<td><select name="EnemyRank" style="width: 100%;"> 
+<option value="0" selected="selected">Peasant</option> 
+<option value="1">Knight / Lady</option> 
+<option value="2">Lord / Noble Lady</option> 
+<option value="3">Baron / Baroness</option> 
+<option value="4">Viscount / Viscountess</option> 
+<option value="5">Count / Countess</option> 
+<option value="6">Marquis / Marchioness</option> 
+<option value="7">Duke / Duchess</option> 
+<option value="8">Prince / Princess</option> 
+</select></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td colspan="2"><input style="background:transparent; border:0px solid #000;" name="EnemyAggressionBox" type="checkbox" value="ON" /> <font color="blue"><b>Aggression</b></font></td> 
+</tr> 
+ 
+<tr> 
+<td colspan="2"><input style="background:transparent; border:0px solid #000;" name="EnemyProtectionBox" checked="checked" type="checkbox" value="ON" /><b> Protection</b></td> 
+</tr> 
+ 
+<tr> 
+<td colspan="2"><input style="background:transparent; border:0px solid #000;" name="EnemyPlagueBox" type="checkbox" value="ON" /> <b id="EnemyPlagueName">Plague</b></td> 
+</tr> 
+ 
+<tr> 
+<td colspan="2"><input style="background:transparent; border:0px solid #000;" name="EnemyFanaticismBox" disabled="disabled" type="checkbox" value="ON" /> <b id="EnemyFanaticism"><input style="border: 0px solid ; font-weight: bold; font-size: 12px; background-color: transparent;" size="9" value="Fanaticism" disabled="disabled" type="text" /></b></td> 
+</tr> 
+ 
+</tbody></table></fieldset></div> 
+ 
+ 
+ 
+</td></tr> 
+ 
+ 
+ 
+ 
+<tr><td colspan="2"> 
+ 
+<div id="GainFormulaBox" align="left"> 
+<fieldset style="border: 1px solid #ACA899; padding:0px 5px 0px 5px;"> 
+<legend>Gain Formula Modifiers</legend> 
+<table align="center" width="100%"><tbody> 
+ 
+<tr> 
+<td><b>Defender's&nbsp;Land&nbsp;Percentage</b></td> 
+<td align="right"><b id="GainFormulaLand">0</b></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Province&nbsp;Networth&nbsp;Factor</b> <a target="_blank" href="Military_Gains1.gif"><font color="darkblue">(Graph)</font></a></td> 
+<td align="right"><b id="GainFormulaPNWF">1</b></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Kingdom&nbsp;Networth&nbsp;Factor</b> <a target="_blank" href="Military_Gains2.gif"><font color="darkblue">(Graph)</font></a></td> 
+<td align="right"><b id="GainFormulaKNWF">1</b></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Attacker's&nbsp;Race</b> (Orcs/Avians +30% Combat Gains)</td> 
+<td align="right"><b id="GainFormulaRace">1</b></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Stance</b> (Aggressive +10% Combat Gains)</td> 
+<td align="right"><b id="GainFormulaStance">1</b></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Relations</b> (Hostile +10% Combat Gains)</td> 
+<td align="right"><b id="GainFormulaRelations">1</b></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Attacker's Military Sciences</b></td> 
+<td align="right"><b id="GainFormulaSciences">1</b></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Defender's Guard Stations</b></td> 
+<td align="right"><b id="GainFormulaGS">1</b></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Dragon</b> (Emerald -10% Combat Gains)</td> 
+<td align="right"><b id="GainFormulaDragon">1</b></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Defender's Gang&nbsp;Bang&nbsp;Protection</b></td> 
+<td align="right"><b id="GainFormulaGBP">1</b></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Attacker's Extend Attack Time</b></td> 
+<td align="right"><b id="GainFormulaTime">1</b></td> 
+</tr> 
+ 
+ 
+</tbody></table></fieldset></div> 
+ 
+ 
+</td></tr> 
+ 
+ 
+<tr><td colspan="2" align="center"> 
+<div id="SpecialBox" style="display: none;" align="left"> 
+ 
+ 
+<fieldset style="border: 1px solid #ACA899; padding:0px 5px 0px 5px;"> 
+<legend>Trad Marches</legend> 
+Base gains are 12% and Traditional March gains are capped at 20% of your or your opponent's land, whichever is smaller.
+</fieldset> 
+ 
+<fieldset style="border: 1px solid #ACA899; padding:0px 5px 0px 5px;"> 
+<legend>Plunders</legend> 
+Base gains are 50% gold, 60% food and 60% runes. Max gains is 1.35x base (67.5% gold, 81% runes/food).
+</fieldset> 
+ 
+<fieldset style="border: 1px solid #ACA899; padding:0px 5px 0px 5px;"> 
+<legend>Learn</legend> 
+Base gains are 9.375% of each category of science.
+</fieldset> 
+ 
+<fieldset style="border: 1px solid #ACA899; padding:0px 5px 0px 5px;"> 
+<legend>Conquests</legend> 
+Base gains are 6.8% land for a full hit, gains are decreased in proportion to the relative offense sent vs. targets defence.
+</fieldset> 
+ 
+<fieldset style="border: 1px solid #ACA899; padding:0px 5px 0px 5px;"> 
+<legend>Massacres</legend> 
+Base gains are 9.5% peasants, 8.5% thieves and 5% wizards
+</fieldset> 
+ 
+ 
+</div></td></tr> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</tbody></table></td> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<td class="box" width="210" align="left" valign="top"><center> 
+<font color="darkblue"><u><b id="EnemyProvinceName">Defender's Information</b></u></font></center> 
+ 
+<table align="center"><tbody> 
+ 
+<tr> 
+<td width="110"></td> 
+<td width="76"></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Race</b></td> 
+<td><select name="EnemyRace" style="width: 100%;"> 
+<option value="0" selected="selected">Human</option> 
+<option value="1">Elf</option> 
+<option value="2">Dwarf</option> 
+<option value="3">Orc</option> 
+<option value="4">Gnome</option> 
+<option value="5">Dark Elf</option> 
+<option value="6" disabled="disabled">Undead</option> 
+<option value="7">Avian</option> 
+<option value="8" disabled="disabled">Faery</option> 
+<option value="9">Halfling</option> 
+</select></td> 
+</tr> 
+ 
+<tr> 
+<td><b id="EnemyPersonalityName">Personality</b></td> 
+<td><select name="EnemyPersonality" style="width: 100%;"> 
+<option value="0" selected="selected">Merchant</option> 
+<option value="1">Mystic</option> 
+<option value="2" disabled="disabled">War Hero</option> 
+<option value="3">Warrior</option> 
+<option value="4">Rogue</option> 
+<option value="5">Shepherd</option> 
+<option value="6">Sage</option> 
+<option value="7" disabled="disabled">Cleric</option> 
+<option value="8">Artisan</option> 
+<option value="9" disabled="disabled">Freak</option> 
+<option value="10" disabled="disabled">General</option> 
+<option value="11">Tactician</option> 
+</select></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Relations</b></td> 
+<td><select name="EnemyRelations" style="width: 100%;"> 
+<option value="0" selected="selected">None</option> 
+<option value="1">Unfriendly</option> 
+<option value="2">Hostile</option> 
+<option value="3">War</option> 
+<option value="4">Outside War</option> 
+<option value="5">Intra-Kingdom</option> 
+</select></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Stance</b></td> 
+<td><select name="EnemyStance" style="width: 100%;"> 
+<option value="0" selected="selected">Normal</option> 
+<option value="1">Peaceful</option> 
+<option value="2">Fortified</option> 
+<option value="3">Aggressive</option> 
+</select></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Dragon</b></td> 
+<td><select name="EnemyDragon" style="width: 100%;"> 
+<option value="0" style="color:#000000;" selected="selected">None</option> 
+<option value="1" style="color:#880000;">Ruby</option> 
+<option value="2" style="color:#008800;">Emerald</option> 
+<option value="3" style="color:#000088;">Sapphire</option> 
+<option value="4" style="color:#888800;">Gold</option> 
+</select></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Soldiers</b></td> 
+<td><input style="width: 76px;" name="EnemySoldiers" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td><font color="blue"><b>Enemy Off</b></font></td> 
+<td><input style="width: 76px;" name="EnemyOffSpecs" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b id="EnemyDefSpecsName">Archers</b></td> 
+<td><input style="width: 76px;" name="EnemyDefSpecs" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b id="EnemyElitesName">Knights</b></td> 
+<td><input style="width: 76px;" name="EnemyElites" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Land</b></td> 
+<td><input style="width: 76px;" name="EnemyLand" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Networth</b></td> 
+<td><input style="width: 76px;" name="EnemyNW" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>KD Networth</b></td> 
+<td><input style="width: 76px;" name="EnemyKDNW" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td><font color="blue"><b>Off ME</b></font></td> 
+<td><input style="width: 76px;" name="EnemyOME" value="100" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Def. Military Eff</b></td> 
+<td><input style="width: 76px;" name="EnemyDME" value="100" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>% Buildings Eff</b></td> 
+<td><input style="width: 76px;" name="EnemyBE" value="100" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>% Guard Station</b></td> 
+<td><input style="width: 76px;" name="EnemyGuardStation" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td><font color="blue"><b>% Military Sci.</b></font></td> 
+<td><input style="width: 76px;" name="EnemyMilitarySci" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+ 
+<tr> 
+<td colspan="2" style="background-image: url(Ultima_Hsep.gif); height:8px;" align="center" valign="top"></td> 
+</tr> 
+ 
+ 
+<tr style="display:none;"> 
+<td><font color="blue"><b>Generals to Send</b></font></td> 
+<td><select name="EnemyGenerals" style="width: 100%;"> 
+<option value="0" selected="selected">1</option> 
+<option value="3">2</option> 
+<option value="6">3</option> 
+<option value="9">4</option> 
+</select></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td><font color="blue"><b>ExtendAttackTime</b></font></td> 
+<td><select name="EnemyAttackTime" style="width: 100%;"> 
+<option value="0" selected="selected">0</option> 
+<option value="3">+1</option> 
+<option value="6">+2</option> 
+<option value="9">+3</option> 
+<option value="12">+4</option> 
+</select></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td><font color="blue"><b>Horses</b></font></td> 
+<td><input style="width: 76px;" name="EnemyHorses" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td><font color="blue"><b>Mercenaries</b></font></td> 
+<td><input style="width: 76px;" name="EnemyMerc" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr style="display:none;"> 
+<td><font color="blue"><b>Prisoners</b></font></td> 
+<td><input style="width: 76px;" name="EnemyPris" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Recently Hit</b></td> 
+<td><select name="EnemyRecentlyHit" style="width: 100%;"> 
+<option value="0" selected="selected">None</option> 
+<option value="1">Couple</option> 
+<option value="2">Moderately</option> 
+<option value="3">Heavily</option> 
+<option value="4">Extremely</option> 
+</select></td> 
+</tr> 
+ 
+<tr> 
+<td><input style="background:transparent; border:0px solid #000;" name="EnemyPeasantsBox" disabled="disabled" type="checkbox" value="ON" /> <b id="EnemyPeasantsName"><input style="border: 0px solid ; font-weight: bold; font-size: 12px; background-color: transparent;" size="9" value="Peasants:" disabled="disabled" type="text" /></b></td> 
+<td><input style="width: 76px;" name="EnemyPeasants" value="0" disabled="disabled" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><input style="background:transparent; border:0px solid #000;" name="EnemyMonarchBox" disabled="disabled" type="checkbox" value="ON" /> <b id="EnemyMonarchName"><input style="border: 0px solid ; font-weight: bold; font-size: 12px; background-color: transparent;" size="9" value="Monarch" disabled="disabled" type="text" /></b></td> 
+<td valign="top" align="center"><img id="EnemyPlagueImage" src="Military_Plague.gif" style="display: none;" width="40" height="48" alt="plague" /></td> 
+</tr> 
+ 
+ 
+ 
+ 
+ 
+</tbody></table> 
+ 
+ 
+ 
+</td> 
+</tr> 
+ 
+ 
+</tbody></table> 
+ 
+</form> 
+ 
+</div></div> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<div id="window3" style="display:none;"> 
+<div class="floatingWindowContent" align="center" style="width:650px"> 
+ 
+<form name="Calculator3" action=""><table class="mymainbox" cellpadding="0" cellspacing="10"
+
+style="cursor:default; color:black; font-size:11px; font-family:arial, verdana, sans-serif;  background:#ECE9D8;" width="650"><tbody><tr> 
+ 
+<td class="box" align="left" valign="bottom" width="200" rowspan="2"> 
+ 
+ 
+<div style="display: block;" id="scibox1" align="left"><table align="center" width="200"> 
+ 
+<tbody> 
+ 
+ 
+ 
+<tr><td colspan="3" height="40" align="center"><font color="darkblue"><u><b id="missing1">Province Information</b></u></font></td></tr> 
+ 
+<tr> 
+<td width="117" height="22" align="left"><b>Race:</b></td> 
+<td width="76" height="22"><select name="Sci_Race" style="width: 100%;"> 
+<option value="Human" selected="selected">Human</option> 
+<option value="Elf">Elf</option> 
+<option value="Dwarf">Dwarf</option> 
+<option value="Orc">Orc</option> 
+<option value="Gnome">Gnome</option> 
+<option value="Dark Elf">Dark Elf</option> 
+<option value="Undead" disabled="disabled">Undead</option> 
+<option value="Avian">Avian</option> 
+<option value="Faery" disabled="disabled">Faery</option> 
+<option value="Halfling">Halfling</option> 
+</select></td><td width="10" height="22"></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Personality:</b></td> 
+<td><select name="Sci_Personality" style="width: 100%;"> 
+<option value="0" selected="selected">Merchant</option> 
+<option value="1">Mystic</option> 
+<option value="2" disabled="disabled">War Hero</option> 
+<option value="3">Warrior</option> 
+<option value="4">Rogue</option> 
+<option value="5">Shepherd</option> 
+<option value="6">Sage</option> 
+<option value="7" disabled="disabled">Cleric</option> 
+<option value="8">Artisan</option> 
+<option value="9" disabled="disabled">Freak</option> 
+<option value="10" disabled="disabled">General</option> 
+<option value="11">Tactician</option> 
+</select></td><td width="10" height="22"></td> 
+</tr> 
+ 
+ 
+ 
+ 
+ 
+<tr><td height="22"><b>Acres:</b></td><td height="22"><input style="width: 76px;" name="Sci_Acres" value="0" type="text" size="10" /></td><td height="22"><img src="Ultima_Note.gif" alt="" id="Sci_Acres_Note" title="A minimum of 300 acres is used in Utopia for Science calculations." width="6" height="10" /></td></tr> 
+<tr><td height="22"><b>Avail. Books:</b></td><td height="22"><input style="width: 76px;" name="Sci_Avail" value="0" type="text" size="10" /></td><td height="22"></td></tr> 
+<tr><td height="22"><b>% Libraries:</b></td><td height="22"><input style="width: 76px;" name="Sci_Libraries" value="0" type="text" size="10" /></td><td height="22"></td></tr> 
+ 
+<tr><td height="22" colspan="3"> 
+ 
+<fieldset style="border: 1px solid #ACA899; padding:4px 5px 4px 5px;"> 
+<legend style="color: black; font-family: arial; font-size: 8pt;">Additional Science Information</legend> 
+<table align="center" width="100%"><tbody> 
+ 
+<tr><td width="90"><b>Daily Income:</b></td><td align="left"><b id="Sci_Daily_Income">0</b><b>gc</b></td></tr> 
+<tr><td width="90"><b>Total Money:</b></td><td align="left"><b id="Sci_Total_Money">0</b><b>gc</b></td></tr> 
+<tr><td width="90"><b>Research Cost:</b></td><td align="left"><b id="Sci_Research_Cost">0</b><b>gc</b></td></tr> 
+<tr><td width="90"><b>Science NW:</b></td><td align="left"><b id="Science_Calculator_NW">0</b><b>gc</b></td></tr> 
+<tr><td width="90"><b>Total Known:</b></td><td align="left"><b id="Sci_Total_Known">0</b><b> pts</b></td></tr> 
+<tr><td width="90"><b>Total Progress:</b></td><td align="left"><b id="Sci_Total_Progress">0</b><b> pts</b></td></tr> 
+ 
+</tbody></table></fieldset> 
+ 
+ 
+</td></tr> 
+ 
+ 
+ 
+ 
+ 
+</tbody></table> 
+ 
+</div> 
+ 
+<div style="display: none;" id="scibox2" align="left"><table align="center" width="200"><tbody> 
+ 
+<tr><td height="40" align="center"><center><font color="darkblue"><u><b>Science Marginal Cost</b></u></font></center></td></tr> 
+<tr><td align="center"> 
+ 
+<table style="height:180px; border:1px solid #aa9988;" align="center" width="100%" cellpadding="0" cellspacing="0"> 
+<tr><td align="left" bgcolor="#FFFFFF" valign="top"> 
+<table cellpadding="2" cellspacing="0" width="100%" style="height:180px;"> 
+ 
+<tr><td width="50%" bgcolor="#ECE9D8" style="border:1px solid #fff;">Research Rate</td> 
+<td width="50%" bgcolor="#ECE9D8" style="border:1px solid #fff;">Marginal Cost</td></tr> 
+ 
+<tr><td width="50%" bgcolor="#FFFFFF">Minimal</td><td width="50%" bgcolor="#FFFFFF">6 gc</td></tr> 
+<tr><td width="50%" bgcolor="#FFFFFF">Limited</td><td width="50%" bgcolor="#FFFFFF">7 gc</td></tr> 
+<tr><td width="50%" bgcolor="#FFFFFF">Sustained</td><td width="50%" bgcolor="#FFFFFF">9 gc</td></tr> 
+<tr><td width="50%" bgcolor="#FFFFFF">Active</td><td width="50%" bgcolor="#FFFFFF">13 gc</td></tr> 
+<tr><td width="50%" bgcolor="#FFFFFF" id="Sci_Marginal_Focused">Focused</td><td width="50%" bgcolor="#FFFFFF">17 gc</td></tr> 
+<tr><td width="50%" bgcolor="#FFFFFF" id="Sci_Marginal_Accelerated">Accelerated</td><td width="50%" bgcolor="#FFFFFF">22 gc</td></tr> 
+<tr><td width="50%" bgcolor="#FFFFFF" id="Sci_Marginal_Intensive">Intensive</td><td width="50%" bgcolor="#FFFFFF">27 gc</td></tr> 
+<tr><td width="50%" bgcolor="#FFFFFF" id="Sci_Marginal_Rushed">Rushed</td><td width="50%" bgcolor="#FFFFFF">36 gc</td></tr> 
+<tr><td width="50%" bgcolor="#FFFFFF" id="Sci_Marginal_Extreme">Extreme</td><td width="50%" bgcolor="#FFFFFF">50 gc</td></tr> 
+ 
+</table> 
+ 
+</td></tr> 
+</table> 
+ 
+ 
+ 
+</td></tr> 
+<tr><td align="left"><img src="Science_Money.gif" style="float: right" width="48" height="47" alt="" /> 
+<a target="_blank" href="http://wiki.thedragonportal.net/index.php?title=Science" style="cursor: pointer;"><font color="darkblue"><u>[Want to know more?]</u></font></a> 
+<br /><input style="background:transparent; border:0px solid #000;" name="Sci_War" type="checkbox" value="ON" /><b>At War</b> 
+</td></tr> 
+ 
+</tbody> 
+</table> 
+ 
+ 
+</div> 
+ 
+<table align="center" width="100%" style="height:20px;"><tr> 
+<td style="border:1px solid #ACA899; cursor: pointer;" id="scitab1" align="center" onclick="scibox1()" width="50%" height="20"><b>Province Info</b></td> 
+<td style="border:1px solid #ACA899; cursor: pointer;" id="scitab2" align="center" onclick="scibox2()" width="50%" height="20"><b>Marginal Cost</b></td> 
+</tr></table> 
+ 
+</td> 
+ 
+<td class="box" align="left" valign="top" colspan="2"> 
+ 
+<table align="left" style="height:226px;"><tbody> 
+ 
+<tr> 
+<td width="76" height="40"><img src="Science_Books.gif" alt="" width="50" height="38" /></td> 
+<td width="76" height="40"><center><font color="darkblue"><u><b>Available Points</b></u></font></center></td> 
+<td width="76" height="40"><center><font color="darkblue"><u><b>Points in Progress</b></u></font></center></td> 
+<td height="40" colspan="2"><center><font color="darkblue"><u><b>Science Effects</b></u></font><br /><font size="1"><b>(Move mouse over panels)</b></font></center></td> 
+ 
+</tr> 
+ 
+ 
+<tr><td width="76" height="22"><b>Alchemy:</b></td> 
+<td width="76" height="22"><input style="width: 76px;" name="Sci_Available_Alchemy" value="0" type="text" size="10" /></td> 
+<td width="76" height="22"><input style="width: 76px;" name="Sci_Progress_Alchemy" value="0" type="text" size="10" /></td> 
+<td width="110" height="22"><table style="cursor:crosshair; height:16px; border: 1px solid #ACA899;" cellpadding="0" cellspacing="1" width="104"><tbody><tr> 
+<td onmousemove="Sci_Get_Alchemy(event);"><img style="position:relative;" id="Sci_Offset_Alchemy" src="Ultima_None.gif" border="0" width="0" height="10" alt="" /><img src="Science_Available.gif" border="0" width="0" height="10" id="Sci_Available_Alchemy_Bar" alt="" /><img src="Science_Progress.gif"  border="0" width="0" height="10" id="Sci_Progress_Alchemy_Bar"  alt="" /><img src="Science_Learnable.gif" border="0" width="0" height="10" id="Sci_Learnable_Alchemy_Bar" alt="" /></td> 
+</tr></tbody></table></td> 
+<td width="40" align="right" height="22"><b id="Sci_Alchemy">0%</b></td></tr> 
+ 
+<tr><td height="22"><b>Tools:</b></td> 
+<td width="76" height="22"><input style="width: 76px;" name="Sci_Available_Tools" value="0" type="text" size="10" /></td> 
+<td width="76" height="22"><input style="width: 76px;" name="Sci_Progress_Tools" value="0" type="text" size="10" /></td> 
+<td width="110" height="22"><table style="cursor:crosshair; height:16px; border: 1px solid #ACA899;" cellpadding="0" cellspacing="1" width="104"><tbody><tr> 
+<td onmousemove="Sci_Get_Tools(event);"><img style="position:relative;" id="Sci_Offset_Tools" src="Ultima_None.gif" border="0" width="0" height="10" alt="" /><img src="Science_Available.gif" border="0" width="0" height="10" id="Sci_Available_Tools_Bar" alt="" /><img src="Science_Progress.gif"  border="0" width="0" height="10" id="Sci_Progress_Tools_Bar"  alt="" /><img src="Science_Learnable.gif" border="0" width="0" height="10" id="Sci_Learnable_Tools_Bar" alt="" /></td> 
+</tr></tbody></table></td> 
+<td width="40" align="right" height="22"><b id="Sci_Tools">0%</b></td></tr> 
+ 
+<tr><td height="22"><b>Housing:</b></td> 
+<td width="76" height="22"><input style="width: 76px;" name="Sci_Available_Housing" value="0" type="text" size="10" /></td> 
+<td width="76" height="22"><input style="width: 76px;" name="Sci_Progress_Housing" value="0" type="text" size="10" /></td> 
+<td width="110" height="22"><table style="cursor:crosshair; height:16px; border: 1px solid #ACA899;" cellpadding="0" cellspacing="1" width="104"><tbody><tr> 
+<td onmousemove="Sci_Get_Housing(event);"><img style="position:relative;" id="Sci_Offset_Housing" src="Ultima_None.gif" border="0" width="0" height="10" alt="" /><img src="Science_Available.gif" border="0" width="0" height="10" id="Sci_Available_Housing_Bar" alt="" /><img src="Science_Progress.gif"  border="0" width="0" height="10" id="Sci_Progress_Housing_Bar"  alt="" /><img src="Science_Learnable.gif" border="0" width="0" height="10" id="Sci_Learnable_Housing_Bar" alt="" /></td> 
+</tr></tbody></table></td> 
+<td width="40" align="right" height="22"><b id="Sci_Housing">0%</b></td></tr> 
+ 
+<tr><td height="22"><b>Food:</b></td> 
+<td width="76" height="22"><input style="width: 76px;" name="Sci_Available_Food" value="0" type="text" size="10" /></td> 
+<td width="76" height="22"><input style="width: 76px;" name="Sci_Progress_Food" value="0" type="text" size="10" /></td> 
+<td width="110" height="22"><table style="cursor:crosshair; height:16px; border: 1px solid #ACA899;" cellpadding="0" cellspacing="1" width="104"><tbody><tr> 
+<td onmousemove="Sci_Get_Food(event);"><img style="position:relative;" id="Sci_Offset_Food" src="Ultima_None.gif" border="0" width="0" height="10" alt="" /><img src="Science_Available.gif" border="0" width="0" height="10" id="Sci_Available_Food_Bar" alt="" /><img src="Science_Progress.gif"  border="0" width="0" height="10" id="Sci_Progress_Food_Bar"  alt="" /><img src="Science_Learnable.gif" border="0" width="0" height="10" id="Sci_Learnable_Food_Bar" alt="" /></td> 
+</tr></tbody></table></td> 
+<td width="40" align="right" height="22"><b id="Sci_Food">0%</b></td></tr> 
+ 
+<tr><td height="22"><b>Military:</b></td> 
+<td width="76" height="22"><input style="width: 76px;" name="Sci_Available_Military" value="0" type="text" size="10" /></td> 
+<td width="76" height="22"><input style="width: 76px;" name="Sci_Progress_Military" value="0" type="text" size="10" /></td> 
+<td width="110" height="22"><table style="cursor:crosshair; height:16px; border: 1px solid #ACA899;" cellpadding="0" cellspacing="1" width="104"><tbody><tr> 
+<td onmousemove="Sci_Get_Military(event);"><img style="position:relative;" id="Sci_Offset_Military" src="Ultima_None.gif" border="0" width="0" height="10" alt="" /><img src="Science_Available.gif" border="0" width="0" height="10" id="Sci_Available_Military_Bar" alt="" /><img src="Science_Progress.gif"  border="0" width="0" height="10" id="Sci_Progress_Military_Bar"  alt="" /><img src="Science_Learnable.gif" border="0" width="0" height="10" id="Sci_Learnable_Military_Bar" alt="" /></td> 
+</tr></tbody></table></td> 
+<td width="40" align="right" height="22"><b id="Sci_Military">0%</b></td></tr> 
+ 
+<tr><td height="22"><b>Crime:</b></td> 
+<td width="76" height="22"><input style="width: 76px;" name="Sci_Available_Crime" value="0" type="text" size="10" /></td> 
+<td width="76" height="22"><input style="width: 76px;" name="Sci_Progress_Crime" value="0" type="text" size="10" /></td> 
+<td width="110" height="22"><table style="cursor:crosshair; height:16px; border: 1px solid #ACA899;" cellpadding="0" cellspacing="1" width="104"><tbody><tr> 
+<td onmousemove="Sci_Get_Crime(event);"><img style="position:relative;" id="Sci_Offset_Crime" src="Ultima_None.gif" border="0" width="0" height="10" alt="" /><img src="Science_Available.gif" border="0" width="0" height="10" id="Sci_Available_Crime_Bar" alt="" /><img src="Science_Progress.gif"  border="0" width="0" height="10" id="Sci_Progress_Crime_Bar"  alt="" /><img src="Science_Learnable.gif" border="0" width="0" height="10" id="Sci_Learnable_Crime_Bar" alt="" /></td> 
+</tr></tbody></table></td> 
+<td width="40" align="right" height="22"><b id="Sci_Crime">0%</b></td></tr> 
+ 
+<tr><td height="22"><b>Channeling:</b></td> 
+<td width="76" height="22"><input style="width: 76px;" name="Sci_Available_Channeling" value="0" type="text" size="10" /></td> 
+<td width="76" height="22"><input style="width: 76px;" name="Sci_Progress_Channeling" value="0" type="text" size="10" /></td> 
+<td width="110" height="22"><table style="cursor:crosshair; height:16px; border: 1px solid #ACA899;" cellpadding="0" cellspacing="1" width="104"><tbody><tr> 
+<td onmousemove="Sci_Get_Channeling(event);"><img style="position:relative;" id="Sci_Offset_Channeling" src="Ultima_None.gif" border="0" width="0" height="10" alt="" /><img src="Science_Available.gif" border="0" width="0" height="10" id="Sci_Available_Channeling_Bar" alt="" /><img src="Science_Progress.gif"  border="0" width="0" height="10" id="Sci_Progress_Channeling_Bar"  alt="" /><img src="Science_Learnable.gif" border="0" width="0" height="10" id="Sci_Learnable_Channeling_Bar" alt="" /></td> 
+</tr></tbody></table></td> 
+<td width="40" align="right" height="22"><b id="Sci_Channeling">0%</b></td></tr> 
+ 
+ 
+ 
+ 
+ 
+</tbody></table> 
+ 
+</td> 
+ 
+ 
+ 
+</tr><tr> 
+ 
+<td class="box3d" align="left"> 
+ 
+<table align="left" width="200" cellspacing="7" cellpadding="0"> 
+<tr><td align="left"><b>Science Bonus:</b></td><td align="right"><b id="Sci_Bonuses">?</b><b> %</b></td></tr> 
+<tr><td align="left"><b>Points Needed:</b></td><td align="right"><b id="Sci_Points_Needed">?</b><b> pts</b></td></tr> 
+<tr><td align="left"><b>Points to Learn:</b></td><td align="right"><b id="Sci_Points_To_Learn">?</b><b> pts</b></td></tr> 
+ 
+</table> 
+ 
+</td> 
+ 
+<td class="box3d" align="left"> 
+<table align="left" width="200" cellspacing="7" cellpadding="0"><tr> 
+ 
+<td width="50%"> 
+<table width="100%"><tr><td width="16"><table style="height:16px; width:16px; border: 1px solid #ACA899;" cellpadding="0" cellspacing="1"><tbody><tr><td> 
+<img src="Science_Available.gif" border="0" width="12" height="12" alt="" /></td></tr></tbody></table></td> 
+<td><b>Known</b></td></tr></table> 
+</td> 
+    
+<td width="50%"> 
+<table width="100%"><tr><td width="16"><table style="height:16px; width:16px; border: 1px solid #ACA899;" cellpadding="0" cellspacing="1"><tbody><tr><td> 
+<img src="Science_Learnable.gif" border="0" width="12" height="12" alt="" /></td></tr></tbody></table></td> 
+<td><b>Learnable</b></td></tr></table> 
+</td> 
+ 
+</tr><tr> 
+ 
+<td width="50%"> 
+<table width="100%"><tr><td width="16"><table style="height:16px; width:16px; border: 1px solid #ACA899;" cellpadding="0" cellspacing="1"><tbody><tr><td> 
+<img src="Science_Progress.gif" border="0" width="12" height="12" alt="" /></td></tr></tbody></table></td> 
+<td><b>In&nbsp;Progress</b></td></tr></table> 
+</td> 
+ 
+<td width="50%"> 
+<table width="100%"><tr><td width="16"><table style="height:16px; width:16px; border: 1px solid #ACA899;" cellpadding="0" cellspacing="1"><tbody><tr><td> 
+<img src="Ultima_None.gif" border="0" width="12" height="12" alt="" /></td></tr></tbody></table></td> 
+<td><b>Unlearned</b></td></tr></table> 
+</td> 
+ 
+</tr></table> 
+</td> 
+ 
+</tr><tr> 
+ 
+<td class="box" align="center"><input name="" onclick="sciReport()" value="Report" style="background-color: transparent; width: 95px;" type="button" /><input name="" onclick="" value="Help" style="background-color: transparent; width: 95px;" type="button" /></td> 
+ 
+<td class="box" align="left"> 
+ 
+<table align="left"><tbody> 
+<tr> 
+<td colspan="2"><b>Total Bonuses:</b></td> 
+<td align="right"><b id="Sci_Total_Bonuses">0</b><b>%</b></td> 
+</tr> 
+ 
+</tbody></table> 
+ 
+</td> 
+ 
+<td class="box" align="left"> 
+<table align="left"><tbody><tr> 
+<td><b>Points Per Acre: </b><b id="Sci_PPA">700</b><b> pts</b></td> 
+</tr></tbody></table> 
+</td> 
+ 
+</tr></tbody></table></form> 
+ 
+</div></div> 
+ 
+ 
+ 
+ 
+<div id="window4" style="display:none;"> 
+<div class="floatingWindowContent" align="center" style="width:760px"> 
+ 
+<form name="Calculator4" action=""><table class="mymainbox" cellpadding="0" cellspacing="5"
+
+style="cursor:default; color:black; font-size:11px; font-family:arial, verdana, sans-serif;  background:#ECE9D8;" width="760"><tbody><tr> 
+ 
+<td class="box" align="left" style="padding: 5px 5px 5px 5px;"> 
+ 
+ 
+<table align="left" width="100%" cellpadding="0" cellspacing="0"><tbody> 
+ 
+<tr> 
+<td height="0" align="left" rowspan="2"></td> 
+<td height="0" valign="bottom" align="center" colspan="2"><font color="darkblue"><u><b>Already Built</b></u></font></td> 
+<td height="0" valign="top" align="center" rowspan="22" style="background-image:url('Ultima_Vsep.gif');"><img src="Ultima_Vsep.gif" width="8" height="1" alt="" /></td> 
+<td height="0" valign="bottom" align="center"><font color="darkblue"><u><b>In&nbsp;Progress</b></u></font></td> 
+<td height="0" valign="top" align="center" rowspan="22" style="background-image:url('Ultima_Vsep.gif');"><img src="Ultima_Vsep.gif" width="8" height="1" alt="" /></td> 
+<td height="0" valign="bottom" align="center"><font color="darkblue"><u><b>Goal</b></u></font></td> 
+<td height="0" valign="top" align="center" rowspan="22" style="background-image:url('Ultima_Vsep.gif');"><img src="Ultima_Vsep.gif" width="8" height="1" alt="" /></td> 
+<td height="0" valign="bottom" align="center"><font color="darkblue"><u><b>Build</b></u></font></td> 
+<td height="0" valign="top" align="center" rowspan="22" style="background-image:url('Ultima_Vsep.gif');"><img src="Ultima_Vsep.gif" width="8" height="1" alt="" /></td> 
+<td height="0" align="center" width="320" rowspan="2"><font color="darkblue"><u><b>Effects Summary</b></u></font></td> 
+</tr> 
+ 
+<tr> 
+<td height="0" valign="bottom" align="center"><font color="darkblue"><b>(number)</b></font></td> 
+<td height="0" valign="bottom" align="center"><font color="darkblue"><b>(%)</b></font></td> 
+<td height="0" valign="bottom" align="center"><font color="darkblue"><u><b>(number)</b></u></font></td> 
+<td height="0" valign="bottom" align="center"><input name="Building_Percentage_Ratio" onclick="BuildingPercentageRatio()" value="Percentage" style="background-color: transparent; font-size: 8pt; font-weight: bold; width: 76px; height:17px;" type="button" /></td> 
+<td height="0" valign="bottom" align="center"><font color="darkblue"><u><b>This</b></u></font></td> 
+</tr> 
+ 
+<tr id="Building_ID_Barren"> 
+<td width="100" height="22"><b>Barren&nbsp;Lands:</b></td> 
+<td height="22" align="center"><input name="Building_Available_Barren" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_Barren" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_Barren" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_Barren" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_Barren" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22">+<b id="Building_Barren_Population">0</b> maximum population, Produce <b id="Building_Barren_Bushels">0</b> bushels</td> 
+</tr> 
+ 
+<tr id="Building_ID_Homes"> 
+<td height="22"><b>Homes:</b></td> 
+<td height="22" align="center"><input name="Building_Available_Homes" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_Homes" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_Homes" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_Homes" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_Homes" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22">+<b id="Building_Extra_Population">0</b> maximum population, <b id="Building_Birth_Rate">0</b>% birth rate</td> 
+</tr> 
+ 
+<tr id="Building_ID_Farms"> 
+<td height="22"><b>Farms:</b></td> 
+<td height="22" align="center"><input name="Building_Available_Farms" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_Farms" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_Farms" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_Farms" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_Farms" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22">Produce <b id="Building_Bushels_Produced">0</b> bushels (<b id="Building_Bushels_FL">0</b> with FL)</td> 
+</tr> 
+ 
+<tr id="Building_ID_Mills"> 
+<td height="22"><b>Mills:</b></td> 
+<td height="22" align="center"><input name="Building_Available_Mills" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_Mills" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_Mills" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_Mills" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_Mills" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22">-<b id="Building_Construction_Cost">0</b>% building cost, -<b id="Building_Exploration_Cost">0</b>% exploration gc</td> 
+</tr> 
+ 
+<tr id="Building_ID_Banks"> 
+<td height="22"><b>Banks:</b></td> 
+<td height="22" align="center"><input name="Building_Available_Banks" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_Banks" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_Banks" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_Banks" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_Banks" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22"><b id="Building_Gold_Produced">0</b>gc, +<b id="Building_Increased_Income">0</b>% income</td> 
+</tr> 
+ 
+<tr id="Building_ID_TG"> 
+<td height="22"><b>Training&nbsp;Grounds:</b></td> 
+<td height="22" align="center"><input name="Building_Available_TG" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_TG" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_TG" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_TG" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_TG" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22"><b id="Building_Offensive_Military">0</b>% offense bonus</td> 
+</tr> 
+ 
+<tr id="Building_ID_Armouries"> 
+<td height="22"><b>Armouries:</b></td> 
+<td height="22" align="center"><input name="Building_Available_Armouries" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_Armouries" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_Armouries" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_Armouries" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_Armouries" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22">-<b id="Building_Training_Costs">0</b>% training, <b id="Building_Daily_Wages">0</b>% military wages, <b id="Building_Draft_Costs">0</b>% draft costs</td> 
+</tr> 
+ 
+<tr id="Building_ID_Barracks"> 
+<td height="22"><b>Barracks:</b></td> 
+<td height="22" align="center"><input name="Building_Available_Barracks" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_Barracks" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_Barracks" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_Barracks" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_Barracks" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22"><b id="Building_Attack_Time">0</b>% attack time (<b id="Building_Attack_Time_QF">0</b>% with QF)</td> 
+</tr> 
+ 
+<tr id="Building_ID_Forts"> 
+<td height="22"><b>Forts:</b></td> 
+<td height="22" align="center"><input name="Building_Available_Forts" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_Forts" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_Forts" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_Forts" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_Forts" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22">+<b id="Building_Defensive_Military">0</b>% defense bonus</td> 
+</tr> 
+ 
+<tr id="Building_ID_GS"> 
+<td height="22"><b>Guard&nbsp;Stations:</b></td> 
+<td height="22" align="center"><input name="Building_Available_GS" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_GS" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_GS" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_GS" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_GS" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22">-<b id="Building_Attacked_Losses">0</b>% losses when attacked</td> 
+</tr> 
+ 
+<tr id="Building_ID_Hospitals"> 
+<td height="22"><b>Hospitals:</b></td> 
+<td height="22" align="center"><input name="Building_Available_Hospitals" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_Hospitals" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_Hospitals" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_Hospitals" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_Hospitals" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22"><b id="Building_Cure_Plague">0</b>% cure plague, <b id="Building_Military_Losses">0</b>% military losses</td> 
+</tr> 
+ 
+<tr id="Building_ID_Guilds"> 
+<td height="22"><b>Guilds:</b></td> 
+<td height="22" align="center"><input name="Building_Available_Guilds" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_Guilds" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_Guilds" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_Guilds" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_Guilds" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22">Training about <b id="Building_Wizard_Produced">0</b> wizards per hour</td> 
+</tr> 
+ 
+<tr id="Building_ID_Towers"> 
+<td height="22"><b>Towers:</b></td> 
+<td height="22" align="center"><input name="Building_Available_Towers" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_Towers" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_Towers" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_Towers" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_Towers" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22">Produce <b id="Building_Runes_Produced">0</b> runes per hour</td> 
+</tr> 
+ 
+<tr id="Building_ID_TD"> 
+<td height="22"><b>Thieves'&nbsp;Dens:</b></td> 
+<td height="22" align="center"><input name="Building_Available_TD" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_TD" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_TD" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_TD" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_TD" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22">-<b id="Building_Thievery_Losses">0</b>% losses, +<b id="Building_Thievery_Effectiveness">0</b>% effectiveness</td> 
+</tr> 
+ 
+<tr id="Building_ID_WT"> 
+<td height="22"><b>Watchtowers:</b></td> 
+<td height="22" align="center"><input name="Building_Available_WT" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_WT" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_WT" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_WT" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_WT" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22">Thieves: <b id="Building_Catching_Thieves">0</b>% catch, -<b id="Building_Thievery_Damage">0</b>% damage</td> 
+</tr> 
+ 
+<tr id="Building_ID_Libraries"> 
+<td height="22"><b>Libraries:</b></td> 
+<td height="22" align="center"><input name="Building_Available_Libraries" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_Libraries" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_Libraries" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_Libraries" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_Libraries" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22">+<b id="Building_Science_Bonus">0</b>% science effects (not affected by BE)</td> 
+</tr> 
+ 
+<tr id="Building_ID_Schools"> 
+<td height="22"><b>Schools:</b></td> 
+<td height="22" align="center"><input name="Building_Available_Schools" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_Schools" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_Schools" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_Schools" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_Schools" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22">-<b id="Building_Science_Costs">0</b>% science cost, protect <b id="Building_Books_Protected">0</b>% of science</td> 
+</tr> 
+ 
+<tr id="Building_ID_Stables"> 
+<td height="22"><b>Stables:</b></td> 
+<td height="22" align="center"><input name="Building_Available_Stables" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_Stables" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_Stables" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_Stables" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_Stables" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22">Produce <b id="Building_Horses_Produced">0</b> horses/hour, hold <b id="Building_Horses_Hold">0</b> horses</td> 
+</tr> 
+ 
+<tr id="Building_ID_Dungeons"> 
+<td height="22"><b>Dungeons:</b></td> 
+<td height="22" align="center"><input name="Building_Available_Dungeons" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Percentage_Dungeons" value="0" type="text" size="10" style="width: 30px; background:#ECE9D8; color:#000000;" readonly="readonly" /></td> 
+<td height="22" align="center"><input name="Building_Progress_Dungeons" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Building_Goal_Dungeons" value="0" type="text" size="10" style="width: 40px; background:#fffffe; color:#000000;" /></td> 
+<td height="22" align="center"><input name="Build_This_Dungeons" value="0" type="text" size="10" style="width: 30px; background:#000000; color:#ffffff;" readonly="readonly" /></td> 
+<td height="22"><b id="Building_Maximum_Prisoners">0</b> prisoners (<b id="Building_Prisoners_Offense">0</b> offense, <b id="Building_Prisoners_Produce">0</b>gc, <b id="Building_Prisoners_Jobs">0</b> jobs)</td> 
+</tr> 
+ 
+<tr id="Building_ID_Total"> 
+<td height="22"><b>Total&nbsp;Land:</b></td> 
+<td height="22" align="left" colspan="2">&nbsp;&nbsp;&nbsp;<b id="Building_Available_Total">0</b><b> Acres</b></td> 
+<td height="22" align="center"><input name="" value="« Ready!" onclick="Building_Ready_Column();" style="background-color: transparent; font-size: 8pt; font-weight: bold; width: 70px;" type="button" /></td> 
+<td height="22" align="center"><b id="Building_Goal_Total">0%</b></td> 
+<td height="22" align="center"><input name="" value="« Build!" onclick="Building_Build_Column();" style="background-color: transparent; font-size: 8pt; font-weight: bold; width: 60px;" type="button" /></td> 
+ 
+<td height="0" valign="bottom" align="left"> 
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr> 
+<td><input style="border:0px solid #000;" name="Building_War_Box" type="checkbox" value="ON" /></td><td><b> War</b></td> 
+<td><input style="border:0px solid #000;" name="Building_Bonuses_Box" type="checkbox" value="ON" /></td><td><b> Bonuses</b></td> 
+<td><input style="border:0px solid #000;" name="Building_Progress_Box" type="checkbox" value="ON" /></td><td><b> In&nbsp;Progress</b></td> 
+<td><input style="border:0px solid #000;" name="Building_Goal_Box" type="checkbox" value="ON" /></td><td width="28"><b id="Building_Goal_Box_Name"> Goal</b></td> 
+</tr></table> 
+</td> 
+ 
+</tr> 
+ 
+ 
+ 
+</tbody></table> 
+ 
+ 
+</td></tr><tr><td align="left"> 
+ 
+ 
+ 
+ 
+ 
+<table border="0" cellpadding="0" cellspacing="0" width="100%" align="left"><tbody><tr> 
+ 
+<td width="220"> 
+<table border="0" cellpadding="0" cellspacing="0" align="left"><tbody><tr> 
+<td width="110"><input name="Building_Expand_Compact" onclick="BuildingExpandCompact()" value="Compact" style="width: 110px; background-color: transparent; font-size: 8pt; font-weight: bold;" type="button" /></td> 
+<td width="110"><input name="" onclick="Building_Clear_Column1()" value="Clear Column 1" style="width: 110px; background-color: transparent; font-size: 8pt; font-weight: bold;" type="button" /></td> 
+</tr><tr> 
+<td width="110"><input name="Building_Generate_Report" onclick="BuildingGenerateReport()" value="Generate Report" style="width: 110px; background-color: transparent; font-size: 8pt; font-weight: bold;" type="button" disabled="disabled" /></td> 
+<td width="110"><input name="" onclick="Building_Clear_Column2()" value="Clear Column 2" style="width: 110px; background-color: transparent; font-size: 8pt; font-weight: bold;" type="button" /></td> 
+</tr><tr> 
+<td width="110"><input name="" onclick="Building_Reset_Info()" value="Reset Info." style="width: 110px; background-color: transparent; font-size: 8pt; font-weight: bold;" type="button" /></td> 
+<td width="110"><input name="" onclick="Building_Clear_Column3()" value="Clear Column 3" style="width: 110px; background-color: transparent; font-size: 8pt; font-weight: bold;" type="button" /></td> 
+</tr><tr> 
+<td width="110"><input name="" onclick="Building_Reset_All_Info()" value="Reset All Info." style="width: 110px; background-color: transparent; font-size: 8pt; font-weight: bold;" type="button" /></td> 
+<td width="110"><input name="" onclick="Building_Clear_All_Columns()" value="Clear All Columns" style="width: 110px; background-color: transparent; font-size: 8pt; font-weight: bold;" type="button" /></td> 
+</tr></tbody></table> 
+</td> 
+ 
+<td width="10" height="0" valign="top" align="center" style="background-image:url('Ultima_Vsep.gif');"><img src="Ultima_Vsep.gif" width="8" height="1" alt="" /></td> 
+ 
+<td width="160"> 
+ 
+<table border="0" cellpadding="0" cellspacing="0" align="left"><tbody><tr> 
+<td width="80" height="18" align="left"><b id="Building_Stance_Name">Stance</b></td> 
+<td width="80" align="left"><select name="Building_Stance" style="font-size: 8pt; width: 100%;"> 
+<option value="Normal" selected="selected">Normal</option> 
+<option value="Peaceful">Peaceful</option> 
+<option value="Fortified">Fortified</option> 
+<option value="Aggressive">Aggressive</option> 
+</select></td> 
+ 
+</tr><tr> 
+ 
+<td width="80" height="18" align="left"><b id="Building_Race_Name">Race</b></td> 
+<td width="80" align="left"><select name="Building_Race" style="font-size: 8pt; width: 100%;"> 
+<option value="Human" selected="selected">Human</option> 
+<option value="Elf">Elf</option> 
+<option value="Dwarf">Dwarf</option> 
+<option value="Orc">Orc</option> 
+<option value="Gnome">Gnome</option> 
+<option value="Dark Elf">Dark Elf</option> 
+<option value="Undead" disabled="disabled">Undead</option> 
+<option value="Avian">Avian</option> 
+<option value="Faery" disabled="disabled">Faery</option> 
+<option value="Halfling">Halfling</option> 
+</select></td> 
+ 
+</tr><tr> 
+ 
+<td width="80" height="18" align="left"><b id="Building_Personality_Name">Personality</b></td> 
+<td width="80" align="left"><select name="Building_Personality" style="font-size: 8pt; width: 100%;"> 
+<option value="Merchant" selected="selected">Merchant</option> 
+<option value="Mystic">Mystic</option> 
+<option value="War Hero" disabled="disabled">War Hero</option> 
+<option value="Warrior">Warrior</option> 
+<option value="Rogue">Rogue</option> 
+<option value="Shepherd">Shepherd</option> 
+<option value="Sage">Sage</option> 
+<option value="Cleric" disabled="disabled">Cleric</option> 
+<option value="Artisan">Artisan</option> 
+<option value="Freak" disabled="disabled">Freak</option> 
+<option value="General" disabled="disabled">General</option> 
+<option value="Tactician">Tactician</option> 
+</select></td> 
+ 
+</tr><tr> 
+ 
+<td width="80" height="18" align="left"><b>Efficiency</b></td> 
+<td width="80" align="left"><input name="Building_Effectiveness" value="100" type="text" size="2" style="width: 80px; height: 17px; font-size: 8pt; background:#fffffe; color:#000000;" /></td> 
+ 
+ 
+</tr></tbody></table> 
+</td> 
+ 
+ 
+<td width="10" height="0" valign="top" align="center" style="background-image:url('Ultima_Vsep.gif');"><img src="Ultima_Vsep.gif" width="8" height="1" alt="" /></td> 
+ 
+ 
+<td> 
+ 
+<table border="0" cellpadding="0" cellspacing="0" align="left"><tbody><tr> 
+<td height="18" width="110" align="left"><b>Building Cost</b></td><td width="60"><b id="Building_Building_Cost">0</b><b>gc</b></td> 
+</tr><tr> 
+<td height="18" width="110" align="left"><b>Razing Cost</b></td><td width="60"><b id="Building_Razing_Cost">0</b><b>gc</b></td> 
+</tr><tr> 
+<td height="18" width="110" align="left"><b>Total Cost</b></td><td width="60"><b id="Building_Total_Cost">0</b><b>gc</b></td> 
+</tr><tr> 
+<td height="18" width="110" align="left"><b>Buildings NW</b></td><td width="60"><b id="Building_Total_NW">0</b><b>gc</b></td> 
+</tr></tbody></table> 
+ 
+</td> 
+ 
+<td width="10" height="0" valign="top" align="center" style="background-image:url('Ultima_Vsep.gif');"><img src="Ultima_Vsep.gif" width="8" height="1" alt="" /></td> 
+ 
+<td> 
+ 
+<table border="0" cellpadding="0" cellspacing="0" align="left"><tbody><tr> 
+<td height="18" width="130" align="left"><b>Available Workers</b></td><td width="100"><b id="Building_Available_Workers">0</b></td> 
+</tr><tr> 
+<td height="18" width="110" align="left"><b>Workers 4 Max Eff.</b></td><td width="100"><b id="Building_Max_Efficiency">0</b></td> 
+</tr><tr> 
+<td height="18" width="110" align="left"><b>Available Jobs</b></td><td width="100"><b id="Building_Total_Jobs">0</b></td> 
+</tr><tr> 
+<td height="18" width="110" align="left"><b>Total Money</b></td><td width="100"><b id="Building_Total_Money">0</b><b>gc</b></td> 
+</tr></tbody></table> 
+ 
+</td> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</tr></tbody></table> 
+ 
+ 
+</td></tr></tbody></table></form> 
+ 
+</div></div> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<div id="window5" style="display:none;"> 
+<div class="floatingWindowContent" align="center" style="width:800px"> 
+<form name="Calculator6" action=""> 
+<table class="mymainbox" cellpadding="0" cellspacing="10" style="cursor:default; color:black; font-size:11px; font-family:arial, verdana, sans-serif;  background:#ECE9D8;" width="800"><tbody><tr> 
+ 
+<td class="box" align="center" style="padding: 5px 5px 5px 5px;" valign="top"> 
+ 
+<center><font color="darkblue"><u><b id="YourThief">Thief's Information</b></u></font></center> 
+ 
+<table align="center"> 
+ 
+<tr> 
+<td width="117"></td> 
+<td width="76"></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Thieves</b></td> 
+<td><input style="width: 76px;" name="YourThieves" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Networth</b></td> 
+<td><input style="width: 76px;" name="YourNetworth" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Personality</b></td> 
+<td><select name="YourPersonality" style="width: 100%;"> 
+<option value="Other" selected="selected">Other</option> 
+<option value="Rogue">Rogue</option> 
+</select></td> 
+</tr> 
+ 
+<tr> 
+<td><img src="Thievery_Thief.gif" alt="" /></td> 
+<td> 
+<input value="Reset"     style="width: 100%; background-color: transparent; font-size: 8pt; font-weight: bold;" type="button" onclick="YourThiefReset()" /><br /> 
+<input value="Report"    style="width: 100%; background-color: transparent; font-size: 8pt; font-weight: bold;" type="button" onclick="YourThiefReport()" /><br /> 
+<input value="Reset All" style="width: 100%; background-color: transparent; font-size: 8pt; font-weight: bold;" type="button" onclick="ThiefResetAll()" /> 
+</td> 
+</tr> 
+ 
+</table> 
+ 
+</td> 
+ 
+<td class="box" align="center" style="padding: 5px 5px 5px 5px;" rowspan="2" valign="top" width="300"> 
+ 
+<center><font color="darkblue"><u><b>Operation Analysis</b></u></font></center> 
+ 
+<table align="center"> 
+ 
+<tr> 
+<td width="6"></td> 
+<td width="117"></td> 
+<td width="125"></td> 
+<td width="6"></td> 
+</tr> 
+ 
+<tr> 
+<td><img src="Ultima_None.gif" alt="" title="" width="6" height="10" /></td> 
+<td><b>Operation</b></td> 
+<td><select name="Thievery_Operation" style="width: 200px;"> 
+<option value="RobtheVaults" selected="selected">Rob the Vaults</option> 
+<option value="RobtheGranaries">Rob the Granaries</option> 
+<option value="RobtheTowers">Rob the Towers</option> 
+<option value="Kidnapping">Kidnapping</option> 
+<option value="AssassinateWizards">Assassinate Wizards</option> 
+<option value="NightStrike">Night Strike</option> 
+<option value="StealHorses">Steal Horses</option> 
+<option value="Arson">Arson</option> 
+<option value="GreaterArson">Greater Arson</option> 
+<option value="FreePrisoners">Free Prisoners</option> 
+</select></td> 
+<td><img src="Ultima_None.gif" alt="" title="" width="6" height="10" /></td> 
+</tr> 
+ 
+ 
+ 
+ 
+<tr> 
+<td></td> 
+<td colspan="2"> 
+ 
+<table style="height:160px; border:1px solid #aa9988;" align="center" width="290" cellpadding="0" cellspacing="0"> 
+<tr><td align="left" bgcolor="#FFFFFF" valign="top"> 
+<table cellpadding="2" cellspacing="0" width="100%"> 
+ 
+<tr> 
+<th bgcolor="#ECE9D8" class="box3d" style="text-align:center; height:15px; width:10px;">#</th> 
+<th bgcolor="#ECE9D8" class="box3d" style="text-align:center; height:15px; width:70px;"><b id="Thievery_Resource_Title">Money</b></th> 
+<th bgcolor="#ECE9D8" class="box3d" style="text-align:center; height:15px; width:50px;">Thieves</th> 
+<th bgcolor="#ECE9D8" class="box3d" style="text-align:center; height:15px; width:70px;"><b id="Thievery_Operation_Title">Stolen</b></th> 
+<th bgcolor="#ECE9D8" class="box3d" style="text-align:center; height:15px; width:50px;"><b>Damage</b></th> 
+</tr> 
+ 
+</table> 
+ 
+<b id="Thievery_Main_Table"> 
+</b></td></tr></table> 
+ 
+</td> 
+<td></td> 
+</tr> 
+ 
+ 
+ 
+ 
+ 
+<tr> 
+<td></td> 
+<td colspan="2"> 
+<table cellpadding="2" cellspacing="0" width="290"> 
+ 
+<tr> 
+<td width="34%" align="left"><b>Relative&nbsp;NW:&nbsp;</b></td><td width="15%" align="left"><b id="Thievery_Relative_NW">0</b></td> 
+<td width="34%" align="left"><b>Resources&nbsp;Lost:&nbsp;</b></td><td width="15%" align="left"><b id="Thievery_Losts">0</b><b>%</b></td> 
+</tr> 
+ 
+<tr> 
+<td width="34%" align="left"><b>Thievery&nbsp;Rate:&nbsp;</b></td><td width="15%" align="left"><b id="Thievery_Rate">0</b></td> 
+<td width="34%" align="left"><b>Resources&nbsp;Gains:&nbsp;</b></td><td width="15%" align="left"><b id="Thievery_Resources_Gains">0</b><b>%</b></td> 
+</tr> 
+ 
+<tr> 
+<td width="34%" align="left"><b>Max&nbsp;Resource:&nbsp;</b></td><td width="15%" align="left"><b id="Thievery_Max">0</b><b>%</b></td> 
+<td width="34%" align="left"><b>Thief&nbsp;Max&nbsp;Resource:&nbsp;</b></td><td width="15%" align="left"><b id="Thief_Max_Resource">0</b><b>%</b></td> 
+</tr> 
+ 
+<tr> 
+<td width="34%" align="left"><b>Stance&nbsp;Penalty:&nbsp;</b></td><td width="15%" align="left"><b id="Thievery_Penalty">0</b><b>%</b></td> 
+<td width="34%" align="left"><b>Thief&nbsp;Per&nbsp;Resource:&nbsp;</b></td><td width="15%" align="left"><b>1:</b><b id="Thief_Per_Resource">0</b></td> 
+</tr> 
+ 
+</table> 
+</td> 
+<td></td> 
+</tr> 
+ 
+ 
+ 
+ 
+ 
+</table> 
+ 
+</td> 
+ 
+<td class="box" align="center" style="padding: 5px 5px 5px 5px;" rowspan="2" valign="top" width="220"> 
+ 
+<center><font color="darkblue"><u><b>Resources</b></u></font></center> 
+ 
+<table align="center"> 
+ 
+<tr> 
+<td width="6"></td> 
+<td width="150" align="left"></td> 
+<td width="76"></td> 
+</tr> 
+ 
+<tr> 
+<td><input style="background:transparent; border:0px solid #000;" id="Thief_Money" type="radio" name="Thief_Resources" value="0" onclick="ThiefMoney()" checked="checked" /></td> 
+<td align="left"><b>Money</b></td> 
+<td><input style="width: 76px;" name="Thievery_Money" value="0" type="text" size="10" /></td> 
+ 
+</tr> 
+ 
+<tr> 
+<td><input style="background:transparent; border:0px solid #000;" id="Thief_Food" type="radio" name="Thief_Resources" value="1" onclick="ThiefFood()" /></td> 
+<td align="left"><b>Food</b></td> 
+<td><input style="width: 76px;" name="Thievery_Food" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><input style="background:transparent; border:0px solid #000;" id="Thief_Runes" type="radio" name="Thief_Resources" value="2" onclick="ThiefRunes()" /></td> 
+<td align="left"><b>Runes</b></td> 
+<td><input style="width: 76px;" name="Thievery_Runes" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><input style="background:transparent; border:0px solid #000;" id="Thief_Peasants" type="radio" name="Thief_Resources" value="3" onclick="ThiefPeasants()" /></td> 
+<td align="left"><b>Peasants</b></td> 
+<td><input style="width: 76px;" name="Thievery_Peasants" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><input style="background:transparent; border:0px solid #000;" id="Thief_Wizards" type="radio" name="Thief_Resources" value="4" onclick="ThiefWizards()" /></td> 
+<td align="left"><b id="Thief_Wizards_Name"> 
+<input style="border: 0px solid ; font-weight: bold; background-color: transparent;" size="9" value="Wizards" disabled="disabled" type="text" /> 
+</b></td> 
+<td><input style="width: 76px;" name="Thievery_Wizards" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><input style="background:transparent; border:0px solid #000;" id="Thief_Soldiers" type="radio" name="Thief_Resources" value="5" onclick="ThiefSoldiers()" /></td> 
+<td align="left"><b id="Thief_Soldiers_Name"> 
+<input style="border: 0px solid ; font-weight: bold; background-color: transparent;" size="9" value="Soldiers" disabled="disabled" type="text" /> 
+</b></td> 
+<td><input style="width: 76px;" name="Thievery_Soldiers" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><input style="background:transparent; border:0px solid #000;" id="Thief_OffSpecs" type="radio" name="Thief_Resources" value="6" onclick="ThiefOffSpecs()" /></td> 
+<td align="left"><b id="Thief_OffSpecs_Name"> 
+<input style="border: 0px solid ; font-weight: bold; background-color: transparent;" size="9" value="OffSpecs" disabled="disabled" type="text" /> 
+</b></td> 
+<td><input style="width: 76px;" name="Thievery_OffSpecs" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><input style="background:transparent; border:0px solid #000;" id="Thief_DefSpecs" type="radio" name="Thief_Resources" value="6" onclick="ThiefDefSpecs()" /></td> 
+<td align="left"><b id="Thief_DefSpecs_Name"> 
+<input style="border: 0px solid ; font-weight: bold; background-color: transparent;" size="9" value="DefSpecs" disabled="disabled" type="text" /> 
+</b></td> 
+<td><input style="width: 76px;" name="Thievery_DefSpecs" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><input style="background:transparent; border:0px solid #000;" id="Thief_Elites" type="radio" name="Thief_Resources" value="7" onclick="ThiefElites()" /></td> 
+<td align="left"><b id="Thief_Elites_Name"> 
+<input style="border: 0px solid ; font-weight: bold; background-color: transparent;" size="9" value="Elites" disabled="disabled" type="text" /> 
+</b></td> 
+<td><input style="width: 76px;" name="Thievery_Elites" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><input style="background:transparent; border:0px solid #000;" id="Thief_Horses" type="radio" name="Thief_Resources" value="8" onclick="ThiefHorses()" /></td> 
+<td align="left"><b>Horses</b></td> 
+<td><input style="width: 76px;" name="Thievery_Horses" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><input style="background:transparent; border:0px solid #000;" id="Thief_Buildings" type="radio" name="Thief_Resources" value="9" onclick="ThiefBuildings()" /></td> 
+<td align="left"><b>Buildings</b></td> 
+<td><input style="width: 76px;" name="Thievery_Buildings" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><input style="background:transparent; border:0px solid #000;" id="Thief_Prisoners" type="radio" name="Thief_Resources" value="9" onclick="ThiefPrisoners()" /></td> 
+<td align="left"><b>Prisoners</b></td> 
+<td><input style="width: 76px;" name="Thievery_Prisoners" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+ 
+</table> 
+ 
+</td> 
+ 
+ 
+ 
+</tr><tr> 
+ 
+<td class="box" align="center" style="padding: 5px 5px 5px 5px;" valign="top"> 
+ 
+<center><font color="darkblue"><u><b id="EnemyThief">Defender's Information</b></u></font></center> 
+ 
+<table align="center"> 
+ 
+<tr> 
+<td width="117"></td> 
+<td width="76"></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Networth</b></td> 
+<td><input style="width: 76px;" name="EnemyNetworth" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td><b>Relations</b></td> 
+<td><select name="EnemyRelations" style="width: 100%;"> 
+<option value="0" selected="selected">None</option> 
+<option value="1">Unfriendly</option> 
+<option value="2">Hostile</option> 
+<option value="3">War</option> 
+<option value="4">Outside War</option> 
+</select></td> 
+</tr> 
+ 
+<tr> 
+<td><img src="Thievery_Vault.gif" width="75" alt="" /></td> 
+<td valign="top"><input value="Reset" style="width: 100%; background-color: transparent; font-size: 8pt; font-weight: bold;" type="button" onclick="EnemyThiefReset()" /></td> 
+</tr> 
+ 
+ 
+ 
+ 
+ 
+ 
+</table> 
+ 
+ 
+ 
+ 
+</td> 
+ 
+ 
+ 
+</tr><tr> 
+ 
+<td class="box" align="left" colspan="3" style="padding: 5px 5px 5px 5px;" valign="top"> 
+<b id="Thievery_Info"></b> 
+</td> 
+ 
+ 
+</tr></tbody></table></form></div></div> 
+ 
+ 
+ 
+ 
+ 
+<div id="window6" style="display:none;"> 
+<div class="floatingWindowContent" align="center" style="width:300px"> 
+<form name="Calculator7" action=""> 
+<table class="mymainbox" cellpadding="0" cellspacing="5" style="cursor:default; color:black; font-size:11px; font-family:arial, verdana, sans-serif;  background:#ECE9D8 url('Ambush_Army.gif') no-repeat bottom right;" width="300"><tbody><tr><td class="box" align="center" style="padding: 5px 5px 5px 5px;"> 
+<table> 
+ 
+ 
+<tr> 
+<td align="left"></td> 
+<td valign="bottom"><b>Your troops</b></td> 
+<td valign="bottom"><b>Enemy troops</b></td> 
+</tr> 
+ 
+<tr> 
+<td align="left"><b>Race:</b></td> 
+ 
+<td> 
+<select name="Ambush_Your_Race" style="width: 100%;"> 
+<option value="Human" selected="selected">Human</option> 
+<option value="Elf">Elf</option> 
+<option value="Dwarf">Dwarf</option> 
+<option value="Orc">Orc</option> 
+<option value="Gnome">Gnome</option> 
+<option value="Dark Elf">Dark Elf</option> 
+<option value="Undead" disabled="disabled">Undead</option> 
+<option value="Avian">Avian</option> 
+<option value="Faery" disabled="disabled">Faery</option> 
+<option value="Halfling">Halfling</option> 
+</select> 
+</td> 
+ 
+<td> 
+<select name="Ambush_Enemy_Race" style="width: 100%;"> 
+<option value="Human" selected="selected">Human</option> 
+<option value="Elf">Elf</option> 
+<option value="Dwarf">Dwarf</option> 
+<option value="Orc">Orc</option> 
+<option value="Gnome">Gnome</option> 
+<option value="Dark Elf">Dark Elf</option> 
+<option value="Undead" disabled="disabled">Undead</option> 
+<option value="Avian">Avian</option> 
+<option value="Faery" disabled="disabled">Faery</option> 
+<option value="Halfling">Halfling</option> 
+</select> 
+</td> 
+ 
+</tr> 
+ 
+<tr> 
+<td align="left"><b>Soldiers:</b></td> 
+<td><input style="width: 76px;" name="Ambush_Your_Soldiers" value="0" type="text" size="10" /></td> 
+<td><input style="width: 76px;" name="Ambush_Enemy_Soldiers" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td align="left"><b>Off-Specs:</b></td> 
+<td><input style="width: 76px;" name="Ambush_Your_OffSpecs" value="0" type="text" size="10" /></td> 
+<td><input style="width: 76px;" name="Ambush_Enemy_OffSpecs" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td align="left"><b>Elites:</b></td> 
+<td><input style="width: 76px;" name="Ambush_Your_Elites" value="0" type="text" size="10" /></td> 
+<td><input style="width: 76px;" name="Ambush_Enemy_Elites" value="0" type="text" size="10" /></td> 
+</tr> 
+ 
+<tr> 
+<td align="left"><b>Horses:</b></td> 
+<td><input style="width: 76px;" name="Ambush_Your_Horses" value="0" type="text" size="10" /></td> 
+<td></td> 
+</tr> 
+ 
+<tr> 
+<td align="left"><b>Merc/Pris:</b></td> 
+<td><input style="width: 76px;" name="Ambush_Your_Merc_Pris" value="0" type="text" size="10" /></td> 
+<td></td> 
+</tr> 
+ 
+ 
+<tr> 
+<td align="left" height="22"><b>Your&nbsp;Offense:</b></td> 
+<td><b id="Ambush_Your_Offense">0</b></td> 
+<td></td> 
+</tr> 
+ 
+<tr> 
+<td align="left" height="22"><b>Enemy&nbsp;Defense:</b></td> 
+<td><b id="Ambush_Enemy_Defense">0</b></td> 
+<td></td> 
+</tr> 
+ 
+ 
+</table> 
+</td></tr></tbody></table></form></div></div> 
+ 
+ 
+ 
+ 
+ 
+ 
+<script type="text/javascript">
+    initFloatingWindowWithTabs('window1', Array('Clipboard Manager'), 400, 800, 100, 70, false, false, false, false, false);
+    initFloatingWindowWithTabs('window2', Array('Military Calculator'), false, 820, 200, 10, true, true, false, false, false);
+    initFloatingWindowWithTabs('window3', Array('Science Calculator'), false, 650, 200, 10, true, true, false, false, false);
+    initFloatingWindowWithTabs('window4', Array('Buildings Calculator'), false, 760, 200, 10, true, true, false, false, false);
+    initFloatingWindowWithTabs('window5', Array('Thievery Calculator'), false, 800, 200, 10, true, true, false, false, false);
+    initFloatingWindowWithTabs('window6', Array('Ambush Calculator'), false, 300, 200, 10, true, true, false, false, false);
+</script> 
+ 
+<script language="javascript" type="text/javascript" src="Ultima_Export_Line.js"></script> 
+<script language="javascript" type="text/javascript" src="Ultima_Config.js"></script> 
+<script language="JavaScript" type="text/javascript" src="Calculator_Buildings.js"></script> 
+<script language="JavaScript" type="text/javascript" src="Calculator_Science.js"></script> 
+<script language="JavaScript" type="text/javascript" src="Calculator_Military.js"></script> 
+<script language="JavaScript" type="text/javascript" src="Calculator_Thievery.js"></script> 
+<script language="JavaScript" type="text/javascript" src="Calculator_Ambush.js"></script> 
+<script language="javascript" type="text/javascript" src="Ultima_Functions.js"></script> 
+<script language="javascript" type="text/javascript" src="Ultima_Task_Manager.js"></script> 
+<script language="javascript" type="text/javascript" src="Clipboard_Throne.js"></script> 
+<script language="javascript" type="text/javascript" src="Clipboard_Military.js"></script> 
+<script language="javascript" type="text/javascript" src="Clipboard_Science.js"></script> 
+<script language="javascript" type="text/javascript" src="Clipboard_Buildings.js"></script> 
+<script language="javascript" type="text/javascript" src="Clipboard_Kingdom.js"></script> 
+<script language="javascript" type="text/javascript" src="Clipboard_Uniques.js"></script> 
+ 
+</center> 
+ 
+</body> 
+</html>

@@ -1,0 +1,145 @@
+Sanctuary of Absalom (6:2) Kingdom Analysis
+[http://www.utopiatemple.com Angel v2.03 Beta]
+
+** Statistics **
+Provinces in Kingdom: 25
+Total Land: 202,557 Acres (Average: 8,102 Acres)
+Total Networth: 28,317,612gc (Average: 1,132,704gc)
+Average Networth per Acre: 139.8gc
+
+** Dragon **
+Dragon Cost: 49,555,821gc
+Dragon Send Range: 22,654,090gc - 35,397,015gc
+
+** Relations **
+Attitude towards/from (4:40): Ceasefire
+Stance: Normal (no bonuses)
+War History: 6 Wars, 3 Wins (50%)
+
+** Races **
+Orc: 20 (80%)
+Halfling: 2 (8%)
+Human: 1 (4%)
+Elf: 1 (4%)
+Gnome: 1 (4%)
+
+** Land **
+1. Blasted [HU] - 3,405 Acres (11.6%)
+2. Nuked [OR] - 11,473 Acres (5.7%)
+3. Lubed Up [OR] - 11,344 Acres (5.6%)
+4. roaring [OR] - 11,222 Acres (5.5%)
+5. Ydrunken [OR] - 11,086 Acres (5.5%)
+6. Ginned Up [OR] - 10,637 Acres (5.3%)
+7. Keg-legged [OR] - 10,382 Acres (5.1%)
+8. Out of Sight [OR] - 10,239 Acres (5.1%)
+9. Amiably Incandescent [OR] - 10,222 Acres (5%)
+10. Quoxed [OR] - 9,805 Acres (4.8%)
+11. Debauched [OR] - 9,546 Acres (4.7%)
+12. Very Tanked [OR] - 9,369 Acres (4.6%)
+13. Fitshaced [OR] - 8,839 Acres (4.4%)
+14. Hammered [OR] - 8,085 Acres (4%)
+15. Zombiefied [GN] - 6,688 Acres (3.3%)
+16. Crushed [HA] - 5,493 Acres (2.7%)
+17. Haywire [HA] - 5,088 Acres (2.5%)
+18. I may be drunk [EL] - 4,716 Acres (2.3%)
+19. Plastered [OR] - 4,269 Acres (2.1%)
+20. Just plain drunk [OR] - 3,694 Acres (1.8%)
+21. Embalmed [OR] - 3,627 Acres (1.8%)
+22. Wrenched [OR] - 3,610 Acres (1.8%)
+23. Molly [OR] - 3,591 Acres (1.8%)
+24. Upholstered [OR] - 3,328 Acres (1.6%)
+25. SipSippin with Screw [OR] - 2,799 Acres (1.4%)
+
+** Networth **
+1. Blasted [HU] - 3,910,042gc (13.8%)
+2. Nuked [OR] - 1,606,303gc (5.7%)
+3. Lubed Up [OR] - 1,498,806gc (5.3%)
+4. roaring [OR] - 1,450,689gc (5.1%)
+5. Debauched [OR] - 1,445,537gc (5.1%)
+6. Amiably Incandescent [OR] - 1,427,226gc (5%)
+7. Ydrunken [OR] - 1,416,257gc (5%)
+8. Ginned Up [OR] - 1,388,488gc (4.9%)
+9. Out of Sight [OR] - 1,363,115gc (4.8%)
+10. Keg-legged [OR] - 1,344,309gc (4.7%)
+11. Very Tanked [OR] - 1,252,482gc (4.4%)
+12. Quoxed [OR] - 1,196,539gc (4.2%)
+13. Fitshaced [OR] - 1,095,031gc (3.9%)
+14. Zombiefied [GN] - 1,000,987gc (3.5%)
+15. Crushed [HA] - 951,318gc (3.4%)
+16. Hammered [OR] - 947,656gc (3.3%)
+17. Haywire [HA] - 804,659gc (2.8%)
+18. I may be drunk [EL] - 713,959gc (2.5%)
+19. Just plain drunk [OR] - 561,206gc (2%)
+20. Plastered [OR] - 550,492gc (1.9%)
+21. Wrenched [OR] - 518,748gc (1.8%)
+22. Upholstered [OR] - 476,415gc (1.7%)
+23. Molly [OR] - 471,826gc (1.7%)
+24. SipSippin with Screw [OR] - 463,358gc (1.6%)
+25. Embalmed [OR] - 462,164gc (1.6%)
+
+** Networth per Acre **
+1. Crushed [HA] - 173.19gc
+2. Blasted [HU] - 167.06gc
+3. SipSippin with Screw [OR] - 165.54gc
+4. Haywire [HA] - 158.15gc
+5. Just plain drunk [OR] - 151.92gc
+6. Debauched [OR] - 151.43gc
+7. I may be drunk [EL] - 151.39gc
+8. Zombiefied [GN] - 149.67gc
+9. Wrenched [OR] - 143.7gc
+10. Upholstered [OR] - 143.15gc
+11. Nuked [OR] - 140.01gc
+12. Amiably Incandescent [OR] - 139.62gc
+13. Very Tanked [OR] - 133.68gc
+14. Out of Sight [OR] - 133.13gc
+15. Lubed Up [OR] - 132.12gc
+16. Molly [OR] - 131.39gc
+17. Ginned Up [OR] - 130.53gc
+18. Keg-legged [OR] - 129.48gc
+19. roaring [OR] - 129.27gc
+20. Plastered [OR] - 128.95gc
+21. Ydrunken [OR] - 127.75gc
+22. Embalmed [OR] - 127.42gc
+23. Fitshaced [OR] - 123.89gc
+24. Quoxed [OR] - 122.03gc
+25. Hammered [OR] - 117.21gc
+
+** Ranks **
+1. Blasted [HU] - King 
+2. Crushed [HA] - Viscount 
+2. Ginned Up [OR] - Viscountess 
+2. Haywire [HA] - Viscountess 
+2. Just plain drunk [OR] - Viscountess 
+2. Ydrunken [OR] - Viscount 
+2. Zombiefied [GN] - Viscount 
+8. Amiably Incandescent [OR] - Baron 
+8. Embalmed [OR] - Baron 
+8. I may be drunk [EL] - Baroness 
+8. Keg-legged [OR] - Baron 
+8. Quoxed [OR] - Baron 
+8. Wrenched [OR] - Baron 
+14. Fitshaced [OR] - Noble Lady 
+14. Molly [OR] - Lord 
+14. Plastered [OR] - Lord 
+14. roaring [OR] - Noble Lady 
+14. Very Tanked [OR] - Lord 
+19. Debauched [OR] - Knight 
+19. Lubed Up [OR] - Knight 
+19. Nuked [OR] - Knight 
+19. Out of Sight [OR] - Lady 
+19. SipSippin with Screw [OR] - Knight 
+19. Hammered [OR] - Knight 
+19. Upholstered [OR] - Knight 
+
+8. Embalmed [OR] - Baron 
+8. I may be drunk [EL] - Baroness 
+8. Keg-legged [OR] - Baron 
+8. Quoxed [OR] - Baron 
+8. Wrenched [OR] - Baron 
+14. Fitshaced [OR] - Noble Lady 
+14. Molly [OR] - Lord 
+14. Plastered [OR] - Lord 
+14. roaring [OR] - Noble Lady 
+14. Very Tanked [OR] - Lord 
+19. Debauched [OR] - Knight 
+19. Lubed Up [OR] - K

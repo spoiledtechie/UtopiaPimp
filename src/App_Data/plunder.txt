@@ -1,0 +1,40 @@
+Quantcast
+
+Money: 322gc	Peasants: 12,970	Food: 4658 Bushels	Runes: 13,162	NW: 171,742gc	Acres: 1275	NW/Acre: 135
+Utopia Guide: The Art of War - Military Advisor
+
+Your forces arrive at LYdos (7:7), and battle begins quickly...
+
+A tough battle took place, but we have managed a victory!
+Your army looted 114,123gc, 24,673 bushels of food, and 6864 runes!
+
+We lost nothing in this battle. Our forces will be again available on July 19th, YR2.
+We killed about 280 enemy troops.
+
+Money: 114,445gc	Peasants: 12,970	Food: 29,331 Bushels	Runes: 20,026	NW: 171,856gc	Acres: 1275	NW/Acre: 135
+You enter your War Room. Surrounded by your most highly ranked military commanders, you stand ready to give orders to your troops. However, like most military commanders, none are willing to offer their advice. The decisions you make must be your own. You can learn more about attack options from the Guide above.
+
+Available Generals:	0
+Mercenary Cost:	350gc
+Mercenary Rate:	One per 5 Troops
+Minimum Conquest NW:	163,264gc
+Maximum Conquest NW:	180,448gc
+	
+Kingdom: Island:
+
+Attack times are estimates for a Traditional March
+
+Select Attack Type: 	
+Extend Attack Time: 	
+Generals to Send:	
+Unit	Available	Send
+Soldiers	1398	
+Skeletons	0	
+Ghouls	0	
+War Horses	0	
+
+
+	
+Quantcast
+
+
