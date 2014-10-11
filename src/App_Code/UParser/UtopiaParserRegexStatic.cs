@@ -34,13 +34,13 @@ namespace Pimp.UParser
         /// used for the wol ticker and ce posts.
         /// AGECHANGECALC
         /// </summary>
-        public static DateTime WORLD_OF_LEGENDS_START_DATE = Convert.ToDateTime("02/10/2012 05:01 PM");
+        public static DateTime WORLD_OF_LEGENDS_START_DATE =  Convert.ToDateTime(ConfigurationManager.AppSettings["WORLD_OF_LEGENDS_START_DATE"]);
         /// <summary>
         /// used to delete old intel.
         /// </summary>
-        public static DateTime WORLD_OF_LEGENDS_OLD_START_DATE = Convert.ToDateTime("11/01/2011 07:01 AM");
+        public static DateTime WORLD_OF_LEGENDS_OLD_START_DATE = Convert.ToDateTime(ConfigurationManager.AppSettings["WORLD_OF_LEGENDS_OLD_START_DATE"]);
 
-        public static DateTime GENERATIONS_START_DATE = Convert.ToDateTime("04/06/2009 12:01 AM");
+        public static DateTime GENERATIONS_START_DATE = Convert.ToDateTime(ConfigurationManager.AppSettings["GENERATIONS_START_DATE"]);
 
                 private static DateTime GetLastDayOfMonth(DateTime dtDate)
         {

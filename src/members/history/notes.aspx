@@ -13,15 +13,7 @@
     <script src="http://codingforcharity.org/utopiapimp/js/master.js?v=<%= SupportFramework.StaticContent.JavaScript.JsVersion %>"
         type="text/javascript"></script>
     <div class="divAdRight" id="divAdRight">
-                   
-        <% if (Boomers.Utilities.Compare.CompareExt.getRandomTrueFalse())
-         { %>
-        <script type="text/javascript">
-            getSideAd();
-        </script>
-        <%}
-         else
-         { %>
+  
          <script type="text/javascript"><!--
              google_ad_client = "ca-pub-6494646249414123";
              /* PostSecretSkyScraper */
@@ -34,22 +26,13 @@
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 
-        <%} %>
         
     </div>
     <div class="divFooter" id="divAddTop">
         <br />
         <br />
         <br />
-      
-     <% if (Boomers.Utilities.Compare.CompareExt.getRandomTrueFalse())
-         { %>
-        <script type="text/javascript">
-            getTopAd("true");
-        </script>
-        <%}
-         else
-         { %>
+ 
          <script type="text/javascript"><!--
              google_ad_client = "ca-pub-6494646249414123";
              /* PostSecretLeaderBoard */
@@ -62,8 +45,6 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 
-        <%} %>
-        
     </div>
     </form><script type="text/javascript">
 

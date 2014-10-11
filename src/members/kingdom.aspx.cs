@@ -59,8 +59,7 @@ public partial class members_kingdom : MyBasePageCS
         string re = "good";
         string malformed = string.Empty;
         PimpUserWrapper pimpUser = new PimpUserWrapper();
-       txtbxKingdomPage.Text = txtbxKingdomPage.Text.Replace("^", "").Replace("*", "");
-
+       
         var cachedKingdom = KingdomCache.getKingdom(pimpUser.PimpUser.StartingKingdom);
         Session["SubmittedData"] = txtbxKingdomPage.Text + "    ProvinceName: '" + txtbxAddKingdom.Text + "'";
         if (txtbxKingdomPage.Text.Contains("utopiatemple"))

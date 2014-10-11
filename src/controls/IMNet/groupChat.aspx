@@ -46,15 +46,7 @@
     <div class="groupChatList" id="divGroupChatList" runat="server">
     </div>
     <div id="divAddTop" class="divChatAd">
-         
-        <% if (Boomers.Utilities.Compare.CompareExt.getRandomTrueFalse())
-         { %>
-        <script type="text/javascript">
-            getTopAd("true");
-        </script>
-        <%}
-         else
-         { %>
+       
          <script type="text/javascript"><!--
              google_ad_client = "ca-pub-6494646249414123";
              /* PostSecretLeaderBoard */
@@ -67,7 +59,6 @@
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 
-        <%} %>
      
     </div>
     <asp:HiddenField ID="hfRecipient" runat="server" />

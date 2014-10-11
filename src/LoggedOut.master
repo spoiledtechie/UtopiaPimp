@@ -30,48 +30,7 @@
     </asp:ScriptManager>
 
     <div id="divAddTop" class="divAdTopRight">
-        <% if (Boomers.Utilities.Compare.CompareExt.getRandomTrueFalse())
-           { %>
-        <!-- Beginning of Project Wonderful ad code: -->
-        <!-- Ad box ID: 37989 -->
-        <script type="text/javascript">
-<!--
-            var pw_d = document;
-            pw_d.projectwonderful_adbox_id = "37989";
-            pw_d.projectwonderful_adbox_type = "5";
-            pw_d.projectwonderful_foreground_color = "";
-            pw_d.projectwonderful_background_color = "";
-//-->
-        </script>
-        <script type="text/javascript" src="http://www.projectwonderful.com/ad_display.js"></script>
-        <noscript>
-            <map name="admap37989" id="admap37989">
-                <area href="http://www.projectwonderful.com/out_nojs.php?r=0&amp;c=0&amp;id=37989&amp;type=5"
-                    shape="rect" coords="0,0,728,90" title="" alt="" target="_blank" />
-            </map>
-            <table cellpadding="0" border="0" cellspacing="0" width="728" bgcolor="">
-                <tr>
-                    <td>
-                        <img src="http://www.projectwonderful.com/nojs.php?id=37989&amp;type=5" width="728"
-                            height="93" usemap="#admap37989" border="0" alt="" />
-                    </td>
-                </tr>
-                <tr>
-                    <td bgcolor="" colspan="1">
-                        <center>
-                            <a style="font-size: 10px; color: #fff; text-decoration: none; line-height: 1.2;
-                                font-weight: bold; font-family: Tahoma, verdana,arial,helvetica,sans-serif;"
-                                href="http://www.projectwonderful.com/advertisehere.php?id=37989&amp;type=5"
-                                target="_blank">Your ad could be here, right now.</a></center>
-                    </td>
-                </tr>
-            </table>
-        </noscript>
-        <!-- End of Project Wonderful ad code. -->
-        <%}
-           else
-           { %>
-            <script type="text/javascript"><!--
+         <script type="text/javascript"><!--
                 google_ad_client = "ca-pub-6494646249414123";
                 /* PostSecretLeaderBoard */
                 google_ad_slot = "1867020116";
@@ -82,7 +41,7 @@
 <script type="text/javascript"
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
-        <%} %>
+        
     </div>
     <br />
     <%--<div>

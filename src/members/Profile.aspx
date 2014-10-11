@@ -81,14 +81,7 @@
         </div>
     </div>
     <div class="divAdRight" id="divAdRight">
-      <% if (Boomers.Utilities.Compare.CompareExt.getRandomTrueFalse())
-         { %>
-        <script type="text/javascript">
-            getSideAd();
-        </script>
-        <%}
-         else
-         { %>
+     
          <script type="text/javascript"><!--
              google_ad_client = "ca-pub-6494646249414123";
              /* PostSecretSkyScraper */
@@ -101,7 +94,6 @@
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 
-        <%} %>
        
     </div>
 </asp:Content>

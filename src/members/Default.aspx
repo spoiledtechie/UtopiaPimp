@@ -98,14 +98,7 @@
     <div id="dialog" title="Uniques">
     </div>
     <div class="divAdRight" id="divAdRight">
-        <% if (Boomers.Utilities.Compare.CompareExt.getRandomTrueFalse())
-         { %>
-        <script type="text/javascript">
-            getSideAd();
-        </script>
-        <%}
-         else
-         { %>
+     
          <script type="text/javascript"><!--
              google_ad_client = "ca-pub-6494646249414123";
              /* PostSecretSkyScraper */
@@ -118,7 +111,6 @@
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 
-        <%} %>
     </div>
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
     <script type="text/javascript">        stLight.options({ publisher: '44150a77-2fa9-4b5f-86c0-0248e4a27d5e' });</script>

@@ -29,7 +29,7 @@ namespace CS_Code
         }
         public static UtopiaDataContext Get()
         {
-            var conn = new MvcMiniProfiler.Data.ProfiledDbConnection(new  SqlConnection(ConfigurationManager.ConnectionStrings["UPConnectionString"].ConnectionString), MiniProfiler.Current);
+            var conn = new MvcMiniProfiler.Data.ProfiledDbConnection(new SqlConnection(ConfigurationManager.ConnectionStrings["UPConnectionString"].ConnectionString), MiniProfiler.Current);
             return new UtopiaDataContext(conn);
         }
     }
@@ -45,6 +45,8 @@ namespace CS_Code
             return new AdminDataContext(conn);
         }
     }
+
+
     public partial class GlobalDataContext : System.Data.Linq.DataContext
     {
         partial void OnCreated()
@@ -80,16 +82,16 @@ namespace SupportFramework.Data
         /// <returns></returns>
         public static void captureData(string data, Guid userID)
         {
-        
-           CS_Code.GlobalDataContext db =  CS_Code.GlobalDataContext.Get();
-           CS_Code.Global_Data_Capture gdc = new CS_Code.Global_Data_Capture();
-           gdc.Raw_Data = data;
-           gdc.date_time = DateTime.UtcNow;
-           gdc.User_ID = userID;
-           gdc.Application_Id = Applications.Instance.ApplicationId;
-           db.Global_Data_Captures.InsertOnSubmit(gdc);
-           db.SubmitChanges();
-       
+
+            CS_Code.GlobalDataContext db = CS_Code.GlobalDataContext.Get();
+            CS_Code.Global_Data_Capture gdc = new CS_Code.Global_Data_Capture();
+            gdc.Raw_Data = data;
+            gdc.date_time = DateTime.UtcNow;
+            gdc.User_ID = userID;
+            gdc.Application_Id = Applications.Instance.ApplicationId;
+            db.Global_Data_Captures.InsertOnSubmit(gdc);
+            db.SubmitChanges();
+
         }
     }
 }
