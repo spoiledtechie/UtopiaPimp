@@ -2,3 +2,5 @@
 /Boomers.Utilities/obj
 /PimpLibrary/bin
 /PimpLibrary/obj
+*.suo
+/src/vwd.webinfo
