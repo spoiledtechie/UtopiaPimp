@@ -69,7 +69,7 @@ public partial class anonymous_password : MyBasePageCS
                 lblWarning.Text = "New Password has been sent to: " + user.Email+". If you don't receive a password within a minute, please email spoiledtechie@gmail.com.";
 
             }
-            catch (MembershipPasswordException exception)
+            catch (MembershipPasswordException)
             {
                 lblWarning.Text = "The Answer you Supplied is Incorrect. If you can't remember the answer, contact spoiledtechie@gmail.com. ";
             }

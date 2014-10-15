@@ -207,7 +207,6 @@ namespace Pimp.UData
                     break;
                 default:
                     return 0;
-                    break;
             }
             if (kingdom != null)
             {

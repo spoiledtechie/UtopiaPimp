@@ -18,7 +18,7 @@ public partial class pagent : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        string _currverr = "2010.05.14";
+        //string _currverr = "2010.05.14";
         //if (!IsPostBack)
         //{
         //    if (Session["FormInfo"] == null)

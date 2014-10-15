@@ -21,7 +21,7 @@ public partial class forum_controls_ActiveTopics : System.Web.UI.UserControl
             }
             catch 
             {
-                string test = "";
+                //string test = "";
             }
         }
     }
