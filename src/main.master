@@ -11,7 +11,7 @@
     <%--<link href="CSS/Default.css" rel="stylesheet" type="text/css" />--%>
     <link rel="shortcut icon" href="http://codingforcharity.org/utopiapimp/img/favicon.ico"
         type="image/x-icon">
-        <%# MvcMiniProfiler.MiniProfiler.RenderIncludes() %>
+        <%--<%# MvcMiniProfiler.MiniProfiler.RenderIncludes() %>--%>
 </head>
 <body>
     
