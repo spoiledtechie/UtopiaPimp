@@ -21,6 +21,7 @@ using PimpLibrary.Utopia;
 using PimpLibrary.UI;
 using PimpLibrary.Utopia.Players;
 using Pimp.UData;
+using System.Globalization;
 
 
 namespace Pimp.UParser
@@ -34,13 +35,13 @@ namespace Pimp.UParser
         /// used for the wol ticker and ce posts.
         /// AGECHANGECALC
         /// </summary>
-        public static DateTime WORLD_OF_LEGENDS_START_DATE =  Convert.ToDateTime(ConfigurationManager.AppSettings["WORLD_OF_LEGENDS_START_DATE"]);
+        public static DateTime WORLD_OF_LEGENDS_START_DATE =  Convert.ToDateTime(ConfigurationManager.AppSettings["WORLD_OF_LEGENDS_START_DATE"], CultureInfo.GetCultureInfo("en-US"));
         /// <summary>
         /// used to delete old intel.
         /// </summary>
-        public static DateTime WORLD_OF_LEGENDS_OLD_START_DATE = Convert.ToDateTime(ConfigurationManager.AppSettings["WORLD_OF_LEGENDS_OLD_START_DATE"]);
+        public static DateTime WORLD_OF_LEGENDS_OLD_START_DATE = Convert.ToDateTime(ConfigurationManager.AppSettings["WORLD_OF_LEGENDS_OLD_START_DATE"], CultureInfo.GetCultureInfo("en-US"));
 
-        public static DateTime GENERATIONS_START_DATE = Convert.ToDateTime(ConfigurationManager.AppSettings["GENERATIONS_START_DATE"]);
+        public static DateTime GENERATIONS_START_DATE = Convert.ToDateTime(ConfigurationManager.AppSettings["GENERATIONS_START_DATE"], CultureInfo.GetCultureInfo("en-US"));
 
                 private static DateTime GetLastDayOfMonth(DateTime dtDate)
         {
