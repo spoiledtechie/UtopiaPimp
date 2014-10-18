@@ -1206,7 +1206,7 @@ namespace Pimp.UParser
         /// <returns></returns>
         public static string GetUserColumnsSet(int setID, List<ColumnSet> columnSets)
         {
-            if (setID != 0 && setID != null)
+            if (setID != 0)
             {
                 return (from ucs in columnSets
                         where ucs.columnTypeID == setID

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PimpLibrary", "..\PimpLibrary\PimpLibrary.csproj", "{D27EF85B-0CB5-4195-8CBC-556C02499ADC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boomers", "..\..\Boomers.Utilities\Boomers.Utilities\Boomers.csproj", "{1E607928-BEB7-425F-BBEF-C1D93B9BDD86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boomers", "..\Boomers.Utilities\Boomers.csproj", "{1E607928-BEB7-425F-BBEF-C1D93B9BDD86}"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "src", ".", "{BE3EDAEC-1D63-413F-89D9-B8B6B6142FF9}"
 	ProjectSection(WebsiteProperties) = preProject

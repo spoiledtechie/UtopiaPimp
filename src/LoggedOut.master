@@ -12,7 +12,7 @@
 <link rel="stylesheet" href='http://codingforcharity.org/utopiapimp/css/Default_ie.css' type="text/css" media="screen, projection" />
 <![endif]-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <%# MvcMiniProfiler.MiniProfiler.RenderIncludes() %>
+    <%--<%# MvcMiniProfiler.MiniProfiler.RenderIncludes() %>--%>
 </head>
 <body>
     <form id="form1" runat="server">

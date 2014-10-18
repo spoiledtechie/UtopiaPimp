@@ -41,7 +41,7 @@ namespace CS_Code
         }
         public static AdminDataContext Get()
         {
-            var conn = new MvcMiniProfiler.Data.ProfiledDbConnection(new SqlConnection(ConfigurationManager.ConnectionStrings["LocalSqlServer"].ConnectionString), MiniProfiler.Current);
+            var conn = new MvcMiniProfiler.Data.ProfiledDbConnection(new SqlConnection(ConfigurationManager.ConnectionStrings["BoomersMembership_DataConnectionString"].ConnectionString), MiniProfiler.Current);
             return new AdminDataContext(conn);
         }
     }

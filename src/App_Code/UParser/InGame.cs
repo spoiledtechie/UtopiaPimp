@@ -1841,7 +1841,7 @@ namespace Pimp.UParser
 
                 string temp = mc[i].Value;
                 ProvinceClass prov = new ProvinceClass();
-                prov.Province_Name = temp.Replace(URegEx._findEverythingButName.Match(mc[i].Value).Value, "").Replace("(M)", "").Replace("^", "").Replace("*", "").Trim();
+                prov.Province_Name = temp.Replace(URegEx._findEverythingButName.Match(mc[i].Value).Value, "").Replace("(M)", "").Replace("(S)", "").Replace("^", "").Replace("*", "").Trim();
 
                 temp = temp.Replace(prov.Province_Name, "");
 

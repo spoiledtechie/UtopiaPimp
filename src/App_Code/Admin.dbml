@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BoomersMembership_Data" Class="AdminDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BoomersMembership_Data" EntityNamespace="CS_Code" ContextNamespace="CS_Code" Class="AdminDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDb)\v11.0;AttachDbFilename=|DataDirectory|\BoomersMembership_Data.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BoomersMembership_DataConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.user_IM_Type_Pull" Member="user_IM_Type_Pulls">
     <Type Name="user_IM_Type_Pull">
       <Column Name="uid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />

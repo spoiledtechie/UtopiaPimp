@@ -18,7 +18,7 @@ namespace SupportFramework.Users
     public class Memberships
     {
         public static string USER_ID_IN_CACHE_NAME = "userID";
-        private static string IS_ADMIN_IN_CACHE_NAME = "IsAdmin";
+        //private static string IS_ADMIN_IN_CACHE_NAME = "IsAdmin";
 
         public static int getUserErrorCount(string userName)
         {
