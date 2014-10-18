@@ -469,7 +469,7 @@ namespace Pimp.UParser
 
             getProvince.Race_ID = getRaceID(URegEx._findRace.Match(URegEx._findInGameRace.Match(RawData).Value).Value, currentUser.PimpUser.UserID);
             RawData = RawData.Replace(URegEx._findInGameRace.Match(RawData).Value, "");
-            getProvince.Ruler_Name =URegEx._findOffense.Replace( URegEx._findInGameRulerName.Match(RawData).Value.Replace("Ruler", ""),"").Trim();
+            getProvince.Ruler_Name = URegEx._findOffense.Replace(new Regex(string.Format(@"\s*Ruler\s+{0}\s*", URegEx._nobilities), RegexOptions.IgnoreCase | RegexOptions.Compiled).Replace(URegEx._findInGameRulerName.Match(RawData).Value, ""), "").Trim();
             getProvince.Personality_ID = GetPersonalityID(FindPersonality(URegEx._findPersonalitySearchKey.Match(getProvince.Ruler_Name).Value, currentUser.PimpUser.UserID));
 
             cb.Race_ID = getProvince.Race_ID;
