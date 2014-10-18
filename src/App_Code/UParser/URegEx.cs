@@ -475,7 +475,7 @@ namespace Pimp.UParser
         /// For the Buildings Advisor Method.
         /// </summary>
         public static Regex _findBuildingsAdvisorbuildEffic = new Regex(@"Building\sEfficiency\s+[\d\.]+%", RegexOptions.Compiled | RegexOptions.IgnoreCase);
-        public static Regex _findBuildingsAdvisorBuildingLines = new Regex(@"(Barren\sLand|Homes|Farms|Mills|Banks|Training\sGrounds|Armouries|Barracks|Forts|Guard\sStations|Guilds|Watch Towers|Towers|Thieves'\sDens|Libraries|Schools|Stables|Dungeons)\s+[\d,]+\s+[\d+\.]+%", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        public static Regex _findBuildingsAdvisorBuildingLines = new Regex(@"(Barren\sLand|Homes|Farms|Mills|Banks|Training\sGrounds|Armouries|Barracks|Forts|Guard\sStations|Hospitals|Guilds|Watch Towers|Towers|Thieves'\sDens|Libraries|Schools|Stables|Dungeons)\s+[\d,]+\s+[\d+\.]+%", RegexOptions.Compiled | RegexOptions.IgnoreCase);
         public static Regex _findBuildingsAdvisorBuildingTraining = new Regex(@"(Farms|Banks|Armouries|Barracks|Guilds|Watch Towers|Towers|Stables|Homes|Mills|Training Grounds|Forts|Guard Stations|Hospitals|Thieves' Dens|Libraries|Schools|Dungeons|Barren Land)\s+[\d\s]+", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
         /// <summary>
