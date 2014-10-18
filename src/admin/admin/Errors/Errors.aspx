@@ -34,12 +34,7 @@
                             SortExpression="uid" Visible="false" />
                         <asp:BoundField DataField="userName" HeaderText="User Name" ReadOnly="True" SortExpression="userName" />
                         <asp:ButtonField ButtonType="Button" CommandName="cmdReviewUsers" Text="Review Users Error" />
-                        <asp:TemplateField HeaderText="Email">
-                            <ItemTemplate>
-                                <asp:HyperLink ID="hlemail" Text='<%# Bind("User_Email") %>' NavigateUrl='<%# Bind("User_Email","Email.aspx?title=Error Fixed:&emailAdd={0}")%>'
-                                    runat="server"></asp:HyperLink>
-                            </ItemTemplate>
-                        </asp:TemplateField>
+                
                         <asp:BoundField DataField="Load_Date" HeaderText="Load Date" ReadOnly="True" SortExpression="Load_Date" />
                         <asp:BoundField DataField="Domain" HeaderText="Domain" ReadOnly="True" SortExpression="Domain" />
                         <asp:BoundField DataField="Error_Url_Path" HeaderText="Url path" ReadOnly="true" SortExpression="Error_Url_Path" />

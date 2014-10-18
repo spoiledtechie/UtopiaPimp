@@ -46,9 +46,9 @@ public partial class admin_Roles : System.Web.UI.Page
     }
     protected void btnNewRole_Click(object sender, EventArgs e)
     {
-        if (!Roles.RoleExists(tbNewRole.Text.Trim()))
+        if (!Roles.RoleExists(tbNewRole.Text))
         {
-            Roles.CreateRole(tbNewRole.Text.Trim());
+            Roles.CreateRole(tbNewRole.Text);
             Update_gvRoles();
             lblWarning.Text = "The Role '" + tbNewRole.Text + "' has been created";
         }
@@ -107,7 +107,7 @@ public partial class admin_Roles : System.Web.UI.Page
                         select new
                         {
                             Role = xx.ToString(),
-                            Email =Memberships.getUserEmail(xx.ToString())
+                            Email = Memberships.getUserEmail(xx.ToString())
                         });
         gvUsers.DataSource = getRoles;
         gvUsers.DataBind();
