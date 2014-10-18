@@ -21,7 +21,7 @@
             <li>
                 <asp:HyperLink ID="hlRoles" NavigateUrl="~/admin/admin/Roles.aspx" runat="server">Roles</asp:HyperLink></li>
             <li>
-                <asp:HyperLink ID="hlErrors" NavigateUrl="~/admin/admin/Errors.aspx" runat="server">Errors</asp:HyperLink></li>
+                <asp:HyperLink ID="hlErrors" NavigateUrl="~/admin/admin/Errors/Errors.aspx" runat="server">Errors</asp:HyperLink></li>
             <li>
                 <asp:HyperLink ID="HyperLink1" NavigateUrl="~/admin/admin/Views.aspx" runat="server">Views</asp:HyperLink></li>
                     <li>
