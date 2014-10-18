@@ -4,14 +4,14 @@
     protected void Application_BeginRequest()
     {
 
-        if (Request.IsLocal)
-        {
-            MvcMiniProfiler.MiniProfiler.Start();
-        }
+        //if (Request.IsLocal)
+        //{
+        //    MvcMiniProfiler.MiniProfiler.Start();
+        //}
     }
     protected void Application_EndRequest()
     {
-        MvcMiniProfiler.MiniProfiler.Stop();
+        //MvcMiniProfiler.MiniProfiler.Stop();
     }
 
     void Application_Start(object sender, EventArgs e)

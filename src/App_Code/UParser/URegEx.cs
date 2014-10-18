@@ -475,7 +475,7 @@ namespace Pimp.UParser
         /// For the Buildings Advisor Method.
         /// </summary>
         public static Regex _findBuildingsAdvisorbuildEffic = new Regex(@"Building\sEfficiency\s+[\d\.]+%", RegexOptions.Compiled | RegexOptions.IgnoreCase);
-        public static Regex _findBuildingsAdvisorBuildingLines = new Regex(@"(Barren\sLand|Homes|Farms|Mills|Banks|Training\sGrounds|Armouries|Barracks|Forts|Guard\sStations|Guilds|Watch Towers|Towers|Thieves'\sDens|Libraries|Schools|Stables|Dungeons)\s+[\d,]+\s+[\d+\.]+%", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        public static Regex _findBuildingsAdvisorBuildingLines = new Regex(@"(Barren\sLand|Homes|Farms|Mills|Banks|Training\sGrounds|Armouries|Barracks|Forts|Guard\sStations|Hospitals|Guilds|Watch Towers|Towers|Thieves'\sDens|Libraries|Schools|Stables|Dungeons)\s+[\d,]+\s+[\d+\.]+%", RegexOptions.Compiled | RegexOptions.IgnoreCase);
         public static Regex _findBuildingsAdvisorBuildingTraining = new Regex(@"(Farms|Banks|Armouries|Barracks|Guilds|Watch Towers|Towers|Stables|Homes|Mills|Training Grounds|Forts|Guard Stations|Hospitals|Thieves' Dens|Libraries|Schools|Dungeons|Barren Land)\s+[\d\s]+", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
         /// <summary>
@@ -581,7 +581,7 @@ namespace Pimp.UParser
         public static Regex _findInGamePrisoners = new Regex(@"Prisoners\s+[\d,]+", RegexOptions.IgnoreCase | RegexOptions.Compiled);
         public static Regex _findInGameOffPoints = new Regex(@"Off\.\sPoints\s+[\d,]+", RegexOptions.IgnoreCase | RegexOptions.Compiled);
         public static Regex _findInGameDefPoints = new Regex(@"Def\.\sPoints\s+[\d,]+", RegexOptions.IgnoreCase | RegexOptions.Compiled);
-        public static Regex _findInGameRulerName = new Regex(@"Ruler\s[a-zA-Z\d\.][a-zA-Z\s\d\.]{0,25}[a-zA-Z\d\.]\s+(Strongarms|Griffins|Rangers|Quickblades|Swordsmen|Night Rangers|Goblins|Warriors|Offense|Skeletons|Magicians)", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+        public static Regex _findInGameRulerName = new Regex(@"Ruler\s+" + _nobilities + @"\s[a-zA-Z\d\.][a-zA-Z\s\d\.]{0,25}[a-zA-Z\d\.]\s+(Strongarms|Griffins|Rangers|Quickblades|Swordsmen|Night Rangers|Goblins|Warriors|Offense|Skeletons|Magicians):?\s+[\d,]*", RegexOptions.IgnoreCase | RegexOptions.Compiled);
         public static Regex _findInGameHitHard = new Regex(@"(attacked\smoderately|\snoticably\sattacked\srecently|attacked\sa\slittle|hit\sextremely\shard)", RegexOptions.Compiled | RegexOptions.IgnoreCase);
         public static Regex _findInGameHit = new Regex(@"(moderately|noticably|little|extremely)", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
@@ -630,10 +630,10 @@ namespace Pimp.UParser
         public static string _getDefNames = "(Slingers|Harpies|Archers|Pikemen|Archers|Druids|Trolls|Axemen|Defense|Zombies)";
         public static string _nobilities = "(Baroness|Baron|Countess|Count|King|Knight|Noble Lady|Lady|Lord|Marquis|Duke|Duchess|Princess|Prince|Peasant|Queen|Viscountess|Viscount|DEAD)";
         public static Regex _findTrainingQueue = new Regex(@"Next\s\d+\shours:\s[\d,\s]*", RegexOptions.IgnoreCase | RegexOptions.Compiled);
-        public static Regex _findElites = new Regex(@"(Brutes|Drakes|Elf Lords|Golems|Knights|Drow|Drows|Orges|Ogres|Berserkers|Elite|Ghouls|Beastmasters):\s+[\d,]*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
-        public static Regex _findOffense = new Regex(@"(Strongarms|Griffins|Rangers|Halflings|Swordsmen|Night Rangers|Goblins|Warriors|Offense|Skeletons|Quickblades|Magicians):\s+[\d,]*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
-        public static Regex _findDefense = new Regex(@"(Slingers|Harpies|Archers|Pikemen|Archers|Druids|Trolls|Axemen|Defense|Zombies):\s+[\d,]*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
-        public static Regex _findThieves = new Regex(@"Thieves:\s[\d,]*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        public static Regex _findElites = new Regex(@"(Brutes|Drakes|Elf Lords|Golems|Knights|Drow|Drows|Orges|Ogres|Berserkers|Elite|Ghouls|Beastmasters):?\s+[\d,]*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        public static Regex _findOffense = new Regex(@"(Strongarms|Griffins|Rangers|Halflings|Swordsmen|Night Rangers|Goblins|Warriors|Offense|Skeletons|Quickblades|Magicians):?\s+[\d,]*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        public static Regex _findDefense = new Regex(@"(Slingers|Harpies|Archers|Pikemen|Archers|Druids|Trolls|Axemen|Defense|Zombies):?\s+[\d,]*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        public static Regex _findThieves = new Regex(@"Thieves:?\s[\d,]*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         public static Regex _findSOMRawOff = new Regex(_getOffNames + @"(\s+(\d+)?)+", RegexOptions.Compiled | RegexOptions.IgnoreCase);
         public static Regex _findSOMRawDef = new Regex(_getDefNames + @"(\s+(\d+)?)+", RegexOptions.Compiled | RegexOptions.IgnoreCase);
