@@ -933,128 +933,92 @@ namespace Pimp.UParser
         /// <param name="ProvinceCode"></param>
         public static void attachProvinceUser(Guid provinceID)
         {
-            StringBuilder whereAmI = new StringBuilder();
-            try
-            {
-                whereAmI.Append("Making pimpUser;");
-                PimpUserWrapper pimpUser = new PimpUserWrapper();
-                whereAmI.Append("AttachProvince;");
-                HttpContext.Current.Session["SubmittedData"] += "AttachProvince:" + provinceID + ":" + pimpUser.PimpUser.UserID;
-                whereAmI.Append("Get UtopiaDataContext;");
-                CS_Code.UtopiaDataContext db = CS_Code.UtopiaDataContext.Get();
+            PimpUserWrapper pimpUser = new PimpUserWrapper();
+            HttpContext.Current.Session["SubmittedData"] += "AttachProvince:" + provinceID + ":" + pimpUser.PimpUser.UserID;
+            CS_Code.UtopiaDataContext db = CS_Code.UtopiaDataContext.Get();
 
-                whereAmI.Append("Checking ProvincesOwned;");
-                if (pimpUser.PimpUser.ProvincesOwned != null && pimpUser.PimpUser.ProvincesOwned.Count > 0)
+
+            if (pimpUser.PimpUser.ProvincesOwned != null && pimpUser.PimpUser.ProvincesOwned.Count > 0)
+            {
+            }
+            else
+            {       //gets the kingdom default columns if there are any..
+                var kdID = (from xx in db.Utopia_Province_Data_Captured_Gens
+                            where xx.Province_ID == provinceID
+                            select xx.Owner_Kingdom_ID).FirstOrDefault();
+                var defaultKingdomColumns = (from xx in db.Utopia_Column_Names
+                                             from yy in db.Utopia_Column_Data_Types
+                                             where xx.Data_Type_ID == yy.uid
+                                             where xx.User_ID == kdID
+                                             select new { xx.Column_IDs, xx.Data_Type_ID, yy.Column_Data_Type_Name });
+                if (defaultKingdomColumns.FirstOrDefault() != null)
                 {
-                    whereAmI.Append("No ProvincesOwned;");
+                    foreach (var item in defaultKingdomColumns)
+                    {
+                        CS_Code.Utopia_Column_Name ucdt = new CS_Code.Utopia_Column_Name();
+                        ucdt.Column_IDs = item.Column_IDs;
+                        ucdt.Data_Type_ID = item.Data_Type_ID;
+                        ucdt.DateTime_Added = DateTime.UtcNow;
+                        ucdt.User_ID = pimpUser.PimpUser.UserID;
+                        db.Utopia_Column_Names.InsertOnSubmit(ucdt);
+                        pimpUser.updateColumnSetsForUser(item.Column_Data_Type_Name, ucdt);
+                    }
+                    db.SubmitChanges();
                 }
                 else
                 {
-                    whereAmI.Append("ProvincesOwned, getting kdID;");
-                    //gets the kingdom default columns if there are any..
-                    var kdID = (from xx in db.Utopia_Province_Data_Captured_Gens
-                                where xx.Province_ID == provinceID
-                                select xx.Owner_Kingdom_ID).FirstOrDefault();
-                    whereAmI.Append("getting defaultKingdomColumns;");
-                    var defaultKingdomColumns = (from xx in db.Utopia_Column_Names
-                                                 from yy in db.Utopia_Column_Data_Types
-                                                 where xx.Data_Type_ID == yy.uid
-                                                 where xx.User_ID == kdID
-                                                 select new { xx.Column_IDs, xx.Data_Type_ID, yy.Column_Data_Type_Name });
-                    whereAmI.Append("check defaultKingdomColumns;");
-                    if (defaultKingdomColumns.FirstOrDefault() != null)
-                    {
-                        whereAmI.Append("defaultKingdomColumns, iterating them;");
-                        foreach (var item in defaultKingdomColumns)
-                        {
-                            whereAmI.Append("iteration of defaultKingdomColumns, initializing Utopia_Column_Name and setting stuff;");
-                            CS_Code.Utopia_Column_Name ucdt = new CS_Code.Utopia_Column_Name();
-                            ucdt.Column_IDs = item.Column_IDs;
-                            ucdt.Data_Type_ID = item.Data_Type_ID;
-                            ucdt.DateTime_Added = DateTime.UtcNow;
-                            whereAmI.Append("setting UserID;");
-                            ucdt.User_ID = pimpUser.PimpUser.UserID;
-                            whereAmI.Append("calling InsertOnSubmit;");
-                            db.Utopia_Column_Names.InsertOnSubmit(ucdt);
-                            whereAmI.Append("calling updateColumnSetsForUser;");
-                            pimpUser.updateColumnSetsForUser(item.Column_Data_Type_Name, ucdt);
-                        }
-                        whereAmI.Append("done iterating defaultKingdomColumns, calling SubmitChanges;");
-                        db.SubmitChanges();
-                    }
-                    else
-                    {
-                        whereAmI.Append("no defaultKingdomColumns, using hardcoded values;");
 
-                        string temp = string.Empty;
-                        temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "Province Name - Race/Personality").FirstOrDefault().uid + ":";
-                        temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "CB").FirstOrDefault().uid + ":";
-                        temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "Survey").FirstOrDefault().uid + ":";
-                        temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "SoS").FirstOrDefault().uid + ":";
-                        temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "SoM").FirstOrDefault().uid + ":";
-                        temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "Acres").FirstOrDefault().uid + ":";
-                        temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "NW/Acre").FirstOrDefault().uid + ":";
-                        temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "Effects").FirstOrDefault().uid + ":";
-                        temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "Ops").FirstOrDefault().uid + ":";
+                    string temp = string.Empty;
+                    temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "Province Name - Race/Personality").FirstOrDefault().uid + ":";
+                    temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "CB").FirstOrDefault().uid + ":";
+                    temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "Survey").FirstOrDefault().uid + ":";
+                    temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "SoS").FirstOrDefault().uid + ":";
+                    temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "SoM").FirstOrDefault().uid + ":";
+                    temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "Acres").FirstOrDefault().uid + ":";
+                    temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "NW/Acre").FirstOrDefault().uid + ":";
+                    temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "Effects").FirstOrDefault().uid + ":";
+                    temp += UtopiaHelper.Instance.ColumnNames.Where(x => x.columnName == "Ops").FirstOrDefault().uid + ":";
 
-                        //var getMostPopColumns = (from xx in db.Utopia_Column_Names
-                        //                         group xx by xx.Data_Type_ID into gg
-                        //                         select new
-                        //                         {
-                        //                             gg.Key,
-                        //                             count = gg.Count(),
-                        //                             columns = (from yy in db.Utopia_Column_Names
-                        //                                        where yy.Data_Type_ID == gg.Key
-                        //                                        select yy.Column_IDs).FirstOrDefault()
-                        //                         }).OrderByDescending(p => p.count).FirstOrDefault();
+                    //var getMostPopColumns = (from xx in db.Utopia_Column_Names
+                    //                         group xx by xx.Data_Type_ID into gg
+                    //                         select new
+                    //                         {
+                    //                             gg.Key,
+                    //                             count = gg.Count(),
+                    //                             columns = (from yy in db.Utopia_Column_Names
+                    //                                        where yy.Data_Type_ID == gg.Key
+                    //                                        select yy.Column_IDs).FirstOrDefault()
+                    //                         }).OrderByDescending(p => p.count).FirstOrDefault();
 
-                        whereAmI.Append("initializing Utopia_Column_Data_Type and setting stuff;");
-                        CS_Code.Utopia_Column_Data_Type ucd = new CS_Code.Utopia_Column_Data_Type();
-                        ucd.Column_Data_Type_Name = "General";
-                        ucd.DateTime_Added = DateTime.UtcNow;
-                        whereAmI.Append("setting UserID;");
-                        ucd.User_ID = pimpUser.PimpUser.UserID;
-                        whereAmI.Append("calling InsertOnSubmit;");
-                        db.Utopia_Column_Data_Types.InsertOnSubmit(ucd);
-                        whereAmI.Append("calling SubmitChanges;");
-                        db.SubmitChanges();
+                    CS_Code.Utopia_Column_Data_Type ucd = new CS_Code.Utopia_Column_Data_Type();
+                    ucd.Column_Data_Type_Name = "General";
+                    ucd.DateTime_Added = DateTime.UtcNow;
+                    ucd.User_ID = pimpUser.PimpUser.UserID;
+                    db.Utopia_Column_Data_Types.InsertOnSubmit(ucd);
+                    db.SubmitChanges();
 
-                        whereAmI.Append("initializing Utopia_Column_Data_Type and setting stuff;");
-                        CS_Code.Utopia_Column_Name ucdt = new CS_Code.Utopia_Column_Name();
-                        ucdt.Column_IDs = temp;
-                        ucdt.Data_Type_ID = ucd.uid;
-                        ucdt.DateTime_Added = DateTime.UtcNow;
-                        whereAmI.Append("setting UserID;");
-                        ucdt.User_ID = pimpUser.PimpUser.UserID;
-                        whereAmI.Append("calling InsertOnSubmit;");
-                        db.Utopia_Column_Names.InsertOnSubmit(ucdt);
-                        whereAmI.Append("calling SubmitChanges;");
-                        db.SubmitChanges();
-                        whereAmI.Append("calling updateColumnSetsForUser;");
-                        pimpUser.updateColumnSetsForUser(ucd.Column_Data_Type_Name, ucdt);
-                    }
-                    whereAmI.Append("done checking defaultKingdomColumns;");
+                    CS_Code.Utopia_Column_Name ucdt = new CS_Code.Utopia_Column_Name();
+                    ucdt.Column_IDs = temp;
+                    ucdt.Data_Type_ID = ucd.uid;
+                    ucdt.DateTime_Added = DateTime.UtcNow;
+                    ucdt.User_ID = pimpUser.PimpUser.UserID;
+                    db.Utopia_Column_Names.InsertOnSubmit(ucdt);
+                    db.SubmitChanges();
+                    pimpUser.updateColumnSetsForUser(ucd.Column_Data_Type_Name, ucdt);
                 }
-                whereAmI.Append("getProvince from db;");
-                var getProvince = (from xx in db.Utopia_Province_Data_Captured_Gens
-                                   where xx.Province_ID == provinceID
-                                   select xx).FirstOrDefault();
-                whereAmI.Append("setting UserID and DateTime;");
-                getProvince.Added_By_User_ID = pimpUser.PimpUser.UserID;
-                getProvince.Date_Time_User_ID_Linked = DateTime.UtcNow;
-                getProvince.Owner_User_ID = pimpUser.PimpUser.UserID;
-                whereAmI.Append("calling SubmitChanges;");
-                db.SubmitChanges();
 
-                whereAmI.Append("calling addProvinceToProvincesOwned;");
-                pimpUser.addProvinceToProvincesOwned(getProvince);
-                whereAmI.Append("calling removeProvinceFromKingdomCache;");
-                KingdomCache.removeProvinceFromKingdomCache((Guid)getProvince.Owner_Kingdom_ID, (Guid)provinceID, KingdomCache.getKingdom((Guid)getProvince.Owner_Kingdom_ID));
             }
-            catch (NullReferenceException ex)
-            {
-                throw new NullReferenceException(string.Format("NullReferenceException in attachProvinceUser, whereAmI: {0}", whereAmI.ToString()), ex);
-            }
+            var getProvince = (from xx in db.Utopia_Province_Data_Captured_Gens
+                               where xx.Province_ID == provinceID
+                               select xx).FirstOrDefault();
+
+            getProvince.Added_By_User_ID = pimpUser.PimpUser.UserID;
+            getProvince.Date_Time_User_ID_Linked = DateTime.UtcNow;
+            getProvince.Owner_User_ID = pimpUser.PimpUser.UserID;
+            db.SubmitChanges();
+
+            pimpUser.addProvinceToProvincesOwned(getProvince);
+            KingdomCache.removeProvinceFromKingdomCache((Guid)getProvince.Owner_Kingdom_ID, (Guid)provinceID, KingdomCache.getKingdom((Guid)getProvince.Owner_Kingdom_ID));
         }
         /// <summary>
         /// Updates the Kingdom from the Kingdom Page.
