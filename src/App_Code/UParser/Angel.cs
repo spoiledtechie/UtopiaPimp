@@ -872,7 +872,7 @@ namespace Pimp.UParser
                 prov.Land = Convert.ToInt32(URegEx.rgxQuantitiesWithComma.Match(URegEx._findAngelKingdomAcres.Match(temp).Value).Value.Replace(",", ""));
                 prov.Province_Name = URegEx._findAngelKingdomName.Match(temp).Value.Substring(1).Replace(" [", "").Trim();
 
-                Regex FindProvinceNetworth = new Regex(prov.Province_Name + @"\s\[([A-Z]{2})\]\s-\s[\d,]+gc", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+                Regex FindProvinceNetworth = new Regex(prov.Province_Name + @"\s+\[([A-Z]{2})\]\s-\s[\d,]+gc", RegexOptions.IgnoreCase | RegexOptions.Compiled);
                 prov.Networth = Convert.ToInt32(URegEx.rgxQuantitiesWithComma.Match(URegEx._findGoldCoins.Match(FindProvinceNetworth.Match(RawData).Value).Value).Value.Replace(",", ""));
 
                 Regex FindNobility = new Regex(prov.Province_Name + @"\s\[([A-Z]{2})\]\s-\s" + URegEx._nobilities, RegexOptions.IgnoreCase | RegexOptions.Compiled);
