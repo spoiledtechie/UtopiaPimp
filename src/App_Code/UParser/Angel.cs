@@ -456,7 +456,7 @@ namespace Pimp.UParser
                         break;
 
                     case "Barren Land":
-                        UPDCS.BarrenLands= Convert.ToInt32(URegEx.rgxQuantitiesWithComma.Match(match.Value).Value.Replace(",", ""));
+                        UPDCS.BarrenLands = Convert.ToInt32(URegEx.rgxQuantitiesWithComma.Match(match.Value).Value.Replace(",", ""));
                         break;
                     default:
                         FailedAt("ParseAngelSurveyBuildingsReport", match.Value + ",  '" + URegEx._findTextFrontOfColon.Match(match.Value).Value.Replace(":", "").Trim() + "'", currentUser.PimpUser.UserID);
@@ -735,7 +735,8 @@ namespace Pimp.UParser
                     if (URegEx._findOffense.IsMatch(troopsTraining))
                     {
                         temp = URegEx._findOffense.Match(troopsTraining).Value;
-                        UPDCTM.Regs_Off_Train = Convert.ToInt32(URegEx.rgxNumber.Match(temp).Value);
+                        if (URegEx.rgxNumber.IsMatch(temp))
+                            UPDCTM.Regs_Off_Train = Convert.ToInt32(URegEx.rgxNumber.Match(temp).Value);
                         if (URegEx._findTrainingQueue.IsMatch(troopsTraining))
                         {
                             UPDCTM.Regs_Off_Train_Queue = URegEx._findTrainingQueue.Match(troopsTraining).Value;
