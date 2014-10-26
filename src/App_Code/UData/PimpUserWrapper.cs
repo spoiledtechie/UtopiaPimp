@@ -176,7 +176,7 @@ namespace Pimp.UData
             try
             {
                 var users = getListOfUsers();
-                         return users.ToList().Where(x => x.LastUpdated > DateTime.Now.AddMinutes(-5)).ToList();
+                return users.ToList().Where(x => x.LastUpdated > DateTime.Now.AddMinutes(-5)).ToList();
             }
             catch (Exception e)
             {
@@ -235,21 +235,24 @@ namespace Pimp.UData
         {
             var users = getListOfUsers();
             var list = new List<Utopia.PimpUser>(users);
-            var user = list.Where(x => x.UserID == userId).FirstOrDefault();
-            if (user == null)
+            if (list != null)
             {
-                CS_Code.AdminDataContext adb = CS_Code.AdminDataContext.Get();
-                var userTemp = (from xx in adb.aspnet_Users
-                                where xx.UserId == userId
-                                select new { UserID = xx.UserId, UserName = xx.UserName.ToLower(), LastUpdated = xx.LastActivityDate }).FirstOrDefault();
+                var user = list.Where(x => x.UserID == userId).FirstOrDefault();
+                if (user == null)
+                {
+                    CS_Code.AdminDataContext adb = CS_Code.AdminDataContext.Get();
+                    var userTemp = (from xx in adb.aspnet_Users
+                                    where xx.UserId == userId
+                                    select new { UserID = xx.UserId, UserName = xx.UserName.ToLower(), LastUpdated = xx.LastActivityDate }).FirstOrDefault();
 
-                PimpUser.UserName = userTemp.UserName;
-                PimpUser.UserID = userTemp.UserID;
-                PimpUser.LastUpdated = userTemp.LastUpdated;
-                getUserObject();
+                    PimpUser.UserName = userTemp.UserName;
+                    PimpUser.UserID = userTemp.UserID;
+                    PimpUser.LastUpdated = userTemp.LastUpdated;
+                    getUserObject();
+                }
+                else
+                    PimpUser = user;
             }
-            else
-                PimpUser = user;
         }
 
 
@@ -303,7 +306,7 @@ namespace Pimp.UData
         /// clears the starting kingdom.  So meaning we can't find the starting kingdom in the DB.
         /// comes from deleting old ages I think.
         /// </summary>
-        public  void clearStartingKingdom()
+        public void clearStartingKingdom()
         {
             var b = System.Web.Profile.ProfileBase.Create(PimpUser.UserName);
             b.SetPropertyValue("StartingProvince", new Guid().ToString());
