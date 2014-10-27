@@ -631,7 +631,7 @@ namespace Pimp.UParser
         public static string _nobilities = "(Baroness|Baron|Countess|Count|King|Knight|Noble Lady|Lady|Lord|Marquis|Duke|Duchess|Princess|Prince|Peasant|Queen|Viscountess|Viscount|DEAD)";
         public static Regex _findTrainingQueue = new Regex(@"Next\s\d+\shours:\s[\d,\s]*", RegexOptions.IgnoreCase | RegexOptions.Compiled);
         public static Regex _findElites = new Regex(@"(Brutes|Drakes|Elf Lords|Golems|Knights|Drow|Drows|Orges|Ogres|Berserkers|Elite|Ghouls|Beastmasters):?\s+[\d,]*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
-        public static Regex _findOffense = new Regex(@"(Strongarms|Griffins|Rangers|Halflings|Swordsmen|Night Rangers|Goblins|Warriors|Offense|Skeletons|Quickblades|Magicians):?\s+[\d,]*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        public static Regex _findOffense = new Regex(@"(Strongarms|Griffins|Rangers|Halflings|Swordsmen|Night Rangers|Goblins|Warriors|Offense|Skeletons|Quickblades|Magicians):?\s+[\d,]+", RegexOptions.Compiled | RegexOptions.IgnoreCase);
         public static Regex _findDefense = new Regex(@"(Slingers|Harpies|Archers|Pikemen|Archers|Druids|Trolls|Axemen|Defense|Zombies):?\s+[\d,]*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
         public static Regex _findThieves = new Regex(@"Thieves:?\s[\d,]*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
