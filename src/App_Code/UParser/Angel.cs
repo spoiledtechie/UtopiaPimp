@@ -77,7 +77,9 @@ namespace Pimp.UParser
 
             Update.Race_ID = getRaceID(URegEx._findRace.Match(URegEx._findPersonalityandRace.Match(RawData).Value).Value, currentUser.PimpUser.UserID);
             Update.Personality_ID = GetPersonalityID(URegEx._findPersonalityRacePersonality.Match(URegEx._findPersonalityandRace.Match(RawData).Value).Value.Replace(",", "").Remove(0, 1).Replace("The ", ""));
-            Update.Ruler_Name = URegEx._findNewLines.Replace(URegEx._findRulerNameSurvey.Match(RawData).Value, "").Replace("Ruler Name:", "").Replace("Personality", "").Trim();
+            var rulerName = URegEx._findNewLines.Replace(URegEx._findRulerNameSurvey.Match(RawData).Value, "").Replace("Ruler Name:", "").Replace("Personality", "").Trim();
+            RawData = RawData.Replace(rulerName, "");
+            Update.Ruler_Name = rulerName;
             Update.Land = Convert.ToInt32(URegEx._findAngelHomeAcres.Match(RawData).Value.Replace("Land: ", "").Replace(",", ""));
             Update.Money = Convert.ToInt64(URegEx._findAngelHomeMoney.Match(RawData).Value.Replace("Money: ", "").Replace(",", "").Replace("gc", ""));
             Update.Food = Convert.ToInt32(URegEx._findAngelHomeFood.Match(RawData).Value.Replace("Food: ", "").Replace(",", ""));
