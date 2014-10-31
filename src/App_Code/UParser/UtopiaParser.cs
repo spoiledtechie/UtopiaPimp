@@ -166,7 +166,8 @@ namespace Pimp.UParser
                 return FromWhatPageEnum.Temple;
             else if (RawData.Contains("http://www.utopiatemple.com Angel v") || RawData.Contains("Utopia Angel's Forum Agent"))
                 return FromWhatPageEnum.Angel;
-            else if (RawData.Contains("[http://thedragonportal.net Ultima") || RawData.Contains("[http://thedragonportal.eu Ultima"))
+            else if (RawData.Contains("[http://thedragonportal.net Ultima") || RawData.Contains("[http://thedragonportal.eu Ultima")
+                     || RawData.Contains("[http://www.thedragonportal.net Ultima") || RawData.Contains("[http://www.thedragonportal.eu Ultima"))
                 return FromWhatPageEnum.Ultima;
             else if (RawData.Contains("[Utopia Seraphim v"))
                 return FromWhatPageEnum.Seraphim;

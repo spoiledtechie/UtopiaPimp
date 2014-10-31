@@ -20,7 +20,15 @@ public partial class IM_groupChat : System.Web.UI.Page
         {
 
             PimpUserWrapper  pimpUser = new PimpUserWrapper ();
-            string groupID = new Guid(Request.QueryString["r"].ToString()).ToString();//sets the group name
+            string groupID;
+            if (Request.QueryString["r"] != null)
+            {
+                groupID = new Guid(Request.QueryString["r"].ToString()).ToString();//sets the group name
+            }
+            else
+            {
+                groupID = new Guid().ToString();
+            }
 
             hfSender.Value = pimpUser.PimpUser.UserID.ToString();
             lblTitle.Text = "Kingdom Chat";
