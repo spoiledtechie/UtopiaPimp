@@ -1608,7 +1608,8 @@ namespace Pimp.UParser
             var getProv = (from xx in db.Utopia_Province_Data_Captured_Gens
                            where xx.Province_ID == UPDCS.Province_ID
                            select xx).FirstOrDefault();
-            getProv.Money = Convert.ToInt32(URegEx.rgxQuantitiesWithComma.Match(URegEx._findMilPagetotMoney.Match(RawData).Value).Value.Replace(",", ""));
+            if (URegEx._findMilPagetotMoney.IsMatch(RawData))
+                getProv.Money = Convert.ToInt32(URegEx.rgxQuantitiesWithComma.Match(URegEx._findMilPagetotMoney.Match(RawData).Value).Value.Replace(",", ""));
             //getProv.Daily_Income = Convert.ToInt32(URegEx.rgxQuantitiesWithComma.Match(URegEx._findAffairsdi.Match(RawData).Value).Value.Replace(",", ""));
             getProv.SOS_Requested = null;
             getProv.Updated_By_DateTime = DateTime.UtcNow;
@@ -1681,7 +1682,7 @@ namespace Pimp.UParser
                            where xx.Province_ID == currentUser.PimpUser.CurrentActiveProvince
                            select xx).FirstOrDefault();
 
-        
+
             getProv.Population = Convert.ToInt32(URegEx.rgxQuantitiesWithComma.Match(URegEx._findMilPagetotPop.Match(RawData).Value).Value.Replace(",", ""));
             getProv.Peasents = Convert.ToInt32(URegEx.rgxQuantitiesWithComma.Match(URegEx._findMilPagetotPeas.Match(RawData).Value).Value.Replace(",", ""));
             getProv.Wizards = Convert.ToInt32(URegEx.rgxQuantitiesWithComma.Match(URegEx._findMilPagetotWizs.Match(RawData).Value).Value.Replace(",", ""));
@@ -1814,7 +1815,7 @@ namespace Pimp.UParser
             {
                 kingdom.Kingdom_Name = URegEx.findKingdomName.Match(rawData).Value.Trim();
                 kingdom.Kingdom_Name = kingdom.Kingdom_Name.Replace(URegEx.rgxFindIslandLocation.Match(kingdom.Kingdom_Name).Value, "").Trim();
-            rawData =    rawData.Replace(kingdom.Kingdom_Name, "");
+                rawData = rawData.Replace(kingdom.Kingdom_Name, "");
                 kingdom.Kingdom_Name = kingdom.Kingdom_Name.Replace("The Famous kingdom of", "").Replace("The Esteemed kingdom of", "").Replace("The kingdom of", "").Replace("Current kingdom is", "").Trim();
             }
             else

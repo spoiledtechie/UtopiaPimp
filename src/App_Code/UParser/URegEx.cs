@@ -227,11 +227,11 @@ namespace Pimp.UParser
         /// <summary>
         /// Finds Net Offensive for SOM.
         /// </summary>
-        public static Regex _findSOMMilNetOff = new Regex(@"Net\sOffensive\sPoints\sat\sHome\s+[\d,]+", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+        public static Regex _findSOMMilNetOff = new Regex(@"Net\sOffensive\sPoints\sat\sHome(\s+)?[\d,]+", RegexOptions.IgnoreCase | RegexOptions.Compiled);
         /// <summary>
         /// Finds the Net Defensive in SOMs.
         /// </summary>
-        public static Regex _findSOMMilNetDef = new Regex(@"Net\sDefensive\sPoints\sat\sHome\s+[\d,]+", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+        public static Regex _findSOMMilNetDef = new Regex(@"Net\sDefensive\sPoints\sat\sHome(\s+)?[\d,]+", RegexOptions.IgnoreCase | RegexOptions.Compiled);
         /// <summary>
         /// Finds the Soldiers data for SOMs.
         /// </summary>
@@ -474,8 +474,8 @@ namespace Pimp.UParser
         /// <summary>
         /// For the Buildings Advisor Method.
         /// </summary>
-        public static Regex _findBuildingsAdvisorbuildEffic = new Regex(@"Building\sEfficiency\s+[\d\.]+%", RegexOptions.Compiled | RegexOptions.IgnoreCase);
-        public static Regex _findBuildingsAdvisorBuildingLines = new Regex(@"(Barren\sLand|Homes|Farms|Mills|Banks|Training\sGrounds|Armouries|Barracks|Forts|Guard\sStations|Hospitals|Guilds|Watch Towers|Towers|Thieves'\sDens|Libraries|Schools|Stables|Dungeons)\s+[\d,]+\s+[\d+\.]+%", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        public static Regex _findBuildingsAdvisorbuildEffic = new Regex(@"Building\sEfficiency(\s+)?[\d\.]+%", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        public static Regex _findBuildingsAdvisorBuildingLines = new Regex(@"(Barren\sLand|Homes|Farms|Mills|Banks|Training\sGrounds|Armouries|Barracks|Forts|Guard\sStations|Hospitals|Guilds|Watch Towers|Towers|Thieves'\sDens|Libraries|Schools|Stables|Dungeons)(\s+)?[\d,]+(\s+)?[\d+\.]+%", RegexOptions.Compiled | RegexOptions.IgnoreCase);
         public static Regex _findBuildingsAdvisorBuildingTraining = new Regex(@"(Farms|Banks|Armouries|Barracks|Guilds|Watch Towers|Towers|Stables|Homes|Mills|Training Grounds|Forts|Guard Stations|Hospitals|Thieves' Dens|Libraries|Schools|Dungeons|Barren Land)\s+[\d\s]+", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
         /// <summary>
@@ -630,9 +630,9 @@ namespace Pimp.UParser
         public static string _getDefNames = "(Slingers|Harpies|Archers|Pikemen|Archers|Druids|Trolls|Axemen|Defense|Zombies)";
         public static string _nobilities = "(Baroness|Baron|Countess|Count|King|Knight|Noble Lady|Lady|Lord|Marquis|Duke|Duchess|Princess|Prince|Peasant|Queen|Viscountess|Viscount|DEAD)";
         public static Regex _findTrainingQueue = new Regex(@"Next\s\d+\shours:\s[\d,\s]*", RegexOptions.IgnoreCase | RegexOptions.Compiled);
-        public static Regex _findElites = new Regex(@"(Brutes|Drakes|Elf Lords|Golems|Knights|Drow|Drows|Orges|Ogres|Berserkers|Elite|Ghouls|Beastmasters):?\s+[\d,]*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        public static Regex _findElites = new Regex(@"(Brutes|Drakes|Elf Lords|Golems|Knights|Drow|Drows|Orges|Ogres|Berserkers|Elite|Ghouls|Beastmasters):?\s+[\d,]+", RegexOptions.Compiled | RegexOptions.IgnoreCase);
         public static Regex _findOffense = new Regex(@"(Strongarms|Griffins|Rangers|Halflings|Swordsmen|Night Rangers|Goblins|Warriors|Offense|Skeletons|Quickblades|Magicians):?\s+[\d,]+", RegexOptions.Compiled | RegexOptions.IgnoreCase);
-        public static Regex _findDefense = new Regex(@"(Slingers|Harpies|Archers|Pikemen|Archers|Druids|Trolls|Axemen|Defense|Zombies):?\s+[\d,]*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        public static Regex _findDefense = new Regex(@"(Slingers|Harpies|Archers|Pikemen|Archers|Druids|Trolls|Axemen|Defense|Zombies):?\s+[\d,]+", RegexOptions.Compiled | RegexOptions.IgnoreCase);
         public static Regex _findThieves = new Regex(@"Thieves:?\s[\d,]*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         public static Regex _findSOMRawOff = new Regex(_getOffNames + @"(\s+(\d+)?)+", RegexOptions.Compiled | RegexOptions.IgnoreCase);

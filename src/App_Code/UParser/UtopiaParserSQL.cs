@@ -525,95 +525,102 @@ namespace Pimp.UParser
 
             for (int i = 0; i < URegEx._findSOMTimeAvailable.Matches(RawDataTemp).Count; i++)
             {
-                CS_Code.Utopia_Province_Data_Captured_Type_Military UPDCTM = new CS_Code.Utopia_Province_Data_Captured_Type_Military();
-                UPDCTM.Province_ID = ProvinceInfo.Province_ID;
-                UPDCTM.Province_ID_Added = currentUser.PimpUser.CurrentActiveProvince;
-                UPDCTM.DateTime_Added = datetime;
-                if (URegEx._findSOMOffDefElites.Matches(RawDataTemp).Count > 2)
-                    UPDCTM.Elites = Convert.ToInt32(URegEx._findQuantitiesDash.Matches(URegEx._findSOMOffDefElites.Matches(RawDataTemp)[3].Value)[i].Value.Replace(",", ""));
-                UPDCTM.Elites_Def_Pts = CalcDefElitePoints(UPDCTM.Elites.GetValueOrDefault(0), ProvinceInfo.Military_Efficiency_Def.GetValueOrDefault(0), ProvinceInfo.Race_ID.GetValueOrDefault());
-                UPDCTM.Elites_Off_Pts = CalcOffElitePoints(UPDCTM.Elites.GetValueOrDefault(0), ProvinceInfo.Military_Efficiency_Off.GetValueOrDefault(0), ProvinceInfo.Race_ID.GetValueOrDefault());
-
-                UPDCTM.Horses = Convert.ToInt32(URegEx._findQuantitiesDash.Matches(Horses)[i].Value.Replace(",", ""));
-                UPDCTM.Horses_Pts = CalcHorsePoints(UPDCTM.Horses.GetValueOrDefault(0), ProvinceInfo.Military_Efficiency_Off.GetValueOrDefault(0));
-                UPDCTM.Owner_Kingdom_ID = currentUser.PimpUser.StartingKingdom;
-               
-                
-                UPDCTM.Regs_Off = Convert.ToInt32(URegEx._findQuantitiesDash.Matches(URegEx._findSOMOffDefElites.Matches(RawDataTemp)[1].Value)[i].Value.Replace(",", ""));
-                UPDCTM.Regs_Off_Pts = CalcOffRegPoints(UPDCTM.Regs_Off.GetValueOrDefault(0), ProvinceInfo.Military_Efficiency_Off.GetValueOrDefault(0), ProvinceInfo.Race_ID.GetValueOrDefault(0));
-
-                if (i == 0)
-                {
-                    UPDCTM.Regs_Def = Convert.ToInt32(URegEx._findQuantitiesDash.Matches(URegEx._findSOMOffDefElites.Matches(RawDataTemp)[2].Value)[i].Value.Replace(",", ""));
-                    UPDCTM.Regs_Def_Pts = CalcDefRegPoints(UPDCTM.Regs_Def.GetValueOrDefault(0), ProvinceInfo.Military_Efficiency_Def.GetValueOrDefault(0), ProvinceInfo.Race_ID.GetValueOrDefault());
-                }
-                UPDCTM.Soldiers = Convert.ToInt32(URegEx._findQuantitiesDash.Matches(soldiers)[i].Value.Replace(",", ""));
-                UPDCTM.Soldiers_Off_Pts = CalcOffSoldierPoints(UPDCTM.Soldiers.GetValueOrDefault(0), ProvinceInfo.Military_Efficiency_Off.GetValueOrDefault(0));
-                UPDCTM.Soldiers_Def_Pts = CalcDefSoldierPoints(UPDCTM.Soldiers.GetValueOrDefault(0), ProvinceInfo.Military_Efficiency_Def.GetValueOrDefault(0));
-                UPDCTM.Generals = Convert.ToInt32(URegEx.rgxQuantitiesWithComma.Match(URegEx._findGeneralsName.Match(RawDataTemp).Value).Value);
-                switch (URegEx._findSOMTimeAvailable.Matches(RawDataTemp)[i].Value)
-                {
-                    case "Standing Army":
-                        UPDCTM.Military_Location = 1;
-                        UPDCTM.Wages = (int)ProvinceInfo.Mil_Wage.GetValueOrDefault(0);
-                        UPDCTM.Efficiency_Def = ProvinceInfo.Military_Efficiency_Def.GetValueOrDefault(0);
-                        UPDCTM.Efficiency_Off = ProvinceInfo.Military_Efficiency_Off.GetValueOrDefault(0);
-                        UPDCTM.Efficiency_Raw = ProvinceInfo.Mil_Overall_Efficiency.GetValueOrDefault(0);
-                        UPDCTM.Net_Defense_Pts_Home = (int)ProvinceInfo.Military_Current_Def.GetValueOrDefault(0);
-                        UPDCTM.Net_Offense_Pts_Home = (int)ProvinceInfo.Military_Current_Off.GetValueOrDefault(0);
-                        UPDCTM.Military_Population = ProvinceInfo.Peasents_Non_Percentage.GetValueOrDefault(0);
-                        if (offc > 0)
-                        {
-                            UPDCTM.Regs_Off_Train_Queue = offq;
-                            UPDCTM.Regs_Off_Train = offc;
-                        }
-                        if (defc > 0)
-                        {
-                            UPDCTM.Regs_Def_Train_Queue = defq;
-                            UPDCTM.Regs_Def_Train = defc;
-                        }
-                        if (elitc > 0)
-                        {
-                            UPDCTM.Elites_Train_Queue = elitq;
-                            UPDCTM.Elites_Train = elitc;
-                        }
-                        if (thiefc > 0)
-                        {
-                            UPDCTM.Thieves_Train_Queue = thiefq;
-                            UPDCTM.Thieves_Train = thiefc;
-                        }
-                        break;
-                    default:
-                        UPDCTM.Military_Location = 2;
-                        UPDCTM.Time_To_Return = datetime.AddMinutes(ConvertUtopiaDaystoMinutes(URegEx._findQuantitiesDecimal.Match(URegEx._findSOMTimeLeft.Matches(RawDataTemp)[i - 1].Value).Value));
-                        ProvinceInfo.Army_Out_Expires = UPDCTM.Time_To_Return.Value;
-                        ProvinceInfo.Army_Out = 1;
-                        break;
-                }
-
                 try
                 {
-                    if (URegEx._findQuantitiesDash.Matches(capland).Count < i)
+                    CS_Code.Utopia_Province_Data_Captured_Type_Military UPDCTM = new CS_Code.Utopia_Province_Data_Captured_Type_Military();
+                    UPDCTM.Province_ID = ProvinceInfo.Province_ID;
+                    UPDCTM.Province_ID_Added = currentUser.PimpUser.CurrentActiveProvince;
+                    UPDCTM.DateTime_Added = datetime;
+                    if (URegEx._findSOMOffDefElites.Matches(RawDataTemp).Count > 2)
+                        UPDCTM.Elites = Convert.ToInt32(URegEx._findQuantitiesDash.Matches(URegEx._findSOMOffDefElites.Matches(RawDataTemp)[3].Value)[i].Value.Replace(",", ""));
+                    UPDCTM.Elites_Def_Pts = CalcDefElitePoints(UPDCTM.Elites.GetValueOrDefault(0), ProvinceInfo.Military_Efficiency_Def.GetValueOrDefault(0), ProvinceInfo.Race_ID.GetValueOrDefault());
+                    UPDCTM.Elites_Off_Pts = CalcOffElitePoints(UPDCTM.Elites.GetValueOrDefault(0), ProvinceInfo.Military_Efficiency_Off.GetValueOrDefault(0), ProvinceInfo.Race_ID.GetValueOrDefault());
+
+                    UPDCTM.Horses = Convert.ToInt32(URegEx._findQuantitiesDash.Matches(Horses)[i].Value.Replace(",", ""));
+                    UPDCTM.Horses_Pts = CalcHorsePoints(UPDCTM.Horses.GetValueOrDefault(0), ProvinceInfo.Military_Efficiency_Off.GetValueOrDefault(0));
+                    UPDCTM.Owner_Kingdom_ID = currentUser.PimpUser.StartingKingdom;
+
+
+                    UPDCTM.Regs_Off = Convert.ToInt32(URegEx._findQuantitiesDash.Matches(URegEx._findSOMOffDefElites.Matches(RawDataTemp)[1].Value)[i].Value.Replace(",", ""));
+                    UPDCTM.Regs_Off_Pts = CalcOffRegPoints(UPDCTM.Regs_Off.GetValueOrDefault(0), ProvinceInfo.Military_Efficiency_Off.GetValueOrDefault(0), ProvinceInfo.Race_ID.GetValueOrDefault(0));
+
+                    if (i == 0)
                     {
-                        switch (URegEx._findQuantitiesDash.Matches(capland)[i].Value.Contains("-"))
+                        UPDCTM.Regs_Def = Convert.ToInt32(URegEx._findQuantitiesDash.Matches(URegEx._findSOMOffDefElites.Matches(RawDataTemp)[2].Value)[i].Value.Replace(",", ""));
+                        UPDCTM.Regs_Def_Pts = CalcDefRegPoints(UPDCTM.Regs_Def.GetValueOrDefault(0), ProvinceInfo.Military_Efficiency_Def.GetValueOrDefault(0), ProvinceInfo.Race_ID.GetValueOrDefault());
+                    }
+                    UPDCTM.Soldiers = Convert.ToInt32(URegEx._findQuantitiesDash.Matches(soldiers)[i].Value.Replace(",", ""));
+                    UPDCTM.Soldiers_Off_Pts = CalcOffSoldierPoints(UPDCTM.Soldiers.GetValueOrDefault(0), ProvinceInfo.Military_Efficiency_Off.GetValueOrDefault(0));
+                    UPDCTM.Soldiers_Def_Pts = CalcDefSoldierPoints(UPDCTM.Soldiers.GetValueOrDefault(0), ProvinceInfo.Military_Efficiency_Def.GetValueOrDefault(0));
+                    UPDCTM.Generals = Convert.ToInt32(URegEx.rgxQuantitiesWithComma.Match(URegEx._findGeneralsName.Match(RawDataTemp).Value).Value);
+                    switch (URegEx._findSOMTimeAvailable.Matches(RawDataTemp)[i].Value)
+                    {
+                        case "Standing Army":
+                            UPDCTM.Military_Location = 1;
+                            UPDCTM.Wages = (int)ProvinceInfo.Mil_Wage.GetValueOrDefault(0);
+                            UPDCTM.Efficiency_Def = ProvinceInfo.Military_Efficiency_Def.GetValueOrDefault(0);
+                            UPDCTM.Efficiency_Off = ProvinceInfo.Military_Efficiency_Off.GetValueOrDefault(0);
+                            UPDCTM.Efficiency_Raw = ProvinceInfo.Mil_Overall_Efficiency.GetValueOrDefault(0);
+                            UPDCTM.Net_Defense_Pts_Home = (int)ProvinceInfo.Military_Current_Def.GetValueOrDefault(0);
+                            UPDCTM.Net_Offense_Pts_Home = (int)ProvinceInfo.Military_Current_Off.GetValueOrDefault(0);
+                            UPDCTM.Military_Population = ProvinceInfo.Peasents_Non_Percentage.GetValueOrDefault(0);
+                            if (offc > 0)
+                            {
+                                UPDCTM.Regs_Off_Train_Queue = offq;
+                                UPDCTM.Regs_Off_Train = offc;
+                            }
+                            if (defc > 0)
+                            {
+                                UPDCTM.Regs_Def_Train_Queue = defq;
+                                UPDCTM.Regs_Def_Train = defc;
+                            }
+                            if (elitc > 0)
+                            {
+                                UPDCTM.Elites_Train_Queue = elitq;
+                                UPDCTM.Elites_Train = elitc;
+                            }
+                            if (thiefc > 0)
+                            {
+                                UPDCTM.Thieves_Train_Queue = thiefq;
+                                UPDCTM.Thieves_Train = thiefc;
+                            }
+                            break;
+                        default:
+                            UPDCTM.Military_Location = 2;
+                            UPDCTM.Time_To_Return = datetime.AddMinutes(ConvertUtopiaDaystoMinutes(URegEx._findQuantitiesDecimal.Match(URegEx._findSOMTimeLeft.Matches(RawDataTemp)[i - 1].Value).Value));
+                            ProvinceInfo.Army_Out_Expires = UPDCTM.Time_To_Return.Value;
+                            ProvinceInfo.Army_Out = 1;
+                            break;
+                    }
+
+                    try
+                    {
+                        if (URegEx._findQuantitiesDash.Matches(capland).Count < i)
                         {
-                            case true:
-                                UPDCTM.CapturedLand = 0;
-                                break;
-                            default:
-                                UPDCTM.CapturedLand = Convert.ToInt32(URegEx._findQuantitiesDash.Matches(capland)[i].Value.Replace(",", ""));
-                                break;
+                            switch (URegEx._findQuantitiesDash.Matches(capland)[i].Value.Contains("-"))
+                            {
+                                case true:
+                                    UPDCTM.CapturedLand = 0;
+                                    break;
+                                default:
+                                    UPDCTM.CapturedLand = Convert.ToInt32(URegEx._findQuantitiesDash.Matches(capland)[i].Value.Replace(",", ""));
+                                    break;
+                            }
                         }
+                    }
+                    catch (Exception e)
+                    {
+                        Errors.logError(e);
+                    }
+                    if (UPDCTM.Elites != 0 || UPDCTM.Horses != 0 || UPDCTM.Regs_Off != 0 || UPDCTM.Regs_Def != 0)
+                    {
+                        db.Utopia_Province_Data_Captured_Type_Militaries.InsertOnSubmit(UPDCTM);
+                        mils.Add(UPDCTM);
                     }
                 }
                 catch (Exception e)
                 {
                     Errors.logError(e);
-                }
-                if (UPDCTM.Elites != 0 || UPDCTM.Horses != 0 || UPDCTM.Regs_Off != 0 || UPDCTM.Regs_Def != 0)
-                {
-                    db.Utopia_Province_Data_Captured_Type_Militaries.InsertOnSubmit(UPDCTM);
-                    mils.Add(UPDCTM);
                 }
             }
             ProvinceInfo.SOM_Requested = null;
@@ -629,7 +636,7 @@ namespace Pimp.UParser
         /// <param name="URegEx.rgxFindMilOFFDEFELITES"></param>
         /// <param name="Province_ID">Province ID for the army that is away</param>
         /// <param name="RawDataStanding">Raw Data for the SOM.</param>
-        public  static void SetMilitaryArmies(Guid Province_ID, string RawDataStanding, DateTime datetime, List<CS_Code.Utopia_Province_Data_Captured_Type_Military> mils, CS_Code.Utopia_Province_Data_Captured_Gen getProv, Guid ownerKingdomID, PimpUserWrapper currentUser)
+        public static void SetMilitaryArmies(Guid Province_ID, string RawDataStanding, DateTime datetime, List<CS_Code.Utopia_Province_Data_Captured_Type_Military> mils, CS_Code.Utopia_Province_Data_Captured_Gen getProv, Guid ownerKingdomID, PimpUserWrapper currentUser)
         {
             CS_Code.UtopiaDataContext db = CS_Code.UtopiaDataContext.Get();
             CS_Code.Utopia_Province_Data_Captured_Type_Military UPDCTM = new CS_Code.Utopia_Province_Data_Captured_Type_Military();
@@ -704,7 +711,7 @@ namespace Pimp.UParser
         /// <param name="URegEx.rgxFindNetDONumber">Regex expression to find number</param>
         /// <param name="RawDataStanding">Raw Data string.</param>
         /// <param name="UPDCTM">Data to put in captured land.</param>
-        public  static void GetCapturedLandData(string RawDataStanding, CS_Code.Utopia_Province_Data_Captured_Type_Military UPDCTM)
+        public static void GetCapturedLandData(string RawDataStanding, CS_Code.Utopia_Province_Data_Captured_Type_Military UPDCTM)
         {
             if (URegEx.rgxCapturedLand.Match(RawDataStanding).Success)
                 UPDCTM.CapturedLand = Convert.ToInt32(URegEx.rgxQuantitiesWithComma.Match(URegEx.rgxCapturedLand.Match(RawDataStanding).Value).Value.Replace(",", ""));
@@ -714,7 +721,7 @@ namespace Pimp.UParser
         /// </summary>
         /// <param name="RawDataStanding">Raw Data String.</param>
         /// <param name="UPDCTM"></param>
-        public  static void GetMilOFffDefElitesData(string RawDataStanding, CS_Code.Utopia_Province_Data_Captured_Type_Military UPDCTM)
+        public static void GetMilOFffDefElitesData(string RawDataStanding, CS_Code.Utopia_Province_Data_Captured_Type_Military UPDCTM)
         {
             foreach (Match match in URegEx._findAngelMilOFFDEFELITES.Matches(RawDataStanding))
             {
@@ -747,7 +754,7 @@ namespace Pimp.UParser
         /// <param name="RawDataStanding">string for Data</param>
         /// <param name="UPDCTM">Data Soource to fill.</param>
         /// <returns>The Raw Data string without soldiers dat.</returns>
-        public  static string GetSoldiersData(string RawDataStanding, CS_Code.Utopia_Province_Data_Captured_Type_Military UPDCTM)
+        public static string GetSoldiersData(string RawDataStanding, CS_Code.Utopia_Province_Data_Captured_Type_Military UPDCTM)
         {
             if (URegEx.rgxFindSoldiersData.Match(RawDataStanding).Success)
             {
@@ -774,7 +781,7 @@ namespace Pimp.UParser
         /// <param name="RawDataStanding">Finds the raw data string.</param>
         /// <param name="UPDCTM"></param>
         /// <returns>Raw data string without war horse data in it.</returns>
-        public  static string GetWarHorseData(string RawDataStanding, CS_Code.Utopia_Province_Data_Captured_Type_Military UPDCTM)
+        public static string GetWarHorseData(string RawDataStanding, CS_Code.Utopia_Province_Data_Captured_Type_Military UPDCTM)
         {
             if (URegEx.rgxFindWarHorses.Match(RawDataStanding).Success)
             {
@@ -1194,11 +1201,11 @@ namespace Pimp.UParser
                                             select updcg);
                 db.Utopia_Province_Data_Captured_Gens.DeleteAllOnSubmit(deleteNonUpdateditem);
                 db.SubmitChanges();
-                KingdomCache.refreshKingdomInKingdomCache(currentUser.PimpUser.StartingKingdom,QueryKingdomID.Kingdom_ID, cachedKingdom);
+                KingdomCache.refreshKingdomInKingdomCache(currentUser.PimpUser.StartingKingdom, QueryKingdomID.Kingdom_ID, cachedKingdom);
             }
             KingdomCache.removeAllProvincesFromKingdomCache(currentUser.PimpUser.StartingKingdom, provinceIDs, cachedKingdom);
             //KingdomCache.addKingdomToKingdomCache(currentUser.PimpUser.StartingKingdom, k, cachedKingdom);
-            
+
         }
         /// <summary>
         /// Gets the current column sets of the user.
@@ -1363,7 +1370,7 @@ namespace Pimp.UParser
                         break;
                     case "freePrisoners":
                         item.alt = "Freed " + itemProv[i].OP_Text + " Prisoners ";
-                        item.Type = "<img src=\"" + ImagesStatic.FreedPrisoners+ "\" />";
+                        item.Type = "<img src=\"" + ImagesStatic.FreedPrisoners + "\" />";
                         break;
                     case "burnedAcres":
                         item.alt = "Burned " + itemProv[i].OP_Text + " Acres " + KdPageHelper.PLEASE_MAKE_ICON;
@@ -1491,7 +1498,7 @@ namespace Pimp.UParser
                         break;
                     case "exposedThieves":
                         item.alt = "Exposed thieves";
-                        item.Type ="<img src=\"" + ImagesStatic.ExposedThieves+ "\" />";
+                        item.Type = "<img src=\"" + ImagesStatic.ExposedThieves + "\" />";
                         break;
                     case "chastity":
                         item.alt = "Chastity Affecting the Women Folk. " + KdPageHelper.PLEASE_MAKE_ICON;

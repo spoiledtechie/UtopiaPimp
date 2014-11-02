@@ -857,7 +857,7 @@ namespace Pimp.UParser
             KingdomClass kingdom = new KingdomClass();
             List<ProvinceClass> provs = new List<ProvinceClass>();
 
-            kingdom.Kingdom_Name = URegEx.rgxFindIslandLocation.Replace(URegEx._findKingdomProvinceName.Match(RawData).Value, "").Trim();
+            kingdom.Kingdom_Name = URegEx.rgxFindIslandLocation.Replace(URegEx._findKingdomProvinceName.Match(RawData).Value.Replace("utools", ""), "").Trim();
             kingdom.Kingdom_Island = Convert.ToInt32(URegEx.rgxNumber.Match(URegEx.rgxFindIsland.Match(URegEx.rgxFindIslandLocation.Match(URegEx._findKingdomProvinceName.Match(RawData).Value).Value).Value).Value);
             kingdom.Kingdom_Location = Convert.ToInt32(URegEx.rgxNumber.Match(URegEx.rgxFindLocation.Match(URegEx.rgxFindIslandLocation.Match(URegEx._findKingdomProvinceName.Match(RawData).Value).Value).Value).Value);
             kingdom.ProvinceCount = Convert.ToInt32(URegEx.rgxNumber.Match(URegEx._findProvincesInKingdom.Match(RawData).Value).Value);
@@ -869,32 +869,39 @@ namespace Pimp.UParser
             string temp;
             foreach (Match m in URegEx._findAngelKingdomProvinceAcres.Matches(RawData))
             {
-                ProvinceClass prov = new ProvinceClass();
-                temp = m.Value;
-                prov.Race_ID = RaceNamePull(URegEx._findAngelKingdomRace.Match(temp).Value.Replace("[", "").Replace("]", ""), currentUserID);
-                prov.Land = Convert.ToInt32(URegEx.rgxQuantitiesWithComma.Match(URegEx._findAngelKingdomAcres.Match(temp).Value).Value.Replace(",", ""));
-                prov.Province_Name = URegEx._findAngelKingdomName.Match(temp).Value.Substring(1).Replace(" [", "").Trim();
-
-                Regex FindProvinceNetworth = new Regex(prov.Province_Name + @"\s+\[([A-Z]{2})\]\s-\s[\d,]+gc", RegexOptions.IgnoreCase | RegexOptions.Compiled);
-                prov.Networth = Convert.ToInt32(URegEx.rgxQuantitiesWithComma.Match(URegEx._findGoldCoins.Match(FindProvinceNetworth.Match(RawData).Value).Value).Value.Replace(",", ""));
-
-                Regex FindNobility = new Regex(prov.Province_Name + @"\s\[([A-Z]{2})\]\s-\s" + URegEx._nobilities, RegexOptions.IgnoreCase | RegexOptions.Compiled);
-                prov.Nobility_ID = UtopiaHelper.Instance.Ranks.Where(x => x.name == URegEx._findNobility.Match(FindNobility.Match(RawData).Value).Value).Select(x => x.uid).FirstOrDefault();
-
-                Regex _findAngelOnline = new Regex(@"ONLINE: " + prov.Province_Name, RegexOptions.Compiled | RegexOptions.IgnoreCase);
-                Regex _findAngelProtected = new Regex(@"PROTECTION: " + prov.Province_Name, RegexOptions.Compiled | RegexOptions.IgnoreCase);
-                if (_findAngelOnline.IsMatch(RawData))
+                try
                 {
-                    prov.OnlineCurrently = 1;
-                    prov.Last_Login_For_Province = DateTime.UtcNow;
+                    ProvinceClass prov = new ProvinceClass();
+                    temp = m.Value;
+                    prov.Race_ID = RaceNamePull(URegEx._findAngelKingdomRace.Match(temp).Value.Replace("[", "").Replace("]", ""), currentUserID);
+                    prov.Land = Convert.ToInt32(URegEx.rgxQuantitiesWithComma.Match(URegEx._findAngelKingdomAcres.Match(temp).Value).Value.Replace(",", ""));
+                    prov.Province_Name = URegEx._findAngelKingdomName.Match(temp).Value.Substring(1).Replace(" [", "").Trim();
+
+                    Regex FindProvinceNetworth = new Regex(prov.Province_Name + @"\s+\[([A-Z]{2})\]\s-\s[\d,]+gc", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+                    prov.Networth = Convert.ToInt32(URegEx.rgxQuantitiesWithComma.Match(URegEx._findGoldCoins.Match(FindProvinceNetworth.Match(RawData).Value).Value).Value.Replace(",", ""));
+
+                    Regex FindNobility = new Regex(prov.Province_Name + @"\s\[([A-Z]{2})\]\s-\s" + URegEx._nobilities, RegexOptions.IgnoreCase | RegexOptions.Compiled);
+                    prov.Nobility_ID = UtopiaHelper.Instance.Ranks.Where(x => x.name == URegEx._findNobility.Match(FindNobility.Match(RawData).Value).Value).Select(x => x.uid).FirstOrDefault();
+
+                    Regex _findAngelOnline = new Regex(@"ONLINE: " + prov.Province_Name, RegexOptions.Compiled | RegexOptions.IgnoreCase);
+                    Regex _findAngelProtected = new Regex(@"PROTECTION: " + prov.Province_Name, RegexOptions.Compiled | RegexOptions.IgnoreCase);
+                    if (_findAngelOnline.IsMatch(RawData))
+                    {
+                        prov.OnlineCurrently = 1;
+                        prov.Last_Login_For_Province = DateTime.UtcNow;
+                    }
+                    else
+                        prov.OnlineCurrently = 0;
+                    if (_findAngelProtected.IsMatch(RawData))
+                        prov.Protected = 1;
+                    else
+                        prov.Protected = 0;
+                    provs.Add(prov);
                 }
-                else
-                    prov.OnlineCurrently = 0;
-                if (_findAngelProtected.IsMatch(RawData))
-                    prov.Protected = 1;
-                else
-                    prov.Protected = 0;
-                provs.Add(prov);
+                catch (Exception e)
+                {
+                    Errors.logError(e);
+                }
             }
             kingdom.Provinces = provs;
             return kingdom;
